@@ -5,7 +5,7 @@ order: 7040
 
 # Gateway Configuration
 
-<img src="/images/RoyalServer/PageSecureGateway_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/PageSecureGateway_48x48.png" class="icon-def" alt="" />
 
 The Gateway Configuration panel displays and changes the configuration of the Secure Gateway component of Royal Server.
 

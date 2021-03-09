@@ -4,7 +4,7 @@ name: Hyper-V
 order: 9830
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/HyperV/SVG_PluginIcon_32.svg#img_header) Hyper-V
+# ![](/r2021/images/RoyalTS/Plugins/Connections/HyperV/SVG_PluginIcon_32.svg#img_header) Hyper-V
 The **Hyper-V** connection can be used to display Hyper-V guest instances from one or more computers and provide basic management tasks as well as the ability to connect to the Hyper-V guest instance console.
 
 ## Dashboard
@@ -56,7 +56,7 @@ Local resources, like audio, printers, clipboard, drives, USB devices, etc. can 
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/HyperV/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2021/images/RoyalTS/Plugins/Connections/HyperV/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 #### Auto Refresh (in sec.)

@@ -4,7 +4,7 @@ name: Windows Services
 order: 9850
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PluginIcon_32.svg#img_header) Windows Services
+# ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PluginIcon_32.svg#img_header) Windows Services
 The **Windows Services** connection can be used to display Windows services from one or more computers.
 
 ## Dashboard
@@ -42,7 +42,7 @@ The **Windows Services** page allows you to configure basic connection settings.
 [!include[computername.md](~/royalts/_shared/computername.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 #### Auto Refresh (in sec.)
@@ -60,7 +60,7 @@ If checked, horizontal lines are shown in the grid.
 #### Show Vertical Lines
 If checked, vertical lines are shown in the grid.
 
-## ![](/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_ViewFilter_32.svg#img_header) Filter
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_ViewFilter_32.svg#img_header) Filter
 The **Filter** page allows you to configure basic filtering or an advanced WMI query filter.
 
 You can specify your own WQL-Where-Clause. The toolbar features helpers and a link to the WQL query documentation as well as a test button to verify if the query can be executed successfully.

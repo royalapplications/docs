@@ -5,7 +5,7 @@ order: 10000
 ---
 
 
-# ![](/images/RoyalTS/Plugins/Tasks/CommandTasks/SVG_PluginIcon_32.svg#img_header) Command Task
+# ![](/r2021/images/RoyalTS/Plugins/Tasks/CommandTasks/SVG_PluginIcon_32.svg#img_header) Command Task
 **Command Tasks** are used to execute command lines (programs or batch scripts) from within Royal TS. Command tasks can run "stand-alone" (like a shortcut) or in context of a selected connection - which also allows you to "inject" variables (replacement tokens) to the command line (like the PING task).
 
 ## Dashboard
@@ -44,7 +44,7 @@ If checked, tasks executed from the Favorite Command Tasks menu do not show the 
 > You should only check this option for simple and harmless tasks, such as PING. Tasks which can cause damage if executed for the wrong selection (such as a reboot) should not have checked this option.  
 > A task executed from the Navigation panel or Tasks panel always requires confirmation, regardless of the setting.
 
-## ![](/images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PageCommand_32.svg#img_header) Command
+## ![](/r2021/images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PageCommand_32.svg#img_header) Command
 The **Command** page allows you to configure which command should be executed.
 
 #### Command

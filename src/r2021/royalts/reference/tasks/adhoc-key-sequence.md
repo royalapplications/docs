@@ -4,7 +4,7 @@ name: Ad Hoc Key Sequence
 order: 9980
 ---
 
-# ![](/images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PageKeySequenceTask_32.svg#img_header) Ad Hoc Key Sequence
+# ![](/r2021/images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PageKeySequenceTask_32.svg#img_header) Ad Hoc Key Sequence
 The **Ad Hoc Key Sequence** feature allows you to quickly send a commands using keyboard input to one or more **active connections** without creating a key sequence task first.
 
 ## Send Key Sequence to the current Connection

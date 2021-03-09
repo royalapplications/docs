@@ -13,7 +13,7 @@ If you have Multi-Factor authentication configured, opening a document hosted by
 
 ## General Information
 
-<img src="/images/RoyalServer/MFA_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/MFA_48x48.png" class="icon-def" alt="" />
 
 The Multi-Factor Authentication panel allows the configuration of a second factor when opening a Royal Server hosted document.
 

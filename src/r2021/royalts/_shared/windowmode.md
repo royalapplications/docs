@@ -1,4 +1,4 @@
-## ![](/images/RoyalTS/Application/SVG_PageWindowMode_32.svg#img_header) Window Mode
+## ![](/r2021/images/RoyalTS/Application/SVG_PageWindowMode_32.svg#img_header) Window Mode
 The **Window Mode** page allows you to control where the connection should open. Most connection types support **Main Window (Embedded)** mode and **External Window** mode. Remote Desktop connections, for example, additionally support **External Window (Full Screen)** mode.
 
 #### Open connection in

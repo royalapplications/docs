@@ -1,4 +1,4 @@
-## ![](/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Credentials
+## ![](/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Credentials
 The **Credentials** page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.
 
 [!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]

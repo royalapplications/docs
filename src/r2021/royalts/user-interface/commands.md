@@ -7,7 +7,7 @@ order: 9980
 # Commands
 Whenever you click on a button on the ribbon or execute a context menu item, the corresponding Royal TS command is executed. All available commands from the application itself and from each plugin are centrally registered and can be invoked in different ways. You can execute commands using the Command Palette we introduced in Royal TS V6 or you can execute a command by a keyboard shortcut - which you can also customize.
 
-## ![](/images/RoyalTS/Application/SVG_ActionCommandPalette_32.svg#img_header) Command Palette
+## ![](/r2021/images/RoyalTS/Application/SVG_ActionCommandPalette_32.svg#img_header) Command Palette
 The **Command Palette** is designed to enable you to control as much as possible using the keyboard instead of mouse-point-and-clicking. To invoke the command palette, use the keyboard shortcut 'CTRL + WIN + .' or simply click the command palette command on the **Home** ribbon tab in the **Actions** group.
 > [!Tip]
 > Since by default, the keyboard shortcut scope for the Command Palette is set to **Global**, the keyboard shortcut will also work if Royal TS is running in the background. If you want the palette to show up only when Royal TS is active, simply customize the keyboard shortcut's scope to Local or Deep.
@@ -31,10 +31,10 @@ A simple command can be executed without any further context information. For ex
 ### Commands with Context
 There are many commnds which require some sort of context in order to execute them. For example, if you want to execute the **Connect** command, you need to specify which connection you want to connect to. In case you already selected a valid item, it will appear on top of the context list. Once you selected for which context you want to execute the command, press *ENTER*. Another situation you can run into is when a command doesn't have a valid context. For example: invoking a **Disconnect** command doesn't make much sense if no connections are connected. In this case, selecting the command will show an indicator that there's no context available.
 
-## ![](/images/RoyalTS/Application/SVG_ActionContextPalette_32.svg#img_header) Global Search
+## ![](/r2021/images/RoyalTS/Application/SVG_ActionContextPalette_32.svg#img_header) Global Search
 The **Global Search** works very similar as the **Command Palette** but 'the other way around'. Invoking the global search allows you to quickly search all objects in all your open documents. You can search by name using 'fuzzy search', the description field or by URI. Keybard navigation is works and behaves the same way as in the command palette. Once you have one or more objects selected, press the *ENTER* key to move to the next screen where you can choose which command you want to execute for the selected objects.
 
-## ![](/images/RoyalTS/Application/SVG_PageKeyboard_32.svg#img_header) Keyboard Shortcuts
+## ![](/r2021/images/RoyalTS/Application/SVG_PageKeyboard_32.svg#img_header) Keyboard Shortcuts
 In Royal TS V6 or later, you assign or edit keyboard shortcuts to commands via View -> Options -> [Keyboard Shortcuts](xref:royalts_reference_options#-keyboard-shortcuts). When you select a command, click on the **Edit** button to assign or edit a keyboard shortcut. Click on the **Remove** button to delete a keyboard shortcut.
 
 When you assign or edit a keyboard shortcut, you need to provide the following configuration:

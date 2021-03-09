@@ -1,4 +1,4 @@
-## ![](/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
+## ![](/r2021/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
 The **Remote Desktop Gateway** page allows you to configure a Remote Desktop Gateway object for supported connections or choose to use a Remote Desktop Gateway configuration from the parent folder.
 
 #### Use Remote Desktop Gateway from the parent folder

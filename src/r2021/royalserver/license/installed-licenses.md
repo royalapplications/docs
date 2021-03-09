@@ -5,7 +5,7 @@ order: 6020
 
 # Installed Licenses
 
-<img src="/images/RoyalServer/PageLicense_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/PageLicense_48x48.png" class="icon-def" alt="" />
 
 The Installed Licenses panel displays the installed licenses.
 

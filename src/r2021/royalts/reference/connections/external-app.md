@@ -4,7 +4,7 @@ name: External Application
 order: 9900
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PluginIcon_32.svg#img_header) External Application
+# ![](/r2021/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PluginIcon_32.svg#img_header) External Application
 The **External Application** connection can be used to integrate external applications (executables) into Royal TS.
 
 ## Dashboard
@@ -61,7 +61,7 @@ The window picker can be used to populate the required fields to start the appli
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2021/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced external application settings.
 
 ### Options

@@ -5,7 +5,7 @@ order: 9090
 
 # Health
 
-<img src="/images/RoyalServer/ActivityMonitor_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/ActivityMonitor_48x48.png" class="icon-def" alt="" />
 
 The Health panel displays the current performance data of Royal Server with an update refresh rate of 2 seconds.
 

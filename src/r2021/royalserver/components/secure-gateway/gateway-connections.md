@@ -5,7 +5,7 @@ order: 7020
 
 # Gateway Connections
 
-<img src="/images/RoyalServer/PageTunnels_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/PageTunnels_48x48.png" class="icon-def" alt="" />
 
 The Gateway Connections panel displays the current status of the Secure Gateway component.
 

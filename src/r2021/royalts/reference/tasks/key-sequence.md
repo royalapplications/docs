@@ -4,7 +4,7 @@ name: Key Sequence Task
 order: 9990
 ---
 
-# ![](/images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PluginIcon_32.svg#img_header) Key Sequence Task
+# ![](/r2021/images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PluginIcon_32.svg#img_header) Key Sequence Task
 A **Key Sequence Task** allows you to send a sequence of key strokes (like a recorded keyboard macro) to one or more **active connections**. Royal TS will simulate keyboard input as it would be typed on your computer. This is a great way to automate repetitive tasks or execute the same command on multiple sessions at once.
 
 ## Dashboard
@@ -59,7 +59,7 @@ If checked, tasks executed from the Favorite Key Sequence Tasks menu do not show
 > You should only check this option for simple and harmless tasks, such as PING. Tasks which can cause damage if executed for the wrong selection (such as a reboot) should not have checked this option.  
 > A task executed from the Navigation panel or Tasks panel always requires confirmation, regardless of the setting.
 
-## ![](/images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PageKeySequenceTask_32.svg#img_header) Key Sequence
+## ![](/r2021/images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PageKeySequenceTask_32.svg#img_header) Key Sequence
 The **Key Sequence** page allows you to configure a key sequence (simulating keyboard input).
 
 #### Sequence

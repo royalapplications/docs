@@ -4,7 +4,7 @@ name: Royal Server
 order: 9990
 ---
 
-# ![](/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header) Royal Server
+# ![](/r2021/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header) Royal Server
 Some connection types and dashboards support [Royal Server](xref:royalts_intro_royalserver).
 
 ## Usage of Royal Server
@@ -35,14 +35,14 @@ Click to test the Royal Server configuration.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Royal Server Credentials
+## ![](/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Royal Server Credentials
 The **Credentials** page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.
 
 [!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]
 
 See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](xref:royalts_reference_organization_credential), [About shared documents](https://www.royalapps.com/go/kb-all-teamsharing)
 
-## ![](/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header) Secure Gateway
+## ![](/r2021/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header) Secure Gateway
 The **Secure Gateway** page allows you to configure and test the Secure Gateway component included in Royal Server. A Secure Gateway can be used to access computers through an SSH tunnel (port forwarding).
 
 #### Port
@@ -54,7 +54,7 @@ Click to test the Secure Gateway connectivity.
 #### Prefer Keyboard-Interactive Authentication
 If checked, keyboard-interactive authentication is preferred over password authentication.
 
-## ![](/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Secure Gateway Credentials
+## ![](/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Secure Gateway Credentials
 The **Credentials** page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.
 
 [!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]

@@ -4,7 +4,7 @@ name: Secure Gateway
 order: 9980
 ---
 
-## ![](/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header) Secure Gateway
+## ![](/r2021/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header) Secure Gateway
 Some connection types support connecting through a Secure Gateway.
 
 ## Usage of Secure Gateway

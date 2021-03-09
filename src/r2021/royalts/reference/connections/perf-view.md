@@ -4,7 +4,7 @@ name: Performance View
 order: 9890
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/Performance/SVG_PluginIcon_32.svg#img_header) Performance View
+# ![](/r2021/images/RoyalTS/Plugins/Connections/Performance/SVG_PluginIcon_32.svg#img_header) Performance View
 The **Performance View** connection can be used to show real time performance counter data in Royal TS.
 
 ## Dashboard
@@ -36,7 +36,7 @@ The **Performance View** page allows you to configure basic connection settings.
 [!include[computername.md](~/royalts/_shared/computername.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/Performance/SVG_PageCounters_32.svg#img_header) Counters
+## ![](/r2021/images/RoyalTS/Plugins/Connections/Performance/SVG_PageCounters_32.svg#img_header) Counters
 The **Counters** page allows you to configure which performance counter(s) to collect and show.
 
 #### Object
@@ -59,7 +59,7 @@ Select from which computer the performance counter should be retrieved. The list
 #### Color
 Use the color column in the Counters list to change the color for each counter.
 
-## ![](/images/RoyalTS/Plugins/Connections/Performance/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2021/images/RoyalTS/Plugins/Connections/Performance/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure captions and appearance settings.
 
 ### Chart Title and Marker
@@ -100,7 +100,7 @@ Specify the minimum value of the vertical axis.
 #### Max. Vertical Scale
 Specify the maximum value on the vertical axis.
 
-## ![](/images/RoyalTS/Plugins/Connections/Performance/SVG_PageColors_32.svg#img_header) Colors
+## ![](/r2021/images/RoyalTS/Plugins/Connections/Performance/SVG_PageColors_32.svg#img_header) Colors
 The **Colors** page allows you to modify the chart colors used for the Performance View.
 
 #### Appearance
@@ -120,7 +120,7 @@ Specify the color for the time bar. The time bar is only shown when the chart is
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/Performance/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2021/images/RoyalTS/Plugins/Connections/Performance/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced Performance View settings.
 
 #### Show Counter List

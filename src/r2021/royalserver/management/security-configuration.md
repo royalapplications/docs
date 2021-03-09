@@ -5,7 +5,7 @@ order: 9060
 
 # Security Configuration
 
-<img src="/images/RoyalServer/Service_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/Service_48x48.png" class="icon-def" alt="" />
 
 The Security Configuration panel displays and changes the security configuration of Royal Server.
 

@@ -5,7 +5,7 @@ order: 9020
 
 # Permissions
 
-<img src="/images/RoyalServer/Credential_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/Credential_48x48.png" class="icon-def" alt="" />
 
 The **Permissions** panel displays the users that have access to the Royal Server Modules.
 

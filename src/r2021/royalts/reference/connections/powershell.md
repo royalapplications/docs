@@ -4,7 +4,7 @@ name: PowerShell Connection
 order: 9880
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PluginIcon_32.svg#img_header) PowerShell Connection
+# ![](/r2021/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PluginIcon_32.svg#img_header) PowerShell Connection
 The **PowerShell Connection** can be used to execute a PowerShell command or script and display the output from one or more computers in a grid view or as text.
 
 ## Dashboard
@@ -48,7 +48,7 @@ The **PowerShell** page allows you to configure basic connection settings.
 [!include[computername.md](~/royalts/_shared/computername.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PowerShellScript_32.svg#img_header) Script
+## ![](/r2021/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PowerShellScript_32.svg#img_header) Script
 The **Script** page allows you to configure the PowerShell script and the parameters.
 
 #### Script
@@ -65,7 +65,7 @@ Maintain a list of parameters which should be passed on to the script.
 #### Test
 Click on the Test button and see if the script executes successfully. The Test tab will only show the result as text.
 
-## ![](/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2021/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 ### General
@@ -107,7 +107,7 @@ Select the font used for the terminal control.
 #### Font Size
 Select the font size used for the terminal control.
 
-## ![](/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageColors_32.svg#img_header) Colors
+## ![](/r2021/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageColors_32.svg#img_header) Colors
 The **Colors** page allows you to modify the text output color palette.
  
 #### Background
@@ -130,7 +130,7 @@ Configure the individual color values for all bright colors.
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
 [!include[royalserver.md](~/royalts/_shared/royalserver.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2021/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced PowerShell settings.
 
 #### Use HTTPS

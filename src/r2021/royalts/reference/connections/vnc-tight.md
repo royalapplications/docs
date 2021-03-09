@@ -4,7 +4,7 @@ name: VNC (Tight)
 order: 9980
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIcon_32.svg#img_header) VNC (Tight)
+# ![](/r2021/images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIcon_32.svg#img_header) VNC (Tight)
 The **VNC** connection, based on TightVNC, can be used to connect to remote computers using [TightVNC](http://www.tightvnc.com/). Connections based on this plugin require the TightVNC client application to be installed.
 
 ## Dashboard
@@ -31,7 +31,7 @@ The VNC (TightVNC Integrated) Properties dialog is shown:
 - for an existing VNC connection by selecting a VNC connection which is configured to use the TightVNC based plugin and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple VNC connections which are configured to use the TightVNC based plugin were selected in the **Folder / Document Dashboard** and the **Properties** command in the **Edit** group on the Home ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIconConnection_32.svg#img_header) VNC Properties
+## ![](/r2021/images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIconConnection_32.svg#img_header) VNC Properties
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[computername.md](~/royalts/_shared/computername.md)]
 
@@ -47,7 +47,7 @@ Specify the TCP port for the VNC connection. The default VNC port is 5900.
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/VncTight/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2021/images/RoyalTS/Plugins/Connections/VncTight/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced VNC settings.
 
 #### Encoding
@@ -83,7 +83,7 @@ The VNC viewer window is restored if minimized when a remote bell event is raise
 > [!Note]
 > Deiconify on remote bell only works for VNC viewers in external window mode.
 
-## ![](/images/RoyalTS/Plugins/Connections/VncTight/SVG_PageInput_32.svg#img_header) Input
+## ![](/r2021/images/RoyalTS/Plugins/Connections/VncTight/SVG_PageInput_32.svg#img_header) Input
 The **Input** page allows you to configure the mouse behavior.
 
 #### View Only

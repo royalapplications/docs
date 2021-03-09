@@ -4,7 +4,7 @@ name: Windows Events View
 order: 9870
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PluginIcon_32.svg#img_header) Windows Events View
+# ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PluginIcon_32.svg#img_header) Windows Events View
 The **Windows Events View** can be used to display Windows Events from one or more computers using custom query filters.
 
 ## Dashboard
@@ -42,7 +42,7 @@ The **Windows Events** page allows you to configure basic connection settings.
 [!include[computername.md](~/royalts/_shared/computername.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 #### Auto Refresh (in sec.)
@@ -63,7 +63,7 @@ If checked, horizontal lines are shown in the grid.
 #### Show Vertical Lines
 If checked, vertical lines are shown in the grid.
 
-## ![](/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_ViewFilter_32.svg#img_header) Filter
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_ViewFilter_32.svg#img_header) Filter
 The **Filter** page allows you to configure basic filtering or an advanced WMI query filter.
 
 ### Basic

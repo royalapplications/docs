@@ -4,7 +4,7 @@ name: Options
 order: 1000
 ---
 
-# ![](/images/RoyalTS/Application/SVG_ApplicationOptions_32.svg#img_header)Options
+# ![](/r2021/images/RoyalTS/Application/SVG_ApplicationOptions_32.svg#img_header)Options
 The Options dialog allows you to set application settings, manage your license and manage the deleted objects in the Application document.
 
 ## Open the Options Dialog
@@ -13,7 +13,7 @@ The Options dialog allows you to set application settings, manage your license a
 * In the **Navigation** panel, select the **Application** document and click on **Properties**.
 * On the **View** tab, click on **Options**.
 
-## ![](/images/RoyalTS/Application/SVG_ApplicationCrown_32.svg#img_header) General
+## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationCrown_32.svg#img_header) General
 ### Start and Exit
 #### Don't create the Dashboard Tab
 If checked, Royal TS will not create the Dashboard tab automatically when Royal TS starts. The Dashboard tab can be created manually using the Dashboard button on the View tab.
@@ -104,7 +104,7 @@ Click this button to open the file location of the configuration file.
 > [!NOTE]
 > The default path %APPDATA%\code4ward can be changed in the RoyalTS.exe.config file (which is located in the Royal TS installation folder). This can be useful if you want to make Royal TS portable and start it from a USB memory stick.
 
-## ![](/images/RoyalTS/Application/SVG_PageLicense_32.svg#img_header) License
+## ![](/r2021/images/RoyalTS/Application/SVG_PageLicense_32.svg#img_header) License
 The License page allows you to manage or reset your Royal TS license.
 
 ### License Information
@@ -118,8 +118,8 @@ Enter the exact "License Key" text from the email you received after purchasing 
 Click to reset your Royal TS license and revert to limited Shareware mode.  
 For more information about the Shareware mode, read the section Shareware Information.
 
-## ![](/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header) Security
-### ![](/images/RoyalTS/Application/SVG_PageEncryption_32.svg#img_header) Encryption
+## ![](/r2021/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header) Security
+### ![](/r2021/images/RoyalTS/Application/SVG_PageEncryption_32.svg#img_header) Encryption
 If you want to store your credentials and passwords in the current document, it's recommended to provide an encryption password. Royal TS will prompt for this password when you open the document.
 
 #### Enable Encryption
@@ -138,7 +138,7 @@ Confirm your password.
 
 Read more about Security and Encryption in Royal TS [here](xref:royalts_intro_security).
 
-## ![](/images/RoyalTS/Application/SVG_PageRoyalPasswords_32.svg#img_header) Browser Extensions
+## ![](/r2021/images/RoyalTS/Application/SVG_PageRoyalPasswords_32.svg#img_header) Browser Extensions
 The **Browser Extensions** page allows you to configure setting used for communication between Royal TS and the browser extensions. Royal TS allows you to access credentials from your documents in your web browser.
 
 #### Enable Browser Extensions
@@ -156,7 +156,7 @@ Number of minutes after re-authentication is necessary in the browser extension.
 #### Reset trusted browser extensions
 Click to reset all trusted browser extensions. Royal TS will prompt for each extension again upon access.
 
-## ![](/images/RoyalTS/Application/SVG_PageDeletedObjects_32.svg#img_header) Deleted Objects
+## ![](/r2021/images/RoyalTS/Application/SVG_PageDeletedObjects_32.svg#img_header) Deleted Objects
 The **Deleted Objects** page allows you to configure the retention (in days) for deleted objects, recover deleted objects and purge all deleted objects permanently.
 
 #### Retention (in Days)
@@ -165,7 +165,7 @@ Specify the number of days you want to keep deleted objects in your documents.
 #### Recover
 Select one or more deleted objects from the list and click on the Recover button. After clicking the Recover button you will be asked to specify the new destination folder for the recovered objects. You cannot recover deleted folders.
 
-## ![](/images/RoyalTS/Application/SVG_PageUserInterface_32.svg#img_header) User Interface
+## ![](/r2021/images/RoyalTS/Application/SVG_PageUserInterface_32.svg#img_header) User Interface
 The **User Interface** page allows you to modify the Royal TS user interface.
 
 ### General
@@ -276,7 +276,7 @@ If checked, Royal TS will display thumbnails for each tab in the taskbar.
 #### Use colors in Tabs
 If checked, the tab caption will be colorized with the configured color of the connection.
 
-## ![](/images/RoyalTS/Application/SVG_PageMouseEvents_32.svg#img_header) Behavior
+## ![](/r2021/images/RoyalTS/Application/SVG_PageMouseEvents_32.svg#img_header) Behavior
 The **Beharior** page allows you to configure the default behavior of connections, tabs and when the mouse is used.
 
 ### Navigation Tree
@@ -370,15 +370,15 @@ Use Overrides to apply personal settings before establishing a connection. Confi
 - Apply while holding the Ctrl key
 - Always apply, except when holding the Ctrl key
 
-## ![](/images/RoyalTS/Application/SVG_AddGeneralCustomize_32.svg#img_header) Customize Add Menu
+## ![](/r2021/images/RoyalTS/Application/SVG_AddGeneralCustomize_32.svg#img_header) Customize Add Menu
 The **Customize Add Menu** page allows you to configure which object types to show in the Add... menu.
 
-## ![](/images/RoyalTS/Application/SVG_PageKeyboard_32.svg#img_header) Keyboard Shortcuts
+## ![](/r2021/images/RoyalTS/Application/SVG_PageKeyboard_32.svg#img_header) Keyboard Shortcuts
 The **Keyboard Shortcuts** page allows you to configure keyboard shortcuts to commands or custom context commands.  
 
 See also [Commands](xref:royalts_ui_commands#-keyboard-shortcuts).
 
-## ![](/images/RoyalTS/Application/SVG_Notifications_32.svg#img_header) Notifications
+## ![](/r2021/images/RoyalTS/Application/SVG_Notifications_32.svg#img_header) Notifications
 The **Notifications** page allows you to configure the actions in Royal TS which can show Windows notifications.
 
 #### Document and file operations
@@ -390,7 +390,7 @@ If enabled, connection activities may show a Windows notification.
 #### Plugins
 If enabled, plugins may show a Windows notification.
 
-## ![](/images/RoyalTS/Application/SVG_EditSort_32.svg#img_header) Default Sort Settings
+## ![](/r2021/images/RoyalTS/Application/SVG_EditSort_32.svg#img_header) Default Sort Settings
 The **Default Sort Settings** page allows you to configure the default sort criteria when you click the Sort command on the Home or Edit tab in the Move & Sort group.
 
 Specify up to 3 sort criteria to sort your connections. Each sort criteria allows you to specify the object property to sort and whether to sort ascending or descending.
@@ -398,7 +398,7 @@ Specify up to 3 sort criteria to sort your connections. Each sort criteria allow
 #### Apply to Subfolders
 If checked, all subfolders are sorted as well when you click the Sort command.
 
-## ![](/images/RoyalTS/Application/SVG_ActionSaveScreenshot_32.svg#img_header) Screenshots
+## ![](/r2021/images/RoyalTS/Application/SVG_ActionSaveScreenshot_32.svg#img_header) Screenshots
 The **Screenshots** page allows you to configure where and how Royal TS stores screenshots. The screenshot file format is PNG and the name is automatically generated based on the current date and time and the connection name. By default, screenshots are saved in the user's Picture folder in the directory "Royal TS".
 
 #### Use Custom File Name
@@ -410,13 +410,13 @@ Check to specify a custom folder where Royal TS saves all the screenshots.
 #### Limit Screenshot Size
 Check this option to limit the screenshot size and ensure not to exceed the number of pixels in width or height.
 
-## ![](/images/RoyalTS/Application/SVG_PageTabScan_32.svg#img_header) Tab Scan
+## ![](/r2021/images/RoyalTS/Application/SVG_PageTabScan_32.svg#img_header) Tab Scan
 The **Tab Scan** page allows you to configure automatic scanning through all open tabs. Tab scanning can be switched on and off using the View tab on the ribbon or the command line.
 
 #### Interval
 The number of seconds each tab page should be shown before Royal TS will select the next one.
 
-## ![](/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header) Logging
+## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header) Logging
 The **Logging** page allows you to configure how Royal TS keeps records of user activity, error and debug information. 
 
 ### Internal Logging
@@ -510,7 +510,7 @@ Specify the name of the trace file.
 #### Overwrite File on Application Start
 If checked, the trace file is overwritten when Royal TS starts, otherwise the trace messages will be appended to the existing file.
 
-## ![](/images/RoyalTS/Application/SVG_PageTroubleshooting_32.svg#img_header) Troubleshooting
+## ![](/r2021/images/RoyalTS/Application/SVG_PageTroubleshooting_32.svg#img_header) Troubleshooting
 The **Troubleshooting** page allows you to specify your contact information that will be appended to the error reports by Royal TS and also lets you reset application settings.
 
 ### Error Reporting
@@ -541,7 +541,7 @@ The recent files and folder list in the backstage view/application menu will be 
 #### Reset All Settings
 All the above settings as well as all options are reset.
 
-## ![](/images/RoyalTS/Application/SVG_PageProxy_32.svg#img_header) Proxy Server
+## ![](/r2021/images/RoyalTS/Application/SVG_PageProxy_32.svg#img_header) Proxy Server
 The **Proxy Server** page allows you to enable online communication for Royal TS through a proxy server with optional authentication.
 
 #### Use a Proxy Server
@@ -562,7 +562,7 @@ Provide a password if your proxy needs authentication. Leave blank if you do not
 > [!Important]
 > It's strongly recommended to encrypt and password protect your Application document if you need to enter a proxy username and password.
 
-## ![](/images/RoyalTS/Application/SVG_ScriptPaths_32.svg#img_header) Script Interpreter
+## ![](/r2021/images/RoyalTS/Application/SVG_ScriptPaths_32.svg#img_header) Script Interpreter
 To use the dynamic folder or dynamic credential feature, scripts must be executed on your system. Configure the path to the script interpreter executables for each supported scripting language.
 
 #### Script Interpreter
@@ -582,5 +582,5 @@ If checked the -noprofile parameter will be used.
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 
-## ![](/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header) Custom Field Labels
+## ![](/r2021/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header) Custom Field Labels
 The **Custom Field Label** page allows you to enter labels used for the Custom Fields in other objects. The custom field labels are also shown in the **Folder Dashboard** views as well as in the **Properties** panel.

@@ -4,7 +4,7 @@ name: TeamViewer
 order: 9910
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/TeamViewer/SVG_PluginIcon_32.svg#img_header) TeamViewer
+# ![](/r2021/images/RoyalTS/Plugins/Connections/TeamViewer/SVG_PluginIcon_32.svg#img_header) TeamViewer
 The **TeamViewer** connection can be used to connect to remote computers using [TeamViewer](https://www.teamviewer.com/).
 
 ## Dashboard

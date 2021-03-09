@@ -5,7 +5,7 @@ order: 7010
 
 # Documents
 
-<img src="/images/RoyalServer/RoyalDocument_Flat_48x48.png" class="icon-def" alt="" />
+<img src="/r2021/images/RoyalServer/RoyalDocument_Flat_48x48.png" class="icon-def" alt="" />
 
 The  Documents panel displays and changes the documents hosted by the Document Store component of Royal Server.
 

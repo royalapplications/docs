@@ -6,7 +6,7 @@ order: 10000
 
 # Panels
 
-## ![](/images/RoyalTS/Application/SVG_PageNavigation_32.svg#img_header) [Navigation]
+## ![](/r2021/images/RoyalTS/Application/SVG_PageNavigation_32.svg#img_header) [Navigation]
 The **Navigation** panel displays folders and objects from the application document and all opened documents. It's one of the main interface components to interact with your documents and objects. If the Navigation panel is closed or hidden, click on **Navigation** on the **View** tab, in the **Panels** group, to show and activate the panel.
 
 > [!Note]
@@ -21,12 +21,12 @@ The **Navigation** panel displays folders and objects from the application docum
 > [!Tip]
 > Hold the **CTRL** key while during drag & drop to duplicate the object.
 
-## ![](/images/RoyalTS/Application/SVG_PageDashboard_32.svg#img_header) Dashboard
+## ![](/r2021/images/RoyalTS/Application/SVG_PageDashboard_32.svg#img_header) Dashboard
 The **Dashboard** panel displays different content based on the selection from the Navigation panel. If the dashboard is tabbed (default) and the selected object is not connected, it will be automatically selected. To show or activate the Dashboard panel, click on **Dashboard** on the **View** tab, in the **Panels** group.
 
 In case a connection is selected, you will see the dashboard for the selected connection. For common objects, Royal TS will display one of the [Dashboards](xref:royalts_ui_dashboards) depending on the selected object.
 
-## ![](/images/RoyalTS/Application/SVG_ApplicationPanelProperties_32.svg#img_header) Properties
+## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationPanelProperties_32.svg#img_header) Properties
 The **Properties** panel displays the properties for the current selection. To show or activate the Properties panel, click on **Properties** on the **View** tab, in the **Panels** group.
 
 #### Features
@@ -35,7 +35,7 @@ The **Properties** panel displays the properties for the current selection. To s
 - Execute assigned tasks using the context menu.
 - Shell-execute for custom field values (place web site URLs or commands in the custom fields).
 
-## ![](/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header) Notes
+## ![](/r2021/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header) Notes
 The **Notes** panel displays the notes (read-only) for the current selection. To edit or update the notes for the selected object, click on the Edit Notes button. To show or activate the Notes click on **Notes** on the **View** tab, in the **Panels** group.
 
 #### Features
@@ -47,7 +47,7 @@ The **Notes** panel displays the notes (read-only) for the current selection. To
 > [!Tip]
 > To embed images, drag them into the notes editor using drag & drop.
 
-## ![](/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Credentials
+## ![](/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Credentials
 The **Credentials** panel displays a filtered tree view of all available credentials. To show or activate the Credentials panel, click on **Credentials** on the **View** tab, in the **Panels** group.
 
 #### Features
@@ -56,7 +56,7 @@ The **Credentials** panel displays a filtered tree view of all available credent
 
 See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](royalts_reference_credential)
 
-## ![](/images/RoyalTS/Application/SVG_Todo_32.svg#img_header) To-Do Items
+## ![](/r2021/images/RoyalTS/Application/SVG_Todo_32.svg#img_header) To-Do Items
 The **To-Do Items** panel displays a filtered tree view of all available To-Do items. To show or activate the To-Do Items panel, click on **To-Do Items** on the **View** tab, in the **Panels** group.
 
 #### Features
@@ -64,7 +64,7 @@ The **To-Do Items** panel displays a filtered tree view of all available To-Do i
 
 See also: [Working with To-Do Items](xref:royalts_tutorials_todo), [To-Do Item](xref:royalts_reference_organization_todo)
 
-## ![](/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header) Tasks
+## ![](/r2021/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header) Tasks
 The **Tasks** panel displays a filtered tree view of all available tasks. To show or activate the Tasks panel, click on **Tasks** on the **View** tab, in the **Panels** group.
 
 #### Features
@@ -76,7 +76,7 @@ The **Tasks** panel displays a filtered tree view of all available tasks. To sho
 
 See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_commandtask)
 
-## ![](/images/RoyalTS/Application/SVG_ApplicationPanelKeySequence_32.svg#img_header) Key Sequence Broadcaster
+## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationPanelKeySequence_32.svg#img_header) Key Sequence Broadcaster
 The **Key Sequence Broadcaster** panel allows you to send keyboard input to multiple active connections.To show or activate the Key Sequence Broadcaster panel, click on **Key Sequence Broadcaster** on the **View** tab, in the **Panels** group.
 
 #### Features
@@ -95,7 +95,7 @@ The **Key Sequence Broadcaster** panel allows you to send keyboard input to mult
 
 See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_commandtask)
 
-## ![](/images/RoyalTS/Application/SVG_ViewTunnels_32.svg#img_header) Active Tunnels
+## ![](/r2021/images/RoyalTS/Application/SVG_ViewTunnels_32.svg#img_header) Active Tunnels
 The **Active Tunnels** panel displays a list of all connections which are tunneled using a Secure Gateway or a [Royal Server](xref:royalts_intro_royalserver).To show or activate the Active Tunnels panel, click on **Active Tunnels** on the **View** tab, in the **Panels** group.
 
 #### Features
@@ -111,7 +111,7 @@ The **Active Tunnels** panel displays a list of all connections which are tunnel
 
 See also: [Introducing Royal Server](xref:royalts_intro_royalserver)
 
-## ![](/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header) Log
+## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header) Log
 The **Log** panel displays internal log entries. Internal logging (if enabled) keeps records about the user activity (such as connect or disconnect events) as well as application errors and warnings. To show or activate the Credentials panel, click on **Log** on the **View** tab, in the **Panels** group.
 
 #### Features

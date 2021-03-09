@@ -4,7 +4,7 @@ name: Remote Desktop Gateway
 order: 9970
 ---
 
-## ![](/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
+## ![](/r2021/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
 Remote Desktop connection types support connecting through a Remote Desktop Gateway.
 
 ## Usage of a Remote Desktop Gateway

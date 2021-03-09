@@ -33,16 +33,16 @@ All dock-able panels can be hidden automatically (Auto Hide). Panels set to auto
 ### Available Panels
 | Icon | Panel | Description |
 | :--: | :---: | ----------- |
-| ![](/images/RoyalTS/Application/SVG_PageNavigation_32.svg#img_table) | [Navigation](xref:royalts_ui_panels#-navigation) | Displays folders and objects from the Application document and all opened documents. |
-| ![](/images/RoyalTS/Application/SVG_PageDashboard_32.svg#img_table) | [Dashboard](xref:royalts_ui_panels#-dashboard) | Displays various dashboards depending on the selection in the **Navigation** panel. |
-| ![](/images/RoyalTS/Application/SVG_ApplicationPanelProperties_32.svg#img_table) | [Properties](xref:royalts_ui_panels#-properties) | Displays the configuration in a property grid for the selected object. |
-| ![](/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_table) | [Notes](xref:royalts_ui_panels#-notes) | Displays the notes you may have stored for the selected object. |
-| ![](/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_table) | [Credentials](xref:royalts_ui_panels#-credentials) | Displays a filtered view of all your credentials from the Application document and all opened documents. |
-| ![](/images/RoyalTS/Application/SVG_Todo_32.svg#img_table) | [To-Do Items](xref:royalts_ui_panels#-to-do-items) | Displays a filtered view of all your To-Do Items from the Application document and all opened documents. |
-| ![](/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_table) | [Tasks](xref:royalts_ui_panels#-tasks) | Displays a filtered view of all your tasks from the Application document and all opened documents. |
-| ![](/images/RoyalTS/Application/SVG_ApplicationPanelKeySequence_32.svg#img_table) | [Key Sequence Broadcaster](xref:royalts_ui_panels#-key-sequence-broadcaster) | Displays a panel to broadcast key sequences to multiple connections. |
-| ![](/images/RoyalTS/Application/SVG_ViewTunnels_32.svg#img_table) | [Active Tunnels](xref:royalts_ui_panels#-active-tunnels) | Displays all Secure Gateway tunnels which are currently open and in use. |
-| ![](/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_table) | [Log](xref:royalts_ui_panels#-log) | Displays the internal log for troubleshooting and usage statistics. |
+| ![](/r2021/images/RoyalTS/Application/SVG_PageNavigation_32.svg#img_table) | [Navigation](xref:royalts_ui_panels#-navigation) | Displays folders and objects from the Application document and all opened documents. |
+| ![](/r2021/images/RoyalTS/Application/SVG_PageDashboard_32.svg#img_table) | [Dashboard](xref:royalts_ui_panels#-dashboard) | Displays various dashboards depending on the selection in the **Navigation** panel. |
+| ![](/r2021/images/RoyalTS/Application/SVG_ApplicationPanelProperties_32.svg#img_table) | [Properties](xref:royalts_ui_panels#-properties) | Displays the configuration in a property grid for the selected object. |
+| ![](/r2021/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_table) | [Notes](xref:royalts_ui_panels#-notes) | Displays the notes you may have stored for the selected object. |
+| ![](/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_table) | [Credentials](xref:royalts_ui_panels#-credentials) | Displays a filtered view of all your credentials from the Application document and all opened documents. |
+| ![](/r2021/images/RoyalTS/Application/SVG_Todo_32.svg#img_table) | [To-Do Items](xref:royalts_ui_panels#-to-do-items) | Displays a filtered view of all your To-Do Items from the Application document and all opened documents. |
+| ![](/r2021/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_table) | [Tasks](xref:royalts_ui_panels#-tasks) | Displays a filtered view of all your tasks from the Application document and all opened documents. |
+| ![](/r2021/images/RoyalTS/Application/SVG_ApplicationPanelKeySequence_32.svg#img_table) | [Key Sequence Broadcaster](xref:royalts_ui_panels#-key-sequence-broadcaster) | Displays a panel to broadcast key sequences to multiple connections. |
+| ![](/r2021/images/RoyalTS/Application/SVG_ViewTunnels_32.svg#img_table) | [Active Tunnels](xref:royalts_ui_panels#-active-tunnels) | Displays all Secure Gateway tunnels which are currently open and in use. |
+| ![](/r2021/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_table) | [Log](xref:royalts_ui_panels#-log) | Displays the internal log for troubleshooting and usage statistics. |
 
 ## Tabs
 By default, the [Dashboard panel](xref:royalts_ui_panels#-dashboard) is tabbed to the tab bar. Each connected session is represented by a tab in the tab bar. Connection tabs cannot be docked like dock panels. You can drag connection tabs to rearrange them in the tab bar and can also be dragged out to create floating windows from connection tabs.

@@ -4,7 +4,7 @@ name: Web Page (Chrome)
 order: 9920
 ---
 
-# ![](/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header) Web Page (Chrome)
+# ![](/r2021/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header) Web Page (Chrome)
 The **Web Page** connection can be used to display web pages and integrate web based administration consoles.
 
 ## Dashboard
@@ -36,7 +36,7 @@ The Web Page (Chrome) Properties dialog is shown:
 - for an existing Web Page connection by selecting a Web Page connection which is configured to use the Chrome based plugin and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Web Page connections which are configured to use the Chrome based plugin were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIconConnection_32.svg#img_header) Web Page Properties
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIconConnection_32.svg#img_header) Web Page Properties
 The **Web Page** property page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
@@ -57,7 +57,7 @@ Enter the web page URL for this connection.
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
-## ![](/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced Web Page settings.
 
 ### General
@@ -89,7 +89,7 @@ If enabled, Royal TS will include the authentication header for basic authentica
 #### Ignore Certificate Errors
 If checked, the certificate errors are suppressed.
 
-## ![](/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header) Engine
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header) Engine
 The **Engine** settings page allows you to create a dedicated Browser Engine for isolation. You can set various options like JavaScript, Proxy or security related options.
 
 #### Use Dedicated Engine
@@ -174,7 +174,7 @@ Specify additional command line switches to the Chromium engine separated by bla
 #### Custom CSS
 Specify one or more style rules which should be applied to the document.
 
-## ![](/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageCustomContent_32.svg#img_header) Custom Content
+## ![](/r2021/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageCustomContent_32.svg#img_header) Custom Content
 The **Custom Content** page allows you to define a custom content (HTML page) to load instead of loading an URL.
 
 #### Custom Content

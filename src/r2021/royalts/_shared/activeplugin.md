@@ -1,4 +1,4 @@
-## ![](/images/RoyalTS/Application/SVG_ApplicationPlugins_32.svg#img_header) Active Plugin
+## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationPlugins_32.svg#img_header) Active Plugin
 The **Active Plugin** page allows you to setup which plugin should be used for this connection.
 
 #### Use Application Default Setting
