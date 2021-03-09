@@ -10,7 +10,7 @@ The **VMware** connection can be used to display VMware guest instances from one
 ## Dashboard
 The **VMware Dashboard** is shown in the **Dashboard** panel when you select a VMware connection in the **Navigation** panel.
 
-![VMware_Dashboard](/images/RoyalTS/Plugins/Connections/VMware/vmware_dashboard.png)
+![VMware_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/VMware/vmware_dashboard.png)
 
 ## Dashboard Features
 - List of all hosted VMware guests (or instances) and their state.

@@ -10,7 +10,7 @@ The **External Application** connection can be used to integrate external applic
 ## Dashboard
 The **External Application Dashboard** is shown in the **Dashboard** panel when you select an External Application connection in the **Navigation** panel. It can be configured to show windows of currently running processes. Use the **Connect (Ad Hoc)** button in the toolbar to create a new ad hoc external application connection based on the selection. You can move the resulting connection to your document by using drag & drop.
 
-![ExternalApp_Dashboard](/images/RoyalTS/Plugins/Connections/ExternalApp/externalapp_dashboard.png)
+![ExternalApp_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/ExternalApp/externalapp_dashboard.png)
 
 ## Dashboard Features
 Enumerates and shows a list of all windows available from the currently running processes.

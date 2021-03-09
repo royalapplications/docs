@@ -10,7 +10,7 @@ The **Terminal** connection based on PuTTY can be used to connect to remote comp
 ## Dashboard
 The **Terminal Dashboard** is shown in the **Dashboard** panel when you select a Terminal connection based on the PuTTY plugin in the **Navigation** panel. The dashboard will show files with the extension .log. Logging and recording configuration can be found in [Logging](#logging).
 
-![PuTTY_Dashboard](/images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png)
+![PuTTY_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png)
 
 ## Dashboard Features
 - Click the **Open in Explorer** button to open the folder containing the selected file in Windows Explorer.

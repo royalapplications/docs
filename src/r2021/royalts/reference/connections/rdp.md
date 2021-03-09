@@ -10,7 +10,7 @@ The **Remote Desktop** connection *(based on Microsoft RDP ActiveX)* can be used
 ## Dashboard
 The **Remote Desktop Dashboard** is shown in the **Dashboard** panel when you select a Remote Desktop connection in the **Navigation** panel. Depending on the Hyper-V configuration of your connection you will either see the **Hyper-V** dashboard pane, the **Sessions** dashboard pane, or both.
 
-![RemoteDesktop_Dashboard](/images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png)
+![RemoteDesktop_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png)
 
 ## Hyper-V Features
 -   List of all hosted Hyper-V guests (or instances) and their state.

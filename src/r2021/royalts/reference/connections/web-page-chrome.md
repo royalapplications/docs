@@ -10,7 +10,7 @@ The **Web Page** connection can be used to display web pages and integrate web b
 ## Dashboard
 The **Web Page Dashboard** is shown in the **Dashboard** panel when you select a Web Page connection in the **Navigation** panel. It can be configured to immediately show the web page - without actually connecting to the session.
 
-![WebPageChrome_Dashboard](/images/RoyalTS/Plugins/Connections/WebPageChrome/chrome_dashboard.png)
+![WebPageChrome_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/WebPageChrome/chrome_dashboard.png)
 
 ## Dashboard Features
 - Basic browser functions (Home, Back, Forward, Refresh).

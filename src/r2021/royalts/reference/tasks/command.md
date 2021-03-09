@@ -11,7 +11,7 @@ order: 10000
 ## Dashboard
 The **Task Dashboard** is shown in the **Dashboard** panel when you select a Command Task in the **Navigation** panel.
 
-![CommandTask_Dashboard](/images/RoyalTS/Plugins/Tasks/CommandTask/commandtask_dashboard.png)
+![CommandTask_Dashboard](/r2021/images/RoyalTS/Plugins/Tasks/CommandTask/commandtask_dashboard.png)
 
 ## Assignments
 - The grid on the top shows connections or folders which are configured to use the selected task as Connect, Disconnect or Key Sequence Task

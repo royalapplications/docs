@@ -10,10 +10,10 @@ The **PowerShell Connection** can be used to execute a PowerShell command or scr
 ## Dashboard
 The results of the **PowerShell** script is shown in the **Dashboard** panel when you select a PowerShell Connection in the **Navigation** panel.
 
-![PowerShell_Dashboard_01](/images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_01.png)
+![PowerShell_Dashboard_01](/r2021/images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_01.png)
 
 The dashboard can also display the script output as text:
-![PowerShell_Dashboard_02](/images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_02.png)
+![PowerShell_Dashboard_02](/r2021/images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_02.png)
 
 ## Dashboard Features
 - Displays the result of a PowerShell command or script executed on one or more computers.

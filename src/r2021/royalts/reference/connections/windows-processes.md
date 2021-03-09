@@ -10,7 +10,7 @@ The **Windows Processes** connection can be used to display Windows processes fr
 ## Dashboard
 The **Windows Processes** are shown in the **Dashboard** panel when you select a Windows Processes connection in the **Navigation** panel.
 
-![WindowsProcesses_Dashboard](/images/RoyalTS/Plugins/Connections/WindowsProcesses/windowsprocesses_dashboard.png)
+![WindowsProcesses_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/WindowsProcesses/windowsprocesses_dashboard.png)
 
 ## Dashboard Features
 - List of windows processes from one or more computers.

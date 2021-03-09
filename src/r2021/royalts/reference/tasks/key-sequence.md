@@ -10,7 +10,7 @@ A **Key Sequence Task** allows you to send a sequence of key strokes (like a rec
 ## Dashboard
 The **Task Dashboard** is shown in the **Dashboard** panel when you select a Command Task in the **Navigation** panel.
 
-![KeySequenceTask_Dashboard](/images/RoyalTS/Plugins/Tasks/KeySequenceTask/keysequencetask_dashboard.png)
+![KeySequenceTask_Dashboard](/r2021/images/RoyalTS/Plugins/Tasks/KeySequenceTask/keysequencetask_dashboard.png)
 
 ## Assignments
 - The grid on the top shows connections or folders which are configured to use the selected task as **Connect, Disconnect or Key Sequence Task**

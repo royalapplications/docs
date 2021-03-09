@@ -10,7 +10,7 @@ The **Terminal Services** connection can be used to display terminal sessions fr
 ## Dashboard
 The **Terminal Services Dashboard** is shown in the **Dashboard** panel when you select a Terminal Services connection in the **Navigation** panel.
 
-![TerminalServices_Dashboard](/images/RoyalTS/Plugins/Connections/TerminalServices/terminalservices_dashboard.png)
+![TerminalServices_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/TerminalServices/terminalservices_dashboard.png)
 
 ## Dashboard Features
 - List of all terminal services sessions and their state.

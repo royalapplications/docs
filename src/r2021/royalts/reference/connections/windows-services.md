@@ -10,7 +10,7 @@ The **Windows Services** connection can be used to display Windows services from
 ## Dashboard
 The **Windows Services** are shown in the **Dashboard** panel when you select a Windows Services connection in the **Navigation** panel.
 
-![WindowsServices_Dashboard](/images/RoyalTS/Plugins/Connections/WindowsServices/windowsservices_dashboard.png)
+![WindowsServices_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/WindowsServices/windowsservices_dashboard.png)
 
 ## Dashboard Features
 - List of windows services from one or more computers.

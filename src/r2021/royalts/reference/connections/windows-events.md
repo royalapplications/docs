@@ -10,7 +10,7 @@ The **Windows Events View** can be used to display Windows Events from one or mo
 ## Dashboard
 The **Windows Events View** is shown in the **Dashboard** panel when you select a Windows Events View in the **Navigation** panel.
 
-![WindowsEvents_Dashboard](/images/RoyalTS/Plugins/Connections/WindowsEvents/windowsevents_dashboard.png)
+![WindowsEvents_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/windowsevents_dashboard.png)
 
 ## Dashboard Features
 - List of windows events from one or more computers.

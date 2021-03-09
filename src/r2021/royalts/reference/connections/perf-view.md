@@ -10,7 +10,7 @@ The **Performance View** connection can be used to show real time performance co
 ## Dashboard
 The **Performance View Dashboard** is shown in the **Dashboard** panel when you select an Performance View connection in the **Navigation** panel. It can be configured to immediately show the performance data - without actually connecting to the session.
 
-![Performance_Dashboard](/images/RoyalTS/Plugins/Connections/Performance/performance_dashboard.png)
+![Performance_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/Performance/performance_dashboard.png)
 
 ## Dashboard Features
 - **Pause Sampling** pauses/resumes sampling.

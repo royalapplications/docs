@@ -10,7 +10,7 @@ The **Hyper-V** connection can be used to display Hyper-V guest instances from o
 ## Dashboard
 The **Hyper-V Dashboard** is shown in the **Dashboard** panel when you select a Hyper-V connection in the **Navigation** panel.
 
-![HyperV_Dashboard](/images/RoyalTS/Plugins/Connections/HyperV/hyperv_dashboard.png)
+![HyperV_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/HyperV/hyperv_dashboard.png)
 
 ## Dashboard Features
 - List of all hosted Hyper-V guests (or instances) and their state.
