@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+  <style type="text / css">
+    .Red{fill:#CD4C32;}
+    .Green{fill:#4EA17E;}
+    .Blue{fill:#3E79B4;}
+    .Yellow{fill:#EAB765;}
+    .Black{fill:#797979;}
+    .Gray{fill:#B4B4B5;}
+    .White{fill:#FFFFFF;}
+  </style>
+  <g id="icon">
+    <path fill="#797979" class="Black" d="M13.124,31.021c-1.552,0,-3.521,-0.415,-5.938,-1.248c-2.895,-0.997,-5.336,-2.23,-5.438,-2.282c-0.493,-0.25,-0.689,-0.851,-0.44,-1.344c0.25,-0.492,0.851,-0.69,1.344,-0.44c3.595,1.821,10.07,4.238,12.139,2.966c0.261,-0.161,0.609,-0.478,0.609,-1.374c0,-0.552,0.448,-1,1,-1s1,0.448,1,1c0,1.751,-0.85,2.641,-1.563,3.079C15.14,30.807,14.239,31.021,13.124,31.021z" />
+    <path fill="#3E79B4" class="Blue" d="M25,11.983v7.454c0,0.546,-0.244,1.063,-0.666,1.41l-5.82,5.628c-0.329,0.335,-0.778,0.523,-1.248,0.523h-1.533c-0.469,0,-0.919,-0.189,-1.248,-0.523l-5.82,-5.628c-0.421,-0.347,-0.666,-0.864,-0.666,-1.41v-7.454c0,-0.543,0.44,-0.983,0.983,-0.983h15.033C24.56,11,25,11.44,25,11.983z" />
+    <rect fill="#FFFFFF" class="White" x="10.5" y="1.5" width="12" height="9" />
+    <path fill="#797979" class="Black" d="M11,10.5V2h11v8.5h1V1.5c0,-0.276,-0.224,-0.5,-0.5,-0.5H10.5c-0.276,0,-0.5,0.224,-0.5,0.5v9H11z" />
+    <path fill="#797979" class="Black" d="M15,6h-2V4h2V6zM20,4h-2v2h2V4z" />
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+  <style type="text / css">
+    .Red{fill:#CD4C32;}
+    .Green{fill:#4EA17E;}
+    .Blue{fill:#3E79B4;}
+    .Yellow{fill:#EAB765;}
+    .Black{fill:#797979;}
+    .Gray{fill:#B4B4B5;}
+    .White{fill:#FFFFFF;}
+  </style>
+    <g id="icon">
+        <path fill="#3E79B4" class="Blue" d="M29.6,3L2.4,3C1.627,3 1,3.627 1,4.4L1,8L31,8L31,4.4C31,3.627 30.373,3 29.6,3Z" />
+        <g transform="matrix(1.02367,0,0,1.00989,-0.412584,-0.0790914)">
+            <rect fill="#797979" class="Black" x="2" y="8" width="28" height="21" />
+        </g>
+        <path fill="#797979" class="Black" d="M30,8L30.001,29L2,29L2,8L1,8L1,29C1,29.551 1.449,30 2,30L30,30C30.551,30 31,29.551 31,29L31,8L30,8Z" />
+    </g>
+</svg>

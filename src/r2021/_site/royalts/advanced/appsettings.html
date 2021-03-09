@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Application Settings </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Application Settings ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_advanced_appsettings">
+<h1 id="application-settings">Application Settings</h1>
+
+<h2 id="general-information">General Information</h2>
+<p>In Royal TS V6 we removed the RoyalTS.exe.config XML configuration file. Instead we are now looking for an <code>appsettings.json</code> file or individual settings in the environment variables.</p>
+<p>You can find a sample file <code>appsettings-sample.json</code> in the installation directory.</p>
+<h2 id="configuration-provider">Configuration Provider</h2>
+<p>Royal TS supports different configuration provider to apply the application settings. The order and priority of the configuration providers is:</p>
+<pre><code class="lang-none"> 1. JSON File in Configuration Path (always %appdata%\code4ward)
+ 2. =&gt; JSON File in Application Path
+ 3.    =&gt; Environment Variables
+ 4.       =&gt; Registry (Current User)
+ 5.          =&gt; Registry (Local Machine)
+ ^
+ Priority
+</code></pre>
+<p>Royal TS will read, parse and process the configuration in the above order whenever Royal TS is started. If there are conflicting settings, the <strong>configuration provider with the higher priority will overwrite the setting from the lower priority</strong>.</p>
+<h3 id="json-file-configuration-path">JSON File (Configuration Path)</h3>
+<p>Place a JSON file in the configuration path. The configuration path is always:</p>
+<pre><code class="lang-batchfile">%APPDATA%\code4ward
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot change the configuration path for the <code>appsettings.json</code> file but you can set the configuration path in the <code>appsettings.json</code> file for all settings within Royal TS which refer to the configuration path. This is useful when you want to make Royal TS <strong>portable</strong>.</p>
+</div>
+<p>Here's the sample JSON file:</p>
+<pre><code class="lang-javascript">{
+  &quot;RoyalTS&quot;: {
+    &quot;ShowSplashScreen&quot;: true,
+    &quot;TemporaryFiles&quot;: &quot;%TEMP%&quot;,
+    &quot;ConfigurationPath&quot;: &quot;%APPDATA%\\code4ward&quot;,
+    &quot;LocalConfigurationPath&quot;: &quot;%LOCALAPPDATA%&quot;
+  } 
+}
+</code></pre>
+<h3 id="json-file-application-path">JSON File (Application Path)</h3>
+<p>Place a JSON file in the application path (install path) where RoyalTS.exe is located. The default path is:</p>
+<pre><code class="lang-batchfile">%ProgramFiles%\RoyalTS V6
+</code></pre>
+<p>Create or deploy a JSON file in the above directory with the name:</p>
+<pre><code class="lang-batchfile">%ProgramFiles%\Royal TS V6\appsettings.json
+</code></pre>
+<h3 id="environment-variables">Environment Variables</h3>
+<p>Create environment variables like this:</p>
+<pre><code class="lang-batchfile">RTS_RoyalTS__ShowSplashScreen = False
+RTS_RoyalTS__ConfigurationPath = C:\somepath\RoyalTS
+</code></pre>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>Please note that the first seperator of the prefix (RTS_) has only <strong>one underscore character</strong> and the seperator between the object type and the property name (for example ...RoyalTS__ShowSplashScreen) has <strong>two underscore characters</strong>.</p>
+</div>
+<h3 id="registry-current-user">Registry (Current User)</h3>
+<p>Create the following registry key by script or using group policies:</p>
+<pre><code class="lang-batchfile">[HKEY_CURRENT_USER\Software\Policies\RoyalApps\RoyalTS]
+&quot;ShowSplashScreen&quot;=&quot;false&quot;
+&quot;ConfigurationPath&quot;=&quot;C:\somepath\RoyalTS&quot;
+</code></pre>
+<h3 id="registry-local-machine">Registry (Local Machine)</h3>
+<p>Create the following registry key by script or using group policies:</p>
+<pre><code class="lang-batchfile">[HKEY_LOCAL_MACHINE\Software\Policies\RoyalApps\RoyalTS]
+&quot;ShowSplashScreen&quot;=&quot;false&quot;
+&quot;ConfigurationPath&quot;=&quot;C:\somepath\RoyalTS&quot;
+</code></pre>
+<h2 id="settings">Settings</h2>
+<h3 id="showsplashscreen">ShowSplashScreen</h3>
+<p>Default Value: <code>True</code>
+Shows the splash screen when Royal TS starts.</p>
+<p><code>False</code>
+Does not show the splash screen when Royal TS starts.</p>
+<h3 id="temporaryfiles">TemporaryFiles</h3>
+<p>Default Value: <code>%TEMP%</code>
+The path Royal TS is using for temporary files like:</p>
+<ul>
+<li>local file copy when editing files using the File Transfer connection</li>
+<li>dynamic folder scripts</li>
+<li>key files for PuTTY</li>
+<li>temporary VNC files</li>
+<li>browser cache for Web Page connection using Chromium engine</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The content of this directory will be deleted when Royal TS is closed.</p>
+</div>
+<h3 id="configurationpath">ConfigurationPath</h3>
+<p>Default Value: <code>%APPDATA%\\code4ward</code>
+The path Royal TS is using for roaming configuration files like:</p>
+<ul>
+<li>settings (<em>Application</em> document)</li>
+<li>license information</li>
+<li>keyboard shortcut configuration</li>
+<li>ribbon customization</li>
+<li>plugin settings</li>
+<li>user specific settings</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To make Royal TS <em>portable</em>, make sure you set the configuration path to a directory which is available whenever Royal TS is started.</p>
+</div>
+<h3 id="localconfigurationpath">LocalConfigurationPath</h3>
+<p>Default Value: <code>%LOCALAPPDATA%</code>
+The path Royal TS is using for local files which are not available when users roam.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://royalapplications.visualstudio.com/Royal%20Applications/_git/Royal%20Applications?path=RoyalTS/Documentation/docfx_project/royalts/advanced/appsettings.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

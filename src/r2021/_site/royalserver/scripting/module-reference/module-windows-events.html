@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Module Windows Events (EventLog) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Module Windows Events (EventLog) ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="module-windows-events-eventlog">Module Windows Events (EventLog)</h1>
+
+<p>The EventLog module can be used to query the Windows Event Log.</p>
+<blockquote>
+<p><strong>Note</strong><br>
+The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
+</blockquote>
+<h2 id="command-getentries">Command &quot;GetEntries&quot;</h2>
+<p>Gets entries of the Windows Eventlog.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>CommandProvider: either &quot;WMI&quot; or &quot;CIM&quot; is supported</li>
+<li>WQLWhereClause: a where-clause similar to the SQL language in WQL (see examples)</li>
+<li>TruncateDescription: truncates the Message description after 80 characters to reduce network traffic</li>
+<li>TimeZoneId: Timezone Id that can be used to convert time stamps. In the results, the property &quot;LoggedLocal&quot; will be adjusted to the provided timezone.</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong><br>
+The following Timezone Ids are supported (depending on the underlying Windows support):</p>
+<ul>
+<li>Afghanistan Standard Time</li>
+<li>Alaskan Standard Time</li>
+<li>Aleutian Standard Time</li>
+<li>Altai Standard Time</li>
+<li>Arab Standard Time</li>
+<li>Arabian Standard Time</li>
+<li>Arabic Standard Time</li>
+<li>Argentina Standard Time</li>
+<li>Astrakhan Standard Time</li>
+<li>Atlantic Standard Time</li>
+<li>AUS Central Standard Time</li>
+<li>Aus Central W. Standard Time</li>
+<li>AUS Eastern Standard Time</li>
+<li>Azerbaijan Standard Time</li>
+<li>Azores Standard Time</li>
+<li>Bahia Standard Time</li>
+<li>Bangladesh Standard Time</li>
+<li>Belarus Standard Time</li>
+<li>Bougainville Standard Time</li>
+<li>Canada Central Standard Time</li>
+<li>Cape Verde Standard Time</li>
+<li>Caucasus Standard Time</li>
+<li>Cen. Australia Standard Time</li>
+<li>Central America Standard Time</li>
+<li>Central Asia Standard Time</li>
+<li>Central Brazilian Standard Time</li>
+<li>Central Europe Standard Time</li>
+<li>Central European Standard Time</li>
+<li>Central Pacific Standard Time</li>
+<li>Central Standard Time</li>
+<li>Central Standard Time (Mexico)</li>
+<li>Chatham Islands Standard Time</li>
+<li>China Standard Time</li>
+<li>Cuba Standard Time</li>
+<li>Dateline Standard Time</li>
+<li>E. Africa Standard Time</li>
+<li>E. Australia Standard Time</li>
+<li>E. Europe Standard Time</li>
+<li>E. South America Standard Time</li>
+<li>Easter Island Standard Time</li>
+<li>Eastern Standard Time</li>
+<li>Eastern Standard Time (Mexico)</li>
+<li>Egypt Standard Time</li>
+<li>Ekaterinburg Standard Time</li>
+<li>Fiji Standard Time</li>
+<li>FLE Standard Time</li>
+<li>Georgian Standard Time</li>
+<li>GMT Standard Time</li>
+<li>Greenland Standard Time</li>
+<li>Greenwich Standard Time</li>
+<li>GTB Standard Time</li>
+<li>Haiti Standard Time</li>
+<li>Hawaiian Standard Time</li>
+<li>India Standard Time</li>
+<li>Iran Standard Time</li>
+<li>Israel Standard Time</li>
+<li>Jordan Standard Time</li>
+<li>Kaliningrad Standard Time</li>
+<li>Kamchatka Standard Time</li>
+<li>Korea Standard Time</li>
+<li>Libya Standard Time</li>
+<li>Line Islands Standard Time</li>
+<li>Lord Howe Standard Time</li>
+<li>Magadan Standard Time</li>
+<li>Magallanes Standard Time</li>
+<li>Marquesas Standard Time</li>
+<li>Mauritius Standard Time</li>
+<li>Mid-Atlantic Standard Time</li>
+<li>Middle East Standard Time</li>
+<li>Montevideo Standard Time</li>
+<li>Morocco Standard Time</li>
+<li>Mountain Standard Time</li>
+<li>Mountain Standard Time (Mexico)</li>
+<li>Myanmar Standard Time</li>
+<li>N. Central Asia Standard Time</li>
+<li>Namibia Standard Time</li>
+<li>Nepal Standard Time</li>
+<li>New Zealand Standard Time</li>
+<li>Newfoundland Standard Time</li>
+<li>Norfolk Standard Time</li>
+<li>North Asia East Standard Time</li>
+<li>North Asia Standard Time</li>
+<li>North Korea Standard Time</li>
+<li>Omsk Standard Time</li>
+<li>Pacific SA Standard Time</li>
+<li>Pacific Standard Time</li>
+<li>Pacific Standard Time (Mexico)</li>
+<li>Pakistan Standard Time</li>
+<li>Paraguay Standard Time</li>
+<li>Qyzylorda Standard Time</li>
+<li>Romance Standard Time</li>
+<li>Russia Time Zone 10</li>
+<li>Russia Time Zone 11</li>
+<li>Russia Time Zone 3</li>
+<li>Russian Standard Time</li>
+<li>SA Eastern Standard Time</li>
+<li>SA Pacific Standard Time</li>
+<li>SA Western Standard Time</li>
+<li>Saint Pierre Standard Time</li>
+<li>Sakhalin Standard Time</li>
+<li>Samoa Standard Time</li>
+<li>Sao Tome Standard Time</li>
+<li>Saratov Standard Time</li>
+<li>SE Asia Standard Time</li>
+<li>Singapore Standard Time</li>
+<li>South Africa Standard Time</li>
+<li>Sri Lanka Standard Time</li>
+<li>Sudan Standard Time</li>
+<li>Syria Standard Time</li>
+<li>Taipei Standard Time</li>
+<li>Tasmania Standard Time</li>
+<li>Tocantins Standard Time</li>
+<li>Tokyo Standard Time</li>
+<li>Tomsk Standard Time</li>
+<li>Tonga Standard Time</li>
+<li>Transbaikal Standard Time</li>
+<li>Turkey Standard Time</li>
+<li>Turks And Caicos Standard Time</li>
+<li>Ulaanbaatar Standard Time</li>
+<li>US Eastern Standard Time</li>
+<li>US Mountain Standard Time</li>
+<li>UTC</li>
+<li>UTC+12</li>
+<li>UTC+13</li>
+<li>UTC-02</li>
+<li>UTC-08</li>
+<li>UTC-09</li>
+<li>UTC-11</li>
+<li>Venezuela Standard Time</li>
+<li>Vladivostok Standard Time</li>
+<li>Volgograd Standard Time</li>
+<li>W. Australia Standard Time</li>
+<li>W. Central Africa Standard Time</li>
+<li>W. Europe Standard Time</li>
+<li>W. Mongolia Standard Time</li>
+<li>West Asia Standard Time</li>
+<li>West Bank Standard Time</li>
+<li>West Pacific Standard Time</li>
+<li>Yakutsk Standard Time</li>
+</ul>
+</blockquote>
+<h2 id="examples">Examples</h2>
+<ul>
+<li><p>For all commands a destination password is required which is passed over as a securestring which is converted in PowerShell like this:</p>
+<pre><code class="lang-powershell">$destinationpassword = convertto-securestring -string &quot;your-secure-password&quot; -asplaintext -force
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>Get the latest 10 Log entries via WMI:</p>
+<pre><code class="lang-powershell">$command = &quot;GetEntries&quot;
+
+$argz =  @{&quot;CommandProvider&quot; = &quot;WMI&quot;}
+
+$response = Invoke-RoyalServerCommand -Module EventLog -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -MaxRecords 10 -DestinationUsername $username -DestinationPassword $destinationpassword
+
+$entries = $response.Responses\[0].Result
+</code></pre>
+</li>
+<li><p>Get the latest 10 Log entries via CIM:</p>
+<pre><code class="lang-powershell">$command = &quot;GetEntries&quot;
+
+$argz =  @{&quot;CommandProvider&quot; = &quot;CIM&quot;}
+
+$response = Invoke-RoyalServerCommand -Module EventLog -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -MaxRecords 10 -DestinationUsername $username -DestinationPassword $destinationpassword
+
+$entries = $response.Responses[0].Result
+</code></pre>
+</li>
+<li><p>Get the latest 10 Log entries from the Application Log (using WQL):</p>
+<pre><code class="lang-powershell">$command = &quot;GetEntries&quot;
+
+$argz =  @{&quot;WQLWhereClause&quot; = &quot;Logfile='Application'&quot;}
+
+$response = Invoke-RoyalServerCommand -Module EventLog -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -MaxRecords 10 -DestinationUsername $username -DestinationPassword $destinationpassword
+
+$entries = $response.Responses[0].Result
+</code></pre>
+</li>
+<li><p>Get log entries from the Application Log that are newer than a timestamp (using WQL):</p>
+<pre><code class="lang-powershell">$command = &quot;GetEntries&quot;
+
+$argz =  @{&quot;WQLWhereClause&quot; = &quot;LogFile='Application' AND TimeWritten &gt;= '20200224180000.111111+060'&quot;}
+
+$response = Invoke-RoyalServerCommand -Module EventLog -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword
+
+$entries = $response.Responses[0].Result
+</code></pre>
+</li>
+<li><p>Get all log entries from the Application Log that are Errors (Information=3, Warning=2, Error=1).<br>
+You can more easily specify a WQL query using Royal TS and the Advanced Filter section on a Windows Event View object.</p>
+<pre><code>```powershell
+$command = &quot;GetEntries&quot;
+
+$argz =  @{&quot;WQLWhereClause&quot; = &quot;Logfile='Application' AND EventType=1&quot;}
+
+$response = Invoke-RoyalServerCommand -Module EventLog -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword
+
+$entries = $response.Responses[0].Result
+```
+</code></pre>
+</li>
+<li><p>Get the latest log entries with truncated Messages (to reduce network communication):</p>
+<pre><code class="lang-powershell">$module = &quot;EventLog&quot;
+
+$command = &quot;GetEntries&quot;
+
+$argz =  @{&quot;TruncateDescription&quot; = &quot;true&quot;}
+
+$response= Invoke-RoyalServerCommand -Module EventLog -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword
+
+$entries = $response.Responses[0].Result
+</code></pre>
+</li>
+<li><p>Get the latest log entries with a Timezone Id:</p>
+<pre><code class="lang-powershell">$module = &quot;EventLog&quot;
+
+$command = &quot;GetEntries&quot;
+
+$argz =  @{&quot;CommandProvider&quot; = &quot;WMI&quot;; &quot;TimeZoneId&quot; = &quot;Line Islands Standard Time&quot;} #in the properties of the results the &quot;LoggedLocal&quot; property will be adjusted
+
+$response = Invoke-RoyalServerCommand -Module EventLog -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword
+
+$entries = $response.Responses[0].Result
+</code></pre>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://royalapplications.visualstudio.com/Royal%20Applications/_git/Royal%20Applications?path=RoyalTS/Documentation/docfx_project/royalserver/scripting/module-reference/module-windows-events.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

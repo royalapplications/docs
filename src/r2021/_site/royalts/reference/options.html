@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Options </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Options ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_reference_options">
+<h1 id="options"><img src="/images/RoyalTS/Application/SVG_ApplicationOptions_32.svg#img_header" alt="">Options</h1>
+
+<p>The Options dialog allows you to set application settings, manage your license and manage the deleted objects in the Application document.</p>
+<h2 id="open-the-options-dialog">Open the Options Dialog</h2>
+<ul>
+<li>Click the <strong>File</strong> tab on the ribbon and click on <strong>Options</strong> in the backstage view.</li>
+<li>In the <strong>Navigation</strong> panel, select the <strong>Application</strong> document and click on <strong>Properties</strong>.</li>
+<li>On the <strong>View</strong> tab, click on <strong>Options</strong>.</li>
+</ul>
+<h2 id="-general"><img src="/images/RoyalTS/Application/SVG_ApplicationCrown_32.svg#img_header" alt=""> General</h2>
+<h3 id="start-and-exit">Start and Exit</h3>
+<h4 id="dont-create-the-dashboard-tab">Don't create the Dashboard Tab</h4>
+<p>If checked, Royal TS will not create the Dashboard tab automatically when Royal TS starts. The Dashboard tab can be created manually using the Dashboard button on the View tab.</p>
+<p>The Application Start drop-down list offers the following settings:</p>
+<ul>
+<li><strong>Do not open any documents</strong><br>
+Royal TS will start without opening any documents.</li>
+<li><strong>Open documents from last session</strong><br>
+Royal TS will remember which documents were opened the last time you used Royal TS and will open them again when you start Royal TS.</li>
+<li><strong>Open a selection of documents</strong><br>
+Click on the Files ... button to manage a list of files to be opened when Royal TS starts.</li>
+<li><strong>Show the 'Getting Started' page</strong><br>
+If selected, Royal TS will show the Getting Started page which is shown by default when you start Royal TS for the first time.</li>
+</ul>
+<h4 id="the-reconnect-drop-down-list-offers-the-following-settings">The Reconnect drop-down list offers the following settings:</h4>
+<ul>
+<li><strong>Prompt</strong><br>
+Royal TS will prompt if there are any connections from the previous session which can be reconnected.</li>
+<li><strong>Always Reconnect</strong><br>
+Royal TS will always reconnect all connections from the previous session.</li>
+<li><strong>Never Reconnect</strong><br>
+Royal TS will never reconnect or prompt. All connections from the previous session are ignored.</li>
+</ul>
+<h4 id="show-warning-for-active-connections">Show Warning for Active Connections</h4>
+<p>If checked, Royal TS will show a warning when you close the application and connections are still active.</p>
+<h3 id="backups">Backups</h3>
+<h4 id="create-backup-file">Create .backup file</h4>
+<p>If checked, Royal TS will keep a .backup file in the same folder where the document is stored.</p>
+<h4 id="backup-automatically">Backup Automatically</h4>
+<p>If checked and configured, Royal TS will keep a configured number of backup documents on your computer. By default the backup is kept in %temp% (*.rtsbu files).</p>
+<h4 id="backup-path">Backup Path</h4>
+<p>The folder you want Royal TS to keep your document backups.</p>
+<h4 id="history">History</h4>
+<p>The number of files Royal TS should keep for your backups.</p>
+<h3 id="updates">Updates</h3>
+<h4 id="check-for-updates">Check for Updates</h4>
+<p>If checked, Royal TS will check for newer versions online. The Check Now... button can be clicked to immediately check for new versions.</p>
+<h4 id="include-beta-releases">Include Beta Releases</h4>
+<p>If checked, Royal TS will also report if a new beta release is available.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you are running a beta version, Royal TS will always check for new beta releases.</p>
+</div>
+<h4 id="collect-anonymous-usage-statistics">Collect anonymous usage statistics</h4>
+<p>If checked, Royal TS will collect usage statistics for further analysis.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Sharing anonymous application usage statistics is very helpful to improve Royal TS. This information helps our team to focus our development efforts in areas of high demand. Anonymous data is kept confidential and is never shared with third parties. To learn about which data we collect and why, read our <a href="https://www.royalapplications.com/ts/win/privacy">Privacy Policy</a>.</p>
+</div>
+<h3 id="ad-hoc">Ad Hoc</h3>
+<h4 id="ad-hoc-history">Ad Hoc History</h4>
+<p>Specify how many items to remember in the ad hoc connection history.</p>
+<h4 id="clear">Clear</h4>
+<p>Clears the ad hoc connection history.</p>
+<h4 id="remove-ad-hoc-connections-after-disconnect">Remove Ad Hoc Connections after Disconnect</h4>
+<p>If checked, Royal TS will automatically remove Ad Hoc connections as soon as they disconnect. If you disable this option, you have to manually delete Ad Hoc connections. All Ad Hoc connections are removed when the application is closed.</p>
+<h4 id="ad-hoc-connection-identifier">Ad Hoc connection identifier</h4>
+<p>If checked, an Ad Hoc connection name suffix is appended.</p>
+<h3 id="other">Other</h3>
+<h4 id="minimize-to-notificateion-area-systray">Minimize to Notificateion Area (Systray)</h4>
+<p>When checked, minimized windows will not be displayed in the windows taskbar. Royal TS displays an icon in the notification area (systray) for you to access minimized windows.</p>
+<h4 id="include-external-apps">Include External Apps</h4>
+<p>If checked, Royal TS will also listen to the keyboard events if it isn't the focused window. Connections like PuTTY based Terminal or external app can be switched through as well.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Enabling this setting could cause unexpected behavior, especially when you use other applications providing deep keyboard hooks. If you experience interference with other applications, turn off this option and restart Royal TS.</p>
+</div>
+<h4 id="reset-warnings-and-messages">Reset Warnings and Messages</h4>
+<p>Clicking this button will reset and show all the messages again where you checked &quot;Do not show this message again&quot;.</p>
+<h4 id="open-file-location">Open File Location</h4>
+<p>Royal TS saves all application settings and the contents of the Application document in the configuration file:</p>
+<pre><code class="lang-batchfile">%APPDATA%\code4ward\code4ward.RoyalTS.UserPreferences.config
+</code></pre>
+<p>Click this button to open the file location of the configuration file.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The default path %APPDATA%\code4ward can be changed in the RoyalTS.exe.config file (which is located in the Royal TS installation folder). This can be useful if you want to make Royal TS portable and start it from a USB memory stick.</p>
+</div>
+<h2 id="-license"><img src="/images/RoyalTS/Application/SVG_PageLicense_32.svg#img_header" alt=""> License</h2>
+<p>The License page allows you to manage or reset your Royal TS license.</p>
+<h3 id="license-information">License Information</h3>
+<h4 id="licensed-to">Licensed to</h4>
+<p>Enter the exact &quot;Licensed To&quot; text from the email you received after purchasing Royal TS.</p>
+<h4 id="license-key">License Key</h4>
+<p>Enter the exact &quot;License Key&quot; text from the email you received after purchasing Royal TS.</p>
+<h4 id="reset-license">Reset License</h4>
+<p>Click to reset your Royal TS license and revert to limited Shareware mode.<br>
+For more information about the Shareware mode, read the section Shareware Information.</p>
+<h2 id="-security"><img src="/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header" alt=""> Security</h2>
+<h3 id="-encryption"><img src="/images/RoyalTS/Application/SVG_PageEncryption_32.svg#img_header" alt=""> Encryption</h3>
+<p>If you want to store your credentials and passwords in the current document, it's recommended to provide an encryption password. Royal TS will prompt for this password when you open the document.</p>
+<h4 id="enable-encryption">Enable Encryption</h4>
+<p>Check this option to password protect your document or Application document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Password protected and encrypted documents require you to enter the password in order to open the document or edit the document properties.</p>
+<p>If you password protect and encrypt your Application document using the Options command on the VIEW tab, Royal TS will prompt you to enter the password when Royal TS starts and whenever you want to change the options.</p>
+</div>
+<h4 id="password">Password</h4>
+<p>Enter a strong password or passphrase.</p>
+<h4 id="confirm">Confirm</h4>
+<p>Confirm your password.</p>
+<p>Read more about Security and Encryption in Royal TS <a class="xref" href="../getting-started/security.html">here</a>.</p>
+<h2 id="-browser-extensions"><img src="/images/RoyalTS/Application/SVG_PageRoyalPasswords_32.svg#img_header" alt=""> Browser Extensions</h2>
+<p>The <strong>Browser Extensions</strong> page allows you to configure setting used for communication between Royal TS and the browser extensions. Royal TS allows you to access credentials from your documents in your web browser.</p>
+<h4 id="enable-browser-extensions">Enable Browser Extensions</h4>
+<p>If checked, installed browser extensions for password management are able to retrieve credential information from Royal TS for automatic logon on web sites.</p>
+<h4 id="port">Port</h4>
+<p>Specify the listener port for browser extensions.</p>
+<h4 id="verify-browser-code-signature">Verify Browser Code Signature</h4>
+<p>If checked, Royal TS will perform additional security checks to ensure credentials are accessed from the browser extension.</p>
+<h4 id="authentication-timeout">Authentication Timeout</h4>
+<p>Number of minutes after re-authentication is necessary in the browser extension.</p>
+<h4 id="reset-trusted-browser-extensions">Reset trusted browser extensions</h4>
+<p>Click to reset all trusted browser extensions. Royal TS will prompt for each extension again upon access.</p>
+<h2 id="-deleted-objects"><img src="/images/RoyalTS/Application/SVG_PageDeletedObjects_32.svg#img_header" alt=""> Deleted Objects</h2>
+<p>The <strong>Deleted Objects</strong> page allows you to configure the retention (in days) for deleted objects, recover deleted objects and purge all deleted objects permanently.</p>
+<h4 id="retention-in-days">Retention (in Days)</h4>
+<p>Specify the number of days you want to keep deleted objects in your documents.</p>
+<h4 id="recover">Recover</h4>
+<p>Select one or more deleted objects from the list and click on the Recover button. After clicking the Recover button you will be asked to specify the new destination folder for the recovered objects. You cannot recover deleted folders.</p>
+<h2 id="-user-interface"><img src="/images/RoyalTS/Application/SVG_PageUserInterface_32.svg#img_header" alt=""> User Interface</h2>
+<p>The <strong>User Interface</strong> page allows you to modify the Royal TS user interface.</p>
+<h3 id="general">General</h3>
+<h4 id="scrollbar-style">Scrollbar Style</h4>
+<p>The scrollbar style used in the application:</p>
+<ul>
+<li>Always</li>
+<li>Auto Expand</li>
+<li>Auto Hide</li>
+</ul>
+<h4 id="enable-pixel-scrolling">Enable Pixel-Scrolling</h4>
+<p>If checked, smooth pixel-scrolling will be used where possible.</p>
+<h4 id="panel-activation">Panel Activation</h4>
+<p>The mode how auto-hidden dock panels are activated:</p>
+<ul>
+<li>Hover (Default)</li>
+<li>Click</li>
+</ul>
+<h4 id="allow-animations">Allow Animations</h4>
+<p>If checked, the parent folder name of the selected connection is shown in the window title.</p>
+<h4 id="display-scaling">Display Scaling</h4>
+<ul>
+<li><strong>DPI Unaware</strong><br>
+Royal TS will render the user interface for 96 DPI. The user interface will be stretched and blurry on high DPI screens. Use this mode for best compatibility.</li>
+<li><strong>System Aware</strong><br>
+Royal TS will render the user interface according the DPI settings of the primary screen.</li>
+<li><strong>Per Monitor Aware</strong> <em>(Experimental)</em><br>
+Royal TS will adapt the user interface rendering depending on the screen that displays the user interface.</li>
+</ul>
+<h4 id="enable-directx-rendering">Enable DirectX Rendering</h4>
+<p>If checked, hardware accelerated DirectX rendering will be used where possible.</p>
+<h4 id="window-title">Window Title</h4>
+<p>Choose which information Royal TS should display on the Window title:</p>
+<ul>
+<li><strong>Document Name</strong><br>
+If checked, the document name of the selected object is shown in the main window title.</li>
+<li><strong>Folder Name</strong><br>
+If checked, the parent folder name of the selected connection is shown in the window title.</li>
+<li><strong>Selection</strong><br>
+If checked, the name of the selected object is shown in the main window title.</li>
+<li><strong>Description</strong><br>
+If checked, the description (if available) of the selected object is shown in the window title.</li>
+</ul>
+<h4 id="hide-status-bar">Hide Status Bar</h4>
+<p>If checked, the Status Bar will not be visible.</p>
+<h4 id="font-size">Font Size</h4>
+<p>The font size used for the tree and list views. Default font size is 9.0.</p>
+<h4 id="show-tooltips-in-forms">Show Tooltips in Forms</h4>
+<p>If checked, tooltips are shown.</p>
+<h4 id="language">Language</h4>
+<p>Languages other than English are supported by the community. Translations may be incomplete or inaccurate. If you want to help with the translation, visit this link.</p>
+<h3 id="navigation">Navigation</h3>
+<h4 id="include-computer-name--url">Include Computer Name / URL</h4>
+<p>When checked, Royal TS will include the computer name / URL field text in the search.</p>
+<h4 id="include-description">Include Description</h4>
+<p>When checked, Royal TS will include the description field text in the search.</p>
+<h4 id="include-notes">Include Notes</h4>
+<p>When checked, Royal TS will include the notes text in the search. Enabling this option may impact search performance.</p>
+<h4 id="perform-fuzzy-searches">Perform Fuzzy Searches</h4>
+<p>When checked, Royal TS will perform fuzzy searches in the Navigation tree. Enabling this option may impact search performance.</p>
+<h4 id="show-tooltips">Show Tooltips</h4>
+<p>If checked, Royal TS will display a tooltip with additional information when hovering over a Navigation tree item.</p>
+<h4 id="use-colors-in-the-navigation-tree">Use colors in the Navigation tree</h4>
+<p>If checked, the text in the tree will be colorized with the configured color of the connection.</p>
+<h4 id="show-favorite-indicator">Show Favorite Indicator</h4>
+<p>If checked, Royal TS will show an indicator for favorite objects.</p>
+<h3 id="tabs">Tabs</h3>
+<h4 id="custom-caption">Custom Caption</h4>
+<p>Configure what information the tab caption should show. Replacement tokens can be used.</p>
+<h4 id="display-active-tab-caption-bold">Display active tab caption bold</h4>
+<p>If checked, the tab caption text will be displayed using a bold font to easily recognize the focused tab.</p>
+<h4 id="tab-size">Tab Size</h4>
+<p>Select how the tabs should be sized.</p>
+<ul>
+<li>Auto (Default): the tab size is set automatically based on the content</li>
+<li>Fill: the tabs will always fill the header</li>
+<li>Manual: a maximum tab size can be enforced</li>
+</ul>
+<h4 id="hide-tabs">Hide Tabs</h4>
+<p>If checked, the Tab Bar will not be visible. To keep the tab contents in sync, make sure you configured Track Selection in Tab Bar in the Behavior settings.</p>
+<h4 id="max-tab-size">Max. Tab Size</h4>
+<p>Enter the maximum tab size.</p>
+<h4 id="multi-line-tabs">Multi-Line Tabs</h4>
+<p>If enabled, multiple lines of tabs are displayed instead of scrolling through tabs.</p>
+<h4 id="border-size">Border Size</h4>
+<p>Adjust the border size of the colorized connection border.</p>
+<h4 id="show-colorized-border">Show colorized border</h4>
+<p>If checked, a colorized border will be drawn around the connection. Connections with the default color (black) will not show a colorized border.</p>
+<h4 id="enable-taskbar-thumbnails">Enable Taskbar Thumbnails</h4>
+<p>If checked, Royal TS will display thumbnails for each tab in the taskbar.</p>
+<h4 id="use-colors-in-tabs">Use colors in Tabs</h4>
+<p>If checked, the tab caption will be colorized with the configured color of the connection.</p>
+<h2 id="-behavior"><img src="/images/RoyalTS/Application/SVG_PageMouseEvents_32.svg#img_header" alt=""> Behavior</h2>
+<p>The <strong>Beharior</strong> page allows you to configure the default behavior of connections, tabs and when the mouse is used.</p>
+<h3 id="navigation-tree">Navigation Tree</h3>
+<h4 id="track-navigation-tree-selection-in-the-tab-bar">Track Navigation tree selection in the tab bar</h4>
+<p>If checked, selection changes in the Navigation panel will automatically switch the tabs.</p>
+<h4 id="track-tab-selection-in-navigation-tree">Track tab selection in Navigation tree</h4>
+<p>If checked, switching between tabs will track the object in the Navigation panel.</p>
+<h4 id="automatically-focus-active-connections">Automatically focus active connections</h4>
+<p>If checked, clicking an active connection in the Navigation panel will automatically transfer the input focus to the connection. Selection changes caused by keyboard navigation will not result in a focus transfer. To transfer the input focus to the connection using the keyboard, press Enter when an active connection is selected in the Navigation panel.</p>
+<h4 id="external-window-select-dashboard">External Window: Select Dashboard</h4>
+<p>If checked, selection changes in the Navigation panel where connections are currently shown in an external window will automatically switch to the dashboard tab (if available) of the selected connection.</p>
+<h4 id="connect--disconnect-all-in-folder">Connect / Disconnect all in Folder</h4>
+<p>Connect folder behavior: The behavior when connect all in folder and disconnect all in folder menu item is selected.</p>
+<h3 id="tabs-and-connections">Tabs and Connections</h3>
+<h4 id="active">Active</h4>
+<p>Select one of the available actions when you double-click an active connection:</p>
+<ul>
+<li>Do nothing</li>
+<li>Edit Properties</li>
+<li>Disconnect</li>
+<li>Reconnect</li>
+<li>Ad Hoc</li>
+</ul>
+<h4 id="inactive-connections">Inactive Connections</h4>
+<p>Select one of the available actions when you double-click an inactive connection:</p>
+<ul>
+<li>Do nothing</li>
+<li>Edit Properties</li>
+<li>Connect</li>
+</ul>
+<h4 id="tabs-1">Tabs</h4>
+<p>Select one of the available actions when you double-click a connection tab:</p>
+<ul>
+<li>Do nothing</li>
+<li>Edit Properties</li>
+<li>Disconnect</li>
+<li>Reconnect</li>
+<li>Toggle Window Mode</li>
+<li>Ad Hoc</li>
+</ul>
+<h4 id="tab-close">Tab Close</h4>
+<p>Select one of the available options when a tab is closed:</p>
+<ul>
+<li>Select Dashboard</li>
+<li>Select tab to the left</li>
+<li>Select tab to the right</li>
+</ul>
+<h4 id="switcher">Switcher</h4>
+<p>Select the sort order the tabs should be displayed in the tab switcher:</p>
+<ul>
+<li><strong>Activation Sequence</strong><br>
+The tabs are displayed in reverse order based on the tab activation, similar to Visual Studio.</li>
+<li><strong>Display Order</strong><br>
+The tabs are orders as displayed, similar to web browsers.</li>
+<li><strong>Alphabetical</strong><br>
+The tabs are ordered alphabetically.</li>
+</ul>
+<h4 id="keep-remotely-disconnected-tabs-open">Keep remotely disconnected tabs open</h4>
+<p>If checked, Royal TS will not automatically close any tabs when the connection was disconnected remotely.</p>
+<h4 id="disable-tab-drag-to-external-window">Disable tab drag to external window</h4>
+<p>If checked, Royal TS will not allow you to drag a tab out of the tab bar to create an external window.</p>
+<h3 id="tasks-and-credentials">Tasks and Credentials</h3>
+<h4 id="tasks">Tasks</h4>
+<p>Select one of the available actions when you double-click a task:</p>
+<ul>
+<li>Do nothing</li>
+<li>Edit Properties</li>
+<li>Execute Task</li>
+</ul>
+<h4 id="credentials">Credentials</h4>
+<p>Select one of the available actions when you double-click a credential:</p>
+<ul>
+<li>Do nothing</li>
+<li>Edit Properties</li>
+<li>Copy Username<br>
+Copies the credential's username to the clipboard.</li>
+<li>Copy Password<br>
+Copies the credential's password to the clipboard.</li>
+</ul>
+<h3 id="modifiers">Modifiers</h3>
+<h4 id="background-connect-when-holding-the-shift-key">Background connect when holding the Shift key</h4>
+<p>If checked, Royal TS will open the connection tab in the background when the Shift key is pressed while connecting.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Holding the Shift key while changing the selection in the Navigation tree will always prevent focus transfer and activation of connections or dashboards.</p>
+</div>
+<h4 id="apply-overrides">Apply Overrides</h4>
+<p>Use Overrides to apply personal settings before establishing a connection. Configure Overrides in the Default Settings Dashboards or Plugin Management.</p>
+<ul>
+<li>Apply while holding the Alt key</li>
+<li>Always apply, except when holding the Alt key</li>
+<li>Apply while holding the Ctrl key</li>
+<li>Always apply, except when holding the Ctrl key</li>
+</ul>
+<h2 id="-customize-add-menu"><img src="/images/RoyalTS/Application/SVG_AddGeneralCustomize_32.svg#img_header" alt=""> Customize Add Menu</h2>
+<p>The <strong>Customize Add Menu</strong> page allows you to configure which object types to show in the Add... menu.</p>
+<h2 id="-keyboard-shortcuts"><img src="/images/RoyalTS/Application/SVG_PageKeyboard_32.svg#img_header" alt=""> Keyboard Shortcuts</h2>
+<p>The <strong>Keyboard Shortcuts</strong> page allows you to configure keyboard shortcuts to commands or custom context commands.</p>
+<p>See also <a class="xref" href="../user-interface/commands.html#-keyboard-shortcuts">Commands</a>.</p>
+<h2 id="-notifications"><img src="/images/RoyalTS/Application/SVG_Notifications_32.svg#img_header" alt=""> Notifications</h2>
+<p>The <strong>Notifications</strong> page allows you to configure the actions in Royal TS which can show Windows notifications.</p>
+<h4 id="document-and-file-operations">Document and file operations</h4>
+<p>If enabled, document and file operations may show a Windows notification.</p>
+<h4 id="connection-activities">Connection activities</h4>
+<p>If enabled, connection activities may show a Windows notification.</p>
+<h4 id="plugins">Plugins</h4>
+<p>If enabled, plugins may show a Windows notification.</p>
+<h2 id="-default-sort-settings"><img src="/images/RoyalTS/Application/SVG_EditSort_32.svg#img_header" alt=""> Default Sort Settings</h2>
+<p>The <strong>Default Sort Settings</strong> page allows you to configure the default sort criteria when you click the Sort command on the Home or Edit tab in the Move &amp; Sort group.</p>
+<p>Specify up to 3 sort criteria to sort your connections. Each sort criteria allows you to specify the object property to sort and whether to sort ascending or descending.</p>
+<h4 id="apply-to-subfolders">Apply to Subfolders</h4>
+<p>If checked, all subfolders are sorted as well when you click the Sort command.</p>
+<h2 id="-screenshots"><img src="/images/RoyalTS/Application/SVG_ActionSaveScreenshot_32.svg#img_header" alt=""> Screenshots</h2>
+<p>The <strong>Screenshots</strong> page allows you to configure where and how Royal TS stores screenshots. The screenshot file format is PNG and the name is automatically generated based on the current date and time and the connection name. By default, screenshots are saved in the user's Picture folder in the directory &quot;Royal TS&quot;.</p>
+<h4 id="use-custom-file-name">Use Custom File Name</h4>
+<p>Check to specify a custom file name for the screenshots.</p>
+<h4 id="use-custom-folder">Use Custom Folder</h4>
+<p>Check to specify a custom folder where Royal TS saves all the screenshots.</p>
+<h4 id="limit-screenshot-size">Limit Screenshot Size</h4>
+<p>Check this option to limit the screenshot size and ensure not to exceed the number of pixels in width or height.</p>
+<h2 id="-tab-scan"><img src="/images/RoyalTS/Application/SVG_PageTabScan_32.svg#img_header" alt=""> Tab Scan</h2>
+<p>The <strong>Tab Scan</strong> page allows you to configure automatic scanning through all open tabs. Tab scanning can be switched on and off using the View tab on the ribbon or the command line.</p>
+<h4 id="interval">Interval</h4>
+<p>The number of seconds each tab page should be shown before Royal TS will select the next one.</p>
+<h2 id="-logging"><img src="/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header" alt=""> Logging</h2>
+<p>The <strong>Logging</strong> page allows you to configure how Royal TS keeps records of user activity, error and debug information.</p>
+<h3 id="internal-logging">Internal Logging</h3>
+<h4 id="enable-internal-logging">Enable Internal Logging</h4>
+<p>Turns internal logging on and off.</p>
+<h4 id="logging-level">Logging Level:</h4>
+<p>Select which log entry severities to include in the internal log.</p>
+<h4 id="save-to-file">Save to File</h4>
+<p>This option allows you to save the log to a file either when you close Royal TS or after period of time/number of log entries.</p>
+<ul>
+<li><strong>never:</strong> log is cleared and lost when you close Royal TS.</li>
+<li><strong>on exit:</strong> a log file is written to disk when you close Royal TS.</li>
+<li><strong>on exit or after n minutes/log entries:</strong> a log file is written to disk when you close Royal TS or after a defined number of minutes/log entries.</li>
+</ul>
+<h4 id="create-new-file">Create New File</h4>
+<p>This option allows you to control when Royal TS creates new log files, when to keep log files and how often the log file is written to for storage.</p>
+<ul>
+<li><strong>never (overwrite):</strong> the log is always saved to the same file and overwritten whenever it is saved to disk.</li>
+<li><strong>on exit:</strong> a new log file is created when you close Royal TS.</li>
+<li><strong>on exit or after n minutes/log entries:</strong> a new log file is created when you close Royal TS or after a defined number of minutes/log entries.</li>
+</ul>
+<h4 id="logfile-directory">Logfile Directory</h4>
+<p>Specify a directory where the log files should be stored. Use the browse button (...) to browse for a folder.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can also use environment variables in the Logfile Directory, such as %TEMP%.</p>
+</div>
+<h4 id="logfile-name">Logfile Name</h4>
+<p>Specify the name of the log file.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you have configured to create multiple logfiles, the file name is automatically extended and will include the time stamp.</p>
+</div>
+<h3 id="event-log">Event Log</h3>
+<h4 id="enable-logging-to-the-windows-event-log">Enable Logging to the Windows Event Log</h4>
+<p>If checked, Royal TS writes log entries to the Windows Event Log.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Royal TS creates a new Windows Event Log called &quot;Royal TS&quot;. If you want to use this option, Royal TS needs to be started at least once using local administrator rights in order to create the new Event Log on your system.</p>
+</div>
+<h4 id="logging-level-1">Logging Level</h4>
+<p>Select which log entry severities to include in the internal log.</p>
+<h4 id="template">Template</h4>
+<p>Use the template to control which information should be published to the event log. You can use the following replacement tokens in the event log message:</p>
+<table>
+<thead>
+<tr>
+<th>Replacement Token</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Action$</td>
+<td>The value of the action field, such as Connect or Disconnect.</td>
+</tr>
+<tr>
+<td>$CustomField1$ up to $CustomField10$</td>
+<td>The value of the custom field.</td>
+</tr>
+<tr>
+<td>$Details$</td>
+<td>The log entry details.</td>
+</tr>
+<tr>
+<td>$LocalHost$</td>
+<td>The computer name running Royal TS.</td>
+</tr>
+<tr>
+<td>$LocalUser$</td>
+<td>The user account name running Royal TS.</td>
+</tr>
+<tr>
+<td>$Message$</td>
+<td>The log entry message.</td>
+</tr>
+<tr>
+<td>$ObjectDisplayName$</td>
+<td>The name of the object in context to the log entry.</td>
+</tr>
+<tr>
+<td>$ObjectID$</td>
+<td>The ID (Guid) of the object in context to the log entry.</td>
+</tr>
+<tr>
+<td>$ObjectType$</td>
+<td>The type of object in context to the log entry.</td>
+</tr>
+<tr>
+<td>$RemoteURI$</td>
+<td>The URI (computer name, IP or URL) of the object in context to the log entry.</td>
+</tr>
+<tr>
+<td>$RemoteUser$</td>
+<td>The username used on the object in context to the log entry.</td>
+</tr>
+<tr>
+<td>$Severity$</td>
+<td>The log entry's severity.</td>
+</tr>
+<tr>
+<td>$TimeStamp$</td>
+<td>Date and time of the log entry.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="reset-template">Reset Template</h4>
+<p>Click the button to reset the event log template to the default setting.</p>
+<h3 id="console">Console</h3>
+<h4 id="enable-logging-to-the-console">Enable Logging to the Console</h4>
+<p>If checked, Royal TS writes log entries to the STDOUT console.</p>
+<h4 id="logging-level-2">Logging Level</h4>
+<p>Select which log entry severities to include in the console log.</p>
+<h4 id="use-color-output">Use Color Output</h4>
+<p>If checked, log messages are shown in different colors depending of the log level.</p>
+<h3 id="trace-file">Trace File</h3>
+<h4 id="enable-logging-to-a-trace-file">Enable Logging to a Trace File</h4>
+<p>If checked, Royal TS writes log entries to a trace file.</p>
+<h4 id="logging-level-3">Logging Level</h4>
+<p>Select which log entry severities to include in the trace file log.</p>
+<h4 id="trace-file-directory">Trace File Directory</h4>
+<p>Specify a directory where the trace file should be saved. Click the browse button (or Ctrl + B) to select a folder. You may also use environment variables like %TEMP%</p>
+<h4 id="trace-file-name">Trace File Name</h4>
+<p>Specify the name of the trace file.</p>
+<h4 id="overwrite-file-on-application-start">Overwrite File on Application Start</h4>
+<p>If checked, the trace file is overwritten when Royal TS starts, otherwise the trace messages will be appended to the existing file.</p>
+<h2 id="-troubleshooting"><img src="/images/RoyalTS/Application/SVG_PageTroubleshooting_32.svg#img_header" alt=""> Troubleshooting</h2>
+<p>The <strong>Troubleshooting</strong> page allows you to specify your contact information that will be appended to the error reports by Royal TS and also lets you reset application settings.</p>
+<h3 id="error-reporting">Error Reporting</h3>
+<p>Leave name and email address blank to send error reports anonymously.</p>
+<h4 id="name">Name</h4>
+<p>Enter your name.</p>
+<h4 id="email-address">Email Address</h4>
+<p>Enter your email address which we should use to contact you.</p>
+<h4 id="test-crash-report">Test Crash Report</h4>
+<p>A test crash report is generated allowing you to test if a crash report can be submitted.</p>
+<h3 id="reset-settings">Reset Settings</h3>
+<h4 id="delete-easyhook-dlls">Delete EasyHook DLLs</h4>
+<p>Deletes the EasyHook files from the user profile directory. After the files have been deleted, you can re-download them in the Dashboard/Overview tab.</p>
+<h4 id="reset-dock-panel-layout">Reset Dock Panel Layout</h4>
+<p>Resets the docking layout to the default setting (Navigation panel on the left).</p>
+<h4 id="reset-quick-access-toolbar-qat">Reset Quick Access Toolbar (QAT)</h4>
+<p>The quick access toolbar (by default above the ribbon) customization will be reset.</p>
+<h4 id="reset-recent-files-and-folder-list">Reset Recent Files and Folder List</h4>
+<p>The recent files and folder list in the backstage view/application menu will be reset.</p>
+<h4 id="reset-all-settings">Reset All Settings</h4>
+<p>All the above settings as well as all options are reset.</p>
+<h2 id="-proxy-server"><img src="/images/RoyalTS/Application/SVG_PageProxy_32.svg#img_header" alt=""> Proxy Server</h2>
+<p>The <strong>Proxy Server</strong> page allows you to enable online communication for Royal TS through a proxy server with optional authentication.</p>
+<h4 id="use-a-proxy-server">Use a Proxy Server</h4>
+<p>Enable or disable online communication using a proxy server.</p>
+<h4 id="proxy-server">Proxy Server</h4>
+<p>Specify the proxy server name (FQDN) or IP address to use.</p>
+<h4 id="port-1">Port</h4>
+<p>Specify the proxy server port to use.</p>
+<h4 id="username">Username</h4>
+<p>Provide a username if your proxy needs authentication. Leave blank if you do not need to authenticate against your proxy server.</p>
+<h4 id="password-1">Password</h4>
+<p>Provide a password if your proxy needs authentication. Leave blank if you do not need to authenticate against your proxy server.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>It's strongly recommended to encrypt and password protect your Application document if you need to enter a proxy username and password.</p>
+</div>
+<h2 id="-script-interpreter"><img src="/images/RoyalTS/Application/SVG_ScriptPaths_32.svg#img_header" alt=""> Script Interpreter</h2>
+<p>To use the dynamic folder or dynamic credential feature, scripts must be executed on your system. Configure the path to the script interpreter executables for each supported scripting language.</p>
+<h4 id="script-interpreter">Script Interpreter</h4>
+<p>Select a scripting language.</p>
+<h4 id="path">Path</h4>
+<p>Specify the path to the executable.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Environment variables in the path are supported.</p>
+</div>
+<h4 id="arguments">Arguments</h4>
+<p>Specify additional arguments to be passed on to the script interpreter.</p>
+<h4 id="do-not-load-the-powershell-profile-applies-to-powershell-only">Do not load the PowerShell profile (applies to PowerShell only)</h4>
+<p>If checked the -noprofile parameter will be used.</p>
+<h2 id="-notes"><img src="/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
+<p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
+<h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
+<p>When selected, Royal TS will display the notes from the parent folder in the notes panel. This option is not available on the document level.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To embed images, drag them into the editor using drag &amp; drop.</p>
+</div>
+<h2 id="-custom-field-labels"><img src="/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Field Labels</h2>
+<p>The <strong>Custom Field Label</strong> page allows you to enter labels used for the Custom Fields in other objects. The custom field labels are also shown in the <strong>Folder Dashboard</strong> views as well as in the <strong>Properties</strong> panel.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://royalapplications.visualstudio.com/Royal%20Applications/_git/Royal%20Applications?path=RoyalTS/Documentation/docfx_project/royalts/reference/options.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" >
+  <style type="text / css">
+    .Red{fill:#CD4C32;}
+    .Green{fill:#4EA17E;}
+    .Blue{fill:#3E79B4;}
+    .Yellow{fill:#EAB765;}
+    .Black{fill:#797979;}
+    .Gray{fill:#B4B4B5;}
+    .White{fill:#FFFFFF;}
+  </style>
+    <g transform="matrix(1.42044,0,0,1.70184,-1.09753,1.24171)">
+        <ellipse fill="#FFFFFF" class="White" cx="12.037" cy="8.672" rx="9.856" ry="8.226" />
+    </g>
+    <g id="icon">
+        <path fill="#797979" class="Black" d="M16,31C7.729,31 1,24.271 1,16C1,7.729 7.729,1 16,1C24.271,1 31,7.729 31,16C31,24.271 24.271,31 16,31ZM16,3C8.832,3 3,8.832 3,16C3,23.168 8.832,29 16,29C23.168,29 29,23.168 29,16C29,8.832 23.168,3 16,3Z" />
+        <g transform="matrix(0.923677,-0.383172,0.383172,0.923677,-4.90943,7.35171)">
+            <path fill="#CD4C32" class="Red" d="M13.85,13.85L18.149,18.149L23.953,8.476C24.121,8.196 23.803,7.878 23.523,8.046L13.85,13.85Z" />
+        </g>
+        <g transform="matrix(0.923677,-0.383172,0.383172,0.923677,-4.90943,7.35171)">
+            <path fill="#797979" class="Black" d="M13.85,13.85L8.046,23.523C7.878,23.803 8.196,24.121 8.476,23.953L18.149,18.149L13.85,13.85Z" />
+        </g>
+    </g>
+</svg>
