@@ -4,7 +4,7 @@ name: Introducing Royal Server
 order: 9990
 ---
 
-![](/images/RoyalTS/Application/SVG_GeneralRoyalServer_32.svg#img_floatright#img_large) 
+![](~/images/RoyalTS/Application/SVG_GeneralRoyalServer_32.svg#img_floatright#img_large) 
 # Introducing Royal Server
 With Royal Server, there's no need to transmit screen content, mouse and keyboard data to view Windows Events or restart a service. Royal Server is a Secure Gateway for remote connections and provides common remote management tasks for our Royal TS/X cross-platform clients on Windows, macOS, iOS and Android. Royal Server comes with multiple components. Currently there are three components available:
 
