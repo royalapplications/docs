@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Command Task </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" Command Task ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_reference_tasks_command">
+<h1 id="-command-task"><img src="/images/RoyalTS/Plugins/Tasks/CommandTasks/SVG_PluginIcon_32.svg#img_header" alt=""> Command Task</h1>
+
+<p><strong>Command Tasks</strong> are used to execute command lines (programs or batch scripts) from within Royal TS. Command tasks can run &quot;stand-alone&quot; (like a shortcut) or in context of a selected connection - which also allows you to &quot;inject&quot; variables (replacement tokens) to the command line (like the PING task).</p>
+<h2 id="dashboard">Dashboard</h2>
+<p>The <strong>Task Dashboard</strong> is shown in the <strong>Dashboard</strong> panel when you select a Command Task in the <strong>Navigation</strong> panel.</p>
+<p><img src="/images/RoyalTS/Plugins/Tasks/CommandTask/commandtask_dashboard.png" alt="CommandTask_Dashboard"></p>
+<h2 id="assignments">Assignments</h2>
+<ul>
+<li>The grid on the top shows connections or folders which are configured to use the selected task as Connect, Disconnect or Key Sequence Task</li>
+<li>You can also select one or more objects in the Assignments list and perform various edit commands.</li>
+</ul>
+<h2 id="task-context">Task Context</h2>
+<ul>
+<li>The <strong>Task Context</strong> list shows all connections available as task context. Connections which are currently selected as task context are shown selected in the list and appear at the top of the list.</li>
+<li>Changing the selection in the list will change the task context.</li>
+<li>Click on Execute to start the selected task for the selected task context.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Since command tasks can be executed on all connections, the task context list for command tasks will show all available connections (active and inactive).</p>
+</div>
+<p>See also: <a class="xref" href="../../tutorials/working-with-tasks.html">Working with Tasks</a></p>
+<h2 id="task-properties">Task Properties</h2>
+<p>The Command Task Properties dialog is shown:</p>
+<ul>
+<li>for a new command task by clicking the <strong>Command Task</strong> menu item in the <strong>Add</strong> drop down menu in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
+<li>for an existing command task by selecting a command task and clicking on the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
+<li>as a bulk-edit dialog when multiple command tasks were selected in the Folder / Document Dashboard and the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab is clicked. See also: <a class="xref" href="../../tutorials/bulk-operations.html">Bulk Operations</a></li>
+</ul>
+<h2 id="command-task-properties">Command Task Properties</h2>
+<h4 id="display-name-required">Display Name <em>(required)</em></h4>
+<p>Enter a display name for object.</p>
+<h4 id="color">Color</h4>
+<p>Click the color picker button in the display name text box to select a color. In the <a class="xref" href="../options.html#-user-interface">User Interface</a> settings you can configure to show the color in the navigation tree, the connection tab or as connection border.</p>
+<h4 id="icon">Icon</h4>
+<p>Click the icon picker button next in the display name text box to select and assign a custom icon to the object.</p>
+<h4 id="description">Description</h4>
+<p>Enter a description for the object.</p>
+<h4 id="no-confirmation-required">No confirmation required</h4>
+<p>If checked, tasks executed from the Favorite Command Tasks menu do not show the Task Context confirmation window.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You should only check this option for simple and harmless tasks, such as PING. Tasks which can cause damage if executed for the wrong selection (such as a reboot) should not have checked this option.<br>
+A task executed from the Navigation panel or Tasks panel always requires confirmation, regardless of the setting.</p>
+</div>
+<h2 id="-command"><img src="/images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PageCommand_32.svg#img_header" alt=""> Command</h2>
+<p>The <strong>Command</strong> page allows you to configure which command should be executed.</p>
+<h4 id="command">Command</h4>
+<p>Specify a program or batch file to execute.</p>
+<h4 id="arguments">Arguments</h4>
+<p>Specify arguments for the command.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use the fly-out button to the right to show a list of available replacement tokens.<br>
+You may also use environment variables (such as %TEMP%).</p>
+</div>
+<h4 id="working-directory">Working Directory</h4>
+<p>Specify the working directory for the command.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Tasks are always executed locally (on the machine where Royal TS is running) but in context of a selection of connections. Using replacement tokens you can inject values from the selected connection(s) (such as custom fields or the URI, even username and password). Executing a task against multiple connections will start one command for each connection.<br>
+To execute tasks on the remote machine, you can make use of tools like psexec (from Microsoft).</p>
+</div>
+<h4 id="about-the-os-x-tab">About the OS X tab</h4>
+<p>Since Royal TSX for macOS can also be used to work with your Royal TS documents, you can specify a different command configuration for macOS. Some commands may have a slightly different syntax but basically do the same. To prevent users from creating multiple tasks with the same function for each platform, you can specify a different command configuration for macOS.</p>
+<h2 id="-credentials"><img src="/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
+<p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
+<h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
+<p>When selected, no credentials are configured for the object. Connections that require credentials may prompt to enter credentials or fail to connect.</p>
+<h4 id="use-credentials-from-the-parent-folder-not-always-available">Use credentials from the parent folder <em>(not always available)</em></h4>
+<p>When selected, Royal TS will look for a configured credential in the parent folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Not available for Royal Server objects, Secure Gateway objects, Remote Desktop Gateway objects and Key Sequence Tasks</p>
+</div>
+<h4 id="use-from-this-connection-not-always-available">Use from this connection <em>(not always available)</em></h4>
+<p>When selected, the username and password is used from the context connection object.</p>
+<h4 id="specify-username-and-password">Specify username and password</h4>
+<p>When selected, a username and password can be provided. For domain accounts use the syntax &quot;domain\username&quot; (without the quotes).</p>
+<h4 id="use-an-existing-credential">Use an existing credential</h4>
+<p>When selected, assign an existing credential to the object using the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the correct credential.</p>
+</div>
+<h4 id="specify-a-credential-name">Specify a credential name</h4>
+<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
+</div>
+<h4 id="omit-domain">Omit Domain</h4>
+<p>When checked, Royal TS will omit the  domain portion of the username (domain\username or username@domain).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Omit Domain</strong> checkbox is not available for all object types!</p>
+</div>
+<h4 id="automatic-logon">Automatic Logon</h4>
+<p>When checked, Royal TS will use the credentials to log on to the connection automatically. This setting applies only to connection types supporting automatic logon and is ignored if a connection doesn't support automatic logon.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To access the configured credentials through replacement tokens (for example in Auto Fill or Key Sequence Task configurations), use the replacement tokens $EffeciveUsername$ and $EffectivePassword$.</p>
+</div>
+<p>See also: <a class="xref" href="../../tutorials/working-with-credentials.html">Working with Credentials</a>, <a class="xref" href="../organization/credential.html">Credential</a>, <a href="https://www.royalapps.com/go/kb-all-teamsharing">About shared documents</a></p>
+<h2 id="-notes"><img src="/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
+<p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
+<h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
+<p>When selected, Royal TS will display the notes from the parent folder in the notes panel. This option is not available on the document level.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To embed images, drag them into the editor using drag &amp; drop.</p>
+</div>
+<h2 id="-custom-properties"><img src="/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header" alt=""> Custom Properties</h2>
+<p>The <strong>Custom Properties</strong> page allows you to enter and store additional information for the object. Various data formats are available, including protected fields. You can also group properties by using Header.</p>
+<h4 id="inherit-from-parent">Inherit from Parent</h4>
+<p>When checked, the properties configured on the parent folder are shown but are read-only.</p>
+<h4 id="custom-properties">Custom Properties</h4>
+<p>Use the '+' icon to add a header or a Field or multiple fields based on a template. Click on the label to name the field and enter a value. Click the 'Gear' icon to remove a field or header. The 'Gear' icon also shows additional options, like moving a field up or down.</p>
+<h2 id="-custom-fields"><img src="/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Fields</h2>
+<p>The <strong>Custom Fields</strong> page allows you to enter and store additional information for the object. Custom fields can be used in tasks and templates to inject values from the context connection.</p>
+<p>Standard custom fields are also shown in the folder dashboard views and in the properties panel. Protected custom fields can be used to store confidential data (for example when you need an additional password in a task). If you make use of protected custom fields, make sure you encrypt and password protect your document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Custom fields can be used in Tasks and in the Properties Panel. You can put web page URLs (like an iLO management address) or command lines (such as programs or batch files) in the custom fields and execute them using tasks or directly from the properties panel. Each individual custom field can also be configured to be inherited from the parent folder.</p>
+</div>
+<h2 id="-parent-folder"><img src="/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header" alt=""> Parent Folder</h2>
+<p>The <strong>Parent Folder</strong> page allows you to view or change the parent folder of the selected object. To move multiple objects to another folder use the parent folder page in bulk-edit mode or use the move to command from the <strong>Edit</strong> tab (see <a class="xref" href="../../tutorials/working-with-connections.html">Working with Connections</a>).</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot create connections in the <strong>Application</strong> document. Moving a folder containing connections to a folder in the <strong>Application</strong> document will fail.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2021/royalts/reference/tasks/command.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

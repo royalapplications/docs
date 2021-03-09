@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" >
+  <style type="text / css">
+    .Red{fill:#CD4C32;}
+    .Green{fill:#4EA17E;}
+    .Blue{fill:#3E79B4;}
+    .Yellow{fill:#EAB765;}
+    .Black{fill:#797979;}
+    .Gray{fill:#B4B4B5;}
+    .White{fill:#FFFFFF;}
+  </style>
+    <g id="main">
+        <g id="transformed_icon" transform="matrix(1,0,0,1,-1,-1)">
+            <clipPath id="_clip1">
+                <path d="M18,33C17.915,26.005 17.9,28.988 17.9,26C17.9,21.527 21.527,17.9 26,17.9C28.988,17.9 31.6,19.519 33,21.926L33,1L1,1L1,33L18,33Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path fill="#797979" class="Black" d="M23.088,1L8.913,1C8.409,1 8,1.409 8,1.913L8,4L24,4L24,1.913C24,1.409 23.591,1 23.088,1ZM22,3L19,3L19,2L22,2L22,3ZM8,8L24,8L24,5L8,5L8,8ZM19,6L22,6L22,7L19,7L19,6ZM8,30.088C8,30.592 8.409,31.001 8.913,31.001L23.088,31.001C23.592,31.001 24.001,30.592 24.001,30.088L24.001,9L8,9L8,30.088ZM16,23C17.105,23 18,23.895 18,25C18,26.105 17.105,27 16,27C14.895,27 14,26.105 14,25C14,23.895 14.895,23 16,23Z" />
+                <path fill="#FFFFFF" class="White" d="M22,3L19,3L19,2L22,2L22,3ZM22,6L19,6L19,7L22,7L22,6ZM16,23C14.895,23 14,23.895 14,25C14,26.105 14.895,27 16,27C17.105,27 18,26.105 18,25C18,23.895 17.105,23 16,23Z" />
+            </g>
+        </g>
+        <g transform="matrix(0.932396,0,0,0.932396,17.5478,17.5478)">
+            <g id="Rounded-Rectangle-1" serif:id="Rounded Rectangle 1" transform="matrix(0.166667,0,0,0.166667,0,0)">
+                <path fill="#797979" class="Black" d="M48,6C71.156,6 90,24.841 90,47.994L90,90L6,90L6,47.994C6,24.841 24.847,6 48,6M48,3C23.147,3 3,23.141 3,47.994L3,93L93,93L93,47.994C93,23.141 72.856,3 48,3Z" />
+            </g>
+            <g id="Tunnel-Perspective" serif:id="Tunnel Perspective" transform="matrix(0.166667,0,0,0.166667,0,0)">
+                <path fill="#3E79B4" class="Blue" d="M48,12C28.128,12 12,28.122 12,47.994L12,84L39,57L39,48C39,43.031 43.031,39 48,39C52.969,39 57,43.031 57,48L57,57L84,84L84,47.994C84,28.122 67.875,12 48,12Z" />
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Tasks </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" Tasks ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="-tasks"><img src="/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header" alt=""> Tasks</h2>
+
+<p>You can specify a task to be executed before a connection is established and after it has been disconnected. For example: establish a VPN connection before you connect and close it after disconnect.</p>
+<h3 id="connect-task">Connect Task</h3>
+<h4 id="do-not-execute-a-task">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is established.</p>
+<h4 id="use-task-from-parent-folder">Use task from parent folder</h4>
+<p>Royal TS will look for a configured connect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-connect-task-completion">Wait for connect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be established.</p>
+<h4 id="execute-for-first-connection-in-folder">Execute for first connection in folder</h4>
+<p>If checked, the task will only be executed if no other connection in the same folder is active.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will establish the VPN connection only for your first connection.</p>
+</div>
+<h4 id="abort-when-connect-task-fails">Abort when connect task fails</h4>
+<p>If checked, the connection will not be established when the configured task fails and returns an Exit Code other than 0.</p>
+<h3 id="disconnect-task">Disconnect Task</h3>
+<h4 id="do-not-execute-a-task-1">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is disconnected.</p>
+<h4 id="use-task-from-parent-folder-1">Use task from parent folder</h4>
+<p>Royal TS will look for a configured disconnect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task-1">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name-1">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during disconnect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-disconnect-task-completion">Wait for disconnect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be disconnected.</p>
+<h4 id="execute-for-last-connection-in-folder">Execute for last connection in folder</h4>
+<p>If checked, the task will only be executed if it is the last active connection in the folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will disconnect the VPN connection after the last connection is disconnected.</p>
+</div>
+<p>See also: <a class="xref" href="../tutorials/working-with-tasks.html">Working with Tasks</a>, <a class="xref" href="../reference/tasks/command.html">Command Task</a></p>
+<h3 id="-key-sequence"><img src="/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header" alt=""> Key Sequence</h3>
+<p>The <strong>Key Sequence</strong> page allows you to configure a sequence of key strokes (simulating keyboard events) to be sent to the connection after the connection has been established.</p>
+<h4 id="do-not-send-a-key-sequence">Do not send a key sequence</h4>
+<p>This is the default value. If selected, no key sequence is sent to the remote session after connect.</p>
+<h4 id="use-key-sequence-task-from-parent-folder">Use key sequence task from parent folder</h4>
+<p>Royal TS will look for a configured key sequence task in the parent folder. This option is not available on the document level.</p>
+<h4 id="specify-a-key-sequence">Specify a key sequence</h4>
+<p>If selected, a key sequence can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use the fly-out button to the right to show a list of available replacement tokens and special key commands. Use the WAIT command anywhere in the sequence to delay the sequence.</p>
+<p>Examples for Key Sequences:</p>
+<ul>
+<li>A group policy is set to show a message whenever a user is attempting to log on interactively. Create a key sequence &quot;{WAIT:1000}{ENTER}&quot; which will wait 1 second (1000ms) after successfully connected to the remote desktop session and sends the ENTER key to the remote session to confirm the message.</li>
+<li>A web page connection to a flash based application which requires you to log on using a username and password can be configured to send the appropriate key sequence after the connection has been established.</li>
+</ul>
+</div>
+<h4 id="use-an-existing-key-sequence-task">Use an existing key sequence task</h4>
+<p>If selected, a key sequence task can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a key sequence is in progress, do not interact with Royal TS or any other application after you connect. The status bar message indicates when a key sequence is in progress and when it has finished.</p>
+</div>
+<h4 id="specify-a-key-sequence-task-name">Specify a key sequence task name</h4>
+<p>When selected, enter or choose a key sequence task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2021/royalts/_shared/tasks.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

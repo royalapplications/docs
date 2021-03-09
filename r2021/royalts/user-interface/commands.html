@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Commands </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Commands ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_ui_commands">
+<h1 id="commands">Commands</h1>
+
+<p>Whenever you click on a button on the ribbon or execute a context menu item, the corresponding Royal TS command is executed. All available commands from the application itself and from each plugin are centrally registered and can be invoked in different ways. You can execute commands using the Command Palette we introduced in Royal TS V6 or you can execute a command by a keyboard shortcut - which you can also customize.</p>
+<h2 id="-command-palette"><img src="/images/RoyalTS/Application/SVG_ActionCommandPalette_32.svg#img_header" alt=""> Command Palette</h2>
+<p>The <strong>Command Palette</strong> is designed to enable you to control as much as possible using the keyboard instead of mouse-point-and-clicking. To invoke the command palette, use the keyboard shortcut 'CTRL + WIN + .' or simply click the command palette command on the <strong>Home</strong> ribbon tab in the <strong>Actions</strong> group.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Since by default, the keyboard shortcut scope for the Command Palette is set to <strong>Global</strong>, the keyboard shortcut will also work if Royal TS is running in the background. If you want the palette to show up only when Royal TS is active, simply customize the keyboard shortcut's scope to Local or Deep.</p>
+</div>
+<h3 id="keyboard-navigation">Keyboard Navigation</h3>
+<p>Navigating the command palette using keyboard is quick and efficient:</p>
+<ul>
+<li>Once the palette appears, simply start typing to search/filter the list of available commands.</li>
+<li>Use <em>CURSOR UP</em>, <em>CURSOR DOWN</em>, <em>PAGE UP</em>, <em>PAGE DOWN</em> to select the command.</li>
+<li>Press the <em>Enter</em> key to either execute the command or, in case of a context command, navigate to the context selection.</li>
+<li>In the context selection, start typing to filter the available context.</li>
+<li>Use <em>CURSOR UP</em>, <em>CURSOR DOWN</em>, <em>PAGE UP</em>, <em>PAGE DOWN</em>, to select an item.</li>
+<li>Commands which can handle multiple context items, allow you to select multiple items by holding the <em>SHIFT</em> key.</li>
+<li>Press the <em>Enter</em> key to execute the selected command for the selected context.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use the <em>ESC</em> key to go back one step at any time. Pressing <em>ESC</em> when no command has been filtered will close the palette. You can also simply close the palette by clicking outside of the palette.</p>
+</div>
+<h3 id="simple-commands">Simple Commands</h3>
+<p>A simple command can be executed without any further context information. For example, invoke the command palette, then type <em>options</em>, select the <strong>Options</strong> command and hit the <em>Enter</em> key to open the <strong>Options</strong> dialog.</p>
+<h3 id="commands-with-context">Commands with Context</h3>
+<p>There are many commnds which require some sort of context in order to execute them. For example, if you want to execute the <strong>Connect</strong> command, you need to specify which connection you want to connect to. In case you already selected a valid item, it will appear on top of the context list. Once you selected for which context you want to execute the command, press <em>ENTER</em>. Another situation you can run into is when a command doesn't have a valid context. For example: invoking a <strong>Disconnect</strong> command doesn't make much sense if no connections are connected. In this case, selecting the command will show an indicator that there's no context available.</p>
+<h2 id="-global-search"><img src="/images/RoyalTS/Application/SVG_ActionContextPalette_32.svg#img_header" alt=""> Global Search</h2>
+<p>The <strong>Global Search</strong> works very similar as the <strong>Command Palette</strong> but 'the other way around'. Invoking the global search allows you to quickly search all objects in all your open documents. You can search by name using 'fuzzy search', the description field or by URI. Keybard navigation is works and behaves the same way as in the command palette. Once you have one or more objects selected, press the <em>ENTER</em> key to move to the next screen where you can choose which command you want to execute for the selected objects.</p>
+<h2 id="-keyboard-shortcuts"><img src="/images/RoyalTS/Application/SVG_PageKeyboard_32.svg#img_header" alt=""> Keyboard Shortcuts</h2>
+<p>In Royal TS V6 or later, you assign or edit keyboard shortcuts to commands via View -&gt; Options -&gt; <a class="xref" href="../reference/options.html#-keyboard-shortcuts">Keyboard Shortcuts</a>. When you select a command, click on the <strong>Edit</strong> button to assign or edit a keyboard shortcut. Click on the <strong>Remove</strong> button to delete a keyboard shortcut.</p>
+<p>When you assign or edit a keyboard shortcut, you need to provide the following configuration:</p>
+<h3 id="scope">Scope</h3>
+<p>The scope controls when and where the keyboard shortcut should be effective. There are three scopes available:</p>
+<ul>
+<li><p><strong>Local</strong><br>
+The application must have the input focus.</p>
+</li>
+<li><p><strong>Deep</strong><br>
+Use this scope if you want the shortcut to be recognized even when keyboard input is redirected into a remote session (like Remote Desktop).</p>
+</li>
+<li><p><strong>Global</strong><br>
+Configuring a keyboard shortcut using this scope will be recognized even when Royal TS does not have the input focus.</p>
+</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All 3 scopes require Royal TS to be running. Also make sure when using the <strong>Deep</strong> and <strong>Global</strong> scope, that no other application locally or remote is interferring with the shortcut. If that's the case, assign a different shortcut.</p>
+</div>
+<h3 id="modifiers">Modifiers</h3>
+<p>Configure one or more of the available modifies to be used for the keyboard shortcut. When you configure a global keyboard shortcut, you should also use the <em>Win</em>-Key modifier.</p>
+<h3 id="key-and-chord-key">Key and Chord Key</h3>
+<p>Configure the key for the keyboard shortcut. A chord key can be assigned if you want to group multiple commands together. For example, the keyboard shortcut for the <a class="xref" href="panels.html#-credentials">Credentials Panel</a> is Control + P, with the chord key C. This means that the you need to hold the <em>Control</em> key, press the <em>P</em> key, afterwards press the <em>C</em> key. This allows you to use the keyboard shortcut Control + P, T for the <a class="xref" href="panels.html#-tasks">Tasks Panel</a>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You can only use Chord keys with the Local scope!</p>
+</div>
+<h2 id="add-context-command">Add Context Command</h2>
+<p>A context command allows you to configure a command with which is executed with a pre-defined &quot;context&quot;. For example: you could create a context command which invokes the &quot;Connect&quot; command for a pre-defined list of connections. You can also create a context command which invokes a key sequence task for the currently selected connection.</p>
+<p>To add a new context command, click the &quot;Gear&quot; dropdown button next to the search field and click on <strong>Add Context Command</strong>. A dialog will open which allows you to configure the following settings:</p>
+<h3 id="command">Command</h3>
+<p>A list of all available commands which can be executed using a context. This includes commands like Connect or Disconnect and also includes Templates, Command Tasks as well as Key Sequence Tasks.</p>
+<h3 id="context-source">Context Source</h3>
+<ul>
+<li><strong>Selection</strong><br>
+The command will be executed with the current selection as context.</li>
+<li><strong>Prompt</strong><br>
+A prompt will appear which allows you to specify the context. You can also provide a <strong>Prompt Filter</strong> to apply a filter when the prompt shows up.</li>
+<li><strong>Items</strong><br>
+You can specify one or more context items (if supported) to execute the command.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Templates, tasks and context items are stored in Royal TS documents. Make sure the required documents are open when you execute a command. If Royal TS cannot find the item because the document has not been opened, it will ignore the command or item.</p>
+</div>
+<h2 id="location-of-the-configuration-file">Location of the Configuration File</h2>
+<p>All modifications related to keyboard shortcuts are stored in the file <code>%appdata%\code4ward\keyboardshortcuts.json</code>. You can backup this file or deploy this file to a different machine in order to use the configuration on a different installation.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2021/royalts/user-interface/commands.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
