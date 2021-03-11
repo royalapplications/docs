@@ -1,5 +1,5 @@
 # **Getting Started**
-Below you find a quick start guide for Royal TS, Royal TSX and Royal Server. Use the navigation above to browse the full documentation.
+Below you find a quick start guide for Royal TS, Royal TSX and Royal Server. Use the navigation above to browse the full documentation. a
 
 # [Royal TS](#tab/tab-id-rts)
 ### Quick start guide for **Royal TS for Windows**:
