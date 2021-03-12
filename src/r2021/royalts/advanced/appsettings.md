@@ -36,6 +36,7 @@ Here's the sample JSON file:
 ```javascript
 {
   "RoyalTS": {
+    "CreateApplicationShortcut": true,
     "ShowSplashScreen": true,
     "TemporaryFiles": "%TEMP%",
     "ConfigurationPath": "%APPDATA%\\code4ward",
@@ -80,6 +81,13 @@ Create the following registry key by script or using group policies:
 ```
 
 ## Settings
+
+### CreateApplicationShortcut
+Default Value: `True`
+Creates an application shortcut in the Windows Start Menu.
+
+> [!IMPORTANT]
+> Changing the value to `False` is not recommended because it may have side effects when Royal TS shows Windows Shell Notifications (Toasts).
 
 ### ShowSplashScreen
 Default Value: `True`
