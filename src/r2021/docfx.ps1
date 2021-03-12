@@ -22,9 +22,10 @@ $generator = Join-Path -Path $PSScriptRoot -ChildPath "docfx-toc-generator.ps1"
 
 Build-TocHereRecursive
 
+New-Item -ItemType Directory -Force ../../.output
 
 if (!(Test-Path ../../.output/gh-pages))  {
-  git clone https://github.com/royalapplications/docs.git ./../.output/gh-pages
+  git clone https://github.com/royalapplications/docs.git ../../.output/gh-pages
   cd ../../.output/gh-pages
   git checkout gh-pages
 }
