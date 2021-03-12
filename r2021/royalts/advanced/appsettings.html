@@ -8,7 +8,7 @@
     <title>Application Settings </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Application Settings ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -94,6 +94,7 @@
 <p>Here's the sample JSON file:</p>
 <pre><code class="lang-javascript">{
   &quot;RoyalTS&quot;: {
+    &quot;CreateApplicationShortcut&quot;: true,
     &quot;ShowSplashScreen&quot;: true,
     &quot;TemporaryFiles&quot;: &quot;%TEMP%&quot;,
     &quot;ConfigurationPath&quot;: &quot;%APPDATA%\\code4ward&quot;,
@@ -130,6 +131,13 @@ RTS_RoyalTS__ConfigurationPath = C:\somepath\RoyalTS
 &quot;ConfigurationPath&quot;=&quot;C:\somepath\RoyalTS&quot;
 </code></pre>
 <h2 id="settings">Settings</h2>
+<h3 id="createapplicationshortcut">CreateApplicationShortcut</h3>
+<p>Default Value: <code>True</code>
+Creates an application shortcut in the Windows Start Menu.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Changing the value to <code>False</code> is not recommended because it may have side effects when Royal TS shows Windows Shell Notifications (Toasts).</p>
+</div>
 <h3 id="showsplashscreen">ShowSplashScreen</h3>
 <p>Default Value: <code>True</code>
 Shows the splash screen when Royal TS starts.</p>
