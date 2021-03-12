@@ -16,7 +16,9 @@ function Import-ModuleSafe([string] $name)
 Import-ModuleSafe 'powershell-yaml'
 Import-ModuleSafe 'docfx-toc-generator'
 
-. "$PSScriptRoot\docfx-toc-generator.ps1"
+$generator = Join-Path -Path $PSScriptRoot -ChildPath "docfx-toc-generator.ps1"
+
+. $generator
 
 Build-TocHereRecursive
 
@@ -28,8 +30,10 @@ if (!(Test-Path ../../.output/gh-pages))  {
 }
 
 cd $PSScriptRoot
-docfx $PSScriptRoot\docfx.json
+$docfxJson = Join-Path -Path $PSScriptRoot -ChildPath "docfx.json"
+docfx $docfxJson
 
 if ($serve) {
-  docfx $PSScriptRoot\docfx-serve.json --serve
+  $docfxJsonServe = Join-Path -Path $PSScriptRoot -ChildPath "docfx-serve.json"
+  docfx $docfxJsonServe --serve
 }
