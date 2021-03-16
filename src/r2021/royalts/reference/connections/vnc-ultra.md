@@ -86,6 +86,12 @@ The VNC viewer window is restored if minimized when a remote bell event is raise
 #### Hide Toolbar
 No toolbar is shown in the VNC viewer area.
 
+#### Tunnel over SSH
+When checked, specify a SSH host for the tunnel.
+
+#### Arguments
+Enter additional arguments to pass on via command line. For example: `/dsmplugin SecureVNCPlugin.dsm` to specify the SecureVNCPlugin.
+
 ## ![](/r2021/images/RoyalTS/Plugins/Connections/VncUltra/SVG_PageInput_32.svg#img_header) Input
 The **Input** page allows you to configure the mouse behavior.
 
