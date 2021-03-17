@@ -37,5 +37,5 @@ Add the Trace Flag to the appSettings and set the value to "true" ("false" is de
 | TraceFlag_9  | Enables detailed log information for Secure Gateway connections                                                                              |
 | TraceFlag_10 | Uses a different way to authenticate Windows users ValidateCredentials() instead of Logon()                                                  |
 
-> **Note**  
+> [!NOTE]  
 > Not all Trace Flags are available in all Versions of Royal Server.

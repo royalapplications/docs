@@ -7,7 +7,7 @@ order: 4000
 
 The Windows Processes module can be used to query the running processes on a machine.
 
-> **Note**  
+> [!NOTE] 
 > The necessary configuration to talk to Royal Server via Script is described in "Getting Started"
 
 ## Command "ListProcesses"
@@ -66,7 +66,7 @@ The Windows Processes module can be used to query the running processes on a mac
   $processes = Invoke-RoyalServerCommand -Module Processes -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword -MaxRecords 10
   ```
 
-  > **Note**  
+  > [!NOTE]
   > Including the process owner slows down the execution time significantly.
 
 - Teminate a process at the `$destinationHost`:
@@ -89,5 +89,5 @@ The Windows Processes module can be used to query the running processes on a mac
   Invoke-RoyalServerCommand -Module Processes -Command $command -RoyalServerConfig $config -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword -Arguments $argz
   ```
 
-  > **Note**  
+  > [!NOTE]
   > Note that the spawned process will run under `NTAUTHORITY\System` and will not have a visible user interface.

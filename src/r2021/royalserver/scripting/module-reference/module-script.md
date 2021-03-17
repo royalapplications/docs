@@ -7,10 +7,12 @@ order: 4000
 
 The Script module can be used to execute scripts on Royal Server or a remote host (depending on the used scripting engine). Additionally, the features "_Dynamic Folders_" and "_Dynamic Credentials_" or Royal TS/X are based on this module.
 
-> **Note**  
+> [!NOTE]
 > The necessary configuration to talk to Royal Server via Script is described in "Getting Started".
 
-> **Note** - About the Parameter `PrimaryOutputMode`  
+> [!NOTE] 
+> About the Parameter `PrimaryOutputMode`  
+>
 > The module usually is used by Royal TS/X and in these user interfaces you can choose between a plain text output (like in normal Powershell scripts) and a Grid-output which layouts the returned data nicely in a datagrid. Depending on the script, one or the other is preferable.
 
 ## Command "ExecutePowershell"

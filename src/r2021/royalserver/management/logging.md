@@ -52,15 +52,15 @@ Specifies the log file name (if Type _File_ is selected). Please note, that Roya
 
 You set the Log File to "logserverlog.txt", you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a File Name like _logserverlog<yyyyMMDD>.txt_, e.g. logserverlog20140709.txt. The file logserverlog.txt always contains the current day.
 
-> **Note**  
+> [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
 **Request/Response Logging**
 
 If checked, the complete requests and responses will be logged in separate files. The destination directory can be specified. This type of logging is only supported to files. **ATTENTION:** Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged. 
 
-> **Note**  
+> [!NOTE]
 > Be aware that for each request, two log files will be generated. One _<guid>\_request.xml_ file and one _<guid>\_response.xml_ file.
 
-> **Note**  
+> [!NOTE]
 > Enabling Request/Response Logging can have a huge impact on the Royal Server performance as well as the amount of data written to disc. It is strongly recommended to use this only for debugging purposes.

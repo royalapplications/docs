@@ -23,7 +23,7 @@ This setting allows to specify which hosts should be considered as localhost. Th
 
 This function resets the Royal Server Configuration back to defaults. 
 
-> **Note**  
+> [!NOTE]
 > This will not change the following configurations: Windows group memberships for authentication and Document Store Access Control Lists. If you 
 > If you want to remove Royal Server and all configuration information completely from the machine, save the cleanup_installation.ps1 file in the `./scripts/` installation subdirectory before uninstalling and execute it with administrative rights after the uninstallation.
 

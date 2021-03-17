@@ -7,10 +7,10 @@ order: 4000
 
 The Document Store can be scripted via Power Shell.
 
-> **Note**  
+> [!NOTE]
 > The necessary configuration to talk to Royal Server via Script is described in "Getting Started"
 
-> **Note**  
+> [!NOTE]
 > The documents you receive or are able to load/save are determined by your credentials if you have ACLs (access control lists) enabled.
 
 ## Command "GetDocumentList"
@@ -58,7 +58,7 @@ The basic flow is to first retrieve the available documents via the command "Get
   }
   ```
 
-  > **Note**  
+  > [!NOTE]
   > If Access Rules are enabled, the number of returned documents depends on the configured rules.
 
 - Load a specific document from Royal Server which is not encrypted/locked down and save it locally to the temp-directory:

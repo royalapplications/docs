@@ -23,5 +23,5 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 - Displays the Memory Consumption (of the Royal Server process)
 - Displays the Threads used (of the Royal Server process)
 
-> **Note**  
+> [!NOTE]
 > CPU usage, Memory Consumption and Number of Threads can also be read by using the standard Windows Performance Counters (values are read from the process `royalserver.exe`)

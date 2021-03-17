@@ -13,7 +13,7 @@ In order to work with the RoyalServer PowerShell commandlets, you need to regist
 Import-Module <Path-to-RoyalServer-installation>\\RoyalServer.PowerShell.dll -Force
 ```
 
-> **Note**  
+> [!NOTE]
 > Usually, Royal Server is installed to `%ProgramFiles(x86)%\RoyalServer`.
 
 If you like to have the RoyalServer CommandLets in all your PowerShell sessions, include this line in your PowerShell profile. To locate where your profile is call `$profile` in your PowerShell session. Usually, this location is at `%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`.

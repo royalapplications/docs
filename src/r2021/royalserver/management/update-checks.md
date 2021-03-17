@@ -30,5 +30,5 @@ The Royal Server Configuration Tool can check for new versions. This is executed
 
 - The Update Checks can also be executed using a proxy server.
 
-> **Note**  
+> [!NOTE]
 > This update check is only issued by the Royal Server Configuration Tool and not Royal Server itself (as it has no UI to show available updates)

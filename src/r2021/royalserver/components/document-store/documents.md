@@ -42,7 +42,7 @@ When importing an existing document, you need to specify the following settings:
 - specify the documents password
 - if the document can only be viewed via Royal Server. This is an additional layer of security - this file (even if copied) cannot be opened by Royal TS)
 
-> **Note**  
+> [!NOTE]  
 > The internal data structure of Royal Documents contains an ID. If you import an existing document, please make sure that this document is not loaded in Royal TS from the file system at the same time as the IDs will be the same.
 
 ### Delete a Document
@@ -61,6 +61,6 @@ If Access Rules are enabled, clients will get access to documents hosted by Roya
 - the permission (grant or deny)
 - the Windows users or groups
 
-> **Note**  
+> [!NOTE]
 > If both a grand and a deny rule specified, the deny rule is stronger and access is denied.
 > (`Modify` is not enough to work with a document, `Read` also has to be specified to load it from Royal Server)

@@ -14,10 +14,10 @@ The Service Configuration panel displays and changes the configuration of Royal 
 
 In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Server** group and then on the **Service Configuration** entry.
 
-> **Note**  
+> [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
-> **Note**  
+> [!NOTE]
 > The Windows service account can be changed, but it is required that the chosen account has administrative rights. If you plan to work with domain accounts, an account needs to be specified that has proper rights to enumerate users on the domain.
 
 ## Features
@@ -44,5 +44,5 @@ Royal Server uses communication via HTTPS/SSL for encrypt by default. This is ac
 
 **Windows Service User**
 
-> **Note**  
+> [!NOTE]
 > The Royal Server service is using LOCAL SYSTEM as user by default. If this user does not have the necessary rights (e.g. to query domain users and groups) please consider changing this user.

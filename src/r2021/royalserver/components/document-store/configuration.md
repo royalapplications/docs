@@ -13,7 +13,7 @@ The  Configuration panel displays and changes the configuration of the Document
 
 In The Royal Server Configuration Navigation Bar, click on the Document Store group and then on the Configuration entry.
 
-> **Note**  
+> [!NOTE]  
 > Any change in this panel requires a restart of Royal Server.
 
 ## Features
@@ -38,5 +38,5 @@ _Access Rules Enabled_
 
 Additionally to the security restriction that the client needs to have credentials, that are a member of the Windows group "Royal Server Users" Access Rules offer a more fine grained configuration on who can read/write documents. This configuration is then done for each document.
 
-> **Note**  
+> [!NOTE]
 > Enabling Access Rules immediately denies access to all documents unless read/write access is specified for documents.

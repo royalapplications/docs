@@ -29,7 +29,7 @@ Royal Server stores the Document Store files in the directory configured in the 
 
 Royal Server is directly working with this directory for the Document Store. If you restore the contents of this directory from a backup Royal Server just picks up the files and works with them.
 
-> **Note**  
+> [!NOTE]
 > Note that possible Access Control Lists are not stored in this file system files. If you want to back them up as well, see below.
 
 ### 3. Access Rules for the Document Store files

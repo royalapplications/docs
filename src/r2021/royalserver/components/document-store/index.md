@@ -7,7 +7,7 @@ order: 7000
 
 The Document Store is a component in Royal Server that enables the user to securely load and save Royal Documents directly from Royal Server - no more shared files needed.
 
-> **Note**  
+> [!NOTE]  
 > Any user that wants to load or save with the Document Store needs to be a member of the "Royal Server Users" group.  
 > Create, import or delete a document requires the user to be member of the "Royal Server Administrators" group. If done via the Configuration Tool, the Worker Account is used for these operations.
 

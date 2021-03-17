@@ -7,7 +7,7 @@ order: 4000
 
 The EventLog module can be used to query the Windows Event Log.
 
-> **Note**  
+> [!NOTE]
 > The necessary configuration to talk to Royal Server via Script is described in "Getting Started"
 
 ## Command "GetEntries"
@@ -21,7 +21,7 @@ Gets entries of the Windows Eventlog.
 - TruncateDescription: truncates the Message description after 80 characters to reduce network traffic
 - TimeZoneId: Timezone Id that can be used to convert time stamps. In the results, the property "LoggedLocal" will be adjusted to the provided timezone.
 
-> **Note**  
+> [!NOTE]
 > The following Timezone Ids are supported (depending on the underlying Windows support):
 >
 > - Afghanistan Standard Time

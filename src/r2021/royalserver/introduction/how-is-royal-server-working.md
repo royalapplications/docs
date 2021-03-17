@@ -25,7 +25,7 @@ For this, there are two basic ways this can be done:
 - using WMI
 - using CIM
 
-> **Note**  
+> [!NOTE]
 > The Terminal-Services Module is using the WTS API of Microsoft to get its data from the remote machine.
 
 ### Using WMI

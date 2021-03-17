@@ -32,7 +32,7 @@ Notice the bold part at the end.
 
 If you do not have 2FA devices (e.g. Smartphones) in your DUO configuration, create one by navigating to a User and add a phone or hardware token.
 
-> **Note**  
+> [!NOTE]
 > Make sure the new device is activated by clicking on **Activate**.
 
 ### Configure DUO in the Royal Server Configuration Tool

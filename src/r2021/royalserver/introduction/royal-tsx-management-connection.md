@@ -8,7 +8,7 @@ order: 10010
 Besides the required IP or name of the server, you probably also need to specify proper credentials when you configure a management connection. 
 Additionally, you can configure a "Royal Server" object in the properties. This way, the connection is using Royal Server (and the provide credential) to query the information. Alternatively, you can configure "Direct Connect (No Royal Server)" which is executing the module directly without Royal Server. 
 
-> **Note**  
+> [!NOTE]
 > The configured credential on the management connection (not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log or query Windows Services). In most scenarios, a user account who is member of the local administrators group is used. For low privilege environments  a number of steps are necessary to grant non-administrative users the required rights.
 
 To access Royal Server you can install the latest version of Royal TS/X:

@@ -13,7 +13,7 @@ The Security Configuration panel displays and changes the security configuration
 
 In The Royal Server Console Navigation Bar, click on the **Royal Server** group and then on the **Security Configuration** entry.
 
-> **Note**  
+> [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
 ## Features

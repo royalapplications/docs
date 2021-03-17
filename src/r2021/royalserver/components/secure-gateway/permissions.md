@@ -20,5 +20,5 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Secure Gat
   _Remark_: Depending on your environment, this might take some time.
 - Use the **Configure...** button to open the Windows UI for managing Users and Groups.
 
-> **Note**  
+> [!NOTE]
 > If you change the users in the `Royal Server Gateway Users` Windows group, Royal Server is not immediately picking up new members but caches the list for 5 minutes (default). To force a reload of the members restart Royal Server.

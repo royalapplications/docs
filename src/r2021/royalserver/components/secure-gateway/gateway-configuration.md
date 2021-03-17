@@ -13,7 +13,7 @@ The Gateway Configuration panel displays and changes the configuration of the Se
 
 In The Royal Server Configuration Navigation Bar, click on the Secure Gateway group and then on the Gateway Configuration entry.
 
-> **Note**  
+> [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
 ## Features
@@ -30,7 +30,7 @@ Specify the IP Address the Secure Gateway is binding to. Use this to IP Address 
 
 Specify the Port the Secure Gateway is binding to. Default is 22.
 
-> **Note**  
+> [!NOTE]
 > The Secure Gateway is basically a SSH server with tunnel support. The default port of SSH is 22.  
 > If you see a lot of SSH brute force attacks on Royal Server change the port to a non-standard one or use the "Only allow Royal TS/X as clients" setting.
 

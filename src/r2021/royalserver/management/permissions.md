@@ -13,7 +13,7 @@ The **Permissions** panel displays the users that have access to the Royal Serve
 
 In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Server** group and then on the **Permissions** entry.
 
-> **Note**  
+> [!NOTE]
 > The permissions for Royal Server are valid for all Management Connections as well as the Document Store functionality.
 
 ## Features
@@ -22,5 +22,5 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 - Use the **Refresh** button to refresh the list of permissions. Remark: Depending on your environment, this might take some time.
 - Use the **Configure...** button to open the Windows user interface for managing Users and Groups.
 
-> **Note**  
+> [!NOTE]
 > Royal Server is caching the allowed users for 5 minutes by default. So if you change the users in the `Royal Server Users` group, you will not see the change immediately but it takes up to 5 minutes to be effective. If you want to force the change, restart Royal Server. If you want to configure the 5 minute timeframe, change the UserCachingInSeconds value in the RoyalServer.exe.config file.

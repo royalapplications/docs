@@ -36,5 +36,5 @@ The following modules are distributed with Royal Server
 
 For a detailed description of all modules see [Royal Server Modules](../modules/index.md)
 
-> **Note**  
+> [!NOTE]
 > If you want to completely disable a functionality, e.g. you don't want any user to be able to list/kill processes, you can delete the module dll file in <RoyalServerInstallationDir>\RoyalServer.ManagementEndpoint.Module\ and restart Royal Server.

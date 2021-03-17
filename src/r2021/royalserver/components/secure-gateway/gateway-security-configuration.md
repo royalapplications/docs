@@ -13,7 +13,7 @@ The Gateway Security Configuration panel displays and changes the security confi
 
 In The Royal Server Configuration Navigation Bar, click on the Secure Gateway group and then on the Gateway Security Configuration entry.
 
-> **Note**  
+> [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
 ## Features
@@ -22,7 +22,7 @@ In The Royal Server Configuration Navigation Bar, click on the Secure Gateway gr
 
 This setting only allows Royal TS (for Windows) and Royal TSX (for OS X) as clients of the Secure Gateway.
 
-> **Note**  
+> [!NOTE]
 > This settings helps strengthen the Royal Server configuration against SSH brute force attacks if you have Royal Server reachable from the Internet.
 
 **Block IPs after unsuccessful login attempts**
