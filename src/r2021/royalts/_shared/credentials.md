@@ -15,4 +15,7 @@ When checked, Royal TS will use the credentials to log on to the connection auto
 > [!Note]
 > To access the configured credentials through replacement tokens (for example in Auto Fill or Key Sequence Task configurations), use the replacement tokens $EffeciveUsername$ and $EffectivePassword$.
 
+[!include[inheritance-editsource.md](~/royalts/_shared/inheritance-editsource.md)]
+
 See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](xref:royalts_reference_organization_credential), [About shared documents](https://www.royalapps.com/go/kb-all-teamsharing)
+

@@ -116,10 +116,20 @@ Select one or more deleted objects from the list and click on the Recover button
 Specify the number of days you want to keep deleted objects in your documents.
 
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
+[!include[inheritance-apply.md](~/royalts/_shared/inheritance-apply.md)]
+
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
+[!include[inheritance-apply.md](~/royalts/_shared/inheritance-apply.md)]
+
 [!include[royalserver.md](~/royalts/_shared/royalserver.md)]
+[!include[inheritance-apply.md](~/royalts/_shared/inheritance-apply.md)]
+
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
+[!include[inheritance-apply.md](~/royalts/_shared/inheritance-apply.md)]
+
 [!include[rdgateway.md](~/royalts/_shared/rdgateway.md)]
+[!include[inheritance-apply.md](~/royalts/_shared/inheritance-apply.md)]
+
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
 [!include[customfields.md](~/royalts/_shared/customfields.md)]

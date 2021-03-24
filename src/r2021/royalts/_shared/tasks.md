@@ -92,3 +92,5 @@ When selected, enter or choose a key sequence task name you want to assign to th
 
 > [!Note]
 > Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.
+
+[!include[inheritance-editsource.md](~/royalts/_shared/inheritance-editsource.md)]

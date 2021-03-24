@@ -21,4 +21,6 @@ The selected Secure Gateway object is used for supported connections.
 > [!Note]
 > A Secure Gateway is a component included in Royal Server and can be used to connect through an SSH tunnel (port forwarding).
 
+[!include[inheritance-editsource.md](~/royalts/_shared/inheritance-editsource.md)]
+
 See also: [Introducing Royal Server](xref:royalts_intro_royalserver)

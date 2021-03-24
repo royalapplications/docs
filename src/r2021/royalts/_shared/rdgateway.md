@@ -17,3 +17,5 @@ This is the default value. If selected, no Remote Desktop Gateway is used and Ro
 
 #### Specify a Remote Desktop Gateway object
 The selected Remote Desktop Gateway object is used for supported connections.
+
+[!include[inheritance-editsource.md](~/royalts/_shared/inheritance-editsource.md)]

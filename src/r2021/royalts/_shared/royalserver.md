@@ -13,4 +13,6 @@ The selected Royal Server object is used for supported connections.
 > [!Note]
 > A Royal Server is a product which allows you to gather information and execute management tasks securely on your managed servers.
 
+[!include[inheritance-editsource.md](~/royalts/_shared/inheritance-editsource.md)]
+
 See also: [Introducing Royal Server](xref:royalts_intro_royalserver)
