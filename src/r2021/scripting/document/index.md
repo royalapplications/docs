@@ -1,5 +1,6 @@
 ---
 name: RoyalDocument.PowerShell
+order: 10000
 ---
 
 # RoyalDocument.PowerShell
