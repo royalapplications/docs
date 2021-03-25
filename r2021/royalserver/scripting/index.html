@@ -8,7 +8,7 @@
     <title>Getting Started </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Getting Started ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,10 +73,10 @@
 <p>In order to work with the RoyalServer PowerShell commandlets, you need to register them with your PowerShell session. Just issue the following command and you are good to go:</p>
 <pre><code class="lang-powershell">Import-Module &lt;Path-to-RoyalServer-installation&gt;\\RoyalServer.PowerShell.dll -Force
 </code></pre>
-<blockquote>
-<p><strong>Note</strong><br>
-Usually, Royal Server is installed to <code>%ProgramFiles(x86)%\RoyalServer</code>.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Usually, Royal Server is installed to <code>%ProgramFiles(x86)%\RoyalServer</code>.</p>
+</div>
 <p>If you like to have the RoyalServer CommandLets in all your PowerShell sessions, include this line in your PowerShell profile. To locate where your profile is call <code>$profile</code> in your PowerShell session. Usually, this location is at <code>%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</code>.</p>
 <h2 id="first-steps">First Steps</h2>
 <p>Setting up a connection to Royal Server looks like this:</p>
@@ -122,8 +122,7 @@ foreach($response in $response.Responses)
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

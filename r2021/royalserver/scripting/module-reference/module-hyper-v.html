@@ -8,7 +8,7 @@
     <title>Module Hyper-V </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Module Hyper-V ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -70,18 +70,20 @@
 <h1 id="module-hyper-v">Module Hyper-V</h1>
 
 <p>The EventLog module can be used to query the Windows Event Log.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-The necessary configuration to talk to Royal Server (the variable <code>$config</code>) is described in &quot;Getting Started&quot;.</p>
-</blockquote>
-<blockquote>
-<p><strong>Note</strong> - About the parameter <code>CommandProvider</code><br>
-The underlaying communication protocol can be either WMI (Windows Management Instrumentation) or CIM. WMI can be more efficient but might require more open ports for the communication.</p>
-</blockquote>
-<blockquote>
-<p><strong>Note</strong> - About the parameter <code>NamespaceVersion</code><br>
-The parameter <code>NamespaceVersion</code> relates to the fact, that Microsoft changed the internal implementation of Hyper-V. Starting from Windows Server 2008 and up to Windows Server 2008 R2 the namespace used for hypervisor management was &quot;<em>root\virtualization</em>&quot; (aka V1). Windows Server 2012 introduced a refactored namespace &quot;<em>root\virtualization\v2</em>&quot;, offering also the V1 version for backwards compatibility with existing tools.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The necessary configuration to talk to Royal Server (the variable <code>$config</code>) is described in &quot;Getting Started&quot;.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>About the parameter <code>CommandProvider</code></p>
+<p>The underlaying communication protocol can be either WMI (Windows Management Instrumentation) or CIM. WMI can be more efficient but might require more open ports for the communication.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>About the parameter <code>NamespaceVersion</code></p>
+<p>The parameter <code>NamespaceVersion</code> relates to the fact, that Microsoft changed the internal implementation of Hyper-V. Starting from Windows Server 2008 and up to Windows Server 2008 R2 the namespace used for hypervisor management was &quot;<em>root\virtualization</em>&quot; (aka V1). Windows Server 2012 introduced a refactored namespace &quot;<em>root\virtualization\v2</em>&quot;, offering also the V1 version for backwards compatibility with existing tools.</p>
+</div>
 <h2 id="command-getinstances">Command &quot;GetInstances&quot;</h2>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -240,8 +242,7 @@ $hyperv.Results[0]
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

@@ -8,7 +8,7 @@
     <title>Module Document Store </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Module Document Store ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -70,14 +70,14 @@
 <h1 id="module-document-store">Module Document Store</h1>
 
 <p>The Document Store can be scripted via Power Shell.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
-</blockquote>
-<blockquote>
-<p><strong>Note</strong><br>
-The documents you receive or are able to load/save are determined by your credentials if you have ACLs (access control lists) enabled.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The documents you receive or are able to load/save are determined by your credentials if you have ACLs (access control lists) enabled.</p>
+</div>
 <h2 id="command-getdocumentlist">Command &quot;GetDocumentList&quot;</h2>
 <p>No Parameters</p>
 <h2 id="command-loaddocument">Command &quot;LoadDocument&quot;</h2>
@@ -113,10 +113,10 @@ foreach($d in $entries.Results)
     Write-Host ($d.DocumentName + &quot;(&quot; + $d.DocumentId + &quot;)&quot;)
 }
 </code></pre>
-<blockquote>
-<p><strong>Note</strong><br>
-If Access Rules are enabled, the number of returned documents depends on the configured rules.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If Access Rules are enabled, the number of returned documents depends on the configured rules.</p>
+</div>
 </li>
 <li><p>Load a specific document from Royal Server which is not encrypted/locked down and save it locally to the temp-directory:</p>
 <pre><code class="lang-powershell">$command = &quot;LoadDocument&quot;
@@ -177,8 +177,7 @@ Invoke-RoyalServerCommand -Module RoyalDocumentStore -Command $command -RoyalSer
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

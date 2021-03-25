@@ -8,7 +8,7 @@
     <title>Module Windows Events (EventLog) </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Module Windows Events (EventLog) ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -70,10 +70,10 @@
 <h1 id="module-windows-events-eventlog">Module Windows Events (EventLog)</h1>
 
 <p>The EventLog module can be used to query the Windows Event Log.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
+</div>
 <h2 id="command-getentries">Command &quot;GetEntries&quot;</h2>
 <p>Gets entries of the Windows Eventlog.</p>
 <p><strong>Parameters:</strong></p>
@@ -83,9 +83,9 @@ The necessary configuration to talk to Royal Server via Script is described in &
 <li>TruncateDescription: truncates the Message description after 80 characters to reduce network traffic</li>
 <li>TimeZoneId: Timezone Id that can be used to convert time stamps. In the results, the property &quot;LoggedLocal&quot; will be adjusted to the provided timezone.</li>
 </ul>
-<blockquote>
-<p><strong>Note</strong><br>
-The following Timezone Ids are supported (depending on the underlying Windows support):</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The following Timezone Ids are supported (depending on the underlying Windows support):</p>
 <ul>
 <li>Afghanistan Standard Time</li>
 <li>Alaskan Standard Time</li>
@@ -227,7 +227,7 @@ The following Timezone Ids are supported (depending on the underlying Windows su
 <li>West Pacific Standard Time</li>
 <li>Yakutsk Standard Time</li>
 </ul>
-</blockquote>
+</div>
 <h2 id="examples">Examples</h2>
 <ul>
 <li><p>For all commands a destination password is required which is passed over as a securestring which is converted in PowerShell like this:</p>
@@ -327,8 +327,7 @@ $entries = $response.Responses[0].Result
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

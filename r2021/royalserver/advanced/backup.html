@@ -8,7 +8,7 @@
     <title>Backing Up Royal Server </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Backing Up Royal Server ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -69,15 +69,20 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="backing-up-royal-server">Backing Up Royal Server</h1>
 
-<blockquote>
-<p><strong>General Note</strong><br>
-Whenever in any of the mentioned places changes are made its best to stop Royal Server beforehand and start it after the changes have been made again.</p>
-</blockquote>
-<p>After installation, a fully configured and running Royal Server stores its configuration in the following places:</p>
-<h3 id="1-windows-registry">1. Windows Registry</h3>
-<p>Most of the Royal Server settings are stored in the Windows Registry under the key <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Royal Server</code>. Most of these values are stored directly and can be manipulated via &quot;<code>regedt32.exe</code>&quot; or a script. Some are encrypted for security reasons. Backing this key and its subkeys up saves the configuration of Royal Server excluding the Document store documents and the document ACLs.</p>
-<h3 id="2-file-system">2. File System</h3>
-<p>Royal Server stores the Document Store files in the directory configured in the Configuration Tool. For each document a new directory with the unique document id is created. Inside, you can find:</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Whenever you make changes in the places mentioned below, it's best to stop Royal Server and start it again after the changes have been applied.</p>
+</div>
+<h2 id="royal-server-v4">Royal Server V4</h2>
+<p>After installation, a fully configured and running Royal Server stores its data and configuration by default in <code>%ProgramData%\RoyalServer\</code>.</p>
+<h3 id="1-configuration-settings">1. Configuration Settings</h3>
+<p>Configuration settings are primarily stored in <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
+<p>If the <code>appsettings.json</code> file is not present on start-up, it will automatically be generated and your settings from a previous Royal Server V3 installation will be imported. If no previous Royal Server V3 installation can be detected, default values will apply.</p>
+<h3 id="2-documents">2. Documents</h3>
+<p>Royal Server stores the Document Store files in the directory configured in the Configuration Tool. By default the documents are located at <code>%ProgramData%\RoyalServer\DocumentStore\</code>.
+There two sup directories:</p>
+<ul>
+<li><code>Documents</code> containing one folder per document named with the unique document id. Inside, you can find:
 <ul>
 <li><strong>default.rtsz</strong> (Royal TS/X document)<br>
 This can be opened directly by Royal TS/X unless the setting &quot;Document can only be opened by Royal Server&quot; was checked during creation of the document.</li>
@@ -88,12 +93,23 @@ This is a history of the last versions of the Document as specified in the Docum
 <li><strong>meta.json</strong><br>
 Metadatafile that contains information like the document name, if additional encryption is applied, number of backups etc..</li>
 </ul>
+</li>
+<li><code>DeletedDocuments</code> contains one folder per deleted document named with the unique document id</li>
+</ul>
 <p>Royal Server is directly working with this directory for the Document Store. If you restore the contents of this directory from a backup Royal Server just picks up the files and works with them.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-Note that possible Access Control Lists are not stored in this file system files. If you want to back them up as well, see below.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Note that Access Control Lists are not stored in these file system files. If you want to back them up as well, see below.</p>
+</div>
 <h3 id="3-access-rules-for-the-document-store-files">3. Access Rules for the Document Store files</h3>
+<p>The access rules due to their complexity are stored in a small database that can be found here: <code>%ProgramData%\RoyalServer\royalserverV4.db</code>.</p>
+<h2 id="royal-server-v3">Royal Server V3</h2>
+<p>After installation, a fully configured and running Royal Server stores its configuration in the following places:</p>
+<h3 id="1-configuration-settings-1">1. Configuration Settings</h3>
+<p>Most of the Royal Server settings are stored in the Windows Registry under the key <code>HKEY_LOCAL_MACHINE\SOFTWARE\Royal Server</code>. Most of these values are stored directly and can be manipulated via &quot;<code>regedt32.exe</code>&quot; or a script. Some are encrypted for security reasons. Backing this key and its subkeys up saves the configuration of Royal Server excluding the Document store documents and the document ACLs.</p>
+<h3 id="2-documents-v3">2. Documents V3</h3>
+<p>see <a href="#2-documents">Royal Server V4</a></p>
+<h3 id="3-access-rules-for-the-document-store-files-1">3. Access Rules for the Document Store files</h3>
 <p>The access rules due to their complexity are stored in a small database that can be found here: <code>%ProgramData%\RoyalServer\royalserver.db</code>.</p>
 </article>
           </div>
@@ -108,8 +124,7 @@ Note that possible Access Control Lists are not stored in this file system files
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

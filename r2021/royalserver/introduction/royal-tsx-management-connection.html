@@ -8,7 +8,7 @@
     <title>Royal TS/X Management Connection </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Royal TS/X Management Connection ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -71,10 +71,10 @@
 
 <p>Besides the required IP or name of the server, you probably also need to specify proper credentials when you configure a management connection.
 Additionally, you can configure a &quot;Royal Server&quot; object in the properties. This way, the connection is using Royal Server (and the provide credential) to query the information. Alternatively, you can configure &quot;Direct Connect (No Royal Server)&quot; which is executing the module directly without Royal Server.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-The configured credential on the management connection (not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log or query Windows Services). In most scenarios, a user account who is member of the local administrators group is used. For low privilege environments  a number of steps are necessary to grant non-administrative users the required rights.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The configured credential on the management connection (not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log or query Windows Services). In most scenarios, a user account who is member of the local administrators group is used. For low privilege environments  a number of steps are necessary to grant non-administrative users the required rights.</p>
+</div>
 <p>To access Royal Server you can install the latest version of Royal TS/X:</p>
 <p><a href="https://www.royalapps.com/ts/win/download">Get the latest version of Royal TS (for Windows)</a></p>
 <p><a href="https://www.royalapps.com/ts/mac/download">Get the latest version of Royal TSX (for OS X)</a></p>
@@ -93,8 +93,7 @@ The configured credential on the management connection (not the credential on th
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

@@ -8,7 +8,7 @@
     <title> Folder </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" Folder ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -122,7 +122,12 @@
 <h5>Note</h5>
 <p>To access the configured credentials through replacement tokens (for example in Auto Fill or Key Sequence Task configurations), use the replacement tokens $EffeciveUsername$ and $EffectivePassword$.</p>
 </div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
 <p>See also: <a class="xref" href="../../tutorials/working-with-credentials.html">Working with Credentials</a>, <a class="xref" href="credential.html">Credential</a>, <a href="https://www.royalapps.com/go/kb-all-teamsharing">About shared documents</a></p>
+<h4 id="apply-inheritance">Apply Inheritance</h4>
+<p>All objects in the current folder and all subfolders will be configured to use the configuration of the current folder.</p>
 <h2 id="-tasks"><img src="/r2021/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header" alt=""> Tasks</h2>
 <p>You can specify a task to be executed before a connection is established and after it has been disconnected. For example: establish a VPN connection before you connect and close it after disconnect.</p>
 <h3 id="connect-task">Connect Task</h3>
@@ -207,6 +212,10 @@
 <h5>Note</h5>
 <p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
 </div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+<h4 id="apply-inheritance">Apply Inheritance</h4>
+<p>All objects in the current folder and all subfolders will be configured to use the configuration of the current folder.</p>
 <h2 id="-royal-server"><img src="/r2021/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header" alt=""> Royal Server</h2>
 <p>The <strong>Royal Server</strong> page allows you to configure a Royal Server object for supported connections or choose to use a Royal Server configuration from the parent folder.</p>
 <h4 id="use-royal-server-from-the-parent-folder">Use Royal Server from the parent folder</h4>
@@ -219,7 +228,12 @@
 <h5>Note</h5>
 <p>A Royal Server is a product which allows you to gather information and execute management tasks securely on your managed servers.</p>
 </div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
 <p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h4 id="apply-inheritance">Apply Inheritance</h4>
+<p>All objects in the current folder and all subfolders will be configured to use the configuration of the current folder.</p>
 <h2 id="-secure-gateway"><img src="/r2021/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header" alt=""> Secure Gateway</h2>
 <p>The <strong>Secure Gateway</strong> page allows you to configure a Secure Gateway object for supported connections or choose to use a Secure Gateway configuration from the parent folder.</p>
 <h4 id="use-secure-gateway-from-the-parent-folder">Use Secure Gateway from the parent folder</h4>
@@ -241,7 +255,12 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <h5>Note</h5>
 <p>A Secure Gateway is a component included in Royal Server and can be used to connect through an SSH tunnel (port forwarding).</p>
 </div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
 <p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h4 id="apply-inheritance">Apply Inheritance</h4>
+<p>All objects in the current folder and all subfolders will be configured to use the configuration of the current folder.</p>
 <h2 id="-remote-desktop-gateway"><img src="/r2021/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header" alt=""> Remote Desktop Gateway</h2>
 <p>The <strong>Remote Desktop Gateway</strong> page allows you to configure a Remote Desktop Gateway object for supported connections or choose to use a Remote Desktop Gateway configuration from the parent folder.</p>
 <h4 id="use-remote-desktop-gateway-from-the-parent-folder">Use Remote Desktop Gateway from the parent folder</h4>
@@ -259,6 +278,10 @@ The Remote Desktop Gateway will only be used if direct connection is not possibl
 <p>This is the default value. If selected, no Remote Desktop Gateway is used and Royal TS will directly connect to the remote computer.</p>
 <h4 id="specify-a-remote-desktop-gateway-object">Specify a Remote Desktop Gateway object</h4>
 <p>The selected Remote Desktop Gateway object is used for supported connections.</p>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+<h4 id="apply-inheritance">Apply Inheritance</h4>
+<p>All objects in the current folder and all subfolders will be configured to use the configuration of the current folder.</p>
 <h2 id="-notes"><img src="/r2021/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
 <p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
 <h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
@@ -293,8 +316,7 @@ The Remote Desktop Gateway will only be used if direct connection is not possibl
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

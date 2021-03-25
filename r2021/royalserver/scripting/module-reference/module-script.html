@@ -8,7 +8,7 @@
     <title>Module Script </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Module Script ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -70,14 +70,15 @@
 <h1 id="module-script">Module Script</h1>
 
 <p>The Script module can be used to execute scripts on Royal Server or a remote host (depending on the used scripting engine). Additionally, the features &quot;<em>Dynamic Folders</em>&quot; and &quot;<em>Dynamic Credentials</em>&quot; or Royal TS/X are based on this module.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;.</p>
-</blockquote>
-<blockquote>
-<p><strong>Note</strong> - About the Parameter <code>PrimaryOutputMode</code><br>
-The module usually is used by Royal TS/X and in these user interfaces you can choose between a plain text output (like in normal Powershell scripts) and a Grid-output which layouts the returned data nicely in a datagrid. Depending on the script, one or the other is preferable.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>About the Parameter <code>PrimaryOutputMode</code></p>
+<p>The module usually is used by Royal TS/X and in these user interfaces you can choose between a plain text output (like in normal Powershell scripts) and a Grid-output which layouts the returned data nicely in a datagrid. Depending on the script, one or the other is preferable.</p>
+</div>
 <h2 id="command-executepowershell">Command &quot;ExecutePowershell&quot;</h2>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -133,8 +134,7 @@ $procs = Invoke-RoyalServerCommand -Module $module -Command $command -RoyalServe
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

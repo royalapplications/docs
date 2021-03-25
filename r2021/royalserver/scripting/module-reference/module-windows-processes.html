@@ -8,7 +8,7 @@
     <title>Module Windows Processes </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Module Windows Processes ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -70,10 +70,10 @@
 <h1 id="module-windows-processes">Module Windows Processes</h1>
 
 <p>The Windows Processes module can be used to query the running processes on a machine.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
+</div>
 <h2 id="command-listprocesses">Command &quot;ListProcesses&quot;</h2>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -120,10 +120,10 @@ $argz =  @{&quot;IncludeOwner&quot; = &quot;true&quot;}
 
 $processes = Invoke-RoyalServerCommand -Module Processes -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword -MaxRecords 10
 </code></pre>
-<blockquote>
-<p><strong>Note</strong><br>
-Including the process owner slows down the execution time significantly.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Including the process owner slows down the execution time significantly.</p>
+</div>
 </li>
 <li><p>Teminate a process at the <code>$destinationHost</code>:</p>
 <pre><code class="lang-powershell">$command = &quot;TerminateProcess&quot;
@@ -140,10 +140,10 @@ $argz =  @{&quot;CommandLine&quot; = &quot;notepad.exe&quot;}
 
 Invoke-RoyalServerCommand -Module Processes -Command $command -RoyalServerConfig $config -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword -Arguments $argz
 </code></pre>
-<blockquote>
-<p><strong>Note</strong><br>
-Note that the spawned process will run under <code>NTAUTHORITY\System</code> and will not have a visible user interface.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Note that the spawned process will run under <code>NTAUTHORITY\System</code> and will not have a visible user interface.</p>
+</div>
 </li>
 </ul>
 </article>
@@ -159,8 +159,7 @@ Note that the spawned process will run under <code>NTAUTHORITY\System</code> and
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

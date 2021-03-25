@@ -8,7 +8,7 @@
     <title>Logging </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Logging ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -97,20 +97,20 @@
 <p>Specifies the log file name (if Type <em>File</em> is selected). Please note, that Royal Server is using a rolling mechanism per day to prevent writing in one huge file.</p>
 <p><strong>Example:</strong></p>
 <p>You set the Log File to &quot;logserverlog.txt&quot;, you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a File Name like <em>logserverlog<yyyymmdd>.txt</yyyymmdd></em>, e.g. logserverlog20140709.txt. The file logserverlog.txt always contains the current day.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-Any change in this panel requires a restart of Royal Server.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any change in this panel requires a restart of Royal Server.</p>
+</div>
 <p><strong>Request/Response Logging</strong></p>
 <p>If checked, the complete requests and responses will be logged in separate files. The destination directory can be specified. This type of logging is only supported to files. <strong>ATTENTION:</strong> Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.</p>
-<blockquote>
-<p><strong>Note</strong><br>
-Be aware that for each request, two log files will be generated. One <em><guid>_request.xml</guid></em> file and one <em><guid>_response.xml</guid></em> file.</p>
-</blockquote>
-<blockquote>
-<p><strong>Note</strong><br>
-Enabling Request/Response Logging can have a huge impact on the Royal Server performance as well as the amount of data written to disc. It is strongly recommended to use this only for debugging purposes.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Be aware that for each request, two log files will be generated. One <em><guid>_request.xml</guid></em> file and one <em><guid>_response.xml</guid></em> file.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Enabling Request/Response Logging can have a huge impact on the Royal Server performance as well as the amount of data written to disc. It is strongly recommended to use this only for debugging purposes.</p>
+</div>
 </article>
           </div>
           
@@ -124,8 +124,7 @@ Enabling Request/Response Logging can have a huge impact on the Royal Server per
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>
