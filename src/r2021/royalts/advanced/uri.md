@@ -7,6 +7,22 @@ order: 10100
 # URI Scheme
 
 ## CLI Commands
+Royal TS allows you to execute any [CLI command](xref:royalts_advanced_cli) using the uri scheme `rtscli://`. Here's an example:
+- Connect to a connection with the name `QNAP (SSH)` using the cli:
+  ```batch
+  rtscli.exe action connect -n "QNAP (SSH)"
+  ```
+- The same command using an URI:
+  ```batch
+  rtscli://local/action/connect?-n=QNAP+(SSH)
+  ```
+
+### Create Link
+Every CLI command provides an option `--create-link` which allows you to convert the current CLI command in a URI command:
+```batch
+rtscli.exe action connect -n "QNAP (SSH)" --create-link
+```
+In this case, the command will not be executed, instead the `rtscli://local/action/connect?-n=QNAP+(SSH)` URI command will be printed out.
 
 ## Legacy URI Scheme
 Royal TS V6 can still be invoked using the legacy URI scheme with the following syntax:
