@@ -1,44 +1,73 @@
 ---
+uid: scripting_docps
 name: RoyalDocument.PowerShell
 order: 10000
 ---
 
-# RoyalDocument.PowerShell
-## about_index.md
-
-```
-ABOUT TOPIC NOTE:
-The first header of the about topic should be the topic name.
-The second header contains the lookup name used by the help system.
-
-IE:
-# Some Help Topic Name
-## SomeHelpTopicFileName
-
-This will be transformed into the text file
-as `about_SomeHelpTopicFileName`.
-Do not include file extensions.
-The second header should have no spaces.
-```
+# RoyalDocument PowerShell Module
+## RoyalDocument.PowerShell
 
 # SHORT DESCRIPTION
-{{ Short Description Placeholder }}
-
-```
-ABOUT TOPIC NOTE:
-About topics can be no longer than 80 characters wide when rendered to text.
-Any topics greater than 80 characters will be automatically wrapped.
-The generated about topic will be encoded UTF-8.
-```
+Describes how to use PowerShell to create and modify Royal TS/X documents (.rtsz files).
 
 # LONG DESCRIPTION
-{{ Long Description Placeholder }}
+The PowerShell module can be used on Windows, macOS and Linux (using PowerShell Core). There is no need to install Royal TS/X or to apply a license in order to use the PowerShell module. Simply install the module and import it in your scripts.
 
-## Optional Subtopics
-{{ Optional Subtopic Placeholder }}
+<!-- ## Optional Subtopics
+{{ Optional Subtopic Placeholder }} -->
 
 # EXAMPLES
-{{ Code or descriptive examples of how to leverage the functions described. }}
+
+## SETUP
+The PowerShell module is available for free on the PowerShell Gallery:
+https://www.powershellgallery.com/packages/RoyalDocument.PowerShell
+
+Install the latest module on your system using this command:
+```powershell
+Install-Module -Name RoyalDocument.PowerShell
+```
+In order to work with the RoyalDocument PowerShell commandlets, you need to register them (import them) into your PowerShell session. Just issue the following command and you are good to go:
+```powershell
+Import-Module RoyalDocument.PowerShell
+```
+
+## FIRST STEPS
+Most of the RoyalDocument related objects are known from the Royal TS UI - e.g. RoyalDocument (a document), RoyalCredential (a credential), RoyalFolder (a folder) etc. With the exception of the RoyalStore which is the base class that holds all references to open RoyalDocuments.
+
+For a complete list of all available objects and properties can be found in the scripting reference.
+
+A simple script that just opens a RoyalStore, adds a RoyalDocument, saves it and closes it looks like this:
+
+```powershell
+# create a new RoyalStore in memory
+$store = New-RoyalStore -UserName "michaelseirer"
+
+# create a new RoyalDocument with the new .rtsz format
+$newDocumentPath = "C:\Users\michaelseirer\Documents\new.rtsz"
+$newDocument = New-RoyalDocument -Name "Powershell TestDocument" -FileName $newDocumentPath -Store $store 
+
+# save it to disk
+Out-RoyalDocument -Document $newDocument
+```
+
+## WORKING WITH OBJECTS
+Adding different objects to an open RoyalDocument is easy:
+
+```powershell
+$doc = New-RoyalObject -folder $newDocument -Type RoyalFolder -Name "DMZ-NET"
+
+$events = New-RoyalObject -folder $newDocument -Type RoyalWindowsEventsConnection -Name "Windows Events"
+
+Set-RoyalObjectValue -Object $events -Property "URI" -Value "192.168.1.145"
+```
+
+To get a list of all available types, browse the -Type parameter with pressing TAB multiple times.
+
+# NOTE
+In a PowerShell session, you can get information to all commandlets by using the Get-Help command.
+
+
+<!-- 
 
 # NOTE
 {{ Note Placeholder - Additional information that a user needs to know.}}
@@ -59,4 +88,4 @@ The generated about topic will be encoded UTF-8.
 - {{ Keyword Placeholder }}
 - {{ Keyword Placeholder }}
 - {{ Keyword Placeholder }}
-- {{ Keyword Placeholder }}
+- {{ Keyword Placeholder }} -->

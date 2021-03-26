@@ -122,7 +122,8 @@ The **Log** panel displays internal log entries. Internal logging (if enabled) k
 -   Group by one or more columns.
 -   Add and remove columns using the column chooser.
 -   Filter editor allows you to create advanced filter expressions.
--   Export to Excel (.xls) file and Plain Text (.txt) file.
+-   Open a log file.
+-   Save the log to a file.
 -   Copy to clipboard allows you to copy the log entry details from one or more log entries to the clipboard.
 
 See also: [Logging](xref:royalts_reference_options#logging)

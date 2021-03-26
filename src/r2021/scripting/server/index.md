@@ -1,6 +1,7 @@
 ---
+uid: scripting_serverps
 name: RoyalServer.PowerShell
-order: 10000
+order: 9990
 ---
 
 # RoyalServer Powershell Module
@@ -21,7 +22,7 @@ Royal Server provides a list of loaded `Royal Server Modules` which contain `Com
 In order to work with the RoyalServer PowerShell Commandlets, you need to register them with your PowerShell session. Just issue the following command and you are good to go:
 
 ```powershell
-Import-Module <Path-to-RoyalServer-installation>\\RoyalServer.PowerShell.dll -Force
+Import-Module RoyalServer.PowerShell
 ```
 
 > [!NOTE]

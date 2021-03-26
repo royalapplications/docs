@@ -149,6 +149,9 @@ If the computer you want to connect to requires Network Level Authentication, yo
 > [!Note]
 > NLA is enabled by default on Vista/Windows 2008 or later.
 
+#### Use Credential Manager
+When checked, Royal TS will create a credential entry in the Windows Credential Manager instead of submitting the credentials to the server.
+
 #### Restricted Admin Mode
 In this mode, credentials won't be sent to the remote server, which can protect you if you connect to a remote server that has been compromised. However, connections made from the remote server might not be authenticated by other servers, which might impact app functionality and compatibility.
 
