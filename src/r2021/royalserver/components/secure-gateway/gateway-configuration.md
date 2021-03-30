@@ -24,7 +24,7 @@ Enable or Disable the Secure Gateway.
 
 **IP Address**
 
-Specify the IP Address the Secure Gateway is binding to. Use this to IP Address to connect to the Secure Gateway - e.g. via Royal TS/X.
+Specify the IP Address the Secure Gateway is binding to. Use this to IP Address to connect to the Secure Gateway - e.g. via Royal TS/X. By default, the unspecified address (0.0.0.0) is assigned .i.e it listens on all available IP4 addresses.
 
 **Port**
 

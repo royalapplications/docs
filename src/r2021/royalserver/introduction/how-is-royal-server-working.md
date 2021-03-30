@@ -14,7 +14,7 @@ The Secure Gateway component is based on SSH standards.
 
 Client devices like desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS are accessing Royal Server over HTTP/S (possibly using a VPN tunnel). Royal Server itself is using different technologies to talk to the managed servers, depending on the used [component](./what-are-royal-server-components.md) and module. The Secure Gateway component is using a standards-based SSH connection.
 
-In order to configure managed servers, please check our [Configuration of a managed servers](./configuration-of-managed-servers.md) topic.
+In order to configure managed servers, please check the topic [Configuration of Managed Servers](./configuration.md#configuration-of-managed-servers).
 
 ## Under the hood
 

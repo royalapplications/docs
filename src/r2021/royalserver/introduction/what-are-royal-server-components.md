@@ -1,6 +1,6 @@
 ---
 name: What are Royal Server Components?
-order: 10070
+order: 10080
 ---
 
 # What are Royal Server Components?
@@ -13,5 +13,5 @@ Royal Server comes with multiple components. Currently there are three component
   The Secure Gateway enables the Royal TS clients to automatically tunnel all the traffic through a secure tunnel. This works for Remote Desktop Connections, VNC, SSH, Web Pages and Telnet.
 - **Document Store**  
   The Document Store enables Royal TS clients to open/save .rtsz documents directly from Royal Server. This setup is perfect for the usage within teams as it centralizes the storage of these documents.
-- **Royal Server Admin Console**  
+- **Royal Server Configuration Tool**  
   Not really being a component, its the user interface to configure Royal Server.

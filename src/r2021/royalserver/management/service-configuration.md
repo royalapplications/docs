@@ -28,7 +28,7 @@ Royal Server is running as a Windows Service. By default it is installed using t
 
 **IP Address**
 
-Specify the IP Address Royal Server is using for accepting requests.
+Specify the IP Address Royal Server is using for accepting requests. By default, the unspecified address (0.0.0.0) is assigned .i.e it listens on all available IP4 addresses.
 
 **Port**
 
