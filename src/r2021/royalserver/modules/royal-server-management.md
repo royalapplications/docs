@@ -1,6 +1,6 @@
 ---
 name: Royal Server Management
-order: 8000
+order: 8070
 ---
 
 # Royal Server Management

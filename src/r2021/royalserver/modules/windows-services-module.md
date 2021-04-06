@@ -1,6 +1,6 @@
 ---
 name: Windows Services Module
-order: 8000
+order: 8010
 ---
 
 # Windows Services Module

@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules
 name: Royal Server Modules
 order: 8000
 ---

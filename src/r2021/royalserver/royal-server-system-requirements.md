@@ -1,5 +1,5 @@
 ---
-name: Royal Server System Requirements
+name: System Requirements
 order: 1030
 ---
 

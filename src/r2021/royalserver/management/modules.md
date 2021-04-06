@@ -18,7 +18,7 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 
 - The panel lists the currently installed modules of Royal Server and the corresponding version.
 - Using the Refresh button, the list can be refreshed
-- Use the Settings button to configure a module (currently only the Script Module has settings)
+- Use the Settings button to configure a module, if optional settings are available
 
 ## List of Modules
 
@@ -34,7 +34,7 @@ The following modules are distributed with Royal Server
 - WindowsServices (manages Windows services)
 - ModuleInfo (module for displaying the available modules)
 
-For a detailed description of all modules see [Royal Server Modules](../modules/index.md)
+For a detailed description of all modules see [Royal Server Modules](xref:royalserver_modules)
 
 > [!NOTE]
 > If you want to completely disable a functionality, e.g. you don't want any user to be able to list/kill processes, you can delete the module dll file in <RoyalServerInstallationDir>\RoyalServer.ManagementEndpoint.Module\ and restart Royal Server.

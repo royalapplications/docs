@@ -1,6 +1,6 @@
 ---
 name: Terminal Services Module
-order: 8000
+order: 8050
 ---
 
 # Terminal Services Module

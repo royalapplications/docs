@@ -1,6 +1,6 @@
 ---
 name: Windows Events Module
-order: 8000
+order: 8030
 ---
 
 # Windows Events Module

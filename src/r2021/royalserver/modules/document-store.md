@@ -1,6 +1,6 @@
 ---
 name: Document Store
-order: 8000
+order: 8090
 ---
 
 # Document Store

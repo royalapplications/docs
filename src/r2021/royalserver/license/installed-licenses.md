@@ -1,6 +1,6 @@
 ---
 name: Installed Licenses
-order: 6020
+order: 6010
 ---
 
 # Installed Licenses

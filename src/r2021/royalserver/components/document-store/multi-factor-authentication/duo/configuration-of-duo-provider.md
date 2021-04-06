@@ -24,7 +24,7 @@ If you do not have users in your DUO configuration, create a user by clicking on
 
 **Example:**
 
-https://admin-42cae6ad.duosecurity.com/users/**DUNA65C32A3T2U0I20TG**
+[https://admin-42cae6ad.duosecurity.com/users/**DUNA65C32A3T2U0I20TG**]()
 
 Notice the bold part at the end.
 

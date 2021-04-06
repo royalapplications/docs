@@ -1,6 +1,6 @@
 ---
 name: Windows Processes Module
-order: 8000
+order: 8020
 ---
 
 # Windows Processes Module

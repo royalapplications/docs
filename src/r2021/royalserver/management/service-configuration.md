@@ -40,9 +40,14 @@ This setting enables compression on Royal Server. This setting makes sense if yo
 
 **HTTPS/SSL**
 
-Royal Server uses communication via HTTPS/SSL for encrypt by default. This is achieved by creating a self-signed SSL certificate during the installation process. This certificate is named "RoyalServer". It can be changed to your own certificate if needed. The selected certificate can be deleted and exported (to be used on a second Royal Server installation in a load balanced scenario).
+Royal Server uses communication via HTTPS/SSL to encrypt communication. This is achieved by creating a self-signed SSL certificate during the installation process. This certificate is named "RoyalServer". It can be changed to your own certificate if needed. The selected certificate can be deleted and exported (to be used on a second Royal Server installation in a load balanced scenario).
+
+> [!NOTE]
+> Until Royal Server V3 and below it was possible to deactivate HTTPS/SSL encryption, as of Royal Server V4 this is not possible anymore, only secure connections are supported.
 
 **Windows Service User**
 
+The Royal Server Service is using LOCAL SYSTEM as user by default.
+
 > [!NOTE]
-> The Royal Server service is using LOCAL SYSTEM as user by default. If this user does not have the necessary rights (e.g. to query domain users and groups) please consider changing this user.
+> If this user does not have the necessary rights (e.g. to query domain users and groups) please consider changing this user.

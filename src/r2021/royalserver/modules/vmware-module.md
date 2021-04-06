@@ -1,6 +1,6 @@
 ---
 name: VMware Module
-order: 8000
+order: 8040
 ---
 
 # VMware Module

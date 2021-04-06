@@ -19,5 +19,6 @@ Check _"Generic TOTP Authenticator (Google, Microsoft etc)"_, save and restart R
 
 When done, you are presented with a Secret that you can copy and provide to the user and a QR Code that can be scanned by the Authenticator app directly. At a later time, you can click on **Show Secret...** for TOTP enrolled users as well.
 
-> **Attention - TOTP time sensitivity**  
-> The machine where Royal Server is installed and also the client machine where Royal TS/X is running need to have the correct time  in order to make TOTP work (use Time Services to ensure this).
+> [!WARNING]  
+> **TOTP time sensitivity**  
+> The machine where Royal Server is installed and the client machine where Royal TS/X is running need to have the correct time in order to make TOTP work. Use Time Services to ensure this.

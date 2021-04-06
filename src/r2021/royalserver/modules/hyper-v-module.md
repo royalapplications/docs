@@ -1,6 +1,6 @@
 ---
 name: Hyper-V Module
-order: 8000
+order: 8080
 ---
 
 # Hyper-V Module

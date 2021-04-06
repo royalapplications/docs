@@ -22,11 +22,4 @@ We believe that the most common operations on remote servers are task based and 
 
 Royal Server is built to fill the gap and provides common management tasks for specific operations. Our client applications are designed to provide access to all those tasks using the platforms or devices native user interface. For example: restarting a Windows service on multiple hosts has never been that quick and easy. Instead of connecting to a machine using a graphical user  interface and clicking around, you basically issue the command "restart the Windows Service with the name 'Spooler' on 192.168.1.1". This saves bandwidth and is much faster - especially, when you want to do this on multiple machines at the same time.
 
-## License Information
-
-Royal Server V4 does not contain a default license, but we will gladly extend trial licenses. Please get your trial license under [https://www.royalapps.com/trial/](https://www.royalapps.com/trial/) in order to test Royal Server without any functional limitations.
-
-Alternatively, you can buy a license. Each license includes at least a 12 month software maintenance (free upgrades and priority email support). For more information visit: [https://www.royalapps.com/server/](https://www.royalapps.com/server/).
-
-> [!NOTE]
-> Please note that Royal Server and Royal TS/X are licensed separately. So if you are purchasing a Royal Server license (aka server) you still need clients for most scenarios (aka Royal TS/X).
+[!include[licensing.md](../licensing.md)]
