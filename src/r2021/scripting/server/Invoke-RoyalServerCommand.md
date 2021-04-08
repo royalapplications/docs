@@ -1,11 +1,11 @@
 ---
-external help file: RoyalServer.Powershell.dll-Help.xml
-Module Name: RoyalServer.Powershell
-online version:
-schema: 2.0.0
+external help file: RoyalServer.PowerShell.dll-Help.xml
+Module Name: RoyalServer.PowerShell
 name: Invoke-RoyalServerCommand
-uid: Invoke-RoyalServerCommand
+online version:
 order: 9950
+schema: 2.0.0
+uid: Invoke-RoyalServerCommand
 ---
 
 # Invoke-RoyalServerCommand

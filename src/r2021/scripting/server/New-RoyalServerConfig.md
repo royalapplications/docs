@@ -1,11 +1,11 @@
 ---
-external help file: RoyalServer.Powershell.dll-Help.xml
-Module Name: RoyalServer.Powershell
-online version:
-schema: 2.0.0
+external help file: RoyalServer.PowerShell.dll-Help.xml
+Module Name: RoyalServer.PowerShell
 name: New-RoyalServerConfig
-uid: New-RoyalServerConfig
+online version:
 order: 9990
+schema: 2.0.0
+uid: New-RoyalServerConfig
 ---
 
 # New-RoyalServerConfig

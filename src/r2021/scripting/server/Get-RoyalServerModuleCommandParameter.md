@@ -1,11 +1,11 @@
 ---
-external help file: RoyalServer.Powershell.dll-Help.xml
-Module Name: RoyalServer.Powershell
-online version:
-schema: 2.0.0
+external help file: RoyalServer.PowerShell.dll-Help.xml
+Module Name: RoyalServer.PowerShell
 name: Get-RoyalServerModuleCommandParameter
-uid: Get-RoyalServerModuleCommandParameter
+online version:
 order: 9960
+schema: 2.0.0
+uid: Get-RoyalServerModuleCommandParameter
 ---
 
 # Get-RoyalServerModuleCommandParameter
