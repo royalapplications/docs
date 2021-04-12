@@ -16,8 +16,8 @@ Creates a new RoyalServerConfig.
 ## SYNTAX
 
 ```
-New-RoyalServerConfig -Host <String> -Port <Int32> [-Credential <PSCredential>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-RoyalServerConfig -Host <String> -Port <Int32> [-Credential <PSCredential>] [-UseSSL <Boolean>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,6 +107,21 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UseSSL
+Use SSL/HTTPS for communication with Royal Server. Note that as of Royal Server V4 only secure connections are supported.
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: True
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
