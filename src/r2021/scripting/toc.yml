@@ -1,105 +1,105 @@
-- order: 10000
-  name: RoyalDocument.PowerShell
-  href: document\index.md
+- name: RoyalDocument.PowerShell
+  href: document/index.md
+  order: 10000
   items:
-  - order: 10000
-    name: New-RoyalStore
-    href: document\New-RoyalStore.md
-  - order: 9990
-    name: New-RoyalDocument
-    href: document\New-RoyalDocument.md
-  - order: 9980
-    name: Open-RoyalDocument
-    href: document\Open-RoyalDocument.md
-  - order: 9970
-    name: Out-RoyalDocument
-    href: document\Out-RoyalDocument.md
-  - order: 9960
-    name: Close-RoyalDocument
-    href: document\Close-RoyalDocument.md
-  - order: 9950
-    name: Get-RoyalServerDocument
-    href: document\Get-RoyalServerDocument.md
-  - order: 9940
-    name: Open-RoyalServerDocument
-    href: document\Open-RoyalServerDocument.md
-  - order: 9930
-    name: Out-RoyalServerDocument
-    href: document\Out-RoyalServerDocument.md
-  - order: 9920
-    name: Close-RoyalServerDocument
-    href: document\Close-RoyalServerDocument.md
-  - order: 9910
-    name: Get-RoyalDocumentType
-    href: document\Get-RoyalDocumentType.md
-  - order: 9900
-    name: Set-RoyalDocumentType
-    href: document\Set-RoyalDocumentType.md
-  - order: 9890
-    name: Set-RoyalDocumentPassword
-    href: document\Set-RoyalDocumentPassword.md
-  - order: 9880
-    name: New-RoyalObject
-    href: document\New-RoyalObject.md
-  - order: 9870
-    name: Get-RoyalObject
-    href: document\Get-RoyalObject.md
-  - order: 9860
-    name: Copy-RoyalObject
-    href: document\Copy-RoyalObject.md
-  - order: 9850
-    name: Move-RoyalObject
-    href: document\Move-RoyalObject.md
-  - order: 9840
-    name: Remove-RoyalObject
-    href: document\Remove-RoyalObject.md
-  - order: 9830
-    name: Get-RoyalObjectValue
-    href: document\Get-RoyalObjectValue.md
-  - order: 9820
-    name: Set-RoyalObjectValue
-    href: document\Set-RoyalObjectValue.md
-  - order: 9810
-    name: Set-RoyalSortOrder
-    href: document\Set-RoyalSortOrder.md
-  - order: 9800
-    name: New-RoyalObjectCustomProperty
-    href: document\New-RoyalObjectCustomProperty.md
-  - order: 9790
-    name: Get-RoyalObjectCustomProperty
-    href: document\Get-RoyalObjectCustomProperty.md
-  - order: 9780
-    name: Set-RoyalObjectCustomProperty
-    href: document\Set-RoyalObjectCustomProperty.md
-  - order: 9770
-    name: Set-RoyalObjectCustomPropertyPosition
-    href: document\Set-RoyalObjectCustomPropertyPosition.md
-  - order: 9760
-    name: Remove-RoyalObjectCustomProperty
-    href: document\Remove-RoyalObjectCustomProperty.md
-  - order: 9750
-    name: Get-RoyalPropertyHelp
-    href: document\Get-RoyalPropertyHelp.md
-- order: 9990
-  name: RoyalServer.PowerShell
-  href: server\index.md
+  - name: New-RoyalStore
+    href: document/New-RoyalStore.md
+    order: 10000
+  - name: New-RoyalDocument
+    href: document/New-RoyalDocument.md
+    order: 9990
+  - name: Open-RoyalDocument
+    href: document/Open-RoyalDocument.md
+    order: 9980
+  - name: Out-RoyalDocument
+    href: document/Out-RoyalDocument.md
+    order: 9970
+  - name: Close-RoyalDocument
+    href: document/Close-RoyalDocument.md
+    order: 9960
+  - name: Get-RoyalServerDocument
+    href: document/Get-RoyalServerDocument.md
+    order: 9950
+  - name: Open-RoyalServerDocument
+    href: document/Open-RoyalServerDocument.md
+    order: 9940
+  - name: Out-RoyalServerDocument
+    href: document/Out-RoyalServerDocument.md
+    order: 9930
+  - name: Close-RoyalServerDocument
+    href: document/Close-RoyalServerDocument.md
+    order: 9920
+  - name: Get-RoyalDocumentType
+    href: document/Get-RoyalDocumentType.md
+    order: 9910
+  - name: Set-RoyalDocumentType
+    href: document/Set-RoyalDocumentType.md
+    order: 9900
+  - name: Set-RoyalDocumentPassword
+    href: document/Set-RoyalDocumentPassword.md
+    order: 9890
+  - name: New-RoyalObject
+    href: document/New-RoyalObject.md
+    order: 9880
+  - name: Get-RoyalObject
+    href: document/Get-RoyalObject.md
+    order: 9870
+  - name: Copy-RoyalObject
+    href: document/Copy-RoyalObject.md
+    order: 9860
+  - name: Move-RoyalObject
+    href: document/Move-RoyalObject.md
+    order: 9850
+  - name: Remove-RoyalObject
+    href: document/Remove-RoyalObject.md
+    order: 9840
+  - name: Get-RoyalObjectValue
+    href: document/Get-RoyalObjectValue.md
+    order: 9830
+  - name: Set-RoyalObjectValue
+    href: document/Set-RoyalObjectValue.md
+    order: 9820
+  - name: Set-RoyalSortOrder
+    href: document/Set-RoyalSortOrder.md
+    order: 9810
+  - name: New-RoyalObjectCustomProperty
+    href: document/New-RoyalObjectCustomProperty.md
+    order: 9800
+  - name: Get-RoyalObjectCustomProperty
+    href: document/Get-RoyalObjectCustomProperty.md
+    order: 9790
+  - name: Set-RoyalObjectCustomProperty
+    href: document/Set-RoyalObjectCustomProperty.md
+    order: 9780
+  - name: Set-RoyalObjectCustomPropertyPosition
+    href: document/Set-RoyalObjectCustomPropertyPosition.md
+    order: 9770
+  - name: Remove-RoyalObjectCustomProperty
+    href: document/Remove-RoyalObjectCustomProperty.md
+    order: 9760
+  - name: Get-RoyalPropertyHelp
+    href: document/Get-RoyalPropertyHelp.md
+    order: 9750
+- name: RoyalServer.PowerShell
+  href: server/index.md
+  order: 9990
   items:
-  - order: 9990
-    name: New-RoyalServerConfig
-    href: server\New-RoyalServerConfig.md
-  - order: 9980
-    name: Get-RoyalServerModule
-    href: server\Get-RoyalServerModule.md
-  - order: 9970
-    name: Get-RoyalServerModuleCommand
-    href: server\Get-RoyalServerModuleCommand.md
-  - order: 9960
-    name: Get-RoyalServerModuleCommandParameter
-    href: server\Get-RoyalServerModuleCommandParameter.md
-  - order: 9950
-    name: Invoke-RoyalServerCommand
-    href: server\Invoke-RoyalServerCommand.md
-- order: 9980
-  name: Royal JSON
-  href: rjson\index.md
+  - name: New-RoyalServerConfig
+    href: server/New-RoyalServerConfig.md
+    order: 9990
+  - name: Get-RoyalServerModule
+    href: server/Get-RoyalServerModule.md
+    order: 9980
+  - name: Get-RoyalServerModuleCommand
+    href: server/Get-RoyalServerModuleCommand.md
+    order: 9970
+  - name: Get-RoyalServerModuleCommandParameter
+    href: server/Get-RoyalServerModuleCommandParameter.md
+    order: 9960
+  - name: Invoke-RoyalServerCommand
+    href: server/Invoke-RoyalServerCommand.md
+    order: 9950
+- name: Royal JSON
+  href: rjson/index.md
+  order: 9980
 
