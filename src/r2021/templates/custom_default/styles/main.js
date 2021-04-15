@@ -25,15 +25,20 @@ function selectText(element) {
 	selection.addRange(range);
 }
 
-let codeElements = document.querySelector("code");
+let codeElements = document.querySelectorAll("pre code");
 
-codeElements.addEventListener("click", e => {
-	if (e.target.closest("td.hljs-ln-line.hljs-ln-numbers")) {
-		let trElement = e.target.closest("tr");
-		let actualCodeElement = trElement.querySelector(".hljs-ln-code")
-
-		if (actualCodeElement != null) {
-			selectText(actualCodeElement);
-		}
-	}
-});
+if (codeElements != null &&
+	codeElements.length > 0) {
+	codeElements.forEach(function(el) {
+		el.addEventListener("click", e => {
+			if (e.target.closest("td.hljs-ln-line.hljs-ln-numbers")) {
+				let trElement = e.target.closest("tr");
+				let actualCodeElement = trElement.querySelector(".hljs-ln-code")
+		
+				if (actualCodeElement != null) {
+					selectText(actualCodeElement);
+				}
+			}
+		});
+	});
+}

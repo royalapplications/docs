@@ -1,5 +1,4 @@
 - href: introduction/index.md
-  order: 10000
   items:
   - href: introduction/what-is-royal-ts.md
     order: 10000
@@ -16,9 +15,9 @@
   - href: https://www.royalapps.com/go/kb-ts-win
     order: 9960
     name: FAQs
+  order: 10000
   name: Introduction
 - href: getting-started/index.md
-  order: 9990
   items:
   - href: getting-started/your-first-connection.md
     order: 10000
@@ -44,9 +43,9 @@
   - href: getting-started/security.md
     order: 9930
     name: Security
+  order: 9990
   name: Getting Started
 - href: tutorials/index.md
-  order: 9980
   items:
   - href: tutorials/working-with-documents.md
     order: 10000
@@ -81,9 +80,9 @@
   - href: https://www.royalapps.com/go/kb-ts-win-tutorials
     order: 9900
     name: More Tutorials
+  order: 9980
   name: Tutorials
 - href: user-interface/index.md
-  order: 9970
   items:
   - href: user-interface/panels.md
     order: 10000
@@ -97,12 +96,11 @@
   - href: user-interface/color-palettes.md
     order: 9970
     name: Color Palettes
+  order: 9970
   name: User Interface
 - href: reference/index.md
-  order: 9960
   items:
   - href: reference/organization/index.md
-    order: 11000
     items:
     - href: reference/organization/document.md
       order: 10000
@@ -122,9 +120,9 @@
     - href: reference/organization/todo-item.md
       order: 9950
       name: To-Do Item
+    order: 11000
     name: Organization
   - href: reference/connections/index.md
-    order: 10000
     items:
     - href: reference/connections/rdp.md
       order: 10000
@@ -183,9 +181,9 @@
     - href: reference/connections/vmware.md
       order: 9820
       name: VMware
+    order: 10000
     name: Connections
   - href: reference/gateways/index.md
-    order: 10000
     items:
     - href: reference/gateways/royalserver.md
       order: 9990
@@ -196,9 +194,9 @@
     - href: reference/gateways/rdpgateway.md
       order: 9970
       name: Remote Desktop Gateway
+    order: 10000
     name: Gateways
   - href: reference/tasks/index.md
-    order: 9980
     items:
     - href: reference/tasks/command.md
       order: 10000
@@ -209,13 +207,14 @@
     - href: reference/tasks/adhoc-key-sequence.md
       order: 9980
       name: Ad Hoc Key Sequence
+    order: 9980
     name: Tasks
   - href: reference/options.md
     order: 1000
     name: Options
+  order: 9960
   name: Reference
 - href: advanced/index.md
-  order: 9950
   items:
   - href: advanced/import.md
     order: 10600
@@ -235,5 +234,6 @@
   - href: advanced/uri.md
     order: 10100
     name: URI Scheme
+  order: 9950
   name: Advanced
 

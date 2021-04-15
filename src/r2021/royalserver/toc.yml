@@ -1,5 +1,4 @@
 - href: introduction/index.md
-  order: 10000
   items:
   - href: introduction/what-is-royal-server.md
     order: 10099
@@ -28,9 +27,9 @@
   - href: introduction/release-notes.md
     order: 10020
     name: Release Notes
+  order: 10000
   name: Introduction
 - href: management/index.md
-  order: 9000
   items:
   - href: management/overview.md
     order: 9095
@@ -62,9 +61,9 @@
   - href: management/logging.md
     order: 9010
     name: Logging
+  order: 9000
   name: Royal Server Management
 - href: modules/index.md
-  order: 8000
   items:
   - href: modules/document-store.md
     order: 8090
@@ -93,15 +92,14 @@
   - href: modules/windows-services-module.md
     order: 8010
     name: Windows Services Module
+  order: 8000
   name: Royal Server Modules
 - href: components/index.md
-  order: 7000
   items:
   - href: components/management-endpoint.md
     order: 7010
     name: Management Endpoint
   - href: components/document-store/index.md
-    order: 7000
     items:
     - href: components/document-store/configuration.md
       order: 7020
@@ -113,29 +111,29 @@
       order: 7010
       name: Documents
     - href: components/document-store/multi-factor-authentication/index.md
-      order: 7000
       items:
       - href: components/document-store/multi-factor-authentication/general-information.md
         order: 7010
         name: General Information
       - href: components/document-store/multi-factor-authentication/totp/index.md
-        order: 7000
         items:
         - href: components/document-store/multi-factor-authentication/totp/configuration-of-totp-provider.md
           order: 7010
           name: Configuration of TOTP Provider
+        order: 7000
         name: Time-based One-time Password (TOTP)
       - href: components/document-store/multi-factor-authentication/duo/index.md
-        order: 7000
         items:
         - href: components/document-store/multi-factor-authentication/duo/configuration-of-duo-provider.md
           order: 7010
           name: Configuration of DUO Provider
+        order: 7000
         name: DUO Provider
+      order: 7000
       name: Multi-Factor Authentication
+    order: 7000
     name: Document Store
   - href: components/secure-gateway/index.md
-    order: 7000
     items:
     - href: components/secure-gateway/gateway-configuration.md
       order: 7040
@@ -149,17 +147,18 @@
     - href: components/secure-gateway/permissions.md
       order: 7010
       name: Permissions
+    order: 7000
     name: Secure Gateway
+  order: 7000
   name: Royal Server Components
 - href: license/index.md
-  order: 6000
   items:
   - href: license/installed-licenses.md
     order: 6010
     name: Installed Licenses
+  order: 6000
   name: License
 - href: advanced/index.md
-  order: 5000
   items:
   - href: advanced/performance-counters.md
     order: 5000
@@ -174,7 +173,6 @@
     order: 5000
     name: Application Settings
   - href: advanced/management-scripts/index.md
-    order: 5000
     items:
     - href: advanced/management-scripts/uninstall.md
       order: 5000
@@ -182,16 +180,16 @@
     - href: advanced/management-scripts/pepare-managed-server.md
       order: 5000
       name: Pepare a Managed Server
+    order: 5000
     name: Management Scripts
+  order: 5000
   name: Advanced Topics
 - href: scripting/index.md
-  order: 4000
   items:
   - href: scripting/getting-started.md
     order: 4010
     name: Getting Started
   - href: scripting/module-reference/index.md
-    order: 4000
     items:
     - href: scripting/module-reference/module-document-store.md
       order: 4000
@@ -208,9 +206,9 @@
     - href: scripting/module-reference/module-windows-events.md
       order: 4000
       name: Module Windows Events (EventLog)
+    order: 4000
     name: Module References
   - href: scripting/powershell-commandlets/index.md
-    order: 4000
     items:
     - href: scripting/powershell-commandlets/get-royalservermodulecommandparameter.md
       order: 4000
@@ -227,7 +225,9 @@
     - href: scripting/powershell-commandlets/get-royalservermodulecommand.md
       order: 4000
       name: Get-RoyalServerModuleCommand
+    order: 4000
     name: PowerShell Commandlets
+  order: 4000
   name: Scripting
 - href: royal-server-homepage.md
   order: 1040
