@@ -367,3 +367,437 @@ name: RoyalJSONObject
 - **Applies To**: Folder
 - **Description**: An array of objects that will be direct descendants of the current folder.
 - **Example**: `"Objects": [ { "Type": "Credential", "Name": "A Credential" } ]`
+
+## Status
+- **Data Type**: Enumeration
+- **Applies To**: To-Do
+- **Description**: The status of this To-Do item.
+- **Supported Values**:
+	- Active
+	- Completed
+- **Example**: `"Status": "Completed"`
+
+## NoConfirmationRequired
+- **Data Type**: Boolean
+- **Applies To**: Key Sequence Task, Command Task
+- **Description**: Specifies whether or not user confirmation is required to run this task.
+- **Example**: `"NoConfirmationRequired": true`
+
+## CommandMac
+- **Data Type**: String
+- **Applies To**: Command Task
+- **Description**: The command this task executes on macOS.
+- **Example**: `"CommandMac": "ping"`
+
+## ArgumentsMac
+- **Data Type**: String
+- **Applies To**: Command Task
+- **Description**: The arguments required to run this task on macOS.
+- **Example**: `"ArgumentsMac": "$URI$"`
+
+## WorkingDirectoryMac
+- **Data Type**: String
+- **Applies To**: Command Task
+- **Description**: The working directory of this task for macOS.
+- **Example**: `"WorkingDirectoryMac": "/Path/To/Working/Directory"`
+
+## CommandWindows
+- **Data Type**: String
+- **Applies To**: Command Task
+- **Description**: The command this task executes on Windows.
+- **Example**: `"CommandWindows": "ping"`
+
+## ArgumentsWindows
+- **Data Type**: String
+- **Applies To**: Command Task
+- **Description**: The arguments required to run this task on Windows.
+- **Example**: `"ArgumentsWindows": "$URI$"`
+
+## WorkingDirectoryWindows
+- **Data Type**: String
+- **Applies To**: Command Task
+- **Description**: The working directory of this task for Windows.
+- **Example**: `"WorkingDirectoryWindows": "c:\Path\To\Working/Directory"`
+
+## KeySequence
+- **Data Type**: String
+- **Applies To**: Key Sequence Task, All connection types, Folder
+- **Description**: The key sequence that will be executed before the connection is established if set on a connection or a folder. The key sequence that the key sequence task executes if set on a key sequence task object.
+- **Example**: `"KeySequence": "{WAIT:5000}abc{ENTER}"`
+
+## UseSSL
+- **Data Type**: Boolean
+- **Applies To**: VMware connection, Royal Server
+- **Description**: Specifies whether or not to use SSL for this object.
+- **Example**: `"UseSSL": "true"`
+
+## SecureGatewayPort
+- **Data Type**: Integer
+- **Applies To**: Secure Gateway, Royal Server
+- **Description**: The Secure Gateway port.
+- **Example**: `"Port": 22`
+
+## SecureGatewayCredentialID
+- **Data Type**: String
+- **Applies To**: Secure Gateway, Royal Server
+- **Description**: The ID of the credential that is assigned to the Secure Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"SecureGatewayCredentialID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"SecureGatewayCredentialID": "0001"`
+
+## SecureGatewayCredentialName
+- **Data Type**: String
+- **Applies To**: Secure Gateway, Royal Server
+- **Description**: The name of the credential that is assigned to the Secure Gateway.
+- **Example**: `"SecureGatewayCredentialName": "root"`
+
+## SecureGatewayUsername
+- **Data Type**: String
+- **Applies To**: Secure Gateway, Royal Server
+- **Description**: The username of the Secure Gateway.
+- **Example**: `"SecureGatewayUsername": "root"`
+
+## SecureGatewayPassword
+- **Data Type**: String
+- **Applies To**: Secure Gateway, Royal Server
+- **Description**: The password of the Secure Gateway.
+- **Example**: `"SecureGatewayPassword": "!dfhe8yr498hh@"`
+
+## RemoteDesktopGatewayComputerName
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The computer name (IP address/FQDN) of the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayComputerName": "rdg-01.local"`
+- **Example 2**: `"RemoteDesktopGatewayComputerName": "10.0.1.5"`
+
+## RemoteDesktopGatewayCredentialsFromConnection
+- **Data Type**: Boolean
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: Specifies whether or not to use the credentials of the connection for the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayCredentialsFromConnection": false`
+
+## RemoteDesktopGatewayCredentialID
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The ID of the credential that is assigned to the Remote Desktop Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"RemoteDesktopGatewayCredentialID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"RemoteDesktopGatewayCredentialID": "0001"`
+
+## RemoteDesktopGatewayCredentialName
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The name of the credential that is assigned to the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayCredentialName": "Administrator"`
+
+## RemoteDesktopGatewayUsername
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The username of the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayUsername": "administrator"`
+
+## RemoteDesktopGatewayPassword
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The password of the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayPassword": "!dfhe8yr498hh@"`
+
+## ConnectTaskFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types, Folder
+- **Description**: Specifies whether or not to use the connect task from the parent folder of this object.
+- **Example**: `"ConnectTaskFromParent": false`
+
+## ConnectTaskID
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The ID of the command task that is to be assigned to this object as connect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Connect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"ConnectTaskID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"ConnectTaskID": "0001"`
+
+## ConnectTaskName
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The name of the command task that is to be assigned to this object as connect task.
+- **Example**: `"ConnectTaskName": "root"`
+
+## DisconnectTaskFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types, Folder
+- **Description**: Specifies whether or not to use the disconnect task from the parent folder of this object.
+- **Example**: `"DisconnectTaskFromParent": false`
+
+## DisconnectTaskID
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The ID of the command task that is to be assigned to this object as disconnect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Disconnect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"DisconnectTaskID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"DisconnectTaskID": "0001"`
+
+## DisconnectTaskName
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The name of the command task that is to be assigned to this object as disconnect task.
+- **Example**: `"DisconnectTaskName": "root"`
+
+## KeySequenceFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types, Folder
+- **Description**: Specifies whether or not to use the connect key sequence from the parent folder of this object.
+- **Example**: `"KeySequenceFromParent": false`
+
+## KeySequenceID
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The ID of the key sequence task that is to be assigned to this object as connect key sequence. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Key Sequence ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"KeySequenceID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"KeySequenceID": "0001"`
+
+## KeySequenceName
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The name of the key sequence task that is to be assigned to this object as connect key sequence.
+- **Example**: `"KeySequenceName": "root"`
+
+## SecureGatewayFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types that support Secure Gateways, Folder
+- **Description**: Specifies whether or not to use the Secure Gateway from the parent folder of this object.
+- **Example**: `"SecureGatewayFromParent": false`
+
+## SecureGatewayID
+- **Data Type**: String
+- **Applies To**: All connection types that support Secure Gateways, Folder
+- **Description**: The ID of the Secure Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"SecureGatewayID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"SecureGatewayID": "0001"`
+
+## RoyalServerFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types that support Royal Server, Folder
+- **Description**: Specifies whether or not to use the Royal Server from the parent folder of this object.
+- **Example**: `"RoyalServerFromParent": false`
+
+## RoyalServerID
+- **Data Type**: String
+- **Applies To**: All connection types that support Royal Server, Folder
+- **Description**: The ID of the Royal Server that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Royal Server ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"RoyalServerID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"RoyalServerID": "0001"`
+
+## RemoteDesktopGatewayFromParent
+- **Data Type**: Boolean
+- **Applies To**: Remote Desktop connection, Folder
+- **Description**: Specifies whether or not to use the Remote Desktop Gateway from the parent folder of this object.
+- **Example**: `"RemoteDesktopGatewayFromParent": true`
+
+## RemoteDesktopGatewayID
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Folder
+- **Description**: The ID of the Remote Desktop Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+	- GUID formatted as string
+	- String
+- **Example**: `"RemoteDesktopGatewayID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"RemoteDesktopGatewayID": "0001"`
+
+## RemoteDesktopGatewayUsage
+- **Data Type**: Enumeration
+- **Applies To**: Remote Desktop connection, Folder
+- **Description**: The usage mode of the Remote Desktop Gateway.
+- **Supported Values**:
+	- Never
+	- Always
+	- OnDemand
+- **Example**: `"RemoteDesktopGatewayUsage": "Always"`
+
+## MACAddress
+- **Data Type**: String
+- **Applies To**: Most connection types
+- **Description**: The physical (MAC) address of this connection.
+- **Example**: `"MACAddress": "FF:FF:FF:FF:FF:FF"`
+
+## WindowMode
+- **Data Type**: Enumeration
+- **Applies To**: Most connection types
+- **Description**: The window mode of this connection.
+- **Supported Values**:
+	- Embedded
+	- External
+	- FullScreen
+- **Example**: `"WindowMode": "External"`
+
+## ConsoleSession
+- **Data Type**: Boolean
+- **Applies To**: Remote Desktop connection
+- **Description**: Specifies whether or not to connect to the console/admin session of this Remote Desktop connection.
+- **Example**: `"ConsoleSession": true`
+
+## NLA
+- **Data Type**: Boolean
+- **Applies To**: Remote Desktop connection
+- **Description**: Specifies whether or not to use NLA (Network Level Authentication) for this Remote Desktop connection.
+- **Example**: `"NLA": true`
+
+## ResizeMode
+- **Data Type**: Enumeration
+- **Applies To**: Remote Desktop connection
+- **Description**: The resize mode of this Remote Desktop connection.
+- **Supported Values**:
+	- ScrollBars
+	- SmartSizing
+	- SmartReconnect
+- **Example**: `"ResizeMode": "SmartReconnect"`
+
+## HyperVMode
+- **Data Type**: Enumeration
+- **Applies To**: Remote Desktop connection
+- **Description**: The Hyper-V mode of this Remote Desktop connection.
+- **Supported Values**:
+	- None
+	- HyperVHost
+	- HyperVInstance
+- **Example**: `"HyperVMode": "HyperVInstance"`
+
+## HyperVPort
+- **Data Type**: Integer
+- **Applies To**: Remote Desktop connection
+- **Description**: The Hyper-V port of this Remote Desktop Connection.
+- **Example**: `"HyperVPort": 2179`
+
+## HyperVInstanceID
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection
+- **Description**: The Hyper-V Instance ID (VM ID) of this Remote Desktop connection.
+- **Example**: `"HyperVInstanceID": "12345"`
+
+## UseEnhancedHyperVSessionMode
+- **Data Type**: Boolean
+- **Applies To**: Remote Desktop connection
+- **Description**: Specifies whether or not to use enhanced Hyper-V session mode for this Remote Desktop connection.
+- **Example**: `"UseEnhancedHyperVSessionMode": false`
+
+## TerminalConnectionType
+- **Data Type**: Enumeration
+- **Applies To**: Terminal connection
+- **Description**: The connection type of this terminal connection.
+- **Supported Values**:
+	- SSH
+	- Telnet
+	- SerialPort
+	- CustomTerminal
+- **Example**: `"TerminalConnectionType": "SSH"`
+
+## SerialPortName
+- **Data Type**: String
+- **Applies To**: Terminal connection
+- **Description**: The serial port name of this terminal connection.
+- **Example**: `"SerialPortName": "COM1"`
+
+## BaudRate
+- **Data Type**: Integer
+- **Applies To**: Terminal connection
+- **Description**: The baud rate of the serial port connection.
+- **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
+- **Example**: `"BaudRate": 9600`
+
+## DataBits
+- **Data Type**: Integer
+- **Applies To**: Terminal connection
+- **Description**: The standard length of data bits per byte of the serial port connection.
+- **Supported Values**: 5 through 8
+- **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
+- **Example**: `"DataBits": 8`
+
+## Parity
+- **Data Type**: Enumeration
+- **Applies To**: Terminal connection
+- **Description**: The parity bit for the serial port connection.
+- **Supported Values**:
+	- None
+	- Odd
+	- Even
+	- Mark
+	- Space
+- **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
+- **Example**: `"Parity": "None"`
+
+## StopBits
+- **Data Type**: Enumeration
+- **Applies To**: Terminal connection
+- **Description**: The number of stop bits used for the serial port connection.
+- **Supported Values**:
+	- None
+	- One
+	- Two
+	- OnePointFive
+- **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
+- **Example**: `"StopBits": "One"`
+
+## CustomCommand
+- **Data Type**: String
+- **Applies To**: Terminal connection
+- **Description**: The custom command of this terminal connection.
+- **Example**: `"CustomCommand": "ls -lh /"`
+
+## FileTransferConnectionType
+- **Data Type**: Enumeration
+- **Applies To**: File Transfer connection
+- **Description**: The connection type of this file transfer connection.
+- **Supported Values**:
+	- FTP
+	- FTPWithImplicitSSL
+	- FTPWithExplicitTLSSSL
+	- SFTP
+	- SCP
+- **Example**: `"FileTransferConnectionType": "SFTP"`
+
+## PassiveMode
+- **Data Type**: Boolean
+- **Applies To**: File Transfer connection
+- **Description**: Specifies whether or not to use passive mode for this FTP file transfer connection.
+- **Example**: `"PassiveMode": true`
+
+## TeamViewerConnectionType
+- **Data Type**: Enumeration
+- **Applies To**: TeamViewer connection
+- **Description**: The connection type of this TeamViewer connection.
+- **Supported Values**:
+	- RemoteControl
+	- FileTransfer
+	- Meeting
+	- VPN
+	- ManagementConsole
+	- PromptForType
+- **Example**: `"TeamViewerConnectionType": "SFTP"`
+
+## UseCIM
+- **Data Type**: Boolean
+- **Applies To**: Some management connections
+- **Description**: Specifies whether or not to use CIM for this management connection.
+- **Example**: `"UseCIM": true`
+
+## Script
+- **Data Type**: String
+- **Applies To**: PowerShell connection
+- **Description**: The script of this PowerShell connection.
+- **Example**: `"Script": "Write-Host \"Hello World\""`
