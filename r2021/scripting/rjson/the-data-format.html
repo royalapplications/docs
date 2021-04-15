@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>The data format </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="The data format ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="the-data-format">The data format</h1>
+
+<p>As you might've guessed, RoyalJSON uses JSON to store its data. We use regular JSON and don't plan to add any RoyalJSON specific extensions to keep in line with the JSON spec and so you can put your existing JSON skills to good use. If you're not familiar with JSON, please consult one of the many references out there.</p>
+<p>We think the best way to introduce you to the data format is by just showing it to you. So here we go:</p>
+<pre><code class="lang-json">{
+	&quot;Objects&quot;: [
+		{
+			&quot;Type&quot;: &quot;Credential&quot;,
+			&quot;Name&quot;: &quot;Root&quot;,
+			&quot;Username&quot;: &quot;root&quot;,
+			&quot;Password&quot;: &quot;!ehrfew9fe9gew7rgew@&quot;,
+			&quot;Description&quot;: &quot;The root account&quot;,
+			&quot;ID&quot;: &quot;000001&quot;
+		},
+		{
+			&quot;Type&quot;: &quot;TerminalConnection&quot;,
+			&quot;TerminalConnectionType&quot;: &quot;SSH&quot;,
+			&quot;Name&quot;: &quot;VM01&quot;,
+			&quot;ComputerName&quot;: &quot;vm01&quot;,
+			&quot;CredentialID&quot;: &quot;000001&quot;,
+			&quot;Description&quot;: &quot;The first VM&quot;
+		}
+	]
+}
+</code></pre>
+<p>If you're familiar with JSON, this should be easy to parse for you and you'll probably guess most of the things we're going to explain now.</p>
+<p>Let's walk over this sample line by line:</p>
+<ol>
+<li>Start of the JSON document.</li>
+<li>Start of an array (a collection) of objects.</li>
+<li>Start of the first object.</li>
+<li>Specify the type of the object. In this case, a credential.</li>
+<li>Specify the (display) name of the credential. In this case, &quot;Root&quot;.</li>
+<li>Specify the username of the credential.</li>
+<li>Specify the password of the credential.</li>
+<li>Specify the description of the credential.</li>
+<li>Specify the ID of the credential.</li>
+<li>End of the credential object.</li>
+<li>Start of the second object.</li>
+<li>Specify the type of the object. In this case, a terminal connection.</li>
+<li>Specify the sub-type of the terminal connection. In this case, an SSH connection.</li>
+<li>Specify the (display) name of the connection.</li>
+<li>Specify the computer name (FQDN/IP address/etc.) of the connection.</li>
+<li>Specify the credential ID that this connection will reference.</li>
+<li>Specify the description of the connection.</li>
+<li>End of the connection object.</li>
+<li>End of the &quot;Objects&quot; array.</li>
+<li>End of the JSON document</li>
+</ol>
+<p>The end result is that we'll have one credential and one SSH connection in Royal TS/X. The SSH connection will have the &quot;Root&quot; credential assigned to it.</p>
+<p>Here's what the end result looks like in Royal TSX:</p>
+<p><img src="../../images/Scripting/rJSON/Screenshot_2.png" alt=""></p>
+<blockquote>
+<p>In this case we created a Dynamic Folder in Royal TSX, directly specified the JSON content and named it &quot;JSON Sample&quot;.</p>
+</blockquote>
+<p>Here are a few things worth pointing out about this sample:</p>
+<ul>
+<li>The root object must always be a JSON object, <strong>NOT</strong> an array.
+We call this the &quot;<a href="TODO">RoyalJSONDocument</a>&quot; which currently only has two properties:
+<ul>
+<li>&quot;Objects&quot;: An array of objects (We call those &quot;<a href="TODO">RoyalJSONObjects</a>&quot;).</li>
+<li>&quot;Name&quot;: An optional name which is used as the document name when opening &quot;.rjson&quot; documents.</li>
+</ul>
+</li>
+<li>The &quot;Type&quot; property is one of only two properties that is required for every RoyalJSONObject. Without it, we wouldn't know which kind of object you're describing.</li>
+<li>The &quot;Name&quot; property is the second required property of RoyalJSONObjects. Just like in Royal TS/X, every object must have a display name.</li>
+<li>If you omit either the type or name property, Royal TS/X will throw an error.</li>
+<li>All other properties are optional.</li>
+<li>Which properties are available depends on the specified object type. For instance, credentials don't have a &quot;Port&quot; property while most connections do.</li>
+<li>If you set a property that isn't available for the specified object type it is ignored.</li>
+<li>The &quot;ID&quot; property is quite magical. 😉 In more serious terminology:
+Royal TS/X internally uses GUIDs to reference objects by ID. Since not all external data sources use these kinds of IDs, we allow RoyalJSON to deal with any type of ID that can be expressed as String. Basically there are two code-paths:
+<ul>
+<li>When an &quot;ID&quot; is specified as GUID: In this case we directly use the GUID to reference the object. No magic here.</li>
+<li>When a generic String is used as &quot;ID&quot;: This is the &quot;magic path&quot;. In this case we generate a new internal GUID and take the generic string and store it with the object as &quot;External ID&quot;. If other objects in your rJSON reference this external ID we look up our internal ID and make sure the reference is stored correctly in the resulting object. Also, if you assign objects that you imported through rJSON to other objects outside of your rJSON we will use the internal ID to make the references. Now, if you decide to refresh your rJSON imported objects, we cache the external to internal ID mapping and try to restore it after the import is finished. This ensures that references to objects with external IDs aren't broken on refresh.</li>
+</ul>
+</li>
+<li>All of this internal/external ID magic is applied to all properties that take an ID as value.</li>
+<li>RoyalJSON property names are <strong>NOT</strong> case-sensitive. In other words, <code>&quot;computerName&quot;: &quot;vm01&quot;</code> is the same as <code>&quot;ComputerName&quot;: &quot;vm01&quot;</code>.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2021/scripting/rjson/the-data-format.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

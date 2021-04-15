@@ -416,14 +416,8 @@ references:
   name: Object Properties
   href: scripting/objects/index.html
 - uid: scripting_rjson
-  name: Royal JSON
+  name: Introduction
   href: scripting/rjson/index.html
-- uid: scripting_rjson_advanced
-  name: Royal JSON Advanced
-  href: scripting/rjson/advanced/index.html
-- uid: scripting_rjson_intro
-  name: Royal JSON Intro
-  href: scripting/rjson/intro/index.html
 - uid: scripting_serverps
   name: RoyalServer Powershell
   href: scripting/server/index.html
