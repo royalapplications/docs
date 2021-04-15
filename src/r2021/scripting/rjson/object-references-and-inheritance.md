@@ -98,11 +98,11 @@ Here's what we have:
 
 What you don't get to see in the screenshot is how the various objects are connected to each other. Let's start with the "Domain Admin" credential.
 
-In line 12 we express that we would like the credential to have the ID "00001". We can then use this ID to refer to the credential from other objects. In line 31 we set the "CredentialID" property of the "Connections" folder to the ID of our "Domain Admin" credential (ID "00001").
+In line 12 we express that we would like the credential to have the ID "00001". We can then use this ID to refer to the credential from other objects. In line 31 we set the `CredentialID` property of the "Connections" folder to the ID of our "Domain Admin" credential (ID "00001").
 This basically means: Assign "Domain Admin" to "Connections".
 Now that we have our credential assigned to the "Connections" folder, we want the connections themselves to actually use that credential. To do so, we specify `"CredentialsFromParent": true` in lines 38, 45 and 52. Now all of the three Remote Desktop connections inherit the credentials from their parent folder, "Connections".
 
-For the "MailServer 01" SSH connection we want to use a different set of credentials and since no other object uses the same credentials, we directly specify the username and password of this connection in lines 60 and 61 using the "Username" and "Password" properties.
+For the "MailServer 01" SSH connection we want to use a different set of credentials and since no other object uses the same credentials, we directly specify the username and password of this connection in lines 60 and 61 using the `Username` and `Password` properties.
 
 That's it for credential assignment. Because we need a Secure Gateway to connect to each of our remote machines, we also assign the Secure Gateway object (ID "00002") to the "Connections" folder and let the connections inherit it from their parent folder. In line 32 we specify `"SecureGatewayID": "00002"` on our "Connections" folder. Then, for each of our connections we set `"SecureGatewayFromParent": true` to let them inherit the Secure Gateway configuration from their parent folder.
 

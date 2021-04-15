@@ -47,7 +47,7 @@ jsonStr = json.dumps(
 print(jsonStr)
 ```
 
-In line 8 we're injecting the `$Name$` token into the credential's `"Name"` property value.
+In line 8 we're injecting the `$Name$` token into the credential's `Name` property value.
 
 Here's what this gets you in Royal TSX:
 

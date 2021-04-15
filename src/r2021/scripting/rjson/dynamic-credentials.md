@@ -20,11 +20,11 @@ Dynamic Credentials can be useful in cases where it's unfeasible (or just not po
 > - If the dynamic credentials are stored on a remote database, a network connection to that database must be available when establishing connections that reference dynamic credentials.
 
 Dynamic Credentials share the same properties as regular credential objects. That means, the process of creating dynamic credentials is exactly the same as for regular credentials. The difference is that the following properties can (but don't have to) be left empty and fetched on demand by the dedicated "Dynamic Credential Script" of your dynamic folder:
-- [Username](TODO)
-- [Password](TODO)
-- [KeyFilePath](TODO)
-- [KeyFileContent](TODO)
-- [KeyFilePassphrase](TODO)
+- [`Username`](TODO)
+- [`Password`](TODO)
+- [`KeyFilePath`](TODO)
+- [`KeyFileContent`](TODO)
+- [`KeyFilePassphrase`](TODO)
 
 Here's an example of how to create a dynamic credential object and assign it to an SSH connection:
 
@@ -60,5 +60,5 @@ This second script is expected to return a single [RoyalJSONDynamicCredential](T
 So let's see what happens here:
 - From line 3 to 7 we define a dynamic credential object named "User 1". We set its ID to "Cred01". We don't specify username or password values.
 - From line 8 to 13 we create a new SSH connection and reference the dynamic credential by its ID.
-- In the separate dynamic credential script we return a RoyalJSONDynamicCredential object which provides the values for "Username" and "Password".
+- In the separate dynamic credential script we return a RoyalJSONDynamicCredential object which provides the values for `Username` and `Password`.
 - Just before the SSH connection is established, the dedicated dynamic credential script is executed and its return value is used to populate the missing information, namely the username and password of the credential.

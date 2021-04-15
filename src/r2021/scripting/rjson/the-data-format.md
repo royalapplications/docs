@@ -67,18 +67,18 @@ Here's what the end result looks like in Royal TSX:
 
 Here are a few things worth pointing out about this sample:
 - The root object must always be a JSON object, **NOT** an array.
-	We call this the "[RoyalJSONDocument](TODO)" which currently only has two properties:
-	- "Objects": An array of objects (We call those "[RoyalJSONObjects](TODO)").
-	- "Name": An optional name which is used as the document name when opening ".rjson" documents.
-- The "Type" property is one of only two properties that is required for every RoyalJSONObject. Without it, we wouldn't know which kind of object you're describing.
-- The "Name" property is the second required property of RoyalJSONObjects. Just like in Royal TS/X, every object must have a display name.
+	We call this the [RoyalJSONDocument](TODO) which currently only has two properties:
+	- `Objects`: An array of objects (We call those [RoyalJSONObjects](TODO)).
+	- `Name`: An optional name which is used as the document name when opening ".rjson" documents.
+- The `Type` property is one of only two properties that is required for every RoyalJSONObject. Without it, we wouldn't know which kind of object you're describing.
+- The `Name` property is the second required property of RoyalJSONObjects. Just like in Royal TS/X, every object must have a display name.
 - If you omit either the type or name property, Royal TS/X will throw an error.
 - All other properties are optional.
-- Which properties are available depends on the specified object type. For instance, credentials don't have a "Port" property while most connections do.
+- Which properties are available depends on the specified object type. For instance, credentials don't have a `Port` property while most connections do.
 - If you set a property that isn't available for the specified object type it is ignored.
-- The "ID" property is quite magical. 😉 In more serious terminology:
+- The `ID` property is quite magical. 😉 In more serious terminology:
 Royal TS/X internally uses GUIDs to reference objects by ID. Since not all external data sources use these kinds of IDs, we allow RoyalJSON to deal with any type of ID that can be expressed as String. Basically there are two code-paths:
-	- When an "ID" is specified as GUID: In this case we directly use the GUID to reference the object. No magic here.
-	- When a generic String is used as "ID": This is the "magic path". In this case we generate a new internal GUID and take the generic string and store it with the object as "External ID". If other objects in your rJSON reference this external ID we look up our internal ID and make sure the reference is stored correctly in the resulting object. Also, if you assign objects that you imported through rJSON to other objects outside of your rJSON we will use the internal ID to make the references. Now, if you decide to refresh your rJSON imported objects, we cache the external to internal ID mapping and try to restore it after the import is finished. This ensures that references to objects with external IDs aren't broken on refresh.
+	- When an `ID` is specified as GUID: In this case we directly use the GUID to reference the object. No magic here.
+	- When a generic String is used as `ID`: This is the "magic path". In this case we generate a new internal GUID and take the generic string and store it with the object as "External ID". If other objects in your rJSON reference this external ID we look up our internal ID and make sure the reference is stored correctly in the resulting object. Also, if you assign objects that you imported through rJSON to other objects outside of your rJSON we will use the internal ID to make the references. Now, if you decide to refresh your rJSON imported objects, we cache the external to internal ID mapping and try to restore it after the import is finished. This ensures that references to objects with external IDs aren't broken on refresh.
 - All of this internal/external ID magic is applied to all properties that take an ID as value.
 - RoyalJSON property names are **NOT** case-sensitive. In other words, `"computerName": "vm01"` is the same as `"ComputerName": "vm01"`.
