@@ -178,6 +178,10 @@ blockquote {
 }
 
 .footer {
+  /* Disable the footer, I don't think we really need it */
+  display: none !important;
+  opacity: 0 !important;
+
 	font-size: 12px;
 	color: #9d9d9d;
 	background-color: transparent;
@@ -188,7 +192,6 @@ blockquote {
 code {
   tab-size: 4;
 }
-
 
 /* for block of numbers */
 .hljs-ln-numbers {
@@ -207,4 +210,27 @@ code {
 
 td.hljs-ln-line.hljs-ln-numbers {
   padding-right: 8px;
+}
+
+/* HACKS */
+
+article h2#properties {
+  /* Not sure why the F docfx assigns styles to global IDs, anyway, we reset them here */
+  font-weight: normal;
+  margin-top: 25px;
+}
+
+.sideaffix {
+  /* band-aid for very long table of contents (in this article) */
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .toc li:last-child:after {
+    content: "AAA";
+  } */
+
+  .toc li:after {
+    content: "\00a0";
+  }
 }
