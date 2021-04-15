@@ -12,7 +12,7 @@ Prime examples where RoyalJSON shines are:
 - You have a central database where you store credentials and want to use those credentials in Royal TS/X without having to manually add/update them.
 - You have one or more VM hosts where you regularly (un-)provision VMs and want to keep them in sync with Royal TS/X.
 
-At the moment, RoyalJSON is an import-only format and there’s no way to export existing objects stored in Royal TS/X documents as RoyalJSON. This might change in the future though.
+At the moment, RoyalJSON is an import-only format and there's no way to export existing objects stored in Royal TS/X documents as RoyalJSON. This might change in the future though.
 
 Once you have some RoyalJSON content, there are multiple ways to get the data into our applications:
 - Via "Dynamic Folder" objects stored in your documents:

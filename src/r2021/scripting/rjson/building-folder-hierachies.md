@@ -11,7 +11,7 @@ By now you should have a good overview of how the rJSON format is structured and
 
 So, what do we have here? Multiple folders, some of them nested in other folders, each having one child object.
 
-Let’s break the individual objects in this sample down into path representation:
+Let's break the individual objects in this sample down into path representation:
 - Client A/Credentials/Administrator
 - Client A/Connections/Hyper-V VM 01
 - Client B/To-Do

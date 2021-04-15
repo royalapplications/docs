@@ -1,5 +1,5 @@
 ---
-order: 9940
+order: 9910
 name: JSON Schema
 ---
 
@@ -275,7 +275,7 @@ Here's the [JSON schema](https://json-schema.org/) to validate your JSON content
             "array",
             "null"
           ],
-          "description": "The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type “Text”. It’s not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using \"Name\", the value using \"Value\" and the type using \"Type\" (Supported types are: Text, Protected, URL, Email, Address, Phone, Date, YesNo, Header)",
+          "description": "The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type \"Text\". It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using \"Name\", the value using \"Value\" and the type using \"Type\" (Supported types are: Text, Protected, URL, Email, Address, Phone, Date, YesNo, Header)",
           "items": {
             "$ref": "#/definitions/RoyalJSONCustomProperty"
           }
