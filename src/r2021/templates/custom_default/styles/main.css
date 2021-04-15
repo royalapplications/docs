@@ -200,6 +200,7 @@ code {
   user-select: none;
 
   text-align: right;
+  white-space: nowrap;
   color: #ccc;
   vertical-align: top !important;
 }
