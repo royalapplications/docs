@@ -21,20 +21,20 @@
           "*.md"
         ]
       },
-      {
-        "files": [
-          "mobile/**.md",
-          "mobile/**/toc.yml",
-          "*.md"
-        ]
-      },
-      {
-        "files": [
-          "royalpasswords/**.md",
-          "royalpasswords/**/toc.yml",
-          "*.md"
-        ]
-      },
+      // {
+      //   "files": [
+      //     "mobile/**.md",
+      //     "mobile/**/toc.yml",
+      //     "*.md"
+      //   ]
+      // },
+      // {
+      //   "files": [
+      //     "royalpasswords/**.md",
+      //     "royalpasswords/**/toc.yml",
+      //     "*.md"
+      //   ]
+      // },
       {
         "files": [
           "scripting/**.md",
