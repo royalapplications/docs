@@ -4,4 +4,4 @@ name: Royal JSON
 order: 9980
 ---
 
-# Royal JSON
+[!include[introduction.md](./introduction.md)]
