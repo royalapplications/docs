@@ -8,7 +8,7 @@
     <title>Installing and Uninstalling Royal Server </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Installing and Uninstalling Royal Server ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -71,17 +71,18 @@
 
 <h2 id="install-royal-server">Install Royal Server</h2>
 <p>Royal Server is distributed via a single <em>.msi</em>-file. The installation requires administrative rights, a destination directory and it takes just a minute to install Royal Server.</p>
+<p>When the configuration tool is launched for the first time, you will be asked to provide your <a class="xref" href="what-is-royal-server.html#license-information">License Information</a> and to set a Worker Account.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>After the installation is completed, it is strongly recommended to configure a Worker Account in order to allow the Royal Server to access network resources (accessing other servers). Royal Server is not starting when no Worker Account is configured. The Worker Account also needs the rights to work with the configured Windows Accounts that should be allowed to authenticate with Royal Server. If domain groups/users are configured, this account needs to be a domain account that has the required rights to query these accounts.</p>
+<p>It is strongly recommended to configure a Worker Account in order to allow the Royal Server to access network resources (accessing other servers). Royal Server is not starting when no Worker Account is configured. The Worker Account also needs the rights to work with the configured Windows Accounts that should be allowed to authenticate with Royal Server. If domain groups/users are configured, this account needs to be a domain account that has the required rights to query these accounts.</p>
 </div>
-<p>Additionally, the Management Endpoint component of Royal Server is using HTTPS with a self-signed certificate that is created during the installation. You can also configured your own certificates if needed.</p>
+<p>Additionally, the Management Endpoint component of Royal Server is using HTTPS with a self-signed certificate that is created during the installation. You can also configure your own certificates if needed.</p>
 <p>See also: <a class="xref" href="../management/service-configuration.html">Service Configuration</a>.</p>
 <h2 id="uninstall-royal-server">Uninstall Royal Server</h2>
-<p>Since the installation is msi-based, just uninstall Royal Server from the Windows Programs panel. Uninstalling Royal Server is not removing the configuration, so you can easily switch between versions.</p>
+<p>Since the installation is msi-based, just uninstall Royal Server using the Add/Remove Programs tool. Uninstalling Royal Server is not removing the configuration (by default), so you can easily switch between versions.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you want to remove Royal Server and all configuration information completely from the machine, save the cleanup_installation.ps1 file in the <code>./scripts/</code> installation subdirectory before uninstalling and execute it with administrative rights after the uninstallation.</p>
+<p>If you want to remove Royal Server and all configuration information completely from the machine, save the <code>cleanup_installation.ps1</code> file in the <code>./scripts/</code> folder of your Royal Server installation before uninstalling and execute it with administrative rights after uninstalling.</p>
 </div>
 </article>
           </div>
@@ -96,7 +97,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

@@ -8,7 +8,7 @@
     <title> Remote Desktop </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" Remote Desktop ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -436,6 +436,8 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <h5>Note</h5>
 <p>NLA is enabled by default on Vista/Windows 2008 or later.</p>
 </div>
+<h4 id="use-credential-manager">Use Credential Manager</h4>
+<p>When checked, Royal TS will create a credential entry in the Windows Credential Manager instead of submitting the credentials to the server.</p>
 <h4 id="restricted-admin-mode">Restricted Admin Mode</h4>
 <p>In this mode, credentials won't be sent to the remote server, which can protect you if you connect to a remote server that has been compromised. However, connections made from the remote server might not be authenticated by other servers, which might impact app functionality and compatibility.</p>
 <div class="NOTE">
@@ -676,7 +678,8 @@ Audio is disabled on the remote computer.</li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

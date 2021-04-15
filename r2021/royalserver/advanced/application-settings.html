@@ -8,7 +8,7 @@
     <title>Application Settings </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Application Settings ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -69,27 +69,81 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="application-settings">Application Settings</h1>
 
-<p>Royal Server is providing advanced settings in the RoyalServer.exe.config file.</p>
+<p>As of Royal Server V4 advanced settings can be configured in <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
 <h2 id="supported-settings">Supported Settings:</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Value(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>sg_allowed_encryption_algorithms</td>
-<td>Limits the allowed encryption algorithms for the Secure Gateway.</td>
+<td>UserCachingInSeconds</td>
+<td>Caching time in seconds of group memberships for users are cached in Royal Server.</td>
+<td>Default is 300 (5 Minutes)</td>
 </tr>
 <tr>
-<td>sg_ssh_software_version</td>
-<td>In order to not leak the implementation of the Secure Gateway to provide hackers with additional information, the SSH software version can be configured here.</td>
+<td>SecureGateway:AllowedEncryptionAlgorithms</td>
+<td>Specifies a list of allowed encryption algorithms IDs and their order.</td>
+<td>&quot;aes256-gcm@openssh.com&quot;, &quot;aes128-gcm@openssh.com&quot;, &quot;aes256-ctr&quot;, &quot;aes192-ctr&quot;,<br>&quot;aes128-ctr&quot;, &quot;aes256-cbc&quot;, &quot;aes192-cbc&quot;, &quot;aes128-cbc&quot;,<br>&quot;3des-ctr&quot;, &quot;3des-cbc&quot;, &quot;twofish256-ctr&quot;,&quot;twofish192-ctr&quot;,<br>&quot;twofish128-ctr&quot;, &quot;twofish256-cbc&quot;, &quot;twofish192-cbc&quot;,<br>&quot;twofish128-cbc&quot;, &quot;twofish-cbc&quot;, &quot;blowfish-ctr&quot;,<br>&quot;blowfish-cbc&quot;, &quot;chacha20-poly1305@openssh.com&quot; &quot;arcfour256&quot;, &quot;arcfour128&quot;, &quot;arcfour&quot;</td>
 </tr>
+<tr>
+<td>SecureGateway:AllowedHostKeyAlgorithms</td>
+<td>Specifies a list of allowed host key algorithms IDs and their order.</td>
+<td>&quot;ssh-dss&quot;, &quot;ssh-rsa&quot;, &quot;ssh-rsa-sha256@ssh.com&quot; &quot;rsa-sha2-256&quot;,&quot;rsa-sha2-512&quot;<br>&quot;x509v3-sign-rsa-sha256@ssh.com&quot;, &quot;x509v3-sign-rsa&quot;, &quot;x509v3-sign-dss&quot;,<br>&quot;ecdsa-sha2-nistp256&quot;, &quot;ecdsa-sha2-nistp384&quot;, &quot;ecdsa-sha2-nistp521&quot;,&quot;ssh-ed25519&quot;</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedKeyExchangeAlgorithms</td>
+<td>Specifies a list of allowed key exchange algorithms IDs and their order.</td>
+<td>&quot;diffie-hellman-group1-sha1&quot;, &quot;diffie-hellman-group14-sha1&quot;,<br>diffie-hellman-group-exchange-sha1&quot;, &quot;diffie-hellman-group-exchange-sha256&quot;,<br>&quot;diffie-hellman-group14-sha256&quot;, &quot;diffie-hellman-group15-sha512&quot;<br>&quot;diffie-hellman-group16-sha512&quot;, &quot;curve25519-sha256&quot;, &quot;curve25519-sha256@libssh.org&quot;<br>&quot;ecdh-sha2-nistp256&quot;, &quot;ecdh-sha2-nistp384&quot;, &quot;ecdh-sha2-nistp521&quot;</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedMacAlgorithms</td>
+<td>Specifies a list of allowed MAC algorithms IDs and their order.</td>
+<td>&quot;hmac-sha2-256-etm@openssh.com&quot;, &quot;hmac-sha2-256&quot;, &quot;hmac-sha2-512-etm@openssh.com&quot;,<br> &quot;hmac-sha2-512&quot;, &quot;hmac-sha1&quot;, &quot;hmac-md5&quot;, &quot;hmac-sha1-96&quot;, &quot;hmac-md5-96&quot; ---</td>
+</tr>
+<tr>
+<td>SecureGateway:SSHVersion</td>
+<td>In order to not leak the implementation of the Secure Gateway to<br>provide hackers with additional information,<br>the reported SSH software version can be configured here.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Up to Royal Server V3, these settings are configured in the <code>RoyalServer.exe.config</code> file (located in the installation directory) under <code>configuration/appsettings</code>. The corresponding appsetings keys are:</p>
+<table>
+<thead>
+<tr>
+<th>Royal Server V3</th>
+<th>Royal Server V3</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>UserCachingInSeconds</td>
-<td>Caching time in seconds of group memberships for users are cached in Royal Server. Default is 300 (5 Minutes).</td>
+<td>UserCachingInSeconds</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedEncryptionAlgorithms</td>
+<td>sg_allowed_encryption_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedHostKeyAlgorithms</td>
+<td>sg_allowed_host_key_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedKeyExchangeAlgorithms</td>
+<td>sg_allowed_key_exchange_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedMacAlgorithms</td>
+<td>sg_allowed_message_authentication_code_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:SSHVersion</td>
+<td>sg_ssh_software_version</td>
 </tr>
 </tbody>
 </table>
@@ -106,7 +160,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

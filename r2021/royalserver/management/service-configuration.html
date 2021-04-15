@@ -8,7 +8,7 @@
     <title>Service Configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Service Configuration ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -85,17 +85,22 @@
 <p><strong>Worker Account</strong></p>
 <p>Royal Server is running as a Windows Service. By default it is installed using the <code>LOCAL SYSTEM</code> account. For the actual work (e.g. querying the list of Windows Services from a managed server), Royal Server is using a Worker Account. This account has to have network access.</p>
 <p><strong>IP Address</strong></p>
-<p>Specify the IP Address Royal Server is using for accepting requests.</p>
+<p>Specify the IP Address Royal Server is using for accepting requests. By default, the unspecified address (0.0.0.0) is assigned .i.e it listens on all available IP4 addresses.</p>
 <p><strong>Port</strong></p>
 <p>Specify the port, Royal Server is using for accepting requests.</p>
 <p><strong>Use Compression</strong></p>
 <p>This setting enables compression on Royal Server. This setting makes sense if you have enough CPU on the client and the servers side and want reduce the network load.</p>
 <p><strong>HTTPS/SSL</strong></p>
-<p>Royal Server uses communication via HTTPS/SSL for encrypt by default. This is achieved by creating a self-signed SSL certificate during the installation process. This certificate is named &quot;RoyalServer&quot;. It can be changed to your own certificate if needed. The selected certificate can be deleted and exported (to be used on a second Royal Server installation in a load balanced scenario).</p>
-<p><strong>Windows Service User</strong></p>
+<p>Royal Server uses communication via HTTPS/SSL to encrypt communication. This is achieved by creating a self-signed SSL certificate during the installation process. This certificate is named &quot;RoyalServer&quot;. It can be changed to your own certificate if needed. The selected certificate can be deleted and exported (to be used on a second Royal Server installation in a load balanced scenario).</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The Royal Server service is using LOCAL SYSTEM as user by default. If this user does not have the necessary rights (e.g. to query domain users and groups) please consider changing this user.</p>
+<p>Until Royal Server V3 and below it was possible to deactivate HTTPS/SSL encryption, as of Royal Server V4 this is not possible anymore, only secure connections are supported.</p>
+</div>
+<p><strong>Windows Service User</strong></p>
+<p>The Royal Server Service is using LOCAL SYSTEM as user by default.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If this user does not have the necessary rights (e.g. to query domain users and groups) please consider changing this user.</p>
 </div>
 </article>
           </div>
@@ -110,7 +115,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
