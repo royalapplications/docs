@@ -1,5 +1,4 @@
-- order: 10000
-  items:
+- items:
   - order: 10099
     href: introduction/what-is-royal-server.md
     name: What is Royal Server?
@@ -27,10 +26,10 @@
   - order: 10020
     href: introduction/release-notes.md
     name: Release Notes
+  order: 10000
   href: introduction/index.md
   name: Introduction
-- order: 9000
-  items:
+- items:
   - order: 9095
     href: management/overview.md
     name: Overview
@@ -61,10 +60,10 @@
   - order: 9010
     href: management/logging.md
     name: Logging
+  order: 9000
   href: management/index.md
   name: Royal Server Management
-- order: 8000
-  items:
+- items:
   - order: 8090
     href: modules/document-store.md
     name: Document Store
@@ -92,15 +91,14 @@
   - order: 8010
     href: modules/windows-services-module.md
     name: Windows Services Module
+  order: 8000
   href: modules/index.md
   name: Royal Server Modules
-- order: 7000
-  items:
+- items:
   - order: 7010
     href: components/management-endpoint.md
     name: Management Endpoint
-  - order: 7000
-    items:
+  - items:
     - order: 7020
       href: components/document-store/configuration.md
       name: Configuration
@@ -110,31 +108,31 @@
     - order: 7010
       href: components/document-store/documents.md
       name: Documents
-    - order: 7000
-      items:
+    - items:
       - order: 7010
         href: components/document-store/multi-factor-authentication/general-information.md
         name: General Information
-      - order: 7000
-        items:
+      - items:
         - order: 7010
           href: components/document-store/multi-factor-authentication/totp/configuration-of-totp-provider.md
           name: Configuration of TOTP Provider
+        order: 7000
         href: components/document-store/multi-factor-authentication/totp/index.md
         name: Time-based One-time Password (TOTP)
-      - order: 7000
-        items:
+      - items:
         - order: 7010
           href: components/document-store/multi-factor-authentication/duo/configuration-of-duo-provider.md
           name: Configuration of DUO Provider
+        order: 7000
         href: components/document-store/multi-factor-authentication/duo/index.md
         name: DUO Provider
+      order: 7000
       href: components/document-store/multi-factor-authentication/index.md
       name: Multi-Factor Authentication
+    order: 7000
     href: components/document-store/index.md
     name: Document Store
-  - order: 7000
-    items:
+  - items:
     - order: 7040
       href: components/secure-gateway/gateway-configuration.md
       name: Gateway Configuration
@@ -147,19 +145,20 @@
     - order: 7010
       href: components/secure-gateway/permissions.md
       name: Permissions
+    order: 7000
     href: components/secure-gateway/index.md
     name: Secure Gateway
+  order: 7000
   href: components/index.md
   name: Royal Server Components
-- order: 6000
-  items:
+- items:
   - order: 6010
     href: license/installed-licenses.md
     name: Installed Licenses
+  order: 6000
   href: license/index.md
   name: License
-- order: 5000
-  items:
+- items:
   - order: 5000
     href: advanced/performance-counters.md
     name: Performance Counter
@@ -172,25 +171,24 @@
   - order: 5000
     href: advanced/application-settings.md
     name: Application Settings
-  - order: 5000
-    items:
+  - items:
     - order: 5000
       href: advanced/management-scripts/uninstall.md
       name: Cleanup an Installation
     - order: 5000
       href: advanced/management-scripts/pepare-managed-server.md
       name: Pepare a Managed Server
+    order: 5000
     href: advanced/management-scripts/index.md
     name: Management Scripts
+  order: 5000
   href: advanced/index.md
   name: Advanced Topics
-- order: 4000
-  items:
+- items:
   - order: 4010
     href: scripting/getting-started.md
     name: Getting Started
-  - order: 4000
-    items:
+  - items:
     - order: 4000
       href: scripting/module-reference/module-document-store.md
       name: Module Document Store
@@ -206,10 +204,10 @@
     - order: 4000
       href: scripting/module-reference/module-windows-events.md
       name: Module Windows Events (EventLog)
+    order: 4000
     href: scripting/module-reference/index.md
     name: Module References
-  - order: 4000
-    items:
+  - items:
     - order: 4000
       href: scripting/powershell-commandlets/get-royalservermodulecommandparameter.md
       name: Get-RoyalServerModuleCommandParameter
@@ -225,8 +223,10 @@
     - order: 4000
       href: scripting/powershell-commandlets/get-royalservermodulecommand.md
       name: Get-RoyalServerModuleCommand
+    order: 4000
     href: scripting/powershell-commandlets/index.md
     name: PowerShell Commandlets
+  order: 4000
   href: scripting/index.md
   name: Scripting
 - order: 1040
