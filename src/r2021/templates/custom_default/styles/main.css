@@ -184,3 +184,26 @@ blockquote {
 	border-top: none;
 	padding: 10px 0px;
 }
+
+code {
+  tab-size: 4;
+}
+
+
+/* for block of numbers */
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: right;
+  color: #ccc;
+  vertical-align: top !important;
+}
+
+td.hljs-ln-line.hljs-ln-numbers {
+  padding-right: 8px;
+}
