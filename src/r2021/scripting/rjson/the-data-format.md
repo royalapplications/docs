@@ -60,8 +60,9 @@ The end result is that we'll have one credential and one SSH connection in Royal
 
 Here's what the end result looks like in Royal TSX:
 
-![](~/images/Scripting/rJSON/Screenshot_2.png) 
+![](~/images/Scripting/rJSON/Screenshot_2.png)
 
+> [!Note]
 > In this case we created a Dynamic Folder in Royal TSX, directly specified the JSON content and named it "JSON Sample".
 
 Here are a few things worth pointing out about this sample:
