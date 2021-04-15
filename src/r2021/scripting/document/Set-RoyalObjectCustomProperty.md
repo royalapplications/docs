@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Set-RoyalObjectCustomProperty
-uid: Set-RoyalObjectCustomProperty
+online version:
 order: 9780
+schema: 2.0.0
+uid: Set-RoyalObjectCustomProperty
 ---
 
 # Set-RoyalObjectCustomProperty

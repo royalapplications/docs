@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Close-RoyalServerDocument
-uid: Close-RoyalServerDocument
+online version:
 order: 9920
+schema: 2.0.0
+uid: Close-RoyalServerDocument
 ---
 
 # Close-RoyalServerDocument

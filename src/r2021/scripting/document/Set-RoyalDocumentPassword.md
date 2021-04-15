@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Set-RoyalDocumentPassword
-uid: Set-RoyalDocumentPassword
+online version:
 order: 9890
+schema: 2.0.0
+uid: Set-RoyalDocumentPassword
 ---
 
 # Set-RoyalDocumentPassword

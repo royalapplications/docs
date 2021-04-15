@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: New-RoyalObject
-uid: New-RoyalObject
+online version:
 order: 9880
+schema: 2.0.0
+uid: New-RoyalObject
 ---
 
 # New-RoyalObject

@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Get-RoyalPropertyHelp
-uid: Get-RoyalPropertyHelp
+online version:
 order: 9750
+schema: 2.0.0
+uid: Get-RoyalPropertyHelp
 ---
 
 # Get-RoyalPropertyHelp

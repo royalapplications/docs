@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Copy-RoyalObject
-uid: Copy-RoyalObject
+online version:
 order: 9860
+schema: 2.0.0
+uid: Copy-RoyalObject
 ---
 
 # Copy-RoyalObject

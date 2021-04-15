@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Set-RoyalObjectValue
-uid: Set-RoyalObjectValue
+online version:
 order: 9820
+schema: 2.0.0
+uid: Set-RoyalObjectValue
 ---
 
 # Set-RoyalObjectValue

@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Set-RoyalObjectCustomPropertyPosition
-uid: Set-RoyalObjectCustomPropertyPosition
+online version:
 order: 9770
+schema: 2.0.0
+uid: Set-RoyalObjectCustomPropertyPosition
 ---
 
 # Set-RoyalObjectCustomPropertyPosition

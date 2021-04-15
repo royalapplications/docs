@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Set-RoyalSortOrder
-uid: Set-RoyalSortOrder
+online version:
 order: 9810
+schema: 2.0.0
+uid: Set-RoyalSortOrder
 ---
 
 # Set-RoyalSortOrder

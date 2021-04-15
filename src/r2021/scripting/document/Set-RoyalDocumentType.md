@@ -1,11 +1,11 @@
 ---
 external help file: RoyalDocument.PowerShell.dll-Help.xml
 Module Name: RoyalDocument.PowerShell
-online version:
-schema: 2.0.0
 name: Set-RoyalDocumentType
-uid: Set-RoyalDocumentType
+online version:
 order: 9900
+schema: 2.0.0
+uid: Set-RoyalDocumentType
 ---
 
 # Set-RoyalDocumentType
