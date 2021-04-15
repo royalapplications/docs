@@ -16,7 +16,7 @@ Royal Apps Documentation is the one place where all the help content for almost 
 - Scripting
   - PowerShell Cmdlets
   - Object and Properties Reference
-  - RoyalJson (rJson) for Dynamic Folders and Credentials
+  - RoyalJSON (rJSON) for Dynamic Folders and Credentials
 
 All content is written in markdown and the generated web site content is automatically created by [DocFX](https://dotnet.github.io/docfx/).
 
