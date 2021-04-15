@@ -35,5 +35,5 @@ So with the disclaimer out of the way, let's look at how you can access the Roya
 }
 ```
 
-In this example we configure an SSH connection using rJSON and then start dropping down into the RoyalDocument layer starting at line 8. The [`Properties`](TODO) key is used to specify that we intend to set some RoyalDocument properties. Line 9 and 10 are Royal TSX (for macOS) specific and enable logging for the SSH connection and configure the logging directory respectively. Line 11-13 basically do the same for Royal TS (for Windows).
+In this example we configure an SSH connection using rJSON and then start dropping down into the RoyalDocument layer starting at line 8. The [`Properties`](~/scripting/rjson/available-properties/royaljsonobject.html#properties) key is used to specify that we intend to set some RoyalDocument properties. Line 9 and 10 are Royal TSX (for macOS) specific and enable logging for the SSH connection and configure the logging directory respectively. Line 11-13 basically do the same for Royal TS (for Windows).
 The result of this example is a single SSH connection which is properly configured for logging on both macOS and Windows.

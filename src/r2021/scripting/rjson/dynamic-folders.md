@@ -13,11 +13,11 @@ Currently, two separate scripts can be configured:
 
 - The **"Dynamic Folder Script"**:
 
-	This script retrieves the content that should appear underneath the dynamic folder. Its return value must be a valid [RoyalJSONDocument](TODO) object.
+	This script retrieves the content that should appear underneath the dynamic folder. Its return value must be a valid [RoyalJSONDocument](~/scripting/rjson/available-properties/royaljsondocument.html) object.
 
 - The **"Dynamic Credential Script"**:
 
-	This script retrieves detailed information (username, password, etc.) of dynamic credentials when a connection referencing a dynamic credential is opened. Its return value must be a valid [RoyalJSONDynamicCredential](TODO) object.
+	This script retrieves detailed information (username, password, etc.) of dynamic credentials when a connection referencing a dynamic credential is opened. Its return value must be a valid [RoyalJSONDynamicCredential](~/scripting/rjson/available-properties/royaljsondynamiccredential.html) object.
 
 All scripts are expected to return their data in stdout and the exit code must be 0 for a script run to be considered successful. If either of those conditions is not met, an error will be displayed and the script output is discarded. For error handling purposes you may use stderr. If the exit code is not 0 and content is present on stderr, Royal TS/X will display the output of stderr to the user.
 

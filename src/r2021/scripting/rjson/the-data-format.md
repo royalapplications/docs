@@ -67,8 +67,8 @@ Here's what the end result looks like in Royal TSX:
 
 Here are a few things worth pointing out about this sample:
 - The root object must always be a JSON object, **NOT** an array.
-	We call this the [RoyalJSONDocument](TODO) which currently only has two properties:
-	- `Objects`: An array of objects (We call those [RoyalJSONObjects](TODO)).
+	We call this the [RoyalJSONDocument](~/scripting/rjson/available-properties/royaljsondocument.html) which currently only has two properties:
+	- `Objects`: An array of objects (We call those [RoyalJSONObject](~/scripting/rjson/available-properties/royaljsonobject.html)s).
 	- `Name`: An optional name which is used as the document name when opening ".rjson" documents.
 - The `Type` property is one of only two properties that is required for every RoyalJSONObject. Without it, we wouldn't know which kind of object you're describing.
 - The `Name` property is the second required property of RoyalJSONObjects. Just like in Royal TS/X, every object must have a display name.

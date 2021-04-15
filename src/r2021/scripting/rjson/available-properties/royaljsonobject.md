@@ -266,8 +266,6 @@ name: RoyalJSONObject
 - **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
 - **Example**: `"CustomField20": "Text in this field will be encrypted"`
 
-## TODO: STYLING BELOW !!!
-
 ## Properties
 - **Data Type**: Key/Value pairs
 - **Applies To**: All object types
