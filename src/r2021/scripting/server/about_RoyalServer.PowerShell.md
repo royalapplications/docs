@@ -1,5 +1,7 @@
 # RoyalServer Powershell
 
+## about_RoyalServer.PowerShell
+
 ## SHORT DESCRIPTION
 
 Describes how to manage RoyalServer using PowerShell Commandlets.
