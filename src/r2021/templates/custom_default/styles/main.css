@@ -222,7 +222,8 @@ article h2#properties {
 
 .sideaffix {
   /* band-aid for very long table of contents (in this article) */
-  overflow-y: scroll;
+  /* Disabled for now because it makes scrollbars appear on OS's that always show scrollbars, not only when scrolling */
+  /* overflow-y: auto; */
 }
 
 @media only screen and (max-width: 768px) {
