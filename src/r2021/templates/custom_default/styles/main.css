@@ -61,6 +61,18 @@ blockquote {
   background: #eee;
 }
 
+nav#affix {    
+  overflow-y:scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+nav#affix::-webkit-scrollbar {
+  display: none;
+}
+
+
 img.icon-def {
   float: left;
   margin-right: 7px;
