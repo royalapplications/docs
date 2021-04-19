@@ -241,7 +241,7 @@ references:
 - uid: royalts_reference_organization_information
   name: " Information"
   href: royalts/reference/organization/information.html
-- uid: royalts_reference_organization_todo-item
+- uid: royalts_reference_organization_todo
   name: " To-Do Item"
   href: royalts/reference/organization/todo-item.html
 - uid: royalts_reference_rdpgateway
@@ -418,6 +418,9 @@ references:
 - uid: scripting_rjson
   name: Introduction
   href: scripting/rjson/index.html
+- uid: scripting_rjson_available_properties
+  name: RoyalJSONDocument (Root Element)
+  href: scripting/rjson/available-properties/index.html
 - uid: scripting_serverps
   name: RoyalServer Powershell
   href: scripting/server/index.html

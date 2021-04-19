@@ -119,29 +119,30 @@
 <p>The end result is that we'll have one credential and one SSH connection in Royal TS/X. The SSH connection will have the &quot;Root&quot; credential assigned to it.</p>
 <p>Here's what the end result looks like in Royal TSX:</p>
 <p><img src="../../images/Scripting/rJSON/Screenshot_2.png" alt=""></p>
-<blockquote>
+<div class="NOTE">
+<h5>Note</h5>
 <p>In this case we created a Dynamic Folder in Royal TSX, directly specified the JSON content and named it &quot;JSON Sample&quot;.</p>
-</blockquote>
+</div>
 <p>Here are a few things worth pointing out about this sample:</p>
 <ul>
 <li>The root object must always be a JSON object, <strong>NOT</strong> an array.
-We call this the &quot;<a href="TODO">RoyalJSONDocument</a>&quot; which currently only has two properties:
+We call this the <a href="available-properties/royaljsondocument.html">RoyalJSONDocument</a> which currently only has two properties:
 <ul>
-<li>&quot;Objects&quot;: An array of objects (We call those &quot;<a href="TODO">RoyalJSONObjects</a>&quot;).</li>
-<li>&quot;Name&quot;: An optional name which is used as the document name when opening &quot;.rjson&quot; documents.</li>
+<li><code>Objects</code>: An array of objects (We call those <a href="available-properties/royaljsonobject.html">RoyalJSONObjects</a>).</li>
+<li><code>Name</code>: An optional name which is used as the document name when opening &quot;.rjson&quot; documents.</li>
 </ul>
 </li>
-<li>The &quot;Type&quot; property is one of only two properties that is required for every RoyalJSONObject. Without it, we wouldn't know which kind of object you're describing.</li>
-<li>The &quot;Name&quot; property is the second required property of RoyalJSONObjects. Just like in Royal TS/X, every object must have a display name.</li>
+<li>The <code>Type</code> property is one of only two properties that is required for every RoyalJSONObject. Without it, we wouldn't know which kind of object you're describing.</li>
+<li>The <code>Name</code> property is the second required property of RoyalJSONObjects. Just like in Royal TS/X, every object must have a display name.</li>
 <li>If you omit either the type or name property, Royal TS/X will throw an error.</li>
 <li>All other properties are optional.</li>
-<li>Which properties are available depends on the specified object type. For instance, credentials don't have a &quot;Port&quot; property while most connections do.</li>
+<li>Which properties are available depends on the specified object type. For instance, credentials don't have a <code>Port</code> property while most connections do.</li>
 <li>If you set a property that isn't available for the specified object type it is ignored.</li>
-<li>The &quot;ID&quot; property is quite magical. 😉 In more serious terminology:
+<li>The <code>ID</code> property is quite magical. 😉 In more serious terminology:
 Royal TS/X internally uses GUIDs to reference objects by ID. Since not all external data sources use these kinds of IDs, we allow RoyalJSON to deal with any type of ID that can be expressed as String. Basically there are two code-paths:
 <ul>
-<li>When an &quot;ID&quot; is specified as GUID: In this case we directly use the GUID to reference the object. No magic here.</li>
-<li>When a generic String is used as &quot;ID&quot;: This is the &quot;magic path&quot;. In this case we generate a new internal GUID and take the generic string and store it with the object as &quot;External ID&quot;. If other objects in your rJSON reference this external ID we look up our internal ID and make sure the reference is stored correctly in the resulting object. Also, if you assign objects that you imported through rJSON to other objects outside of your rJSON we will use the internal ID to make the references. Now, if you decide to refresh your rJSON imported objects, we cache the external to internal ID mapping and try to restore it after the import is finished. This ensures that references to objects with external IDs aren't broken on refresh.</li>
+<li>When an <code>ID</code> is specified as GUID: In this case we directly use the GUID to reference the object. No magic here.</li>
+<li>When a generic String is used as <code>ID</code>: This is the &quot;magic path&quot;. In this case we generate a new internal GUID and take the generic string and store it with the object as &quot;External ID&quot;. If other objects in your rJSON reference this external ID we look up our internal ID and make sure the reference is stored correctly in the resulting object. Also, if you assign objects that you imported through rJSON to other objects outside of your rJSON we will use the internal ID to make the references. Now, if you decide to refresh your rJSON imported objects, we cache the external to internal ID mapping and try to restore it after the import is finished. This ensures that references to objects with external IDs aren't broken on refresh.</li>
 </ul>
 </li>
 <li>All of this internal/external ID magic is applied to all properties that take an ID as value.</li>

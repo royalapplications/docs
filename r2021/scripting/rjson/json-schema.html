@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JSON Schema </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="JSON Schema ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="json-schema">JSON Schema</h1>
+
+<p>Here's the <a href="https://json-schema.org/">JSON schema</a> to validate your JSON content against:</p>
+<pre><code class="lang-json">{
+  &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+  &quot;title&quot;: &quot;RoyalJSONDocument&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false,
+  &quot;properties&quot;: {
+    &quot;Name&quot;: {
+      &quot;type&quot;: [
+        &quot;null&quot;,
+        &quot;string&quot;
+      ]
+    },
+    &quot;Objects&quot;: {
+      &quot;type&quot;: [
+        &quot;array&quot;,
+        &quot;null&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;$ref&quot;: &quot;#/definitions/RoyalJSONObject&quot;
+      }
+    }
+  },
+  &quot;definitions&quot;: {
+    &quot;RoyalJSONObject&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;additionalProperties&quot;: false,
+      &quot;required&quot;: [
+        &quot;Type&quot;,
+        &quot;Name&quot;
+      ],
+      &quot;properties&quot;: {
+        &quot;Type&quot;: {
+          &quot;description&quot;: &quot;The type of the object.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONObjectTypes&quot;
+            }
+          ]
+        },
+        &quot;Name&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;The (display) name of the object.&quot;
+        },
+        &quot;ID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the ID of the resulting object. If you pass in any other string, a GUID will be generated for the object and the string you pass in will be stored as external ID.&quot;
+        },
+        &quot;ComputerName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The computer name (IP address/FQDN) of this object. Can also be used to set the URL of web connections and credentials.&quot;
+        },
+        &quot;URL&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Alias for ComputerName.&quot;
+        },
+        &quot;Port&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;description&quot;: &quot;The port of this object.&quot;,
+          &quot;format&quot;: &quot;int32&quot;
+        },
+        &quot;Description&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The description of the object.&quot;
+        },
+        &quot;Favorite&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not the object is a favorite.&quot;
+        },
+        &quot;ColorFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not the object gets its color from its parent.&quot;
+        },
+        &quot;Color&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The color of the object, specified as Hex (HTML) color (i.e. #FFFFFF for white).&quot;
+        },
+        &quot;IconName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The icon library icon name of the object.&quot;
+        },
+        &quot;Notes&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The notes of the object.&quot;
+        },
+        &quot;Path&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The folder path of the object. This may be used as an alternative to nesting objects in Folder objects. The \&quot;Path\&quot; property takes precedence over folder nesting, so if both are used, the object will be placed in the folder pointed to by the \&quot;Path\&quot; property.&quot;
+        },
+        &quot;CustomField1&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 1 (non-protected).&quot;
+        },
+        &quot;CustomField2&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 2 (non-protected).&quot;
+        },
+        &quot;CustomField3&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 3 (non-protected).&quot;
+        },
+        &quot;CustomField4&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 4 (non-protected).&quot;
+        },
+        &quot;CustomField5&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 5 (non-protected).&quot;
+        },
+        &quot;CustomField6&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 6 (non-protected).&quot;
+        },
+        &quot;CustomField7&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 7 (non-protected).&quot;
+        },
+        &quot;CustomField8&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 8 (non-protected).&quot;
+        },
+        &quot;CustomField9&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 9 (non-protected).&quot;
+        },
+        &quot;CustomField10&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 10 (non-protected).&quot;
+        },
+        &quot;CustomField11&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 11 (protected).&quot;
+        },
+        &quot;CustomField12&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 12 (protected).&quot;
+        },
+        &quot;CustomField13&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 13 (protected).&quot;
+        },
+        &quot;CustomField14&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 14 (protected).&quot;
+        },
+        &quot;CustomField15&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 15 (protected).&quot;
+        },
+        &quot;CustomField16&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 16 (protected).&quot;
+        },
+        &quot;CustomField17&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 17 (protected).&quot;
+        },
+        &quot;CustomField18&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 18 (protected).&quot;
+        },
+        &quot;CustomField19&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 19 (protected).&quot;
+        },
+        &quot;CustomField20&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;Custom Field 20 (protected).&quot;
+        },
+        &quot;Properties&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;object&quot;
+          ],
+          &quot;description&quot;: &quot;Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is available here.&quot;,
+          &quot;additionalProperties&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;CustomProperties&quot;: {
+          &quot;type&quot;: [
+            &quot;array&quot;,
+            &quot;null&quot;
+          ],
+          &quot;description&quot;: &quot;The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type \&quot;Text\&quot;. It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using \&quot;Name\&quot;, the value using \&quot;Value\&quot; and the type using \&quot;Type\&quot; (Supported types are: Text, Protected, URL, Email, Address, Phone, Date, YesNo, Header)&quot;,
+          &quot;items&quot;: {
+            &quot;$ref&quot;: &quot;#/definitions/RoyalJSONCustomProperty&quot;
+          }
+        },
+        &quot;CredentialsFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;CredentialsFromContextConnection&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;CredentialID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;CredentialName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;Username&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;Password&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;KeyFilePath&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;KeyFileContent&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;KeyFilePassphrase&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;AutoFillElements&quot;: {
+          &quot;type&quot;: [
+            &quot;array&quot;,
+            &quot;null&quot;
+          ],
+          &quot;description&quot;: &quot;The auto fill elements for the credential or web connection.&quot;,
+          &quot;items&quot;: {
+            &quot;$ref&quot;: &quot;#/definitions/RoyalJSONAutoFillElement&quot;
+          }
+        },
+        &quot;AutoFillDelay&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;description&quot;: &quot;The delay in milliseconds before the auto fill script is executed.&quot;,
+          &quot;format&quot;: &quot;int32&quot;,
+          &quot;default&quot;: 200
+        },
+        &quot;RetryAutoFillUntilSuccess&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Whether or not auto fill is retried until all fields have been found.&quot;
+        },
+        &quot;Objects&quot;: {
+          &quot;type&quot;: [
+            &quot;array&quot;,
+            &quot;null&quot;
+          ],
+          &quot;items&quot;: {
+            &quot;$ref&quot;: &quot;#/definitions/RoyalJSONObject&quot;
+          }
+        },
+        &quot;ScriptInterpreter&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;DynamicCredentialScriptInterpreter&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;DynamicCredentialScript&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;Status&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONToDoStatus&quot;
+        },
+        &quot;NoConfirmationRequired&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;CommandMac&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;ArgumentsMac&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;WorkingDirectoryMac&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;CommandWindows&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;ArgumentsWindows&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;WorkingDirectoryWindows&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;KeySequence&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;UseSSL&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;default&quot;: true
+        },
+        &quot;SecureGatewayPort&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;format&quot;: &quot;int32&quot;
+        },
+        &quot;SecureGatewayCredentialID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;SecureGatewayCredentialName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;SecureGatewayUsername&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;SecureGatewayPassword&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;MACAddress&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;WindowMode&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONWindowModes&quot;
+        },
+        &quot;ConsoleSession&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;NLA&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;default&quot;: true
+        },
+        &quot;ResizeMode&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopResizeModes&quot;
+        },
+        &quot;HyperVMode&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopHyperVModes&quot;
+        },
+        &quot;HyperVPort&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;format&quot;: &quot;int32&quot;
+        },
+        &quot;HyperVInstanceID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;UseEnhancedHyperVSessionMode&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;RemoteDesktopGatewayComputerName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;RemoteDesktopGatewayCredentialsFromConnection&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;RemoteDesktopGatewayUsername&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;RemoteDesktopGatewayPassword&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;RemoteDesktopGatewayCredentialID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;RemoteDesktopGatewayCredentialName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;TerminalConnectionType&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONTerminalConnectionTypes&quot;
+        },
+        &quot;SerialPortName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;BaudRate&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;format&quot;: &quot;int32&quot;
+        },
+        &quot;DataBits&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;format&quot;: &quot;int32&quot;,
+          &quot;default&quot;: 8
+        },
+        &quot;Parity&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONSerialPortParity&quot;
+        },
+        &quot;StopBits&quot;: {
+          &quot;default&quot;: &quot;One&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONSerialPortStopBits&quot;
+            }
+          ]
+        },
+        &quot;CustomCommand&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;FileTransferConnectionType&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONFileTransferConnectionTypes&quot;
+        },
+        &quot;PassiveMode&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;TeamViewerConnectionType&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONTeamViewerConnectionTypes&quot;
+        },
+        &quot;UseCIM&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;Script&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;ConnectTaskFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;ConnectTaskID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;ConnectTaskName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;DisconnectTaskFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;DisconnectTaskID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;DisconnectTaskName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;KeySequenceFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;KeySequenceID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;KeySequenceName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;SecureGatewayFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;SecureGatewayID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;RoyalServerFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;RoyalServerID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        },
+        &quot;RemoteDesktopGatewayFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;
+        },
+        &quot;RemoteDesktopGatewayUsage&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopGatewayUsage&quot;
+        },
+        &quot;RemoteDesktopGatewayID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ]
+        }
+      }
+    },
+    &quot;RoyalJSONObjectTypes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;__Unknown&quot;,
+        &quot;Folder&quot;,
+        &quot;DynamicFolder&quot;,
+        &quot;Credential&quot;,
+        &quot;DynamicCredential&quot;,
+        &quot;ToDo&quot;,
+        &quot;CommandTask&quot;,
+        &quot;KeySequenceTask&quot;,
+        &quot;SecureGateway&quot;,
+        &quot;RoyalServer&quot;,
+        &quot;RemoteDesktopGateway&quot;,
+        &quot;RemoteDesktopConnection&quot;,
+        &quot;TerminalConnection&quot;,
+        &quot;WebConnection&quot;,
+        &quot;VNCConnection&quot;,
+        &quot;FileTransferConnection&quot;,
+        &quot;TeamViewerConnection&quot;,
+        &quot;ExternalApplicationConnection&quot;,
+        &quot;PerformanceConnection&quot;,
+        &quot;VMwareConnection&quot;,
+        &quot;HyperVConnection&quot;,
+        &quot;WindowsEventsConnection&quot;,
+        &quot;WindowsServicesConnection&quot;,
+        &quot;WindowsProcessesConnection&quot;,
+        &quot;TerminalServicesConnection&quot;,
+        &quot;PowerShellConnection&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;__Unknown&quot;,
+        &quot;Folder&quot;,
+        &quot;DynamicFolder&quot;,
+        &quot;Credential&quot;,
+        &quot;DynamicCredential&quot;,
+        &quot;ToDo&quot;,
+        &quot;CommandTask&quot;,
+        &quot;KeySequenceTask&quot;,
+        &quot;SecureGateway&quot;,
+        &quot;RoyalServer&quot;,
+        &quot;RemoteDesktopGateway&quot;,
+        &quot;RemoteDesktopConnection&quot;,
+        &quot;TerminalConnection&quot;,
+        &quot;WebConnection&quot;,
+        &quot;VNCConnection&quot;,
+        &quot;FileTransferConnection&quot;,
+        &quot;TeamViewerConnection&quot;,
+        &quot;ExternalApplicationConnection&quot;,
+        &quot;PerformanceConnection&quot;,
+        &quot;VMwareConnection&quot;,
+        &quot;HyperVConnection&quot;,
+        &quot;WindowsEventsConnection&quot;,
+        &quot;WindowsServicesConnection&quot;,
+        &quot;WindowsProcessesConnection&quot;,
+        &quot;TerminalServicesConnection&quot;,
+        &quot;PowerShellConnection&quot;
+      ]
+    },
+    &quot;RoyalJSONCustomProperty&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;additionalProperties&quot;: false,
+      &quot;required&quot;: [
+        &quot;Name&quot;,
+        &quot;Type&quot;
+      ],
+      &quot;properties&quot;: {
+        &quot;Name&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        &quot;Type&quot;: {
+          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONCustomPropertyTypes&quot;
+        },
+        &quot;Value&quot;: {
+          &quot;oneOf&quot;: [
+            {},
+            {
+              &quot;type&quot;: &quot;null&quot;
+            }
+          ]
+        }
+      }
+    },
+    &quot;RoyalJSONCustomPropertyTypes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;Text&quot;,
+        &quot;Protected&quot;,
+        &quot;URL&quot;,
+        &quot;Email&quot;,
+        &quot;Address&quot;,
+        &quot;Phone&quot;,
+        &quot;Date&quot;,
+        &quot;YesNo&quot;,
+        &quot;Header&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;Text&quot;,
+        &quot;Protected&quot;,
+        &quot;URL&quot;,
+        &quot;Email&quot;,
+        &quot;Address&quot;,
+        &quot;Phone&quot;,
+        &quot;Date&quot;,
+        &quot;YesNo&quot;,
+        &quot;Header&quot;
+      ]
+    },
+    &quot;RoyalJSONAutoFillElement&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;additionalProperties&quot;: false,
+      &quot;required&quot;: [
+        &quot;Element&quot;
+      ],
+      &quot;properties&quot;: {
+        &quot;Element&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;The selector for the auto fill element.&quot;
+        },
+        &quot;Action&quot;: {
+          &quot;description&quot;: &quot;The type of action to perform on this auto fill element.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONAutoFillElementActions&quot;
+            }
+          ]
+        },
+        &quot;Value&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The value to fill the element with.&quot;
+        }
+      }
+    },
+    &quot;RoyalJSONAutoFillElementActions&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;Fill&quot;,
+        &quot;Click&quot;,
+        &quot;Focus&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;Fill&quot;,
+        &quot;Click&quot;,
+        &quot;Focus&quot;
+      ]
+    },
+    &quot;RoyalJSONToDoStatus&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;Active&quot;,
+        &quot;Completed&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;Active&quot;,
+        &quot;Completed&quot;
+      ]
+    },
+    &quot;RoyalJSONWindowModes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;Embedded&quot;,
+        &quot;External&quot;,
+        &quot;FullScreen&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;Embedded&quot;,
+        &quot;External&quot;,
+        &quot;FullScreen&quot;
+      ]
+    },
+    &quot;RoyalJSONRemoteDesktopResizeModes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;ScrollBars&quot;,
+        &quot;SmartSizing&quot;,
+        &quot;SmartReconnect&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;ScrollBars&quot;,
+        &quot;SmartSizing&quot;,
+        &quot;SmartReconnect&quot;
+      ]
+    },
+    &quot;RoyalJSONRemoteDesktopHyperVModes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;None&quot;,
+        &quot;HyperVHost&quot;,
+        &quot;HyperVInstance&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;None&quot;,
+        &quot;HyperVHost&quot;,
+        &quot;HyperVInstance&quot;
+      ]
+    },
+    &quot;RoyalJSONTerminalConnectionTypes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;SSH&quot;,
+        &quot;Telnet&quot;,
+        &quot;SerialPort&quot;,
+        &quot;CustomTerminal&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;SSH&quot;,
+        &quot;Telnet&quot;,
+        &quot;SerialPort&quot;,
+        &quot;CustomTerminal&quot;
+      ]
+    },
+    &quot;RoyalJSONSerialPortParity&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;None&quot;,
+        &quot;Odd&quot;,
+        &quot;Even&quot;,
+        &quot;Mark&quot;,
+        &quot;Space&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;None&quot;,
+        &quot;Odd&quot;,
+        &quot;Even&quot;,
+        &quot;Mark&quot;,
+        &quot;Space&quot;
+      ]
+    },
+    &quot;RoyalJSONSerialPortStopBits&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;None&quot;,
+        &quot;One&quot;,
+        &quot;Two&quot;,
+        &quot;OnePointFive&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;None&quot;,
+        &quot;One&quot;,
+        &quot;Two&quot;,
+        &quot;OnePointFive&quot;
+      ]
+    },
+    &quot;RoyalJSONFileTransferConnectionTypes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;FTP&quot;,
+        &quot;FTPWithImplicitSSL&quot;,
+        &quot;FTPWithExplicitTLSSSL&quot;,
+        &quot;SFTP&quot;,
+        &quot;SCP&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;FTP&quot;,
+        &quot;FTPWithImplicitSSL&quot;,
+        &quot;FTPWithExplicitTLSSSL&quot;,
+        &quot;SFTP&quot;,
+        &quot;SCP&quot;
+      ]
+    },
+    &quot;RoyalJSONTeamViewerConnectionTypes&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;RemoteControl&quot;,
+        &quot;FileTransfer&quot;,
+        &quot;Meeting&quot;,
+        &quot;VPN&quot;,
+        &quot;ManagementConsole&quot;,
+        &quot;PromptForType&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;RemoteControl&quot;,
+        &quot;FileTransfer&quot;,
+        &quot;Meeting&quot;,
+        &quot;VPN&quot;,
+        &quot;ManagementConsole&quot;,
+        &quot;PromptForType&quot;
+      ]
+    },
+    &quot;RoyalJSONRemoteDesktopGatewayUsage&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;Never&quot;,
+        &quot;Always&quot;,
+        &quot;OnDemand&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;Never&quot;,
+        &quot;Always&quot;,
+        &quot;OnDemand&quot;
+      ]
+    }
+  }
+}
+
+{
+  &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+  &quot;title&quot;: &quot;RoyalJSONDynamicCredential&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;additionalProperties&quot;: false,
+  &quot;properties&quot;: {
+    &quot;Username&quot;: {
+      &quot;type&quot;: [
+        &quot;null&quot;,
+        &quot;string&quot;
+      ]
+    },
+    &quot;Password&quot;: {
+      &quot;type&quot;: [
+        &quot;null&quot;,
+        &quot;string&quot;
+      ]
+    },
+    &quot;KeyFilePath&quot;: {
+      &quot;type&quot;: [
+        &quot;null&quot;,
+        &quot;string&quot;
+      ]
+    },
+    &quot;KeyFileContent&quot;: {
+      &quot;type&quot;: [
+        &quot;null&quot;,
+        &quot;string&quot;
+      ]
+    },
+    &quot;KeyFilePassphrase&quot;: {
+      &quot;type&quot;: [
+        &quot;null&quot;,
+        &quot;string&quot;
+      ]
+    }
+  }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2021/scripting/rjson/json-schema.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

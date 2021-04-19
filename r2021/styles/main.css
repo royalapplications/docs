@@ -61,6 +61,18 @@ blockquote {
   background: #eee;
 }
 
+nav#affix {    
+  overflow-y:scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+nav#affix::-webkit-scrollbar {
+  display: none;
+}
+
+
 img.icon-def {
   float: left;
   margin-right: 7px;
@@ -178,6 +190,10 @@ blockquote {
 }
 
 .footer {
+  /* Disable the footer, I don't think we really need it */
+  display: none !important;
+  opacity: 0 !important;
+
 	font-size: 12px;
 	color: #9d9d9d;
 	background-color: transparent;
@@ -189,7 +205,6 @@ code {
   tab-size: 4;
 }
 
-
 /* for block of numbers */
 .hljs-ln-numbers {
   -webkit-touch-callout: none;
@@ -200,10 +215,35 @@ code {
   user-select: none;
 
   text-align: right;
+  white-space: nowrap;
   color: #ccc;
   vertical-align: top !important;
 }
 
 td.hljs-ln-line.hljs-ln-numbers {
   padding-right: 8px;
+}
+
+/* HACKS */
+
+article h2#properties {
+  /* Not sure why the F docfx assigns styles to global IDs, anyway, we reset them here */
+  font-weight: normal;
+  margin-top: 25px;
+}
+
+.sideaffix {
+  /* band-aid for very long table of contents (in this article) */
+  /* Disabled for now because it makes scrollbars appear on OS's that always show scrollbars, not only when scrolling */
+  /* overflow-y: auto; */
+}
+
+@media only screen and (max-width: 768px) {
+  /* .toc li:last-child:after {
+    content: "AAA";
+  } */
+
+  .toc li:after {
+    content: "\00a0";
+  }
 }
