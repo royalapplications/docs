@@ -5,6 +5,12 @@ name: RoyalJSONCustomProperty
 
 # RoyalJSONCustomProperty
 
+## Name
+- **Required**: Yes
+- **Data Type**: String
+- **Description**: The (display) name of the custom property.
+- **Example**: `"Name": "Credit Card Number"`
+
 ## Type
 - **Required**: Yes
 - **Data Type**: Enumeration
@@ -20,12 +26,6 @@ name: RoyalJSONCustomProperty
     - YesNo
     - Header
 - **Example**: `"Type": "Text"`
-
-## Name
-- **Required**: Yes
-- **Data Type**: String
-- **Description**: The (display) name of the custom property.
-- **Example**: `"Name": "Credit Card Number"`
 
 ## Value
 - **Data Type**: String or Boolean

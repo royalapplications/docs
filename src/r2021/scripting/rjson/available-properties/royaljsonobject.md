@@ -11,30 +11,30 @@ name: RoyalJSONObject
 - **Applies To**: All object types
 - **Description**: The type of the object.
 - **Supported Values**:
-	- Folder
-	- Credential
-	- DynamicCredential
-	- ToDo
-	- CommandTask
-	- KeySequenceTask
-	- SecureGateway
-	- RoyalServer
-	- RemoteDesktopGateway
-	- RemoteDesktopConnection
-	- TerminalConnection
-	- WebConnection
-	- VNCConnection
-	- FileTransferConnection
-	- TeamViewerConnection
-	- ExternalApplicationConnection
-	- PerformanceConnection
-	- VMwareConnection
-	- HyperVConnection
-	- WindowsEventsConnection
-	- WindowsServicesConnection
-	- WindowsProcessesConnection
-	- TerminalServicesConnection
-	- PowerShellConnection
+    - Folder
+    - Credential
+    - DynamicCredential
+    - ToDo
+    - CommandTask
+    - KeySequenceTask
+    - SecureGateway
+    - RoyalServer
+    - RemoteDesktopGateway
+    - RemoteDesktopConnection
+    - TerminalConnection
+    - WebConnection
+    - VNCConnection
+    - FileTransferConnection
+    - TeamViewerConnection
+    - ExternalApplicationConnection
+    - PerformanceConnection
+    - VMwareConnection
+    - HyperVConnection
+    - WindowsEventsConnection
+    - WindowsServicesConnection
+    - WindowsProcessesConnection
+    - TerminalServicesConnection
+    - PowerShellConnection
 - **Example**: `"Type": "Folder"`
 
 ## Name
@@ -49,8 +49,8 @@ name: RoyalJSONObject
 - **Applies To**: All object types
 - **Description**: The ID of the object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the ID of the resulting object. If you pass in any other string, a GUID will be generated for the object and the string you pass in will be stored as external ID.
 - **Supported Values**:
-	- GUID formatted as string
-	- String
+    - GUID formatted as string
+    - String
 - **Example**: `"ID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
 - **Example 2**: `"ID": "0001"`
 
@@ -60,7 +60,7 @@ name: RoyalJSONObject
 - **Description**: The computer name (IP address/FQDN) of this object. Can also be used to set the URL of web connections and credentials.
 - **Example**: `"ComputerName": "vm01.local"`
 - **Example 2**: `"ComputerName": "10.0.0.1"`
-- **Example 3**: `"ComputerName": "https://www.royalapplications.com/"`
+- **Example 3**: `"ComputerName": "https://www.royalapps.com/"`
 
 ## URL
 - **Data Type**: String
@@ -68,7 +68,7 @@ name: RoyalJSONObject
 - **Description**: Alias for [ComputerName](#computername).
 - **Example**: `"URL": "vm01.local"`
 - **Example 2**: `"URL": "10.0.0.1"`
-- **Example 3**: `"URL": "https://www.royalapplications.com/"`
+- **Example 3**: `"URL": "https://www.royalapps.com/"`
 
 ## Port
 - **Data Type**: Integer
@@ -99,7 +99,7 @@ name: RoyalJSONObject
 - **Applies To**: All object types
 - **Description**: The color of the object, specified as Hex (HTML) color (i.e. #FFFFFF for white).
 - **Supported Values**:
-	- Hex Color String
+    - Hex Color String
 - **Example**: `"Color": "#FF0000"`
 
 ## IconName
@@ -114,15 +114,12 @@ name: RoyalJSONObject
 - **Description**: The notes of the object.
 - **Example**: `"Notes": "Notes support <strong>HTML</strong>"`
 
-
-
-
 ## Path
 - **Data Type**: String
 - **Applies To**: All object types
 - **Description**: The folder path of the object. This may be used as an alternative to nesting objects in Folder objects. The [`Path`](#path) property takes precedence over folder nesting, so if both are used, the object will be placed in the folder pointed to by the [`Path`](#path) property.
 - **Supported Values**:
-	- A folder path either in \*NIX (`This/Is/A/Test`) or in Windows (`This\Is\A\Test`) format
+    - A folder path either in \*NIX (`This/Is/A/Test`) or in Windows (`This\Is\A\Test`) format
 - **Example**: `"Path": "Path/To/Object"`
 - **Example 2**: `"Path": "Path\To\Object"`
 
@@ -190,7 +187,7 @@ name: RoyalJSONObject
 - **Example**: `"CustomField9": "Text in this field won't be encrypted"`
 
 ## CustomField10
-- **Data** Type: String
+- **Data Type**: String
 - **Applies To**: All object types except To-Do
 - **Description**: Custom Field 10 (non-protected).
 - **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
@@ -276,9 +273,9 @@ name: RoyalJSONObject
 - **Data Type**: Key/Value pairs
 - **Alternative Data Type**: Array of [RoyalJSONCustomProperty](~/scripting/rjson/available-properties/royaljsoncustomproperty.html)
 - **Applies To**: All object types
-- **Description**: The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type "Text". It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using `Name`, the value using `Value` and the type using `Type` (Supported types are: `Text`, `Protected`, `URL`, `Email`, `Address`, `Phone`, `Date`, `YesNo`, `Header`)
+- **Description**: The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type `Text`. It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using `Name`, the value using `Value` and the type using `Type` (Supported types are: `Text`, `Protected`, `URL`, `Email`, `Address`, `Phone`, `Date`, `YesNo`, `Header`)
 - **Example**: `"CustomProperties": { "PIN Code": "1234" }`
-- **Alternate Example**: `"CustomProperties": [ { "Name": "PIN Code", "Value": "1234", "Type": "Protected" } ]`
+- **Example 2**: `"CustomProperties": [ { "Name": "PIN Code", "Value": "1234", "Type": "Protected" } ]`
 
 ## CredentialsFromParent
 - **Data Type**: Boolean
@@ -297,8 +294,8 @@ name: RoyalJSONObject
 - **Applies To**: All object types that support credentials
 - **Description**: The ID of the credential that is assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
 - **Supported Values**:
-	- GUID formatted as string
-	- String
+    - GUID formatted as string
+    - String
 - **Example**: `"CredentialID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
 - **Example 2**: `"CredentialID": "0001"`
 
@@ -340,7 +337,7 @@ name: RoyalJSONObject
 - **Example**: `"KeyFilePassphrase": "^234hsd9344hf@"`
 
 ## AutoFillElements
-- **Data Type**: Array of [RoyalJSONAutoFillElement](~/scripting/rjson/available-properties/royaljsonautofillelement.html)
+- **Data Type**: Array of [RoyalJSONAutoFillElement](royaljsonautofillelement.html)
 - **Applies To**: Credential, Web connection
 - **Description**: The auto fill elements for the credential or web connection.
 - **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
@@ -361,7 +358,7 @@ name: RoyalJSONObject
 - **Example**: `"RetryAutoFillUntilSuccess": true`
 
 ## Objects
-- **Data Type**: Array of [RoyalJSONObject](~/scripting/rjson/available-properties/royaljsonobject.html)
+- **Data Type**: Array of [RoyalJSONObject](royaljsonobject.html)
 - **Applies To**: Folder
 - **Description**: An array of objects that will be direct descendants of the current folder.
 - **Example**: `"Objects": [ { "Type": "Credential", "Name": "A Credential" } ]`
@@ -371,8 +368,8 @@ name: RoyalJSONObject
 - **Applies To**: To-Do
 - **Description**: The status of this To-Do item.
 - **Supported Values**:
-	- Active
-	- Completed
+    - Active
+    - Completed
 - **Example**: `"Status": "Completed"`
 
 ## NoConfirmationRequired
@@ -440,8 +437,8 @@ name: RoyalJSONObject
 - **Applies To**: Secure Gateway, Royal Server
 - **Description**: The ID of the credential that is assigned to the Secure Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
 - **Supported Values**:
-	- GUID formatted as string
-	- String
+    - GUID formatted as string
+    - String
 - **Example**: `"SecureGatewayCredentialID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
 - **Example 2**: `"SecureGatewayCredentialID": "0001"`
 
@@ -463,171 +460,6 @@ name: RoyalJSONObject
 - **Description**: The password of the Secure Gateway.
 - **Example**: `"SecureGatewayPassword": "!dfhe8yr498hh@"`
 
-## RemoteDesktopGatewayComputerName
-- **Data Type**: String
-- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
-- **Description**: The computer name (IP address/FQDN) of the Remote Desktop Gateway.
-- **Example**: `"RemoteDesktopGatewayComputerName": "rdg-01.local"`
-- **Example 2**: `"RemoteDesktopGatewayComputerName": "10.0.1.5"`
-
-## RemoteDesktopGatewayCredentialsFromConnection
-- **Data Type**: Boolean
-- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
-- **Description**: Specifies whether or not to use the credentials of the connection for the Remote Desktop Gateway.
-- **Example**: `"RemoteDesktopGatewayCredentialsFromConnection": false`
-
-## RemoteDesktopGatewayCredentialID
-- **Data Type**: String
-- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
-- **Description**: The ID of the credential that is assigned to the Remote Desktop Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
-- **Supported Values**:
-	- GUID formatted as string
-	- String
-- **Example**: `"RemoteDesktopGatewayCredentialID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
-- **Example 2**: `"RemoteDesktopGatewayCredentialID": "0001"`
-
-## RemoteDesktopGatewayCredentialName
-- **Data Type**: String
-- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
-- **Description**: The name of the credential that is assigned to the Remote Desktop Gateway.
-- **Example**: `"RemoteDesktopGatewayCredentialName": "Administrator"`
-
-## RemoteDesktopGatewayUsername
-- **Data Type**: String
-- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
-- **Description**: The username of the Remote Desktop Gateway.
-- **Example**: `"RemoteDesktopGatewayUsername": "administrator"`
-
-## RemoteDesktopGatewayPassword
-- **Data Type**: String
-- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
-- **Description**: The password of the Remote Desktop Gateway.
-- **Example**: `"RemoteDesktopGatewayPassword": "!dfhe8yr498hh@"`
-
-## ConnectTaskFromParent
-- **Data Type**: Boolean
-- **Applies To**: All connection types, Folder
-- **Description**: Specifies whether or not to use the connect task from the parent folder of this object.
-- **Example**: `"ConnectTaskFromParent": false`
-
-## ConnectTaskID
-- **Data Type**: String
-- **Applies To**: All connection types, Folder
-- **Description**: The ID of the command task that is to be assigned to this object as connect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Connect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
-- **Supported Values**:
-	- GUID formatted as string
-	- String
-- **Example**: `"ConnectTaskID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
-- **Example 2**: `"ConnectTaskID": "0001"`
-
-## ConnectTaskName
-- **Data Type**: String
-- **Applies To**: All connection types, Folder
-- **Description**: The name of the command task that is to be assigned to this object as connect task.
-- **Example**: `"ConnectTaskName": "root"`
-
-## DisconnectTaskFromParent
-- **Data Type**: Boolean
-- **Applies To**: All connection types, Folder
-- **Description**: Specifies whether or not to use the disconnect task from the parent folder of this object.
-- **Example**: `"DisconnectTaskFromParent": false`
-
-## DisconnectTaskID
-- **Data Type**: String
-- **Applies To**: All connection types, Folder
-- **Description**: The ID of the command task that is to be assigned to this object as disconnect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Disconnect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
-- **Supported Values**:
-	- GUID formatted as string
-	- String
-- **Example**: `"DisconnectTaskID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
-- **Example 2**: `"DisconnectTaskID": "0001"`
-
-## DisconnectTaskName
-- **Data Type**: String
-- **Applies To**: All connection types, Folder
-- **Description**: The name of the command task that is to be assigned to this object as disconnect task.
-- **Example**: `"DisconnectTaskName": "root"`
-
-## KeySequenceFromParent
-- **Data Type**: Boolean
-- **Applies To**: All connection types, Folder
-- **Description**: Specifies whether or not to use the connect key sequence from the parent folder of this object.
-- **Example**: `"KeySequenceFromParent": false`
-
-## KeySequenceID
-- **Data Type**: String
-- **Applies To**: All connection types, Folder
-- **Description**: The ID of the key sequence task that is to be assigned to this object as connect key sequence. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Key Sequence ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
-- **Supported Values**:
-	- GUID formatted as string
-	- String
-- **Example**: `"KeySequenceID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
-- **Example 2**: `"KeySequenceID": "0001"`
-
-## KeySequenceName
-- **Data Type**: String
-- **Applies To**: All connection types, Folder
-- **Description**: The name of the key sequence task that is to be assigned to this object as connect key sequence.
-- **Example**: `"KeySequenceName": "root"`
-
-## SecureGatewayFromParent
-- **Data Type**: Boolean
-- **Applies To**: All connection types that support Secure Gateways, Folder
-- **Description**: Specifies whether or not to use the Secure Gateway from the parent folder of this object.
-- **Example**: `"SecureGatewayFromParent": false`
-
-## SecureGatewayID
-- **Data Type**: String
-- **Applies To**: All connection types that support Secure Gateways, Folder
-- **Description**: The ID of the Secure Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
-- **Supported Values**:
-	- GUID formatted as string
-	- String
-- **Example**: `"SecureGatewayID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
-- **Example 2**: `"SecureGatewayID": "0001"`
-
-## RoyalServerFromParent
-- **Data Type**: Boolean
-- **Applies To**: All connection types that support Royal Server, Folder
-- **Description**: Specifies whether or not to use the Royal Server from the parent folder of this object.
-- **Example**: `"RoyalServerFromParent": false`
-
-## RoyalServerID
-- **Data Type**: String
-- **Applies To**: All connection types that support Royal Server, Folder
-- **Description**: The ID of the Royal Server that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Royal Server ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
-- **Supported Values**:
-	- GUID formatted as string
-	- String
-- **Example**: `"RoyalServerID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
-- **Example 2**: `"RoyalServerID": "0001"`
-
-## RemoteDesktopGatewayFromParent
-- **Data Type**: Boolean
-- **Applies To**: Remote Desktop connection, Folder
-- **Description**: Specifies whether or not to use the Remote Desktop Gateway from the parent folder of this object.
-- **Example**: `"RemoteDesktopGatewayFromParent": true`
-
-## RemoteDesktopGatewayID
-- **Data Type**: String
-- **Applies To**: Remote Desktop connection, Folder
-- **Description**: The ID of the Remote Desktop Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
-- **Supported Values**:
-	- GUID formatted as string
-	- String
-- **Example**: `"RemoteDesktopGatewayID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
-- **Example 2**: `"RemoteDesktopGatewayID": "0001"`
-
-## RemoteDesktopGatewayUsage
-- **Data Type**: Enumeration
-- **Applies To**: Remote Desktop connection, Folder
-- **Description**: The usage mode of the Remote Desktop Gateway.
-- **Supported Values**:
-	- Never
-	- Always
-	- OnDemand
-- **Example**: `"RemoteDesktopGatewayUsage": "Always"`
-
 ## MACAddress
 - **Data Type**: String
 - **Applies To**: Most connection types
@@ -639,9 +471,9 @@ name: RoyalJSONObject
 - **Applies To**: Most connection types
 - **Description**: The window mode of this connection.
 - **Supported Values**:
-	- Embedded
-	- External
-	- FullScreen
+    - Embedded
+    - External
+    - FullScreen
 - **Example**: `"WindowMode": "External"`
 
 ## ConsoleSession
@@ -661,9 +493,9 @@ name: RoyalJSONObject
 - **Applies To**: Remote Desktop connection
 - **Description**: The resize mode of this Remote Desktop connection.
 - **Supported Values**:
-	- ScrollBars
-	- SmartSizing
-	- SmartReconnect
+    - ScrollBars
+    - SmartSizing
+    - SmartReconnect
 - **Example**: `"ResizeMode": "SmartReconnect"`
 
 ## HyperVMode
@@ -671,9 +503,9 @@ name: RoyalJSONObject
 - **Applies To**: Remote Desktop connection
 - **Description**: The Hyper-V mode of this Remote Desktop connection.
 - **Supported Values**:
-	- None
-	- HyperVHost
-	- HyperVInstance
+    - None
+    - HyperVHost
+    - HyperVInstance
 - **Example**: `"HyperVMode": "HyperVInstance"`
 
 ## HyperVPort
@@ -694,15 +526,56 @@ name: RoyalJSONObject
 - **Description**: Specifies whether or not to use enhanced Hyper-V session mode for this Remote Desktop connection.
 - **Example**: `"UseEnhancedHyperVSessionMode": false`
 
+## RemoteDesktopGatewayComputerName
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The computer name (IP address/FQDN) of the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayComputerName": "rdg-01.local"`
+- **Example 2**: `"RemoteDesktopGatewayComputerName": "10.0.1.5"`
+
+## RemoteDesktopGatewayCredentialsFromConnection
+- **Data Type**: Boolean
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: Specifies whether or not to use the credentials of the connection for the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayCredentialsFromConnection": false`
+
+## RemoteDesktopGatewayUsername
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The username of the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayUsername": "administrator"`
+
+## RemoteDesktopGatewayPassword
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The password of the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayPassword": "!dfhe8yr498hh@"`
+
+## RemoteDesktopGatewayCredentialID
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The ID of the credential that is assigned to the Remote Desktop Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Example**: `"RemoteDesktopGatewayCredentialID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"RemoteDesktopGatewayCredentialID": "0001"`
+
+## RemoteDesktopGatewayCredentialName
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Remote Desktop Gateway
+- **Description**: The name of the credential that is assigned to the Remote Desktop Gateway.
+- **Example**: `"RemoteDesktopGatewayCredentialName": "Administrator"`
+
 ## TerminalConnectionType
 - **Data Type**: Enumeration
 - **Applies To**: Terminal connection
 - **Description**: The connection type of this terminal connection.
 - **Supported Values**:
-	- SSH
-	- Telnet
-	- SerialPort
-	- CustomTerminal
+    - SSH
+    - Telnet
+    - SerialPort
+    - CustomTerminal
 - **Example**: `"TerminalConnectionType": "SSH"`
 
 ## SerialPortName
@@ -722,7 +595,8 @@ name: RoyalJSONObject
 - **Data Type**: Integer
 - **Applies To**: Terminal connection
 - **Description**: The standard length of data bits per byte of the serial port connection.
-- **Supported Values**: 5 through 8
+- **Supported Values**:
+    - 5 through 8
 - **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
 - **Example**: `"DataBits": 8`
 
@@ -731,11 +605,11 @@ name: RoyalJSONObject
 - **Applies To**: Terminal connection
 - **Description**: The parity bit for the serial port connection.
 - **Supported Values**:
-	- None
-	- Odd
-	- Even
-	- Mark
-	- Space
+    - None
+    - Odd
+    - Even
+    - Mark
+    - Space
 - **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
 - **Example**: `"Parity": "None"`
 
@@ -744,10 +618,10 @@ name: RoyalJSONObject
 - **Applies To**: Terminal connection
 - **Description**: The number of stop bits used for the serial port connection.
 - **Supported Values**:
-	- None
-	- One
-	- Two
-	- OnePointFive
+    - None
+    - One
+    - Two
+    - OnePointFive
 - **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
 - **Example**: `"StopBits": "One"`
 
@@ -762,11 +636,11 @@ name: RoyalJSONObject
 - **Applies To**: File Transfer connection
 - **Description**: The connection type of this file transfer connection.
 - **Supported Values**:
-	- FTP
-	- FTPWithImplicitSSL
-	- FTPWithExplicitTLSSSL
-	- SFTP
-	- SCP
+    - FTP
+    - FTPWithImplicitSSL
+    - FTPWithExplicitTLSSSL
+    - SFTP
+    - SCP
 - **Example**: `"FileTransferConnectionType": "SFTP"`
 
 ## PassiveMode
@@ -780,13 +654,13 @@ name: RoyalJSONObject
 - **Applies To**: TeamViewer connection
 - **Description**: The connection type of this TeamViewer connection.
 - **Supported Values**:
-	- RemoteControl
-	- FileTransfer
-	- Meeting
-	- VPN
-	- ManagementConsole
-	- PromptForType
-- **Example**: `"TeamViewerConnectionType": "SFTP"`
+    - RemoteControl
+    - FileTransfer
+    - Meeting
+    - VPN
+    - ManagementConsole
+    - PromptForType
+- **Example**: `"TeamViewerConnectionType": "RemoteControl"`
 
 ## UseCIM
 - **Data Type**: Boolean
@@ -799,3 +673,138 @@ name: RoyalJSONObject
 - **Applies To**: PowerShell connection
 - **Description**: The script of this PowerShell connection.
 - **Example**: `"Script": "Write-Host \"Hello World\""`
+
+## ConnectTaskFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types, Folder
+- **Description**: Specifies whether or not to use the connect task from the parent folder of this object.
+- **Example**: `"ConnectTaskFromParent": false`
+
+## ConnectTaskID
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The ID of the command task that is to be assigned to this object as connect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Connect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Example**: `"ConnectTaskID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"ConnectTaskID": "0001"`
+
+## ConnectTaskName
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The name of the command task that is to be assigned to this object as connect task.
+- **Example**: `"ConnectTaskName": "Start VPN"`
+
+## DisconnectTaskFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types, Folder
+- **Description**: Specifies whether or not to use the disconnect task from the parent folder of this object.
+- **Example**: `"DisconnectTaskFromParent": false`
+
+## DisconnectTaskID
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The ID of the command task that is to be assigned to this object as disconnect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Disconnect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Example**: `"DisconnectTaskID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"DisconnectTaskID": "0001"`
+
+## DisconnectTaskName
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The name of the command task that is to be assigned to this object as disconnect task.
+- **Example**: `"DisconnectTaskName": "root"`
+
+## KeySequenceFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types, Folder
+- **Description**: Specifies whether or not to use the connect key sequence from the parent folder of this object.
+- **Example**: `"KeySequenceFromParent": false`
+
+## KeySequenceID
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The ID of the key sequence task that is to be assigned to this object as connect key sequence. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Key Sequence ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Example**: `"KeySequenceID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"KeySequenceID": "0001"`
+
+## KeySequenceName
+- **Data Type**: String
+- **Applies To**: All connection types, Folder
+- **Description**: The name of the key sequence task that is to be assigned to this object as connect key sequence.
+- **Example**: `"KeySequenceName": "sudo"`
+
+## SecureGatewayFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types that support Secure Gateways, Folder
+- **Description**: Specifies whether or not to use the Secure Gateway from the parent folder of this object.
+- **Example**: `"SecureGatewayFromParent": false`
+
+## SecureGatewayID
+- **Data Type**: String
+- **Applies To**: All connection types that support Secure Gateways, Folder
+- **Description**: The ID of the Secure Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Example**: `"SecureGatewayID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"SecureGatewayID": "0001"`
+
+## SecureGatewayUsage
+- **Data Type**: Enumeration
+- **Applies To**: All connection types that support Secure Gateways, Folder
+- **Description**: Specifies how the assigned Secure Gateway should be used.
+- **Supported Values**:
+    - Never
+    - Always
+    - OnDemand
+- **Supported since**: Royal TS 6.0, Royal TSX 5.0
+- **Example**: `"SecureGatewayUsage": "Always"`
+
+## RoyalServerFromParent
+- **Data Type**: Boolean
+- **Applies To**: All connection types that support Royal Server, Folder
+- **Description**: Specifies whether or not to use the Royal Server from the parent folder of this object.
+- **Example**: `"RoyalServerFromParent": false`
+
+## RoyalServerID
+- **Data Type**: String
+- **Applies To**: All connection types that support Royal Server, Folder
+- **Description**: The ID of the Royal Server that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Royal Server ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Example**: `"RoyalServerID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"RoyalServerID": "0001"`
+
+## RemoteDesktopGatewayFromParent
+- **Data Type**: Boolean
+- **Applies To**: Remote Desktop connection, Folder
+- **Description**: Specifies whether or not to use the Remote Desktop Gateway from the parent folder of this object.
+- **Example**: `"RemoteDesktopGatewayFromParent": true`
+
+## RemoteDesktopGatewayUsage
+- **Data Type**: Enumeration
+- **Applies To**: Remote Desktop connection, Folder
+- **Description**: The usage mode of the Remote Desktop Gateway.
+- **Supported Values**:
+    - Never
+    - Always
+    - OnDemand
+- **Example**: `"RemoteDesktopGatewayUsage": "Always"`
+
+## RemoteDesktopGatewayID
+- **Data Type**: String
+- **Applies To**: Remote Desktop connection, Folder
+- **Description**: The ID of the Remote Desktop Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Example**: `"RemoteDesktopGatewayID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"RemoteDesktopGatewayID": "0001"`

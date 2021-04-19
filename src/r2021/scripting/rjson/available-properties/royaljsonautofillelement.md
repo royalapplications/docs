@@ -12,7 +12,6 @@ name: RoyalJSONAutoFillElement
 - **Example**: `"Element": "#username"`
 
 ## Action
-- **Required**: Yes
 - **Data Type**: Enumeration
 - **Description**: The type of action to perform on this auto fill element.
 - **Supported Values**:
@@ -23,6 +22,6 @@ name: RoyalJSONAutoFillElement
 
 ## Value
 - **Data Type**: String or Boolean
+- **Applies To**: Auto fill elements with the "Action" set to "Fill".
 - **Description**: The value to fill the element with.
-- **Applies to**: Auto fill elements with the "Action" set to "Fill".
 - **Example**: `"Value": "$$EffectiveUsername$$"`

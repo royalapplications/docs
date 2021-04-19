@@ -3,7 +3,7 @@ order: 9990
 name: RoyalJSONDocument
 ---
 
-# RoyalJSONDocument (root element)
+# RoyalJSONDocument (Root Element)
 
 ## Name
 - **Data Type**: String
@@ -11,6 +11,6 @@ name: RoyalJSONDocument
 - **Example**: `"Name": "My rJSON Document"`
 
 ## Objects
-- **Data Type**: Array of [RoyalJSONObject](~/scripting/rjson/available-properties/royaljsonobject.html)
+- **Data Type**: Array of [RoyalJSONObject](royaljsonobject.html)
 - **Description**: An array of objects that will be direct descendants of the dynamic folder or rJSON document.
 - **Example**: `"Objects": [ { "Type": "Credential", "Name": "A Credential" } ]`
