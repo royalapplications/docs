@@ -266,12 +266,12 @@ name: RoyalJSONObject
 ## Properties
 - **Data Type**: Key/Value pairs
 - **Applies To**: All object types
-- **Description**: Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is [available here](~/scripting/objects/index.html).
+- **Description**: Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is [available here](~/scripting/objects/index.md).
 - **Example**: `"Properties": { "IsExpanded": "True" }`
 
 ## CustomProperties
 - **Data Type**: Key/Value pairs
-- **Alternative Data Type**: Array of [RoyalJSONCustomProperty](~/scripting/rjson/available-properties/royaljsoncustomproperty.html)
+- **Alternative Data Type**: Array of [RoyalJSONCustomProperty](~/scripting/rjson/available-properties/royaljsoncustomproperty.md)
 - **Applies To**: All object types
 - **Description**: The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type `Text`. It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using `Name`, the value using `Value` and the type using `Type` (Supported types are: `Text`, `Protected`, `URL`, `Email`, `Address`, `Phone`, `Date`, `YesNo`, `Header`)
 - **Example**: `"CustomProperties": { "PIN Code": "1234" }`
@@ -337,7 +337,7 @@ name: RoyalJSONObject
 - **Example**: `"KeyFilePassphrase": "^234hsd9344hf@"`
 
 ## AutoFillElements
-- **Data Type**: Array of [RoyalJSONAutoFillElement](royaljsonautofillelement.html)
+- **Data Type**: Array of [RoyalJSONAutoFillElement](royaljsonautofillelement.md)
 - **Applies To**: Credential, Web connection
 - **Description**: The auto fill elements for the credential or web connection.
 - **Supported since**: Royal TS 5.1, Royal TSX 4.1.2
@@ -358,7 +358,7 @@ name: RoyalJSONObject
 - **Example**: `"RetryAutoFillUntilSuccess": true`
 
 ## Objects
-- **Data Type**: Array of [RoyalJSONObject](royaljsonobject.html)
+- **Data Type**: Array of [RoyalJSONObject](royaljsonobject.md)
 - **Applies To**: Folder
 - **Description**: An array of objects that will be direct descendants of the current folder.
 - **Example**: `"Objects": [ { "Type": "Credential", "Name": "A Credential" } ]`

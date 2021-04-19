@@ -18,7 +18,7 @@ Royal TS can be downloaded, installed and used in **Shareware Mode** for free wi
 > - You cannot have more than 10 credentials.
 > - You can open only one Royal TS document. 
 
-To remove the above restrictions, it's required to obtain and [enter a license key](xref:royalts_reference_options#license) in Royal TS. Each license includes at least 12 months of software maintenance (free upgrades and priority email support). For more information visit: https://www.royalapps.com/go/blog-licensing-software-maintenance
+To remove the above restrictions, it's required to obtain and [enter a license key](xref:royalts_reference_options#-license) in Royal TS. Each license includes at least 12 months of software maintenance (free upgrades and priority email support). For more information visit: https://www.royalapps.com/go/blog-licensing-software-maintenance
 
 ## Connection Management
 With Royal TS, you can organize and manage all your connections to your remote systems. Check out all available connection types [here](xref:royalts_reference_connections).
@@ -32,4 +32,4 @@ Royal TS enables you to work safely with your confidential data (such as credent
 
 The built-in credential management provides quick and easy access to your credentials in Royal TS connections and in supported web browsers. See also: [Royal Passwords Browser Extensions](https://www.royalapplications.com/passwords/main/features).
 
-In addition, Royal TS can also read and use credentials from [KeePass](xref:advanced_import#import-keepass-v2-file) and can also open personal [LastPass](xref:advanced_import#open-a-lastpass-vault) vaults.
+In addition, Royal TS can also read and use credentials from [KeePass](xref:royalts_advanced_import#import-keepass-v2-file) and can also open personal [LastPass](xref:royalts_advanced_import#open-a-lastpass-vault) vaults.

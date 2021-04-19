@@ -11,6 +11,6 @@ name: RoyalJSONDocument
 - **Example**: `"Name": "My rJSON Document"`
 
 ## Objects
-- **Data Type**: Array of [RoyalJSONObject](royaljsonobject.html)
+- **Data Type**: Array of [RoyalJSONObject](royaljsonobject.md)
 - **Description**: An array of objects that will be direct descendants of the dynamic folder or rJSON document.
 - **Example**: `"Objects": [ { "Type": "Credential", "Name": "A Credential" } ]`

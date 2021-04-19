@@ -12,7 +12,7 @@ Royal TS is using a file based configuration management. In Royal TS you can wor
 > 
 > In Royal TS you will always see an **Application** document in the Navigation panel which has some unique properties:
 > 
-> * You can password protect the Application document (using the [Security](xref:royalts_reference_options#security) settings in the Options dialog). After protecting the Application document Royal TS will ask for the password when Royal TS starts.
+> * You can password protect the Application document (using the [Security](xref:royalts_reference_options#-security) settings in the Options dialog). After protecting the Application document Royal TS will ask for the password when Royal TS starts.
 > * You can create folders, credentials and tasks.
 > * You cannot create connections in the Application document - only in your own documents.
 > * You cannot close the Application document.
@@ -26,7 +26,7 @@ To store your connections, credentials and tasks, create a document first:
 2. In the **Display Name** box, type a name for the document. You can optionally add a description in the **Description** box.
 
 > [!Note]
-> You can also password protect your document using the [Security](xref:royalts_reference_organization_document#security) settings of the document. This is highly recommended when you plan to store credentials with passwords in the document.
+> You can also password protect your document using the [Security](xref:royalts_reference_organization_document#-security) settings of the document. This is highly recommended when you plan to store credentials with passwords in the document.
 
 3. To exit the dialog, click OK.
 See also: [Document Settings](xref:royalts_reference_organization_document)

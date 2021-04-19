@@ -38,7 +38,7 @@ The following example walks you through the steps necessary to override several 
 12.  To save the Override settings, click **OK**.
 
 ### Choose how and when Overrides are applied
-By default, overrides are only applied when holding the **Alt key** while you are connecting. This behavior can be changed in **View -> Options -> Behaviors -> [Modifiers](xref:royalts_reference_options_behavior)**.
+By default, overrides are only applied when holding the **Alt key** while you are connecting. This behavior can be changed in **View -> Options -> Behaviors -> [Modifiers](xref:royalts_reference_options#-behavior)**.
 
 ### Connect using the Override
 1.  In the **Navigation** panel, select a Terminal connection which is configured to use the Rebex based plugin.

@@ -10,13 +10,13 @@ The Royal TS user interface provides an **Office-style** [ribbon](xref:royalts_i
 
 ![](~/images/RoyalTS/GettingStarted/intro_yourfirstconnection_01.png) 
 
-When Royal TS is opened for the first time, you will see the [Application](xref:royalts_intro_documents) document in the [Navigation](xref:royalts_ui_panels#navigation) panel. The application document is a special kind of document, stores important application settings ([Options](xref:royalts_reference_options)) and also features some out-of-the-box command tasks.
+When Royal TS is opened for the first time, you will see the [Application](xref:royalts_intro_documents) document in the [Navigation](xref:royalts_ui_panels#-navigation) panel. The application document is a special kind of document, stores important application settings ([Options](xref:royalts_reference_options)) and also features some out-of-the-box command tasks.
 
 > [!Note]
 > You cannot add connections directly to the application document. Create your own document(s) to store connections. Your own documents can also be used to store credentials and tasks.
 
 ## Create a Document
-Create a new [document](xref:royalts_reference_organization#document) to store your connections:
+Create a new [document](xref:royalts_reference_organization#-document) to store your connections:
 
 ![](~/images/RoyalTS/GettingStarted/intro_yourfirstconnection_02.png) 
 

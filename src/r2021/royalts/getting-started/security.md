@@ -27,4 +27,4 @@ In addition to indicate the strength of the password, Royal TS also features a p
 
 ![](/r2021/images/RoyalTS/GettingStarted/Security_02.png)
 
-See also: [Document Security](xref:royalts_reference_organization_document#security)
+See also: [Document Security](xref:royalts_reference_organization_document#-security)

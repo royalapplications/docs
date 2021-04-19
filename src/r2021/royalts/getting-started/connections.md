@@ -22,7 +22,7 @@ Selecting the **More...** menu item displays a dialog where you can choose from 
 
 ![](/r2021/images/RoyalTS/GettingStarted/Connections_02.png)
 
-See also: [Plugins](xref:royalts_intro_plugins) and [Templates](royalts_tutorials_templates)
+See also: [Plugins](xref:royalts_intro_plugins) and [Templates](xref:royalts_tutorials_templates)
 
 ## Create a Connection
 In this example, a Remote Desktop connection is created.
@@ -55,5 +55,5 @@ In this example, a Remote Desktop connection is created.
 1. In the **Navigation** panel, select the connection to disconnect.
 2. On the **Actions** tab, in the **Common Actions** group, click on **Disconnect**.  
    * You can also find the **Disconnect** command on the **Home** tab, in the **Actions** group.  
-   * You may also double-click on a connected session in the Navigation panel to disconnect your session, depending on your [Behavior](xref:royalts_reference_options#behavior) configuration.
+   * You may also double-click on a connected session in the Navigation panel to disconnect your session, depending on your [Behavior](xref:royalts_reference_options#-behavior) configuration.
 3. The connection tab will be closed and the Dashboard will be selected.

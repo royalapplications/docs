@@ -1,5 +1,5 @@
 ---
-uid: royalts_reference_organization_todo-item
+uid: royalts_reference_organization_todo
 name: To-Do Item
 order: 9950
 ---

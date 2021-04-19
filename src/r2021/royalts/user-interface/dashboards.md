@@ -41,7 +41,7 @@ The **Credential** dashboard is shown in the dashboard panel when you select a c
 -   Group by one or more columns.
 -   Add and remove columns using the column-chooser.
 
-See also: [Working with Credentials](xref_royalts_tutorials_credentials), [Credential](xref:royalts_reference_credential)
+See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](xref:royalts_reference_organization_credential)
 
 ## ![](/r2021/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header) Task
 The **Task** dashboard is shown in the dashboard panel when you select a Key Sequence or Command task in the navigation panel. The list of objects shows connections or folders which are configured to use the selected task.
@@ -58,7 +58,7 @@ The **Task** dashboard is shown in the dashboard panel when you select a Key Seq
 -   Group by one or more columns.
 -   Add and remove columns using the column-chooser.
 
-See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_commandtask)
+See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_command)
 
 ## ![](/r2021/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header) Royal Server
 The **Royal Server** dashboard is shown in the dashboard panel when you select a Royal Server object in the navigation panel. The list of objects shows connections or folders which are configured to use the selected Royal Server. The dashboard also shows all active tunnels which are established through the selected Royal Server.

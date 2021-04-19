@@ -5,7 +5,7 @@ order: 9960
 ---
 
 # Working with Templates
-Templates are special connections which can be used to create new connections or connect to ad hoc connections based on other connections from the same type or even from a different type. You can "inject" values from the selected connection(s) into the resulting connection(s) using replacement tokens - similar to [Tasks](tutorials_workingwithtasks.htm).
+Templates are special connections which can be used to create new connections or connect to ad hoc connections based on other connections from the same type or even from a different type. You can "inject" values from the selected connection(s) into the resulting connection(s) using replacement tokens - similar to [Tasks](xref:royalts_tutorials_tasks).
 
 #### Example 1: Ad Hoc Connect to a web site using a Template to an iLO web page based on a Remote Desktop Connection
 

@@ -57,7 +57,7 @@ If checked, Royal TS will invoke smart reconnect on all sessions as soon as it i
 
 #### Close tab when user logs off, reboots or disconnects
 If checked, Royal TS will also close tabs when a log off, reboot or disconnect from within the session is initiated.  
-This setting is only effective when **Keep tabs open when disconnected remotely** in the [User Interface](xref:royalts_reference_options#-userinterface) option is checked.
+This setting is only effective when **Keep tabs open when disconnected remotely** in the [User Interface](xref:royalts_reference_options#-user-interface) option is checked.
 
 #### Auto Reconnect on Disconnected Tab
 If checked, the automatic reconnect feature will be enabled when the disconnected tab is shown.

@@ -13,7 +13,7 @@ A **Key Sequence Task** can be used to invoke keyboard input in one or more acti
 
 By using special replacement tokens you can pass connection specific variables (like \$URI\$ or \$CustomField1\$) to the task upon execution.
 
-See also: [Command Task](xref:royalts_reference_tasks_command) and [Key Sequence Task](xref:royalts_reference_tasks_keysequencetask)
+See also: [Command Task](xref:royalts_reference_tasks_command) and [Key Sequence Task](xref:royalts_reference_tasks_key-sequence)
 
 ## Create a Command Task
 In this example, a ping task is created:

@@ -5,7 +5,7 @@ name: Advanced scenarios
 
 # Advanced scenarios
 
-While rJSON was designed to be easy to use for regular users as well as developers, we also wanted it to be as powerful as you need it to be. For that reason we decided to expose only a small subset of functionality as first-class properties but also provide a way to drop down one level lower, to our [RoyalDocument](~/scripting/objects/index.html) data model.
+While rJSON was designed to be easy to use for regular users as well as developers, we also wanted it to be as powerful as you need it to be. For that reason we decided to expose only a small subset of functionality as first-class properties but also provide a way to drop down one level lower, to our [RoyalDocument](~/scripting/objects/index.md) data model.
 
 Because dropping down to the RoyalDocument level requires knowledge of our internal data model, it's generally not recommended to go that route unless you really need to access properties that aren't exposed through rJSON.
 
@@ -35,5 +35,5 @@ So with the disclaimer out of the way, let's look at how you can access the Roya
 }
 ```
 
-In this example we configure an SSH connection using rJSON and then start dropping down into the RoyalDocument layer starting at line 8. The [`Properties`](~/scripting/rjson/available-properties/royaljsonobject.html#properties) key is used to specify that we intend to set some RoyalDocument properties. Line 9 and 10 are Royal TSX (for macOS) specific and enable logging for the SSH connection and configure the logging directory respectively. Line 11-13 basically do the same for Royal TS (for Windows).
+In this example we configure an SSH connection using rJSON and then start dropping down into the RoyalDocument layer starting at line 8. The [`Properties`](~/scripting/rjson/available-properties/royaljsonobject.md#properties) key is used to specify that we intend to set some RoyalDocument properties. Line 9 and 10 are Royal TSX (for macOS) specific and enable logging for the SSH connection and configure the logging directory respectively. Line 11-13 basically do the same for Royal TS (for Windows).
 The result of this example is a single SSH connection which is properly configured for logging on both macOS and Windows.

@@ -8,7 +8,7 @@ order: 9950
 The **Terminal** connection based on PuTTY can be used to connect to remote computers using Telnet, Secure Shell (SSH) (incl. Tunneling support), RAW or rlogin. It can also be used to connect to devices using the Serial Port.
 
 ## Dashboard
-The **Terminal Dashboard** is shown in the **Dashboard** panel when you select a Terminal connection based on the PuTTY plugin in the **Navigation** panel. The dashboard will show files with the extension .log. Logging and recording configuration can be found in [Logging](#logging).
+The **Terminal Dashboard** is shown in the **Dashboard** panel when you select a Terminal connection based on the PuTTY plugin in the **Navigation** panel. The dashboard will show files with the extension .log. Logging and recording configuration can be found in [Logging](#-logging).
 
 ![PuTTY_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png)
 

@@ -32,4 +32,4 @@ In addition to configuring the application default plugin for a connection type,
 Unchecking **Use Application Default Setting** allows you to choose a different plugin for the connection. The plugin information dialog and the plugin configuration dialog (if available) can be opened using the buttons next to the **Active Plugin** list.
 
 > [!Tip]
-> You can use [bulk-edit](xref:royalts_tutorials_bulkedit) to change the Active Plugin for more connections at once.
+> You can use [bulk-edit](xref:royalts_tutorials_bulk#bulk-edit) to change the Active Plugin for more connections at once.

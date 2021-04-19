@@ -9,7 +9,7 @@ order: 10070
 
 Royal Server is distributed via a single _.msi_-file. The installation requires administrative rights, a destination directory and it takes just a minute to install Royal Server.
 
-When the configuration tool is launched for the first time, you will be asked to provide your [License Information](xref:royalserver_what-is-royal-server#license-information) and to set a Worker Account.
+When the configuration tool is launched for the first time, you will be asked to provide your [License Information](xref:royalserver_what-is-royal-server#licensing) and to set a Worker Account.
 
 > [!NOTE]
 > It is strongly recommended to configure a Worker Account in order to allow the Royal Server to access network resources (accessing other servers). Royal Server is not starting when no Worker Account is configured. The Worker Account also needs the rights to work with the configured Windows Accounts that should be allowed to authenticate with Royal Server. If domain groups/users are configured, this account needs to be a domain account that has the required rights to query these accounts.

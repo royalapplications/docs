@@ -54,7 +54,7 @@ The **Credentials** panel displays a filtered tree view of all available credent
 -   Filter the credentials tree view by text (CTRL + F). Filtering is case insensitive and displays all folders expanded in order to show the results.
 -   Provides a context menu with easy access to copy the username or password to the clipboard.
 
-See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](royalts_reference_credential)
+See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](xref:royalts_reference_organization_credential)
 
 ## ![](/r2021/images/RoyalTS/Application/SVG_Todo_32.svg#img_header) To-Do Items
 The **To-Do Items** panel displays a filtered tree view of all available To-Do items. To show or activate the To-Do Items panel, click on **To-Do Items** on the **View** tab, in the **Panels** group.
@@ -74,7 +74,7 @@ The **Tasks** panel displays a filtered tree view of all available tasks. To sho
 > [!Note]
 > If a tasks contains replacement tokens (like $URI$) to pass in dynamic values based on your selection, it needs a "Task Context" in order to be executed. The Task Context is updated when a connection is selected in the Navigation panel or when one or more connections are selected in the Dashboard panel.
 
-See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_commandtask)
+See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_command)
 
 ## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationPanelKeySequence_32.svg#img_header) Key Sequence Broadcaster
 The **Key Sequence Broadcaster** panel allows you to send keyboard input to multiple active connections.To show or activate the Key Sequence Broadcaster panel, click on **Key Sequence Broadcaster** on the **View** tab, in the **Panels** group.
@@ -93,7 +93,7 @@ The **Key Sequence Broadcaster** panel allows you to send keyboard input to mult
 > [!Note]
 > If a key sequence contains replacement tokens (like $URI$) to pass in dynamic values based on the selected target(s).
 
-See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_commandtask)
+See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Task](xref:royalts_reference_tasks_command)
 
 ## ![](/r2021/images/RoyalTS/Application/SVG_ViewTunnels_32.svg#img_header) Active Tunnels
 The **Active Tunnels** panel displays a list of all connections which are tunneled using a Secure Gateway or a [Royal Server](xref:royalts_intro_royalserver).To show or activate the Active Tunnels panel, click on **Active Tunnels** on the **View** tab, in the **Panels** group.
@@ -126,4 +126,4 @@ The **Log** panel displays internal log entries. Internal logging (if enabled) k
 -   Save the log to a file.
 -   Copy to clipboard allows you to copy the log entry details from one or more log entries to the clipboard.
 
-See also: [Logging](xref:royalts_reference_options#logging)
+See also: [Logging](xref:royalts_reference_options#-logging)

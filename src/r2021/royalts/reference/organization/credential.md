@@ -24,7 +24,7 @@ The Credential Properties dialog is shown:
 - for an existing credential by selecting a credential and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple credentials were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. 
  
-See also: [Bulk Operations](royalts_tutorials_bulk)
+See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
 > [!Tip]
 > Assigning credentials to connections using the name is recommended when a team of users share the same configuration file. Each user can define a credential with the same name in his own personal and protected document.

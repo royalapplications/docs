@@ -25,7 +25,7 @@ Use bulk-edit to change one or more properties on multiple objects.
 2.  In the **Dashboard** panel, select two or more objects (using SHIFT+CLICK or CTRL+CLICK).
 
 > [!Tip]
-> The [Folder Dashboard](royalts_ui_panel#dashboard), provides many features helping you to prepare a tailored list of connections or objects in the selected folder and optionally all sub-folders. Add additional columns, reorder columns, and sort or filter columns until you see all the connections you want to edit.
+> The [Folder Dashboard](xref:royalts_ui_panels#-dashboard), provides many features helping you to prepare a tailored list of connections or objects in the selected folder and optionally all sub-folders. Add additional columns, reorder columns, and sort or filter columns until you see all the connections you want to edit.
 
 3.  On the **Home** tab, in the **Edit** group, click on **Properties**.
 

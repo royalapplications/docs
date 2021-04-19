@@ -20,11 +20,11 @@ Dynamic Credentials can be useful in cases where it's unfeasible (or just not po
 > - If the dynamic credentials are stored on a remote database, a network connection to that database must be available when establishing connections that reference dynamic credentials.
 
 Dynamic Credentials share the same properties as regular credential objects. That means, the process of creating dynamic credentials is exactly the same as for regular credentials. The difference is that the following properties can (but don't have to) be left empty and fetched on demand by the dedicated "Dynamic Credential Script" of your dynamic folder:
-- [`Username`](~/scripting/rjson/available-properties/royaljsondynamiccredential.html#username)
-- [`Password`](~/scripting/rjson/available-properties/royaljsondynamiccredential.html#password)
-- [`KeyFilePath`](~/scripting/rjson/available-properties/royaljsondynamiccredential.html#keyfilepath)
-- [`KeyFileContent`](~/scripting/rjson/available-properties/royaljsondynamiccredential.html#keyfilecontent)
-- [`KeyFilePassphrase`](~/scripting/rjson/available-properties/royaljsondynamiccredential.html#keyfilepassphrase)
+- [`Username`](~/scripting/rjson/available-properties/royaljsondynamiccredential.md#username)
+- [`Password`](~/scripting/rjson/available-properties/royaljsondynamiccredential.md#password)
+- [`KeyFilePath`](~/scripting/rjson/available-properties/royaljsondynamiccredential.md#keyfilepath)
+- [`KeyFileContent`](~/scripting/rjson/available-properties/royaljsondynamiccredential.md#keyfilecontent)
+- [`KeyFilePassphrase`](~/scripting/rjson/available-properties/royaljsondynamiccredential.md#keyfilepassphrase)
 
 Here's an example of how to create a dynamic credential object and assign it to an SSH connection:
 
@@ -48,7 +48,7 @@ Here's an example of how to create a dynamic credential object and assign it to 
 
 Like previously mentioned, creating dynamic credentials works exactly the same as regular credentials. You can however leave the username, password, etc. properties empty and fill them on demand with the dedicated "Dynamic Credential Script".
 
-This second script is expected to return a single [RoyalJSONDynamicCredential](~/scripting/rjson/available-properties/royaljsondynamiccredential.html) object like in the following example:
+This second script is expected to return a single [RoyalJSONDynamicCredential](~/scripting/rjson/available-properties/royaljsondynamiccredential.md) object like in the following example:
 
 ```json
 {
