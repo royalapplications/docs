@@ -270,7 +270,7 @@ Here's the [JSON schema](https://json-schema.org/) to validate your JSON content
             "null",
             "object"
           ],
-          "description": "Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is [available here](~/scripting/objects/index.html).",
+          "description": "Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is [available here](~/scripting/objects/index.md).",
           "additionalProperties": {
             "type": "string"
           }
