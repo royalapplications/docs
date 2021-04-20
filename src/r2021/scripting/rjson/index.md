@@ -1,6 +1,6 @@
 ---
 uid: scripting_rjson
-name: Royal JSON
+name: RoyalJSON
 order: 9980
 ---
 
