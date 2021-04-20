@@ -1,5 +1,5 @@
 ---
-order: 9950
+order: 9940
 name: Dynamic Credentials
 ---
 
@@ -62,3 +62,4 @@ So let's see what happens here:
 - From line 8 to 13 we create a new SSH connection and reference the dynamic credential by its ID.
 - In the separate dynamic credential script we return a RoyalJSONDynamicCredential object which provides the values for `Username` and `Password`.
 - Just before the SSH connection is established, the dedicated dynamic credential script is executed and its return value is used to populate the missing information, namely the username and password of the credential.
+
