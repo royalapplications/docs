@@ -46,26 +46,47 @@ $(function () {
     }
   }
 
+  function extractRootedHref(href) {
+    if (!href) {
+      return href;
+    }
+
+    // strip scheme
+    let result = href.replace(/https?:\/\//gi, "");
+    // strip host
+    if (result.indexOf(location.host) === -1) {
+      // only consider internal links
+      return href;
+    }
+
+    const rootIndex = result.indexOf("/");
+    result = result.substring(rootIndex);
+
+    return result;
+  }
+
+  /** Adds the second segment of the active header nav link prefixed with "ra-" as css class to the element with the id "wrapper". */
+  function setupProductCss() {
+    function update(selected) {
+      selected.each((i, e) => {
+        var segments = extractRootedHref(e.href).split("/");
+        if (segments.length > 2) {
+          $("#wrapper").addClass("ra-" + segments[2]);
+        }
+      });
+    }
+    waitForElements("#navbar ul.nav.level1 > li > a.active[href]").done(update);
+  }
+
   /** expand toc when href points to path instead of path/index.html */
   function expandToc() {
-    let retry = 0;
-    const waitForElement = setInterval(() => {
-      if (retry === 3 || $("#sidetoc li > a").length) {
-        clearInterval(waitForElement);
-        update();
-      }
-      retry++;
-    }, 100);
-
-    function update() {
-      $("#sidetoc li > a").each((i, e) => {
-        let href = e.href
-          .replace(/https?:\/\//gi, "")
-          .replace(/index.html?$/gi, "");
-
-        href = href.substring(href.indexOf("/"));
-
-        if (href === location.pathname) {
+    function update(selected) {
+      selected.each((i, e) => {
+        const hrefWithoutPage = extractRootedHref(e.href).replace(
+          /index.html?$/gi,
+          ""
+        );
+        if (hrefWithoutPage === location.pathname) {
           let current = $(e).parent();
           while (current.attr("id") !== "sidetoc") {
             if (current.prop("tagName") === "LI") {
@@ -76,8 +97,26 @@ $(function () {
         }
       });
     }
+    waitForElements("#sidetoc li > a[href]").done(update);
   }
 
+  function waitForElements(selector, retries, timeout) {
+    const result = $.Deferred();
+    let retry = 0;
+    retries = retries || 3;
+    timeout = timeout || 100;
+    const waitForElement = setInterval(() => {
+      const selected = $(selector);
+      if (retry === retries || selected.length) {
+        clearInterval(waitForElement);
+        result.resolve(selected);
+      }
+      retry++;
+    }, timeout);
+    return result;
+  }
+
+  setupProductCss();
   setupAnchorJs(anchors);
   setupHighlightJs(hljs);
   expandToc();
