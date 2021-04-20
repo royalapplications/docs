@@ -71,7 +71,7 @@ $(function () {
       selected.each((i, e) => {
         var segments = extractRootedHref(e.href).split("/");
         if (segments.length > 2) {
-          $("#wrapper").addClass("ra-" + segments[2]);
+          $("#wrapper").addClass("ra-" + segments[2].toLowerCase());
         }
       });
     }
