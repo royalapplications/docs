@@ -56,7 +56,15 @@ Here's what this gets you in Royal TSX:
 The name of the credential created from rJSON is the same as the dynamic folder's name. Obviously, this isn't quite a real world example but it should get the point over.
 Basically it's up to you how/if you want to use tokens in your scripts. If you're for instance calling a web service that requires authentication in your script, it makes sense to not store the credentials directly in your script. Instead, you should save them in the dynamic folder's credential settings. You may even store the URL of your web service endpoint in a custom property instead of directly in the script and refer to it using the `$CustomProperty.AlphanumericTitleWithoutSpaces$` token.
 
-Since Royal TS (for Windows) 6.0 and Royal TSX (for macOS) 5.0, we support the `Target.` token prefix in Dynamic Credential scripts. This prefix can be used to refer to properties of the connection that resolves the dynamic credential. This is useful if you're, for instance, using a PAM system and need to know which connection requests a particular credential. For example, to access the name of the connection that invoked the dynamic credential script, you can use `$Target.Name$`.
+## Target Token Prefix
+
+The `Target.` token prefix in Dynamic Credential scripts can be used to refer to properties of the connection that resolves the dynamic credential. This is useful if you're, for instance, using a PAM system and need to know which connection requested a particular credential. For example, to access the name of the connection that invoked the dynamic credential script, you can use `$Target.Name$`.
+
+> [!Note]
+> Support for the `Target.` token prefix was added in the following product versions:
+> - Royal TS (for Windows) 6.0
+> - Royal TSX (for macOS) 5.0
+> - Royal Server 4.0
 
 
 ## Script Interpreters
