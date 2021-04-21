@@ -346,10 +346,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_FileExport_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_FileExport_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/RoyalTS/Application/SVG_FileIconRTSZ_32.svg",
       "output": {
         "resource": {
           "relative_path": "images/RoyalTS/Application/SVG_FileIconRTSZ_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_FileIconTXT_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_FileIconTXT_32.svg"
         }
       },
       "is_incremental": false,
@@ -2358,12 +2380,56 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_2-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_2-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "N7mWUHnD2iDknwakRqJnZA=="
+          "hash": "x0Q1V6HKjg27nY74NEl+Lw=="
         }
       },
       "is_incremental": false,
@@ -2375,91 +2441,7 @@
       "output": {
         ".html": {
           "relative_path": "missing.html",
-          "hash": "khpxanmWYm1txTi4hw1rbg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "mobile/android/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "mobile/android/index.html",
-          "hash": "Hk+c4U32oRu2+QJGW5uWOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "mobile/android/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "mobile/android/introduction.html",
-          "hash": "rZn1ACoh90kCQENqZHMOGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "mobile/ios/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "mobile/ios/index.html",
-          "hash": "c0bTTlnmj2m/CeogsfJ33A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "mobile/ios/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "mobile/ios/introduction.html",
-          "hash": "r0xSuWrrhHa+5PuR3Nv0Dw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "mobile/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "mobile/toc.html",
-          "hash": "+ycqMkK+1lZSry4U76PxTw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "royalpasswords/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "royalpasswords/intro.html",
-          "hash": "3rsdertiHaDELOtCKkLQ8w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "royalpasswords/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "royalpasswords/toc.html",
-          "hash": "Z8nHo5rhbn1grJYxNUOt+g=="
+          "hash": "Ch4TN0DO1wstnmERq5zQng=="
         }
       },
       "is_incremental": false,
@@ -2471,7 +2453,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/application-settings.html",
-          "hash": "kJCVbYtJ/EjMdiNfd7y1IQ=="
+          "hash": "CkHyTs6902TR6AOagai5Ng=="
         }
       },
       "is_incremental": false,
@@ -2483,7 +2465,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/backup.html",
-          "hash": "Irmi36mSGUTpr8hOyW8GAQ=="
+          "hash": "tO+JzKY+2wit/cPHeIJ6jg=="
         }
       },
       "is_incremental": false,
@@ -2495,7 +2477,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/index.html",
-          "hash": "OxXsJJp7T092QTkifkgk4g=="
+          "hash": "iLrKlQgfFMmNbyIQK04Ygw=="
         }
       },
       "is_incremental": false,
@@ -2507,7 +2489,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/management-scripts/index.html",
-          "hash": "BdrFUCFH7WeqmoPJRz1U5A=="
+          "hash": "m45RzNkAX8R2smGrKL2+mw=="
         }
       },
       "is_incremental": false,
@@ -2519,7 +2501,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/management-scripts/pepare-managed-server.html",
-          "hash": "FOHfOa7kv425s9RlNyS7zw=="
+          "hash": "PK5KwQGJmvEM5j4hgdNr2g=="
         }
       },
       "is_incremental": false,
@@ -2531,7 +2513,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/management-scripts/uninstall.html",
-          "hash": "jtO9SWkkTgrrq4nOqWQS/Q=="
+          "hash": "fZrZS4DUPGDSYsHXxDBZ4A=="
         }
       },
       "is_incremental": false,
@@ -2543,7 +2525,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/performance-counters.html",
-          "hash": "cERC6BiD7qPjcTdeHD3/5Q=="
+          "hash": "7xI2oNnxNdbOmGBWbRK0wQ=="
         }
       },
       "is_incremental": false,
@@ -2555,7 +2537,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/advanced/trace-flags.html",
-          "hash": "U5qaNeGHskq34PJ9OZx34Q=="
+          "hash": "jpApz8aVZ0SiwaoK21OECg=="
         }
       },
       "is_incremental": false,
@@ -2567,7 +2549,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/configuration.html",
-          "hash": "vthOmJSsYIK4GHFHJUQM9g=="
+          "hash": "keO8axs1l57spE+f+cvwLQ=="
         }
       },
       "is_incremental": false,
@@ -2579,7 +2561,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/documents.html",
-          "hash": "qAfJA4IG1TyHxFVRvG6RPQ=="
+          "hash": "mOcKlltJaYmdqXF0r2xyXg=="
         }
       },
       "is_incremental": false,
@@ -2591,7 +2573,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/index.html",
-          "hash": "h5nnzPk8IoQ7mm+rJ0kZ0A=="
+          "hash": "KT1r2TJAW/HuPFDluE7q/A=="
         }
       },
       "is_incremental": false,
@@ -2603,7 +2585,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/multi-factor-authentication/duo/configuration-of-duo-provider.html",
-          "hash": "wq2OpX2x4MD6GwWBwm2Mbw=="
+          "hash": "hau1Nr1V0fYybDwUFw38SA=="
         }
       },
       "is_incremental": false,
@@ -2615,7 +2597,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/multi-factor-authentication/duo/index.html",
-          "hash": "Ak6IAiEXVNR81I92+YKumA=="
+          "hash": "AbOnAV2ibFcDKNDCEx6F4w=="
         }
       },
       "is_incremental": false,
@@ -2627,7 +2609,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/multi-factor-authentication/general-information.html",
-          "hash": "Q/K4UY0WLB3Jhp0+DmBsRg=="
+          "hash": "JGZI6+nubOOJMGKuw5bZQQ=="
         }
       },
       "is_incremental": false,
@@ -2639,7 +2621,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/multi-factor-authentication/index.html",
-          "hash": "u2SDN2WAlNzzpCYmkVnvgQ=="
+          "hash": "9UHH3M9ca8A78hewHTPlHg=="
         }
       },
       "is_incremental": false,
@@ -2651,7 +2633,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/multi-factor-authentication/totp/configuration-of-totp-provider.html",
-          "hash": "xMhFiVQl71EJ5LeVxlqGrg=="
+          "hash": "S6odzR+OlsRwxOS1nxnmAw=="
         }
       },
       "is_incremental": false,
@@ -2663,7 +2645,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/multi-factor-authentication/totp/index.html",
-          "hash": "2vY+L1JW+Cb6MasNU463ew=="
+          "hash": "7TtwWyzqVJndqdXrG7RoAQ=="
         }
       },
       "is_incremental": false,
@@ -2675,7 +2657,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/permissions.html",
-          "hash": "9hGeDoX5BOSw6DF0QVfdew=="
+          "hash": "BBVeJHWoZ79Hx9QPK43TtA=="
         }
       },
       "is_incremental": false,
@@ -2687,7 +2669,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/index.html",
-          "hash": "wXPmVSNuRhDwEbHbNQL9nQ=="
+          "hash": "ptVomcnFwO5ysRyTjS+LEg=="
         }
       },
       "is_incremental": false,
@@ -2699,7 +2681,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/management-endpoint.html",
-          "hash": "1+528g/PRb+lOCM8tpMGGg=="
+          "hash": "iG02f+4SX9QkEuMiR28gng=="
         }
       },
       "is_incremental": false,
@@ -2711,7 +2693,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/secure-gateway/gateway-configuration.html",
-          "hash": "+xHhN49IQJLsqBUPHqUS5g=="
+          "hash": "YKYuB+fobgmTnrhHS+6whA=="
         }
       },
       "is_incremental": false,
@@ -2723,7 +2705,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/secure-gateway/gateway-connections.html",
-          "hash": "8BDWr5T1KliBPOOxaexYqg=="
+          "hash": "ghsH25oZ8bvjv2X35+vmTA=="
         }
       },
       "is_incremental": false,
@@ -2735,7 +2717,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/secure-gateway/gateway-security-configuration.html",
-          "hash": "/sr92zWnHP9FJAloi2wNoQ=="
+          "hash": "w/ANoEDHumhmLJu2iSQeTw=="
         }
       },
       "is_incremental": false,
@@ -2747,7 +2729,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/secure-gateway/index.html",
-          "hash": "y0OMkyv72R+DRNETC8EOBQ=="
+          "hash": "paZfKOtZWg3HzZucCuHCqQ=="
         }
       },
       "is_incremental": false,
@@ -2759,7 +2741,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/secure-gateway/permissions.html",
-          "hash": "E/lY97CKG7dvJrCNiMvGSQ=="
+          "hash": "ByQTaBHiwx9Rj0CUcGw6OQ=="
         }
       },
       "is_incremental": false,
@@ -2771,7 +2753,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/index.html",
-          "hash": "P7PCBlrKaV1AVEQVEBsiWw=="
+          "hash": "m/o0ZWtQi3j9MpMviQcfTQ=="
         }
       },
       "is_incremental": false,
@@ -2779,11 +2761,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "royalserver/introduction/configuration-of-managed-servers.md",
+      "source_relative_path": "royalserver/introduction/configuration.md",
       "output": {
         ".html": {
-          "relative_path": "royalserver/introduction/configuration-of-managed-servers.html",
-          "hash": "KR9bFnXk3fprMNP2V4tijA=="
+          "relative_path": "royalserver/introduction/configuration.html",
+          "hash": "6qIY7hSK6BP8BlpF0pLiow=="
         }
       },
       "is_incremental": false,
@@ -2795,7 +2777,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/how-is-royal-server-working.html",
-          "hash": "w0IJhobBbPVQKTCkHqZGsg=="
+          "hash": "9C5pFgoUzVN9SKPWBEyQBQ=="
         }
       },
       "is_incremental": false,
@@ -2807,7 +2789,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/index.html",
-          "hash": "6z4OyHHMKB+BcOFNU1HMJA=="
+          "hash": "UfqBz6N1gDFIznI9JiLf/g=="
         }
       },
       "is_incremental": false,
@@ -2819,7 +2801,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/installation.html",
-          "hash": "9G1n2GE8ciPDS/IP/QfaqA=="
+          "hash": "Mhz06EzIezJyg9+zgVACUw=="
         }
       },
       "is_incremental": false,
@@ -2831,7 +2813,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/release-notes.html",
-          "hash": "0blf9JRMzord26AgILLDVg=="
+          "hash": "6xi+oYusXpMOVne+FkY3eQ=="
         }
       },
       "is_incremental": false,
@@ -2843,7 +2825,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/royal-tsx-management-connection.html",
-          "hash": "4yhJyqrql+fIoGo45MZOXQ=="
+          "hash": "D89gkVH4Jhj5RzCdc+sQAg=="
         }
       },
       "is_incremental": false,
@@ -2855,7 +2837,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/system-requirements.html",
-          "hash": "yWIkAJRE56Te811lTxH/3w=="
+          "hash": "Bbgnsz/yVrUN0CVGqYlzFQ=="
         }
       },
       "is_incremental": false,
@@ -2867,7 +2849,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/what-are-royal-server-components.html",
-          "hash": "o6wK+rqJC+C0Ijnv8igIEg=="
+          "hash": "hKQLiyxUKnAa72S2xhV1BA=="
         }
       },
       "is_incremental": false,
@@ -2879,7 +2861,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/what-is-royal-server.html",
-          "hash": "A4KtsbEpC7+pZtS0JSUT1A=="
+          "hash": "7dCkOM+64gah0jqV7OLxQA=="
         }
       },
       "is_incremental": false,
@@ -2891,19 +2873,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/what-is-royal-ts.html",
-          "hash": "UPKCvpGAWuzf4ITCj/PHKg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "royalserver/license-agreement.md",
-      "output": {
-        ".html": {
-          "relative_path": "royalserver/license-agreement.html",
-          "hash": "+7GOCkwQDBlKFPImZk58bw=="
+          "hash": "pO/Lsia1z89NGINf5/eVwA=="
         }
       },
       "is_incremental": false,
@@ -2915,7 +2885,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/license/index.html",
-          "hash": "EiWkOuto1zBg04oyMgvUXA=="
+          "hash": "qSD2b2mKYiaX6bOoQrJ4kw=="
         }
       },
       "is_incremental": false,
@@ -2927,7 +2897,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/license/installed-licenses.html",
-          "hash": "9jrCBuzJmGOJpkWzlKFtMw=="
+          "hash": "Mee89xY/VRq1XlZGv1w0aw=="
         }
       },
       "is_incremental": false,
@@ -2935,11 +2905,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "royalserver/license/license-information.md",
+      "source_relative_path": "royalserver/licensing.md",
       "output": {
         ".html": {
-          "relative_path": "royalserver/license/license-information.html",
-          "hash": "ce0IXzbki/CPGA2CxgANAA=="
+          "relative_path": "royalserver/licensing.html",
+          "hash": "E8YXPlPPgf7QE+63MQCwZA=="
         }
       },
       "is_incremental": false,
@@ -2951,7 +2921,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/dynamic-folder.html",
-          "hash": "aYcxwnXhjzGab2RGXpLEXA=="
+          "hash": "IAodUKeI+7Z4BQ2cxVJddQ=="
         }
       },
       "is_incremental": false,
@@ -2963,7 +2933,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/general-configuration.html",
-          "hash": "G1Ngbq2ympIeeCimFOaP1w=="
+          "hash": "nCYIJP9dwU0mxvGSx14VnQ=="
         }
       },
       "is_incremental": false,
@@ -2975,7 +2945,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/health.html",
-          "hash": "+5CegWKEUVlMQ7NE0xZo1g=="
+          "hash": "OWtTt0dr+Q2Y7qsG0EW18Q=="
         }
       },
       "is_incremental": false,
@@ -2987,7 +2957,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/index.html",
-          "hash": "Oj0R3O4QZjWFpYfA8bZiGw=="
+          "hash": "eULCWjALEwZeuKPbU+WQTg=="
         }
       },
       "is_incremental": false,
@@ -2999,7 +2969,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/logging.html",
-          "hash": "+dSrf6aPqgGB+oEbIacHAw=="
+          "hash": "q+Lq4Hi0uq3bHnb+BSwMHA=="
         }
       },
       "is_incremental": false,
@@ -3011,7 +2981,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/modules.html",
-          "hash": "j0chkvQys7r2hLqBpcfk4A=="
+          "hash": "fU3j8Z+2S7Xrzq+bBDVEuw=="
         }
       },
       "is_incremental": false,
@@ -3023,7 +2993,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/overview.html",
-          "hash": "Z40VEZsblHtIy3c7RE7WIg=="
+          "hash": "+DW293FgnRwqprr60AwLWQ=="
         }
       },
       "is_incremental": false,
@@ -3035,7 +3005,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/permissions.html",
-          "hash": "qUFlnuEBRrjbD5dC8gF/8w=="
+          "hash": "xAQMUUBM4djkJQGaEZU/5A=="
         }
       },
       "is_incremental": false,
@@ -3047,7 +3017,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/security-configuration.html",
-          "hash": "ZW3ogWTgxuEO9+YhX9GEeQ=="
+          "hash": "mBgcaVsasvl/amHg/bPlOg=="
         }
       },
       "is_incremental": false,
@@ -3059,7 +3029,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/service-configuration.html",
-          "hash": "63adPirvmMOx97CDyN2Ujw=="
+          "hash": "2ITj/8bgHciNgGk+VflLpA=="
         }
       },
       "is_incremental": false,
@@ -3071,7 +3041,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/update-checks.html",
-          "hash": "p5Me6dvgMDXTKHUFrpbnTw=="
+          "hash": "rUZlg0EJjEzGjcoCPpFCHg=="
         }
       },
       "is_incremental": false,
@@ -3083,7 +3053,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/document-store.html",
-          "hash": "TTVhQXkYt47zec7Se1sk6w=="
+          "hash": "XW0aXHa+sAiexRJQm5iBGw=="
         }
       },
       "is_incremental": false,
@@ -3095,7 +3065,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/hyper-v-module.html",
-          "hash": "6xTjv+A7VGws/MS0dgRglg=="
+          "hash": "0cwG3p4m4NgDRzVJ3mJ7jA=="
         }
       },
       "is_incremental": false,
@@ -3107,7 +3077,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/index.html",
-          "hash": "NIOrpeUbP9GWrLAf1AIngQ=="
+          "hash": "TZKDYuH5y+flBSNtAm3TLg=="
         }
       },
       "is_incremental": false,
@@ -3119,7 +3089,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/royal-server-management.html",
-          "hash": "HtaJ4XcWgXl1AgdVOyIv9g=="
+          "hash": "pzB/jdVJ+FJZzmjWqSrWQA=="
         }
       },
       "is_incremental": false,
@@ -3131,7 +3101,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/script-module.html",
-          "hash": "rg7NZ5c/mfNDtk9B35XiiA=="
+          "hash": "TzPuZSdldnkQ91kuqXSfyA=="
         }
       },
       "is_incremental": false,
@@ -3143,7 +3113,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/terminal-services-module.html",
-          "hash": "FtnE22ZUr5IduBRB29GY4w=="
+          "hash": "KBSUsWgp0+szJPUmJpd+qQ=="
         }
       },
       "is_incremental": false,
@@ -3155,7 +3125,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/vmware-module.html",
-          "hash": "WcEe1TSTQFxMctwI8E1qYA=="
+          "hash": "REnUmJXYcJ7CMrwJ2hIPGQ=="
         }
       },
       "is_incremental": false,
@@ -3167,7 +3137,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/windows-events-module.html",
-          "hash": "05BjxlcK0d/r2jAqD42tQw=="
+          "hash": "5xUjyOFHN5p69QakIPGjHA=="
         }
       },
       "is_incremental": false,
@@ -3179,7 +3149,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/windows-processes-module.html",
-          "hash": "y8co1GLaKu76kCOOdVgClQ=="
+          "hash": "gmJkFPxz4zOonX/CQs37aA=="
         }
       },
       "is_incremental": false,
@@ -3191,7 +3161,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/modules/windows-services-module.html",
-          "hash": "hh5SsC27aOfAu1oIGPbaPA=="
+          "hash": "5dg76Jx6xY6szQv2ASf+sg=="
         }
       },
       "is_incremental": false,
@@ -3203,19 +3173,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/royal-server-homepage.html",
-          "hash": "UTOFQvGP7GpXBSfwKre1eQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "royalserver/royal-server-licensing.md",
-      "output": {
-        ".html": {
-          "relative_path": "royalserver/royal-server-licensing.html",
-          "hash": "h75i5Ht+TbpcEJMHDjcwOw=="
+          "hash": "qsNjnFOES4aRGYMhQF2V8g=="
         }
       },
       "is_incremental": false,
@@ -3227,7 +3185,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/royal-server-system-requirements.html",
-          "hash": "hub9UOd+HwPvoTd2QF4KYg=="
+          "hash": "V7tMEgvJCtIm9COm6UKgzw=="
         }
       },
       "is_incremental": false,
@@ -3239,7 +3197,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/getting-started.html",
-          "hash": "OjEMrYfr+LQIeZQAjKP3GQ=="
+          "hash": "WSEg2Lf8QEw3uVCFspj0Ag=="
         }
       },
       "is_incremental": false,
@@ -3251,7 +3209,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/index.html",
-          "hash": "3OmOVE5YMw1LR/XMFszgTg=="
+          "hash": "X6ZjoY0CzM4chuO/UFq5IA=="
         }
       },
       "is_incremental": false,
@@ -3263,7 +3221,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/module-reference/index.html",
-          "hash": "BhBu54Z1sdeF37DxzdaZGA=="
+          "hash": "ECG4Se7wgW2N19sEy3JSPQ=="
         }
       },
       "is_incremental": false,
@@ -3275,7 +3233,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/module-reference/module-document-store.html",
-          "hash": "eGzOllqhdvBdYyJbUwvY6A=="
+          "hash": "NbABP9tbSeA0OHdazibwAQ=="
         }
       },
       "is_incremental": false,
@@ -3287,7 +3245,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/module-reference/module-hyper-v.html",
-          "hash": "4TlwDw6tk8IUFNm71J9F7g=="
+          "hash": "Ah7m5sue+5Lm8Fg3+KmHIw=="
         }
       },
       "is_incremental": false,
@@ -3299,7 +3257,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/module-reference/module-script.html",
-          "hash": "VfDr65uFUVvaNZQW/1IR2A=="
+          "hash": "C6UqZ8wXiXxSSYVGPm6ytQ=="
         }
       },
       "is_incremental": false,
@@ -3311,7 +3269,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/module-reference/module-windows-events.html",
-          "hash": "I8QRVDNLZZ5gX+PATieXqg=="
+          "hash": "bBCKjJofKT9/Wb/u/v64Mg=="
         }
       },
       "is_incremental": false,
@@ -3323,7 +3281,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/module-reference/module-windows-processes.html",
-          "hash": "VAk6HR54ZfnWBxcfIdb+yA=="
+          "hash": "08NHLCSihTGuoerJWIdRLQ=="
         }
       },
       "is_incremental": false,
@@ -3335,7 +3293,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodule.html",
-          "hash": "fRTNK98oG4LtSDfbE4FuzQ=="
+          "hash": "p9mDgrJB32yry7iF9uG0iA=="
         }
       },
       "is_incremental": false,
@@ -3347,7 +3305,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodulecommand.html",
-          "hash": "RVUQ6CllUjLImcH2mxPgeQ=="
+          "hash": "skzm8TGQVAhmy4/+pfYjuA=="
         }
       },
       "is_incremental": false,
@@ -3359,7 +3317,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodulecommandparameter.html",
-          "hash": "1RQ42UwQY7TiYvvUU8HHlA=="
+          "hash": "8oR59GmsaQg4tNFIxbF9Lg=="
         }
       },
       "is_incremental": false,
@@ -3371,7 +3329,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/powershell-commandlets/index.html",
-          "hash": "/sOcIlGpT7jtn+QJL9FwHw=="
+          "hash": "C1q8U4Z9tTBFEeZGB73ZWw=="
         }
       },
       "is_incremental": false,
@@ -3383,7 +3341,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/powershell-commandlets/invoke-royalservercommand.html",
-          "hash": "4wi8hsI0uwYEhPpWQju/1g=="
+          "hash": "E3ZM9ithTMw1fur8xZcHsQ=="
         }
       },
       "is_incremental": false,
@@ -3395,7 +3353,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/scripting/powershell-commandlets/new-royalserverconfig.html",
-          "hash": "XTCKp/VvhE84SDFXW9JZTQ=="
+          "hash": "x48vuIzZJm7Mq1nhN0oosg=="
         }
       },
       "is_incremental": false,
@@ -3407,7 +3365,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/toc.html",
-          "hash": "LFwhcHrPIFknbNQlh9riNw=="
+          "hash": "Nz5SAGj67ZWKUV64LLf15A=="
         }
       },
       "is_incremental": false,
@@ -3419,7 +3377,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/activeplugin.html",
-          "hash": "sXGJC6dJHCqXICunEPFiPg=="
+          "hash": "LrQ7x82cPbjMWn+qfBKEnQ=="
         }
       },
       "is_incremental": false,
@@ -3431,7 +3389,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/autofill.html",
-          "hash": "stJ6jyB85t1Q+lIndsF+tQ=="
+          "hash": "vFRKZ9Ka7xHQGS0XxnlDwg=="
         }
       },
       "is_incremental": false,
@@ -3443,7 +3401,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/computername.html",
-          "hash": "oUayWlTI//KOI36PUVfwMQ=="
+          "hash": "kbQ25lIn4cpr1RryxAS4pw=="
         }
       },
       "is_incremental": false,
@@ -3455,7 +3413,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/credentialmodes.html",
-          "hash": "24YPUG7XgGAHTNp6YgX/Tg=="
+          "hash": "iGFCu/jBlBnEpqNTANk6jQ=="
         }
       },
       "is_incremental": false,
@@ -3467,7 +3425,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/credentials.html",
-          "hash": "yLLqqb5XRtew7muAk2rT1A=="
+          "hash": "Eg0MtmsnIfHZc9D7UDTe+g=="
         }
       },
       "is_incremental": false,
@@ -3479,7 +3437,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/customfields.html",
-          "hash": "zYeIakYze2GCwXLrCwymCQ=="
+          "hash": "yOF4FoJrex2sMKguPyW95A=="
         }
       },
       "is_incremental": false,
@@ -3491,7 +3449,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/customproperties.html",
-          "hash": "e7V4DsKqmd3gWnck19HfcA=="
+          "hash": "LYycpTCofZ0BDzqzYB9bZg=="
         }
       },
       "is_incremental": false,
@@ -3503,7 +3461,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/dashboard.html",
-          "hash": "R675kaq3k521kUFkB0OcZQ=="
+          "hash": "XR42amBcgD8KOvw33Vx/6A=="
         }
       },
       "is_incremental": false,
@@ -3515,7 +3473,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/description.html",
-          "hash": "/fIACthqXrVf1HS58JbhaA=="
+          "hash": "OwSBJ32yHdyaBUSPwt8MXg=="
         }
       },
       "is_incremental": false,
@@ -3527,7 +3485,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/displayname.html",
-          "hash": "lk7qXLqe5KgMjPszT09HWA=="
+          "hash": "1thCl2Gd0cNz+MmviB3v9w=="
         }
       },
       "is_incremental": false,
@@ -3539,7 +3497,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/inheritance-apply.html",
-          "hash": "bZp7oo4K5gMu8MmQ17s5Hw=="
+          "hash": "wyzySPcYOKj3XJDhT+T1Vg=="
         }
       },
       "is_incremental": false,
@@ -3551,7 +3509,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/inheritance-editsource.html",
-          "hash": "nWsFgeIXBpxZIRr89Dfn4A=="
+          "hash": "pZadakmkV5wUtvVEA/S2FA=="
         }
       },
       "is_incremental": false,
@@ -3563,7 +3521,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/macaddress.html",
-          "hash": "DmPPzhxbwCMd8Xhy2R4eAw=="
+          "hash": "LIqh+5zJZ38TVdcbhlgD2g=="
         }
       },
       "is_incremental": false,
@@ -3575,7 +3533,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/notes.html",
-          "hash": "ERCFL5mD5Ng8/8h1OWWucw=="
+          "hash": "eMWGJ41zBU7/IJw/EKD2CA=="
         }
       },
       "is_incremental": false,
@@ -3587,7 +3545,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/parentfolder-connection-warning.html",
-          "hash": "iRZTWA4vkoe4ymI2Bb1QVQ=="
+          "hash": "7R8uAG46DY3o6lA1nUvDwg=="
         }
       },
       "is_incremental": false,
@@ -3599,7 +3557,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/parentfolder.html",
-          "hash": "eYiVrjx8ASf1SOd3NvkMWA=="
+          "hash": "WzVcK/smDOuLeyBX5hfNAQ=="
         }
       },
       "is_incremental": false,
@@ -3611,7 +3569,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/rdgateway.html",
-          "hash": "cBJ1rjVa+ISL+dsyDVOx+Q=="
+          "hash": "JW69eftL+mSu24/AjRjpGA=="
         }
       },
       "is_incremental": false,
@@ -3623,7 +3581,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/rebexciphers.html",
-          "hash": "R/ICa/zR50Tq2WDM5RcEBw=="
+          "hash": "jUMLsEPRZm10VSMK/zeALQ=="
         }
       },
       "is_incremental": false,
@@ -3635,7 +3593,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/royalserver.html",
-          "hash": "dXhh5YMEEjJ1Go0AalloSg=="
+          "hash": "l9ueWASbWpNQx4eQv21gkw=="
         }
       },
       "is_incremental": false,
@@ -3647,7 +3605,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/royalserversupport.html",
-          "hash": "CZoEC4uQPEh0JVWOAcckPw=="
+          "hash": "9AfDvIf1jwskN90KnllyYw=="
         }
       },
       "is_incremental": false,
@@ -3659,7 +3617,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/securegateway.html",
-          "hash": "FezOiGIKBCOM1fNEpCUrPg=="
+          "hash": "bozpMDx9xOQTAgfvp+Vl2w=="
         }
       },
       "is_incremental": false,
@@ -3671,7 +3629,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/tasks.html",
-          "hash": "Kzi+2CpIS5jOac/n8FAr1g=="
+          "hash": "Ta8Rggz4Gp7V6iXXpO212Q=="
         }
       },
       "is_incremental": false,
@@ -3683,7 +3641,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/terminalpalette.html",
-          "hash": "LKRj0Ix/z6biIrt/zH4lkg=="
+          "hash": "9IWu6yWCoBfowuL3ng0sQA=="
         }
       },
       "is_incremental": false,
@@ -3695,7 +3653,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/windowmode.html",
-          "hash": "151TTZ+oyXYMIW140MxcFA=="
+          "hash": "yKvQgbuTEk5GDFcRkSLvJw=="
         }
       },
       "is_incremental": false,
@@ -3707,7 +3665,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/appsettings.html",
-          "hash": "eMeo6GM9xTz5/M/6gu6Mew=="
+          "hash": "HacczJUynBXrPxiY811eYg=="
         }
       },
       "is_incremental": false,
@@ -3719,7 +3677,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/cli.html",
-          "hash": "BrYTXm8BPAQVxsDAgdUjtg=="
+          "hash": "EitPcvX2G+3x6molYMDYBA=="
         }
       },
       "is_incremental": false,
@@ -3731,7 +3689,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/default-settings.html",
-          "hash": "XIhfvFDl2sHkN9+vLl/d7w=="
+          "hash": "j4UiCKXP1n/QgeKeRgHj7A=="
         }
       },
       "is_incremental": false,
@@ -3743,7 +3701,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/export.html",
-          "hash": "WN6ojQcfqnBvtSxpVBcNNA=="
+          "hash": "D1/qXhTT/zL++5WEh1fVTQ=="
         }
       },
       "is_incremental": false,
@@ -3755,7 +3713,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/import.html",
-          "hash": "CD5ACMtsRELlXZ8LPdZJPg=="
+          "hash": "GZnYIdkKnPwKpx6blmvjqA=="
         }
       },
       "is_incremental": false,
@@ -3767,7 +3725,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/index.html",
-          "hash": "DhIyeA8wJzasR/iCbTBhpA=="
+          "hash": "1gZdOwmQHrc9oiMmStNGOQ=="
         }
       },
       "is_incremental": false,
@@ -3779,22 +3737,19 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/uri.html",
-          "hash": "Cr4kYFqWq3vwLcyG7KSBNw=="
+          "hash": "SWdIO2RoPJ+5FiPJKGDpKw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/getting-started/connections.md",
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/connections.html",
-          "hash": "q6HFipp82/TIB9u7S2rv0A=="
+          "hash": "wSaAEKUI4tHAZcxSIVlaTg=="
         }
       },
       "is_incremental": false,
@@ -3806,7 +3761,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/dashboards.html",
-          "hash": "9DQUuqOMKdmnKkHpIvpQUg=="
+          "hash": "uGh+O3pvON+f8GWCMjvr0A=="
         }
       },
       "is_incremental": false,
@@ -3818,7 +3773,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/documents-and-files.html",
-          "hash": "z5qg2D0ozFGa28uZcpBbxg=="
+          "hash": "jH2usufS363C5ct2u/KxwQ=="
         }
       },
       "is_incremental": false,
@@ -3830,7 +3785,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/index.html",
-          "hash": "q/aULcwMi1NgOywhuHYAiw=="
+          "hash": "/yKdFTdrCTJEKwEjwF53Sg=="
         }
       },
       "is_incremental": false,
@@ -3842,22 +3797,19 @@
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/panels-and-tabs.html",
-          "hash": "cvW8rRMu41vXq5YKBKCfXQ=="
+          "hash": "yLSVMn79iADtwyLZqh/1Jw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/getting-started/plugins.md",
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/plugins.html",
-          "hash": "0oLJRO/TGlPfoniqnpmh3A=="
+          "hash": "/wzp+DiHNOqLLtiG0JWYKQ=="
         }
       },
       "is_incremental": false,
@@ -3869,7 +3821,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/ribbon-and-backstage.html",
-          "hash": "iqXPI1qvVTkdHKMh9burXQ=="
+          "hash": "aEVg2tUrVOQcrg3BKfH3wQ=="
         }
       },
       "is_incremental": false,
@@ -3881,7 +3833,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/security.html",
-          "hash": "P29jX9jkS0QYZf7u/r5nLA=="
+          "hash": "tOGDeXTyiYgMSMyBnRuZKw=="
         }
       },
       "is_incremental": false,
@@ -3893,7 +3845,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/getting-started/your-first-connection.html",
-          "hash": "YMvGF7Z+bhH03FrL9h/sXw=="
+          "hash": "AOKsEe2FhmjewAh/vNOG1w=="
         }
       },
       "is_incremental": false,
@@ -3905,22 +3857,19 @@
       "output": {
         ".html": {
           "relative_path": "royalts/introduction/faqs.html",
-          "hash": "Pesya98x1eeplnm0CaNuJA=="
+          "hash": "CkIjtaOM5syoqeWw2qOJfQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/introduction/index.md",
       "output": {
         ".html": {
           "relative_path": "royalts/introduction/index.html",
-          "hash": "KLk4cSL44WI9d87cgtNlpQ=="
+          "hash": "vV9qvIgGK11Rnc7WiyGWTQ=="
         }
       },
       "is_incremental": false,
@@ -3932,7 +3881,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/introduction/introducing-royal-server.html",
-          "hash": "6Gato6vU47GnEAUlXKczkA=="
+          "hash": "SmPQdSNgGYSZVcTbgBC65Q=="
         }
       },
       "is_incremental": false,
@@ -3944,7 +3893,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/introduction/license-agreement.html",
-          "hash": "sL6YNCZpkalZXqXvv8In8g=="
+          "hash": "AeH2rgZqQd5vkkB3cgRK8Q=="
         }
       },
       "is_incremental": false,
@@ -3956,22 +3905,19 @@
       "output": {
         ".html": {
           "relative_path": "royalts/introduction/system-requirements.html",
-          "hash": "HMUgHix+AwGx53xWQ/H66w=="
+          "hash": "g47X+iZTi41EN2BCLGi9vQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/introduction/what-is-royal-ts.md",
       "output": {
         ".html": {
           "relative_path": "royalts/introduction/what-is-royal-ts.html",
-          "hash": "qHOgpCdfJrqDgb+i5aVA2Q=="
+          "hash": "Ku+neEt7aVZhdKNG41OnBQ=="
         }
       },
       "is_incremental": false,
@@ -3983,7 +3929,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/external-app.html",
-          "hash": "nqHacPleFTwgmTzCC9gKrA=="
+          "hash": "xj5PrdcG0U9hU80M9X1nCg=="
         }
       },
       "is_incremental": false,
@@ -3995,7 +3941,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/filetransfer.html",
-          "hash": "yxo07Wh3G8fXMB5Yxul7dA=="
+          "hash": "xPfauHbWCHMJXKmdmpA60A=="
         }
       },
       "is_incremental": false,
@@ -4007,7 +3953,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/hyper-v.html",
-          "hash": "S8LEr2r8wnBrABVecGLz/w=="
+          "hash": "4Th7LvPr+D9sle5zNGxJqw=="
         }
       },
       "is_incremental": false,
@@ -4019,7 +3965,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/index.html",
-          "hash": "WGQzOGqmQE28TJARUVtsAQ=="
+          "hash": "qQeQDNpzhn/q0VCdYGz6Ew=="
         }
       },
       "is_incremental": false,
@@ -4031,7 +3977,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/perf-view.html",
-          "hash": "sUpzb9MWSZp15hECxlbYOw=="
+          "hash": "lsAS/AxPaG8teAQmduRPmQ=="
         }
       },
       "is_incremental": false,
@@ -4043,7 +3989,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/powershell.html",
-          "hash": "g6VGrsJSgroQ73Fs2X31Xg=="
+          "hash": "ppZleKR1Yd2p1RWr0ef5bQ=="
         }
       },
       "is_incremental": false,
@@ -4055,7 +4001,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/rdp.html",
-          "hash": "1SiEKsXFMdJfUmz5QcfJug=="
+          "hash": "RIYe8D3BZT66v4rA6GcQIA=="
         }
       },
       "is_incremental": false,
@@ -4067,7 +4013,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/teamviewer.html",
-          "hash": "m/KM0u365PjwHnwEK1OylQ=="
+          "hash": "XM9nLLGMDVpG7bCGfXcOkA=="
         }
       },
       "is_incremental": false,
@@ -4079,7 +4025,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-putty.html",
-          "hash": "d17wEuJA2xhPPPmCa9Zv3g=="
+          "hash": "ySdCcyd4J9425cFCa098Nw=="
         }
       },
       "is_incremental": false,
@@ -4091,7 +4037,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-rebex.html",
-          "hash": "y83Qrfl5esEkLsYDUTdgdQ=="
+          "hash": "8Vdxh6Xh+0WRoXZkmpTw/Q=="
         }
       },
       "is_incremental": false,
@@ -4103,7 +4049,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-services.html",
-          "hash": "3CZCSPT0O9wcCwgRv4iEwg=="
+          "hash": "GSIlf2hC3Pzg1KjBfoVXyA=="
         }
       },
       "is_incremental": false,
@@ -4115,7 +4061,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vmware.html",
-          "hash": "goppHW9w0M7gt3KVaB39yQ=="
+          "hash": "V/0M9lDluaN4bsWvc1y3zg=="
         }
       },
       "is_incremental": false,
@@ -4127,7 +4073,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc-tight.html",
-          "hash": "W4mj6MTJuyZDwgtzbSAIUg=="
+          "hash": "n5aXA8cIfhGLOceYDlIp1Q=="
         }
       },
       "is_incremental": false,
@@ -4139,7 +4085,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc-ultra.html",
-          "hash": "e7NkBQDn06Awl+ffUVLuCw=="
+          "hash": "2Q2HICBvIc7gx+GMIl4ebw=="
         }
       },
       "is_incremental": false,
@@ -4151,7 +4097,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc.html",
-          "hash": "t7xLX233xygfXTNHHemFxA=="
+          "hash": "w6pi1/KYjg45Ws6k6A4UAQ=="
         }
       },
       "is_incremental": false,
@@ -4163,7 +4109,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/web-page-chrome.html",
-          "hash": "w5YMzg5qEoxqRJDgxZO1PQ=="
+          "hash": "ht43FFj6bkKt3a6vZuYObw=="
         }
       },
       "is_incremental": false,
@@ -4175,7 +4121,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/web-page-ie.html",
-          "hash": "6CTHP2lFiA34PoFiz/aLgg=="
+          "hash": "k2pBOTjydlEIoxH/Qb8IDg=="
         }
       },
       "is_incremental": false,
@@ -4187,7 +4133,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-events.html",
-          "hash": "XTQd8z83lEtM+12XNknfSg=="
+          "hash": "chVgcZXcrIdAAqId9PXHwQ=="
         }
       },
       "is_incremental": false,
@@ -4199,7 +4145,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-processes.html",
-          "hash": "YAiMgI1+p/3/5yamfFbxQg=="
+          "hash": "YrF1R7C4joxfUQTy6imcug=="
         }
       },
       "is_incremental": false,
@@ -4211,7 +4157,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-services.html",
-          "hash": "C3A18zUoHB+p8Mko3ZYaeA=="
+          "hash": "oHTYdw+ajEHz0bERFOJ27g=="
         }
       },
       "is_incremental": false,
@@ -4223,7 +4169,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/index.html",
-          "hash": "zqahsuGqPml6qkvVAlKXHw=="
+          "hash": "XJuWQ1vO8F/MHgnNbrsmyg=="
         }
       },
       "is_incremental": false,
@@ -4235,7 +4181,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/rdpgateway.html",
-          "hash": "ny2qPpGM2p4+I6zZ4pFtkg=="
+          "hash": "q2BMUr7SSRGBoC0diualCw=="
         }
       },
       "is_incremental": false,
@@ -4247,7 +4193,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/royalserver.html",
-          "hash": "xfijwGLz8heUpnLTfJEzPw=="
+          "hash": "FIuWgAB2nA0/cZkoW8b1vQ=="
         }
       },
       "is_incremental": false,
@@ -4259,7 +4205,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/securegateway.html",
-          "hash": "YR9I8ZwWg9M5XkF0qW4S4Q=="
+          "hash": "rIQUFlF6MQW7vcyjZijJZg=="
         }
       },
       "is_incremental": false,
@@ -4271,7 +4217,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/index.html",
-          "hash": "qo8dqVjUOaVa4ntu1gkCaQ=="
+          "hash": "gGFgym6O6hQmOwb/zSg1Rw=="
         }
       },
       "is_incremental": false,
@@ -4283,22 +4229,19 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/options.html",
-          "hash": "HuzPzmdlUMroGSwL1U1gYQ=="
+          "hash": "yliuPYvXxhv2bU6+4C1DHg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/reference/organization/credential.md",
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/credential.html",
-          "hash": "hRY+51u4gJDAfGTL4sM+OQ=="
+          "hash": "BAx6oHkREXinltJKC/241g=="
         }
       },
       "is_incremental": false,
@@ -4310,7 +4253,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/document.html",
-          "hash": "afp78TOVgnFtuGEUd8SHhw=="
+          "hash": "gsU7EGCKtjyEAPmav3K4rw=="
         }
       },
       "is_incremental": false,
@@ -4322,7 +4265,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/dynamic-folder.html",
-          "hash": "f2Co3WmiU4MytOGM1cDa8g=="
+          "hash": "m5AVYd3ac11ncZQFU44QfQ=="
         }
       },
       "is_incremental": false,
@@ -4334,7 +4277,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/folder.html",
-          "hash": "ecFfcBuUPcLicpwkMlda2w=="
+          "hash": "5adAdj4A0uWHxP7hpijnLA=="
         }
       },
       "is_incremental": false,
@@ -4346,7 +4289,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/index.html",
-          "hash": "xTH7DLe1urzy103tKdWllw=="
+          "hash": "JwvBx2QTHS6vwFL6IiVvRw=="
         }
       },
       "is_incremental": false,
@@ -4358,7 +4301,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/information.html",
-          "hash": "hy8pQbjdAKN+CfVNGoneeA=="
+          "hash": "dk/FVl34gnJSSRpNqQ9Hbw=="
         }
       },
       "is_incremental": false,
@@ -4370,7 +4313,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/todo-item.html",
-          "hash": "hl1ZzxhucVhkR2D9nRstZg=="
+          "hash": "EwBxadRMlaYvBRYdQsOA6Q=="
         }
       },
       "is_incremental": false,
@@ -4382,7 +4325,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/tasks/adhoc-key-sequence.html",
-          "hash": "naxcfrg7IvqoqbJwZqkybQ=="
+          "hash": "lVf5RaZDNt1sDc6ZDBtHnw=="
         }
       },
       "is_incremental": false,
@@ -4394,7 +4337,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/tasks/command.html",
-          "hash": "6sKcc7nAhODmoorDObD0cQ=="
+          "hash": "6AB7Ux6tAJi4tWDeKMAzHQ=="
         }
       },
       "is_incremental": false,
@@ -4406,7 +4349,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/tasks/index.html",
-          "hash": "R03uy47vGqF+jSA53VNx/Q=="
+          "hash": "oabXlRsgUo9rDvDvCIKelA=="
         }
       },
       "is_incremental": false,
@@ -4418,7 +4361,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/tasks/key-sequence.html",
-          "hash": "67W8WpmU7TQWSMNRpG5LXg=="
+          "hash": "WurFRSeP9jmyeEwjqy4jTw=="
         }
       },
       "is_incremental": false,
@@ -4437,15 +4380,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/tutorials/bulk-operations.md",
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/bulk-operations.html",
-          "hash": "4Sz8TFKzLGYysqN0jhiRww=="
+          "hash": "3DnINQIfWlJsoamof2tp+Q=="
         }
       },
       "is_incremental": false,
@@ -4457,7 +4397,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/index.html",
-          "hash": "lnhbQ9dvkNpkBtwLpNGsNA=="
+          "hash": "1dHjYNJruqcwYAbugWJm+A=="
         }
       },
       "is_incremental": false,
@@ -4469,7 +4409,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/more.html",
-          "hash": "LrdbVMSEWxCSYwuhgLPYxw=="
+          "hash": "xzrfmMgX4AElnZHONOmyhA=="
         }
       },
       "is_incremental": false,
@@ -4481,7 +4421,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-adhoc.html",
-          "hash": "Llhatjqfj3PvCDXtFa06KQ=="
+          "hash": "6MQM7U2Ws80tule6Tf53LA=="
         }
       },
       "is_incremental": false,
@@ -4493,7 +4433,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-connections.html",
-          "hash": "r910o997/Suh/QTaWzZomQ=="
+          "hash": "mzRJi/D7hcnsYNxLwh8XKQ=="
         }
       },
       "is_incremental": false,
@@ -4505,7 +4445,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-credentials.html",
-          "hash": "wKPqPt9LVtjuwHPpb9cWRA=="
+          "hash": "CdFxXnJkNw43IWAZITtDQA=="
         }
       },
       "is_incremental": false,
@@ -4517,7 +4457,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-documents.html",
-          "hash": "d+UgwwaxGykdTPoJhRQZsQ=="
+          "hash": "SkBg4A7kqRe44sXmj0VQUA=="
         }
       },
       "is_incremental": false,
@@ -4529,52 +4469,43 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-lockdown-documents.html",
-          "hash": "nyBKxGNecvG+qfGCl+g1sQ=="
+          "hash": "LxwtNAByRsrR1hggdHtb9w=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/tutorials/working-with-overrides.md",
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-overrides.html",
-          "hash": "3zYW/R1QpT6qeHDMVFEo2g=="
+          "hash": "2dVtUD6ABBXwNkiOcP0pfg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/tutorials/working-with-tasks.md",
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-tasks.html",
-          "hash": "1SEQ91fjQrAHD6dnn7lcZw=="
+          "hash": "CDCMsukxKutDpcIo8ovFLA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/tutorials/working-with-templates.md",
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-templates.html",
-          "hash": "3MkcvJI8Z7gvO6bo3q3czw=="
+          "hash": "YtigfHDdadXiqWAMOSLl9w=="
         }
       },
       "is_incremental": false,
@@ -4586,7 +4517,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/tutorials/working-with-todo.html",
-          "hash": "GqU/oG1RTAZrc19ewqUmig=="
+          "hash": "5f9/ExYwdM0yfVmDhBqnmA=="
         }
       },
       "is_incremental": false,
@@ -4598,7 +4529,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/user-interface/color-palettes.html",
-          "hash": "mCSVEwxokyntGca4MJTDjA=="
+          "hash": "W3HEGLEUnSzt1EfJ3A6E+Q=="
         }
       },
       "is_incremental": false,
@@ -4610,54 +4541,391 @@
       "output": {
         ".html": {
           "relative_path": "royalts/user-interface/commands.html",
-          "hash": "y3qR2UEperwTzE3cJXCM/Q=="
+          "hash": "N4fYuPFFxx8DJi5N5X4BMw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink",
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/user-interface/dashboards.md",
       "output": {
         ".html": {
           "relative_path": "royalts/user-interface/dashboards.html",
-          "hash": "8wapcEAwr5zOThPZBteiqQ=="
+          "hash": "Du1P5vDeAj1ov47542ZerA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/user-interface/index.md",
       "output": {
         ".html": {
           "relative_path": "royalts/user-interface/index.html",
-          "hash": "htNlVI6Q/X2VDfDFvVajGg=="
+          "hash": "nADzToT4rPMuIH8wisz3Hg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink",
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "royalts/user-interface/panels.md",
       "output": {
         ".html": {
           "relative_path": "royalts/user-interface/panels.html",
-          "hash": "OwKKADT/vMZMGZuepbcWzQ=="
+          "hash": "mu75ZYJa9wq0OHiLTaurpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/applescript.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/applescript.html",
+          "hash": "e6DxITw3i//fwfjNkeYmkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Close-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Close-RoyalDocument.html",
+          "hash": "rjYlM9s2gIGW4pvAuE6SEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Close-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Close-RoyalServerDocument.html",
+          "hash": "AFsyY2ebwwAozQpRfP6TnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Copy-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Copy-RoyalObject.html",
+          "hash": "DguLLb12IASeXpRLfeJxsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Get-RoyalDocumentType.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Get-RoyalDocumentType.html",
+          "hash": "5hdddsTvHwtqgMGxIkWWAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Get-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Get-RoyalObject.html",
+          "hash": "ncSSic0ByndCZyUJOJBx8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Get-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Get-RoyalObjectCustomProperty.html",
+          "hash": "3gJvHCWqW2X/YrNbIxjBpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Get-RoyalObjectValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Get-RoyalObjectValue.html",
+          "hash": "t3Cie4NB0ckHwQzU8vE/Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Get-RoyalPropertyHelp.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Get-RoyalPropertyHelp.html",
+          "hash": "CtUyZMlxyz7gL/o8DyoCDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Get-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Get-RoyalServerDocument.html",
+          "hash": "IK32Dd4cwk/RAtlSHY6Kkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Move-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Move-RoyalObject.html",
+          "hash": "928VoXZWqKQfglLkIXzZVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/New-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/New-RoyalDocument.html",
+          "hash": "W2FcVT1hd1n/LIXfD+HElg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/New-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/New-RoyalObject.html",
+          "hash": "axn+O86sFBN+4PM3fu0OZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/New-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/New-RoyalObjectCustomProperty.html",
+          "hash": "xeLBrpa6Gj2msmfE3d2v0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/New-RoyalStore.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/New-RoyalStore.html",
+          "hash": "TTQxnXSLcrgo+CWr0Yd91w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Open-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Open-RoyalDocument.html",
+          "hash": "dQkbAlQEftxv1jEJaK/KIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Open-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Open-RoyalServerDocument.html",
+          "hash": "xgqPBQKJDyjZ0i1i3TI5ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Out-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Out-RoyalDocument.html",
+          "hash": "hZt9ihLBciWenDV/p0UQeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Out-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Out-RoyalServerDocument.html",
+          "hash": "40Wf5WIB4r7XO6YnRJb2Ng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Remove-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Remove-RoyalObject.html",
+          "hash": "6Ay5AmvMrypuLdGN9FCzrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Remove-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Remove-RoyalObjectCustomProperty.html",
+          "hash": "RipNxfDuh3ANtu8p6gV8UA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Set-RoyalDocumentPassword.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Set-RoyalDocumentPassword.html",
+          "hash": "xo6g/rKuALRvJWaqccVysw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Set-RoyalDocumentType.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Set-RoyalDocumentType.html",
+          "hash": "8uTJNpOS6qvvi5tK4bmVnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Set-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Set-RoyalObjectCustomProperty.html",
+          "hash": "SVtuYvJPyaA7+dnkBZ5gIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Set-RoyalObjectCustomPropertyPosition.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Set-RoyalObjectCustomPropertyPosition.html",
+          "hash": "IaJRcjv0xvEG7JUfLvlj7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Set-RoyalObjectValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Set-RoyalObjectValue.html",
+          "hash": "MLMy8UPaDUyqCjmEIxF9fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/Set-RoyalSortOrder.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/Set-RoyalSortOrder.html",
+          "hash": "p0WyWnAuGjx5U7z5B7vPcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/about_RoyalDocument.PowerShell.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/about_RoyalDocument.PowerShell.html",
+          "hash": "zpVRt3Fpt56tMydsQQxXlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/index.html",
+          "hash": "LsNHNIsvln2jinYDVb5HvA=="
         }
       },
       "is_incremental": false,
@@ -4669,7 +4937,679 @@
       "output": {
         ".html": {
           "relative_path": "scripting/intro.html",
-          "hash": "9iUlLWFjyONkx0wBn9QFdQ=="
+          "hash": "QpQuxQEnWazffQ5GdZw9Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/index.html",
+          "hash": "++eg3NAcvEyhoCP9+TddrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalappconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalappconnection.html",
+          "hash": "7Ku06Y36bmVnidQ41XStZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalfiletransferconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalfiletransferconnection.html",
+          "hash": "WxNzOH3ybgqLn2DcQwkmzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalhypervconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalhypervconnection.html",
+          "hash": "hWuzA0Z2Z3mvEU8dBNN6hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalperformanceconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalperformanceconnection.html",
+          "hash": "fRNRmTS8CmZaNvCWavhYag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalpowershellconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalpowershellconnection.html",
+          "hash": "mNyhTtsq/O0N98OxQ60XkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalrdsconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalrdsconnection.html",
+          "hash": "CADfXd7HNit0SIUfllH1Ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalsshconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalsshconnection.html",
+          "hash": "L6sdNeOH5xf2GoMtzZfnUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalteamviewerconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalteamviewerconnection.html",
+          "hash": "TF0Pg+kpU7UMoN4hgS/WCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalterminalservicesconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalterminalservicesconnection.html",
+          "hash": "vJTo78+12D/My8GKfVo7dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalvmwareconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalvmwareconnection.html",
+          "hash": "OeOJz3lTw3J+OlLAgvO6pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalvncconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalvncconnection.html",
+          "hash": "iW5eEd+tuDgIgIzDc97bVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwebconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwebconnection.html",
+          "hash": "e+MND9UZS5ZbaNxLxqv7Vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwindowseventsconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwindowseventsconnection.html",
+          "hash": "zpcdZl2yU6Ff0mLVuA0F1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwindowsprocessesconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwindowsprocessesconnection.html",
+          "hash": "C5Gdn4M67rZI7nZ4O1IuJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwindowsservicesconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwindowsservicesconnection.html",
+          "hash": "G2ZzO8Y9+VcA4kE1C0Z5cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/index.html",
+          "hash": "vRwq86Om8TQ+q1fPGgm6AQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/royalmanagementendpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/royalmanagementendpoint.html",
+          "hash": "w+e/yNKoqhVukMMu7BmQ5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/royalrdsgateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/royalrdsgateway.html",
+          "hash": "uCgkGe7KRvYioGIS8HxQfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/royalsecuregateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/royalsecuregateway.html",
+          "hash": "pGdIwA2lbEnTXvpUWApYHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/index.html",
+          "hash": "vLj/ocnNVLL71KDLr9Bmyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/options/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/options/index.html",
+          "hash": "JNFqCvmO4CobXhwQbncRsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/options/royalapplicationsetting.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/options/royalapplicationsetting.html",
+          "hash": "u4MO99wmn8jA2xWR+txusQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/index.html",
+          "hash": "OTDYY25lR6XTqcWHZwUqig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royalcredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royalcredential.html",
+          "hash": "HwwMW6KdmfISXxFT9v71tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaldocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaldocument.html",
+          "hash": "gwtHdSQsKa6HHvp01rHQdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaldynamiccredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaldynamiccredential.html",
+          "hash": "LVwrQUL9VQiWFxtGLhcVIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaldynamicfolder.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaldynamicfolder.html",
+          "hash": "pyF98PASpfYs2t6u3shOQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royalfolder.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royalfolder.html",
+          "hash": "9UpSdAYAaXBAECuoO3MjMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royalinformation.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royalinformation.html",
+          "hash": "Dsg90WeJhg6DysnIef4zIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaltodo.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaltodo.html",
+          "hash": "5iHxENFezbXLzDoxPK4IdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/tasks/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/tasks/index.html",
+          "hash": "O7ROyQwyop/LUq3ZBRAZmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/tasks/royalcommandtask.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/tasks/royalcommandtask.html",
+          "hash": "6KvxqzX1zif7XnzYJdJfXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/tasks/royalkeysequencetask.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/tasks/royalkeysequencetask.html",
+          "hash": "1H0QAY/q9UKaX3ZwCVD1Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/advanced-scenarios.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/advanced-scenarios.html",
+          "hash": "fBEgADHZjbQ7NVvCM31Tzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/index.html",
+          "hash": "pTTlcUNz4+z6YpKPXLx8TA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsonautofillelement.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsonautofillelement.html",
+          "hash": "HgEx05e/lSD1wS0PcwSo4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsoncustomproperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsoncustomproperty.html",
+          "hash": "FF56XNE9aR035qlOVejNXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsondocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsondocument.html",
+          "hash": "8y0USHUqFSPhJVhGJvK0vA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsondynamiccredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsondynamiccredential.html",
+          "hash": "/+jtiOeWQZgV7Yu1/8WUXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsonobject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsonobject.html",
+          "hash": "gMxBZZq0FfRx8xj+l3niIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/building-folder-hierachies.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/building-folder-hierachies.html",
+          "hash": "SS+NXN1IggPatWoLo2V1bA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/dynamic-credentials.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/dynamic-credentials.html",
+          "hash": "fbeMxGet+m0pJYAVIq/i0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/dynamic-folders.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/dynamic-folders.html",
+          "hash": "nG3LUuGqpOcDxpoVhhhVRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/index.html",
+          "hash": "zDkSqmCKcGmFAb01GZZy1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/introduction.html",
+          "hash": "Jops3rQkhKUFzAqklUnQAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/json-schema.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/json-schema.html",
+          "hash": "CMALKvKDMiVpi0IX1Gi2PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/object-references-and-inheritance.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/object-references-and-inheritance.html",
+          "hash": "dO/D6Z1TBkGOgBXgDw1aTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/the-data-format.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/the-data-format.html",
+          "hash": "Qqy2dUkYN+zDw8pJypbNOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Get-RoyalServerModule.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Get-RoyalServerModule.html",
+          "hash": "eeyONE911hJ5prKrmdFyxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Get-RoyalServerModuleCommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Get-RoyalServerModuleCommand.html",
+          "hash": "VDZKzUMF0bgWLTRJtGLfcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Get-RoyalServerModuleCommandParameter.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Get-RoyalServerModuleCommandParameter.html",
+          "hash": "UEGnoEwsIg0Jeig5KVvCUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Invoke-RoyalServerCommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Invoke-RoyalServerCommand.html",
+          "hash": "3veTmcyAlQDko4ADpmn9Ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/New-RoyalServerConfig.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/New-RoyalServerConfig.html",
+          "hash": "sSXeFOwuoxw86SfIGNMyjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/about_RoyalServer.PowerShell.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/about_RoyalServer.PowerShell.html",
+          "hash": "P5/EOzgodxdgSetvn/B/wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/index.html",
+          "hash": "CY7I4pQVwv+m+qWFkOz4bA=="
         }
       },
       "is_incremental": false,
@@ -4681,7 +5621,7 @@
       "output": {
         ".html": {
           "relative_path": "scripting/toc.html",
-          "hash": "l65zwGPjJz8sQKWRuyPi+A=="
+          "hash": "hotJ/J7jEWsmL3SoPylZ3g=="
         }
       },
       "is_incremental": false,
@@ -4693,7 +5633,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "a5MlFp+MJf/4Y2pIuBhRbA=="
+          "hash": "yi8WMVO/teoTL/EqT/Gl3A=="
         }
       },
       "is_incremental": false,
@@ -4714,7 +5654,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 186,
+          "total_file_count": 264,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

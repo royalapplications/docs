@@ -1,6 +1,81 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Close-RoyalDocument
+  name: Close-RoyalDocument
+  href: scripting/document/Close-RoyalDocument.html
+- uid: Close-RoyalServerDocument
+  name: Close-RoyalServerDocument
+  href: scripting/document/Close-RoyalServerDocument.html
+- uid: Copy-RoyalObject
+  name: Copy-RoyalObject
+  href: scripting/document/Copy-RoyalObject.html
+- uid: Get-RoyalDocumentType
+  name: Get-RoyalDocumentType
+  href: scripting/document/Get-RoyalDocumentType.html
+- uid: Get-RoyalObject
+  name: Get-RoyalObject
+  href: scripting/document/Get-RoyalObject.html
+- uid: Get-RoyalObjectCustomProperty
+  name: Get-RoyalObjectCustomProperty
+  href: scripting/document/Get-RoyalObjectCustomProperty.html
+- uid: Get-RoyalObjectValue
+  name: Get-RoyalObjectValue
+  href: scripting/document/Get-RoyalObjectValue.html
+- uid: Get-RoyalPropertyHelp
+  name: Get-RoyalPropertyHelp
+  href: scripting/document/Get-RoyalPropertyHelp.html
+- uid: Get-RoyalServerDocument
+  name: Get-RoyalServerDocument
+  href: scripting/document/Get-RoyalServerDocument.html
+- uid: Get-RoyalServerModule
+  name: Get-RoyalServerModule
+  href: scripting/server/Get-RoyalServerModule.html
+- uid: Get-RoyalServerModuleCommand
+  name: Get-RoyalServerModuleCommand
+  href: scripting/server/Get-RoyalServerModuleCommand.html
+- uid: Get-RoyalServerModuleCommandParameter
+  name: Get-RoyalServerModuleCommandParameter
+  href: scripting/server/Get-RoyalServerModuleCommandParameter.html
+- uid: Invoke-RoyalServerCommand
+  name: Invoke-RoyalServerCommand
+  href: scripting/server/Invoke-RoyalServerCommand.html
+- uid: Move-RoyalObject
+  name: Move-RoyalObject
+  href: scripting/document/Move-RoyalObject.html
+- uid: New-RoyalDocument
+  name: New-RoyalDocument
+  href: scripting/document/New-RoyalDocument.html
+- uid: New-RoyalObject
+  name: New-RoyalObject
+  href: scripting/document/New-RoyalObject.html
+- uid: New-RoyalObjectCustomProperty
+  name: New-RoyalObjectCustomProperty
+  href: scripting/document/New-RoyalObjectCustomProperty.html
+- uid: New-RoyalServerConfig
+  name: New-RoyalServerConfig
+  href: scripting/server/New-RoyalServerConfig.html
+- uid: New-RoyalStore
+  name: New-RoyalStore
+  href: scripting/document/New-RoyalStore.html
+- uid: Open-RoyalDocument
+  name: Open-RoyalDocument
+  href: scripting/document/Open-RoyalDocument.html
+- uid: Open-RoyalServerDocument
+  name: Open-RoyalServerDocument
+  href: scripting/document/Open-RoyalServerDocument.html
+- uid: Out-RoyalDocument
+  name: Out-RoyalDocument
+  href: scripting/document/Out-RoyalDocument.html
+- uid: Out-RoyalServerDocument
+  name: Out-RoyalServerDocument
+  href: scripting/document/Out-RoyalServerDocument.html
+- uid: Remove-RoyalObject
+  name: Remove-RoyalObject
+  href: scripting/document/Remove-RoyalObject.html
+- uid: Remove-RoyalObjectCustomProperty
+  name: Remove-RoyalObjectCustomProperty
+  href: scripting/document/Remove-RoyalObjectCustomProperty.html
 - uid: royalserver_advanced_management-scripts_pepare
   name: Pepare a Managed Server
   href: royalserver/advanced/management-scripts/pepare-managed-server.html
@@ -8,17 +83,26 @@ references:
   name: What is Royal Server?
   href: royalserver/introduction/index.html
 - uid: royalserver_introduction_configuration
-  name: Configuration of Managed Servers
-  href: royalserver/introduction/configuration-of-managed-servers.html
+  name: Royal Server Configuration
+  href: royalserver/introduction/configuration.html
+- uid: royalserver_licensing
+  name: Licensing
+  href: royalserver/licensing.html
 - uid: royalserver_management_modules
   name: Modules
   href: royalserver/management/modules.html
 - uid: royalserver_management_service-configuration
   name: Service Configuration
   href: royalserver/management/service-configuration.html
+- uid: royalserver_modules
+  name: Royal Server Modules
+  href: royalserver/modules/index.html
 - uid: royalserver_scripting_module-reference
   name: Module References
   href: royalserver/scripting/module-reference/index.html
+- uid: royalserver_what-is-royal-server
+  name: What is Royal Server?
+  href: royalserver/introduction/what-is-royal-server.html
 - uid: royalts_advanced
   name: Import Data
   href: royalts/advanced/index.html
@@ -32,7 +116,7 @@ references:
   name: Default Settings
   href: royalts/advanced/default-settings.html
 - uid: royalts_advanced_export
-  name: Import Data
+  name: Export Data
   href: royalts/advanced/export.html
 - uid: royalts_advanced_import
   name: Import Data
@@ -157,7 +241,7 @@ references:
 - uid: royalts_reference_organization_information
   name: " Information"
   href: royalts/reference/organization/information.html
-- uid: royalts_reference_organization_todo-item
+- uid: royalts_reference_organization_todo
   name: " To-Do Item"
   href: royalts/reference/organization/todo-item.html
 - uid: royalts_reference_rdpgateway
@@ -226,3 +310,135 @@ references:
 - uid: royaltsx_tutorials_more
   name: royaltsx_tutorials_more
   href: royalts/tutorials/more.html
+- uid: scripting_docps
+  name: RoyalDocument PowerShell Module
+  href: scripting/document/index.html
+- uid: scripting_object_connections
+  name: Connections
+  href: scripting/objects/connections/index.html
+- uid: scripting_object_gateways
+  name: Gateways
+  href: scripting/objects/gateways/index.html
+- uid: scripting_object_options
+  name: Options
+  href: scripting/objects/options/index.html
+- uid: scripting_object_organization
+  name: Organization
+  href: scripting/objects/organization/index.html
+- uid: scripting_object_royalappconnection
+  name: RoyalAppConnection
+  href: scripting/objects/connections/royalappconnection.html
+- uid: scripting_object_royalapplicationsetting
+  name: RoyalApplicationSetting
+  href: scripting/objects/options/royalapplicationsetting.html
+- uid: scripting_object_royalcommandtask
+  name: RoyalCommandTask
+  href: scripting/objects/tasks/royalcommandtask.html
+- uid: scripting_object_royalcredential
+  name: RoyalCredential
+  href: scripting/objects/organization/royalcredential.html
+- uid: scripting_object_royaldocument
+  name: RoyalDocument
+  href: scripting/objects/organization/royaldocument.html
+- uid: scripting_object_royaldynamiccredential
+  name: RoyalDynamicCredential
+  href: scripting/objects/organization/royaldynamiccredential.html
+- uid: scripting_object_royaldynamicfolder
+  name: RoyalDynamicFolder
+  href: scripting/objects/organization/royaldynamicfolder.html
+- uid: scripting_object_royalfiletransferconnection
+  name: RoyalFileTransferConnection
+  href: scripting/objects/connections/royalfiletransferconnection.html
+- uid: scripting_object_royalfolder
+  name: RoyalFolder
+  href: scripting/objects/organization/royalfolder.html
+- uid: scripting_object_royalhypervconnection
+  name: RoyalHyperVConnection
+  href: scripting/objects/connections/royalhypervconnection.html
+- uid: scripting_object_royalinformation
+  name: RoyalInformation
+  href: scripting/objects/organization/royalinformation.html
+- uid: scripting_object_royalkeysequencetask
+  name: RoyalKeySequenceTask
+  href: scripting/objects/tasks/royalkeysequencetask.html
+- uid: scripting_object_royalmanagementendpoint
+  name: RoyalManagementEndpoint
+  href: scripting/objects/gateways/royalmanagementendpoint.html
+- uid: scripting_object_royalperformanceconnection
+  name: RoyalPerformanceConnection
+  href: scripting/objects/connections/royalperformanceconnection.html
+- uid: scripting_object_royalpowershellconnection
+  name: RoyalPowerShellConnection
+  href: scripting/objects/connections/royalpowershellconnection.html
+- uid: scripting_object_royalrdsconnection
+  name: RoyalRDSConnection
+  href: scripting/objects/connections/royalrdsconnection.html
+- uid: scripting_object_royalrdsgateway
+  name: RoyalRDSGateway
+  href: scripting/objects/gateways/royalrdsgateway.html
+- uid: scripting_object_royalsecuregateway
+  name: RoyalSecureGateway
+  href: scripting/objects/gateways/royalsecuregateway.html
+- uid: scripting_object_royalsshconnection
+  name: RoyalSSHConnection
+  href: scripting/objects/connections/royalsshconnection.html
+- uid: scripting_object_royalteamviewerconnection
+  name: RoyalTeamViewerConnection
+  href: scripting/objects/connections/royalteamviewerconnection.html
+- uid: scripting_object_royalterminalservicesconnection
+  name: RoyalTerminalServicesConnection
+  href: scripting/objects/connections/royalterminalservicesconnection.html
+- uid: scripting_object_royaltodo
+  name: RoyalToDo
+  href: scripting/objects/organization/royaltodo.html
+- uid: scripting_object_royalvmwareconnection
+  name: RoyalVMwareConnection
+  href: scripting/objects/connections/royalvmwareconnection.html
+- uid: scripting_object_royalvncconnection
+  name: RoyalVNCConnection
+  href: scripting/objects/connections/royalvncconnection.html
+- uid: scripting_object_royalwebconnection
+  name: RoyalWebConnection
+  href: scripting/objects/connections/royalwebconnection.html
+- uid: scripting_object_royalwindowseventsconnection
+  name: RoyalWindowsEventsConnection
+  href: scripting/objects/connections/royalwindowseventsconnection.html
+- uid: scripting_object_royalwindowsprocessesconnection
+  name: RoyalWindowsProcessesConnection
+  href: scripting/objects/connections/royalwindowsprocessesconnection.html
+- uid: scripting_object_royalwindowsservicesconnection
+  name: RoyalWindowsServicesConnection
+  href: scripting/objects/connections/royalwindowsservicesconnection.html
+- uid: scripting_object_tasks
+  name: Tasks
+  href: scripting/objects/tasks/index.html
+- uid: scripting_objects
+  name: Object Properties
+  href: scripting/objects/index.html
+- uid: scripting_rjson
+  name: Introduction
+  href: scripting/rjson/index.html
+- uid: scripting_rjson_available_properties
+  name: RoyalJSONDocument (Root Element)
+  href: scripting/rjson/available-properties/index.html
+- uid: scripting_serverps
+  name: RoyalServer Powershell
+  href: scripting/server/index.html
+- uid: Set-RoyalDocumentPassword
+  name: Set-RoyalDocumentPassword
+  href: scripting/document/Set-RoyalDocumentPassword.html
+- uid: Set-RoyalDocumentType
+  name: Set-RoyalDocumentType
+  href: scripting/document/Set-RoyalDocumentType.html
+- uid: Set-RoyalObjectCustomProperty
+  name: Set-RoyalObjectCustomProperty
+  href: scripting/document/Set-RoyalObjectCustomProperty.html
+- uid: Set-RoyalObjectCustomPropertyPosition
+  name: Set-RoyalObjectCustomPropertyPosition
+  href: scripting/document/Set-RoyalObjectCustomPropertyPosition.html
+- uid: Set-RoyalObjectValue
+  name: Set-RoyalObjectValue
+  href: scripting/document/Set-RoyalObjectValue.html
+- uid: Set-RoyalSortOrder
+  name: Set-RoyalSortOrder
+  href: scripting/document/Set-RoyalSortOrder.html

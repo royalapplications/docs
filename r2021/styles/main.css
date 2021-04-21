@@ -1,34 +1,30 @@
 h1 {
-	font-size: 34px;
-	font-weight: normal;
+  font-size: 34px;
+  font-weight: normal;
 }
 
 h2 {
-	clear: both;
-	font-size: 26px;
-	font-weight: normal;
+  clear: both;
+  font-size: 26px;
+  font-weight: normal;
 }
 
 h3 {
-	font-size: 24px;
-	font-weight: normal;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 h4 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 article h4 {
-	font-weight: normal;
-	font-size: 20px;
-}
-
-.anchorjs-link {
-	opacity: 0.4 !important;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .affix ul ul > li > a:before {
-	content: none;
+  content: none;
 }
 
 img[src*="#img_header"] {
@@ -73,79 +69,54 @@ img.icon-def {
 a.external-link::after {
   color: #337ab7;
   cursor: pointer;
-  position: relative; 
+  position: relative;
   top: 0.15em;
   margin-left: 0.25em;
   content: " ";
   display: inline-block;
   width: 1em;
   height: 1em;
-  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNIDQwLjk2MDkzOCA0Ljk4MDQ2ODggQSAyLjAwMDIgMi4wMDAyIDAgMCAwIDQwLjc0MDIzNCA1IEwgMjggNSBBIDIuMDAwMiAyLjAwMDIgMCAxIDAgMjggOSBMIDM2LjE3MTg3NSA5IEwgMjIuNTg1OTM4IDIyLjU4NTkzOCBBIDIuMDAwMiAyLjAwMDIgMCAxIDAgMjUuNDE0MDYyIDI1LjQxNDA2MiBMIDM5IDExLjgyODEyNSBMIDM5IDIwIEEgMi4wMDAyIDIuMDAwMiAwIDEgMCA0MyAyMCBMIDQzIDcuMjQ2MDkzOCBBIDIuMDAwMiAyLjAwMDIgMCAwIDAgNDAuOTYwOTM4IDQuOTgwNDY4OCB6IE0gMTIuNSA4IEMgOC4zODI2ODc4IDggNSAxMS4zODI2ODggNSAxNS41IEwgNSAzNS41IEMgNSAzOS42MTczMTIgOC4zODI2ODc4IDQzIDEyLjUgNDMgTCAzMi41IDQzIEMgMzYuNjE3MzEyIDQzIDQwIDM5LjYxNzMxMiA0MCAzNS41IEwgNDAgMjYgQSAyLjAwMDIgMi4wMDAyIDAgMSAwIDM2IDI2IEwgMzYgMzUuNSBDIDM2IDM3LjQ0NjY4OCAzNC40NDY2ODggMzkgMzIuNSAzOSBMIDEyLjUgMzkgQyAxMC41NTMzMTIgMzkgOSAzNy40NDY2ODggOSAzNS41IEwgOSAxNS41IEMgOSAxMy41NTMzMTIgMTAuNTUzMzEyIDEyIDEyLjUgMTIgTCAyMiAxMiBBIDIuMDAwMiAyLjAwMDIgMCAxIDAgMjIgOCBMIDEyLjUgOCB6Ij48L3BhdGg+PC9zdmc+') 50% 50% no-repeat;
-  background-size: 100%; 
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNIDQwLjk2MDkzOCA0Ljk4MDQ2ODggQSAyLjAwMDIgMi4wMDAyIDAgMCAwIDQwLjc0MDIzNCA1IEwgMjggNSBBIDIuMDAwMiAyLjAwMDIgMCAxIDAgMjggOSBMIDM2LjE3MTg3NSA5IEwgMjIuNTg1OTM4IDIyLjU4NTkzOCBBIDIuMDAwMiAyLjAwMDIgMCAxIDAgMjUuNDE0MDYyIDI1LjQxNDA2MiBMIDM5IDExLjgyODEyNSBMIDM5IDIwIEEgMi4wMDAyIDIuMDAwMiAwIDEgMCA0MyAyMCBMIDQzIDcuMjQ2MDkzOCBBIDIuMDAwMiAyLjAwMDIgMCAwIDAgNDAuOTYwOTM4IDQuOTgwNDY4OCB6IE0gMTIuNSA4IEMgOC4zODI2ODc4IDggNSAxMS4zODI2ODggNSAxNS41IEwgNSAzNS41IEMgNSAzOS42MTczMTIgOC4zODI2ODc4IDQzIDEyLjUgNDMgTCAzMi41IDQzIEMgMzYuNjE3MzEyIDQzIDQwIDM5LjYxNzMxMiA0MCAzNS41IEwgNDAgMjYgQSAyLjAwMDIgMi4wMDAyIDAgMSAwIDM2IDI2IEwgMzYgMzUuNSBDIDM2IDM3LjQ0NjY4OCAzNC40NDY2ODggMzkgMzIuNSAzOSBMIDEyLjUgMzkgQyAxMC41NTMzMTIgMzkgOSAzNy40NDY2ODggOSAzNS41IEwgOSAxNS41IEMgOSAxMy41NTMzMTIgMTAuNTUzMzEyIDEyIDEyLjUgMTIgTCAyMiAxMiBBIDIuMDAwMiAyLjAwMDIgMCAxIDAgMjIgOCBMIDEyLjUgOCB6Ij48L3BhdGg+PC9zdmc+")
+    50% 50% no-repeat;
+  background-size: 100%;
 }
 
 .navbar-inverse .navbar-brand {
-	padding-top: 9px;
+  padding-top: 9px;
 }
 
 .navbar-inverse .navbar-brand svg {
-	height: 34px;
-}
-
-button, a {
-  color: #eb9526;
-}
-
-button:hover, button:focus, a:hover, a:focus {
-	color: #c27a1c;
+  height: 34px;
 }
 
 blockquote {
-	border-left-color: #3bacd6;
-}
-
-.toc .nav > li.active > a {
-  color: #eb9526;
-}
-
-.toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus {
-	color: #eb9526;
+  border-left-color: #3bacd6;
 }
 
 .toc .level1 > li {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .toc ul {
-	font-size: 13px;
+  font-size: 13px;
 }
 
 .expand-stub {
-	color: #666666;
-}
-
-.affix ul > li.active > a, .affix ul > li.active > a:before {
-  color: #eb9526;
-}
-
-.tabGroup a[role="tab"]:hover, .tabGroup a[role="tab"]:focus {
-  color: #eb9526;
+  color: #666666;
 }
 
 .tabGroup a[role="tab"]:focus {
   outline: none;
 }
 
-.tabGroup a[role="tab"]:hover, .tabGroup a[role="tab"]:focus, .tabGroup a[role="tab"][aria-selected="true"] {
-  border-bottom-color: #eb9526;
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
   background-color: inherit;
 }
 
 .navbar {
-	border: none;
+  border: none;
 }
 
 .navbar-inverse {
@@ -153,38 +124,196 @@ blockquote {
 }
 
 .subnav {
-	background-color: #2f2f2f;
+  background-color: #2f2f2f;
 }
 
 .breadcrumb a {
-	color: #9d9d9d;
+  color: #9d9d9d;
 }
 
-.breadcrumb a:hover, .breadcrumb a:focus {
-	color: #ffffff;
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+  color: #ffffff;
 }
 
 .sidetoc.shiftup {
-	bottom: 0;
+  bottom: 0;
 }
 
 .grad-bottom {
-	display: none;
+  display: none;
 }
 
 .footer .container span strong {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .footer .container {
-	padding-left: 30px;
-	padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .footer {
-	font-size: 12px;
-	color: #9d9d9d;
-	background-color: transparent;
-	border-top: none;
-	padding: 10px 0px;
+  /* Disable the footer, I don't think we really need it */
+  display: none !important;
+  opacity: 0 !important;
+
+  font-size: 12px;
+  color: #9d9d9d;
+  background-color: transparent;
+  border-top: none;
+  padding: 10px 0px;
+}
+
+code {
+  tab-size: 4;
+}
+
+/* for block of numbers */
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: right;
+  white-space: nowrap;
+  color: #ccc;
+  vertical-align: top !important;
+}
+
+td.hljs-ln-line.hljs-ln-numbers {
+  padding-right: 8px;
+}
+
+/* ROYAL APPS CUSTOMIZATIONS */
+
+/* Default + Royal TS */
+
+#wrapper .article button,
+#wrapper .article a {
+  color: #eb9526;
+} 
+
+#wrapper .article button:hover,
+#wrapper .article button:focus,
+#wrapper .article a:hover,
+#wrapper .article a:focus {
+  color: #c27a1c;
+}
+
+#wrapper .toc .nav > li.active > a,
+#wrapper .toc .nav > li.active > a:hover,
+#wrapper .toc .nav > li.active > a:focus {
+  color: #eb9526;
+}
+
+#wrapper .affix ul > li.active > a,
+#wrapper .affix ul > li.active > a:before {
+  color: #eb9526;
+}
+
+#wrapper .tabGroup a[role="tab"]:hover,
+#wrapper .tabGroup a[role="tab"]:focus,
+#wrapper .tabGroup a[role="tab"][aria-selected="true"] {
+  border-bottom-color: #eb9526;
+}
+
+/* Royal Server */
+
+#wrapper.ra-royalserver .article button,
+#wrapper.ra-royalserver .article a {
+  color: #ed1a57;
+} 
+
+#wrapper.ra-royalserver .article button:hover,
+#wrapper.ra-royalserver .article button:focus,
+#wrapper.ra-royalserver .article a:hover,
+#wrapper.ra-royalserver .article a:focus {
+  color: #C51A4B;
+}
+
+#wrapper.ra-royalserver .toc .nav > li.active > a,
+#wrapper.ra-royalserver .toc .nav > li.active > a:hover,
+#wrapper.ra-royalserver .toc .nav > li.active > a:focus {
+  color: #ed1a57;
+}
+
+#wrapper.ra-royalserver .affix ul > li.active > a,
+#wrapper.ra-royalserver .affix ul > li.active > a:before {
+  color: #ed1a57;
+}
+
+#wrapper.ra-royalserver .tabGroup a[role="tab"]:hover,
+#wrapper.ra-royalserver .tabGroup a[role="tab"]:focus,
+#wrapper.ra-royalserver .tabGroup a[role="tab"][aria-selected="true"] {
+  border-bottom-color: #ed1a57;
+}
+
+/* Scripting */
+
+#wrapper.ra-scripting .article button,
+#wrapper.ra-scripting .article a {
+  color: #76a033;
+} 
+
+#wrapper.ra-scripting .article button:hover,
+#wrapper.ra-scripting .article button:focus,
+#wrapper.ra-scripting .article a:hover,
+#wrapper.ra-scripting .article a:focus {
+  color: #557425;
+}
+
+#wrapper.ra-scripting .toc .nav > li.active > a,
+#wrapper.ra-scripting .toc .nav > li.active > a:hover,
+#wrapper.ra-scripting .toc .nav > li.active > a:focus {
+  color: #76a033;
+}
+
+#wrapper.ra-scripting .affix ul > li.active > a,
+#wrapper.ra-scripting .affix ul > li.active > a:before {
+  color: #76a033;
+}
+
+#wrapper.ra-scripting .tabGroup a[role="tab"]:hover,
+#wrapper.ra-scripting .tabGroup a[role="tab"]:focus,
+#wrapper.ra-scripting .tabGroup a[role="tab"][aria-selected="true"] {
+  border-bottom-color: #76a033;
+}
+
+/* HACKS */
+
+/* fix side nav scrolling behavior */
+nav#affix {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+nav#affix::-webkit-scrollbar {
+  display: none;
+}
+
+article h2#properties {
+  /* Not sure why the F docfx assigns styles to global IDs, anyway, we reset them here */
+  font-weight: normal;
+  margin-top: 25px;
+}
+
+.sideaffix {
+  /* band-aid for very long table of contents (in this article) */
+  /* Disabled for now because it makes scrollbars appear on OS's that always show scrollbars, not only when scrolling */
+  /* overflow-y: auto; */
+}
+
+@media only screen and (max-width: 768px) {
+  /* .toc li:last-child:after {
+    content: "AAA";
+  } */
+
+  .toc li:after {
+    content: "\00a0";
+  }
 }

@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Invoke-RoyalServerCommand </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Invoke-RoyalServerCommand ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-scripting">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Invoke-RoyalServerCommand">
+<h1 id="invoke-royalservercommand">Invoke-RoyalServerCommand</h1>
+
+<h2 id="synopsis">SYNOPSIS</h2>
+<p>Executes a Royal Server command.</p>
+<h2 id="syntax">SYNTAX</h2>
+<pre><code>Invoke-RoyalServerCommand [-ModuleID] &lt;ModuleNames&gt; [-Command] &lt;String&gt; [[-Arguments] &lt;Hashtable&gt;]
+ [-RoyalServerConfig] &lt;RoyalServerConfig&gt; [-DestinationHost] &lt;String&gt; [[-Credential] &lt;PSCredential&gt;]
+ [[-DestinationUsername] &lt;String&gt;] [[-DestinationPassword] &lt;SecureString&gt;] [[-MaxRecords] &lt;Int32&gt;]
+ [[-Offset] &lt;Int32&gt;] [[-Timeout] &lt;Int32&gt;] [-WhatIf] [-Confirm] [&lt;CommonParameters&gt;]
+</code></pre>
+<h2 id="description">DESCRIPTION</h2>
+<p>The Invoke-RoyalServerCommand cmdlet invokes a command at Royal Server.</p>
+<h2 id="examples">EXAMPLES</h2>
+<h3 id="example-1">EXAMPLE 1</h3>
+<pre><code>$config = New-RoyalServerConfig -Host &quot;localhost&quot; -Port &quot;54899&quot; -Credential $cred
+</code></pre>
+<p>$cred is a PSCredential.</p>
+<h2 id="parameters">PARAMETERS</h2>
+<h3 id="-moduleid">-ModuleID</h3>
+<p>The Module that is executing the command of Royal Server.</p>
+<p>Possible values: EventLog, HyperV, Processes, TerminalServices, WindowsServices, Script, RoyalDocumentStore, RoyalServerManagement</p>
+<pre><code class="lang-yaml">Type: ModuleNames
+Parameter Sets: (All)
+Aliases:
+Accepted values: EventLog, HyperV, Processes, TerminalServices, WindowsServices, Script, RoyalDocumentStore, RoyalServerManagement
+
+Required: True
+Position: 1
+Default value: EventLog
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-command">-Command</h3>
+<p>The Command that is executed by the Module of Royal Server</p>
+<pre><code class="lang-yaml">Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-arguments">-Arguments</h3>
+<p>The list of arguments for the Command.</p>
+<pre><code class="lang-yaml">Type: Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 3
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-royalserverconfig">-RoyalServerConfig</h3>
+<p>The configuration needed to talk to Royal Server.
+Use New-RoyalServerConfig to specify this.</p>
+<pre><code class="lang-yaml">Type: RoyalServerConfig
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 4
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-destinationhost">-DestinationHost</h3>
+<p>The destination hostname or IP against which the command is issued by Royal Server</p>
+<pre><code class="lang-yaml">Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 5
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-credential">-Credential</h3>
+<p>The credentials used for authenticating with Royal Server.</p>
+<pre><code class="lang-yaml">Type: PSCredential
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 6
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-destinationusername">-DestinationUsername</h3>
+<p>The destination host username</p>
+<pre><code class="lang-yaml">Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 7
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-destinationpassword">-DestinationPassword</h3>
+<p>The destination host password (as a Secure String)</p>
+<pre><code class="lang-yaml">Type: SecureString
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 8
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-maxrecords">-MaxRecords</h3>
+<p>Specifies the maximum number of records Royal Server returns.</p>
+<pre><code class="lang-yaml">Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 9
+Default value: 0
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-offset">-Offset</h3>
+<p>Specifies the offset of records Royal Server is returning (can be used in combination with MaxRecords for implementing paging)</p>
+<pre><code class="lang-yaml">Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 10
+Default value: 0
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-timeout">-Timeout</h3>
+<p>Specifies the Timeout for the Royal Server command (in milliseconds)</p>
+<pre><code class="lang-yaml">Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 11
+Default value: 0
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-confirm">-Confirm</h3>
+<p>Prompts you for confirmation before running the cmdlet.</p>
+<pre><code class="lang-yaml">Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-whatif">-WhatIf</h3>
+<p>Shows what would happen if the cmdlet runs.
+The cmdlet is not run.</p>
+<pre><code class="lang-yaml">Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
+<h3 id="commonparameters">CommonParameters</h3>
+<p>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkID=113216">about_CommonParameters</a>.</p>
+<h2 id="inputs">INPUTS</h2>
+<h3 id="royalserverpowershellmodulenames">RoyalServer.Powershell.ModuleNames</h3>
+<p>The Module that is executing the command of Royal Server.</p>
+<h3 id="systemstring">System.String</h3>
+<p>The Command that is executed by the Module of Royal Server</p>
+<h3 id="systemcollectionshashtable">System.Collections.Hashtable</h3>
+<p>The list of arguments for the Command.</p>
+<h3 id="royalserverpowershellroyalserverconfig">RoyalServer.Powershell.RoyalServerConfig</h3>
+<p>The configuration needed to talk to Royal Server.
+Use New-RoyalServerConfig to specify this.</p>
+<h3 id="systemstring-1">System.String</h3>
+<p>The destination hostname or IP against which the command is issued by Royal Server</p>
+<h3 id="systemmanagementautomationpscredential">System.Management.Automation.PSCredential</h3>
+<p>The credentials used for authenticating with Royal Server.</p>
+<h3 id="systemint32">System.Int32</h3>
+<p>Specifies the maximum number of records Royal Server returns.</p>
+<h3 id="systemint32-1">System.Int32</h3>
+<p>Specifies the offset of records Royal Server is returning (can be used in combination with MaxRecords for implementing paging)</p>
+<h3 id="systemint32-2">System.Int32</h3>
+<p>Specifies the Timeout for the Royal Server command (in milliseconds)</p>
+<h2 id="outputs">OUTPUTS</h2>
+<h2 id="notes">NOTES</h2>
+<h2 id="related-links">RELATED LINKS</h2>
+<p><a href="Invoke-RoyalServerCommand.html">Invoke-RoyalServerCommand</a></p>
+<p><a href="New-RoyalServerConfig.html">New-RoyalServerconfig</a></p>
+<p><a href="Get-RoyalServerModule.html">Get-RoyalServerModule</a></p>
+<p><a href="Get-RoyalServerModuleCommandParameter.html">Get-RoyalServerModuleCommandParameter</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2021/scripting/server/Invoke-RoyalServerCommand.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

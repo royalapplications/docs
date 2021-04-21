@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RoyalDocument </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="RoyalDocument ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-scripting">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="scripting_object_royaldocument">
+<h1 id="royaldocument">RoyalDocument</h1>
+
+<h2 id="general">General</h2>
+<h3 id="saveoption">SaveOption</h3>
+<p>Type: <code>RoyalSaveOption</code>, Default Value: <code>0</code><br>
+1 = Overwrite<br>
+2 = Merge</p>
+<h3 id="name">Name</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The display name of the object.</p>
+<h3 id="description">Description</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The description text of the object.</p>
+<h3 id="favorite">Favorite</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether or not the object is a favorite.</p>
+<h3 id="colorfromparent">ColorFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Color value from the parent folder.</p>
+<h3 id="color">Color</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a custom color as hex string to the object (#FF0000 for red). Empty string is the default color value (no custom color assigned).</p>
+<h3 id="colorname">ColorName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a color from a color palette to the object. If both, a color name and a custom color (hex string) are provided, the color name is preferred.</p>
+<h3 id="autosaveonclose">AutoSaveOnClose</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the document is automatically saved when it's closed.</p>
+<h3 id="autosaveafterchange">AutoSaveAfterChange</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the document is automatically saved after it has been changed.</p>
+<h3 id="storefolderexpandstateinuserconfig">StoreFolderExpandStateInUserConfig</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the folder expand state will be stored in the user configuration.</p>
+<h3 id="storefavoritesinuserconfig">StoreFavoritesInUserConfig</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, favorites will be stored in the user configuration.</p>
+<h3 id="deletedobjectretention">DeletedObjectRetention</h3>
+<p>Type: <code>int</code>, Default Value: <code>30</code><br>
+Deleted object retention time (in days).</p>
+<h3 id="id">ID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The unique object identifier (GUID) of the object.</p>
+<h3 id="externalid">ExternalID</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The external unique object identifier (GUID) of the object.</p>
+<h2 id="credentials">Credentials</h2>
+<h3 id="credentialautologon">CredentialAutologon</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Whether or not to automatically logon to the connection. Connections which do not support automatic logon will ignore this setting.</p>
+<h3 id="credentialfromparent">CredentialFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Credential values from the parent folder.</p>
+<h3 id="credentialid">CredentialId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a credential object to this object by specifying the credential object's GUID.</p>
+<h3 id="credentialkeycontent">CredentialKeyContent</h3>
+<p>Type: <code>byte[]</code>, Default Value: <code>new byte[] { }</code><br>
+Assign a key file to the object by embedding the key file's content.</p>
+<h3 id="credentialkeyfile">CredentialKeyFile</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a key file to the object by specifying the key file's full path.</p>
+<h3 id="credentialkeymode">CredentialKeyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Path to file<br>
+1 = Embedded</p>
+<h3 id="credentialmode">CredentialMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Do not use any credentials<br>
+1 = Use credentials from the parent folder<br>
+2 = Specify username and password<br>
+3 = Use an existing credential<br>
+4 = Specify a credential name<br>
+5 = Use credential from context connection (only for Connection Templates)</p>
+<h3 id="credentialname">CredentialName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a credential object to this object by specifying the credential object's name.</p>
+<h3 id="credentialpassphrase">CredentialPassphrase</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a key file passphrase to the object.</p>
+<h3 id="credentialpassword">CredentialPassword</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a password to the object.</p>
+<h3 id="credentialusername">CredentialUsername</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a username to the object.</p>
+<h2 id="key-sequence">Key Sequence</h2>
+<h3 id="keysequence">KeySequence</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The key sequence to be executed after the connection was successfully established.</p>
+<h3 id="keysequenceenabled">KeySequenceEnabled</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the configured key sequence will be executed after the connection was successfully established.</p>
+<h3 id="keysequencefromparent">KeySequenceFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Key Sequence values from the parent folder.</p>
+<h3 id="keysequenceid">KeySequenceId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a key sequence task object to this connection by specifying the task object's GUID.</p>
+<h3 id="keysequencemode">KeySequenceMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Specify a key sequence<br>
+1 = An existing key sequence task is assigned using the task's GUID<br>
+2 = Specify a key sequence task by name<br>
+3 = Use key sequence from parent.</p>
+<h3 id="keysequencename">KeySequenceName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a key sequence task object to this object by specifying the key sequence task object's name.</p>
+<h2 id="connect-task">Connect Task</h2>
+<h3 id="preconnecttaskfromparent">PreConnectTaskFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Connect Task values from the parent folder.</p>
+<h3 id="preconnecttaskmode">PreConnectTaskMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Use connect task from parent folder<br>
+1 = Use an existing task<br>
+2 = Specify a task name.</p>
+<h3 id="preconnecttaskname">PreConnectTaskName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a task object to this object as connect task by specifying the task object's name.</p>
+<h3 id="preconnecttaskid">PreConnectTaskId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a task object to this object as connect task by specifying the task object's GUID.</p>
+<h3 id="preconnecttaskwait">PreConnectTaskWait</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the connection will be started after the task finished.</p>
+<h3 id="preconnecttaskconditionfirst">PreConnectTaskConditionFirst</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the task will only be executed if it is the first connection in a folder to be connected.</p>
+<h3 id="preconnecttaskconditionabort">PreConnectTaskConditionAbort</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the connection will be closed when the task fails (exit code &lt;&gt; 0).</p>
+<h2 id="disconnect-task">Disconnect Task</h2>
+<h3 id="postdisconnecttaskfromparent">PostDisconnectTaskFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Disconnect Task values from the parent folder.</p>
+<h3 id="postdisconnecttaskmode">PostDisconnectTaskMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Use disconnect task from parent folder<br>
+1 = Use an existing task<br>
+2 = Specify a task name.</p>
+<h3 id="postdisconnecttaskname">PostDisconnectTaskName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a task object to this object as disconnect task by specifying the task object's name.</p>
+<h3 id="postdisconnecttaskid">PostDisconnectTaskId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a task object to this object as disconnect task by specifying the task object's GUID.</p>
+<h3 id="postdisconnecttaskwait">PostDisconnectTaskWait</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the connection will be closed after the task finished.</p>
+<h3 id="postdisconnecttaskconditionlast">PostDisconnectTaskConditionLast</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the task will only be executed if it is the last active connection in a folder.</p>
+<h2 id="royal-server">Royal Server</h2>
+<h3 id="managementendpointfromparent">ManagementEndpointFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Royal Server values from the parent folder.</p>
+<h3 id="managementendpointid">ManagementEndpointID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a Royal Server object to this object by specifying the Royal Server object's GUID.</p>
+<h3 id="managementendpointname">ManagementEndpointName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a Royal Server object to this object by specifying the Royal Server object's name.</p>
+<h2 id="secure-gateway">Secure Gateway</h2>
+<h3 id="securegatewayfromparent">SecureGatewayFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Secure Gateway values from the parent folder.</p>
+<h3 id="securegatewayusagemode">SecureGatewayUsageMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Never<br>
+1 = Always<br>
+2 = On Demand</p>
+<h3 id="securegatewayid">SecureGatewayID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a Secure Gateway or Royal Server object to this object by specifying the Secure Gateway or Royal Server object's GUID.</p>
+<h3 id="securegatewayname">SecureGatewayName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a Secure Gateway or Royal Server object to this object by specifying the secure gateway or Royal Server object's name.</p>
+<h2 id="remote-desktop-gateway">Remote Desktop Gateway</h2>
+<h3 id="rdsgatewayfromparent">RDSGatewayFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Remote Desktop Gateway values from the parent folder.</p>
+<h3 id="rdsgatewayusagemode">RDSGatewayUsageMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Never<br>
+1 = Always<br>
+2 = On Demand</p>
+<h3 id="rdsgatewayid">RDSGatewayID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a Remote Desktop Gateway object to this object by specifying the Remote Desktop Gateway object's GUID.</p>
+<h3 id="rdsgatewayname">RDSGatewayName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a Remote Desktop Gateway object to this object by specifying the Remote Desktop Gateway object's name.</p>
+<h2 id="custom-fields">Custom Fields</h2>
+<h3 id="customfield1fromparent">CustomField1FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField1 value from the parent folder.</p>
+<h3 id="customfield2fromparent">CustomField2FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField2 value from the parent folder.</p>
+<h3 id="customfield3fromparent">CustomField3FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField3 value from the parent folder.</p>
+<h3 id="customfield4fromparent">CustomField4FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField4 value from the parent folder.</p>
+<h3 id="customfield5fromparent">CustomField5FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField5 value from the parent folder.</p>
+<h3 id="customfield6fromparent">CustomField6FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField6 value from the parent folder.</p>
+<h3 id="customfield7fromparent">CustomField7FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField7 value from the parent folder.</p>
+<h3 id="customfield8fromparent">CustomField8FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField8 value from the parent folder.</p>
+<h3 id="customfield9fromparent">CustomField9FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField9 value from the parent folder.</p>
+<h3 id="customfield10fromparent">CustomField10FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField10 value from the parent folder.</p>
+<h3 id="customfield11fromparent">CustomField11FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField11 value from the parent folder.</p>
+<h3 id="customfield12fromparent">CustomField12FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField12 value from the parent folder.</p>
+<h3 id="customfield13fromparent">CustomField13FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField13 value from the parent folder.</p>
+<h3 id="customfield14fromparent">CustomField14FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField14 value from the parent folder.</p>
+<h3 id="customfield15fromparent">CustomField15FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField15 value from the parent folder.</p>
+<h3 id="customfield16fromparent">CustomField16FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField16 value from the parent folder.</p>
+<h3 id="customfield17fromparent">CustomField17FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField17 value from the parent folder.</p>
+<h3 id="customfield18fromparent">CustomField18FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField18 value from the parent folder.</p>
+<h3 id="customfield19fromparent">CustomField19FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField19 value from the parent folder.</p>
+<h3 id="customfield20fromparent">CustomField20FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField20 value from the parent folder.</p>
+<h3 id="customfield1">CustomField1</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield2">CustomField2</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield3">CustomField3</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield4">CustomField4</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield5">CustomField5</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield6">CustomField6</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield7">CustomField7</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield8">CustomField8</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield9">CustomField9</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield10">CustomField10</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield11">CustomField11</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield12">CustomField12</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield13">CustomField13</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield14">CustomField14</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield15">CustomField15</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield16">CustomField16</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield17">CustomField17</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield18">CustomField18</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield19">CustomField19</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield20">CustomField20</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h2 id="custom-properties">Custom Properties</h2>
+<h3 id="custompropertiesfromparent">CustomPropertiesFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Custom Properties from the parent folder.</p>
+<h3 id="customproperties">CustomProperties</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom properties allow you to collect additional information for an object.</p>
+<h2 id="notes">Notes</h2>
+<h3 id="notesfromparent">NotesFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Notes value from the parent folder.</p>
+<h2 id="changes">Changes</h2>
+<h3 id="created">Created</h3>
+<p>Type: <code>DateTime</code>, Default Value: <code>DateTime.Now</code><br>
+The date and time the object was created.</p>
+<h3 id="createdby">CreatedBy</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The user who initially created the object.</p>
+<h3 id="modified">Modified</h3>
+<p>Type: <code>DateTime</code>, Default Value: <code>DateTime.Now</code><br>
+The last date and time the object was modified.</p>
+<h3 id="modifiedby">ModifiedBy</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The user who last modified the object.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2021/scripting/objects/organization/royaldocument.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

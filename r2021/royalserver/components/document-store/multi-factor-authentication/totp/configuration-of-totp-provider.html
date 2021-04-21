@@ -8,7 +8,7 @@
     <title>Configuration of TOTP Provider </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Configuration of TOTP Provider ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../../../favicon.ico">
     <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
@@ -21,7 +21,7 @@
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
+    <div id="wrapper" class="ra-royalserver">
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
@@ -79,10 +79,11 @@
 <li>Provide meaningful names for Issuer and Label (these are displayed in the Authenticator Apps later).</li>
 </ul>
 <p>When done, you are presented with a Secret that you can copy and provide to the user and a QR Code that can be scanned by the Authenticator app directly. At a later time, you can click on <strong>Show Secret...</strong> for TOTP enrolled users as well.</p>
-<blockquote>
-<p><strong>Attention - TOTP time sensitivity</strong><br>
-The machine where Royal Server is installed and also the client machine where Royal TS/X is running need to have the correct time  in order to make TOTP work (use Time Services to ensure this).</p>
-</blockquote>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><strong>TOTP time sensitivity</strong><br>
+The machine where Royal Server is installed and the client machine where Royal TS/X is running need to have the correct time in order to make TOTP work. Use Time Services to ensure this.</p>
+</div>
 </article>
           </div>
           
@@ -96,7 +97,8 @@ The machine where Royal Server is installed and also the client machine where Ro
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -119,6 +121,7 @@ The machine where Royal Server is installed and also the client machine where Ro
     
     <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/ra.vendor.js"></script>
     <script type="text/javascript" src="../../../../../styles/main.js"></script>
   </body>
 </html>

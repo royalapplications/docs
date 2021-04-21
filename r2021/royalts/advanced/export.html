@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Import Data </title>
+    <title>Export Data </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Import Data ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="title" content="Export Data ">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -21,7 +21,7 @@
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
+    <div id="wrapper" class="ra-royalts">
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
@@ -67,9 +67,44 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="royalts_advanced_export">
-<h1 id="import-data"><img src="/r2021/images/RoyalTS/Application/SVG_FileImport_32.svg#img_header" alt="">Import Data</h1>
+<h1 id="export-data"><img src="/r2021/images/RoyalTS/Application/SVG_FileExport_32.svg#img_header" alt="">Export Data</h1>
 
-<p>To import the content of a different file format the following examples will only work if you created a new document or opened an existing one.</p>
+<h2 id="export-to-csv-file"><img src="/r2021/images/RoyalTS/Application/SVG_FileIconTXT_32.svg#img_header" alt="">Export to CSV File</h2>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a document or folder.</li>
+<li>On the <strong>Data</strong> tab, in the Export group, click on <strong>Comma Separated File (.csv)</strong>.</li>
+<li>Type a destination file name into the Save as text box.</li>
+<li>Choose which <strong>Object Type</strong> to export.</li>
+<li>Specify which <strong>Delimiter</strong> to use.</li>
+<li>The <strong>Include Subfolders</strong> check box allows you to control whether or not to export objects from subfolders.</li>
+<li>The <strong>Export Headers</strong> check box allows you to control whether or not the first line in the .csv file has the header information (column names).</li>
+<li>The <strong>Include Passwords</strong> check box also allows you to export passwords and encrypted custom fields. If your document is password protected you will be prompted to enter the password to continue.</li>
+<li>To start the export, click on <strong>OK</strong>.</li>
+</ol>
+<h2 id="export-dynamic-folder"><img src="/r2021/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header" alt="">Export Dynamic Folder</h2>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a dynamic folder.</li>
+<li>On the <strong>Data</strong> tab, in the <strong>Export</strong> group, click on <strong>Dynamic Folder (.rdfe)</strong>.</li>
+<li>Type a destination file name into the <strong>Save as</strong> text box.</li>
+<li>The <strong>Export Description</strong> check box allows you to control whether or not to export the description of the dynamic folder.</li>
+<li>The <strong>Export Notes</strong> check box allows you to control whether or not to export the notes of the dynamic folder.</li>
+<li>The <strong>Export Custom Properties</strong> check box also allows you to control whether or not to export the custom properties of the dynamic folder.</li>
+<li>The <strong>Anonymize Custom Properties</strong> check box also allows you to control whether or not to remove sensitive information from the custom properties.</li>
+<li>To start the export, click on <strong>OK</strong>.</li>
+</ol>
+<h2 id="export-log-entries"><img src="/r2021/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header" alt="">Export Log Entries</h2>
+<p>Royal TS keeps an internal log which tracks user activity and errors. Exporting the log entries can be useful for troubleshooting issues or for processing user activity to create time sheets or reports.</p>
+<ol>
+<li>On the <strong>View</strong> tab, in the <strong>Panels</strong> group, click on <strong>Log</strong>.</li>
+<li>Click the <strong>Save</strong> button in the Log panel toolbar.</li>
+<li>Choose a file format.</li>
+<li>Type a file name and click <strong>Save</strong>.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can also copy the content of multiple log entries to the clipboard using the Copy to Clipboard toolbar button.</p>
+</div>
+<p>See also: <a class="xref" href="../user-interface/panels.html#-log">Log Panel</a></p>
 </article>
           </div>
           
@@ -83,7 +118,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -106,6 +142,7 @@
     
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@
     <title>Logging </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Logging ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -21,7 +21,7 @@
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
+    <div id="wrapper" class="ra-royalserver">
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
@@ -92,17 +92,68 @@
 <p>Royal Server is writing the logs in a specified file.</p>
 <p>Using <strong>Open log...</strong> is opening the currently specified log.</p>
 <h3 id="log-directory">Log Directory</h3>
-<p>Specifies the directory where the log files should be written to (if Type <em>File</em> is selected). You can also use variables like <code>%TEMP%</code>.</p>
+<p>Specifies the directory where the log files should be written to (if Type <em>File</em> is selected), by default this is <code>%ProgramData%\RoyalServer\Logs</code>. You can also use variables like <code>%TEMP%</code>.</p>
 <h3 id="log-file">Log File</h3>
-<p>Specifies the log file name (if Type <em>File</em> is selected). Please note, that Royal Server is using a rolling mechanism per day to prevent writing in one huge file.</p>
+<p>Specifies the log file name (if Type <em>File</em> is selected).</p>
+<p>Up to <code>Royal Server V3</code>, the rolling mechanism changes the file once per day to limit the file size.</p>
 <p><strong>Example:</strong></p>
-<p>You set the Log File to &quot;logserverlog.txt&quot;, you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a File Name like <em>logserverlog<yyyymmdd>.txt</yyyymmdd></em>, e.g. logserverlog20140709.txt. The file logserverlog.txt always contains the current day.</p>
+<p>If you set the Log File to &quot;logserverlog.txt&quot;, you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a file name formatted like <em>logserverlog<yyyymmdd>.txt</yyyymmdd></em>, e.g. logserverlog20210101.txt. The file logserverlog.txt always contains the current day.</p>
+<p>As of <code>Royal Server V4</code>, the file log provider uses a rolling interval and appends the time period between file name and file extension. The rolling interval is set to a <code>Day</code> (3) by default. Furthermore, the log file is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.</p>
+<p><strong>Example:</strong></p>
+<p>If you set the Log File to &quot;logserverlog*.txt&quot;, you will find a file with the name formatted like logserverlog*[yyyyMMdd].txt in the specified directory, e.g. logserverlog_20210101.txt. On the next day, a new log file will be created, e.g. logserverlog_20210102.txt.</p>
+<p>If you want to configure a different interval, change the value for <code>FileLogRollingInterval</code> in<code> %ProgramData%\RoyalServer\appsettings.json</code>.</p>
+<p>Allowed values:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infinite</td>
+<td style="text-align: center;">0</td>
+<td>The log file will never roll. Appends no time period information.</td>
+</tr>
+<tr>
+<td>Year</td>
+<td style="text-align: center;">1</td>
+<td>Roll every year. Appends <code>yyyy</code>.</td>
+</tr>
+<tr>
+<td>Month</td>
+<td style="text-align: center;">2</td>
+<td>Roll every calendar month. Appends <code>yyyyMM</code>.</td>
+</tr>
+<tr>
+<td>Day</td>
+<td style="text-align: center;">3</td>
+<td>Roll every day. Appends <code>yyyyMMdd</code>.</td>
+</tr>
+<tr>
+<td>Hour</td>
+<td style="text-align: center;">4</td>
+<td>Roll every hour. Appends <code>yyyyMMddHH</code>.</td>
+</tr>
+<tr>
+<td>Minute</td>
+<td style="text-align: center;">5</td>
+<td>Roll every minute. Appends <code>yyyyMMddHHmm</code>.</td>
+</tr>
+</tbody>
+</table>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Any change in this panel requires a restart of Royal Server.</p>
 </div>
 <p><strong>Request/Response Logging</strong></p>
-<p>If checked, the complete requests and responses will be logged in separate files. The destination directory can be specified. This type of logging is only supported to files. <strong>ATTENTION:</strong> Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.</p>
+<p>If checked, the complete requests and responses will be logged in separate files. The destination directory can be specified. This type of logging is only supported to files.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.</p>
+</div>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Be aware that for each request, two log files will be generated. One <em><guid>_request.xml</guid></em> file and one <em><guid>_response.xml</guid></em> file.</p>
@@ -124,7 +175,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -147,6 +199,7 @@
     
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

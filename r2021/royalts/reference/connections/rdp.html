@@ -8,7 +8,7 @@
     <title> Remote Desktop </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" Remote Desktop ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -21,7 +21,7 @@
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
+    <div id="wrapper" class="ra-royalts">
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
@@ -116,7 +116,7 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <p>If checked, Royal TS will invoke smart reconnect on all sessions as soon as it is invoked on one. Disable this setting in case you experience issues with smart reconnect.</p>
 <h4 id="close-tab-when-user-logs-off-reboots-or-disconnects">Close tab when user logs off, reboots or disconnects</h4>
 <p>If checked, Royal TS will also close tabs when a log off, reboot or disconnect from within the session is initiated.<br>
-This setting is only effective when <strong>Keep tabs open when disconnected remotely</strong> in the <a class="xref" href="../options.html#-userinterface">User Interface</a> option is checked.</p>
+This setting is only effective when <strong>Keep tabs open when disconnected remotely</strong> in the <a class="xref" href="../options.html#-user-interface">User Interface</a> option is checked.</p>
 <h4 id="auto-reconnect-on-disconnected-tab">Auto Reconnect on Disconnected Tab</h4>
 <p>If checked, the automatic reconnect feature will be enabled when the disconnected tab is shown.</p>
 <h4 id="always-reconnect">Always Reconnect</h4>
@@ -436,6 +436,8 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <h5>Note</h5>
 <p>NLA is enabled by default on Vista/Windows 2008 or later.</p>
 </div>
+<h4 id="use-credential-manager">Use Credential Manager</h4>
+<p>When checked, Royal TS will create a credential entry in the Windows Credential Manager instead of submitting the credentials to the server.</p>
 <h4 id="restricted-admin-mode">Restricted Admin Mode</h4>
 <p>In this mode, credentials won't be sent to the remote server, which can protect you if you connect to a remote server that has been compromised. However, connections made from the remote server might not be authenticated by other servers, which might impact app functionality and compatibility.</p>
 <div class="NOTE">
@@ -676,7 +678,8 @@ Audio is disabled on the remote computer.</li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -699,6 +702,7 @@ Audio is disabled on the remote computer.</li>
     
     <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
     <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
