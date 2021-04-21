@@ -256,31 +256,31 @@ td.hljs-ln-line.hljs-ln-numbers {
 
 #wrapper.ra-scripting .article button,
 #wrapper.ra-scripting .article a {
-  color: #95c941;
+  color: #76a033;
 } 
 
 #wrapper.ra-scripting .article button:hover,
 #wrapper.ra-scripting .article button:focus,
 #wrapper.ra-scripting .article a:hover,
 #wrapper.ra-scripting .article a:focus {
-  color: #6C9330;
+  color: #76a033;
 }
 
 #wrapper.ra-scripting .toc .nav > li.active > a,
 #wrapper.ra-scripting .toc .nav > li.active > a:hover,
 #wrapper.ra-scripting .toc .nav > li.active > a:focus {
-  color: #95c941;
+  color: #76a033;
 }
 
 #wrapper.ra-scripting .affix ul > li.active > a,
 #wrapper.ra-scripting .affix ul > li.active > a:before {
-  color: #95c941;
+  color: #76a033;
 }
 
 #wrapper.ra-scripting .tabGroup a[role="tab"]:hover,
 #wrapper.ra-scripting .tabGroup a[role="tab"]:focus,
 #wrapper.ra-scripting .tabGroup a[role="tab"][aria-selected="true"] {
-  border-bottom-color: #95c941;
+  border-bottom-color: #76a033;
 }
 
 /* HACKS */

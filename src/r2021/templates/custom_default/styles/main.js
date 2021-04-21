@@ -65,19 +65,6 @@ $(function () {
     return result;
   }
 
-  /** Adds the second segment of the active header nav link prefixed with "ra-" as css class to the element with the id "wrapper". */
-  function setupProductCss() {
-    function update(selected) {
-      selected.each((i, e) => {
-        var segments = extractRootedHref(e.href).split("/");
-        if (segments.length > 2) {
-          $("#wrapper").addClass("ra-" + segments[2].toLowerCase());
-        }
-      });
-    }
-    waitForElements("#navbar ul.nav.level1 > li > a.active[href]").done(update);
-  }
-
   /** expand toc when href points to path instead of path/index.html */
   function expandToc() {
     function update(selected) {
@@ -116,7 +103,6 @@ $(function () {
     return result;
   }
 
-  setupProductCss();
   setupAnchorJs(anchors);
   setupHighlightJs(hljs);
   expandToc();
