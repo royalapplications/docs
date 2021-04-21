@@ -1,263 +1,263 @@
-- order: 15000
-  href: intro.md
+- href: intro.md
   name: Introduction
-- order: 10100
-  href: objects/index.md
-  name: Object Properties
-  items:
-  - order: 10000
+  order: 15000
+- items:
+  - items:
+    - href: objects/organization/royaldocument.md
+      name: RoyalDocument
+      order: 9900
+    - href: objects/organization/royalfolder.md
+      name: RoyalFolder
+      order: 9800
+    - href: objects/organization/royaldynamicfolder.md
+      name: RoyalDynamicFolder
+      order: 9700
+    - href: objects/organization/royalcredential.md
+      name: RoyalCredential
+      order: 9600
+    - href: objects/organization/royaldynamiccredential.md
+      name: RoyalDynamicCredential
+      order: 9500
+    - href: objects/organization/royalinformation.md
+      name: RoyalInformation
+      order: 9400
+    - href: objects/organization/royaltodo.md
+      name: RoyalToDo
+      order: 9300
     href: objects/organization/index.md
     name: Organization
-    items:
-    - order: 9900
-      href: objects/organization/royaldocument.md
-      name: RoyalDocument
-    - order: 9800
-      href: objects/organization/royalfolder.md
-      name: RoyalFolder
-    - order: 9700
-      href: objects/organization/royaldynamicfolder.md
-      name: RoyalDynamicFolder
-    - order: 9600
-      href: objects/organization/royalcredential.md
-      name: RoyalCredential
-    - order: 9500
-      href: objects/organization/royaldynamiccredential.md
-      name: RoyalDynamicCredential
-    - order: 9400
-      href: objects/organization/royalinformation.md
-      name: RoyalInformation
-    - order: 9300
-      href: objects/organization/royaltodo.md
-      name: RoyalToDo
-  - order: 9200
+    order: 10000
+  - items:
+    - href: objects/connections/royalrdsconnection.md
+      name: RoyalRDSConnection
+      order: 9100
+    - href: objects/connections/royalvncconnection.md
+      name: RoyalVNCConnection
+      order: 9000
+    - href: objects/connections/royalsshconnection.md
+      name: RoyalSSHConnection
+      order: 8900
+    - href: objects/connections/royalfiletransferconnection.md
+      name: RoyalFileTransferConnection
+      order: 8800
+    - href: objects/connections/royalwebconnection.md
+      name: RoyalWebConnection
+      order: 8700
+    - href: objects/connections/royalteamviewerconnection.md
+      name: RoyalTeamViewerConnection
+      order: 8600
+    - href: objects/connections/royalappconnection.md
+      name: RoyalAppConnection
+      order: 8500
+    - href: objects/connections/royalperformanceconnection.md
+      name: RoyalPerformanceConnection
+      order: 8400
+    - href: objects/connections/royalpowershellconnection.md
+      name: RoyalPowerShellConnection
+      order: 8300
+    - href: objects/connections/royalwindowseventsconnection.md
+      name: RoyalWindowsEventsConnection
+      order: 8200
+    - href: objects/connections/royalwindowsprocessesconnection.md
+      name: RoyalWindowsProcessesConnection
+      order: 8100
+    - href: objects/connections/royalwindowsservicesconnection.md
+      name: RoyalWindowsServicesConnection
+      order: 8000
+    - href: objects/connections/royalterminalservicesconnection.md
+      name: RoyalTerminalServicesConnection
+      order: 7900
+    - href: objects/connections/royalhypervconnection.md
+      name: RoyalHyperVConnection
+      order: 7800
+    - href: objects/connections/royalvmwareconnection.md
+      name: RoyalVMwareConnection
+      order: 7700
     href: objects/connections/index.md
     name: Connections
-    items:
-    - order: 9100
-      href: objects/connections/royalrdsconnection.md
-      name: RoyalRDSConnection
-    - order: 9000
-      href: objects/connections/royalvncconnection.md
-      name: RoyalVNCConnection
-    - order: 8900
-      href: objects/connections/royalsshconnection.md
-      name: RoyalSSHConnection
-    - order: 8800
-      href: objects/connections/royalfiletransferconnection.md
-      name: RoyalFileTransferConnection
-    - order: 8700
-      href: objects/connections/royalwebconnection.md
-      name: RoyalWebConnection
-    - order: 8600
-      href: objects/connections/royalteamviewerconnection.md
-      name: RoyalTeamViewerConnection
-    - order: 8500
-      href: objects/connections/royalappconnection.md
-      name: RoyalAppConnection
-    - order: 8400
-      href: objects/connections/royalperformanceconnection.md
-      name: RoyalPerformanceConnection
-    - order: 8300
-      href: objects/connections/royalpowershellconnection.md
-      name: RoyalPowerShellConnection
-    - order: 8200
-      href: objects/connections/royalwindowseventsconnection.md
-      name: RoyalWindowsEventsConnection
-    - order: 8100
-      href: objects/connections/royalwindowsprocessesconnection.md
-      name: RoyalWindowsProcessesConnection
-    - order: 8000
-      href: objects/connections/royalwindowsservicesconnection.md
-      name: RoyalWindowsServicesConnection
-    - order: 7900
-      href: objects/connections/royalterminalservicesconnection.md
-      name: RoyalTerminalServicesConnection
-    - order: 7800
-      href: objects/connections/royalhypervconnection.md
-      name: RoyalHyperVConnection
-    - order: 7700
-      href: objects/connections/royalvmwareconnection.md
-      name: RoyalVMwareConnection
-  - order: 7600
+    order: 9200
+  - items:
+    - href: objects/gateways/royalmanagementendpoint.md
+      name: RoyalManagementEndpoint
+      order: 7500
+    - href: objects/gateways/royalsecuregateway.md
+      name: RoyalSecureGateway
+      order: 7400
+    - href: objects/gateways/royalrdsgateway.md
+      name: RoyalRDSGateway
+      order: 7300
     href: objects/gateways/index.md
     name: Gateways
-    items:
-    - order: 7500
-      href: objects/gateways/royalmanagementendpoint.md
-      name: RoyalManagementEndpoint
-    - order: 7400
-      href: objects/gateways/royalsecuregateway.md
-      name: RoyalSecureGateway
-    - order: 7300
-      href: objects/gateways/royalrdsgateway.md
-      name: RoyalRDSGateway
-  - order: 7200
+    order: 7600
+  - items:
+    - href: objects/tasks/royalcommandtask.md
+      name: RoyalCommandTask
+      order: 7100
+    - href: objects/tasks/royalkeysequencetask.md
+      name: RoyalKeySequenceTask
+      order: 7000
     href: objects/tasks/index.md
     name: Tasks
-    items:
-    - order: 7100
-      href: objects/tasks/royalcommandtask.md
-      name: RoyalCommandTask
-    - order: 7000
-      href: objects/tasks/royalkeysequencetask.md
-      name: RoyalKeySequenceTask
-  - order: 6900
+    order: 7200
+  - items:
+    - href: objects/options/royalapplicationsetting.md
+      name: RoyalApplicationSetting
+      order: 6800
     href: objects/options/index.md
     name: Options
-    items:
-    - order: 6800
-      href: objects/options/royalapplicationsetting.md
-      name: RoyalApplicationSetting
-- order: 10000
+    order: 6900
+  href: objects/index.md
+  name: Object Properties
+  order: 10100
+- items:
+  - href: document/New-RoyalStore.md
+    name: New-RoyalStore
+    order: 10000
+  - href: document/New-RoyalDocument.md
+    name: New-RoyalDocument
+    order: 9990
+  - href: document/Open-RoyalDocument.md
+    name: Open-RoyalDocument
+    order: 9980
+  - href: document/Out-RoyalDocument.md
+    name: Out-RoyalDocument
+    order: 9970
+  - href: document/Close-RoyalDocument.md
+    name: Close-RoyalDocument
+    order: 9960
+  - href: document/Get-RoyalServerDocument.md
+    name: Get-RoyalServerDocument
+    order: 9950
+  - href: document/Open-RoyalServerDocument.md
+    name: Open-RoyalServerDocument
+    order: 9940
+  - href: document/Out-RoyalServerDocument.md
+    name: Out-RoyalServerDocument
+    order: 9930
+  - href: document/Close-RoyalServerDocument.md
+    name: Close-RoyalServerDocument
+    order: 9920
+  - href: document/Get-RoyalDocumentType.md
+    name: Get-RoyalDocumentType
+    order: 9910
+  - href: document/Set-RoyalDocumentType.md
+    name: Set-RoyalDocumentType
+    order: 9900
+  - href: document/Set-RoyalDocumentPassword.md
+    name: Set-RoyalDocumentPassword
+    order: 9890
+  - href: document/New-RoyalObject.md
+    name: New-RoyalObject
+    order: 9880
+  - href: document/Get-RoyalObject.md
+    name: Get-RoyalObject
+    order: 9870
+  - href: document/Copy-RoyalObject.md
+    name: Copy-RoyalObject
+    order: 9860
+  - href: document/Move-RoyalObject.md
+    name: Move-RoyalObject
+    order: 9850
+  - href: document/Remove-RoyalObject.md
+    name: Remove-RoyalObject
+    order: 9840
+  - href: document/Get-RoyalObjectValue.md
+    name: Get-RoyalObjectValue
+    order: 9830
+  - href: document/Set-RoyalObjectValue.md
+    name: Set-RoyalObjectValue
+    order: 9820
+  - href: document/Set-RoyalSortOrder.md
+    name: Set-RoyalSortOrder
+    order: 9810
+  - href: document/New-RoyalObjectCustomProperty.md
+    name: New-RoyalObjectCustomProperty
+    order: 9800
+  - href: document/Get-RoyalObjectCustomProperty.md
+    name: Get-RoyalObjectCustomProperty
+    order: 9790
+  - href: document/Set-RoyalObjectCustomProperty.md
+    name: Set-RoyalObjectCustomProperty
+    order: 9780
+  - href: document/Set-RoyalObjectCustomPropertyPosition.md
+    name: Set-RoyalObjectCustomPropertyPosition
+    order: 9770
+  - href: document/Remove-RoyalObjectCustomProperty.md
+    name: Remove-RoyalObjectCustomProperty
+    order: 9760
+  - href: document/Get-RoyalPropertyHelp.md
+    name: Get-RoyalPropertyHelp
+    order: 9750
   href: document/index.md
   name: RoyalDocument.PowerShell
-  items:
-  - order: 10000
-    href: document/New-RoyalStore.md
-    name: New-RoyalStore
-  - order: 9990
-    href: document/New-RoyalDocument.md
-    name: New-RoyalDocument
-  - order: 9980
-    href: document/Open-RoyalDocument.md
-    name: Open-RoyalDocument
-  - order: 9970
-    href: document/Out-RoyalDocument.md
-    name: Out-RoyalDocument
-  - order: 9960
-    href: document/Close-RoyalDocument.md
-    name: Close-RoyalDocument
-  - order: 9950
-    href: document/Get-RoyalServerDocument.md
-    name: Get-RoyalServerDocument
-  - order: 9940
-    href: document/Open-RoyalServerDocument.md
-    name: Open-RoyalServerDocument
-  - order: 9930
-    href: document/Out-RoyalServerDocument.md
-    name: Out-RoyalServerDocument
-  - order: 9920
-    href: document/Close-RoyalServerDocument.md
-    name: Close-RoyalServerDocument
-  - order: 9910
-    href: document/Get-RoyalDocumentType.md
-    name: Get-RoyalDocumentType
-  - order: 9900
-    href: document/Set-RoyalDocumentType.md
-    name: Set-RoyalDocumentType
-  - order: 9890
-    href: document/Set-RoyalDocumentPassword.md
-    name: Set-RoyalDocumentPassword
-  - order: 9880
-    href: document/New-RoyalObject.md
-    name: New-RoyalObject
-  - order: 9870
-    href: document/Get-RoyalObject.md
-    name: Get-RoyalObject
-  - order: 9860
-    href: document/Copy-RoyalObject.md
-    name: Copy-RoyalObject
-  - order: 9850
-    href: document/Move-RoyalObject.md
-    name: Move-RoyalObject
-  - order: 9840
-    href: document/Remove-RoyalObject.md
-    name: Remove-RoyalObject
-  - order: 9830
-    href: document/Get-RoyalObjectValue.md
-    name: Get-RoyalObjectValue
-  - order: 9820
-    href: document/Set-RoyalObjectValue.md
-    name: Set-RoyalObjectValue
-  - order: 9810
-    href: document/Set-RoyalSortOrder.md
-    name: Set-RoyalSortOrder
-  - order: 9800
-    href: document/New-RoyalObjectCustomProperty.md
-    name: New-RoyalObjectCustomProperty
-  - order: 9790
-    href: document/Get-RoyalObjectCustomProperty.md
-    name: Get-RoyalObjectCustomProperty
-  - order: 9780
-    href: document/Set-RoyalObjectCustomProperty.md
-    name: Set-RoyalObjectCustomProperty
-  - order: 9770
-    href: document/Set-RoyalObjectCustomPropertyPosition.md
-    name: Set-RoyalObjectCustomPropertyPosition
-  - order: 9760
-    href: document/Remove-RoyalObjectCustomProperty.md
-    name: Remove-RoyalObjectCustomProperty
-  - order: 9750
-    href: document/Get-RoyalPropertyHelp.md
-    name: Get-RoyalPropertyHelp
-- order: 9990
+  order: 10000
+- items:
+  - href: server/New-RoyalServerConfig.md
+    name: New-RoyalServerConfig
+    order: 9990
+  - href: server/Get-RoyalServerModule.md
+    name: Get-RoyalServerModule
+    order: 9980
+  - href: server/Get-RoyalServerModuleCommand.md
+    name: Get-RoyalServerModuleCommand
+    order: 9970
+  - href: server/Get-RoyalServerModuleCommandParameter.md
+    name: Get-RoyalServerModuleCommandParameter
+    order: 9960
+  - href: server/Invoke-RoyalServerCommand.md
+    name: Invoke-RoyalServerCommand
+    order: 9950
   href: server/index.md
   name: RoyalServer.PowerShell
-  items:
-  - order: 9990
-    href: server/New-RoyalServerConfig.md
-    name: New-RoyalServerConfig
-  - order: 9980
-    href: server/Get-RoyalServerModule.md
-    name: Get-RoyalServerModule
-  - order: 9970
-    href: server/Get-RoyalServerModuleCommand.md
-    name: Get-RoyalServerModuleCommand
-  - order: 9960
-    href: server/Get-RoyalServerModuleCommandParameter.md
-    name: Get-RoyalServerModuleCommandParameter
-  - order: 9950
-    href: server/Invoke-RoyalServerCommand.md
-    name: Invoke-RoyalServerCommand
-- order: 9980
-  href: rjson/index.md
-  name: RoyalJSON
-  items:
-  - order: 9990
-    href: rjson/introduction.md
+  order: 9990
+- items:
+  - href: rjson/introduction.md
     name: Introduction
-  - order: 9980
-    href: rjson/the-data-format.md
+    order: 9990
+  - href: rjson/the-data-format.md
     name: The data format
-  - order: 9970
-    href: rjson/building-folder-hierachies.md
+    order: 9980
+  - href: rjson/building-folder-hierachies.md
     name: Building folder hierarchies
-  - order: 9960
-    href: rjson/object-references-and-inheritance.md
+    order: 9970
+  - href: rjson/object-references-and-inheritance.md
     name: Object references and inheritance
-  - order: 9950
-    href: rjson/dynamic-folders.md
+    order: 9960
+  - href: rjson/dynamic-folders.md
     name: Dynamic Folders
-  - order: 9940
-    href: rjson/dynamic-credentials.md
+    order: 9950
+  - href: rjson/dynamic-credentials.md
     name: Dynamic Credentials
-  - order: 9930
-    href: rjson/advanced-scenarios.md
+    order: 9940
+  - href: rjson/advanced-scenarios.md
     name: Advanced scenarios
-  - order: 9920
+    order: 9930
+  - items:
+    - href: rjson/available-properties/royaljsondocument.md
+      name: RoyalJSONDocument
+      order: 9990
+    - href: rjson/available-properties/royaljsonobject.md
+      name: RoyalJSONObject
+      order: 9980
+    - href: rjson/available-properties/royaljsoncustomproperty.md
+      name: RoyalJSONCustomProperty
+      order: 9970
+    - href: rjson/available-properties/royaljsonautofillelement.md
+      name: RoyalJSONAutoFillElement
+      order: 9960
+    - href: rjson/available-properties/royaljsondynamiccredential.md
+      name: RoyalJSONDynamicCredential
+      order: 9950
     href: rjson/available-properties/index.md
     name: Available Properties
-    items:
-    - order: 9990
-      href: rjson/available-properties/royaljsondocument.md
-      name: RoyalJSONDocument
-    - order: 9980
-      href: rjson/available-properties/royaljsonobject.md
-      name: RoyalJSONObject
-    - order: 9970
-      href: rjson/available-properties/royaljsoncustomproperty.md
-      name: RoyalJSONCustomProperty
-    - order: 9960
-      href: rjson/available-properties/royaljsonautofillelement.md
-      name: RoyalJSONAutoFillElement
-    - order: 9950
-      href: rjson/available-properties/royaljsondynamiccredential.md
-      name: RoyalJSONDynamicCredential
-  - order: 9910
-    href: rjson/json-schema.md
+    order: 9920
+  - href: rjson/json-schema.md
     name: JSON Schema
-- order: 8000
-  href: https://www.royalapps.com/go/kb-ts-mac-applescript-samples
+    order: 9910
+  href: rjson/index.md
+  name: RoyalJSON
+  order: 9980
+- href: https://www.royalapps.com/go/kb-ts-mac-applescript-samples
   name: AppleScript
+  order: 8000
 

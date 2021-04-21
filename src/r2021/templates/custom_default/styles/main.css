@@ -89,29 +89,8 @@ a.external-link::after {
   height: 34px;
 }
 
-button,
-a {
-  color: #eb9526;
-}
-
-button:hover,
-button:focus,
-a:hover,
-a:focus {
-  color: #c27a1c;
-}
-
 blockquote {
   border-left-color: #3bacd6;
-}
-
-.toc .nav > li.active > a {
-  color: #eb9526;
-}
-
-.toc .nav > li.active > a:hover,
-.toc .nav > li.active > a:focus {
-  color: #eb9526;
 }
 
 .toc .level1 > li {
@@ -126,24 +105,8 @@ blockquote {
   color: #666666;
 }
 
-.affix ul > li.active > a,
-.affix ul > li.active > a:before {
-  color: #eb9526;
-}
-
-.tabGroup a[role="tab"]:hover,
-.tabGroup a[role="tab"]:focus {
-  color: #eb9526;
-}
-
 .tabGroup a[role="tab"]:focus {
   outline: none;
-}
-
-.tabGroup a[role="tab"]:hover,
-.tabGroup a[role="tab"]:focus,
-.tabGroup a[role="tab"][aria-selected="true"] {
-  border-bottom-color: #eb9526;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -227,19 +190,98 @@ td.hljs-ln-line.hljs-ln-numbers {
 
 /* ROYAL APPS CUSTOMIZATIONS */
 
-/* 
-#wrapper.ra-royalts {
-} 
-*/
-/* 
-#wrapper.ra-royalserver {
-}
-*/
+/* Default + Royal TS */
 
-/* 
-#wrapper.ra-scripting {
+#wrapper .article button,
+#wrapper .article a {
+  color: #eb9526;
+} 
+
+#wrapper .article button:hover,
+#wrapper .article button:focus,
+#wrapper .article a:hover,
+#wrapper .article a:focus {
+  color: #c27a1c;
 }
-*/
+
+#wrapper .toc .nav > li.active > a,
+#wrapper .toc .nav > li.active > a:hover,
+#wrapper .toc .nav > li.active > a:focus {
+  color: #eb9526;
+}
+
+#wrapper .affix ul > li.active > a,
+#wrapper .affix ul > li.active > a:before {
+  color: #eb9526;
+}
+
+#wrapper .tabGroup a[role="tab"]:hover,
+#wrapper .tabGroup a[role="tab"]:focus,
+#wrapper .tabGroup a[role="tab"][aria-selected="true"] {
+  border-bottom-color: #eb9526;
+}
+
+/* Royal Server */
+
+#wrapper.ra-royalserver .article button,
+#wrapper.ra-royalserver .article a {
+  color: #ed1a57;
+} 
+
+#wrapper.ra-royalserver .article button:hover,
+#wrapper.ra-royalserver .article button:focus,
+#wrapper.ra-royalserver .article a:hover,
+#wrapper.ra-royalserver .article a:focus {
+  color: #C51A4B;
+}
+
+#wrapper.ra-royalserver .toc .nav > li.active > a,
+#wrapper.ra-royalserver .toc .nav > li.active > a:hover,
+#wrapper.ra-royalserver .toc .nav > li.active > a:focus {
+  color: #ed1a57;
+}
+
+#wrapper.ra-royalserver .affix ul > li.active > a,
+#wrapper.ra-royalserver .affix ul > li.active > a:before {
+  color: #ed1a57;
+}
+
+#wrapper.ra-royalserver .tabGroup a[role="tab"]:hover,
+#wrapper.ra-royalserver .tabGroup a[role="tab"]:focus,
+#wrapper.ra-royalserver .tabGroup a[role="tab"][aria-selected="true"] {
+  border-bottom-color: #ed1a57;
+}
+
+/* Scripting */
+
+#wrapper.ra-scripting .article button,
+#wrapper.ra-scripting .article a {
+  color: #95c941;
+} 
+
+#wrapper.ra-scripting .article button:hover,
+#wrapper.ra-scripting .article button:focus,
+#wrapper.ra-scripting .article a:hover,
+#wrapper.ra-scripting .article a:focus {
+  color: #6C9330;
+}
+
+#wrapper.ra-scripting .toc .nav > li.active > a,
+#wrapper.ra-scripting .toc .nav > li.active > a:hover,
+#wrapper.ra-scripting .toc .nav > li.active > a:focus {
+  color: #95c941;
+}
+
+#wrapper.ra-scripting .affix ul > li.active > a,
+#wrapper.ra-scripting .affix ul > li.active > a:before {
+  color: #95c941;
+}
+
+#wrapper.ra-scripting .tabGroup a[role="tab"]:hover,
+#wrapper.ra-scripting .tabGroup a[role="tab"]:focus,
+#wrapper.ra-scripting .tabGroup a[role="tab"][aria-selected="true"] {
+  border-bottom-color: #95c941;
+}
 
 /* HACKS */
 
