@@ -8,7 +8,7 @@
     <title>JSON Schema </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="JSON Schema ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -21,7 +21,7 @@
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
+    <div id="wrapper" class="ra-scripting">
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
@@ -70,23 +70,27 @@
 <h1 id="json-schema">JSON Schema</h1>
 
 <p>Here's the <a href="https://json-schema.org/">JSON schema</a> to validate your JSON content against:</p>
+<h2 id="royaljsondocument"><a href="available-properties/royaljsondocument.html">RoyalJSONDocument</a></h2>
 <pre><code class="lang-json">{
   &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
   &quot;title&quot;: &quot;RoyalJSONDocument&quot;,
   &quot;type&quot;: &quot;object&quot;,
+  &quot;description&quot;: &quot;Root Element&quot;,
   &quot;additionalProperties&quot;: false,
   &quot;properties&quot;: {
     &quot;Name&quot;: {
       &quot;type&quot;: [
         &quot;null&quot;,
         &quot;string&quot;
-      ]
+      ],
+      &quot;description&quot;: &quot;The (display) name of the document if the rJSON is opened via a \&quot;.rjson\&quot; file. If not specified, the filename is used as the document name instead.&quot;
     },
     &quot;Objects&quot;: {
       &quot;type&quot;: [
         &quot;array&quot;,
         &quot;null&quot;
       ],
+      &quot;description&quot;: &quot;An array of objects that will be direct descendants of the dynamic folder or rJSON document.&quot;,
       &quot;items&quot;: {
         &quot;$ref&quot;: &quot;#/definitions/RoyalJSONObject&quot;
       }
@@ -132,7 +136,7 @@
             &quot;null&quot;,
             &quot;string&quot;
           ],
-          &quot;description&quot;: &quot;Alias for ComputerName.&quot;
+          &quot;description&quot;: &quot;Alias for [ComputerName](#computername).&quot;
         },
         &quot;Port&quot;: {
           &quot;type&quot;: &quot;integer&quot;,
@@ -180,7 +184,7 @@
             &quot;null&quot;,
             &quot;string&quot;
           ],
-          &quot;description&quot;: &quot;The folder path of the object. This may be used as an alternative to nesting objects in Folder objects. The \&quot;Path\&quot; property takes precedence over folder nesting, so if both are used, the object will be placed in the folder pointed to by the \&quot;Path\&quot; property.&quot;
+          &quot;description&quot;: &quot;The folder path of the object. This may be used as an alternative to nesting objects in Folder objects. The [`Path`](#path) property takes precedence over folder nesting, so if both are used, the object will be placed in the folder pointed to by the [`Path`](#path) property.&quot;
         },
         &quot;CustomField1&quot;: {
           &quot;type&quot;: [
@@ -327,7 +331,7 @@
             &quot;null&quot;,
             &quot;object&quot;
           ],
-          &quot;description&quot;: &quot;Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is available here.&quot;,
+          &quot;description&quot;: &quot;Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is [available here](~/scripting/objects/index.md).&quot;,
           &quot;additionalProperties&quot;: {
             &quot;type&quot;: &quot;string&quot;
           }
@@ -335,60 +339,70 @@
         &quot;CustomProperties&quot;: {
           &quot;type&quot;: [
             &quot;array&quot;,
+            &quot;object&quot;,
             &quot;null&quot;
           ],
-          &quot;description&quot;: &quot;The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type \&quot;Text\&quot;. It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using \&quot;Name\&quot;, the value using \&quot;Value\&quot; and the type using \&quot;Type\&quot; (Supported types are: Text, Protected, URL, Email, Address, Phone, Date, YesNo, Header)&quot;,
+          &quot;description&quot;: &quot;The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type `Text`. It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using `Name`, the value using `Value` and the type using `Type` (Supported types are: `Text`, `Protected`, `URL`, `Email`, `Address`, `Phone`, `Date`, `YesNo`, `Header`)&quot;,
           &quot;items&quot;: {
             &quot;$ref&quot;: &quot;#/definitions/RoyalJSONCustomProperty&quot;
           }
         },
         &quot;CredentialsFromParent&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the credentials of the parent folder.&quot;
         },
         &quot;CredentialsFromContextConnection&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the credentials of the context connection.&quot;
         },
         &quot;CredentialID&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
-          ]
+          ],
+          &quot;description&quot;: &quot;The ID of the credential that is assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
         },
         &quot;CredentialName&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
-          ]
+          ],
+          &quot;description&quot;: &quot;The name of the credential that is assigned to this object.&quot;
         },
         &quot;Username&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
-          ]
+          ],
+          &quot;description&quot;: &quot;The username of this object.&quot;
         },
         &quot;Password&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
-          ]
+          ],
+          &quot;description&quot;: &quot;The password of this object.&quot;
         },
         &quot;KeyFilePath&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
-          ]
+          ],
+          &quot;description&quot;: &quot;The private key file path of this object.&quot;
         },
         &quot;KeyFileContent&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
-          ]
+          ],
+          &quot;description&quot;: &quot;The content of the private key file of this object.&quot;
         },
         &quot;KeyFilePassphrase&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
-          ]
+          ],
+          &quot;description&quot;: &quot;The passphrase of this object's private key file.&quot;
         },
         &quot;AutoFillElements&quot;: {
           &quot;type&quot;: [
@@ -415,9 +429,390 @@
             &quot;array&quot;,
             &quot;null&quot;
           ],
+          &quot;description&quot;: &quot;An array of objects that will be direct descendants of the current folder.&quot;,
           &quot;items&quot;: {
             &quot;$ref&quot;: &quot;#/definitions/RoyalJSONObject&quot;
           }
+        },
+        &quot;Status&quot;: {
+          &quot;description&quot;: &quot;The status of this To-Do item.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONToDoStatus&quot;
+            }
+          ]
+        },
+        &quot;NoConfirmationRequired&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not user confirmation is required to run this task.&quot;
+        },
+        &quot;CommandMac&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The command this task executes on macOS.&quot;
+        },
+        &quot;ArgumentsMac&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The arguments required to run this task on macOS.&quot;
+        },
+        &quot;WorkingDirectoryMac&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The working directory of this task for macOS.&quot;
+        },
+        &quot;CommandWindows&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The command this task executes on Windows.&quot;
+        },
+        &quot;ArgumentsWindows&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The arguments required to run this task on Windows.&quot;
+        },
+        &quot;WorkingDirectoryWindows&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The working directory of this task for Windows.&quot;
+        },
+        &quot;KeySequence&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The key sequence that will be executed before the connection is established if set on a connection or a folder. The key sequence that the key sequence task executes if set on a key sequence task object.&quot;
+        },
+        &quot;UseSSL&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use SSL for this object.&quot;,
+          &quot;default&quot;: true
+        },
+        &quot;SecureGatewayPort&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;description&quot;: &quot;The Secure Gateway port.&quot;,
+          &quot;format&quot;: &quot;int32&quot;
+        },
+        &quot;SecureGatewayCredentialID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the credential that is assigned to the Secure Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
+        },
+        &quot;SecureGatewayCredentialName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The name of the credential that is assigned to the Secure Gateway.&quot;
+        },
+        &quot;SecureGatewayUsername&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The username of the Secure Gateway.&quot;
+        },
+        &quot;SecureGatewayPassword&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The password of the Secure Gateway.&quot;
+        },
+        &quot;MACAddress&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The physical (MAC) address of this connection.&quot;
+        },
+        &quot;WindowMode&quot;: {
+          &quot;description&quot;: &quot;The window mode of this connection.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONWindowModes&quot;
+            }
+          ]
+        },
+        &quot;ConsoleSession&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to connect to the console/admin session of this Remote Desktop connection.&quot;
+        },
+        &quot;NLA&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use NLA (Network Level Authentication) for this Remote Desktop connection.&quot;,
+          &quot;default&quot;: true
+        },
+        &quot;ResizeMode&quot;: {
+          &quot;description&quot;: &quot;The resize mode of this Remote Desktop connection.&quot;,
+          &quot;default&quot;: &quot;SmartReconnect&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopResizeModes&quot;
+            }
+          ]
+        },
+        &quot;HyperVMode&quot;: {
+          &quot;description&quot;: &quot;The Hyper-V mode of this Remote Desktop connection.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopHyperVModes&quot;
+            }
+          ]
+        },
+        &quot;HyperVPort&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;description&quot;: &quot;The Hyper-V port of this Remote Desktop Connection.&quot;,
+          &quot;format&quot;: &quot;int32&quot;
+        },
+        &quot;HyperVInstanceID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The Hyper-V Instance ID (VM ID) of this Remote Desktop connection.&quot;
+        },
+        &quot;UseEnhancedHyperVSessionMode&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use enhanced Hyper-V session mode for this Remote Desktop connection.&quot;
+        },
+        &quot;RemoteDesktopGatewayComputerName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The computer name (IP address/FQDN) of the Remote Desktop Gateway.&quot;
+        },
+        &quot;RemoteDesktopGatewayCredentialsFromConnection&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the credentials of the connection for the Remote Desktop Gateway.&quot;
+        },
+        &quot;RemoteDesktopGatewayUsername&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The username of the Remote Desktop Gateway.&quot;
+        },
+        &quot;RemoteDesktopGatewayPassword&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The password of the Remote Desktop Gateway.&quot;
+        },
+        &quot;RemoteDesktopGatewayCredentialID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the credential that is assigned to the Remote Desktop Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
+        },
+        &quot;RemoteDesktopGatewayCredentialName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The name of the credential that is assigned to the Remote Desktop Gateway.&quot;
+        },
+        &quot;TerminalConnectionType&quot;: {
+          &quot;description&quot;: &quot;The connection type of this terminal connection.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONTerminalConnectionTypes&quot;
+            }
+          ]
+        },
+        &quot;SerialPortName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The serial port name of this terminal connection.&quot;
+        },
+        &quot;BaudRate&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;description&quot;: &quot;The baud rate of the serial port connection.&quot;,
+          &quot;format&quot;: &quot;int32&quot;
+        },
+        &quot;DataBits&quot;: {
+          &quot;type&quot;: &quot;integer&quot;,
+          &quot;description&quot;: &quot;The standard length of data bits per byte of the serial port connection.&quot;,
+          &quot;format&quot;: &quot;int32&quot;,
+          &quot;default&quot;: 8
+        },
+        &quot;Parity&quot;: {
+          &quot;description&quot;: &quot;The parity bit for the serial port connection.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONSerialPortParity&quot;
+            }
+          ]
+        },
+        &quot;StopBits&quot;: {
+          &quot;description&quot;: &quot;The number of stop bits used for the serial port connection.&quot;,
+          &quot;default&quot;: &quot;One&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONSerialPortStopBits&quot;
+            }
+          ]
+        },
+        &quot;CustomCommand&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The custom command of this terminal connection.&quot;
+        },
+        &quot;FileTransferConnectionType&quot;: {
+          &quot;description&quot;: &quot;The connection type of this file transfer connection.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONFileTransferConnectionTypes&quot;
+            }
+          ]
+        },
+        &quot;PassiveMode&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use passive mode for this FTP file transfer connection.&quot;
+        },
+        &quot;TeamViewerConnectionType&quot;: {
+          &quot;description&quot;: &quot;The connection type of this TeamViewer connection.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONTeamViewerConnectionTypes&quot;
+            }
+          ]
+        },
+        &quot;UseCIM&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use CIM for this management connection.&quot;
+        },
+        &quot;Script&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The script of this PowerShell connection.&quot;
+        },
+        &quot;ConnectTaskFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the connect task from the parent folder of this object.&quot;
+        },
+        &quot;ConnectTaskID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the command task that is to be assigned to this object as connect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Connect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
+        },
+        &quot;ConnectTaskName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The name of the command task that is to be assigned to this object as connect task.&quot;
+        },
+        &quot;DisconnectTaskFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the disconnect task from the parent folder of this object.&quot;
+        },
+        &quot;DisconnectTaskID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the command task that is to be assigned to this object as disconnect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Disconnect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
+        },
+        &quot;DisconnectTaskName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The name of the command task that is to be assigned to this object as disconnect task.&quot;
+        },
+        &quot;KeySequenceFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the connect key sequence from the parent folder of this object.&quot;
+        },
+        &quot;KeySequenceID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the key sequence task that is to be assigned to this object as connect key sequence. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Key Sequence ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
+        },
+        &quot;KeySequenceName&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The name of the key sequence task that is to be assigned to this object as connect key sequence.&quot;
+        },
+        &quot;SecureGatewayFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the Secure Gateway from the parent folder of this object.&quot;
+        },
+        &quot;SecureGatewayID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the Secure Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
+        },
+        &quot;SecureGatewayUsage&quot;: {
+          &quot;description&quot;: &quot;Specifies how the assigned Secure Gateway should be used.&quot;,
+          &quot;default&quot;: &quot;Always&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONSecureGatewayUsage&quot;
+            }
+          ]
+        },
+        &quot;RoyalServerFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the Royal Server from the parent folder of this object.&quot;
+        },
+        &quot;RoyalServerID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the Royal Server that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Royal Server ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
+        },
+        &quot;RemoteDesktopGatewayFromParent&quot;: {
+          &quot;type&quot;: &quot;boolean&quot;,
+          &quot;description&quot;: &quot;Specifies whether or not to use the Remote Desktop Gateway from the parent folder of this object.&quot;
+        },
+        &quot;RemoteDesktopGatewayUsage&quot;: {
+          &quot;description&quot;: &quot;The usage mode of the Remote Desktop Gateway.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopGatewayUsage&quot;
+            }
+          ]
+        },
+        &quot;RemoteDesktopGatewayID&quot;: {
+          &quot;type&quot;: [
+            &quot;null&quot;,
+            &quot;string&quot;
+          ],
+          &quot;description&quot;: &quot;The ID of the Remote Desktop Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.&quot;
         },
         &quot;ScriptInterpreter&quot;: {
           &quot;type&quot;: [
@@ -432,282 +827,6 @@
           ]
         },
         &quot;DynamicCredentialScript&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;Status&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONToDoStatus&quot;
-        },
-        &quot;NoConfirmationRequired&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;CommandMac&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;ArgumentsMac&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;WorkingDirectoryMac&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;CommandWindows&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;ArgumentsWindows&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;WorkingDirectoryWindows&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;KeySequence&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;UseSSL&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;,
-          &quot;default&quot;: true
-        },
-        &quot;SecureGatewayPort&quot;: {
-          &quot;type&quot;: &quot;integer&quot;,
-          &quot;format&quot;: &quot;int32&quot;
-        },
-        &quot;SecureGatewayCredentialID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;SecureGatewayCredentialName&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;SecureGatewayUsername&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;SecureGatewayPassword&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;MACAddress&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;WindowMode&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONWindowModes&quot;
-        },
-        &quot;ConsoleSession&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;NLA&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;,
-          &quot;default&quot;: true
-        },
-        &quot;ResizeMode&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopResizeModes&quot;
-        },
-        &quot;HyperVMode&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopHyperVModes&quot;
-        },
-        &quot;HyperVPort&quot;: {
-          &quot;type&quot;: &quot;integer&quot;,
-          &quot;format&quot;: &quot;int32&quot;
-        },
-        &quot;HyperVInstanceID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;UseEnhancedHyperVSessionMode&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;RemoteDesktopGatewayComputerName&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;RemoteDesktopGatewayCredentialsFromConnection&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;RemoteDesktopGatewayUsername&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;RemoteDesktopGatewayPassword&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;RemoteDesktopGatewayCredentialID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;RemoteDesktopGatewayCredentialName&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;TerminalConnectionType&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONTerminalConnectionTypes&quot;
-        },
-        &quot;SerialPortName&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;BaudRate&quot;: {
-          &quot;type&quot;: &quot;integer&quot;,
-          &quot;format&quot;: &quot;int32&quot;
-        },
-        &quot;DataBits&quot;: {
-          &quot;type&quot;: &quot;integer&quot;,
-          &quot;format&quot;: &quot;int32&quot;,
-          &quot;default&quot;: 8
-        },
-        &quot;Parity&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONSerialPortParity&quot;
-        },
-        &quot;StopBits&quot;: {
-          &quot;default&quot;: &quot;One&quot;,
-          &quot;oneOf&quot;: [
-            {
-              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONSerialPortStopBits&quot;
-            }
-          ]
-        },
-        &quot;CustomCommand&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;FileTransferConnectionType&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONFileTransferConnectionTypes&quot;
-        },
-        &quot;PassiveMode&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;TeamViewerConnectionType&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONTeamViewerConnectionTypes&quot;
-        },
-        &quot;UseCIM&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;Script&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;ConnectTaskFromParent&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;ConnectTaskID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;ConnectTaskName&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;DisconnectTaskFromParent&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;DisconnectTaskID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;DisconnectTaskName&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;KeySequenceFromParent&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;KeySequenceID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;KeySequenceName&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;SecureGatewayFromParent&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;SecureGatewayID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;RoyalServerFromParent&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;RoyalServerID&quot;: {
-          &quot;type&quot;: [
-            &quot;null&quot;,
-            &quot;string&quot;
-          ]
-        },
-        &quot;RemoteDesktopGatewayFromParent&quot;: {
-          &quot;type&quot;: &quot;boolean&quot;
-        },
-        &quot;RemoteDesktopGatewayUsage&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONRemoteDesktopGatewayUsage&quot;
-        },
-        &quot;RemoteDesktopGatewayID&quot;: {
           &quot;type&quot;: [
             &quot;null&quot;,
             &quot;string&quot;
@@ -784,12 +903,19 @@
       ],
       &quot;properties&quot;: {
         &quot;Name&quot;: {
-          &quot;type&quot;: &quot;string&quot;
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;The (display) name of the custom property.&quot;
         },
         &quot;Type&quot;: {
-          &quot;$ref&quot;: &quot;#/definitions/RoyalJSONCustomPropertyTypes&quot;
+          &quot;description&quot;: &quot;The type of the custom property.&quot;,
+          &quot;oneOf&quot;: [
+            {
+              &quot;$ref&quot;: &quot;#/definitions/RoyalJSONCustomPropertyTypes&quot;
+            }
+          ]
         },
         &quot;Value&quot;: {
+          &quot;description&quot;: &quot;The value of the custom property.&quot;,
           &quot;oneOf&quot;: [
             {},
             {
@@ -1009,6 +1135,20 @@
         &quot;PromptForType&quot;
       ]
     },
+    &quot;RoyalJSONSecureGatewayUsage&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;x-enumNames&quot;: [
+        &quot;Never&quot;,
+        &quot;Always&quot;,
+        &quot;OnDemand&quot;
+      ],
+      &quot;enum&quot;: [
+        &quot;Never&quot;,
+        &quot;Always&quot;,
+        &quot;OnDemand&quot;
+      ]
+    },
     &quot;RoyalJSONRemoteDesktopGatewayUsage&quot;: {
       &quot;type&quot;: &quot;string&quot;,
       &quot;description&quot;: &quot;&quot;,
@@ -1025,8 +1165,9 @@
     }
   }
 }
-
-{
+</code></pre>
+<h2 id="royaljsondynamiccredential"><a href="available-properties/royaljsondynamiccredential.html">RoyalJSONDynamicCredential</a></h2>
+<pre><code class="lang-json">{
   &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
   &quot;title&quot;: &quot;RoyalJSONDynamicCredential&quot;,
   &quot;type&quot;: &quot;object&quot;,
@@ -1036,31 +1177,36 @@
       &quot;type&quot;: [
         &quot;null&quot;,
         &quot;string&quot;
-      ]
+      ],
+      &quot;description&quot;: &quot;The username of this object.&quot;
     },
     &quot;Password&quot;: {
       &quot;type&quot;: [
         &quot;null&quot;,
         &quot;string&quot;
-      ]
+      ],
+      &quot;description&quot;: &quot;The password of this object.&quot;
     },
     &quot;KeyFilePath&quot;: {
       &quot;type&quot;: [
         &quot;null&quot;,
         &quot;string&quot;
-      ]
+      ],
+      &quot;description&quot;: &quot;The private key file path of this object.&quot;
     },
     &quot;KeyFileContent&quot;: {
       &quot;type&quot;: [
         &quot;null&quot;,
         &quot;string&quot;
-      ]
+      ],
+      &quot;description&quot;: &quot;The content of the private key file of this object.&quot;
     },
     &quot;KeyFilePassphrase&quot;: {
       &quot;type&quot;: [
         &quot;null&quot;,
         &quot;string&quot;
-      ]
+      ],
+      &quot;description&quot;: &quot;The passphrase of this object's private key file.&quot;
     }
   }
 }
@@ -1102,6 +1248,7 @@
     
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>
