@@ -38,15 +38,17 @@ In this example we add a new remote desktop connection. Enter a display name and
 ### Quick start guide for **Royal TSX for macOS**:
 
 <div style="clear: both" markdown="1">
-
-<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalTSX/GettingStarted/Step1.png" alt-text="Step 1">
+<img style="float: right; margin: 0 0.7em 0 0.7em; width: 38%; border-radius: 6px; box-shadow: 0 0 5px 2px rgba(0, 0, 0, .15); overflow: hidden;" src="./images/RoyalTSX/GettingStarted/screenshot_plugins_light.png" alt-text="Step 1">
 
 #### Step 1: Install Plugins
-Royal TSX is a plugin-based application. That means, before you can actually connect to any remote computer, you have to install the plugin required for that particular connection. 
 
 <br />
 
-To install plugins, open the "Royal TSX" menu and select the "Preferences" menu item, then navigate to "Plugins". You can also simply click here. 
+Royal TSX is a plugin-based application. That means, before you can actually connect to any remote computer, you have to install the plugin required for that particular connection.
+
+<br />
+
+To install plugins, open the "Royal TSX" menu and select the "Preferences" menu item, then navigate to "Plugins".
 
 <br />
 
@@ -54,12 +56,15 @@ The plugins screen allows you to install, uninstall and update connection plugin
 
 </div>
 
-<div style="clear: both; padding-top: 5em" markdown="1">
-
-<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalTSX/GettingStarted/Step2.png" alt-text="Step 2">
+<br />
+<div style="clear: both;" markdown="1">
+<img style="float: right; margin: 0 0.7em 0 0.7em; width: 18%; border-radius: 6px; box-shadow: 0 0 5px 2px rgba(0, 0, 0, .15); overflow: hidden;" src="./images/RoyalTSX/GettingStarted/screenshot_documents_light.png" alt-text="Step 2">
 
 #### Step 2: Create a Document
-When you first start Royal TSX you'll notice that an "Application" document was created for you automatically. This document has some unique properties: 
+
+<br />
+
+When you first start Royal TSX you'll notice that an "Application" document was created for you automatically. This document has some unique properties:
 
 <br />
 
@@ -70,7 +75,7 @@ When you first start Royal TSX you'll notice that an "Application" document was 
 
 <br />
 
-To actually create connections you have to create a new document. To do so navigate to the "File" menu and select the "New Document" menu item. You'll notice that new items have been added to the navigation panel on the left side of the main window. 
+To actually create connections you have to create a new document. To do so navigate to the "File" menu and select the "New Document" menu item. You'll notice that new items have been added to the navigation panel on the left side of the main window.
 
 <br />
 
@@ -78,24 +83,27 @@ Documents can contain any object type supported by Royal TSX. You can have as ma
 
 </div>
 
-<div style="clear: both; padding-top: 5em" markdown="1">
-
-<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalTSX/GettingStarted/Step3.png" alt-text="Step 3">
+<br />
+<div style="clear: both;" markdown="1">
+<img style="float: right; margin: 0 0.7em 0 0.7em; width: 13%; border-radius: 6px; box-shadow: 0 0 5px 2px rgba(0, 0, 0, .15); overflow: hidden;" src="./images/RoyalTSX/GettingStarted/screenshot_connections_light.png" alt-text="Step 3">
 
 #### Step 3: Add your first connection
-Now that you have one or more plugins installed and a new document set up you can actually start creating connections and using Royal TSX. To create a new connection, select the "Connections" folder that was created automatically, then click the little "plus button" on the bottom left corner of the navigation panel in the main window and select the connection type you want to create a connection for. 
 
 <br />
 
-After clicking the menu item for the connection type you want to add you'll be taken to the "connection properties dialog". This is the place where you can edit all properties available for a particular connection. The dialog also offers some generic properties that are common to all connections like "Notes" and "Custom Fields". 
+Now that you have one or more plugins installed and a new document set up you can actually start creating connections and using Royal TSX. To create a new connection, select the "Connections" folder that was created automatically, then click the little "plus button" on the bottom left corner of the navigation panel in the main window and select the connection type you want to create a connection for.
 
 <br />
 
-After creating your first connection object you will be able to connect to it by simply double clicking the newly added item in the navigation panel. 
+After clicking the menu item for the connection type you want to add you'll be taken to the "connection properties dialog". This is the place where you can edit all properties available for a particular connection. The dialog also offers some generic properties that are common to all connections like "Notes" and "Custom Properties".
 
 <br />
 
-Tip: Remember that you can only create or edit connection objects if you have a matching plugin for that connection type installed.
+After creating your first connection object you will be able to connect to it by simply double clicking the newly added item in the navigation panel.
+
+<br />
+
+*Tip: Remember that you can only create or edit connection objects if you have a matching plugin for that connection type installed.*
 
 </div>
 
