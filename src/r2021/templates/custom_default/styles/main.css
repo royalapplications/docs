@@ -72,6 +72,24 @@
   .tabGroup a[role="tab"] {
     border-bottom: 2px transparent;
   }
+
+  .alert-info {
+    color: #8cbcd4;
+    background-color: #23343c;
+    border-color: #30535a;
+  }
+
+  .alert-danger {
+    color: #c59c9b;
+    background-color: #522929;
+    border-color: #77474f;
+  }
+
+  .alert-warning {
+    color: #d6b273;
+    background-color: #5f420f;
+    border-color: #7f6a3a;
+  }
 }
 
 h1 {
