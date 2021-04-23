@@ -1,4 +1,6 @@
-- items:
+- href: introduction/index.md
+  order: 10000
+  items:
   - href: introduction/what-is-royal-ts.md
     order: 10000
     name: What is Royal TS
@@ -14,10 +16,10 @@
   - href: https://www.royalapps.com/go/kb-ts-win
     order: 9960
     name: FAQs
-  href: introduction/index.md
-  order: 10000
   name: Introduction
-- items:
+- href: getting-started/index.md
+  order: 9990
+  items:
   - href: getting-started/your-first-connection.md
     order: 10000
     name: Your First Connection
@@ -42,10 +44,10 @@
   - href: getting-started/security.md
     order: 9930
     name: Security
-  href: getting-started/index.md
-  order: 9990
   name: Getting Started
-- items:
+- href: tutorials/index.md
+  order: 9980
+  items:
   - href: tutorials/working-with-documents.md
     order: 10000
     name: Working with Documents
@@ -79,10 +81,10 @@
   - href: https://www.royalapps.com/go/kb-ts-win-tutorials
     order: 9900
     name: More Tutorials
-  href: tutorials/index.md
-  order: 9980
   name: Tutorials
-- items:
+- href: user-interface/index.md
+  order: 9970
+  items:
   - href: user-interface/panels.md
     order: 10000
     name: Panels
@@ -95,11 +97,13 @@
   - href: user-interface/color-palettes.md
     order: 9970
     name: Color Palettes
-  href: user-interface/index.md
-  order: 9970
   name: User Interface
-- items:
-  - items:
+- href: reference/index.md
+  order: 9960
+  items:
+  - href: reference/organization/index.md
+    order: 11000
+    items:
     - href: reference/organization/document.md
       order: 10000
       name: Document
@@ -118,10 +122,10 @@
     - href: reference/organization/todo-item.md
       order: 9950
       name: To-Do Item
-    href: reference/organization/index.md
-    order: 11000
     name: Organization
-  - items:
+  - href: reference/connections/index.md
+    order: 10000
+    items:
     - href: reference/connections/rdp.md
       order: 10000
       name: Remote Desktop
@@ -179,10 +183,10 @@
     - href: reference/connections/vmware.md
       order: 9820
       name: VMware
-    href: reference/connections/index.md
-    order: 10000
     name: Connections
-  - items:
+  - href: reference/gateways/index.md
+    order: 10000
+    items:
     - href: reference/gateways/royalserver.md
       order: 9990
       name: Royal Server
@@ -192,10 +196,10 @@
     - href: reference/gateways/rdpgateway.md
       order: 9970
       name: Remote Desktop Gateway
-    href: reference/gateways/index.md
-    order: 10000
     name: Gateways
-  - items:
+  - href: reference/tasks/index.md
+    order: 9980
+    items:
     - href: reference/tasks/command.md
       order: 10000
       name: Command Task
@@ -205,16 +209,14 @@
     - href: reference/tasks/adhoc-key-sequence.md
       order: 9980
       name: Ad Hoc Key Sequence
-    href: reference/tasks/index.md
-    order: 9980
     name: Tasks
   - href: reference/options.md
     order: 1000
     name: Options
-  href: reference/index.md
-  order: 9960
   name: Reference
-- items:
+- href: advanced/index.md
+  order: 9950
+  items:
   - href: advanced/import.md
     order: 10600
     name: Import Data
@@ -233,7 +235,5 @@
   - href: advanced/uri.md
     order: 10100
     name: URI Scheme
-  href: advanced/index.md
-  order: 9950
   name: Advanced
 
