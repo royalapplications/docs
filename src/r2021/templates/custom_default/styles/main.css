@@ -8,23 +8,23 @@
   }
 
   .sidefilter {
-    background-color: #252525;
+    background-color: #1f1f1f;
     border-left-color: #2f2f2f;
     border-right-color: #2f2f2f;
   }
 
   .sidetoc {
-    background-color: #252525;
+    background-color: #1f1f1f;
     border-left-color: #2f2f2f;
     border-right-color: #2f2f2f; 
   }
 
   body .toc {
-    background-color: #252525;
+    background-color: #1f1f1f;
   }
 
   .sidenav, .fixed_header, .toc {
-    background-color: #252525;
+    background-color: #1f1f1f;
   }
 
   .toc .nav > li > a {
