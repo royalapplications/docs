@@ -2348,10 +2348,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalTSX/GettingStarted/Step1.png",
+      "source_relative_path": "images/RoyalTSX/GettingStarted/screenshot_connections_light.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalTSX/GettingStarted/Step1.png"
+          "relative_path": "images/RoyalTSX/GettingStarted/screenshot_connections_light.png"
         }
       },
       "is_incremental": false,
@@ -2359,10 +2359,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalTSX/GettingStarted/Step2.png",
+      "source_relative_path": "images/RoyalTSX/GettingStarted/screenshot_documents_light.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalTSX/GettingStarted/Step2.png"
+          "relative_path": "images/RoyalTSX/GettingStarted/screenshot_documents_light.png"
         }
       },
       "is_incremental": false,
@@ -2370,10 +2370,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalTSX/GettingStarted/Step3.png",
+      "source_relative_path": "images/RoyalTSX/GettingStarted/screenshot_plugins_light.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalTSX/GettingStarted/Step3.png"
+          "relative_path": "images/RoyalTSX/GettingStarted/screenshot_plugins_light.png"
         }
       },
       "is_incremental": false,
@@ -2429,7 +2429,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "/CGMYH2btdcdkLawu30Ejw=="
+          "hash": "4za84cVhTm+2zMpCeDMwag=="
         }
       },
       "is_incremental": false,
@@ -5643,17 +5643,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build didn't contain group .",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableGroupCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 264,
-          "skipped_file_count": 260
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

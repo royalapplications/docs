@@ -8,23 +8,23 @@
   }
 
   .sidefilter {
-    background-color: #252525;
+    background-color: #1f1f1f;
     border-left-color: #2f2f2f;
     border-right-color: #2f2f2f;
   }
 
   .sidetoc {
-    background-color: #252525;
+    background-color: #1f1f1f;
     border-left-color: #2f2f2f;
     border-right-color: #2f2f2f; 
   }
 
   body .toc {
-    background-color: #252525;
+    background-color: #1f1f1f;
   }
 
   .sidenav, .fixed_header, .toc {
-    background-color: #252525;
+    background-color: #1f1f1f;
   }
 
   .toc .nav > li > a {
@@ -64,6 +64,32 @@
   .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #3e3e3e;
   }
+
+  .tabGroup section[role="tabpanel"] {
+    border: 1px solid #2f2f2f;
+  }
+
+  .tabGroup a[role="tab"] {
+    border-bottom: 2px transparent;
+  }
+
+  .alert-info {
+    color: #8cbcd4;
+    background-color: #23343c;
+    border-color: #30535a;
+  }
+
+  .alert-danger {
+    color: #c59c9b;
+    background-color: #522929;
+    border-color: #77474f;
+  }
+
+  .alert-warning {
+    color: #d6b273;
+    background-color: #5f420f;
+    border-color: #7f6a3a;
+  }
 }
 
 h1 {
@@ -94,6 +120,15 @@ article h4 {
 .affix ul ul > li > a:before {
   content: none;
 }
+
+/* Doesn't allow enough space on larger screens */
+/* .affix ul ul > li > a {
+  padding: 2px 15px;
+  max-width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
 
 img[src*="#img_header"] {
   width: 1.7em;
@@ -177,6 +212,14 @@ blockquote {
 
 .tabGroup a[role="tab"]:focus {
   outline: none;
+}
+
+.tabGroup ul[role="tablist"] {
+  margin-left: 10px;
+}
+
+.tabGroup section[role="tabpanel"] {
+  border-radius: 4px;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
