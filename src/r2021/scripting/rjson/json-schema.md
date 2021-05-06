@@ -434,6 +434,13 @@ Here's the [JSON schema](https://json-schema.org/) to validate your JSON content
           ],
           "description": "The key sequence that will be executed before the connection is established if set on a connection or a folder. The key sequence that the key sequence task executes if set on a key sequence task object."
         },
+        "DependentSecureGatewayID": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "description": "The ID of a dependent Secure Gateway that is to be assigned to this gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Dependent Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the dependent secure gateway."
+        },
         "UseSSL": {
           "type": "boolean",
           "description": "Specifies whether or not to use SSL for this object.",

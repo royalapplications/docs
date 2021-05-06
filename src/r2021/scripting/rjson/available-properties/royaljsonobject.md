@@ -420,6 +420,17 @@ name: RoyalJSONObject
 - **Description**: The key sequence that will be executed before the connection is established if set on a connection or a folder. The key sequence that the key sequence task executes if set on a key sequence task object.
 - **Example**: `"KeySequence": "{WAIT:5000}abc{ENTER}"`
 
+## DependentSecureGatewayID
+- **Data Type**: String
+- **Applies To**: Secure Gateway, Royal Server
+- **Description**: The ID of a dependent Secure Gateway that is to be assigned to this gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Dependent Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the dependent secure gateway.
+- **Supported Values**:
+    - GUID formatted as string
+    - String
+- **Supported since**: Royal TS 6.0, Royal TSX 5.0
+- **Example**: `"DependentSecureGatewayID": "041471cd-1202-40a6-84e3-83f3ceb57a99"`
+- **Example 2**: `"DependentSecureGatewayID": "0001"`
+
 ## UseSSL
 - **Data Type**: Boolean
 - **Applies To**: VMware connection, Royal Server
