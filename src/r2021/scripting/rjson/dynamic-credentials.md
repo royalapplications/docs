@@ -63,3 +63,5 @@ So let's see what happens here:
 - In the separate dynamic credential script we return a RoyalJSONDynamicCredential object which provides the values for `Username` and `Password`.
 - Just before the SSH connection is established, the dedicated dynamic credential script is executed and its return value is used to populate the missing information, namely the username and password of the credential.
 
+> [!Note]
+> Obviously this is not a real-world example as the dynamic credential script just returns the same credential data for any requested dynamic credential. To actually differentiate between multiple credentials in your scripts and return the corresponding data, please refer to the documentation about [tokens](~/scripting/rjson/tokens.md). Specifically, there are [special tokens](~/scripting/rjson/tokens.md) which are only valid in the context of a dynamic credential script.
