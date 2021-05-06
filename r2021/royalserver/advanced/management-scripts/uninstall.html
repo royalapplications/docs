@@ -8,7 +8,7 @@
     <title>Cleanup an Installation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Cleanup an Installation ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -73,12 +73,15 @@
 <p>Additionally Royal Server is changing the machine where it is running:</p>
 <ul>
 <li>it stores settings in the Windows Registry</li>
-<li>it creates a local group <code>Royal Server Users</code></li>
-<li>it creates a local group <code>Royal Server Gateway Users</code></li>
+<li>it creates multiple local Windows User Groups</li>
 <li>it creates a Windows EventLog <code>Royal Server Log</code></li>
-<li>it creates a Firewall Rule <code>Royal Server Modules</code></li>
-<li>it creates a Firewall Rule <code>Royal Server Secure Gateway (SSH tunnel)</code></li>
+<li>it creates two Windows Firewall Rules</li>
 <li>it creates a settings file under <code>%APPDATA%\RoyalServer\</code></li>
+<li>it creates two default certificates and registers them with the Royal Server application</li>
+<li>it creates a configuration database</li>
+<li>it creates a logging directory for requests and responses</li>
+<li>it creates an appsettings.json file</li>
+<li>it creates Performance Counters</li>
 </ul>
 <p>You can either remove these items manually or use our script for this. You can find it in <code>&lt;royal-server-installation-directory&gt;\scripts\cleanup_installation.ps1</code>. For each step, the script is asking for permission to do the necessary changes.</p>
 </article>

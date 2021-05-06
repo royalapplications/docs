@@ -8,7 +8,7 @@
     <title>Pepare a Managed Server </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Pepare a Managed Server ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -72,6 +72,11 @@
 <p>In the topic <a class="xref" href="../../introduction/configuration.html">Configuration of Managed Servers</a> we have listed the required changes to set up a managed server.</p>
 <p>You can do this manually or use our script. You can find it in
 <code>&lt;royal-server-installation-directory&gt;\scripts\prepare_server.ps1</code>. For each step, the script is asking for permission to do the necessary changes.</p>
+<p>The script is doing the following steps:</p>
+<ul>
+<li>it creates two Windows Firewall rules for Windows Management Instrumentation (both DCOM and WMI) and</li>
+<li>it enables ps-remoting for PowerShell Remoting.</li>
+</ul>
 </article>
           </div>
           
