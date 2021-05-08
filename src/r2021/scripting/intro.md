@@ -17,4 +17,5 @@ The PowerShell module can be used on Windows, macOS and Linux (using PowerShell 
 Royal Server provides a list of loaded Royal Server Modules which contain Commands which in turn require a list of Parameters. All this is exposed and discoverable via PowerShell cmdlets.
 
 ## [Royal JSON](rjson/index.md)
-Is a specialized json format which allows you to populate a folder structure with connections in a dynamic folder with your script interpreter of choice (PowerShell, Python, etc.).
+Is a specialized json format which allows you to populate a folder structure with connections in a dynamic folder with your script interpreter of choice (PowerShell, Python, etc.).  
+There are already many samples showing how to use external data sources to generate Royal JSON output which can be used in Royal TS/X in our [Toolbox](https://github.com/royalapplications/toolbox/tree/master/Dynamic%20Folder) github repository.
