@@ -1,15 +1,15 @@
 - order: 10000
   items:
   - order: 10000
-    href: ios/introduction.md
     name: Introduction for Royal TSi
-  href: ios/index.md
+    href: ios/introduction.md
   name: Royal TSi (for iOS)
+  href: ios/index.md
 - order: 9990
   items:
   - order: 10000
-    href: android/introduction.md
     name: Introduction for Royal TSD
-  href: android/index.md
+    href: android/introduction.md
   name: Royal TSD (for Android)
+  href: android/index.md
 
