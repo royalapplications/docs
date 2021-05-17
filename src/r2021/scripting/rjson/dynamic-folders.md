@@ -31,3 +31,11 @@ Royal TS/X ships with support for the most common script interpreters. Among oth
 Royal TS/X doesn't ship with binaries of the supported script interpreters. So in some cases, if the script interpreter of your choice doesn't ship with the operating system, you may have to install it before using it from Royal TS/X. For example, while PowerShell Core is supported on macOS, it doesn't ship with the OS and thus is required to be installed before use.
 
 When a dynamic folder script is executed, any [tokens](~/scripting/rjson/tokens.md) contained within the script are replaced by actual values and a temporary file with the full, expanded content is written to disk. On macOS, we prepend the script's content with the shebang of the selected script interpreter. For example, this is Python's shebang: `#!/usr/bin/env python`. This ensures that the OS can find the correct script interpreter to execute the script with. After the script finishes execution, the temporary file is deleted.
+
+> [!Note]
+> In Royal TSX (for macOS) 5.0 we added support for the **"JavaScript"** script interpreter.
+> 
+> In addition to being the most popular scripting language, the JavaScript interpreter has one major advantage over all other script interpreters: Scripts are executed *in-memory* and **no temporary file is written to disk**.
+> The new JavaScript interpreter also supports returning [promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) from your scripts which are then resolved by Royal TSX. This allows you to easily write web requests and not worry about having to synchronously return your data.
+> 
+> Unfortunately, the **"JavaScript"** is currently not supported in Royal TS (for Windows) due to technical limitations but we'll keep evaluating the viability of adding it to the Windows version.
