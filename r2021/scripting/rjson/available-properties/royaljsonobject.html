@@ -8,7 +8,7 @@
     <title>RoyalJSONObject </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="RoyalJSONObject ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -558,6 +558,21 @@
 <li><strong>Applies To</strong>: Key Sequence Task, All connection types, Folder</li>
 <li><strong>Description</strong>: The key sequence that will be executed before the connection is established if set on a connection or a folder. The key sequence that the key sequence task executes if set on a key sequence task object.</li>
 <li><strong>Example</strong>: <code>&quot;KeySequence&quot;: &quot;{WAIT:5000}abc{ENTER}&quot;</code></li>
+</ul>
+<h2 id="dependentsecuregatewayid">DependentSecureGatewayID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Secure Gateway, Royal Server</li>
+<li><strong>Description</strong>: The ID of a dependent Secure Gateway that is to be assigned to this gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Dependent Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the dependent secure gateway.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Supported since</strong>: Royal TS 6.0, Royal TSX 5.0</li>
+<li><strong>Example</strong>: <code>&quot;DependentSecureGatewayID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;DependentSecureGatewayID&quot;: &quot;0001&quot;</code></li>
 </ul>
 <h2 id="usessl">UseSSL</h2>
 <ul>
