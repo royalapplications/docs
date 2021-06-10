@@ -109,3 +109,78 @@ After creating your first connection object you will be able to connect to it by
 
 # [Royal Server](#tab/tab-id-rs)
 ### Quick start guide for **Royal Server**:
+
+<div style="clear: both" markdown="1">
+
+
+#### Configure a Worker Account and start Royal Server
+
+After installation Royal Server needs to be provided with a Worker Account configuration. Click on "Service Configuration" in the left menu and use the "Change..." button to provide a Worker Account. It is recommended that this account is a local account with administrative rights:
+
+<br />
+
+<img style="margin: 0 0.7em 0 0.7em" src="./images/RoyalServer/GettingStarted/Step1.png" alt-text="Step 1">
+
+<br />
+
+After clicking "OK" restart the Royal Server service by clicking "Save" and "Restart" icons.
+
+<br />
+
+<div style="clear: both; padding-top: 5em" markdown="1">
+
+#### Allow users to work with Royal Server
+
+Royal Server can only be accessed by accounts that are member of the "Royal Server Users" group (for Secure Gateway connections it is the "Royal Server Gateway Users" group). Consider adding users to these groups and restart Royal Server (since group memberships are cached by Royal Server by default).
+
+<br />
+
+<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalServer/GettingStarted/Step2.png" alt-text="Step 2">
+
+<br />
+
+</div>
+
+<div style="clear: both; padding-top: 5em" markdown="1">
+
+
+#### Enable the Document Store and host a document
+
+In order to prepare a centrally stored Royal Document for your team you need to enable the Document Store first. In order to do this, please install a license by selecting "License" and click "Add License...". A free trial license for testing the Document Store can be requested <a href="https://www.royalapps.com/trial/">here</a>.
+
+<br />
+
+<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalServer/GettingStarted/Step3.png" alt-text="Step 3">
+
+<br />
+<br />
+
+To enable the Document store select "Document Store" and click "Enable", save and restart Royal Server. 
+
+<br />
+
+<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalServer/GettingStarted/Step4.png" alt-text="Step 4">
+
+<br />
+<br />
+
+Then select "Documents" and click "Add" -> "New..." to add a new Royal Document. 
+
+<br />
+
+<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalServer/GettingStarted/Step5.png" alt-text="Step 5">
+
+<br />
+<br />
+
+You now have a centrally stored document that can be shared and used within a team.
+
+<br />
+
+<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalServer/GettingStarted/Step6.png" alt-text="Step 6">
+
+<br />
+
+</div>
+
+<div style="clear: both; padding-top: 5em" markdown="1">
