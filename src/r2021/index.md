@@ -1,12 +1,12 @@
 # **Getting Started**
+
 Below you find a quick start guide for Royal TS, Royal TSX and Royal Server. Use the navigation above to browse the full documentation.
 
 # [Royal TS](#tab/tab-id-rts)
-### Quick start guide for **Royal TS for Windows**:
 
+### Quick start guide for **Royal TS for Windows**
 
 <div style="clear: both" markdown="1">
-
 
 #### Create a new document to store your connections
 
@@ -35,7 +35,8 @@ In this example we add a new remote desktop connection. Enter a display name and
 </div>
 
 # [Royal TSX](#tab/tab-id-rtx)
-### Quick start guide for **Royal TSX for macOS**:
+
+### Quick start guide for **Royal TSX for macOS**
 
 <div style="clear: both" markdown="1">
 <img style="float: right; margin: 0 0.7em 0 0.7em; width: 38%; border-radius: 6px; box-shadow: 0 0 5px 2px rgba(0, 0, 0, .15); overflow: hidden;" src="./images/RoyalTSX/GettingStarted/screenshot_plugins_light.png" alt-text="Step 1">
@@ -68,10 +69,10 @@ When you first start Royal TSX you'll notice that an "Application" document was 
 
 <br />
 
-* You can password protect the Application Document. After doing so, every time you start Royal TSX you will be asked to enter your password.
-* You can create folders, credentials, tasks, connection templates and edit Default Settings.
-* You cannot close or delete it.
-* You cannot create connections.
+- You can password protect the Application Document. After doing so, every time you start Royal TSX you will be asked to enter your password.
+- You can create folders, credentials, tasks, connection templates and edit Default Settings.
+- You cannot close or delete it.
+- You cannot create connections.
 
 <br />
 
@@ -103,15 +104,15 @@ After creating your first connection object you will be able to connect to it by
 
 <br />
 
-*Tip: Remember that you can only create or edit connection objects if you have a matching plugin for that connection type installed.*
+_Tip: Remember that you can only create or edit connection objects if you have a matching plugin for that connection type installed._
 
 </div>
 
 # [Royal Server](#tab/tab-id-rs)
-### Quick start guide for **Royal Server**:
+
+### Quick start guide for **Royal Server**
 
 <div style="clear: both" markdown="1">
-
 
 #### Configure a Worker Account and start Royal Server
 
@@ -143,7 +144,6 @@ Royal Server can only be accessed by accounts that are member of the "Royal Serv
 
 <div style="clear: both; padding-top: 5em" markdown="1">
 
-
 #### Enable the Document Store and host a document
 
 In order to prepare a centrally stored Royal Document for your team you need to enable the Document Store first. In order to do this, please install a license by selecting "License" and click "Add License...". A free trial license for testing the Document Store can be requested <a href="https://www.royalapps.com/trial/">here</a>.
@@ -155,7 +155,7 @@ In order to prepare a centrally stored Royal Document for your team you need to 
 <br />
 <br />
 
-To enable the Document store select "Document Store" and click "Enable", save and restart Royal Server. 
+To enable the Document store select "Document Store" and click "Enable", save and restart Royal Server.
 
 <br />
 
@@ -164,7 +164,7 @@ To enable the Document store select "Document Store" and click "Enable", save an
 <br />
 <br />
 
-Then select "Documents" and click "Add" -> "New..." to add a new Royal Document. 
+Then select "Documents" and click "Add" -> "New..." to add a new Royal Document.
 
 <br />
 
