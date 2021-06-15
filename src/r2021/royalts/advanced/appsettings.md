@@ -40,7 +40,8 @@ Here's the sample JSON file:
     "ShowSplashScreen": true,
     "TemporaryFiles": "%TEMP%",
     "ConfigurationPath": "%APPDATA%\\code4ward",
-    "LocalConfigurationPath": "%LOCALAPPDATA%"
+    "LocalConfigurationPath": "%LOCALAPPDATA%",
+    "SingleInstanceMode": true
   } 
 }
 ```
@@ -95,6 +96,13 @@ Shows the splash screen when Royal TS starts.
 
 `False`
 Does not show the splash screen when Royal TS starts.
+
+### SingleInstanceMode
+Default Value: `True`
+Ensures Royal TS opens only one instance.
+
+`False`
+Multiple instances can be opened. In this case, you can't use `rtscli.exe` to automate Royal TS actions.
 
 ### TemporaryFiles
 Default Value: `%TEMP%`
