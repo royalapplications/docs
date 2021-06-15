@@ -31,6 +31,10 @@ Use the Tokens drop down to insert replacement tokens into the script. This way 
 #### Script
 The script to be executed which creates a Royal JSON output for the folder content.
 
+> [!Important]
+> Royal TS for Windows expects the script output to be UTF8 encoded. Depending on your script interpreter and system locale, encoding might be different by default. Also, older PowerShell versions do not use UTF8 encoding by default. 
+> Here's an example on how to set output encoding in PowerShell: `[System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8`
+
 ## ![](/r2021/images/RoyalTS/Application/SVG_Script_32.svg#img_header) Dynamic Credential Script
 The **Dynamic Credential Script** page allows you to configure the script and the interpreter which will be called to gather the credential information at connect-time.
 
