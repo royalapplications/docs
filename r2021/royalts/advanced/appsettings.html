@@ -98,7 +98,8 @@
     &quot;ShowSplashScreen&quot;: true,
     &quot;TemporaryFiles&quot;: &quot;%TEMP%&quot;,
     &quot;ConfigurationPath&quot;: &quot;%APPDATA%\\code4ward&quot;,
-    &quot;LocalConfigurationPath&quot;: &quot;%LOCALAPPDATA%&quot;
+    &quot;LocalConfigurationPath&quot;: &quot;%LOCALAPPDATA%&quot;,
+    &quot;SingleInstanceMode&quot;: true
   } 
 }
 </code></pre>
@@ -143,6 +144,11 @@ Creates an application shortcut in the Windows Start Menu.</p>
 Shows the splash screen when Royal TS starts.</p>
 <p><code>False</code>
 Does not show the splash screen when Royal TS starts.</p>
+<h3 id="singleinstancemode">SingleInstanceMode</h3>
+<p>Default Value: <code>True</code>
+Ensures Royal TS opens only one instance.</p>
+<p><code>False</code>
+Multiple instances can be opened. In this case, you can't use <code>rtscli.exe</code> to automate Royal TS actions.</p>
 <h3 id="temporaryfiles">TemporaryFiles</h3>
 <p>Default Value: <code>%TEMP%</code>
 The path Royal TS is using for temporary files like:</p>
