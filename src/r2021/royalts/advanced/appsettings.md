@@ -41,7 +41,8 @@ Here's the sample JSON file:
     "TemporaryFiles": "%TEMP%",
     "ConfigurationPath": "%APPDATA%\\code4ward",
     "LocalConfigurationPath": "%LOCALAPPDATA%",
-    "SingleInstanceMode": true
+    "SingleInstanceMode": true,
+    "TrackSystemHighContrastMode": true
   } 
 }
 ```
@@ -84,25 +85,32 @@ Create the following registry key by script or using group policies:
 ## Settings
 
 ### CreateApplicationShortcut
-Default Value: `True`
+Default Value: `true`
 Creates an application shortcut in the Windows Start Menu.
 
 > [!IMPORTANT]
 > Changing the value to `False` is not recommended because it may have side effects when Royal TS shows Windows Shell Notifications (Toasts).
 
 ### ShowSplashScreen
-Default Value: `True`
+Default Value: `true`
 Shows the splash screen when Royal TS starts.
 
-`False`
+`false`
 Does not show the splash screen when Royal TS starts.
 
 ### SingleInstanceMode
-Default Value: `True`
+Default Value: `true`
 Ensures Royal TS opens only one instance.
 
-`False`
+`false`
 Multiple instances can be opened. In this case, you can't use `rtscli.exe` to automate Royal TS actions.
+
+### TrackSystemHighContrastMode
+Default Value: `true`
+Ensures that Royal TS is honoring the high contrast mode from the user setting in the operating system.
+
+`false`
+Royal TS will ignore the high contrast mode in the operating system and apply standard color schemes.
 
 ### TemporaryFiles
 Default Value: `%TEMP%`
