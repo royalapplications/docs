@@ -15,6 +15,7 @@ name: RoyalJSONObject
     - Credential
     - DynamicCredential
     - ToDo
+    - Information
     - CommandTask
     - KeySequenceTask
     - SecureGateway
