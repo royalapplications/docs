@@ -62,6 +62,26 @@ Maintain a list of parameters which should be passed on to the script.
 > 
 > You can use dedicated test values (static values) to test your script within Royal TS.
 
+> [!Note]
+> To create parameters via scripting ([rJson](xref:scripting_rjson) or [PowerShell](xref:scripting_docps)) an XML encoded string of the following XML must be set to the `Parameters` property:
+> ```
+> <?xml version="1.0" encoding="utf-16">
+> <ParamConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+>     <ParamConfigItems>
+>         <ParamConfigItem>
+>             <ParameterName>Param1</ParameterName>
+>             <Value>$EffectiveUsername$</Value>
+>             <TestValue />
+>         </ParamConfigItem> 
+>         <ParamConfigItem>
+>             <ParameterName>Param2</ParameterName>
+>             <Value>Some Value</Value>
+>             <TestValue />
+>         </ParamConfigItem>
+>     </ParamConfigItems>
+> </ParamConfig>
+> ```
+
 #### Test
 Click on the Test button and see if the script executes successfully. The Test tab will only show the result as text.
 
