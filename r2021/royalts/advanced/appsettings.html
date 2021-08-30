@@ -99,7 +99,8 @@
     &quot;TemporaryFiles&quot;: &quot;%TEMP%&quot;,
     &quot;ConfigurationPath&quot;: &quot;%APPDATA%\\code4ward&quot;,
     &quot;LocalConfigurationPath&quot;: &quot;%LOCALAPPDATA%&quot;,
-    &quot;SingleInstanceMode&quot;: true
+    &quot;SingleInstanceMode&quot;: true,
+    &quot;TrackSystemHighContrastMode&quot;: true
   } 
 }
 </code></pre>
@@ -133,22 +134,27 @@ RTS_RoyalTS__ConfigurationPath = C:\somepath\RoyalTS
 </code></pre>
 <h2 id="settings">Settings</h2>
 <h3 id="createapplicationshortcut">CreateApplicationShortcut</h3>
-<p>Default Value: <code>True</code>
+<p>Default Value: <code>true</code>
 Creates an application shortcut in the Windows Start Menu.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>Changing the value to <code>False</code> is not recommended because it may have side effects when Royal TS shows Windows Shell Notifications (Toasts).</p>
 </div>
 <h3 id="showsplashscreen">ShowSplashScreen</h3>
-<p>Default Value: <code>True</code>
+<p>Default Value: <code>true</code>
 Shows the splash screen when Royal TS starts.</p>
-<p><code>False</code>
+<p><code>false</code>
 Does not show the splash screen when Royal TS starts.</p>
 <h3 id="singleinstancemode">SingleInstanceMode</h3>
-<p>Default Value: <code>True</code>
+<p>Default Value: <code>true</code>
 Ensures Royal TS opens only one instance.</p>
-<p><code>False</code>
+<p><code>false</code>
 Multiple instances can be opened. In this case, you can't use <code>rtscli.exe</code> to automate Royal TS actions.</p>
+<h3 id="tracksystemhighcontrastmode">TrackSystemHighContrastMode</h3>
+<p>Default Value: <code>true</code>
+Ensures that Royal TS is honoring the high contrast mode from the user setting in the operating system.</p>
+<p><code>false</code>
+Royal TS will ignore the high contrast mode in the operating system and apply standard color schemes.</p>
 <h3 id="temporaryfiles">TemporaryFiles</h3>
 <p>Default Value: <code>%TEMP%</code>
 The path Royal TS is using for temporary files like:</p>
