@@ -132,6 +132,26 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <p>To pass on parameters you need to define a param script block (named parameters). Positional parameters are not supported. As value you can either pass on static values (like a string or an integer) or dynamic properties of the connection using replacement tokens, such as $EffectiveUsername$ or $EffectivePassword$.</p>
 <p>You can use dedicated test values (static values) to test your script within Royal TS.</p>
 </div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To create parameters via scripting (<a class="xref" href="../../../scripting/rjson/index.html">rJson</a> or <a class="xref" href="../../../scripting/document/index.html">PowerShell</a>) an XML encoded string of the following XML must be set to the <code>Parameters</code> property:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;&gt;
+&lt;ParamConfig xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+    &lt;ParamConfigItems&gt;
+        &lt;ParamConfigItem&gt;
+            &lt;ParameterName&gt;Param1&lt;/ParameterName&gt;
+            &lt;Value&gt;$EffectiveUsername$&lt;/Value&gt;
+            &lt;TestValue /&gt;
+        &lt;/ParamConfigItem&gt; 
+        &lt;ParamConfigItem&gt;
+            &lt;ParameterName&gt;Param2&lt;/ParameterName&gt;
+            &lt;Value&gt;Some Value&lt;/Value&gt;
+            &lt;TestValue /&gt;
+        &lt;/ParamConfigItem&gt;
+    &lt;/ParamConfigItems&gt;
+&lt;/ParamConfig&gt;
+</code></pre>
+</div>
 <h4 id="test">Test</h4>
 <p>Click on the Test button and see if the script executes successfully. The Test tab will only show the result as text.</p>
 <h2 id="-display-options"><img src="/r2021/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageDisplayOptions_32.svg#img_header" alt=""> Display Options</h2>
