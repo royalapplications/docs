@@ -68,7 +68,7 @@ Enter a Key Sequence.
 > [!Tip]
 > Pressing either the '$' or '{' key will show a popup with all available replacement tokens and special keys. Hit the ESC key to hide the popup and continue typing.  
 > 
-> Use the button Insert to show a list of available replacement tokens and special key commands. The WAIT command token can be placed anywhere in the sequence to delay the sequence.  
+> Use the button Insert to show a list of available [replacement tokens](xref:royalts_advanced_tokens) and special key commands. The WAIT command token can be placed anywhere in the sequence to delay the sequence.  
 > 
 > **Examples for Key Sequences:**  
 > - A group policy is set to show a message whenever a user is attempting to log on interactively. Create a Key Sequence "{WAIT:1000}{ENTER}" which will wait 1 second (1000ms) after successfully connected to the remote desktop session and sends the ENTER key to the remote session to confirm the message.

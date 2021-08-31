@@ -26,7 +26,7 @@ The **Dynamic Folder Script** page allows you to configure the script and the in
 Select the script interpreter you want to use when the script is executed. Some interpreters may need additional files to be installed on your system.
 
 #### Tokens
-Use the Tokens drop down to insert replacement tokens into the script. This way you can use the configured credentials in your script.
+Use the Tokens drop down to insert [replacement tokens](xref:royalts_advanced_tokens) into the script. This way you can use the configured credentials in your script.
 
 #### Script
 The script to be executed which creates a Royal JSON output for the folder content.
@@ -42,7 +42,7 @@ The **Dynamic Credential Script** page allows you to configure the script and th
 Select the script interpreter you want to use when the script is executed. Some interpreters may need additional files to be installed on your system.
 
 #### Tokens
-Use the Tokens drop down to insert replacement tokens into the script. This way you can use the configured credentials in your script.
+Use the Tokens drop down to insert [replacement tokens](xref:royalts_advanced_tokens) into the script. This way you can use the configured credentials in your script.
 
 #### Script
 The script to be executed which creates a Royal JSON output for the credential information.

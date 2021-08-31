@@ -1,4 +1,5 @@
 ---
+uid: scripting_rjson_advanced-scenarios
 order: 9930
 name: Advanced scenarios
 ---

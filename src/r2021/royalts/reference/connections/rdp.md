@@ -371,7 +371,7 @@ Specify a predefined or custom keyboard layout in your remote session.
 The **Program** page allows you to configure the program to be started on the remote server upon connection.
 
 #### Program
-Specifies the program to be started on the remote server upon connection.
+Specifies the program to be started on the remote server upon connection. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 #### Working Directory
 Specifies the working directory of the start program.

@@ -159,7 +159,7 @@ Switch auto wrap on, off or to behave like in DOS.
 Switch backspace wrap on, off or to behave like in DOS.
 
 #### SSH Remote Command
-In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example).
+In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 #### Local Echo
 Enable or disable local echo.

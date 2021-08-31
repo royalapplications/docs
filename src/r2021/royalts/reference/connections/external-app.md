@@ -48,7 +48,7 @@ Specify any command line arguments if necessary.
 Specify the working directory.
 
 > [!Note]
-To securely inject a username or password from an assigned credential, use the replacement tokens menu of the fly-out button at the right.
+To securely inject a username or password from an assigned credential, use the [replacement tokens](xref:royalts_advanced_tokens) menu of the fly-out button at the right.
 
 #### Window Picker
 The window picker can be used to populate the required fields to start the application based on a running application.

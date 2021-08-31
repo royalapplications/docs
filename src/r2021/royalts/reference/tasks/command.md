@@ -54,7 +54,7 @@ Specify a program or batch file to execute.
 Specify arguments for the command.
 
 > [!Tip]
-> Use the fly-out button to the right to show a list of available replacement tokens.  
+> Use the fly-out button to the right to show a list of available [replacement tokens](xref:royalts_advanced_tokens).  
 > You may also use environment variables (such as %TEMP%).
 
 #### Working Directory

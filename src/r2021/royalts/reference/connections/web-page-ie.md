@@ -46,7 +46,7 @@ The **Web Page** property page allows you to configure basic connection settings
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 
 #### URL
-Enter the web page URL for this connection.
+Enter the web page URL for this connection. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 > [!Note]
 > You may leave the URL field blank and configure the connection to display a specific content by providing the source for the page. This may be useful if you want to host your own ActiveX controls in a web page.
@@ -94,7 +94,7 @@ The **Custom Content** page allows you to define a custom content (HTML page) to
 If checked, paste your HTML code into the textbox.
 
 > [!Note]
-> You can also use replacement tokens like $URI$ or $CustomField1$ etc. to insert values from those fields.
+> You can also use [replacement tokens](xref:royalts_advanced_tokens) like $URI$ or $CustomField1$ etc. to insert values from those fields.
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]

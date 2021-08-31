@@ -84,7 +84,7 @@ If checked, the creation time stamp is restored after the file transfer.
 
 ### SFTP
 #### Custom Command
-Specify a custom command.
+Specify a custom command. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 ### FTP
 #### Transfer Mode

@@ -58,7 +58,7 @@ Write or paste your PowerShell command or script in the script editor.
 Maintain a list of parameters which should be passed on to the script.
 
 > [!Tip]
-> To pass on parameters you need to define a param script block (named parameters). Positional parameters are not supported. As value you can either pass on static values (like a string or an integer) or dynamic properties of the connection using replacement tokens, such as $EffectiveUsername$ or $EffectivePassword$.
+> To pass on parameters you need to define a param script block (named parameters). Positional parameters are not supported. As value you can either pass on static values (like a string or an integer) or dynamic properties of the connection using [replacement tokens](xref:royalts_advanced_tokens), such as $EffectiveUsername$ or $EffectivePassword$.
 > 
 > You can use dedicated test values (static values) to test your script within Royal TS.
 

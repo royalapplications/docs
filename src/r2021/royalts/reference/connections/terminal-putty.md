@@ -122,7 +122,7 @@ Configure the gap between text and border.
 
 ### External Window
 #### Window Title
-By default the window title will contain the host name followed by ‘PuTTY’, for example server1.example.com - PuTTY. If you want a different window title, this is where to set it. The title string set here is therefore only the initial window title.
+By default the window title will contain the host name followed by ‘PuTTY’, for example server1.example.com - PuTTY. If you want a different window title, this is where to set it. The title string set here is therefore only the initial window title. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 #### Separate Window and Icon Titles
 If you want to see window and icon titles, enable this option.
@@ -300,7 +300,7 @@ The **SSH Settings** page allows you to configure settings specific for SSH conn
 Specify an MD5-based host key fingerprint of the form displayed in PuTTY's Event Log and host key dialog box or a base64-encoded blob describing an SSH-2 public key in OpenSSH's one-line public key format. Pre-populating the fingerprint can be helpful when connecting through SSH tunnels, proxy servers or secure gateways.
 
 #### SSH Remote Command
-In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example).
+In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 #### Preferred Protocol Version
 PuTTY will attempt to use protocol 1 if the server you connect to does not offer protocol 2, and vice versa.  
@@ -533,7 +533,7 @@ If checked, no session data is logged. Applies only to SSH packet logging.
 
 ### Log File Options
 #### Log File Name
-The log file name can contain &Y, &M, &D for date, &T for time, and &H for host name. If you leave the log file name blank, Royal TS will generate a file name based on the connection name and the time stamp.
+The log file name can contain &Y, &M, &D for date, &T for time, and &H for host name. If you leave the log file name blank, Royal TS will generate a file name based on the connection name and the time stamp. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 #### Path
 Specify a path where all the log files are saved. Each log file will be named automatically based on the connection name and the time stamp.
