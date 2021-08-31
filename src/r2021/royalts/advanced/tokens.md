@@ -7,7 +7,7 @@ order: 10450
 # Replacement Tokens
 
 ## What are Replacement Tokens?
-Replacement tokens are special variables which can be used in certain places to replace/insert data or information which is only available at execution time, such as starting a connection, executing a task in context of a connection, or creating an object from a template.
+Replacement tokens are special variables that can be used in certain places to replace/insert data or information which is only available at execution time, such as starting a connection, executing a task in the context of a connection, or creating an object from a template.
 
 ## Example
 Let's take a look at the built-in **Ping** task, which can be executed in context of a connection by right-clicking an existing connection and selecting the **Command Tasks -> Ping** command. 
@@ -22,10 +22,10 @@ Replacement Tokens can be used in [Command Tasks](xref:royalts_reference_tasks_c
 - In [Command Tasks](xref:royalts_reference_tasks_command), use the **fly-out-button** (right arrow) in the `Command`, `Arguments` or `Working Directory`.
 - In [Key Sequence Tasks](xref:royalts_reference_tasks_key-sequence), use the **Insert** button to insert replacement tokens and/or special keys.
 - In [Templates](xref:royalts_tutorials_templates) use the **Template Tokens** button at the top right for a list of available tokens.
-- In [Connections](xref:royalts_reference_connections) you can use replacement tokens only in places where it is explicitly mentioned in the docs. The **URI** property (computer name or web address), for example, can resolve replacment tokens. In these cases, the tokens must be entered manually as there's no fly-out-button available.
+- In [Connections](xref:royalts_reference_connections), you can use replacement tokens only in places where it is explicitly mentioned in the docs. The **URI** property (computer name or web address), for example, can resolve replacement tokens. In these cases, the tokens must be entered manually as there's no fly-out-button available.
 
 ## Context
-When you execute a task or template in context of one or more connections (the selected connections), the specified tokens such as `$URI$` or `$CustomField1$` are resolved and replaced from the context connection.
+When you execute a task or template in the context of one or more connections (the selected connections), the specified tokens such as `$URI$` or `$CustomField1$` are resolved and replaced from the context connection.
 
 > [!Note]
 > If no context is available (for example, by simply connecting to a connection), the context is the object itself. This means, using the token `$CustomField1$` in the **Computer Name** field of a connection will use the value of **Custom Field 1** of the very same connection.
@@ -37,10 +37,10 @@ When you execute a task or template in context of one or more connections (the s
 ### Object Properties
 In general, you can refer to any of the available properties for each involved object type. A complete reference of properties for each type can be found [here](xref:scripting_objects).
 
-For example: if you want to use the **MAC address** specified in a [Terminal](xref:royalts_reference_connections_terminal-rebex#mac-address) connection, you can use the [corresponding property](xref:scripting_object_royalsshconnection#physicaladdress) as replacement token: `$PhysicalAddress$`
+For example: if you want to use the **MAC address** specified in a [Terminal](xref:royalts_reference_connections_terminal-rebex#mac-address) connection, you can use the [corresponding property](xref:scripting_object_royalsshconnection#physicaladdress) as a replacement token: `$PhysicalAddress$`
 
 ### Custom Properties
-Each object can have an arbitrary number of **Custom Properties**, such as the [Remote Desktop connection](xref:royalts_reference_connections_rdp#-custom-properties). To access the value of a custom properties, you need to use the `CustomProperty.` prefix and the **alphanumeric name WITHOUT spaces** of the property.
+Each object can have an arbitrary number of **Custom Properties**, such as the [Remote Desktop connection](xref:royalts_reference_connections_rdp#-custom-properties). To access the value of a custom property, you need to use the `CustomProperty.` prefix and the **alphanumeric name WITHOUT spaces** of the property.
 
 For example: if you have a custom property with the name: `User's Start-Date:` you can access the value using the token `$CustomProperty.UsersStartDate$`
 
