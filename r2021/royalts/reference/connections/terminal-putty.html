@@ -131,6 +131,7 @@ Leave empty for the default PuTTY window title match: <code>- PuTTY</code></p>
 <h5>Tip</h5>
 <p>Click on the browse button (...) to open the <strong>Entry Editor</strong> dialog. The entry editor can be used to search for computers in your network and to add multiple entries for different servers with the same settings at the same time (when supported).</p>
 <p>Alternatively, you can also just specify more computer names by separating them with a semicolon for bulk-add operations.</p>
+<p><a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
 </div>
 <h4 id="port">Port</h4>
 <p>Specify the TCP port for the connection.</p>
@@ -172,7 +173,7 @@ Leave empty for the default PuTTY window title match: <code>- PuTTY</code></p>
 <p>Configure the gap between text and border.</p>
 <h3 id="external-window">External Window</h3>
 <h4 id="window-title">Window Title</h4>
-<p>By default the window title will contain the host name followed by ‘PuTTY’, for example server1.example.com - PuTTY. If you want a different window title, this is where to set it. The title string set here is therefore only the initial window title.</p>
+<p>By default the window title will contain the host name followed by ‘PuTTY’, for example server1.example.com - PuTTY. If you want a different window title, this is where to set it. The title string set here is therefore only the initial window title. <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
 <h4 id="separate-window-and-icon-titles">Separate Window and Icon Titles</h4>
 <p>If you want to see window and icon titles, enable this option.</p>
 <h4 id="warn-before-closing-window">Warn before closing Window</h4>
@@ -524,7 +525,7 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <h4 id="fingerprint">Fingerprint</h4>
 <p>Specify an MD5-based host key fingerprint of the form displayed in PuTTY's Event Log and host key dialog box or a base64-encoded blob describing an SSH-2 public key in OpenSSH's one-line public key format. Pre-populating the fingerprint can be helpful when connecting through SSH tunnels, proxy servers or secure gateways.</p>
 <h4 id="ssh-remote-command">SSH Remote Command</h4>
-<p>In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example).</p>
+<p>In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
 <h4 id="preferred-protocol-version">Preferred Protocol Version</h4>
 <p>PuTTY will attempt to use protocol 1 if the server you connect to does not offer protocol 2, and vice versa.<br>
 If you select ‘1 only’ or ‘2 only’ here, PuTTY will only connect if the server you connect to offers the SSH protocol version you have specified.</p>
@@ -713,7 +714,7 @@ If checked, PuTTY will automatically copy the selected text to the system clipbo
 <p>If checked, no session data is logged. Applies only to SSH packet logging.</p>
 <h3 id="log-file-options">Log File Options</h3>
 <h4 id="log-file-name">Log File Name</h4>
-<p>The log file name can contain &amp;Y, &amp;M, &amp;D for date, &amp;T for time, and &amp;H for host name. If you leave the log file name blank, Royal TS will generate a file name based on the connection name and the time stamp.</p>
+<p>The log file name can contain &amp;Y, &amp;M, &amp;D for date, &amp;T for time, and &amp;H for host name. If you leave the log file name blank, Royal TS will generate a file name based on the connection name and the time stamp. <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
 <h4 id="path">Path</h4>
 <p>Specify a path where all the log files are saved. Each log file will be named automatically based on the connection name and the time stamp.</p>
 <h4 id="open-in-explorer">Open in Explorer</h4>

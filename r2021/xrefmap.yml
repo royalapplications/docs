@@ -121,6 +121,9 @@ references:
 - uid: royalts_advanced_import
   name: Import Data
   href: royalts/advanced/import.html
+- uid: royalts_advanced_tokens
+  name: Replacement Tokens
+  href: royalts/advanced/tokens.html
 - uid: royalts_advanced_uri
   name: URI Scheme
   href: royalts/advanced/uri.html
@@ -418,9 +421,15 @@ references:
 - uid: scripting_rjson
   name: Introduction
   href: scripting/rjson/index.html
+- uid: scripting_rjson_advanced-scenarios
+  name: Advanced scenarios
+  href: scripting/rjson/advanced-scenarios.html
 - uid: scripting_rjson_available_properties
   name: RoyalJSONDocument (Root Element)
   href: scripting/rjson/available-properties/index.html
+- uid: scripting_rjson_tokens
+  name: Tokens
+  href: scripting/rjson/tokens.html
 - uid: scripting_serverps
   name: RoyalServer Powershell
   href: scripting/server/index.html

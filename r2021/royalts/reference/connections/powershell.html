@@ -118,6 +118,7 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <h5>Tip</h5>
 <p>Click on the browse button (...) to open the <strong>Entry Editor</strong> dialog. The entry editor can be used to search for computers in your network and to add multiple entries for different servers with the same settings at the same time (when supported).</p>
 <p>Alternatively, you can also just specify more computer names by separating them with a semicolon for bulk-add operations.</p>
+<p><a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
 </div>
 <h4 id="description">Description</h4>
 <p>Enter a description for the object.</p>
@@ -129,7 +130,7 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <p>Maintain a list of parameters which should be passed on to the script.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>To pass on parameters you need to define a param script block (named parameters). Positional parameters are not supported. As value you can either pass on static values (like a string or an integer) or dynamic properties of the connection using replacement tokens, such as $EffectiveUsername$ or $EffectivePassword$.</p>
+<p>To pass on parameters you need to define a param script block (named parameters). Positional parameters are not supported. As value you can either pass on static values (like a string or an integer) or dynamic properties of the connection using <a class="xref" href="../../advanced/tokens.html">replacement tokens</a>, such as $EffectiveUsername$ or $EffectivePassword$.</p>
 <p>You can use dedicated test values (static values) to test your script within Royal TS.</p>
 </div>
 <div class="NOTE">
