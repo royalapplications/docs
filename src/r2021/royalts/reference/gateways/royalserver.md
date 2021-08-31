@@ -22,7 +22,7 @@ See also: [Introducing Royal Server](xref:royalts_intro_royalserver)
 The **Royal Server** page allows you to configure the computer name (IP address or FQDN) where Royal Server is installed and running, the port and whether or not to use SSL (recommended).
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
-[!include[computername.md](~/royalts/_shared/computername.md)]
+[!include[computername.md](~/royalts/_shared/computername-gw.md)]
 
 #### Port
 Specify the TCP port of the Royal Server.

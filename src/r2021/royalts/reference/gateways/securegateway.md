@@ -20,7 +20,7 @@ The Secure Gateway Properties dialog is shown:
 The **Secure Gateway** page allows you to configure the computer name (IP address or FQDN) where the Secure Gateway (SSH server with tunneling support) is installed and running. [Royal Server](xref:royalts_intro_royalserver) already includes a Secure Gateway component.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
-[!include[computername.md](~/royalts/_shared/computername.md)]
+[!include[computername.md](~/royalts/_shared/computername-gw.md)]
 
 #### Port
 Specify the TCP port of the Secure Gateway (default port is 22).

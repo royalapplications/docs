@@ -20,7 +20,7 @@ The Remote Desktop Gateway Properties dialog is shown:
 The **Remote Desktop Gateway** page allows you to configure the computer name (IP address or FQDN) where the Remote Desktop Gateway server role is installed and running.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
-[!include[computername.md](~/royalts/_shared/computername.md)]
+[!include[computername.md](~/royalts/_shared/computername-gw.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
