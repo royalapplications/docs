@@ -106,6 +106,9 @@ If checked, Royal TS will not show warning messages when fingerprint does not ma
 #### Prefer Keyboard-Interactive Authentication
 If checked, keyboard-interactive authentication is preferred over password authentication.
 
+> [!Note]
+> You may need to enable this option when your servers requires multi-factor authentication (MFA).
+
 [!include[rebexciphers.md](~/royalts/_shared/rebexciphers.md)]
 
 ## ![](/r2021/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Proxy_32.svg#img_header) Proxy Settings
