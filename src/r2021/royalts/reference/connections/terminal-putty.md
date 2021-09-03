@@ -345,6 +345,9 @@ TIS and CryptoCard authentication are (despite their names) generic forms of sim
 #### Attempt Keyboard-Interactive Authentication (SSH-2)
 The SSH-2 equivalent of TIS authentication is called ‘keyboard-interactive’.
 
+> [!Note]
+> You may need to enable this option when your servers requires multi-factor authentication (MFA).
+
 #### Allow Agent Forwarding
 This option allows the SSH server to open forwarded connections back to your local copy of Pageant. If you are not running Pageant, this option will do nothing.
 
