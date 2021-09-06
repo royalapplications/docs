@@ -15,12 +15,12 @@ Previous versions had limited GPO support using ADMX files which are not shipped
 
 ## Supported Settings
 ### Application Settings (Options)
-You can set almost all the settings available in the [Options] dialog. You can find a reference of all supported settings in our [Scripting] section.(xref:scripting_reference_royalapplicationsettings).
+You can set almost all the settings available in the [Options] dialog. You can find a reference of all supported settings in our [Scripting](xref:scripting_object_royalapplicationsetting) section.
 
 ### Default Settings
 You can control the default settings for each connection type - similar to what you can do in the user interface under Application / Default Settings.  
 
-You can find a reference to all the supported settings for each connection type in our [Scripting] section.(xref:scripting_reference).
+You can find a reference to all the supported settings for each connection type in our [Scripting](xref:scripting_objects) section.
 
 ## Scope
 We provide the following scopes to control how and when the settings are applied to the Royal TS configuration.
