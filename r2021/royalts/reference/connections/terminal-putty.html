@@ -556,6 +556,10 @@ If you select ‘1 only’ or ‘2 only’ here, PuTTY will only connect if the 
 <p>TIS and CryptoCard authentication are (despite their names) generic forms of simple challenge/response authentication available in SSH protocol version 1 only.</p>
 <h4 id="attempt-keyboard-interactive-authentication-ssh-2">Attempt Keyboard-Interactive Authentication (SSH-2)</h4>
 <p>The SSH-2 equivalent of TIS authentication is called ‘keyboard-interactive’.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You may need to enable this option when your servers requires multi-factor authentication (MFA).</p>
+</div>
 <h4 id="allow-agent-forwarding">Allow Agent Forwarding</h4>
 <p>This option allows the SSH server to open forwarded connections back to your local copy of Pageant. If you are not running Pageant, this option will do nothing.</p>
 <h4 id="allow-attempted-changes-of-username-ssh-2">Allow attempted Changes of Username (SSH-2)</h4>

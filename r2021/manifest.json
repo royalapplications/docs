@@ -3767,7 +3767,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/advanced/default-settings.html",
-          "hash": "GRW6znoHHSYkx/tZkD/KhA=="
+          "hash": "dtvkPmjy1/vZnMSSNwFE0w=="
         }
       },
       "is_incremental": false,
@@ -4031,7 +4031,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/filetransfer.html",
-          "hash": "NJ6W4JNd/GA1lXxKNijkHA=="
+          "hash": "NaMx7TJhVhhJBn30xjkM0g=="
         }
       },
       "is_incremental": false,
@@ -4115,7 +4115,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-putty.html",
-          "hash": "Tp5s58+xnwtOd34P56wCyg=="
+          "hash": "e5Vx8VndvhYmh/Swd9B2IQ=="
         }
       },
       "is_incremental": false,
@@ -4127,7 +4127,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-rebex.html",
-          "hash": "k2LFUG3XlugZzb4bu0rssg=="
+          "hash": "hRcvGnqEsriYLbyHfsk0Xw=="
         }
       },
       "is_incremental": false,
