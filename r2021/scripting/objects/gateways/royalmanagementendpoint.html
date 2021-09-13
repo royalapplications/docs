@@ -95,6 +95,9 @@ The unique object identifier (GUID) of the object.</p>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The external unique object identifier (GUID) of the object.</p>
 <h2 id="gateway">Gateway</h2>
+<h3 id="dependsonsecuregatewayid">DependsOnSecureGatewayID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign another secure gateway dependency. The configured secure gateway tunnel will be established and used before the tunnel for this gateway is established.</p>
 <h3 id="securegatewaycredentialid">SecureGatewayCredentialID</h3>
 <p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
 Assign a credential object as Gateway credential by specifying the credential object's GUID.</p>
