@@ -18,6 +18,13 @@ The Options dialog allows you to set application settings, manage your license a
 #### Don't create the Dashboard Tab
 If checked, Royal TS will not create the Dashboard tab automatically when Royal TS starts. The Dashboard tab can be created manually using the Dashboard button on the View tab.
 
+#### Start minimized
+If checked, Royal TS will start minimized.
+
+> [!NOTE]
+> While Royal TS will be started and kept minimized, dialog boxes (such as password prompts, reconnect dialog, etc.) are still showing up.
+
+#### Application Start
 The Application Start drop-down list offers the following settings:
 - **Do not open any documents**  
 Royal TS will start without opening any documents.
@@ -84,12 +91,6 @@ If checked, an Ad Hoc connection name suffix is appended.
 ### Other
 #### Minimize to Notificateion Area (Systray)
 When checked, minimized windows will not be displayed in the windows taskbar. Royal TS displays an icon in the notification area (systray) for you to access minimized windows.
-
-#### Include External Apps
-If checked, Royal TS will also listen to the keyboard events if it isn't the focused window. Connections like PuTTY based Terminal or external app can be switched through as well.
-
-> [!WARNING]
-> Enabling this setting could cause unexpected behavior, especially when you use other applications providing deep keyboard hooks. If you experience interference with other applications, turn off this option and restart Royal TS.
 
 #### Reset Warnings and Messages
 Clicking this button will reset and show all the messages again where you checked "Do not show this message again".

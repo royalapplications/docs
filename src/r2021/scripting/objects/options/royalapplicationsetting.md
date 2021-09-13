@@ -58,7 +58,7 @@ Type: `string`, Default Value: `.rtsx;.rtsz`
 .rtsz = Royal TS Document   
  .rtsx = Royal TS V2 Document  
 ### RegisterUrlProtocols
-Type: `string`, Default Value: `rtsx;royalappslicense`  
+Type: `string`, Default Value: `rtsx;royalappslicense;rtscli`  
 rtsx   
  royalappslicense  
 ### ConfirmClose
@@ -610,6 +610,9 @@ Type: `int`, Default Value: `1`
 ### ShowColoredActiveConnectionIcons
 Type: `bool`, Default Value: `true`  
 Show colored active connection icons  
+### ShowColoredInactiveConnectionIcons
+Type: `bool`, Default Value: `true`  
+Show colored inactive connection icons  
 ### ShowConnectionTypeInTabTooltip
 Type: `bool`, Default Value: `false`  
 Show Connection Type in Tab Tooltip (macOS)  
@@ -622,6 +625,9 @@ Show the Document Name in the main window title
 ### ShowFavoriteIndicator
 Type: `bool`, Default Value: `true`  
 Shows an indicator for favorites  
+### ShowMainFilterButtons
+Type: `bool`, Default Value: `false`  
+When enabled, the main filter buttons (Favorites, Active and Inactive) are shown directly in the search box.  
 ### ShowParentFolderNameInWindowTitle
 Type: `bool`, Default Value: `false`  
 Show the Folder Name in the main window title  

@@ -96,9 +96,15 @@ When Restricted Admin Mode is enabled, the user authenticated on the remote devi
 ### SessionTakeoverWarning
 Type: `bool`, Default Value: `false`  
 When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.  
+### TCPACKTimeout
+Type: `int`, Default Value: `9`  
+The connection timeout in seconds. Advanced setting for high latency links. Use if you encounter timeout failures with your connection.  
 ### TLSEncryption
 Type: `bool`, Default Value: `false`  
 If set to true transport layer security (TLS) is enabled.  
+### UseCredentialManager
+Type: `bool`, Default Value: `false`  
+If set to true, credentials will be added to the Windows Credential Manager instead of sending them to the server.  
 ### UseRedirectionServerName
 Type: `bool`, Default Value: `false`  
 Gets and sets whether to use the redirection server name.  
@@ -165,6 +171,9 @@ Specifies the remote desktop width in pixels.
 ### DoNotShowConnectionBar
 Type: `bool`, Default Value: `false`  
 If set to true, the connection bar will not be displayed in Full Screen mode.  
+### LocalZoom
+Type: `bool`, Default Value: `false`  
+If set to true, scale factor and zooming is applied locally.  
 ### ScaleFactor
 Type: `int`, Default Value: `100`  
 Specifies the remote desktop scaling factor in percent.  

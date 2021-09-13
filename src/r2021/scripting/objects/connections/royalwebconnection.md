@@ -42,7 +42,7 @@ Type: `int`, Default Value: `200`
 Specify the delay in milliseconds before the auto fill is executed.  
 ### AutoFillMapping
 Type: `string[]`, Default Value: `new string[] { }`  
-Mapping configuration to automatically fill forms when connected (DEPRACTED)  
+Mapping configuration to automatically fill forms when connected (DEPRECATED - use AutoFillMappingX instead)  
 ### AutoRefresh
 Type: `bool`, Default Value: `false`  
 If set to true, the web page will be refreshed automatically. Requires the AutoRefreshIntervalInSeconds to be set.  

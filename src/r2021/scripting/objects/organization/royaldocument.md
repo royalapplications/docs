@@ -6,10 +6,6 @@ order: 9900
 
 # RoyalDocument
 ## General
-### SaveOption
-Type: `RoyalSaveOption`, Default Value: `0`  
-1 = Overwrite   
- 2 = Merge  
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
@@ -34,6 +30,10 @@ If set to true, the document is automatically saved when it's closed.
 ### AutoSaveAfterChange
 Type: `bool`, Default Value: `false`  
 If set to true, the document is automatically saved after it has been changed.  
+### SaveOption
+Type: `RoyalSaveOption`, Default Value: `0`  
+1 = Overwrite   
+ 2 = Merge  
 ### StoreFolderExpandStateInUserConfig
 Type: `bool`, Default Value: `false`  
 If set to true, the folder expand state will be stored in the user configuration.  

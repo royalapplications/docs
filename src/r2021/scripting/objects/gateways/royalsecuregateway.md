@@ -35,6 +35,9 @@ The external unique object identifier (GUID) of the object.
 Type: `bool`, Default Value: `false`  
 Whether or not to omit the domain portion of the username.  
 ## Gateway
+### DependsOnSecureGatewayID
+Type: `Guid`, Default Value: `Guid.Empty`  
+Assign another secure gateway dependency. The configured secure gateway tunnel will be established and used before the tunnel for this gateway is established.  
 ### SecureGatewayCredentialID
 Type: `Guid`, Default Value: `Guid.Empty`  
 Assign a credential object as Gateway credential by specifying the credential object's GUID.  
