@@ -6,6 +6,9 @@ order: 9100
 
 # RoyalRDSConnection
 ## General
+### CustomImageName
+Type: `string`, Default Value: `Empty String`  
+A custom image name from a pre-defined set of images  
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
@@ -174,11 +177,14 @@ If set to true, the connection bar will not be displayed in Full Screen mode.
 ### LocalZoom
 Type: `bool`, Default Value: `false`  
 If set to true, scale factor and zooming is applied locally.  
+### PinConnectionBar
+Type: `bool`, Default Value: `true`  
+Tracks if the connection bar is pinned or not.  
 ### ScaleFactor
 Type: `int`, Default Value: `100`  
 Specifies the remote desktop scaling factor in percent.  
 ### SmartReconnect
-Type: `bool`, Default Value: `true`  
+Type: `bool`, Default Value: `false`  
 If set to true, the client control reconnects when the window was resized. Only works when SmartSizing is false and no desktop width or height is set.  
 ### SmartSizing
 Type: `bool`, Default Value: `false`  
@@ -201,6 +207,9 @@ Type: `int`, Default Value: `0`
 ### GatewayCredentialName
 Type: `string`, Default Value: `Empty String`  
 Assign a credential object as gateway server credential by specifying the credential object's name.  
+### GatewayCredentialSharing
+Type: `bool`, Default Value: `false`  
+If enabled, the remote desktop gateway credentials are passed on to the remote desktop server.  
 ### GatewayHostName
 Type: `string`, Default Value: `Empty String`  
 The terminal service gateway server computer name.  
@@ -696,6 +705,9 @@ Custom properties allow you to collect additional information for an object.
 ### NotesFromParent
 Type: `bool`, Default Value: `false`  
 Use the Notes value from the parent folder.  
+### Notes
+Type: `string`, Default Value: `Empty String`  
+Store HTML formatted notes to the object.  
 ## Changes
 ### Created
 Type: `DateTime`, Default Value: `DateTime.Now`  

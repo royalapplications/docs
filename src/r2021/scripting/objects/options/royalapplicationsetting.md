@@ -6,6 +6,9 @@ order: 6800
 
 # RoyalApplicationSetting
 ## General
+### CustomImageName
+Type: `string`, Default Value: `Empty String`  
+A custom image name from a pre-defined set of images  
 ### AutoBackupFile
 Type: `bool`, Default Value: `true`  
 Creates a .backup file in the same directory where the document is stored.  
@@ -38,6 +41,9 @@ Whether or not the object is a favorite.
 ### DoNotCreateDashboardOnStartup
 Type: `bool`, Default Value: `false`  
 Don't create the Dashboard tab  
+### StartMinimized
+Type: `bool`, Default Value: `false`  
+Starts Royal TS minimized  
 ### ColorFromParent
 Type: `bool`, Default Value: `false`  
 Use the Color value from the parent folder.  
@@ -466,6 +472,9 @@ This policy setting allows you to manage if a user is allowed to create credenti
 ### PolicyDoNotAllowWeakDocumentPasswords
 Type: `bool`, Default Value: `false`  
 This policy setting allows you to manage if a user is able to specify weak document passwords. The password strength indicator in Royal TS must show 'Great' (color green) in order to accept the password.  
+### PolicyDoNotAllowWindowsCredentialManager
+Type: `bool`, Default Value: `false`  
+This policy setting allows you to manage if a user is allowed to save document passwords in the Windows Credential Manager.  
 ## Proxy Server
 ### ProxyEnabled
 Type: `bool`, Default Value: `false`  
@@ -879,6 +888,9 @@ Custom properties allow you to collect additional information for an object.
 ### NotesFromParent
 Type: `bool`, Default Value: `false`  
 Use the Notes value from the parent folder.  
+### Notes
+Type: `string`, Default Value: `Empty String`  
+Store HTML formatted notes to the object.  
 ## Changes
 ### Created
 Type: `DateTime`, Default Value: `DateTime.Now`  

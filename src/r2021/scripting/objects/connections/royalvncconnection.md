@@ -6,6 +6,9 @@ order: 9000
 
 # RoyalVNCConnection
 ## General
+### CustomImageName
+Type: `string`, Default Value: `Empty String`  
+A custom image name from a pre-defined set of images  
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
@@ -106,6 +109,9 @@ If set to true, an SSH tunnel is established for the connection.
 ### SSHTunnelHost
 Type: `string`, Default Value: `Empty String`  
 The host name used to establish the ssh tunnel.  
+### TightSecurity
+Type: `bool`, Default Value: `true`  
+If set to true, Tight security is enabled  
 ### TightVncEngine
 Type: `int`, Default Value: `0`  
 0 = GlavSoft TightVNC   
@@ -500,6 +506,9 @@ Custom properties allow you to collect additional information for an object.
 ### NotesFromParent
 Type: `bool`, Default Value: `false`  
 Use the Notes value from the parent folder.  
+### Notes
+Type: `string`, Default Value: `Empty String`  
+Store HTML formatted notes to the object.  
 ## Changes
 ### Created
 Type: `DateTime`, Default Value: `DateTime.Now`  

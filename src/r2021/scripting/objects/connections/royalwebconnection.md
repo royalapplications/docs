@@ -6,6 +6,9 @@ order: 8700
 
 # RoyalWebConnection
 ## General
+### CustomImageName
+Type: `string`, Default Value: `Empty String`  
+A custom image name from a pre-defined set of images  
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
@@ -97,6 +100,9 @@ Type: `int`, Default Value: `1`
 Type: `int`, Default Value: `100`  
 The initial zoom factor (25% - 500%).  
 ## Content
+### Content
+Type: `string`, Default Value: `Empty String`  
+A custom content HTML code to load instead of the web page.  
 ### UseCustomContent
 Type: `bool`, Default Value: `false`  
 If set to true, a custom content page will be loaded instead of the specified URL.  
@@ -546,6 +552,9 @@ Custom properties allow you to collect additional information for an object.
 ### NotesFromParent
 Type: `bool`, Default Value: `false`  
 Use the Notes value from the parent folder.  
+### Notes
+Type: `string`, Default Value: `Empty String`  
+Store HTML formatted notes to the object.  
 ## Changes
 ### Created
 Type: `DateTime`, Default Value: `DateTime.Now`  

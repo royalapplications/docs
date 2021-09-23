@@ -47,23 +47,13 @@ Specify the TCP port for the VNC connection. The default VNC port is 5900.
 ## ![](/r2021/images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced VNC settings.
 
-#### Engine
-Specify the engine to use.
-
 #### Encoding
 Specify which encoding should be used for the VNC connection.
 
 #### Scaling
 How the remote session view should be scaled.
 - Stretch (keep aspect ratio)
-- Stretch
-- No scaling (show scrollbars)
-
-#### Render Quality
-Only available when the "GlavSoft Legacy" engine is selected.
-- Low (Fast)
-- Medium
-- High (Slow)
+- Zoom factor
 
 #### Compression
 If checked, a custom compression value can be set.
@@ -79,6 +69,9 @@ Share the server with other viewers, i.e. allow several viewers to connect simul
 
 #### Clipboard Transfer
 If checked, clipboard content is transferred.
+
+#### Tight Security
+If checked (default), Tight security is enabled.
 
 > [!Note]
 > Some settings like Custom Compression or JPEG Quality are not available for all encodings.

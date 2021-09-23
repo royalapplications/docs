@@ -6,6 +6,9 @@ order: 7500
 
 # RoyalManagementEndpoint
 ## General
+### CustomImageName
+Type: `string`, Default Value: `Empty String`  
+A custom image name from a pre-defined set of images  
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
@@ -46,6 +49,9 @@ Type: `int`, Default Value: `0`
 ### SecureGatewayCredentialName
 Type: `string`, Default Value: `Empty String`  
 Assign a credential object as Gateway credential by specifying the credential object's name.  
+### SecureGatewayFingerprint
+Type: `string`, Default Value: `Empty String`  
+The fingerprint of the server to trust.  
 ### SecureGatewayHost
 Type: `string`, Default Value: `Empty String`  
 The server host name or IP address used to establish tunnel connections (SSH Server with tunneling support).  
@@ -62,6 +68,9 @@ If set to true, keyboard interactive authentication is preferred over password a
 Type: `string`, Default Value: `Empty String`  
 The username for the Gateway server.  
 ## Royal Server
+### RoyalServerFingerprint
+Type: `string`, Default Value: `Empty String`  
+The fingerprint of the server to trust.  
 ### RoyalServerHost
 Type: `string`, Default Value: `Empty String`  
 The server host name or IP address where Royal Server is installed und running.  
@@ -222,6 +231,9 @@ Custom properties allow you to collect additional information for an object.
 ### NotesFromParent
 Type: `bool`, Default Value: `false`  
 Use the Notes value from the parent folder.  
+### Notes
+Type: `string`, Default Value: `Empty String`  
+Store HTML formatted notes to the object.  
 ## Changes
 ### Created
 Type: `DateTime`, Default Value: `DateTime.Now`  

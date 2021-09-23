@@ -6,6 +6,9 @@ order: 7300
 
 # RoyalRDSGateway
 ## General
+### CustomImageName
+Type: `string`, Default Value: `Empty String`  
+A custom image name from a pre-defined set of images  
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
@@ -45,6 +48,9 @@ Type: `int`, Default Value: `0`
 ### GatewayCredentialName
 Type: `string`, Default Value: `Empty String`  
 Assign a credential object as gateway server credential by specifying the credential object's name.  
+### GatewayCredentialSharing
+Type: `bool`, Default Value: `false`  
+If enabled, the remote desktop gateway credentials are passed on to the remote desktop server.  
 ### GatewayHostName
 Type: `string`, Default Value: `Empty String`  
 The terminal service gateway server computer name.  
@@ -191,6 +197,9 @@ Custom properties allow you to collect additional information for an object.
 ### NotesFromParent
 Type: `bool`, Default Value: `false`  
 Use the Notes value from the parent folder.  
+### Notes
+Type: `string`, Default Value: `Empty String`  
+Store HTML formatted notes to the object.  
 ## Changes
 ### Created
 Type: `DateTime`, Default Value: `DateTime.Now`  

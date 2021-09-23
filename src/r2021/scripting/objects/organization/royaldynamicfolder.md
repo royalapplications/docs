@@ -6,6 +6,9 @@ order: 9700
 
 # RoyalDynamicFolder
 ## General
+### CustomImageName
+Type: `string`, Default Value: `Empty String`  
+A custom image name from a pre-defined set of images  
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
@@ -90,6 +93,10 @@ Assign a password to the object.
 ### CredentialUsername
 Type: `string`, Default Value: `Empty String`  
 Assign a username to the object.  
+## Folder
+### IsExpanded
+Type: `bool`, Default Value: `false`  
+Whether or not the folder is in expanded state.  
 ## Key Sequence
 ### KeySequence
 Type: `string`, Default Value: `Empty String`  
@@ -329,6 +336,9 @@ Custom properties allow you to collect additional information for an object.
 ### NotesFromParent
 Type: `bool`, Default Value: `false`  
 Use the Notes value from the parent folder.  
+### Notes
+Type: `string`, Default Value: `Empty String`  
+Store HTML formatted notes to the object.  
 ## Changes
 ### Created
 Type: `DateTime`, Default Value: `DateTime.Now`  
