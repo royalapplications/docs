@@ -70,6 +70,9 @@
 <h1 id="royalrdsconnection">RoyalRDSConnection</h1>
 
 <h2 id="general">General</h2>
+<h3 id="customimagename">CustomImageName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+A custom image name from a pre-defined set of images</p>
 <h3 id="name">Name</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The display name of the object.</p>
@@ -238,11 +241,14 @@ If set to true, the connection bar will not be displayed in Full Screen mode.</p
 <h3 id="localzoom">LocalZoom</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, scale factor and zooming is applied locally.</p>
+<h3 id="pinconnectionbar">PinConnectionBar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Tracks if the connection bar is pinned or not.</p>
 <h3 id="scalefactor">ScaleFactor</h3>
 <p>Type: <code>int</code>, Default Value: <code>100</code><br>
 Specifies the remote desktop scaling factor in percent.</p>
 <h3 id="smartreconnect">SmartReconnect</h3>
-<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the client control reconnects when the window was resized. Only works when SmartSizing is false and no desktop width or height is set.</p>
 <h3 id="smartsizing">SmartSizing</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
@@ -265,6 +271,9 @@ Assign a credential object as gateway server credential by specifying the creden
 <h3 id="gatewaycredentialname">GatewayCredentialName</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Assign a credential object as gateway server credential by specifying the credential object's name.</p>
+<h3 id="gatewaycredentialsharing">GatewayCredentialSharing</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If enabled, the remote desktop gateway credentials are passed on to the remote desktop server.</p>
 <h3 id="gatewayhostname">GatewayHostName</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The terminal service gateway server computer name.</p>
@@ -760,6 +769,9 @@ Custom properties allow you to collect additional information for an object.</p>
 <h3 id="notesfromparent">NotesFromParent</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 Use the Notes value from the parent folder.</p>
+<h3 id="notes-1">Notes</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Store HTML formatted notes to the object.</p>
 <h2 id="changes">Changes</h2>
 <h3 id="created">Created</h3>
 <p>Type: <code>DateTime</code>, Default Value: <code>DateTime.Now</code><br>
