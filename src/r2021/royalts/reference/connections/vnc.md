@@ -71,7 +71,7 @@ Share the server with other viewers, i.e. allow several viewers to connect simul
 If checked, clipboard content is transferred.
 
 #### Tight Security
-If checked (default), Tight security is enabled.
+If checked (default), Tight security is enabled. Disabling this option will also disable UTF8 clipboard transfers.
 
 > [!Note]
 > Some settings like Custom Compression or JPEG Quality are not available for all encodings.
