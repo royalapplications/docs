@@ -29,6 +29,11 @@ If checked, rundll.exe will be used to host Chromium instead of the external wor
 > [!Note]
 > Rundll.exe is a 32 bit application which has memory allocation limits. Depending on the web page you want to load, you might see crashes because of memory constraints. It is recommended to use the external workerprocess for best compatibility.
 
+#### Pre-Load Engine
+If checked, Royal TS will pre-load the engine during application startup to improve performance.
+> [!Note]
+> Enabling this setting will increase memory usage.
+
 ## Connection Properties
 The Web Page (Chrome) Properties dialog is shown:
 - for a new Web Page connection by clicking the **Web Page** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab when the Chrome based plugin is set as the default plugin.
