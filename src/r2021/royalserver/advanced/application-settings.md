@@ -20,7 +20,7 @@ As of Royal Server V4 advanced settings can be configured in `%ProgramData%\Roya
 
 Up to Royal Server V3, these settings are configured in the `RoyalServer.exe.config` file (located in the installation directory) under `configuration/appsettings`. The corresponding appsetings keys are:
 
-| Royal Server V3                            | Royal Server V3                                   |
+| Royal Server V4                            | Royal Server V3                                   |
 | ------------------------------------------ | ------------------------------------------------- |
 | UserCachingInSeconds                       | UserCachingInSeconds                              |
 | SecureGateway:AllowedEncryptionAlgorithms  | sg_allowed_encryption_algorithms                  |
