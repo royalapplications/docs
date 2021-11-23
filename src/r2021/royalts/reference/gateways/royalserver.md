@@ -24,6 +24,9 @@ The **Royal Server** page allows you to configure the computer name (IP address 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[computername.md](~/royalts/_shared/computername-gw.md)]
 
+> [!Tip]
+> You can specify multiple computer names (IP addresses) separated by semicolons for failover/fallback in case a server is not available.
+
 #### Port
 Specify the TCP port of the Royal Server.
 
