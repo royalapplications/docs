@@ -8,7 +8,7 @@
     <title>Application Settings </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Application Settings ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -81,9 +81,14 @@
 </thead>
 <tbody>
 <tr>
-<td>UserCachingInSeconds</td>
-<td>Caching time in seconds of group memberships for users are cached in Royal Server.</td>
+<td>UserCachingInSeconds (Royal Server v3 only)</td>
+<td>Time in seconds for which group memberships for users cached in Royal Server v3.</td>
 <td>Default is 300 (5 Minutes)</td>
+</tr>
+<tr>
+<td>RefreshUserGroupsCronInterval (Royal Server v4)</td>
+<td>Cron expression for the time the group memberships for users are cached in Royal Server v4.</td>
+<td>Default is &quot;*/5 * * * *&quot; (5 Minutes)</td>
 </tr>
 <tr>
 <td>SecureGateway:AllowedEncryptionAlgorithms</td>
@@ -116,13 +121,13 @@
 <table>
 <thead>
 <tr>
-<th>Royal Server V3</th>
+<th>Royal Server V4</th>
 <th>Royal Server V3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>UserCachingInSeconds</td>
+<td>RefreshUserGroupsCronInterval</td>
 <td>UserCachingInSeconds</td>
 </tr>
 <tr>
