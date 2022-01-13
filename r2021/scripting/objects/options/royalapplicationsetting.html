@@ -8,7 +8,7 @@
     <title>RoyalApplicationSetting </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="RoyalApplicationSetting ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -329,6 +329,9 @@ Enable Browser Extensions Browser Signature Verification</p>
 <h3 id="dynamicfolderevaluateshellpersonalizationfile">DynamicFolderEvaluateShellPersonalizationFile</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 When executing dynamic folder scripts, by default the shell personalization file will be evaluated. Disable this setting to disable evaluating the shell personalization file.</p>
+<h3 id="dynamicfoldershellname">DynamicFolderShellName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Configure the shell to execute Dynamic Folder scripts with. Valid values are empty string (System Default Shell), 'bash' or 'zsh'.</p>
 <h3 id="dynfolderbashargs">DynFolderBashArgs</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Additional Bash arguments for dynamic folder and dynamic credential scripts.</p>
@@ -511,6 +514,10 @@ Password Generator Include Uppercase Letters</p>
 <h3 id="passwordgeneratorlength">PasswordGeneratorLength</h3>
 <p>Type: <code>int</code>, Default Value: <code>12</code><br>
 Password Generator Length</p>
+<h2 id="passwords">Passwords</h2>
+<h3 id="passwordpwnedcheck">PasswordPwnedCheck</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If enabled, passwords will be securely verified and ensured it hasn't been pwned.</p>
 <h2 id="policy">Policy</h2>
 <h3 id="policydonotallowapplicationdocumentwithoutpassword">PolicyDoNotAllowApplicationDocumentWithoutPassword</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
