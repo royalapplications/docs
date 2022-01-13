@@ -271,9 +271,6 @@ Type: `int`, Default Value: `0`
 ### SecureGatewayID
 Type: `Guid`, Default Value: `Guid.Empty`  
 Assign a Secure Gateway or Royal Server object to this object by specifying the Secure Gateway or Royal Server object's GUID.  
-### SecureGatewayName
-Type: `string`, Default Value: `Empty String`  
-Assign a Secure Gateway or Royal Server object to this object by specifying the secure gateway or Royal Server object's name.  
 ## Remote Desktop Gateway
 ### RDSGatewayFromParent
 Type: `bool`, Default Value: `false`  

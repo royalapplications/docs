@@ -49,6 +49,18 @@ Specify the delay in milliseconds before the auto fill is executed.
 ### RetryAutoFillUntilSuccess
 Type: `bool`, Default Value: `false`  
 If set to true, auto fill is executed for each request until it was successful.  
+## Multi Factor Authentication
+### MfaConfiguration
+Type: `int`, Default Value: `0`  
+0 = Disabled   
+ 1 = Prompt  
+### MfaProperty
+Type: `int`, Default Value: `0`  
+0 = Effective Username   
+ 1 = Effective Password  
+### MfaTemplate
+Type: `string`, Default Value: `{Value}{MfaCode}`  
+Use the {Value} token to insert the property value (username or password). Use the {MfaCode} token to insert the MFA code.  
 ## Private Key
 ### PrivateKeyMode
 Type: `int`, Default Value: `0`  

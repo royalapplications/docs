@@ -81,6 +81,9 @@ The Royal Server listener port.
 Type: `int`, Default Value: `1`  
 0 = Http   
  1 = Https  
+### RoyalServerTimeout
+Type: `int`, Default Value: `60`  
+The client request timeout in seconds.  
 ### RoyalServerCredentialMode
 Type: `int`, Default Value: `0`  
 0 = Do not use any credentials   

@@ -265,6 +265,9 @@ Enable Browser Extensions Browser Signature Verification
 ### DynamicFolderEvaluateShellPersonalizationFile
 Type: `bool`, Default Value: `true`  
 When executing dynamic folder scripts, by default the shell personalization file will be evaluated. Disable this setting to disable evaluating the shell personalization file.  
+### DynamicFolderShellName
+Type: `string`, Default Value: `Empty String`  
+Configure the shell to execute Dynamic Folder scripts with. Valid values are empty string (System Default Shell), 'bash' or 'zsh'.  
 ### DynFolderBashArgs
 Type: `string`, Default Value: `Empty String`  
 Additional Bash arguments for dynamic folder and dynamic credential scripts.  
@@ -447,6 +450,10 @@ Password Generator Include Uppercase Letters
 ### PasswordGeneratorLength
 Type: `int`, Default Value: `12`  
 Password Generator Length  
+## Passwords
+### PasswordPwnedCheck
+Type: `bool`, Default Value: `false`  
+If enabled, passwords will be securely verified and ensured it hasn't been pwned.  
 ## Policy
 ### PolicyDoNotAllowApplicationDocumentWithoutPassword
 Type: `bool`, Default Value: `false`  

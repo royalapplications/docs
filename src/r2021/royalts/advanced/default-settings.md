@@ -187,8 +187,8 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\code4ward\RoyalTS\Security\
 #### Do not allow to check for updates
 This policy setting allows you to manage if a user is able to configure Royal TS to check for updates.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowCheckForUpdates**. 
-An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowCheckForUpdates**. 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowcheckforupdates)** with the name:
 ```batchfile
 PolicyDoNotAllowCheckForUpdates
 ```
@@ -197,7 +197,8 @@ Set the value to **true** to enable this policy.
 #### Do not allow to check for beta updates
 This policy setting allows you to manage if a user is able to configure Royal TS to check for beta updates.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowCheckForBetaUpdates**. An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowCheckForBetaUpdates**. 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowcheckforbetaupdates)** with the name:
 ```batchfile
 PolicyDoNotAllowCheckForBetaUpdates
 ```
@@ -206,7 +207,8 @@ Set the value to **true** to enable this policy.
 #### Do not allow application document without password protection
 This policy setting allows you to manage if a user is allowed to have an application document without password protection.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowApplicationDocumentWithoutPassword**. An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowApplicationDocumentWithoutPassword**. 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowapplicationdocumentwithoutpassword)** with the name:
 ```batchfile
 PolicyDoNotAllowApplicationDocumentWithoutPassword
 ```
@@ -215,7 +217,8 @@ Set the value to **true** to enable this policy.
 #### Do not allow to load or save documents without password protection
 This policy setting allowed you to manage if a user is allowed to have an application document without password protection.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowDocumentsWithoutPassword**. An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowDocumentsWithoutPassword**. 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowdocumentswithoutpassword)** with the name:
 ```batchfile
 PolicyDoNotAllowDocumentsWithoutPassword
 ```
@@ -224,7 +227,8 @@ Set the value to **true** to enable this policy.
 #### Do not allow weak document passwords
 This policy setting allows you to manage if a user is able to specify weak document passwords. The password strength indicator in Royal TS must show "Great" (color green) in order to accept the password.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowWeakDocumentPasswords** . An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowWeakDocumentPasswords** . 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowweakdocumentpasswords)** with the name:
 ```batchfile
 PolicyDoNotAllowWeakDocumentPasswords
 ```
@@ -233,7 +237,8 @@ Set the value to **true** to enable this policy.
 #### Do not allow creation of credential objects
 This policy setting allows you to manage if a user is allowed to create credential objects in Royal TS.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowCreateCredentialObjects**. An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowCreateCredentialObjects**. 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowcreatecredentialobjects)** with the name:
 ```batchfile
 PolicyDoNotAllowCreateCredentialObjects
 ```
@@ -242,7 +247,8 @@ Set the value to **true** to enable this policy.
 #### Do not allow creation of credential objects in document without password protection
 This policy setting allows you to manage if a user is allowed to create credential objects in a document without password protection.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword**. An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword**. 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowcreatecredentialobjectsindocumentswithoutpassword)** with the name:
 ```batchfile
 PolicyDoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword
 ```
@@ -251,7 +257,8 @@ Set the value to **true** to enable this policy.
 #### Do not allow to reveal object passwords
 This policy setting allows you to manage if a user is allowed to create credential objects in a document without password protection.  
 
-Previousely, the ADMX configuration changed the registry value **DoNotAllowRevealPasswords**. An equivalent boolean property has been created in the **RoyalApplicationSettings** with the name:
+Previously, the ADMX configuration changed the registry value **DoNotAllowRevealPasswords**. 
+An equivalent boolean property has been created in the **[RoyalApplicationSetting](xref:scripting_object_royalapplicationsetting#policydonotallowrevealpasswords)** with the name:
 ```batchfile
 PolicyDoNotAllowRevealPasswords
 ```
@@ -263,4 +270,33 @@ In previous versions (V5 and earlier) all logging related policies were set in t
 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\code4ward\RoyalTS\Logging\
 HKEY_CURRENT_USER\SOFTWARE\Policies\code4ward\RoyalTS\Logging\
 ```
-Should you have used the ADMX file to control logging parameters, simply set the appropriate **RoyalApplicationSettings** properties of the **Logging** category.
+Should you have used the ADMX file to control logging parameters, simply set the appropriate **RoyalApplicationSettings** properties of the **[Logging](xref:scripting_object_royalapplicationsetting#logging)** category.
+
+### Examples
+
+Example showing policy entries in the [default.settings.json](#json-file-configuration-path) file:
+```javascript
+"RoyalApplicationSetting" : {
+  "PolicyDoNotAllowApplicationDocumentsWithoutPassword": true,
+  "PolicyDoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword": true,
+  "PolicyDoNotAllowDocumentsWithoutPassword": true,
+  "PolicyDoNotAllowWeakDocumentPasswords": true
+}
+```
+
+Example showing policy entries in the [registry](#registry-current-user) file:
+```batchfile
+[HKEY_CURRENT_USER\Software\Policies\RoyalApps\RoyalTS\Default\RoyalApplicationSetting]
+"PolicyDoNotAllowApplicationDocumentsWithoutPassword"="true"
+"PolicyDoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword"="true"
+"PolicyDoNotAllowDocumentsWithoutPassword"="true"
+"PolicyDoNotAllowWeakDocumentPasswords"="true"
+```
+
+Example showing policy entries using [environment variables](#registry-current-user) file:
+```batchfile
+RTSDefault_RoyalApplicationSetting__PolicyDoNotAllowApplicationDocumentsWithoutPassword = True
+RTSDefault_RoyalApplicationSetting__PolicyDoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword = True
+RTSDefault_RoyalApplicationSetting__PolicyDoNotAllowDocumentsWithoutPassword = True
+RTSDefault_RoyalSSHConnection__PolicyDoNotAllowWeakDocumentPasswords = True
+```
