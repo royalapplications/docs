@@ -16,7 +16,7 @@ Creates a new RoyalStore container to open one or more Royal TS/X documents.
 ## SYNTAX
 
 ```
-New-RoyalStore -UserName <String> [-AppDocPath <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-RoyalStore -UserName1 <String> [-AppDocPath <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -25,36 +25,21 @@ This cmdlet creates a new RoyalStore in memory.
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+```powershell
 $store = New-RoyalStore -UserName "username"
 $doc = New-RoyalDocument -Store $store -FileName doc.rtsz -Name "documentname"
+Write-Host ($row[0] + " - " + $row[1])
 ```
 
 The variable $store is used for New-RoyalDocument cmdlet.
 
 ### EXAMPLE 2
+```powershell
+# Pipe the RoyalStore to the New-RoyalDocument cmdlet
+$doc = New-RoyalStore -UserName "username" | New-RoyalDocument -FileName doc.rtsz -Name "documentname"
 ```
-$doc = New-RoyalStore -UserName "username"| New-RoyalDocument -FileName doc.rtsz -Name "documentname"
-```
-
-Pipe the RoyalStore tot he New-RoyalDocument cmdlet.
 
 ## PARAMETERS
-
-### -UserName
-The user name will be used for logging purposes and when objects are created or modified.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -AppDocPath
 {{ Fill AppDocPath Description }}
@@ -96,6 +81,21 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserName1
+{{ Fill UserName1 Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
