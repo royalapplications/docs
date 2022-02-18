@@ -20,7 +20,7 @@ Close-RoyalDocument [-Document] <RoyalDocument> [-Force] [-WhatIf] [-Confirm] [<
 ```
 
 ## DESCRIPTION
-This cmdlet will close (and unload) an opened Royal TS/X and removes it from the RoyalStore.
+This cmdlet will close and unload an opened Royal TS/X and removes it from the RoyalStore.
 
 ## EXAMPLES
 
