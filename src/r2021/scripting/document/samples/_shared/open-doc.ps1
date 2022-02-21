@@ -1,5 +1,5 @@
 ################################################################################
-# Create a new Royal Document
+# Open a new Royal Document from the file system
 ################################################################################
 import-module royaldocument.powershell
 
@@ -7,12 +7,12 @@ import-module royaldocument.powershell
 # open documents
 $RoyalStore = New-RoyalStore -UserName ($env:USERDOMAIN + '\' + $env:USERNAME)
 
-# create the Royal Document
+# open the Royal Document
 $RoyalDocumentPath = Join-Path 
     -Path $env:USERPROFILE 
     -ChildPath ('Documents\' + $env:USERDOMAIN + '.rtsz')
 
-$RoyalDocument = New-RoyalDocument 
+$RoyalDocument = Open-RoyalDocument 
     -Name $env:USERDOMAIN 
     -FileName $RoyalDocumentPath 
     -Store $RoyalStore

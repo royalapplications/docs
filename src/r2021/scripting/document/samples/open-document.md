@@ -1,16 +1,12 @@
 ---
-uid: scripting_docs_samples_createdoc
-name: Create a Document
-order: 8990
+uid: scripting_docs_samples_opendoc
+name: Open a Document
+order: 9000
 ---
 
-# Creating a new Document
+# Open an existing Document
 
-[!code-powershell[Main](./_shared/create-doc.ps1)]
-
-> [!NOTE]
-> The parameter "UserName" for the ```New-RoyalStore``` cmdlet is just for logging 
-purposes and not for purposes like authentication. 
+[!code-powershell[Main](./_shared/open-doc.ps1)]
 
 [!include[royal-store-reference-note](./_shared/royal-store-referencde-note.md)]
 
