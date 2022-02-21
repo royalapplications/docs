@@ -8,11 +8,5 @@ import-module royaldocument.powershell
 $RoyalStore = New-RoyalStore -UserName ($env:USERDOMAIN + '\' + $env:USERNAME)
 
 # create the Royal Document
-$RoyalDocumentPath = Join-Path 
-    -Path $env:USERPROFILE 
-    -ChildPath ('Documents\' + $env:USERDOMAIN + '.rtsz')
-
-$RoyalDocument = New-RoyalDocument 
-    -Name $env:USERDOMAIN 
-    -FileName $RoyalDocumentPath 
-    -Store $RoyalStore
+$RoyalDocumentPath = Join-Path -Path $env:USERPROFILE -ChildPath ('Documents\' + $env:USERDOMAIN + '.rtsz')
+$RoyalDocument = New-RoyalDocument -Name $env:USERDOMAIN -FileName $RoyalDocumentPath -Store $RoyalStore

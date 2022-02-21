@@ -12,23 +12,13 @@ Create a new connection
 
 ```powershell
 # Create a new folder for storing our demo server connection object
-$Folder = New-RoyalObject 
-    -Folder $RoyalDocument 
-    -Type RoyalFolder 
-    -Name 'RoyalDocument.PowerShell example'
+$Folder = New-RoyalObject -Folder $RoyalDocument -Type RoyalFolder -Name 'RoyalDocument.PowerShell example'
 
 # Create a new Remote Desktop (RDP) Connection
-$RDS = New-RoyalObject 
-    -Folder $Folder 
-    -Type RoyalRDSConnection 
-    -Name "name of the connection" 
-    -Description "demo server"
+$RDS = New-RoyalObject -Folder $Folder -Type RoyalRDSConnection -Name "name of the connection" -Description "demo server"
 
 # Configure the connection URI (hostname) via cmdlet
-Set-RoyalObjectValue 
-    -Object $RDS 
-    -Property URI 
-    -Value srv01.demo.local
+Set-RoyalObjectValue -Object $RDS -Property URI -Value srv01.demo.local
 
 # Configure the connection directly
 $creator = "scriptuser"
