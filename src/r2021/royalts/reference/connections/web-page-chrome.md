@@ -107,6 +107,9 @@ A two lower case letter ISO 639-1 language code. For example, you can set it to 
 #### Load Images
 If enabled, images are automatically loaded.
 
+#### Allow Plugins
+If enabled, plugins can be loaded.
+
 #### Allow Zooming
 If enabled, the zoom factor can be changed in the browser.
 
@@ -118,19 +121,6 @@ If enabled, the Clipboard can be accessed using JavaScript.
 
 #### Allow Close Window
 If enabled, images are automatically loaded.
-
-### Plugins
-#### Allow Plugins
-If enabled, plugins can be loaded.
-
-#### Disable Built-In Plugins
-If enabled, built-in plugins (such as the built-in PDF plugin) will be disabled.
-
-#### Scan Common Plugins
-If enabled, commonly used plugins (QuickTime, Media Player, Acrobat, etc.) will be searched on the system and loaded.
-
-#### Additional Plugin Directories
-Specify additional plugin directories (in each line) to search for additional plugins.
 
 ### Proxy
 #### Proxy Mode
