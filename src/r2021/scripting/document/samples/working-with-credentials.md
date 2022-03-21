@@ -19,42 +19,40 @@ ID is searched in all open documents in the current Royal Store.  (see example 4
 name is searched in all open documents in the current Royal Store. (see example 5)
 
 
-Create a new connection
+> [!NOTE]
+> $exampleRDPConnection is an RDP connection object
 
+
+### Example 1: Do not specify any credentials
 ```powershell
-################################################################################
-# example 1: Do not specify any credentials
-################################################################################
 $exampleRDPConnection.CredentialMode = 0
+```
 
-################################################################################
-# example 2: Use Credential from parent folder
-################################################################################
+###  Example 2: Use Credential from parent folder
+```powershell
 $exampleRDPConnection.CredentialFromParent = $true
+```
 
-################################################################################
-# example 3: Specify username and password directly on the object itself 
-################################################################################
+### Example 3: Specify username and password directly on the object itself 
+```powershell
 $exampleRDPConnection.CredentialMode = 2
 $exampleRDPConnection.CredentialUsername = "username"
 $exampleRDPConnection.CredentialPassword = "secure-pwd"
 $exampleRDPConnection.CredentialAutologon = $true
+```
 
-################################################################################
-# example 4: Use another Credential object (=reference it, it has to be open in 
-# Royal TS/X / a RoyalStore)
-################################################################################
+### Example 4: Use another Credential object (=reference it, it has to be open in Royal TS/X / a RoyalStore)
+```powershell
 $exampleRDPConnection.CredentialMode = 3
 $exampleRDPConnection.CredentialId = "12345678-d89a-434e-b42d-ae3985f2ceb1"
 # Royal TSX will omit the domain portion of the username
 $exampleRDPConnection.CredentialOmitDomain = $false 
 # Royal TSX will use it to logon automatically
 $exampleRDPConnection.CredentialAutologon = $true 
+```
 
-################################################################################
-# example 5: Specify a credential Name (=reference it, it has to be open in 
-# Royal TS/X aka a RoyalStore)
-################################################################################
+### Example 5: Specify a credential Name (=reference it, it has to be open in Royal TS/X aka a RoyalStore)
+```powershell
 $exampleRDPConnection.CredentialMode = 4
 #any Name from a credential object
 $exampleRDPConnection.CredentialName = "credential-name" 
