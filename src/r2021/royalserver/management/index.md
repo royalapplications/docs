@@ -1,5 +1,6 @@
 ---
-name: Royal Server Management
+uid: royalserver_configtool_management
+name: Royal Server Configuration
 order: 9000
 ---
 

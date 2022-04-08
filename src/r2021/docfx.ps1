@@ -26,11 +26,11 @@ New-Item -ItemType Directory -Force ../../.output
 
 if (!(Test-Path ../../.output/gh-pages))  {
   git clone https://github.com/royalapplications/docs.git ../../.output/gh-pages
-  cd ../../.output/gh-pages
+  Set-Location ../../.output/gh-pages
   git checkout gh-pages
 }
 
-cd $PSScriptRoot
+Set-Location $PSScriptRoot
 $docfxJson = Join-Path -Path $PSScriptRoot -ChildPath "docfx.json"
 docfx $docfxJson
 

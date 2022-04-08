@@ -14,3 +14,7 @@ The Windows Events Module allows you to query the Windows EventLog in a very fle
 
 - Get log entries of one or more Windows Event Logs
 - Very flexible query language
+
+## Usage
+
+Add a [Windows Events View](xref:royalts_reference_connections_windows-events) connection in RoyalTS and assign a Royal Server object to it.

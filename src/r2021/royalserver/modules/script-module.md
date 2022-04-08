@@ -17,3 +17,7 @@ The Script Module allows you to execute PowerShell scripts on remote machines.
 ## Settings for Script Module
 
 - For Dynamic Folders and Dynamic Credentials, the following Script Interpreters can be configured: PowerShell, Bash, Python, PHP, Perl, Ruby. (These have to be installed first on the machine.)
+
+## Usage
+
+Add a [PowerShell](xref:royalts_reference_connections_powershell) connection in RoyalTS and assign a Royal Server object to it.

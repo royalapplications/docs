@@ -20,3 +20,7 @@ The Hyper-V Module is offering basic Hyper-V instance management.
 - Get Instance Details
 - Get network Details
 - Get a screenshot of the VM
+
+## Usage
+
+Add a [Hyper-V](xref:royalts_reference_connections_hyper-v) connection in RoyalTS and assign a Royal Server object to it.

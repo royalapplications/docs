@@ -61,7 +61,7 @@
   - order: 9010
     name: Logging
     href: management\logging.md
-  name: Royal Server Management
+  name: Royal Server Configuration
   href: management\index.md
 - order: 8000
   items:

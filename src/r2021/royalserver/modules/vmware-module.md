@@ -17,3 +17,7 @@ The VMware Module is offering basic virtual machine instance management for VMs 
 - Change the notes of a VM (not implemented in Royal TS yet)
 - Get a screenshot of the VM (not implemented in Royal TS yet)
 - Enable connections to a VM via VNC (if enabled), to the VM Console or to the host (via SSH)
+
+## Usage
+
+Add a [VMware](xref:royalts_reference_connections_vmware) connection in RoyalTS and assign a Royal Server object to it.

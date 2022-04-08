@@ -14,3 +14,7 @@ The Windows Processes Module allows you to work with running Windows Processes.
 
 - Get a list of Windows Processes
 - Terminate a process
+
+## Usage
+
+Add a [Windows Processes](xref:royalts_reference_connections_windows-processes) connection in RoyalTS and assign a Royal Server object to it.

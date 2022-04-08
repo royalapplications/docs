@@ -17,3 +17,7 @@ The Windows Services Module allows you to work with Windows Services.
 - Stop a service
 - Restart a service
 - Change the start mode of a service
+
+## Usage
+
+Add a [Windows Services](xref:royalts_reference_connections_windows-services) connection in RoyalTS and assign a Royal Server object to it.
