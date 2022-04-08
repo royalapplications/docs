@@ -122,12 +122,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### RoyalServer.PowerShell.RoyalServerConfig
+### -RoyalServerConfig : RoyalServer.PowerShell.RoyalServerConfig
 
 The configuration needed to talk to Royal Server.
-Use New-RoyalServerConfig to specify this.
+Use `New-RoyalServerConfig` to specify this.
 
-### System.String
+### -LicenseKey : System.String
 
 The license key to uninstall
 

@@ -138,16 +138,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### RoyalServer.PowerShell.RoyalServerConfig
+### -RoyalServerConfig : RoyalServer.PowerShell.RoyalServerConfig
 
 The configuration needed to talk to Royal Server.
-Use New-RoyalServerConfig to specify this.
+Use `New-RoyalServerConfig` to specify this.
 
-### -LicensKey
+### -LicenseKey : System.String
 
 The license key to install.
 
-### -LicensedTo
+### -LicensedTo : System.String
 
 The regisration name the license is issued to.
 

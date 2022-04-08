@@ -11,6 +11,7 @@ uid: Get-RoyalServerModule
 # Get-RoyalServerModule
 
 ## SYNOPSIS
+
 Gets the installed Royal Server Modules of a Royal Server installation.
 
 ## SYNTAX
@@ -20,11 +21,13 @@ Get-RoyalServerModule [-RoyalServerConfig] <RoyalServerConfig> [<CommonParameter
 ```
 
 ## DESCRIPTION
+
 The Get-RoyalServerModule cmdlet gets the installed Modules of a Royal Server installation.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
+
 ```
 Get-RoyalServerModule -RoyalServerConfig $config
 ```
@@ -32,8 +35,9 @@ Get-RoyalServerModule -RoyalServerConfig $config
 ## PARAMETERS
 
 ### -RoyalServerConfig
+
 The configuration needed to talk to Royal Server.
-Use New-RoyalServerConfig to specify this.
+Use `New-RoyalServerConfig` to specify this.
 
 ```yaml
 Type: RoyalServerConfig
@@ -48,15 +52,21 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### RoyalServer.Powershell.RoyalServerConfig
+### -RoyalServerConfig : RoyalServer.Powershell.RoyalServerConfig
+
 The configuration needed to talk to Royal Server.
-Use New-RoyalServerConfig to specify this.
+Use `New-RoyalServerConfig` to specify this.
 
 ## OUTPUTS
+
+### RoyalServer.PowerShell.RoyalServerPowerShellResponse
+
+For information on how to work with a `RoyalServerPowerShellResponse` look [here](./index.html#working-with-royal-server-responses).
 
 ## NOTES
 

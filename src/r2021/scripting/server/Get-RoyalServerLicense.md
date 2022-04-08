@@ -76,9 +76,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### RoyalServer.PowerShell.RoyalServerConfig
 
 The configuration needed to talk to Royal Server.
-Use New-RoyalServerConfig to specify this.
+Use `New-RoyalServerConfig` to specify this.
 
 ## OUTPUTS
+
+### RoyalServer.PowerShell.RoyalServerPowerShellResponse
+
+For information on how to work with a `RoyalServerPowerShellResponse` look [here](./index.html#working-with-royal-server-responses).
 
 ## NOTES
 
