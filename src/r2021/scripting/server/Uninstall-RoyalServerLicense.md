@@ -69,7 +69,7 @@ Accept wildcard characters: False
 
 ### -RoyalServerConfig
 
-The RoyalServerConfiguration is the configuration created with the New-RoyalServerConfig cmdlet.
+The RoyalServerConfiguration is the configuration created with the `New-RoyalServerConfig` cmdlet.
 
 ```yaml
 Type: RoyalServerConfig

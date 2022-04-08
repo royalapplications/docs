@@ -17,8 +17,8 @@ Installs a Royal Server license.
 ## SYNTAX
 
 ```
-Install-RoyalServerLicense [-RoyalServerConfig] <RoyalServerConfig> [-LicenseTo] <String>
- [-LicenseKey] <String> [-Timeout <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Install-RoyalServerLicense [-RoyalServerConfig] <RoyalServerConfig> -LicensedTo <String> [-LicenseKey] <String>
+ [-Timeout <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,25 +67,9 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -LicenseTo
-
-{{ Fill LicenseTo Description }}
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: 2
-Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-```
-
 ### -RoyalServerConfig
 
-The RoyalServerConfiguration is the configuration created with the New-RoyalServerConfig cmdlet.
+The RoyalServerConfiguration is the configuration created with the `New-RoyalServerConfig` cmdlet.
 
 ```yaml
 Type: RoyalServerConfig
@@ -129,6 +113,22 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LicensedTo
+
+The regisration name the license is issued to.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
