@@ -1,0 +1,42 @@
+{
+  "name": "royal-apps-docs",
+  "version": "1.0.0",
+  "description": "Creates documentation for products by Royal Apps GmbH",
+  "private": true,
+  "scripts": {
+    "watch": "npm-watch serve",
+    "serve": "cd ./src/r2021 && docfx -serve"
+  },
+  "watch": {
+    "serve": {
+      "patterns": [
+        "src/**/templates/**/*",
+        "src/**/*.md"
+      ],
+      "extensions": "md,yml,css,partial",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 500,
+      "runOnChangeOnly": false
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royalapplications/docs.git"
+  },
+  "keywords": [
+    "Documentation",
+    "Royal Apps",
+    "Royal TS",
+    "Royal Server"
+  ],
+  "author": "Royal Apps GmbH",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/royalapplications/docs/issues"
+  },
+  "homepage": "https://docs.royalapps.com/",
+  "devDependencies": {
+    "npm-watch": "^0.11.0"
+  }
+}
