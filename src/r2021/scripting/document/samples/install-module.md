@@ -1,10 +1,10 @@
 ---
 uid: scripting_docs_samples_installmodule
-name: Install RoyalDocument.PowerShell
+name: Install Module
 order: 10000
 ---
 
-# Install RoyalDocument.PowerShell
+# Install Module
 
 The RoyalDocument.PowerShell module is distributed via the PowerShell Gallery.
 
