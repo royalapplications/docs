@@ -3,31 +3,34 @@ sorted: true
 references:
 - uid: Close-RoyalDocument
   name: Close-RoyalDocument
-  href: scripting/document/Close-RoyalDocument.html
+  href: scripting/document/cmdlet-reference/Close-RoyalDocument.html
 - uid: Close-RoyalServerDocument
   name: Close-RoyalServerDocument
-  href: scripting/document/Close-RoyalServerDocument.html
+  href: scripting/document/cmdlet-reference/Close-RoyalServerDocument.html
 - uid: Copy-RoyalObject
   name: Copy-RoyalObject
-  href: scripting/document/Copy-RoyalObject.html
+  href: scripting/document/cmdlet-reference/Copy-RoyalObject.html
 - uid: Get-RoyalDocumentType
   name: Get-RoyalDocumentType
-  href: scripting/document/Get-RoyalDocumentType.html
+  href: scripting/document/cmdlet-reference/Get-RoyalDocumentType.html
 - uid: Get-RoyalObject
   name: Get-RoyalObject
-  href: scripting/document/Get-RoyalObject.html
+  href: scripting/document/cmdlet-reference/Get-RoyalObject.html
 - uid: Get-RoyalObjectCustomProperty
   name: Get-RoyalObjectCustomProperty
-  href: scripting/document/Get-RoyalObjectCustomProperty.html
+  href: scripting/document/cmdlet-reference/Get-RoyalObjectCustomProperty.html
 - uid: Get-RoyalObjectValue
   name: Get-RoyalObjectValue
-  href: scripting/document/Get-RoyalObjectValue.html
+  href: scripting/document/cmdlet-reference/Get-RoyalObjectValue.html
 - uid: Get-RoyalPropertyHelp
   name: Get-RoyalPropertyHelp
-  href: scripting/document/Get-RoyalPropertyHelp.html
+  href: scripting/document/cmdlet-reference/Get-RoyalPropertyHelp.html
 - uid: Get-RoyalServerDocument
   name: Get-RoyalServerDocument
-  href: scripting/document/Get-RoyalServerDocument.html
+  href: scripting/document/cmdlet-reference/Get-RoyalServerDocument.html
+- uid: Get-RoyalServerLicense
+  name: Get-RoyalServerLicense
+  href: scripting/server/Get-RoyalServerLicense.html
 - uid: Get-RoyalServerModule
   name: Get-RoyalServerModule
   href: scripting/server/Get-RoyalServerModule.html
@@ -37,48 +40,54 @@ references:
 - uid: Get-RoyalServerModuleCommandParameter
   name: Get-RoyalServerModuleCommandParameter
   href: scripting/server/Get-RoyalServerModuleCommandParameter.html
+- uid: Install-RoyalServerLicense
+  name: Install-RoyalServerLicense
+  href: scripting/server/Install-RoyalServerLicense.html
 - uid: Invoke-RoyalServerCommand
   name: Invoke-RoyalServerCommand
   href: scripting/server/Invoke-RoyalServerCommand.html
 - uid: Move-RoyalObject
   name: Move-RoyalObject
-  href: scripting/document/Move-RoyalObject.html
+  href: scripting/document/cmdlet-reference/Move-RoyalObject.html
 - uid: New-RoyalDocument
   name: New-RoyalDocument
-  href: scripting/document/New-RoyalDocument.html
+  href: scripting/document/cmdlet-reference/New-RoyalDocument.html
 - uid: New-RoyalObject
   name: New-RoyalObject
-  href: scripting/document/New-RoyalObject.html
+  href: scripting/document/cmdlet-reference/New-RoyalObject.html
 - uid: New-RoyalObjectCustomProperty
   name: New-RoyalObjectCustomProperty
-  href: scripting/document/New-RoyalObjectCustomProperty.html
+  href: scripting/document/cmdlet-reference/New-RoyalObjectCustomProperty.html
 - uid: New-RoyalServerConfig
   name: New-RoyalServerConfig
   href: scripting/server/New-RoyalServerConfig.html
 - uid: New-RoyalStore
   name: New-RoyalStore
-  href: scripting/document/New-RoyalStore.html
+  href: scripting/document/cmdlet-reference/New-RoyalStore.html
 - uid: Open-RoyalDocument
   name: Open-RoyalDocument
-  href: scripting/document/Open-RoyalDocument.html
+  href: scripting/document/cmdlet-reference/Open-RoyalDocument.html
 - uid: Open-RoyalServerDocument
   name: Open-RoyalServerDocument
-  href: scripting/document/Open-RoyalServerDocument.html
+  href: scripting/document/cmdlet-reference/Open-RoyalServerDocument.html
 - uid: Out-RoyalDocument
   name: Out-RoyalDocument
-  href: scripting/document/Out-RoyalDocument.html
+  href: scripting/document/cmdlet-reference/Out-RoyalDocument.html
 - uid: Out-RoyalServerDocument
   name: Out-RoyalServerDocument
-  href: scripting/document/Out-RoyalServerDocument.html
+  href: scripting/document/cmdlet-reference/Out-RoyalServerDocument.html
 - uid: Remove-RoyalObject
   name: Remove-RoyalObject
-  href: scripting/document/Remove-RoyalObject.html
+  href: scripting/document/cmdlet-reference/Remove-RoyalObject.html
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
-  href: scripting/document/Remove-RoyalObjectCustomProperty.html
+  href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
 - uid: royalserver_advanced_management-scripts_pepare
   name: Pepare a Managed Server
   href: royalserver/advanced/management-scripts/pepare-managed-server.html
+- uid: royalserver_configtool_management
+  name: Health
+  href: royalserver/management/index.html
 - uid: royalserver_introduction
   name: What is Royal Server?
   href: royalserver/introduction/index.html
@@ -314,8 +323,29 @@ references:
   name: royaltsx_tutorials_more
   href: royalts/tutorials/more.html
 - uid: scripting_docps
-  name: RoyalDocument PowerShell Module
+  name: RoyalDocument.Powershell
   href: scripting/document/index.html
+- uid: scripting_docps_reference
+  name: RoyalDocument PowerShell Module
+  href: scripting/document/cmdlet-reference/index.html
+- uid: scripting_docps_samples
+  name: Install Module
+  href: scripting/document/samples/index.html
+- uid: scripting_docs_samples_createconnection
+  name: Create a new Connection
+  href: scripting/document/samples/create-connection.html
+- uid: scripting_docs_samples_createdoc
+  name: Creating a new Document
+  href: scripting/document/samples/create-document.html
+- uid: scripting_docs_samples_installmodule
+  name: Install Module
+  href: scripting/document/samples/install-module.html
+- uid: scripting_docs_samples_opendoc
+  name: Open an existing Document
+  href: scripting/document/samples/open-document.html
+- uid: scripting_docs_samples_workingwithcredentials
+  name: Working with Credentials
+  href: scripting/document/samples/working-with-credentials.html
 - uid: scripting_object_connections
   name: Connections
   href: scripting/objects/connections/index.html
@@ -435,19 +465,22 @@ references:
   href: scripting/server/index.html
 - uid: Set-RoyalDocumentPassword
   name: Set-RoyalDocumentPassword
-  href: scripting/document/Set-RoyalDocumentPassword.html
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
 - uid: Set-RoyalDocumentType
   name: Set-RoyalDocumentType
-  href: scripting/document/Set-RoyalDocumentType.html
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
 - uid: Set-RoyalObjectCustomProperty
   name: Set-RoyalObjectCustomProperty
-  href: scripting/document/Set-RoyalObjectCustomProperty.html
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
 - uid: Set-RoyalObjectCustomPropertyPosition
   name: Set-RoyalObjectCustomPropertyPosition
-  href: scripting/document/Set-RoyalObjectCustomPropertyPosition.html
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
 - uid: Set-RoyalObjectValue
   name: Set-RoyalObjectValue
-  href: scripting/document/Set-RoyalObjectValue.html
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
 - uid: Set-RoyalSortOrder
   name: Set-RoyalSortOrder
-  href: scripting/document/Set-RoyalSortOrder.html
+  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
+- uid: Uninstall-RoyalServerLicense
+  name: Uninstall-RoyalServerLicense
+  href: scripting/server/Uninstall-RoyalServerLicense.html

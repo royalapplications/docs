@@ -8,7 +8,7 @@
     <title>New-RoyalServerConfig </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="New-RoyalServerConfig ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -83,6 +83,30 @@
 </code></pre>
 <p>$cred is a PS-Credential.</p>
 <h2 id="parameters">PARAMETERS</h2>
+<h3 id="-confirm">-Confirm</h3>
+<p>Prompts you for confirmation before running the cmdlet.</p>
+<pre><code class="lang-yaml">Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-credential">-Credential</h3>
+<p>The username used for authenticating with Royal Server.</p>
+<pre><code class="lang-yaml">Type: PSCredential
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+</code></pre>
 <h3 id="-host">-Host</h3>
 <p>Hostname or IP address of the Royal Server Installation.</p>
 <pre><code class="lang-yaml">Type: String
@@ -107,28 +131,16 @@ Default value: 0
 Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 </code></pre>
-<h3 id="-credential">-Credential</h3>
-<p>The username used for authenticating with Royal Server.</p>
-<pre><code class="lang-yaml">Type: PSCredential
+<h3 id="-usessl">-UseSSL</h3>
+<p>Use SSL/HTTPS for communication with Royal Server. Note that as of Royal Server V4 only secure connections are supported.</p>
+<pre><code class="lang-yaml">Type: Boolean
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: True
 Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-</code></pre>
-<h3 id="-confirm">-Confirm</h3>
-<p>Prompts you for confirmation before running the cmdlet.</p>
-<pre><code class="lang-yaml">Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-whatif">-WhatIf</h3>
@@ -144,30 +156,18 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
-<h3 id="-usessl">-UseSSL</h3>
-<p>Use SSL/HTTPS for communication with Royal Server. Note that as of Royal Server V4 only secure connections are supported.</p>
-<pre><code class="lang-yaml">Type: Boolean
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: True
-Accept pipeline input: True (ByPropertyName, ByValue)
-Accept wildcard characters: False
-</code></pre>
 <h3 id="commonparameters">CommonParameters</h3>
 <p>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkID=113216">about_CommonParameters</a>.</p>
 <h2 id="inputs">INPUTS</h2>
-<h3 id="systemstring">System.String</h3>
+<h3 id="-host--systemstring">-Host : System.String</h3>
 <p>Hostname or IP address of the Royal Server Installation.</p>
-<h3 id="systemint32">System.Int32</h3>
+<h3 id="-port--systemint32">-Port : System.Int32</h3>
 <p>Port number of the Royal Server Installation.</p>
-<h3 id="systemmanagementautomationpscredential">System.Management.Automation.PSCredential</h3>
+<h3 id="-credential--systemmanagementautomationpscredential">-Credential : System.Management.Automation.PSCredential</h3>
 <p>The username used for authenticating with Royal Server.</p>
 <h2 id="outputs">OUTPUTS</h2>
 <h3 id="royalserverpowershellroyalserverconfig">RoyalServer.Powershell.RoyalServerConfig</h3>
-<p>Data structure for holding Royal Server connection information</p>
+<p>A data structure holding Royal Server connection information.</p>
 <h2 id="notes">NOTES</h2>
 <h2 id="related-links">RELATED LINKS</h2>
 <p><a href="Invoke-RoyalServerCommand.html">Invoke-RoyalServerCommand</a></p>
