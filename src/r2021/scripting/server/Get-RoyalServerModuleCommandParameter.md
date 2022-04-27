@@ -109,7 +109,7 @@ The Command of which the parameters should be returned.
 
 ### RoyalServer.PowerShell.RoyalServerPowerShellResponse
 
-For information on how to work with a `RoyalServerPowerShellResponse` look [here](./index.html#working-with-royal-server-responses).
+For information on how to work with a `RoyalServerPowerShellResponse` look [here](./index.md#working-with-royal-server-responses).
 
 ## NOTES
 

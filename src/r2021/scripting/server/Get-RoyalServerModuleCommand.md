@@ -72,6 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -89,7 +90,7 @@ The RoyalServer Module.
 
 ### RoyalServer.PowerShell.RoyalServerPowerShellResponse
 
-For information on how to work with a `RoyalServerPowerShellResponse` look [here](./index.html#working-with-royal-server-responses).
+For information on how to work with a `RoyalServerPowerShellResponse` look [here](./index.md#working-with-royal-server-responses).
 
 ## NOTES
 
