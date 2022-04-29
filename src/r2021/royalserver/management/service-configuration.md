@@ -24,7 +24,11 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 
 **Worker Account**
 
-Royal Server is running as a Windows Service. By default it is installed using the `LOCAL SYSTEM` account. For the actual work (e.g. querying the list of Windows Services from a managed server), Royal Server is using a Worker Account. This account has to have network access.
+Royal Server is running as a Windows Service. By default it is installed using the `LOCAL SYSTEM` account.
+
+For the actual work (e.g. querying the list of Windows Services from a managed server), Royal Server is using a Worker Account. This account has to have network access.
+
+The Worker Account should be `Local Administrator` and in domain-joined scenario a member of the `Domain Users` group on the Domain Controller.
 
 **IP Address**
 
