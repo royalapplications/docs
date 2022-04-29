@@ -1,8 +1,5 @@
 ---
 name: System Requirements
 order: 1030
+href: https://www.royalapps.com/go/kb-server-main-systemrequirements
 ---
-
-# Royal Server System Requirements
-
-Please find our System Requirements [here](https://www.royalapps.com/go/kb-server-main-systemrequirements).
