@@ -2870,7 +2870,7 @@
           "hash": "LJWI4FOL5a4oSiKA+4phM/bsIxnZgKOoyhAgryOodZs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3083,10 +3083,10 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/management/service-configuration.html",
-          "hash": "3mEHCZfvtJd2EAevXKVTCcim6VhjmPFU0ay3wDDqbyU="
+          "hash": "ncX/OScdHGI8dFlUW8VT/R/i6IVZCcpfMODxV8juljA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3230,7 +3230,7 @@
           "hash": "V+x4ak3DGiyHrauOrWaCYpjOpgB22R85L6FqIR3j8oE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
