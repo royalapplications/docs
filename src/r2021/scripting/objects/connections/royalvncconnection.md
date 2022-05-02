@@ -84,6 +84,9 @@ The JPEG quality level for zip/tight encodings:
  -1 = off   
  0 = poor   
  9 = best  
+### NoStatus
+Type: `bool`, Default Value: `true`  
+If set to true (default), the /nostatus argument is passed to the UltraVNC viewer.  
 ### Scale
 Type: `int`, Default Value: `-1`  
 Viewer display scaling (-1 = auto or percentage).  

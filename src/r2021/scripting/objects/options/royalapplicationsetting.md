@@ -177,6 +177,9 @@ Background connect when holding the Shift key
 ### AutoFocus
 Type: `bool`, Default Value: `true`  
 Automatically focus active connections  
+### AutoSwitchToTabsTabsRequiringAttention
+Type: `bool`, Default Value: `true`  
+Automatically switch to tabs requiring attention  
 ### CloseTabActivationMode
 Type: `int`, Default Value: `0`  
 0 = Select Dashboard (when available)   
