@@ -90,7 +90,9 @@
 If you see a lot of SSH brute force attacks on Royal Server change the port to a non-standard one or use the &quot;Only allow Royal TS/X as clients&quot; setting.</p>
 </div>
 <p><strong>Timeout</strong></p>
-<p>Specify the timeout of a Secure Gateway connection in seconds when the connection is idle.</p>
+<p>Specify the timeout of a Secure Gateway connection in seconds when the connection is idle.
+Setting the value to 0 or -1 disables closing idle sessions.
+The minimum allowed duration is 30 seconds.</p>
 <p><strong>Max. Connections</strong></p>
 <p>Specify the maximum number of connections the Secure Gateway is accepting.</p>
 <p><strong>Use Compression</strong></p>
