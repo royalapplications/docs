@@ -37,6 +37,8 @@ Specify the Port the Secure Gateway is binding to. Default is 22.
 **Timeout**
 
 Specify the timeout of a Secure Gateway connection in seconds when the connection is idle.
+Setting the value to 0 or -1 disables closing idle sessions.
+The minimum allowed duration is 30 seconds.
 
 **Max. Connections**
 
