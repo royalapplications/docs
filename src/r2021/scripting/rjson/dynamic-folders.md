@@ -38,4 +38,4 @@ When a dynamic folder script is executed, any [tokens](~/scripting/rjson/tokens.
 > In addition to being the most popular scripting language, the JavaScript interpreter has one major advantage over all other script interpreters: Scripts are executed *in-memory* and **no temporary file is written to disk**.
 > The new JavaScript interpreter also supports returning [promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) from your scripts which are then resolved by Royal TSX. This allows you to easily write web requests and not worry about having to synchronously return your data.
 > 
-> Unfortunately, the **"JavaScript"** is currently not supported in Royal TS (for Windows) due to technical limitations but we'll keep evaluating the viability of adding it to the Windows version.
+> Unfortunately, the **"JavaScript"** interpreter is currently not supported in Royal TS (for Windows) due to technical limitations but we'll keep evaluating the viability of adding it to the Windows version.
