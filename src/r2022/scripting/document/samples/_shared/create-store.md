@@ -1,0 +1,3 @@
+```posh
+$store = New-RoyalStore
+```
