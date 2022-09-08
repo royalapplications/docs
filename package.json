@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "watch": "npm-watch serve",
-    "serve": "cd ./src/r2022 && docfx && docfx docfx-serve.json --serve"
+    "serve": "cd ./src/r2022 && docfx docfx-serve.json --serve"
   },
   "watch": {
     "serve": {
@@ -13,7 +13,7 @@
         "src/**/templates/**/*",
         "src/**/*.md"
       ],
-      "extensions": "md,yml,css,partial",
+      "extensions": "md,css,partial",
       "quiet": true,
       "legacyWatch": true,
       "delay": 500,

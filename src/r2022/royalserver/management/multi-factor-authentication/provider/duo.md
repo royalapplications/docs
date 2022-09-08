@@ -1,6 +1,6 @@
 ---
-name: Configuration of DUO Provider
-order: 7010
+name: DUO
+order: 7020
 ---
 
 # Configuration of DUO Provider

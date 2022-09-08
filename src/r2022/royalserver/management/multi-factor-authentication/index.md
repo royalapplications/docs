@@ -1,7 +1,8 @@
 ---
-name: General Information
-order: 7010
+name: Multi-Factor Authentication
+order: 9065
 ---
+
 
 # Multi-Factor Authentication
 
