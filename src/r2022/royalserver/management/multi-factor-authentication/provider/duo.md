@@ -3,51 +3,60 @@ name: DUO
 order: 7020
 ---
 
-# Configuration of DUO Provider
+# DUO Provider
 
-The following steps outline the configuration of DUO for Royal Server.
+[DUO](https://duo.com) provides security solutions for companies and can be integrated into Royal Server.
 
-## Log in to DUO
+## Configuring the DUO backend
 
-In order to do the configuration, you need to log in to your DUO web console at [https://duo.com/](https://duo.com/).
+In order to integrate DUO secured users into Royal Server, you need to log in to your DUO web console at [https://duo.com/](https://duo.com/).
 
-## Confige the Royal Server Application in DUO
+### Confige an Application in DUO
 
-First, you need to configure an _Application_ that is being secured by DUO - in this case, you want to secure Royal Server by DUO. To do this, you navigate to **Applications** and **Protect an Application**. Look for **Partner Auth API** and click **Protect this Appliation**. You will be presented with a number of details, most notable the `Integration Key`, the `Secret Key` and the `API Hostname`. Remember these, you need to configure them later in the Royal Server Configuration Tool.
+First, you need to configure an _Application_ that is being secured by DUO - in our case, you want to secure Royal Server operations by DUO. To do this, you navigate to **Applications** and **Protect an Application**. Look for **Partner Auth API** and click **Protect this Appliation**. You will be presented with a number of details, most notable the `Integration Key`, the `Secret Key` and the `API Hostname`. Remember these as you need them later for configuring the Royal Server DUO integration.
 
-## Create Users in DUO
+### Create Users in DUO
 
-If you do not have users in your DUO configuration, create a user by clicking on **Users** and **Add User**. While you are in the details of the user, click **Add Phone** or **Add Hardware Token** to assign a 2FA device to the user.
+If you do not have users in your DUO configuration, create a user by clicking on **Users** and **Add User**.
 
 > **Important**  
-> After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end, you see a complicated number - this is the user id inside DUO and you need it to configure it in the Royal Server Configuration Tool.
+> After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end of it, you see a long sequence of letter and numbers - this is the DUO user id and you need it to configure it in the Royal Server Configuration Tool.
 
 **Example:**
+[https://admin-12abcdef.duosecurity.com/users/**HUGA65C32A3T2U0I20TF**]()
 
-[https://admin-42cae6ad.duosecurity.com/users/**DUNA65C32A3T2U0I20TG**]()
+Notice the bold part at the end. The user id in this example is HUGA65C32A3T2U0I20TF.
 
-Notice the bold part at the end.
 
 ### Creating 2FA Devices in DUO
 
-If you do not have 2FA devices (e.g. Smartphones) in your DUO configuration, create one by navigating to a User and add a phone or hardware token.
+If you do not have 2FA devices (e.g. Smartphone or a token) in your DUO configuration, create one by navigating to a User and add a phone or hardware token.
 
 > [!NOTE]
 > Make sure the new device is activated by clicking on **Activate**.
 
-### Configure DUO in the Royal Server Configuration Tool
+## Configure DUO in the Royal Server Configuration Tool
 
-**Configure DUO integration**
+### Configuring the DUO provider
 
-- Navigate to **Document Store** and **Multi-Factor Authentication**.
-- In the tab _Provider_, check _DUO_ and click **Configure...**.
-- Store the previously created `Integration Key`, `Secret Key` and the `API Hostname` from DUO here.
-- Restart Royal Server service.
+Ensure that the _"DUO"_ provider is enabled in the Providers tab of the Multi-Factor Authentication Panel.
 
-**Configure Users for DUO**
+Click on **Configure...** and enter the `Integration Key`, the `Secret Key` and the `API Hostname` from DUO Application created in the DUO web console backend.
 
-Additionally, you need to enroll each user that should use DUO as second factor.
+> [!NOTE]
+> A change requires a restart of Royal Server.
 
-- To do this, click on the tab **User Management** and **Enroll...**.
-- Select a user, change the Provider to `DUO`.
-- Enter the DUO User Id (see above).
+## Configuring a user
+
+In the Users tab
+- Click on **Add...**.
+- Click on **Select User...** to select a user and `DUO` as provider.
+- Select for which feature this user is reqiured to present a second factor (e.g. Document Store or Secure Gateway)
+- Specify an optional comment
+- Specify the caching time. Each successful authentication is then cached for the specified minutes.
+- Specify the DUO user id (see above)
+
+Depending on the device, the configured user now has to either enter a code or approve the request in the DUO app.
+
+> [!NOTE]
+> The DUO integration into Royal Server supports devices with push notification capabilites if configured in the DUO backend.

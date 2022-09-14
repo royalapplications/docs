@@ -5,26 +5,38 @@ order: 7010
 
 # Time-based One-time Password (TOTP)
 
-Multi-Factor authentication can be configured to use a time based one-time password.
+TOTP is a generic algorithm that is implemented by a many services and Apps. Since it is a generic algorithm, any App that supports it can be used as a second factor for this provider. There are, for example, Apps from Microsoft, Google and many others.
 
-TOTP is a generic algorithm that was implemented by a couple of services and Apps. Since it is a generic algorithm, any app that supports it can be used. There are, for example, apps from Microsoft and Google.
+# Configuration of the TOTP Provider
 
-# Configuration of TOTP Provider
-
-The following steps outline the configuration of TOTP configuration for Royal Server.
+The following steps outline the configuration of a user for TOTP.
 
 ## Configuring the TOTP provider
 
-Check _"Generic TOTP Authenticator (Google, Microsoft etc)"_, save and restart Royal Server.
+Ensure that the _"Generic TOTP Authenticator (Google, Microsoft, etc)"_ provider is enabled in the Providers tab.
 
-## Enrolling users
+> [!NOTE]
+> A change requires a restart of Royal Server.
 
-- Click on **Enroll...**.
-- select a user and `Generic TOTP` as provider.
+
+## Configuring a user
+
+In the Users tab
+- Click on **Add...**.
+- Click on **Select User...** to select a user and `Generic TOTP` as provider.
+- Select for which feature this user is reqiured to present a second factor (e.g. Document Store or Secure Gateway)
+- Specify an optional comment
+- Specify the caching time. Each successful authentication is then cached for the specified minutes. If a second MFA request 
 - Provide meaningful names for Issuer and Label (these are displayed in the Authenticator Apps later).
 
-When done, you are presented with a Secret that you can copy and provide to the user and a QR Code that can be scanned by the Authenticator app directly. At a later time, you can click on **Show Secret...** for TOTP enrolled users as well.
+> [!NOTE]
+> A Caching Time of 0 minutes means no caching and the user has to provide a second factor for every operation.
+
+When done, you are presented with a Secret text that you can copy and provide to the user and a QR Code that can be scanned by the TOTP Authenticator App directly. 
+
+> [!NOTE]
+> You can always show the generated secret again by clicking on **Show Secret...** for TOTP configured users.
 
 > [!WARNING]  
 > **TOTP time sensitivity**  
-> The machine where Royal Server is installed and the client machine where Royal TS/X is running need to have the correct time in order to make TOTP work. Use Time Services to ensure this.
+> The machine where Royal Server is installed and the device where the TOTP Authenticator App is running need to have correct time settings in order to make TOTP work. Use Time Services to ensure this.

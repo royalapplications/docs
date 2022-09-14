@@ -3,48 +3,66 @@ name: Multi-Factor Authentication
 order: 9065
 ---
 
-
-# Multi-Factor Authentication
-
-Multi-Factor authentication can be configured to further secure the access to the Document Store component.
-
-## Accessing the Document Store component
-
-If you have Multi-Factor authentication configured, opening a document hosted by Royal Server only works when the user has the proper permissions, the proper Access Rules are met (if configured) and if the user can provide the second factor (via using his Smartphone).
-
 ## General Information
 
 <img src="/r2021/images/RoyalServer/MFA_48x48.png" class="icon-def" alt="" />
 
-The Multi-Factor Authentication panel allows the configuration of a second factor when opening a Royal Server hosted document.
+The Multi-Factor Authentication panel allows the configuration of a second factor for each user and the settings of the provider (if needed).
+Royal Server supports Multi-Factor Authentication to enhance secure access to the following components: 
+- Secure Gateway
+- Document Store
+
+> [!NOTE]
+> The abbreviation 'MFA' means Multi-Factor Authentication
+
+#### Securing the Document Store
+
+If you have MFA configured, opening a document hosted by Royal Server only works when the user has the proper permissions, the proper Access Rules are met (if configured) and if the user can provide the second factor.
+
+#### Securing the Secure Gateway
+
+If you have MFA configured, when opening a connection in Royal TS/X that is based on a Secure Gateway Tunnel, e.g. Terminal or Remote Desktop connections, you will be asked to provide the second factor additionally to username and password before the tunnel is opened.
+
 
 ## Show or Activate the Multi-Factor Authentication Pane
 
-In The Royal Server Configuration Tool Navigation Bar, click on the Document Store group and then on the Multi-Factor Authentication entry. For each document hosted by Royal Server a second factor for authentication can be specified.
+In The Royal Server Configuration Tool Navigation Bar, click on the Royal Server group and then on the Multi-Factor Authentication entry.
 
-Note: MFA abbreviation  
-MFA means Multi-Factor Authentication.
 
 ## Features
 
-- Specify, if Multi-Factor Authentication is Off, Optional (when a user is configured for MFA, this configuration is used, if no configuration is found none is used) or Forced (no access to documents is allowed unless the user has an MFA configuration)
-- Specify the supported Providers. Currently Royal Server supports "Generic TOTP Authenticator (Google, Microsoft, etc) and DUO (beta).
-- On the User Management tab, you can configure for each user the MFA configuration. Enroll the user, show the previous enrollment information or delete an MFA configuration for a user.
+**Enable Multi-Factor Authenticationn**
 
-**Configure the Multi-Factor Authentication**
+If checked, Royal Server requests a second factor for configured users.
 
-Royal Server supports three modes:
+**Reject Unknown Users**
 
-1.  Off (no second factor is required)
-2.  Optional (If a user has configured a second factor, he has to use it, if not, no second factor is required)
-3.  Forced (Every user has to have a second factor configured. If not, access is rejected.
+If checked, Royal Server rejects all authentication requests for users that are not configured in the Users datagrid. 
 
-**Configure the Provider**
+> [!NOTE]
+> This setting requires Enable Multi-Factor Authentication to be enabled.
 
-On the Provider tab, you can enable or disable providers for the whole server. In some cases, additional configuration is needed, e.g. when working with DUO you also need to specify a set of keys and a host name.
+## Configuring Users
 
-If a user only has one provider configured, and this provider is disabled, the user needs to be enrolled for one of the other currently active providers.
+On the Users tab, you can configure users for MFA. 
 
-**User Management - Enrolling**
+For each user the follwing properties can be configured:
+- Username
+- MFA Provider (currently TOTP and DUO are supported) and additional provider-specific settings
+- Required for opening a Document Store document
+- Required for opening a Secure Gateway connection
+- Comment
 
-Enrolling a user for a second factor is straight forward. Specify the user, the provider and the needed information. E.g. for TOTP the Issuer and Label are purely for the user interface, for DUO you need to specify the DUO user id. In the case of TOTP, the result is a unique string and a QR code that need to be stored in the Authenticator Apps on the users smartphone (scan the QR code or input the string).
+> [!NOTE]
+> A user can only have a single provider configured.
+
+## Configuring Provider
+
+On the Providers tab, you can enable or disable a provider. If some additional configuration for a provider is needed, you can enter this by using the Configure button.
+
+Royal Server supports the following provider:
+- [TOTP](./provider/totp.md)
+- [DUO](./provider/duo.md)
+
+> [!NOTE]
+> Disabling a provider does not remove the configuration of the provider or of users configured for this provider.
