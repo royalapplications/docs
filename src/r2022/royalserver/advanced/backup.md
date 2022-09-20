@@ -11,13 +11,17 @@ order: 5000
 
 ## Royal Server V4
 
-After installation, a fully configured and running Royal Server stores its data and configuration by default in `%ProgramData%\RoyalServer\`.
+After installation, a fully configured and running Royal Server stores its data and configuration by default in `%ProgramData%\RoyalServer\`. 
+A number of more volatile settings are stored in a configuration database (see below)
 
 ### 1. Configuration Settings
 
 Configuration settings are primarily stored in `%ProgramData%\RoyalServer\appsettings.json`.
 
-If the `appsettings.json` file is not present on start-up, it will automatically be generated and your settings from a previous Royal Server V3 installation will be imported. If no previous Royal Server V3 installation can be detected, default values will apply.
+If the `appsettings.json` file is not present on start-up, it will automatically be generated.
+
+> [!NOTE]
+> Your settings from a previous Royal Server V3 installation will be imported. If no previous Royal Server V3 installation can be detected, default values will apply.
 
 ### 2. Documents
 
@@ -42,9 +46,9 @@ Royal Server is directly working with this directory for the Document Store. If 
 
 ### 3. Configuration Database
 
-A number of configurations are stored in a small database that can be found here: `%ProgramData%\RoyalServer\royalserverV4.db`.
+Royal Servr uses a small database for more volatile configurations that can be found here: `%ProgramData%\RoyalServer\royalserverV4.db`.
 The following information is stored in this database:
-- All Access Control entires configured for securing Documents (ACLs)
+- All Access Control entires configured for securing Documents in the Document Store component (ACLs)
 - All user configurations for Multi-Factor Authentication
 
 ### 4. Licence Information
