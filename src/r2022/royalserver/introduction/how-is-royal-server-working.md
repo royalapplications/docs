@@ -36,6 +36,7 @@ For this, there are two basic ways this can be done:
 |RoyalServerManagement  |-         |internal module for Royal Server                             |
 |Script                 |WMI/CIM   |PowerShell remoting for PS                                   |
 |Terminal Services      |WTS API   |Proprietary protocol by Microsoft                            |
+|VM Ware                |WMI/CIM   |                                                             |
 |Windows Services       |WMI/CIM   |                                                             |
 
 

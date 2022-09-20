@@ -3,7 +3,7 @@ name: Application Settings
 order: 5000
 ---
 
-# Application Setting
+# Application Settings
 
 As of Royal Server V4 advanced settings can be configured in `%ProgramData%\RoyalServer\appsettings.json`.
 
