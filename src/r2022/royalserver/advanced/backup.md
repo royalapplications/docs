@@ -40,10 +40,16 @@ Royal Server is directly working with this directory for the Document Store. If 
 > [!NOTE]
 > Note that Access Control Lists are not stored in these file system files. If you want to back them up as well, see below.
 
-### 3. Access Rules for the Document Store files
+### 3. Configuration Database
 
-The access rules due to their complexity are stored in a small database that can be found here: `%ProgramData%\RoyalServer\royalserverV4.db`.
+A number of configurations are stored in a small database that can be found here: `%ProgramData%\RoyalServer\royalserverV4.db`.
+The following information is stored in this database:
+- All Access Control entires configured for securing Documents (ACLs)
+- All user configurations for Multi-Factor Authentication
 
+### 4. Licence Information
+
+License Information is stored encrypted the following folder `%ProgramData%\RoyalServer\Licenses\`.
 
 ## Royal Server V3
 After installation, a fully configured and running Royal Server stores its configuration in the following places:
