@@ -15,7 +15,7 @@ The most common way is to use the `Royal Server Configuration Tool` which provid
 ## Configuration File
 
 Up to Royal Server V3 configuration settings were mainly kept in Windows Registry and could only be modified via the Royal Server Configuration Tool.
-This changed in of Royal Server V4, where configuration settings are primarily file based and stored in `%ProgramData%\RoyalServer\appsettings.json`.
+This changed since Royal Server V4, where configuration settings are primarily file based and stored in `%ProgramData%\RoyalServer\appsettings.json`.
 
 If not present on start-up, `appsettings.json ` will automatically be generated and your settings from a previous Royal Server V3 installation will be imported.
 If no previous Royal Server V3 installation can be detected, default values will apply.
@@ -28,7 +28,7 @@ net stop RoyalServer && net start RoyalServer
 ```
 
 > [!NOTE]
-> There are a couple of sensitive settings that can only be managed via the Royal Server V4 Configuration Tool to keep them properly protected:
+> There are a couple of sensitive settings that can only be managed via the Royal Server Configuration Tool to keep them properly protected:
 >
 > - Worker Account Settings
 > - Proxy Settings
@@ -38,7 +38,7 @@ net stop RoyalServer && net start RoyalServer
 
 ## Environment Variables
 
-With Royal Server V4 you can optionally pass configuration values using environment variables.
+As of Royal Server V4 you can optionally pass configuration values using environment variables.
 
 Environment variables have to be prefixed with `RS_` followed by the corresponding key name in `appsettings.json`.
 As for hierarchical keys, the separator is a double underscore (`__`).

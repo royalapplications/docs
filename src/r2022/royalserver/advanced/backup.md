@@ -58,7 +58,7 @@ License Information is stored encrypted the following folder `%ProgramData%\Roya
 ## Royal Server V3
 After installation, a fully configured and running Royal Server stores its configuration in the following places:
 
-### 1. Configuration Settings
+### 1. Configuration Settings V3
 
 Most of the Royal Server settings are stored in the Windows Registry under the key `HKEY_LOCAL_MACHINE\SOFTWARE\Royal Server`. Most of these values are stored directly and can be manipulated via "`regedt32.exe`" or a script. Some are encrypted for security reasons. Backing this key and its subkeys up saves the configuration of Royal Server excluding the Document store documents and the document ACLs.
 
@@ -66,6 +66,6 @@ Most of the Royal Server settings are stored in the Windows Registry under the k
 
 see [Royal Server V4](#2-documents)
 
-### 3. Access Rules for the Document Store files
+### 3. Access Rules for the Document Store files V3
 
 The access rules due to their complexity are stored in a small database that can be found here: `%ProgramData%\RoyalServer\royalserver.db`.

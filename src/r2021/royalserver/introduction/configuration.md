@@ -28,7 +28,7 @@ net stop RoyalServer && net start RoyalServer
 ```
 
 > [!NOTE]
-> There are a couple of sensitive settings that can only be managed via the Royal Server V4 Configuration Tool to keep them properly protected:
+> There are a couple of sensitive settings that can only be managed via the Royal Server Configuration Tool to keep them properly protected:
 >
 > - Worker Account Settings
 > - Proxy Settings

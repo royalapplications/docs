@@ -54,7 +54,7 @@ Up to `Royal Server V3`, the rolling mechanism changes the file once per day to 
 
 If you set the Log File to "logserverlog.txt", you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a file name formatted like _logserverlog<yyyyMMDD>.txt_, e.g. logserverlog20210101.txt. The file logserverlog.txt always contains the current day.
 
-As of `Royal Server V4`, the file log provider uses a rolling interval and appends the time period between file name and file extension. The rolling interval is set to a `Day` (3) by default. Furthermore, the log file is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.
+As of Royal Server V4, the file log provider uses a rolling interval and appends the time period between file name and file extension. The rolling interval is set to a `Day` (3) by default. Furthermore, the log file is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.
 
 **Example:**
 
