@@ -17,7 +17,7 @@ This setting lets you change the user interface language of the Royal Server Con
 
 **Localhost Aliases**
 
-This setting allows to specify which hosts should be considered as localhost. This information is used when determining, if a query should be executed against the server where Royal Server is installed and also for licensing calculations (localhost is not counted towards the number of managed servers)
+This setting allows to specify which hosts should be considered as localhost. This information is used when determining, if a query should be executed against the server where Royal Server is installed.
 
 **Reset Configuration**
 

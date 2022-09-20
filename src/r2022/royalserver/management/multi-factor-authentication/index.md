@@ -65,4 +65,5 @@ Royal Server supports the following provider:
 - [DUO](./provider/duo.md)
 
 > [!NOTE]
-> Disabling a provider does not remove the configuration of the provider or of users configured for this provider.
+> Disabling a provider does not remove the configuration of the provider or of users configured for this provider. However, these configured users can not
+> use Royal Server as long as the provider is disabled.
