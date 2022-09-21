@@ -10,18 +10,18 @@ There are various options how manged Royal Server configuration settings.
 
 ## Royal Server Configuration Tool
 
-The most common way is to use the `Royal Server Configuration Tool` which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it manage the different Royal Server components, your license(s), set up certificates, and grant permissions, etc.. Additionally, it includes a health monitor to easily monitor resource usage.
+The most common way is to use the `Royal Server Configuration Tool` which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it to manage the different Royal Server components, your license(s), set up certificates, and grant permissions, etc.. Additionally, it includes a health monitor to easily monitor resource usage.
 
 ## Configuration File
+Royal Server V4 stores the configuration settings in a file which can be found here: `%ProgramData%\RoyalServer\appsettings.json`.
 
-Up to Royal Server V3 configuration settings were mainly kept in Windows Registry and could only be modified via the Royal Server Configuration Tool.
-This changed since Royal Server V4, where configuration settings are primarily file based and stored in `%ProgramData%\RoyalServer\appsettings.json`.
+If not present on start-up, `appsettings.json ` will automatically be generated. 
 
-If not present on start-up, `appsettings.json ` will automatically be generated and your settings from a previous Royal Server V3 installation will be imported.
-If no previous Royal Server V3 installation can be detected, default values will apply.
+> [!NOTE]
+> Settings from a previous Royal Server V3 installation will be automatically imported.
 
-This change allows you to just modify the configuration in the `appsettings.json` file.
-Then restart the Royal Server Service using the commandline for the changes to take effect.
+You can modify this file with any text editor. After any change, a restart of Royal Server is required. 
+You can do this either with the Configuration Tool or via a commandline: 
 
 ```
 net stop RoyalServer && net start RoyalServer

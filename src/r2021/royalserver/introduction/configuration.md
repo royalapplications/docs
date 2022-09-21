@@ -10,7 +10,7 @@ There are various options how manged Royal Server configuration settings.
 
 ## Royal Server Configuration Tool
 
-The most common way is to use the `Royal Server Configuration Tool` which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it manage the different modules, your license(s), set up certificates, and grant permissions, etc.. Additionally, it sports a health monitor to easily monitor resource usage.
+The most common way is to use the `Royal Server Configuration Tool` which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it to  manage the different modules, your license(s), set up certificates, and grant permissions, etc.. Additionally, it sports a health monitor to easily monitor resource usage.
 
 ## Configuration File
 
