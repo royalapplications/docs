@@ -8,6 +8,9 @@ order: 9065
 <img src="/r2021/images/RoyalServer/MFA_48x48.png" class="icon-def" alt="" />
 
 The Multi-Factor Authentication panel allows the configuration of a second factor for each user and the settings of the provider (if needed).
+
+
+
 Royal Server supports Multi-Factor Authentication to enhance secure access to the following components: 
 - Secure Gateway
 - Document Store
@@ -17,11 +20,12 @@ Royal Server supports Multi-Factor Authentication to enhance secure access to th
 
 #### Securing the Document Store
 
-If you have MFA configured, opening a document hosted by Royal Server only works when the user has the proper permissions, the proper Access Rules are met (if configured) and if the user can provide the second factor.
+If you have MFA provider enabled for the Document Store, opening a document hosted by Royal Server only works when the user has the proper permissions, the proper Access Rules are met (if configured) and if the user can provide the second factor.
 
 #### Securing the Secure Gateway
 
-If you have MFA configured, when opening a connection in Royal TS/X that is based on a Secure Gateway Tunnel, e.g. Terminal or Remote Desktop connections, you will be asked to provide the second factor additionally to username and password before the tunnel is opened.
+If you have MFA enabled for the Secure Gateway, opening a connection in Royal TS/X that is based on a Secure Gateway Tunnel, e.g. Terminal or Remote Desktop connections, only works when the user
+is able to provider the second factor additionally to username and password before the tunnel is opened.
 
 
 ## Show or Activate the Multi-Factor Authentication Pane

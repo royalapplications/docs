@@ -24,7 +24,7 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 
 Royal Server is running as a Windows Service. By default it is installed using the `LOCAL SYSTEM` account.
 
-For the actual work (e.g. querying the list of Windows Services from a managed server), Royal Server is using a Worker Account. This account has to have network access.
+For managing remote servers (e.g. querying the list of Windows Services from a managed server), Royal Server is using a Worker Account. This account has to have network access.
 
 The Worker Account should be `Local Administrator` and in domain-joined scenarios a member of the `Domain Users` group on the Domain Controller.
 
@@ -41,7 +41,7 @@ Specify the port, Royal Server is using for accepting requests.
 
 **Use Compression**
 
-This setting enables (HTTP) compression on Royal Server for Management Endpoint connections. Enabling this is recommended if you have enough CPU on the client and the servers side and want reduce the network load.
+This setting enables (HTTP) compression on Royal Server for [Management Endpoint Component](xref:royalserver_modules). Enabling this is recommended if you have enough CPU on the client and the servers side and want reduce the network load.
 
 **HTTPS/SSL**
 
@@ -50,9 +50,4 @@ Royal Server uses communication via HTTPs/SSL to encrypt communication. This is 
 > [!NOTE]
 > Until Royal Server V3 and below it was possible to deactivate HTTPS/SSL encryption, as of Royal Server V4 this is not possible anymore, only secure connections are supported.
 
-**Windows Service User**
 
-The Royal Server Service is using LOCAL SYSTEM as user by default.
-
-> [!NOTE]
-> If this user does not have the necessary rights (e.g. to query domain users and groups) please consider changing this user.
