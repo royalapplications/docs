@@ -11,6 +11,8 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 
 ## Features
 
+### General
+
 **Language**
 
 This setting lets you change the user interface language of the Royal Server Configuration Tool (requires a restart of the tool).
@@ -24,8 +26,7 @@ This setting allows to specify which hosts should be considered as localhost. Th
 This function resets the Royal Server Configuration back to defaults. 
 
 > [!NOTE]
-> [!NOTE]
-> This will not change the following configurations: 
+> This will NOT change the following configurations: 
 > - Windows group memberships for authentication
 > - Document Store Access Control Lists
 > - MFA User Configuration
@@ -38,8 +39,18 @@ This function copies Royal Server troubleshooting information into the clipboard
 
 A ticket can be opened via our [support portal](https://support.royalapps.com/support/home)
 
-## Uninstalling Royal Server
+### Headers
+
+In this view, you can add/modify the HTTP header Royal Server is sending back to the client.
+
+
+### Uninstalling Royal Server
 
 Royal Server is installed via an MSI package which can easily be uninstalled.
 
-Additionally, if you want to remove all changes a Royal Server installation did to a server, copy the cleanup_installation.ps1 file in the `./scripts/` installation subdirectory before uninstalling and execute it with administrative rights after the uninstallation.
+Additionally, if you want to remove all changes a Royal Server installation did to a server:
+- copy the cleanup_installation.ps1 file in the `./scripts/` installation subdirectory before uninstalling to a save location
+- uninstall Royal Server
+- Execute the script.
+
+[More information about the cleanup script](../advanced/management-scripts/uninstall.md).

@@ -52,11 +52,15 @@ set RS_SecureGateway__GatewayEnabled=false
 ```
 
 > [!NOTE]
-> Be aware that these overwrites are neither shown in the Configuration Tool nor in the logged configuration when Royal Server starts.
+> Be aware that these overwrites are neither shown in the Configuration Tool.
 
 ## Configuration of Managed Servers
 
-Each server that should be managed by Royal Server needs to have two basic things configured:
+Royal Server manages remote server via different Modules. These require specific protocols to work:
+
+[!include[module-protocols.md](../_shared/module-protocols.md)]
+
+The easiest way to achieve that a remote server can be managed is via the following two steps:
 
 1.  Enable-PSRemoting
 2.  Firewall should let through Royal Server traffic

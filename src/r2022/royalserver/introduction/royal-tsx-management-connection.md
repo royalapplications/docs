@@ -5,11 +5,28 @@ order: 10040
 
 # Royal TS/X Management Connection
 
-Besides the required IP or name of the server, you probably also need to specify proper credentials when you configure a management connection in Royal TS/X.
-Additionally, you can configure a "Royal Server" object in the properties. This way, the connection is using Royal Server (and the provided credential) to query the information. Alternatively, you can configure "Direct Connect (No Royal Server)" which is executing the module directly without Royal Server.
+In order to use Royal Server, you need to create a Connection Object in Royal TS/X.
+The following connections support Royal Server:
+- Windows Events
+- Hyper-V
+- Windows Processes
+- Powershell 
+- Terminal Services
+- VM Ware
+- Windows Services
+
+Start by creating a "Royal Server" object that has configured proper values for IP, Port and the Royal Server Credentials.
+Use the "Test" Button to verify connectivity.
 
 > [!NOTE]
-> The credential configured on the management connection (i.e. not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log or query Windows Services). In most scenarios, a user account who is member of the Local Administrators group is used. For low privilege environments a number of steps are necessary to grant non-administrative users the required rights.
+> The configured user needs to be in the "Royal Server Users" group on Royal Server to get acccess.
+
+Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the "Royal Server"
+category of the Windows Events connection. If you forget this step, Royal TS/X tries to connect to this machine
+directly without Royal Server.
+
+> [!NOTE]
+> The credential configured on the management connection (that is not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log or query Windows Services). In most scenarios, a user account who is member of the Local Administrators group is fine. For low privilege environments a number of steps are necessary to grant non-administrative users the required rights.
 
 To access Royal Server you can install the latest version of Royal TS/X:
 
