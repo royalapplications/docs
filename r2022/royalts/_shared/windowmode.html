@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Window Mode </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" Window Mode ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="-window-mode"><img src="/r2021/images/RoyalTS/Application/SVG_PageWindowMode_32.svg#img_header" alt=""> Window Mode</h2>
+
+<p>The <strong>Window Mode</strong> page allows you to control where the connection should open. Most connection types support <strong>Main Window (Embedded)</strong> mode and <strong>External Window</strong> mode. Remote Desktop connections, for example, additionally support <strong>External Window (Full Screen)</strong> mode.</p>
+<h4 id="open-connection-in">Open connection in</h4>
+<ul>
+<li><strong>Main Window (Embedded)</strong><br>
+When selected, the connection will be embedded in the main window.</li>
+<li><strong>External Window</strong>
+When selected, the connection will open in an external window.</li>
+<li><strong>External Window (Full Screen)</strong><br>
+When selected, the connection will open in an external window in full screen mode (no window title bar and borders).</li>
+</ul>
+<h4 id="use-multiple-monitors">Use Multiple Monitors</h4>
+<p>If checked, the connection will use all monitors if connected in Full Screen mode or if the connection is changed to use Full Screen mode while connected.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for connections supporting full screen and multiple monitors (like Remote Desktop).</p>
+</div>
+<h4 id="dont-show-the-connection-bar">Dont show the connection bar</h4>
+<p>If checked, the connection bar will not be shown in full screen mode.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for Remote Desktop connections. To display the connection bar, use the Ctrl + Alt + Home keyboard shortcut.</p>
+</div>
+<h3 id="external-window-settings">External Window Settings</h3>
+<p>The following settings can be configured when the window mode configuration is set to external window.</p>
+<h4 id="screen">Screen</h4>
+<ul>
+<li><strong>Remember Screen</strong><br>
+Royal TS remembers which screen the connection was on after you've disconnected the connection and tries to open the external connection window on the same screen the next time you connect.</li>
+<li><strong>Screen 1 ... 9</strong><br>
+Choose on which screen you want the external connection to be opened.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Setting the <strong>Screen</strong> configuration to a screen which is currently not available on your computer will be ignored as long as the screen is not available. A common scenario for this is, working with the same file on a laptop computer with only one screen and a workstation with multiple screens connected. Setting connections to open on the Screen 3 will open on the main display on your laptop while the same connection will open on your workstation on <strong>Screen 3</strong>.</p>
+</div>
+<h4 id="position">Position</h4>
+<ul>
+<li><strong>Remember Position</strong><br>
+Royal TS will remember the last window position after you've disconnected the connection and tries to open the external connection window at the same position the next time you connect.</li>
+<li><strong>Custom Left and Top</strong><br>
+Specify the left and top coordinates (in pixels) where the external connection window should be positioned.</li>
+</ul>
+<h4 id="size">Size</h4>
+<ul>
+<li><strong>Remember Size</strong><br>
+Royal TS will remember the last window size after you've disconnected the connection and tries to open the external connection window with the same size the next time you connect.</li>
+<li><strong>Custom Width and Height</strong><br>
+Specify the width and height (in pixels) of the external connection window.</li>
+<li><strong>Maximize</strong><br>
+The external connection window will be maximized.</li>
+<li><strong>Preferred Size</strong><br>
+The external connection window will use the sized configured in the connection. This setting will only be effective for connection types supporting a custom client size (for example the <strong>Desktop Size</strong> in the <a class="xref" href="../reference/connections/rdp.html#-display-options">Display Options of a Remote Desktop Connection</a>). If a connection type doesn't support a custom client size the setting will be ignored and the external window will be maximized.</li>
+</ul>
+<h4 id="minimize-main-window">Minimize Main Window</h4>
+<p>When checked, Royal TS will minimize the main window after the connection was established.</p>
+<h4 id="open-display-properties">Open Display Properties</h4>
+<p>Opens the display properties control panel. With the control panel you can identify your screens.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/_shared/windowmode.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

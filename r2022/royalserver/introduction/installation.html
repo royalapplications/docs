@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Installing and Uninstalling Royal Server </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Installing and Uninstalling Royal Server ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="installing-and-uninstalling-royal-server">Installing and Uninstalling Royal Server</h1>
+
+<h2 id="install-royal-server">Install Royal Server</h2>
+<p>Royal Server is distributed via a single <em>.msi</em>-file. The installation requires administrative rights, a destination directory and it takes just a minute to install Royal Server.</p>
+<p>When the configuration tool is launched for the first time, you will be asked to provide your <a class="xref" href="what-is-royal-server.html#licensing">License Information</a> and to set a Worker Account.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is strongly recommended to configure a Worker Account in order to allow the Royal Server to access network resources (accessing other servers). Royal Server is not starting when no Worker Account is configured. The Worker Account also needs the rights to work with the configured Windows Accounts that should be allowed to authenticate with Royal Server. If domain groups/users are configured, this account needs to be a domain account that has the required rights to query these accounts.</p>
+</div>
+<p>Additionally, the Management Endpoint component of Royal Server is using HTTPS with a self-signed certificate that is created during the installation. You can also configure your own certificates if needed.</p>
+<p>See also: <a class="xref" href="../management/service-configuration.html">Service Configuration</a>.</p>
+<h2 id="uninstall-royal-server">Uninstall Royal Server</h2>
+<p>Since the installation is msi-based, just uninstall Royal Server using the Add/Remove Programs tool. Uninstalling Royal Server is not removing the configuration (by default), so you can easily switch between versions.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you want to remove Royal Server and all configuration information completely from the machine, save the <code>cleanup_installation.ps1</code> file in the <code>./scripts/</code> folder of your Royal Server installation before uninstalling and execute it with administrative rights after uninstalling.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/introduction/installation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

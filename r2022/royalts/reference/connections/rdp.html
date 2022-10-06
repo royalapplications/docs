@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Remote Desktop </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" Remote Desktop ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_reference_connections_rdp">
+<h1 id="-remote-desktop"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg#img_header" alt=""> Remote Desktop</h1>
+
+<p>The <strong>Remote Desktop</strong> connection <em>(based on Microsoft RDP ActiveX)</em> can be used to connect to remote computers or Hyper-V guests using the remote desktop protocol (RDP) which is built into Windows.</p>
+<h2 id="dashboard">Dashboard</h2>
+<p>The <strong>Remote Desktop Dashboard</strong> is shown in the <strong>Dashboard</strong> panel when you select a Remote Desktop connection in the <strong>Navigation</strong> panel. Depending on the Hyper-V configuration of your connection you will either see the <strong>Hyper-V</strong> dashboard pane, the <strong>Sessions</strong> dashboard pane, or both.</p>
+<p><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png" alt="RemoteDesktop_Dashboard"></p>
+<h2 id="hyper-v-features">Hyper-V Features</h2>
+<ul>
+<li>List of all hosted Hyper-V guests (or instances) and their state.</li>
+<li>Grid search and customization, including sort, filter and group.</li>
+<li><strong>Start, Pause, Save State and Shut Down</strong> Hyper-V guests directly from the <strong>Dashboard</strong>.</li>
+<li><strong>Add</strong> a new <strong>Remote Desktop</strong> connection based on the original settings combined with the guest properties.<br>
+Royal TS assumes the guest name as the host name for the new connection.</li>
+<li><strong>Add</strong> a new <strong>Hyper-V Instance</strong> connection based on the selected guest.<br>
+Royal TS creates a new <strong>Remote Desktop</strong> connection configured to connect directly to the Hyper-V guest.</li>
+<li><strong>Connect (Ad Hoc)</strong> allows you to connect directly to the selected Hyper-V guest.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The Hyper-V dashboard pane relies on <strong>WMI</strong>. Ensure that all the necessary firewall ports for WMI are open and that the user account running Royal TS (beware of UAC) or the credentials set in the Remote Desktop connection have local administrative rights on the remote <strong>Hyper-V host computer</strong>.</p>
+</div>
+<h2 id="sessions-features">Sessions Features</h2>
+<ul>
+<li>List of all terminal services sessions and their state.</li>
+<li>Grid search and customization, including sort, filter and group.</li>
+<li>Send a message to appear on the desktop of the selected remote session(s).</li>
+<li>Reset a selected remote session (similar to a forced log off).</li>
+<li>Restart the remote server.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The <strong>Sessions</strong> dashboard pane relies on <strong>RPC communication</strong>. Ensure that all the necessary firewall ports for RPC communication are open and that the user account running Royal TS (beware of UAC) have local administrative rights on the remote computer.</p>
+</div>
+<h2 id="royal-server-support">Royal Server Support</h2>
+<p>The dashboard data can also be gathered using a Royal Server. For more information about Royal Server, click <a class="xref" href="../../introduction/introducing-royal-server.html">here</a>.</p>
+<h2 id="dashboard-settings">Dashboard Settings</h2>
+<p>To configure the application default settings for the included dashboard, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on Dashboard for the Remote Desktop plugin.<br>
+To configure individual dashboard settings for a connection, use the <a href="#dashboard">Dashboard</a> property page.</p>
+<h2 id="plugin-settings">Plugin Settings</h2>
+<p>To configure the Remote Desktop plugin settings, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on <strong>Settings</strong> for the Remote Desktop plugin:</p>
+<h4 id="client-version">Client Version</h4>
+<p>Specify which RDP client version should be used. If <strong>Automatic</strong> (Default) is selected, the latest version available will be used.</p>
+<h3 id="disconnect-and-reconnect">Disconnect and Reconnect</h3>
+<h4 id="fast-smart-reconnect">Fast Smart Reconnect</h4>
+<p>If checked, Royal TS will use the faster reconnect method introduced in RDP 8 whenever possible. Disable this setting in case you experience issues with smart reconnect.</p>
+<h4 id="force-smart-reconnect-on-all-sessions">Force Smart Reconnect on all Sessions</h4>
+<p>If checked, Royal TS will invoke smart reconnect on all sessions as soon as it is invoked on one. Disable this setting in case you experience issues with smart reconnect.</p>
+<h4 id="close-tab-when-user-logs-off-reboots-or-disconnects">Close tab when user logs off, reboots or disconnects</h4>
+<p>If checked, Royal TS will also close tabs when a log off, reboot or disconnect from within the session is initiated.<br>
+This setting is only effective when <strong>Keep tabs open when disconnected remotely</strong> in the <a class="xref" href="../options.html#-user-interface">User Interface</a> option is checked.</p>
+<h4 id="auto-reconnect-on-disconnected-tab">Auto Reconnect on Disconnected Tab</h4>
+<p>If checked, the automatic reconnect feature will be enabled when the disconnected tab is shown.</p>
+<h4 id="always-reconnect">Always Reconnect</h4>
+<p>If checked, the automatic reconnect feature will always be enabled when the disconnected tab is shown, including events like signing out the remote session or rebooting the remote computer.</p>
+<h3 id="advanced">Advanced</h3>
+<h4 id="set-domain-to--for-local-accounts">Set Domain to '.' for Local Accounts:</h4>
+<p>If checked, a dot ('.') will be used as domain for local account user names if no domain is specified.</p>
+<h4 id="disable-click-detection">Disable Click Detection</h4>
+<p>If checked, Royal TS will not be able to detect clicks inside a remote session. This should only be used for troubleshooting.</p>
+<h2 id="connection-properties">Connection Properties</h2>
+<p>The Remote Desktop Properties dialog is shown:</p>
+<ul>
+<li>for a new Remote Desktop connection by clicking the <strong>Remote Desktop</strong> menu item in the <strong>Add</strong> drop down menu in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
+<li>for an existing Remote Desktop connection by selecting a Remote Desktop connection and clicking on the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
+<li>as a bulk-edit dialog when multiple Remote Desktop connections were selected in the <strong>Folder / Document Dashboard</strong> and the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab is clicked.  
+See also: <a class="xref" href="../../tutorials/bulk-operations.html">Bulk Operations</a></li>
+</ul>
+<h4 id="display-name-required">Display Name <em>(required)</em></h4>
+<p>Enter a display name for object.</p>
+<h4 id="color">Color</h4>
+<p>Click the color picker button in the display name text box to select a color. In the <a class="xref" href="../options.html#-user-interface">User Interface</a> settings you can configure to show the color in the navigation tree, the connection tab or as connection border.</p>
+<h4 id="icon">Icon</h4>
+<p>Click the icon picker button next in the display name text box to select and assign a custom icon to the object.</p>
+<h4 id="computer-name-required">Computer Name <em>(required)</em></h4>
+<p>Enter the computer name or the IP address.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Click on the browse button (...) to open the <strong>Entry Editor</strong> dialog. The entry editor can be used to search for computers in your network and to add multiple entries for different servers with the same settings at the same time (when supported).</p>
+<p>Alternatively, you can also just specify more computer names by separating them with a semicolon for bulk-add operations.</p>
+<p><a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+</div>
+<h4 id="port">Port</h4>
+<p>Specify the TCP port for the remote desktop connection. The default RDP port is 3389.</p>
+<h4 id="consoleadmin-session">Console/Admin Session</h4>
+<p>Similar to the /console or /admin switch from the original terminal services client (mstsc.exe).</p>
+<h4 id="description">Description</h4>
+<p>Enter a description for the object.</p>
+<h4 id="mac-address">MAC Address</h4>
+<p>Use this optional field to record the remote computer's MAC address. You can then use this field in templates or tasks, like a wake-on-lan task, for example.</p>
+<h2 id="-display-options"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageDisplayOptions_32.svg#img_header" alt=""> Display Options</h2>
+<h4 id="color-depth">Color Depth</h4>
+<p>The color depth (in bits per pixel) for the control's connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Higher color depth needs more bandwidth. If you are working with slow connections, reduce the color depth.</p>
+</div>
+<h4 id="desktop-size">Desktop Size</h4>
+<p>Select one of the predefined desktop sizes or specify your own desktop width and height.</p>
+<h4 id="resize-mode">Resize Mode</h4>
+<p>Configure how Royal TS handles session window resize events.</p>
+<ul>
+<li><strong>Scroll Bars</strong><br>
+Decreasing the window size will show scroll bars in the remote session.</li>
+<li><strong>Smart Sizing</strong><br>
+Decreasing the window size will scale down the remote session.</li>
+<li><strong>Smart Reconnect</strong><br>
+Changing the window size will force a reconnect, so that the remote desktop will adapt to the new size.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Keep in mind that a large desktop size and high color depth drastically increases memory usage of Royal TS - especially when you connect to many servers at the same time.</p>
+</div>
+<h2 id="-credentials"><img src="/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
+<p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
+<h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
+<p>When selected, no credentials are configured for the object. Connections that require credentials may prompt to enter credentials or fail to connect.</p>
+<h4 id="use-credentials-from-the-parent-folder-not-always-available">Use credentials from the parent folder <em>(not always available)</em></h4>
+<p>When selected, Royal TS will look for a configured credential in the parent folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Not available for Royal Server objects, Secure Gateway objects, Remote Desktop Gateway objects and Key Sequence Tasks</p>
+</div>
+<h4 id="use-from-this-connection-not-always-available">Use from this connection <em>(not always available)</em></h4>
+<p>When selected, the username and password is used from the context connection object.</p>
+<h4 id="specify-username-and-password">Specify username and password</h4>
+<p>When selected, a username and password can be provided. For domain accounts use the syntax &quot;domain\username&quot; (without the quotes).</p>
+<h4 id="use-an-existing-credential">Use an existing credential</h4>
+<p>When selected, assign an existing credential to the object using the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the correct credential.</p>
+</div>
+<h4 id="specify-a-credential-name">Specify a credential name</h4>
+<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
+</div>
+<h4 id="omit-domain">Omit Domain</h4>
+<p>When checked, Royal TS will omit the  domain portion of the username (domain\username or username@domain).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Omit Domain</strong> checkbox is not available for all object types!</p>
+</div>
+<h4 id="automatic-logon">Automatic Logon</h4>
+<p>When checked, Royal TS will use the credentials to log on to the connection automatically. This setting applies only to connection types supporting automatic logon and is ignored if a connection doesn't support automatic logon.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To access the configured credentials through replacement tokens (for example in Auto Fill or Key Sequence Task configurations), use the replacement tokens $EffeciveUsername$ and $EffectivePassword$.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
+<p>See also: <a class="xref" href="../../tutorials/working-with-credentials.html">Working with Credentials</a>, <a class="xref" href="../organization/credential.html">Credential</a>, <a href="https://www.royalapps.com/go/kb-all-teamsharing">About shared documents</a></p>
+<h2 id="-tasks"><img src="/r2021/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header" alt=""> Tasks</h2>
+<p>You can specify a task to be executed before a connection is established and after it has been disconnected. For example: establish a VPN connection before you connect and close it after disconnect.</p>
+<h3 id="connect-task">Connect Task</h3>
+<h4 id="do-not-execute-a-task">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is established.</p>
+<h4 id="use-task-from-parent-folder">Use task from parent folder</h4>
+<p>Royal TS will look for a configured connect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-connect-task-completion">Wait for connect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be established.</p>
+<h4 id="execute-for-first-connection-in-folder">Execute for first connection in folder</h4>
+<p>If checked, the task will only be executed if no other connection in the same folder is active.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will establish the VPN connection only for your first connection.</p>
+</div>
+<h4 id="abort-when-connect-task-fails">Abort when connect task fails</h4>
+<p>If checked, the connection will not be established when the configured task fails and returns an Exit Code other than 0.</p>
+<h3 id="disconnect-task">Disconnect Task</h3>
+<h4 id="do-not-execute-a-task-1">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is disconnected.</p>
+<h4 id="use-task-from-parent-folder-1">Use task from parent folder</h4>
+<p>Royal TS will look for a configured disconnect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task-1">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name-1">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during disconnect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-disconnect-task-completion">Wait for disconnect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be disconnected.</p>
+<h4 id="execute-for-last-connection-in-folder">Execute for last connection in folder</h4>
+<p>If checked, the task will only be executed if it is the last active connection in the folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will disconnect the VPN connection after the last connection is disconnected.</p>
+</div>
+<p>See also: <a class="xref" href="../../tutorials/working-with-tasks.html">Working with Tasks</a>, <a class="xref" href="../tasks/command.html">Command Task</a></p>
+<h3 id="-key-sequence"><img src="/r2021/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header" alt=""> Key Sequence</h3>
+<p>The <strong>Key Sequence</strong> page allows you to configure a sequence of key strokes (simulating keyboard events) to be sent to the connection after the connection has been established.</p>
+<h4 id="do-not-send-a-key-sequence">Do not send a key sequence</h4>
+<p>This is the default value. If selected, no key sequence is sent to the remote session after connect.</p>
+<h4 id="use-key-sequence-task-from-parent-folder">Use key sequence task from parent folder</h4>
+<p>Royal TS will look for a configured key sequence task in the parent folder. This option is not available on the document level.</p>
+<h4 id="specify-a-key-sequence">Specify a key sequence</h4>
+<p>If selected, a key sequence can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use the fly-out button to the right to show a list of available replacement tokens and special key commands. Use the WAIT command anywhere in the sequence to delay the sequence.</p>
+<p>Examples for Key Sequences:</p>
+<ul>
+<li>A group policy is set to show a message whenever a user is attempting to log on interactively. Create a key sequence &quot;{WAIT:1000}{ENTER}&quot; which will wait 1 second (1000ms) after successfully connected to the remote desktop session and sends the ENTER key to the remote session to confirm the message.</li>
+<li>A web page connection to a flash based application which requires you to log on using a username and password can be configured to send the appropriate key sequence after the connection has been established.</li>
+</ul>
+</div>
+<h4 id="use-an-existing-key-sequence-task">Use an existing key sequence task</h4>
+<p>If selected, a key sequence task can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a key sequence is in progress, do not interact with Royal TS or any other application after you connect. The status bar message indicates when a key sequence is in progress and when it has finished.</p>
+</div>
+<h4 id="specify-a-key-sequence-task-name">Specify a key sequence task name</h4>
+<p>When selected, enter or choose a key sequence task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+<h2 id="-window-mode"><img src="/r2021/images/RoyalTS/Application/SVG_PageWindowMode_32.svg#img_header" alt=""> Window Mode</h2>
+<p>The <strong>Window Mode</strong> page allows you to control where the connection should open. Most connection types support <strong>Main Window (Embedded)</strong> mode and <strong>External Window</strong> mode. Remote Desktop connections, for example, additionally support <strong>External Window (Full Screen)</strong> mode.</p>
+<h4 id="open-connection-in">Open connection in</h4>
+<ul>
+<li><strong>Main Window (Embedded)</strong><br>
+When selected, the connection will be embedded in the main window.</li>
+<li><strong>External Window</strong>
+When selected, the connection will open in an external window.</li>
+<li><strong>External Window (Full Screen)</strong><br>
+When selected, the connection will open in an external window in full screen mode (no window title bar and borders).</li>
+</ul>
+<h4 id="use-multiple-monitors">Use Multiple Monitors</h4>
+<p>If checked, the connection will use all monitors if connected in Full Screen mode or if the connection is changed to use Full Screen mode while connected.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for connections supporting full screen and multiple monitors (like Remote Desktop).</p>
+</div>
+<h4 id="dont-show-the-connection-bar">Dont show the connection bar</h4>
+<p>If checked, the connection bar will not be shown in full screen mode.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for Remote Desktop connections. To display the connection bar, use the Ctrl + Alt + Home keyboard shortcut.</p>
+</div>
+<h3 id="external-window-settings">External Window Settings</h3>
+<p>The following settings can be configured when the window mode configuration is set to external window.</p>
+<h4 id="screen">Screen</h4>
+<ul>
+<li><strong>Remember Screen</strong><br>
+Royal TS remembers which screen the connection was on after you've disconnected the connection and tries to open the external connection window on the same screen the next time you connect.</li>
+<li><strong>Screen 1 ... 9</strong><br>
+Choose on which screen you want the external connection to be opened.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Setting the <strong>Screen</strong> configuration to a screen which is currently not available on your computer will be ignored as long as the screen is not available. A common scenario for this is, working with the same file on a laptop computer with only one screen and a workstation with multiple screens connected. Setting connections to open on the Screen 3 will open on the main display on your laptop while the same connection will open on your workstation on <strong>Screen 3</strong>.</p>
+</div>
+<h4 id="position">Position</h4>
+<ul>
+<li><strong>Remember Position</strong><br>
+Royal TS will remember the last window position after you've disconnected the connection and tries to open the external connection window at the same position the next time you connect.</li>
+<li><strong>Custom Left and Top</strong><br>
+Specify the left and top coordinates (in pixels) where the external connection window should be positioned.</li>
+</ul>
+<h4 id="size">Size</h4>
+<ul>
+<li><strong>Remember Size</strong><br>
+Royal TS will remember the last window size after you've disconnected the connection and tries to open the external connection window with the same size the next time you connect.</li>
+<li><strong>Custom Width and Height</strong><br>
+Specify the width and height (in pixels) of the external connection window.</li>
+<li><strong>Maximize</strong><br>
+The external connection window will be maximized.</li>
+<li><strong>Preferred Size</strong><br>
+The external connection window will use the sized configured in the connection. This setting will only be effective for connection types supporting a custom client size (for example the <strong>Desktop Size</strong> in the <a class="xref" href="rdp.html#-display-options">Display Options of a Remote Desktop Connection</a>). If a connection type doesn't support a custom client size the setting will be ignored and the external window will be maximized.</li>
+</ul>
+<h4 id="minimize-main-window">Minimize Main Window</h4>
+<p>When checked, Royal TS will minimize the main window after the connection was established.</p>
+<h4 id="open-display-properties">Open Display Properties</h4>
+<p>Opens the display properties control panel. With the control panel you can identify your screens.</p>
+<h2 id="-dashboard"><img src="/r2021/images/RoyalTS/Application/SVG_PageDashboard_32.svg#img_header" alt=""> Dashboard</h2>
+<p>The <strong>Dashboard</strong> page allows you to setup the default dashboard behavior for this connection. Dashboards are updated when a selection has changed. By default, the dashboard tab is shown and activated for inactive connections.</p>
+<h4 id="use-the-plugin-default-settings">Use the plugin default settings</h4>
+<p>If selected, Royal TS will use the plugin default settings for the dashboard. You can change the plugin default settings by clicking on the <strong>Settings...</strong> button. Changes to the plugin default settings will affect all connections using the same plugin and the default settings. See also: Plugins</p>
+<h4 id="use-connection-specific-settings">Use connection specific settings</h4>
+<p>If selected, Royal TS allows you to configure the dashboard settings for the connection.</p>
+<h3 id="dashboard-settings-1">Dashboard Settings</h3>
+<h4 id="automatically-show-hyper-v-instances">Automatically show Hyper-V instances</h4>
+<p>If checked, the Hyper-V dashboard will automatically retrieve instance information from the remote host.</p>
+<h4 id="automatically-show-terminal-sessions">Automatically show terminal sessions</h4>
+<p>If checked, the Sessions dashboard will automatically retrieve terminal session information from the remote host.</p>
+<h4 id="use-configured-credentials">Use configured credentials</h4>
+<p>If checked, Royal TS will also use the configured credentials to retrieve the dashboard information if necessary.</p>
+<h2 id="-royal-server"><img src="/r2021/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header" alt=""> Royal Server</h2>
+<p>The <strong>Royal Server</strong> page allows you to configure a Royal Server object for supported connections or choose to use a Royal Server configuration from the parent folder.</p>
+<h4 id="use-royal-server-from-the-parent-folder">Use Royal Server from the parent folder</h4>
+<p>If checked, Royal TS will look for a configured Royal Server in the parent folder. This option is not available on the document level.</p>
+<h4 id="direct-connect-no-royal-server">Direct Connect (No Royal Server)</h4>
+<p>This is the default value. If selected, no Royal Server is used and Royal TS will directly connect to the remote computer.</p>
+<h4 id="specify-a-royal-server-object">Specify a Royal Server object</h4>
+<p>The selected Royal Server object is used for supported connections.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Royal Server is a product which allows you to gather information and execute management tasks securely on your managed servers.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
+<p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h2 id="-secure-gateway"><img src="/r2021/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header" alt=""> Secure Gateway</h2>
+<p>The <strong>Secure Gateway</strong> page allows you to configure a Secure Gateway object for supported connections or choose to use a Secure Gateway configuration from the parent folder.</p>
+<h4 id="use-secure-gateway-from-the-parent-folder">Use Secure Gateway from the parent folder</h4>
+<p>If checked, Royal TS will look for a configured Secure Gateway in the parent folder. This option is not available on the document level.</p>
+<h4 id="gateway-usage">Gateway Usage</h4>
+<ul>
+<li><strong>Never</strong><br>
+The Secure Gateway is never used and Royal TS will directly connect to the remote computer.</li>
+<li><strong>Always</strong><br>
+The Secure Gateway is always used and Royal TS will tunnel all communication to the remote computer through the gateway.</li>
+<li><strong>On Demand</strong><br>
+The Secure Gateway will be used if the target machine cannot be reached directly.</li>
+</ul>
+<h4 id="direct-connect-no-secure-gateway">Direct Connect (No Secure Gateway)</h4>
+<p>This is the default value. If selected, no Secure Gateway is used and Royal TS will directly connect to the remote computer.</p>
+<h4 id="specify-a-secure-gateway-object">Specify a Secure Gateway object</h4>
+<p>The selected Secure Gateway object is used for supported connections.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Secure Gateway is a component included in Royal Server and can be used to connect through an SSH tunnel (port forwarding).</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
+<p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h2 id="-advanced"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg#img_header" alt=""> Advanced</h2>
+<h3 id="authentication">Authentication</h3>
+<h4 id="authentication-level">Authentication Level</h4>
+<p>Specifies the authentication level to use for the connection.</p>
+<ul>
+<li><strong>Connect and do not warn me if server authentication fails</strong><br>
+No authentication of the server.</li>
+<li><strong>Do not connect, if server authentication fails</strong><br>
+Server authentication is required and must complete successfully for the connection to proceed.</li>
+<li><strong>Connect, but warn me if server authentication fails</strong><br>
+Attempt authentication of the server. If authentication fails, the user will be prompted with the option to cancel the connection or to proceed without server authentication.</li>
+</ul>
+<h4 id="network-level-authentication">Network Level Authentication</h4>
+<p>If the computer you want to connect to requires Network Level Authentication, you need to check this option.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>NLA is enabled by default on Vista/Windows 2008 or later.</p>
+</div>
+<h4 id="use-credential-manager">Use Credential Manager</h4>
+<p>When checked, Royal TS will create a credential entry in the Windows Credential Manager instead of submitting the credentials to the server.</p>
+<h4 id="restricted-admin-mode">Restricted Admin Mode</h4>
+<p>In this mode, credentials won't be sent to the remote server, which can protect you if you connect to a remote server that has been compromised. However, connections made from the remote server might not be authenticated by other servers, which might impact app functionality and compatibility.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Experimental: Microsoft does not provide an official (public) API for setting the restricted admin mode on the ActiveX control Our implementation is experimental. There's no guarantee that it will always work.</p>
+</div>
+<h3 id="connection">Connection</h3>
+<h4 id="compression">Compression</h4>
+<p>Specifies whether compression is enabled.</p>
+<h4 id="bitmap-caching">Bitmap Caching</h4>
+<p>Bitmap caching can improve performance but requires additional memory and disk resources.</p>
+<h4 id="public-mode">Public Mode</h4>
+<p>When enabled, the RDP client does not cache any data on the local system. Use public mode, for example, when connecting to a business server from a system in a conference center.</p>
+<h4 id="background-input">Background Input</h4>
+<p>When background input is enabled the client accepts mouse input even when Royal TS or the external client window is not active.</p>
+<h4 id="session-takeover-warning">Session Takeover Warning</h4>
+<p>When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.</p>
+<h4 id="automatic-reconnect">Automatic Reconnect</h4>
+<p>Specifies whether to enable the client to reconnect automatically to a session in the event of a network disconnection. If checked, enter the number of times to try to reconnect during automatic reconnection.</p>
+<h4 id="load-balance-info">Load Balance Info</h4>
+<p>Specifies the load balancing cookie that will be placed in the X.224 Connection Request packet.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>This field is often used for Azure based connections. After importing .rdp files created by the Azure portal, you may find specific load balancing cookies in your configuration.</p>
+</div>
+<h2 id="-remote-desktop-gateway"><img src="/r2021/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header" alt=""> Remote Desktop Gateway</h2>
+<p>The <strong>Remote Desktop Gateway</strong> page allows you to setup your connection to use a Remote Desktop Gateway.</p>
+<h4 id="gateway-mode">Gateway Mode</h4>
+<ul>
+<li><strong>Use Gateway from parent</strong><br>
+The remote desktop gateway configuration from the parent folder will be used.</li>
+<li><strong>Use an existing Gateway</strong><br>
+Allows you to select an existing remote desktop gateway object.</li>
+<li><strong>Specify Gateway settings</strong><br>
+Allows you to configure the gateway settings below.</li>
+</ul>
+<h4 id="use-gateway-server">Use Gateway Server</h4>
+<p>Specifies when to use a Remote Desktop Gateway server.</p>
+<ul>
+<li><strong>Never</strong><br>
+Do not use a Remote Desktop Gateway server.</li>
+<li><strong>Always</strong><br>
+Always use a Remote Desktop Gateway server</li>
+<li><strong>On demand</strong><br>
+Use a Remote Desktop Gateway server if a direct connection cannot be made to the Remote Desktop Session Host server.</li>
+</ul>
+<h4 id="gateway-server">Gateway Server</h4>
+<p>Specifies the host name of the Remote Desktop Gateway server.</p>
+<h4 id="logon-method">Logon Method</h4>
+<p>Specify the Logon Method for the gateway server.</p>
+<ul>
+<li><strong>Ask for credentials on connect</strong><br>
+No credentials configured. Connections that require credentials may prompt the user to enter credentials upon connecting or will fail to connect.</li>
+<li><strong>Use from this connection</strong><br>
+The same credentials as configured in the Credentials page are used for gateway authentication.</li>
+<li><strong>Smart card</strong><br>
+Smart card logon is used for gateway authentication.</li>
+<li><strong>Specify username and password</strong><br>
+Provide a Username and Password. For domain accounts use the syntax &quot;domain\username&quot;</li>
+<li><strong>Use an existing credential</strong><br>
+Choose an existing credential from the drop-down list. You may also Add a new credential or Edit the selected credential.</li>
+<li><strong>Specify a credential name</strong><br>
+Enter or choose a credential name.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning existing credentials using the name is recommended when a team of users share the same configuration file.
+Each user can define a credential with the same name in his own personal and protected document.
+This makes sharing files across team members very easy while keeping credentials safe.
+See Work with <a class="xref" href="../../tutorials/working-with-credentials.html#working-with-personal-credentials-and-a-shared-document">Personal Credentials in a Shared Document</a> for more information.</p>
+</div>
+<h2 id="-hyper-v"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageHyperV_32.svg#img_header" alt=""> Hyper-V</h2>
+<p>The <strong>Hyper-V</strong> page allows you to setup your connection as a Hyper-V host to display the Hyper-V management in the Dashboard and optionally allows you to configure a target instance you want to connect to by default.</p>
+<h4 id="hyper-v-mode">Hyper-V Mode</h4>
+<p>Specifies whether or not the remote host is a Hyper-V mode host.</p>
+<ul>
+<li><strong>This is a standard RDP connection (Default)</strong><br>
+The Sessions dashboard pane is shown in the Dashboard panel but not the Hyper-V dashboard pane.</li>
+<li><strong>This is a Hyper-V host, show VM instances in dashboard</strong><br>
+The Sessions dashboard pane and the Hyper-V dashboard pane is shown in the Dashboard panel.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use the Connect (Ad Hoc) button in the Hyper-V dashboard pane toolbar to connect directly to the console of a selected instance. There's no need to have any Hyper-V tools or vmconnect.exe as Royal TS seamlessly integrates Hyper-V remote control.</p>
+</div>
+<ul>
+<li><strong>This is a Hyper-V host, connect to a specific instance</strong><br>
+The Hyper-V dashboard pane is shown in the Dashboard panel for the configured instance.</li>
+</ul>
+<h4 id="port-1">Port</h4>
+<p>The Hyper-V proxy port. By default, Hyper-V hosts listen to port 2179.</p>
+<h4 id="instance">Instance</h4>
+<p>Enter an instance ID (GUID) or click on the browse button (...) on the right to show the Hyper-V instance picker.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Instance browsing relies on WMI. Ensure that all the necessary firewall ports for WMI are open and that the user account running Royal TS (beware of UAC) or the credentials set in the Remote Desktop connection have local administrative rights on the remote Hyper-V host computer.</p>
+</div>
+<h4 id="enhanced-session-mode">Enhanced Session Mode</h4>
+<p>Local resources, like audio, printers, clipboard, drives, USB devices, etc. can be redirected. Enhanced session mode requires a supported guest operating system, and may require additional configuration inside the virtual machine. See also: <a href="https://technet.microsoft.com/en-us/library/dn282274.aspx">Enhanced Session Mode</a></p>
+<h2 id="-performance"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PagePerformance_32.svg#img_header" alt=""> Performance</h2>
+<p>The <strong>Performance</strong> page allows you to configure various Remote Desktop settings which will directly impact the connection performance.</p>
+<h4 id="connection-speed">Connection Speed</h4>
+<p>On Windows 7/Windows Server 2008R2 you need to set the Connection Speed to LAN in order to enable RemoteFX. On Windows 8/Windows Server 2012 this isn't a requirement anymore but you should set it to LAN speed if you are connecting to the server with a high speed connection. The connection speed setting will affect the bandwidth usage in your RDP connections.</p>
+<h4 id="text-cursor-blinking">Text Cursor Blinking</h4>
+<p>If checked, blinking for the text cursor is allowed.</p>
+<h4 id="mouse-cursor-shadow">Mouse Cursor Shadow</h4>
+<p>If checked, the shadow is displayed for the mouse cursor.</p>
+<h4 id="desktop-background">Desktop Background</h4>
+<p>If not checked, no wallpaper is displayed in the remote session.</p>
+<h4 id="font-smoothing">Font Smoothing</h4>
+<p>If checked, allows &quot;Clear Type&quot; to render text.</p>
+<h4 id="desktop-composition-aero">Desktop Composition (Aero)</h4>
+<p>If checked, allows &quot;Aero&quot; user interface to be rendered.</p>
+<h4 id="show-window-contents-while-dragging">Show Window Contents while Dragging</h4>
+<p>If not checked, only the window outline is displayed when a window is moved.</p>
+<h4 id="menu-animations">Menu Animations</h4>
+<p>If not checked, menu and window animations are not displayed.</p>
+<h4 id="visual-styles">Visual Styles</h4>
+<p>If not checked, themes are ignored and not displayed.</p>
+<h4 id="directx">DirectX</h4>
+<p>If checked, DirectX is available in the remote session.</p>
+<h4 id="hardware-acceleration">Hardware Acceleration</h4>
+<p>If checked, hardware acceleration will be used where supported. Overview thumbnails may not work with hardware acceleration enabled.</p>
+<h4 id="bandwidth-detection">Bandwidth Detection</h4>
+<p>Specifies if bandwidth changes are automatically detected.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Font Smoothing and Desktop Composition (Aero) requires Windows Vista/Windows 2008 or later.
+DirectX requires Windows 7/Windows 2008R2 or later on the client and on the server as well as DirectX capabilities on the client.
+Bandwidth Detections is new in RDP8 (included since Windows 8/Windows 2012) and is required on both, the client and the server.</p>
+</div>
+<h4 id="cache-size">Cache Size</h4>
+<p>Caching and memory management drastically changed in RDP version 8 (when connecting from a Windows 8/Server 20112 to another Windows 8/Server 2012) and will take much more client side memory as with previous RDP versions. The cache size setting allows you to configure how much client side memory Royal TS should use for RDP 8 connections.</p>
+<h2 id="-redirection"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageRedirection_32.svg#img_header" alt=""> Redirection</h2>
+<p>The Redirection page allows you to configure device and resource redirection for use in the remote session.</p>
+<h4 id="printers">Printers</h4>
+<p>If checked, redirection of printers is allowed.</p>
+<h4 id="clipboard">Clipboard</h4>
+<p>If checked, clipboard sharing is allowed.</p>
+<h4 id="smart-cards">Smart Cards</h4>
+<p>If checked, redirection of smart cards is allowed.</p>
+<h4 id="ports">Ports</h4>
+<p>If checked, redirection of local ports (for example, COM and LPT) is allowed.</p>
+<h4 id="devices">Devices</h4>
+<p>If checked, device redirection is enabled.</p>
+<h4 id="pos-devices">POS Devices</h4>
+<p>If checked, redirection of Point of Service device is allowed.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Devices and POS Devices requires Windows Vista/Windows 2008 or later.</p>
+</div>
+<h4 id="drive-redirection">Drive Redirection</h4>
+<ul>
+<li><strong>No Drives</strong><br>
+Redirection of local disk drives is not allowed.</li>
+<li><strong>All Drives</strong><br>
+Redirection of local disk drives is allowed for all drives.</li>
+<li><strong>Specific Drives</strong><br>
+Redirection of local disk drives is only allowed for a list of drives.</li>
+</ul>
+<h4 id="audio">Audio</h4>
+<p>Select the audio redirection mode.</p>
+<ul>
+<li><strong>Bring to this computer</strong><br>
+All audio from the remote computer is played on this computer.</li>
+<li><strong>Leave at remote computer</strong><br>
+All audio from the remote computer is played on the remote computer.</li>
+<li><strong>Do not play</strong><br>
+Audio is disabled on the remote computer.</li>
+</ul>
+<h4 id="record-audio-from-this-computer">Record Audio from this Computer</h4>
+<p>pecifies whether the default audio input device is redirected from the client to the remote session.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Record Audio from this computer requires Windows 7/Windows 2008R2 or later.</p>
+</div>
+<h2 id="-input"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageInput_32.svg#img_header" alt=""> Input</h2>
+<p>The <strong>Input</strong> page allows you to configure keyboard behavior and keyboard layout in the remote session.</p>
+<h4 id="accelerator-passthrough">Accelerator Passthrough</h4>
+<p>If checked, keyboard accelerators will be passed to the remote session.</p>
+<h4 id="windows-keys-passthrough">Windows Keys Passthrough</h4>
+<p>If checked, Microsoft Windows key combinations (like Alt-Tab) will be passed to the remote session.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If this option is enabled, windows key combinations will have no effect locally when a remote session is active and has the input focus. You can use certain keyboard shortcuts (for example Ctrl + Shift + N to focus the Navigation panel) to move the input focus back to Royal TS and allow local windows key combinations.</p>
+</div>
+<h4 id="keyboard-layout">Keyboard Layout</h4>
+<p>Specify a predefined or custom keyboard layout in your remote session.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting will only be effective for freshly logged on sessions. Changing this setting will not affect sessions where a user is already logged on. Ensure you log off the user before you change this setting.</p>
+</div>
+<h2 id="-program"><img src="/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageStartProgram_32.svg#img_header" alt=""> Program</h2>
+<p>The <strong>Program</strong> page allows you to configure the program to be started on the remote server upon connection.</p>
+<h4 id="program">Program</h4>
+<p>Specifies the program to be started on the remote server upon connection. <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+<h4 id="working-directory">Working Directory</h4>
+<p>Specifies the working directory of the start program.</p>
+<h4 id="maximize">Maximize</h4>
+<p>Specifies whether the program should be maximized.</p>
+<h2 id="-notes"><img src="/r2021/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
+<p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
+<h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
+<p>When selected, Royal TS will display the notes from the parent folder in the notes panel. This option is not available on the document level.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To embed images, drag them into the editor using drag &amp; drop.</p>
+</div>
+<h2 id="-custom-properties"><img src="/r2021/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header" alt=""> Custom Properties</h2>
+<p>The <strong>Custom Properties</strong> page allows you to enter and store additional information for the object. Various data formats are available, including protected fields. You can also group properties by using Header.</p>
+<h4 id="inherit-from-parent">Inherit from Parent</h4>
+<p>When checked, the properties configured on the parent folder are shown but are read-only.</p>
+<h4 id="custom-properties">Custom Properties</h4>
+<p>Use the '+' icon to add a header or a Field or multiple fields based on a template. Click on the label to name the field and enter a value. Click the 'Gear' icon to remove a field or header. The 'Gear' icon also shows additional options, like moving a field up or down.</p>
+<h2 id="-custom-fields"><img src="/r2021/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Fields</h2>
+<p>The <strong>Custom Fields</strong> page allows you to enter and store additional information for the object. Custom fields can be used in tasks and templates to inject values from the context connection.</p>
+<p>Standard custom fields are also shown in the folder dashboard views and in the properties panel. Protected custom fields can be used to store confidential data (for example when you need an additional password in a task). If you make use of protected custom fields, make sure you encrypt and password protect your document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Custom fields can be used in Tasks and in the Properties Panel. You can put web page URLs (like an iLO management address) or command lines (such as programs or batch files) in the custom fields and execute them using tasks or directly from the properties panel. Each individual custom field can also be configured to be inherited from the parent folder.</p>
+</div>
+<h2 id="-parent-folder"><img src="/r2021/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header" alt=""> Parent Folder</h2>
+<p>The <strong>Parent Folder</strong> page allows you to view or change the parent folder of the selected object. To move multiple objects to another folder use the parent folder page in bulk-edit mode or use the move to command from the <strong>Edit</strong> tab (see <a class="xref" href="../../tutorials/working-with-connections.html">Working with Connections</a>).</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot create connections in the <strong>Application</strong> document. Moving a folder containing connections to a folder in the <strong>Application</strong> document will fail.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/reference/connections/rdp.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

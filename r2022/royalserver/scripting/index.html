@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="registration-of-the-royaldocument-commandlets">Registration of the RoyalDocument Commandlets</h2>
+<p>In order to work with the RoyalServer PowerShell commandlets, you need to register them with your PowerShell session. Just issue the following command and you are good to go:</p>
+<pre><code class="lang-powershell">Import-Module &lt;Path-to-RoyalServer-installation&gt;\\RoyalServer.PowerShell.dll -Force
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Usually, Royal Server is installed to <code>%ProgramFiles(x86)%\RoyalServer</code>.</p>
+</div>
+<p>If you like to have the RoyalServer CommandLets in all your PowerShell sessions, include this line in your PowerShell profile. To locate where your profile is call <code>$profile</code> in your PowerShell session. Usually, this location is at <code>%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</code>.</p>
+<h2 id="first-steps">First Steps</h2>
+<p>Setting up a connection to Royal Server looks like this:</p>
+<pre><code class="lang-powershell"># create a new RoyalServerConfig
+
+$cred = Get-Credential
+$config = New-RoyalServerConfig -Host &quot;127.0.0.1&quot; -UseSSL $true -Port 54899 -Credential $cred
+</code></pre>
+<h2 id="working-with-commands">Working with Commands</h2>
+<p>Royal Server has loaded a list of Modules that contain a list of Commands that require a list of parameters. All of this is exposed via PowerShell commandlets to discover:</p>
+<pre><code class="lang-powershell"># gets all available Modules
+$response = Get-RoyalServerModule -RoyalServerConfig $config
+</code></pre>
+<p>Now the variable <code>$response</code> is of the type RoyalServerPowerShellResponse which basically holds a list of responses since Royal Server can execute queries against multiple hosts with one request. Examine how many responses you got via <code>$response.Responses.Count</code>. The Responses collection contains entries of the type <code>RoyalServerPowerShellSingleResponse</code>. These contain two members: <code>Result</code> which is a <code>System.DataTable</code> with the actual data and <code>MetaData</code> which contains some additional information.</p>
+<p>The following example outputs the loaded modules of Royal Server:</p>
+<pre><code class="lang-powershell"># loop over all responses,
+# you can omit this if you know there is only one and use $response.Responses[0]
+foreach($response in $response.Responses)
+{
+     # loop over all rows in $response.Result
+     foreach($row in $response.Result.Rows)
+     {
+
+          Write-Host ($row[0] + &quot; - &quot; + $row[1])
+     }
+}
+</code></pre>
+<p>To get an overview of all data and row names etc, you can use <code>Out-String</code> or <code>Out-GridView</code>:</p>
+<pre><code>$response.Responses[0].Result | Out-String
+</code></pre>
+<h2 id="more-information">More Information</h2>
+<p>In a PowerShell session, you can get information to all commandlets by using the <code>Get-Help</code> command. Also, please take a look at our <a class="xref" href="module-reference/index.html">Module Reference</a> for detailed examples for all modules.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/scripting/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

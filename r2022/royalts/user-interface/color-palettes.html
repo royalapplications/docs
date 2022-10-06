@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Color Palettes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Color Palettes ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_ui_color-palettes">
+<h1 id="color-palettes">Color Palettes</h1>
+
+<h2 id="user-interface">User Interface</h2>
+<p>On the <strong>View</strong> ribbon tab, there is a drop down button called <strong>Color Schemes</strong> with 4 built-in schemes: <em>Default</em>, <em>Light</em>, <em>Dark</em> and <em>Black</em>.</p>
+<h3 id="custom-color-schemes">Custom Color Schemes</h3>
+<p>Click on <strong>Custom…</strong> in the Color Schemes dropdown to create your own color scheme.</p>
+<ul>
+<li>The drop down at the top allows you to choose from many pre-defined color schemes right out of the box. Once you selected the color scheme, hit the <strong>Copy</strong> button to copy all the color values from the selected scheme to the property grid. This way, you can quickly get started with a predefined scheme and tweak the colors as you wish.</li>
+<li>Clicking on a color will show a short description at the bottom where this particular color will be used.</li>
+<li>There are also <strong>Icon Colors</strong> available. Tweaking these colors allows you to set the colors used by all the icons in the UI. This way you can make sure that a black color in a black skin still has enough contrast to look great.</li>
+<li>To get a better feel for the scheme, hit the <strong>Preview</strong> button to see how your current color scheme will look like.</li>
+</ul>
+<h3 id="share-color-schemes">Share Color Schemes</h3>
+<p>The <strong>Share</strong> button allows you to share your color scheme with other users. We create a special link which instructs your browser to open Royal TS’ Color Scheme editor and set the color scheme for you to try.</p>
+<h2 id="well-known-colors">Well Known Colors</h2>
+<p>Well known colors are color theme aware. This means that instead of storing a color value, we store a name for a color. This color name can have different color values depending if you configured Royal TS to use a light color scheme or a black color scheme. If you open the <strong>Properties</strong> dialog for an object, you can select a color for the object using the color picker within the <strong>Display Name</strong> editor. There are currently two palettes included: <em>Royal</em> and <em>Icon</em>.</p>
+<ul>
+<li>Selecting a color from the <strong>Royal</strong> palette, ensures that the color and contrast changes accordingly when you switch from a dark to light theme or vice versa. If you select the color <em>Cinnabar</em>, it will use #CE3838 as color value in a light color theme and change the color value to #E13B3B in a black color theme.</li>
+<li>Selecting a color from the <strong>Icon</strong> palette (for example the color Red), it will use the color value defined in the <a href="#custom-color-schemes">Icon Colors</a> defined in the Color Scheme you are using.</li>
+<li><strong>Select Custom Color</strong> still allows you to specify a color of your own. The color value will be always the same, regardless of color scheme setting.</li>
+</ul>
+<h2 id="terminal-color-palettes">Terminal Color Palettes</h2>
+<p>When you edit a terminal connection type which supports ANSI colors, you can choose from pre-defined palettes (PuTTY or Solarized) or you can create your own palettes, export them and import existing ones. Of course, you can still configure individual color schemes at the connection level as before but each configuration page now has a <strong>Palette</strong> drop down button which shows you a list of available palettes and a <strong>Manage</strong> menu with the following options:</p>
+<ul>
+<li><strong>Export</strong><br>
+Allows you to export your current palette configuration to a new &quot;Royal Terminal Color Palette&quot; file (*.rtcp). You can share this file with your co-workers to import.</li>
+<li><strong>Import</strong><br>
+Allows you to import various file formats: *.rtcb (see above), *.reg (PuTTY), *.ini (MobaXTerm), *.itemcolor (iTerm)</li>
+<li><strong>Import from Clipboard</strong><br>
+Basically the same as Import but instead of reading a file, it will import the colors from your clipboard (provided the content of the clipboard is valid). This can be used to import <a href="https://windowsterminalthemes.dev/">Windows Terminal Themes</a> directly from the clipboard.</li>
+<li><strong>Show in Folder</strong><br>
+Opens the file explorer to <code>%appdata%\code4ward\ColorPalettes</code> where you can find all palette files. To remove a palette, simply delete the file.</li>
+</ul>
+<h3 id="online-resources-for-color-schemes">Online Resources for Color Schemes</h3>
+<p>Windows Terminal: <a href="https://windowsterminalthemes.dev">https://windowsterminalthemes.dev</a><br>
+PuTTY Color Schemes: <a href="https://github.com/AlexAkulov/putty-color-themes">https://github.com/AlexAkulov/putty-color-themes</a><br>
+iTerm Color Schemes: <a href="https://iterm2colorschemes.com/">https://iterm2colorschemes.com/</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/user-interface/color-palettes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

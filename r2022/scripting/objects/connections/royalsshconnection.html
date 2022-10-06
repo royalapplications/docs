@@ -1,0 +1,1537 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RoyalSSHConnection </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="RoyalSSHConnection ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-scripting">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="scripting_object_royalsshconnection">
+<h1 id="royalsshconnection">RoyalSSHConnection</h1>
+
+<h2 id="general">General</h2>
+<h3 id="customimagename">CustomImageName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+A custom image name from a pre-defined set of images</p>
+<h3 id="name">Name</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The display name of the object.</p>
+<h3 id="puttysessionname">PuttySessionName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The putty session name to use.</p>
+<h3 id="description">Description</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The description text of the object.</p>
+<h3 id="favorite">Favorite</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether or not the object is a favorite.</p>
+<h3 id="colorfromparent">ColorFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Color value from the parent folder.</p>
+<h3 id="connectiontype">ConnectionType</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The connection type (like ssh;SSH or telnet;Telnet).</p>
+<h3 id="customcommandosx">CustomCommandOSX</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The custom command in case of custom command connection type (for macOS).</p>
+<h3 id="port">Port</h3>
+<p>Type: <code>int</code>, Default Value: <code>22</code><br>
+Specifies the target port for this connection. Default value is 22.</p>
+<h3 id="color">Color</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a custom color as hex string to the object (#FF0000 for red). Empty string is the default color value (no custom color assigned).</p>
+<h3 id="physicaladdress">PhysicalAddress</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The MAC address for this connection.</p>
+<h3 id="colorname">ColorName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a color from a color palette to the object. If both, a color name and a custom color (hex string) are provided, the color name is preferred.</p>
+<h3 id="uri">URI</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The target URI for the connection object (computer name, URL, ...).</p>
+<h3 id="isconnectiontemplate">IsConnectionTemplate</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the connection object is a template.</p>
+<h3 id="id">ID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The unique object identifier (GUID) of the object.</p>
+<h3 id="externalid">ExternalID</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The external unique object identifier (GUID) of the object.</p>
+<h2 id="advanced">Advanced</h2>
+<h3 id="allowinsecuresshencryptionalgorithms">AllowInsecureSshEncryptionAlgorithms</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Specifies whether or not insecure SSH encryption algorithms are allowed.</p>
+<h3 id="allowinsecuresshhostkeyalgorithms">AllowInsecureSshHostKeyAlgorithms</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Specifies whether or not insecure SSH host key algorithms are allowed.</p>
+<h3 id="allowinsecuresshkeyexchangealgorithms">AllowInsecureSshKeyExchangeAlgorithms</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Specifies whether or not insecure SSH key exchange algorithms are allowed.</p>
+<h3 id="allowinsecuresshmacalgorithms">AllowInsecureSshMacAlgorithms</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Specifies whether or not insecure SSH MAC algorithms are allowed.</p>
+<h3 id="autowrapmode">AutoWrapMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Off<br>
+1 = On<br>
+2 = DOS</p>
+<h3 id="backspacewrapmode">BackspaceWrapMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+Specifies the wrap mode for backspace:<br>
+0 = Off<br>
+1 = On<br>
+2 = DOS</p>
+<h3 id="bellaction">BellAction</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+Bell Action:<br>
+0 = None<br>
+1 = Default system alert sound<br>
+2 = Visual bell<br>
+3 = Play custom sound file<br>
+4 = Beep using PC speaker</p>
+<h3 id="belloverload">BellOverload</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, temporary bell overload is enabled.</p>
+<h3 id="belloverloadtimespan">BellOverloadTimespan</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+The timespan in seconds for the bell overload setting.</p>
+<h3 id="capslockcyrillicswitch">CapsLockCyrillicSwitch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, caps lock can be used to switch to cyrillic.</p>
+<h3 id="copypastelinedrawingaslqqqk">CopyPasteLineDrawingAslqqqk</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, Aslqqqk line drawing copy and paste is enabled.</p>
+<h3 id="decoriginmode">DECOriginMode</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, DEC Origin Mode is used.</p>
+<h3 id="disablearabictextshaping">DisableArabicTextShaping</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, Arabic text shaping is disabled.</p>
+<h3 id="disablebidirectionaltextdisplay">DisableBiDirectionalTextDisplay</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, bi-directional text display is disabled.</p>
+<h3 id="disableremotecontrolledcharsetconfig">DisableRemoteControlledCharSetConfig</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, remote controlled character set configuration change is not allowed.</p>
+<h3 id="disableremotecontrolledtermresizing">DisableRemoteControlledTermResizing</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, remote controlled terminal resizing is not allowed.</p>
+<h3 id="disableremotecontrolledwindowtitlechange">DisableRemoteControlledWindowTitleChange</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, remote controlled window title change is not allowed.</p>
+<h3 id="disableswitchingtoaltscreen">DisableSwitchingToAltScreen</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, switching to alternate screen is disabled.</p>
+<h3 id="encoding">Encoding</h3>
+<p>Type: <code>string</code>, Default Value: <code>utf-8</code><br>
+Specifies the encoding (on Windows)</p>
+<h3 id="encodingosx">EncodingOSX</h3>
+<p>Type: <code>int</code>, Default Value: <code>4</code><br>
+Specifies the encoding (on macOS)</p>
+<h3 id="eresponse">EResponse</h3>
+<p>Type: <code>string</code>, Default Value: <code>PuTTY</code><br>
+^E Response (default is PuTTY)</p>
+<h3 id="forcenondestructivebackspace">ForceNonDestructiveBackspace</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, non-destructive backspace character is enforced.</p>
+<h3 id="ignoresubstitutechar">IgnoreSubstituteChar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, substitute characters are ignored.</p>
+<h3 id="implicitcrinlf">ImplicitCRinLF</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, implicit carriage return in linefeed is used.</p>
+<h3 id="implicitlfincr">ImplicitLFinCR</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, implicit linefeed in carriage return is used.</p>
+<h3 id="ipversion">IPVersion</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+IPVersion:<br>
+0 = Auto<br>
+1 = IPv4<br>
+2 = IPv6</p>
+<h3 id="ipversionosx">IPVersionOSX</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+IPVersionOSX:<br>
+0 = Auto<br>
+1 = Force IPv4<br>
+2 = Force IPv6</p>
+<h3 id="keepaliveinterval">KeepAliveInterval</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The keep alive interval in seconds (0 = off).</p>
+<h3 id="keepterminalcontentondisconnect">KeepTerminalContentOnDisconnect</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true the terminal content is kept when the session is disconnected remotely.</p>
+<h3 id="linedrawinghandling">LineDrawingHandling</h3>
+<p>Type: <code>int</code>, Default Value: <code>4</code><br>
+LineDrawingHandling:<br>
+0 = Font has XWindows encoding<br>
+1 = Use font in both, ANSI and OEM modes<br>
+2 = Use font in OEM mode only<br>
+3 = Poor mans line drawing<br>
+4 = Use unicode line drawing code points</p>
+<h3 id="localecho">LocalEcho</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, local echo is used.</p>
+<h3 id="logicalnameforremotehost">LogicalNameForRemoteHost</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The logical name for the remote host.</p>
+<h3 id="numberofbells">NumberOfBells</h3>
+<p>Type: <code>int</code>, Default Value: <code>5</code><br>
+The number of bells for the bell overload setting.</p>
+<h3 id="printer">Printer</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Printer (empty for none)</p>
+<h3 id="puttylocalecho">PuttyLocalEcho</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+Putty Local Echo:<br>
+0 = On<br>
+1 = Off<br>
+2 = Auto (Default)</p>
+<h3 id="puttylocallineediting">PuttyLocalLineEditing</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+Putty Local Line Editing:<br>
+0 = On<br>
+1 = Off<br>
+2 = Auto (Default)</p>
+<h3 id="remotetitlequery">RemoteTitleQuery</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+Remote Title Query Settings:<br>
+0 = None<br>
+1 = Empty string<br>
+2 = Window title</p>
+<h3 id="runinsideloginshell">RunInsideLoginShell</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, commands are run inside a login shell.</p>
+<h3 id="secondsofsilence">SecondsOfSilence</h3>
+<p>Type: <code>int</code>, Default Value: <code>5</code><br>
+Seconds of silence for the bell overload setting.</p>
+<h3 id="sendkeycodewhenidle">SendKeyCodeWhenIdle</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+The ASCII key code to send when the connection is idle (0-255) or -1 to disable sending a key code.</p>
+<h3 id="setlocalevariables">SetLocaleVariables</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, locale variables are set automatically.</p>
+<h3 id="sokeepaliveoption">SOKeepAliveOption</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the SOKeepAliveOption is enabled.</p>
+<h3 id="soundfile">SoundFile</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Sound file for bell action.</p>
+<h3 id="taskbarindicator">TaskbarIndicator</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Taskbar indicator:<br>
+0 = Disable<br>
+1 = Flashing<br>
+2 = Steady</p>
+<h3 id="tcpnodelayoption">TCPNoDelayOption</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the TCPNoDelayOption is enabled.</p>
+<h3 id="terminalspeeds">TerminalSpeeds</h3>
+<p>Type: <code>string</code>, Default Value: <code>38400,38400</code><br>
+Terminal Speeds: Default = 38400,38400</p>
+<h3 id="terminaltype">TerminalType</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Ansi<br>
+1 = Wyse60<br>
+2 = Pick</p>
+<h3 id="treatcjikaswide">TreatCJIKAsWide</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the CJIK is treated as wide.</p>
+<h3 id="useputtyhostkey">UsePuttyHostKey</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, PuTTY's -hostkey command line option will be used with the value of the Fingerprint property.</p>
+<h3 id="vt100linedrawingutf8">VT100LineDrawingUTF8</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If checked, VT100 line drawing is enabled even in UTF-8 mode.</p>
+<h2 id="colors">Colors</h2>
+<h3 id="allowterminaltospecifyansicolours">AllowTerminalToSpecifyANSIColours</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, ANSI Colors are allowed to be specified by the terminal.</p>
+<h3 id="allowterminaltousexterm256colourmode">AllowTerminalToUseXterm256ColourMode</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, xterm 256-color mode is allowed by the terminal.</p>
+<h3 id="attempttouselogicalpalettes">AttemptToUseLogicalPalettes</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, logical palette will be used if possible.</p>
+<h3 id="backcolor">BackColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>0</code><br>
+The background color.</p>
+<h3 id="backcolorosx">BackColorOSX</h3>
+<p>Type: <code>string</code>, Default Value: ``<br>
+The background color on macOS.</p>
+<h3 id="boldcolor">BoldColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>14</code><br>
+The bold color.</p>
+<h3 id="boldcolorosx">BoldColorOSX</h3>
+<p>Type: <code>string</code>, Default Value: ``<br>
+The bold color macOS.</p>
+<h3 id="boldedtextisadifferentcolour">BoldedTextIsADifferentColour</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, bold text is shown using a different color.</p>
+<h3 id="colorcursorcolour">ColorCursorColour</h3>
+<p>Type: <code>string</code>, Default Value: <code>#00FF00</code><br>
+The cursor color value.</p>
+<h3 id="colorcursortext">ColorCursorText</h3>
+<p>Type: <code>string</code>, Default Value: <code>#000000</code><br>
+The cursor text color value.</p>
+<h3 id="colordefaultbackground">ColorDefaultBackground</h3>
+<p>Type: <code>string</code>, Default Value: <code>#000000</code><br>
+The default background color value.</p>
+<h3 id="colordefaultboldbackground">ColorDefaultBoldBackground</h3>
+<p>Type: <code>string</code>, Default Value: <code>#555555</code><br>
+The default background bold color value.</p>
+<h3 id="colordefaultboldforeground">ColorDefaultBoldForeground</h3>
+<p>Type: <code>string</code>, Default Value: <code>#FFFFFF</code><br>
+The default foreground bold color value.</p>
+<h3 id="colordefaultforeground">ColorDefaultForeground</h3>
+<p>Type: <code>string</code>, Default Value: <code>#BBBBBB</code><br>
+The default foreground color value.</p>
+<h3 id="colorscheme">ColorScheme</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Which color scheme to use:<br>
+0 = Colors<br>
+1 = Monochrom<br>
+2 = Custom palette</p>
+<h3 id="cursorblinkinginterval">CursorBlinkingInterval</h3>
+<p>Type: <code>int</code>, Default Value: <code>500</code><br>
+The cursor blinking interval in ms.</p>
+<h3 id="cursorcolor">CursorColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>#FFFFFF</code><br>
+The cursor color value.</p>
+<h3 id="cursortextcolor">CursorTextColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>#000000</code><br>
+The cursor text color value.</p>
+<h3 id="custompalette0normalblack">CustomPalette0NormalBlack</h3>
+<p>Type: <code>string</code>, Default Value: <code>#000000</code><br>
+The normal black ANSI color value.</p>
+<h3 id="custompalette10brightgreen">CustomPalette10BrightGreen</h3>
+<p>Type: <code>string</code>, Default Value: <code>#55FF55</code><br>
+The bright green ANSI color value.</p>
+<h3 id="custompalette11brightyellow">CustomPalette11BrightYellow</h3>
+<p>Type: <code>string</code>, Default Value: <code>#FFFF55</code><br>
+The bright yellow ANSI color value.</p>
+<h3 id="custompalette12brightblue">CustomPalette12BrightBlue</h3>
+<p>Type: <code>string</code>, Default Value: <code>#5555FF</code><br>
+The bright blue ANSI color value.</p>
+<h3 id="custompalette13brightmagenta">CustomPalette13BrightMagenta</h3>
+<p>Type: <code>string</code>, Default Value: <code>#FF55FF</code><br>
+The bright magenta ANSI color value.</p>
+<h3 id="custompalette14brightcyan">CustomPalette14BrightCyan</h3>
+<p>Type: <code>string</code>, Default Value: <code>#55FFFF</code><br>
+The bright cyan ANSI color value.</p>
+<h3 id="custompalette15brightwhite">CustomPalette15BrightWhite</h3>
+<p>Type: <code>string</code>, Default Value: <code>#FFFFFF</code><br>
+The bright white ANSI color value.</p>
+<h3 id="custompalette1normalred">CustomPalette1NormalRed</h3>
+<p>Type: <code>string</code>, Default Value: <code>#BB0000</code><br>
+The normal red ANSI color value.</p>
+<h3 id="custompalette2normalgreen">CustomPalette2NormalGreen</h3>
+<p>Type: <code>string</code>, Default Value: <code>#00BB00</code><br>
+The normal green ANSI color value.</p>
+<h3 id="custompalette3normalyellow">CustomPalette3NormalYellow</h3>
+<p>Type: <code>string</code>, Default Value: <code>#BBBB00</code><br>
+The normal yellow ANSI color value.</p>
+<h3 id="custompalette4normalblue">CustomPalette4NormalBlue</h3>
+<p>Type: <code>string</code>, Default Value: <code>#0000BB</code><br>
+The normal blue ANSI color value.</p>
+<h3 id="custompalette5normalmagenta">CustomPalette5NormalMagenta</h3>
+<p>Type: <code>string</code>, Default Value: <code>#BB00BB</code><br>
+The normal magenta ANSI color value.</p>
+<h3 id="custompalette6normalcyan">CustomPalette6NormalCyan</h3>
+<p>Type: <code>string</code>, Default Value: <code>#00BBBB</code><br>
+The normal cyan ANSI color value.</p>
+<h3 id="custompalette7normalwhite">CustomPalette7NormalWhite</h3>
+<p>Type: <code>string</code>, Default Value: <code>#BBBBBB</code><br>
+The normal white ANSI color value.</p>
+<h3 id="custompalette8brightblack">CustomPalette8BrightBlack</h3>
+<p>Type: <code>string</code>, Default Value: <code>#555555</code><br>
+The bright black ANSI color value.</p>
+<h3 id="custompalette9brightred">CustomPalette9BrightRed</h3>
+<p>Type: <code>string</code>, Default Value: <code>#FF5555</code><br>
+The bright red ANSI color value.</p>
+<h3 id="doubleunderlinecolor">DoubleUnderlineColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>9</code><br>
+The double underline color.</p>
+<h3 id="faintcolor">FaintColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>8</code><br>
+The faint color.</p>
+<h3 id="forecolor">ForeColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>7</code><br>
+The foreground color.</p>
+<h3 id="forecolorosx">ForeColorOSX</h3>
+<p>Type: <code>string</code>, Default Value: ``<br>
+The foreground color on macOS.</p>
+<h3 id="italiccolor">ItalicColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>11</code><br>
+The italic color.</p>
+<h3 id="selectioncolor">SelectionColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>#555555</code><br>
+The selection color value.</p>
+<h3 id="selectiontextcolor">SelectionTextColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>#FFFFFF</code><br>
+The selection text color value.</p>
+<h3 id="singleunderlinecolor">SingleUnderlineColor</h3>
+<p>Type: <code>string</code>, Default Value: <code>9</code><br>
+The single underline color.</p>
+<h3 id="smartcursorcolor">SmartCursorColor</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+The smart cursor color value.</p>
+<h3 id="usebackgroundcolourtoerasescreen">UseBackgroundColourToEraseScreen</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to ture, the background color is used to erase the screen.</p>
+<h3 id="usesystemcolours">UseSystemColours</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, system colors are used.</p>
+<h2 id="credentials">Credentials</h2>
+<h3 id="credentialautologon">CredentialAutologon</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Whether or not to automatically logon to the connection. Connections which do not support automatic logon will ignore this setting.</p>
+<h3 id="credentialfromparent">CredentialFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Credential values from the parent folder.</p>
+<h3 id="credentialid">CredentialId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a credential object to this object by specifying the credential object's GUID.</p>
+<h3 id="credentialkeycontent">CredentialKeyContent</h3>
+<p>Type: <code>byte[]</code>, Default Value: <code>new byte[] { }</code><br>
+Assign a key file to the object by embedding the key file's content.</p>
+<h3 id="credentialkeyfile">CredentialKeyFile</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a key file to the object by specifying the key file's full path.</p>
+<h3 id="credentialkeymode">CredentialKeyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Path to file<br>
+1 = Embedded</p>
+<h3 id="credentialmode">CredentialMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Do not use any credentials<br>
+1 = Use credentials from the parent folder<br>
+2 = Specify username and password<br>
+3 = Use an existing credential<br>
+4 = Specify a credential name<br>
+5 = Use credential from context connection (only for Connection Templates)</p>
+<h3 id="credentialname">CredentialName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a credential object to this object by specifying the credential object's name.</p>
+<h3 id="credentialomitdomain">CredentialOmitDomain</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether or not to omit the domain portion of the username.</p>
+<h3 id="credentialpassphrase">CredentialPassphrase</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a key file passphrase to the object.</p>
+<h3 id="credentialpassword">CredentialPassword</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a password to the object.</p>
+<h3 id="credentialusername">CredentialUsername</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a username to the object.</p>
+<h2 id="display-options">Display Options</h2>
+<h3 id="autoadjustterminalsize">AutoAdjustTerminalSize</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the terminal size will be adjusted automatically.</p>
+<h3 id="blinkcursor">BlinkCursor</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a blinking cursor is shown.</p>
+<h3 id="blinkingtextmode">BlinkingTextMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies how blinking text is rendered:<br>
+0 = Light color<br>
+1 = Italic<br>
+2 = Underline<br>
+3 = Bold<br>
+4 = Inverse color</p>
+<h3 id="cursorappearance">CursorAppearance</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Cursor Appearance:<br>
+0 = Block<br>
+1 = Underline<br>
+2 = VerticalLine.</p>
+<h3 id="datareceivedindicator">DataReceivedIndicator</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, an indicator is shown when data was received on an inactive tab.</p>
+<h3 id="displayscrollbar">DisplayScrollbar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, a scrollbar is displayed.</p>
+<h3 id="drawboldtextinboldfont">DrawBoldTextInBoldFont</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, bold text is drawn in bold font.</p>
+<h3 id="drawboldtextinbrightcolors">DrawBoldTextInBrightColors</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, bold text is drawn in bright colors.</p>
+<h3 id="enableblinkingtext">EnableBlinkingText</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, blinking text is enabled.</p>
+<h3 id="enableitalictext">EnableItalicText</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, italic text is enabled.</p>
+<h3 id="ensurewindowisalwaysontop">EnsureWindowIsAlwaysOnTop</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the window will be shown always on top.</p>
+<h3 id="fontdisablestyles">FontDisableStyles</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, bold and italic styles are disabled.</p>
+<h3 id="fontisbold">FontIsBold</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the font is displayed bold.</p>
+<h3 id="fullscreenonaltenter">FullScreenOnAltEnter</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, full screen will be entered on Alt-Enter.</p>
+<h3 id="gapbetweentextandwindowedge">GapBetweenTextAndWindowEdge</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+The gap between the text and the window edge.</p>
+<h3 id="hidemousepointerwhentypinginwindow">HideMousePointerWhenTypingInWindow</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the mouse pointer will be hidden while typing.</p>
+<h3 id="horizontalcharspacingosx">HorizontalCharSpacingOSX</h3>
+<p>Type: <code>double</code>, Default Value: <code>1.0</code><br>
+Horizontal character spacing on macOS.</p>
+<h3 id="inactivityindicator">InactivityIndicator</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, an indicator is shown when no data was received for a period of time.</p>
+<h3 id="inactivityindicatorthreshold">InactivityIndicatorThreshold</h3>
+<p>Type: <code>int</code>, Default Value: <code>5</code><br>
+Number of seconds threshold for the inactivity indicator.</p>
+<h3 id="scrollbackresetondisplayactivity">ScrollbackResetOnDisplayActivity</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, scrollback is reset on display activity (when data is received).</p>
+<h3 id="separatewindowandicontitles">SeparateWindowAndIconTitles</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, window and icon titles are separated.</p>
+<h3 id="sgrmode">SGRMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Select graphic rendition1 mode.</p>
+<h3 id="showwindowtitle">ShowWindowTitle</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the window title ANSI sequence is processed.</p>
+<h3 id="sunkenedgeborder">SunkenEdgeBorder</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a sunken edge border is displayed.</p>
+<h3 id="systemmenuappearsonaltalone">SystemMenuAppearsOnAltAlone</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the system menu is shown on Alt-Alone.</p>
+<h3 id="systemmenuappearsonaltspace">SystemMenuAppearsOnAltSpace</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the system menu is shown on Alt-Space.</p>
+<h3 id="terminalcolumns">TerminalColumns</h3>
+<p>Type: <code>int</code>, Default Value: <code>80</code><br>
+Terminal columns.</p>
+<h3 id="terminalrows">TerminalRows</h3>
+<p>Type: <code>int</code>, Default Value: <code>24</code><br>
+Terminal rows.</p>
+<h3 id="verticalcharspacingosx">VerticalCharSpacingOSX</h3>
+<p>Type: <code>double</code>, Default Value: <code>1.0</code><br>
+Vertical character spacing on macOS.</p>
+<h3 id="warnbeforeclosingwindow">WarnBeforeClosingWindow</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, a warninig is shown before closing the window.</p>
+<h3 id="windowclosesonaltf4">WindowClosesOnAltF4</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the window is closed on Alt-F4.</p>
+<h3 id="windowresizeaction">WindowResizeAction</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Window resize action:<br>
+0 = Change the number of rows and columns<br>
+1 = Forbid resizing completely<br>
+2 = Change the size of the font<br>
+3 = Change font size only when maximized</p>
+<h3 id="windowtitle">WindowTitle</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Specify a custom window title.</p>
+<h2 id="display-options-macos">Display Options macOS</h2>
+<h3 id="backgroundtransparency">BackgroundTransparency</h3>
+<p>Type: <code>double</code>, Default Value: <code>0.0</code><br>
+Specifies the background transparency on macOS.</p>
+<h3 id="fontantialiasosx">FontAntiAliasOSX</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the font anti-aliasing is enabled on macOS.</p>
+<h3 id="fontosx">FontOSX</h3>
+<p>Type: <code>string</code>, Default Value: <code>Monaco</code><br>
+Specifies the font to use on macOS.</p>
+<h3 id="fontsizeosx">FontSizeOSX</h3>
+<p>Type: <code>int</code>, Default Value: <code>11</code><br>
+Specifies the terminal font size on macOS.</p>
+<h3 id="fontuseligaturesosx">FontUseLigaturesOSX</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, font ligatures are enabled on macOS.</p>
+<h3 id="nonasciifontantialiasosx">NonAsciiFontAntiAliasOSX</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the non-ascii font anti-aliasing is enabled on macOS.</p>
+<h3 id="nonasciifontosx">NonAsciiFontOSX</h3>
+<p>Type: <code>string</code>, Default Value: <code>Monaco</code><br>
+Specifies the non-ascii font to use on macOS.</p>
+<h3 id="nonasciifontsizeosx">NonAsciiFontSizeOSX</h3>
+<p>Type: <code>int</code>, Default Value: <code>11</code><br>
+Specifies the terminal non-ascii font size on macOS.</p>
+<h3 id="nonasciifontuseligaturesosx">NonAsciiFontUseLigaturesOSX</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, non-ascii font ligatures are enabled on macOS.</p>
+<h2 id="display-options-windows">Display Options Windows</h2>
+<h3 id="font">Font</h3>
+<p>Type: <code>string</code>, Default Value: <code>Courier New</code><br>
+Specifies the font to use on Windows.</p>
+<h3 id="fontquality">FontQuality</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Font Quality:<br>
+0 = Default<br>
+1 = Antialiased<br>
+2 = NonAntialiased<br>
+3 = ClearType</p>
+<h3 id="fontrenderingmode">FontRenderingMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Font Rendering:<br>
+0 = Default (Rebex)<br>
+1 = Compact (PuTTY)</p>
+<h3 id="fontsize">FontSize</h3>
+<p>Type: <code>int</code>, Default Value: <code>10</code><br>
+Specifies the terminal font size on Windows.</p>
+<h2 id="input">Input</h2>
+<h3 id="altgractsascomposekey">AltGrActsAsComposeKey</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, Alt Gr acts as compose key.</p>
+<h3 id="autocopyselectiontoclipboard">AutoCopySelectionToClipboard</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the selected text is automatically copied to the system clipboard.</p>
+<h3 id="backspacesequence">BackspaceSequence</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+The backspace key sequence:<br>
+0 = 0x08: Backspace<br>
+1 = 0x7F: Delete</p>
+<h3 id="controlaltisdifferentfromaltgr">ControlAltIsDifferentFromAltGr</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, Control-Alt is different from Alt Gr.</p>
+<h3 id="ctrlshiftcvaction">CtrlShiftCVAction</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Ctrl, Shift, C and V action:<br>
+0 = No action (none)<br>
+1 = Last selected text (implicit)<br>
+2 = System clipboard (explicit)</p>
+<h3 id="ctrlshiftinsaction">CtrlShiftInsAction</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+Ctrl, Shift and Insert action:<br>
+0 = No action (none)<br>
+1 = Last selected text (implicit)<br>
+2 = System clipboard (explicit)</p>
+<h3 id="cursorkeymode">CursorKeyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The initial cursor key mode:<br>
+0 = Normal<br>
+1 = Application</p>
+<h3 id="disableapplicationkeypadmode">DisableApplicationKeypadMode</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, application keypad mode is disabled.</p>
+<h3 id="disablextermstylemousereporting">DisableXtermStyleMouseReporting</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, xterm style mouse reporting is disabled.</p>
+<h3 id="disconnecthistorylength">DisconnectHistoryLength</h3>
+<p>Type: <code>int</code>, Default Value: <code>3</code><br>
+The history length shown after disconect.</p>
+<h3 id="functionkeymode">FunctionKeyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The function key mode:<br>
+0 = Common<br>
+1 = Common Extended<br>
+2 = Common Alternative<br>
+3 = HpUx<br>
+4 = Linux<br>
+5 = Linux Alternative<br>
+6 = Pick<br>
+7 = SCO<br>
+8 = SCO Alternative<br>
+9 = VT100Plus<br>
+10 = VT400<br>
+11 = VT52<br>
+12 = Wyse60<br>
+13 = XtermR6</p>
+<h3 id="functionkeymodeputty">FunctionKeyModePutty</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The function key mode in PuTTY:<br>
+0 = ESCn<br>
+1 = Linux<br>
+2 = XtermR6<br>
+3 = VT400<br>
+4 = VT100Plus<br>
+5 = SCO</p>
+<h3 id="historymaxlength">HistoryMaxLength</h3>
+<p>Type: <code>int</code>, Default Value: <code>1000</code><br>
+Specifies the max history length (srollback lines).</p>
+<h3 id="historyunlimited">HistoryUnlimited</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the history is unlimited.</p>
+<h3 id="homeandendkeys">HomeAndEndKeys</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The home and end key behavior:<br>
+0 = Standard<br>
+1 = Rxvt</p>
+<h3 id="ignoreremotecursorkeymode">IgnoreRemoteCursorKeyMode</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, remote cursor key mode change is ignored.</p>
+<h3 id="initialpastechardelay">InitialPasteCharDelay</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the initial state of character paste delay is enabled.</p>
+<h3 id="initialpastelinedelay">InitialPasteLineDelay</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the initial state of line paste delay is enabled.</p>
+<h3 id="initialsendkeysequencetoserver">InitialSendKeySequenceToServer</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the initial state of the direct send to server for key sequences is enabled.</p>
+<h3 id="initialstateofcharsubstitution">InitialStateOfCharSubstitution</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the initial state of character substitution is enabled.</p>
+<h3 id="initialstateofkeyboardscrolling">InitialStateOfKeyboardScrolling</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the initial state of keyboard scrolling is set.</p>
+<h3 id="initialstateofnumerickeypad">InitialStateOfNumericKeypad</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Initial state of numeric keypad:<br>
+0 = Normal<br>
+1 = Application<br>
+2 = NetHack</p>
+<h3 id="itermkeymappings">iTermKeyMappings</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The iTerm Key Mappings.</p>
+<h3 id="leftoptionkeymode">LeftOptionKeyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Left Option key mode:<br>
+0 = Normal<br>
+1 = Meta<br>
+2 = Esc</p>
+<h3 id="mousebuttonactiontype">MouseButtonActionType</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Mouse button action type:<br>
+0 = Compromise<br>
+1 = xterm<br>
+2 = Windows</p>
+<h3 id="mousepasteaction">MousePasteAction</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+Mouse paste action:<br>
+0 = No action (none)<br>
+1 = Last selected text (implicit)<br>
+2 = System clipboard (explicit)</p>
+<h3 id="mousepasteenabled">MousePasteEnabled</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, clipboard paste using right-click is enabled.</p>
+<h3 id="newlinesequence">NewLineSequence</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The new line sequence<br>
+0 = CR<br>
+1 = CRLF</p>
+<h3 id="pastechardelay">PasteCharDelay</h3>
+<p>Type: <code>int</code>, Default Value: <code>50</code><br>
+The character paste delay in ms.</p>
+<h3 id="pastelinedelay">PasteLineDelay</h3>
+<p>Type: <code>int</code>, Default Value: <code>500</code><br>
+The line paste delay in ms.</p>
+<h3 id="pastetoclipboardinrtfaswellasplaintext">PasteToClipboardInRTFAsWellAsPlainText</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, paste to clipboard RTF as well as plain text is enabled.</p>
+<h3 id="permitcontrolcharsinpastedtext">PermitControlCharsInPastedText</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, control characters are allowed in the text to be pasted.</p>
+<h3 id="pusherasedtextintoscrollback">PushErasedTextIntoScrollback</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, erased text is pushed into history (scrollback).</p>
+<h3 id="resetscrollbackondisplayactivity">ResetScrollbackOnDisplayActivity</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, scrollback is reset on display activity.</p>
+<h3 id="resetscrollbackonkeypress">ResetScrollbackOnKeypress</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, scrollback is reset on keypress.</p>
+<h3 id="rightoptionkeymode">RightOptionKeyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Right Option key mode:<br>
+0 = Normal<br>
+1 = Meta<br>
+2 = Esc</p>
+<h3 id="selectionmode">SelectionMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the function key mode:<br>
+0 = Standard<br>
+1 = Block</p>
+<h3 id="shiftoverridesapplicationsuseofmouse">ShiftOverridesApplicationsUseOfMouse</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the Shift key overrides the application's use of mouse.</p>
+<h3 id="showhistoryafterdisconnect">ShowHistoryAfterDisconnect</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the history is shown after disconnect.</p>
+<h3 id="telnetkeyboardsendsspecialcommands">TelnetKeyboardSendsSpecialCommands</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, telnet keyboard sends special commands.</p>
+<h3 id="telnetnegotiationmode">TelnetNegotiationMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Telnet negotiation mode:<br>
+0 = Active<br>
+1 = Passive</p>
+<h3 id="telnetoldenvironambiguity">TelnetOldEnvironAmbiguity</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Telnet old environ ambiguity:<br>
+0 = BSD<br>
+1 = RFC_1408</p>
+<h3 id="telnetreturnkeysendsnewline">TelnetReturnKeySendsNewLine</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, return key in telnet sends new line.</p>
+<h3 id="terminalname">TerminalName</h3>
+<p>Type: <code>string</code>, Default Value: <code>xterm</code><br>
+The terminal name.</p>
+<h2 id="key-sequence">Key Sequence</h2>
+<h3 id="keysequence">KeySequence</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The key sequence to be executed after the connection was successfully established.</p>
+<h3 id="keysequenceenabled">KeySequenceEnabled</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the configured key sequence will be executed after the connection was successfully established.</p>
+<h3 id="keysequencefromparent">KeySequenceFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Key Sequence values from the parent folder.</p>
+<h3 id="keysequenceid">KeySequenceId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a key sequence task object to this connection by specifying the task object's GUID.</p>
+<h3 id="keysequencemode">KeySequenceMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Specify a key sequence<br>
+1 = An existing key sequence task is assigned using the task's GUID<br>
+2 = Specify a key sequence task by name<br>
+3 = Use key sequence from parent.</p>
+<h3 id="keysequencename">KeySequenceName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a key sequence task object to this object by specifying the key sequence task object's name.</p>
+<h2 id="logging">Logging</h2>
+<h3 id="enableloggingosx">EnableLoggingOSX</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, logging is enabled on macOS.</p>
+<h3 id="logdirectoryosx">LogDirectoryOSX</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The log directory for macOS.</p>
+<h3 id="logginglevel">LoggingLevel</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+SSH logging level.</p>
+<h3 id="puttylogfilealreadyexistsaction">PuttyLogFileAlreadyExistsAction</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+PuTTY log file already exists action:<br>
+-1 = Ask the user every time<br>
+0 = Always append to the end of it<br>
+1 = Always overwrite it</p>
+<h3 id="puttylogfileflushfrequently">PuttyLogFileFlushFrequently</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the log file is flushed frequently.</p>
+<h3 id="puttylogfilename">PuttyLogFileName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The log file name for PuTTY.</p>
+<h3 id="puttylogging">PuttyLogging</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+PuTTY logging:<br>
+0 = None<br>
+1 = Printable output<br>
+2 = All session output<br>
+3 = SSH packets<br>
+4 = SSH packets and raw data</p>
+<h3 id="puttylogsshomitpasswordfields">PuttyLogSSHOmitPasswordFields</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, known password fields are omitted (only if SSH packet logging is selected).</p>
+<h3 id="puttylogsshomitsessiondata">PuttyLogSSHOmitSessionData</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, session data is omitted (only if SSH packet logging is selected).</p>
+<h3 id="recordalwaysprompt">RecordAlwaysPrompt</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the user is always prompted to specify or confirm the output path.</p>
+<h3 id="recordcreatesubdir">RecordCreateSubDir</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a sub directory with the connection name is created for the recording.</p>
+<h3 id="recorderoutputpath">RecorderOutputPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Specifies the output path for the recorder.</p>
+<h3 id="recordstartonconnect">RecordStartOnConnect</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Starts recording automatically when connected</p>
+<h2 id="plugin-for-macos">Plugin for macOS</h2>
+<h3 id="pluginosx">PlugInOSX</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The plug in ID used for this connection for macOS.</p>
+<h3 id="useglobalpluginosx">UseGlobalPlugInOSX</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the connection will use the application default plug in for the connection type on macOS.</p>
+<h2 id="plugin-for-windows">Plugin for Windows</h2>
+<h3 id="pluginwin">PlugInWin</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The plug in ID used for this connection for Windows.</p>
+<h3 id="useglobalpluginwin">UseGlobalPlugInWin</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the connection will use the application default plug in for the connection type on Windows.</p>
+<h2 id="proxy-settings">Proxy Settings</h2>
+<h3 id="proxyconsiderproxyinglocalhostconnections">ProxyConsiderProxyingLocalHostConnections</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, local host connections are considered to proxy.</p>
+<h3 id="proxycredentialid">ProxyCredentialID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a credential object as proxy server credential by specifying the credential object's GUID.</p>
+<h3 id="proxycredentialmode">ProxyCredentialMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Do not use any credentials<br>
+1 = Use the same credentials from the connection<br>
+2 = Specify username and password<br>
+3 = Use an existing credential<br>
+4 = Specify a credential name</p>
+<h3 id="proxycredentialname">ProxyCredentialName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a credential object as proxy server credential by specifying the credential object's name.</p>
+<h3 id="proxydodnslookupatproxyend">ProxyDoDNSLookupAtProxyEnd</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = No<br>
+1 = Auto<br>
+2 = Yes</p>
+<h3 id="proxyexcludedhosts">ProxyExcludedHosts</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Specifies the hosts/IP addresses to exclude from being proxied.</p>
+<h3 id="proxymode">ProxyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the proxy mode for the SSH connection:<br>
+0 = No proxy<br>
+1 = Socks4<br>
+2 = Socks4a<br>
+3 = Socks5<br>
+4 = HttpConnect</p>
+<h3 id="proxymodeputty">ProxyModePutty</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the proxy mode for PuTTY based connections:<br>
+0 = No Proxy = 0<br>
+1 = Socks4<br>
+2 = Socks5<br>
+3 = HttpConnect<br>
+4 = Telnet<br>
+5 = Local</p>
+<h3 id="proxypassword">ProxyPassword</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The password for the proxy server.</p>
+<h3 id="proxyport">ProxyPort</h3>
+<p>Type: <code>int</code>, Default Value: <code>3128</code><br>
+Specifies the proxy port for this connection. Default value is 3128.</p>
+<h3 id="proxyserver">ProxyServer</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Specifies the proxy server for the connection.</p>
+<h3 id="proxytelnetorlocalproxycommand">ProxyTelnetOrLocalProxyCommand</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Proxy telnet or local proxy command.</p>
+<h3 id="proxyusername">ProxyUserName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The username for the proxy server.</p>
+<h2 id="security">Security</h2>
+<h3 id="encryptionkeyalgorithms">EncryptionKeyAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all encryption key algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="fingerprint">Fingerprint</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The fingerprint value for the SSH connection.</p>
+<h3 id="fingerprintalgorithm">FingerprintAlgorithm</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The fingerprint algorithm for the SSH connection.</p>
+<h3 id="hostkeyalgorithms">HostKeyAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all host key algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="keyexchangealgorithms">KeyExchangeAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all key exchange algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="macalgorithms">MacAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all MAC algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="sshauthmethod">SSHAuthMethod</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+SSH Authentication Method:<br>
+-1 = Any<br>
+0 = None<br>
+1 = Password<br>
+2 = Keyboard interactive<br>
+3 = Public key<br>
+4 = gssapiwithmic</p>
+<h3 id="warnfingerprintmismatch">WarnFingerprintMismatch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, a warninig is shown when the fingerprint has changed.</p>
+<h2 id="serial-port">Serial Port</h2>
+<h3 id="baudrate">BaudRate</h3>
+<p>Type: <code>int</code>, Default Value: <code>9600</code><br>
+Baud rate for serial port connection. Exception is thrown when the device doesn't support the baud rate. Default is 9600.</p>
+<h3 id="databits">DataBits</h3>
+<p>Type: <code>int</code>, Default Value: <code>8</code><br>
+The standard length of data bits per byte. (The range of values for this property is from 5 through 8). Default is 8.</p>
+<h3 id="handshake">Handshake</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the control protocol used in establishing a serial port communication.<br>
+0 = None<br>
+1 = XOnXOff<br>
+2 = RequestToSend<br>
+3 = RequestToSendXOnXOff</p>
+<h3 id="newline">NewLine</h3>
+<p>Type: <code>string</code>, Default Value: <code>\n</code><br>
+The value used to interpret the end of a call. Default = \n</p>
+<h3 id="parity">Parity</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the parity bit for the serial port communication.<br>
+0 = None<br>
+1 = Odd<br>
+2 = Even<br>
+3 = Mark<br>
+4 = Space</p>
+<h3 id="portname">PortName</h3>
+<p>Type: <code>string</code>, Default Value: <code>COM1</code><br>
+The communications port. Default is COM1.</p>
+<h3 id="readtimeout">ReadTimeout</h3>
+<p>Type: <code>int</code>, Default Value: <code>15000</code><br>
+The number of milliseconds before a time-out occurs when a read operation does not finish. Default value = 15000. Min. Value = 500.</p>
+<h3 id="stopbits">StopBits</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+Specifies the number of stop bits used for the serial port communication. 0 = None, 1 = One stop bit is used, 2 = Two stop bits are used, 3 = 1.5 stop bits are used.</p>
+<h3 id="writetimeout">WriteTimeout</h3>
+<p>Type: <code>int</code>, Default Value: <code>15000</code><br>
+The number of milliseconds before a time-out occurs when a write operation does not finish. Default value = 15000. Min. Value = 500.</p>
+<h2 id="ssh-settings">SSH Settings</h2>
+<h3 id="sshadditionaloptions">SSHAdditionalOptions</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional SSH options.</p>
+<h3 id="sshallowagentforwarding">SSHAllowAgentForwarding</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, agent forwarding is allowed.</p>
+<h3 id="sshallowattemptedchangesofusername">SSHAllowAttemptedChangesOfUsername</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, change of username in SSH-2 is allowed.</p>
+<h3 id="sshallowgssapicredentialdelegation">SSHAllowGSSAPICredentialDelegation</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, GSSAPI credential delegation is attempted.</p>
+<h3 id="sshattemptauthenticationusingpageant">SSHAttemptAuthenticationUsingPageant</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, Pageant is used to authenticate.</p>
+<h3 id="sshattemptgssapiauthentication">SSHAttemptGSSAPIAuthentication</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, GSSAPI authentication (SSH-2) is attempted.</p>
+<h3 id="sshattemptkeyboardinteractiveauthentication">SSHAttemptKeyboardInteractiveAuthentication</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, keyboard-interactive authentication (SSH-2) is attempted.</p>
+<h3 id="sshattempttisorcryptocardauthentication">SSHAttemptTISOrCryptoCardAuthentication</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, TIS or CryptoCard authentication (SSH-1) is attempted.</p>
+<h3 id="sshbugchokesonssh1ignoremessages">SSHBugChokesOnSSH1IgnoreMessages</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugchokesonssh1rsaauthentication">SSHBugChokesOnSSH1RSAAuthentication</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugchokesonssh2ignoremessages">SSHBugChokesOnSSH2IgnoreMessages</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugchokesonssh2winadjrequests">SSHBugChokesOnSSH2WinadjRequests</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbughandlesssh2keyreexchangebadly">SSHBugHandlesSSH2KeyReExchangeBadly</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugignoresssh2maximumpacketsize">SSHBugIgnoresSSH2MaximumPacketSize</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugmiscomputesssh2encryptionkeys">SSHBugMiscomputesSSH2EncryptionKeys</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugmiscomputesssh2hmackeys">SSHBugMiscomputesSSH2HMACKeys</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugmisusesthesessionidinssh2pkauth">SSHBugMisusesTheSessionIDInSSH2PKAuth</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugonlysupportprerfc4419ssh2dhgex">SSHBugOnlySupportPreRFC4419SSH2DHGex</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugrefusesallssh1passwordcamouflage">SSHBugRefusesAllSSH1PasswordCamouflage</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugrepliestorequestsonclosedchannels">SSHBugRepliesToRequestsOnClosedChannels</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugrequirespaddingonssh2rsasignatures">SSHBugRequiresPaddingOnSSH2RSASignatures</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbypassauthentication">SSHBypassAuthentication</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, authentication is bypassed entirely (SSH-2).</p>
+<h3 id="sshdisplaypreauthenticationbanner">SSHDisplayPreAuthenticationBanner</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, pre-authentication banner is displayed (SSH-2).</p>
+<h3 id="sshdontallocateapseudoterminal">SSHDontAllocateAPseudoTerminal</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, no pseudo terminal is allocated.</p>
+<h3 id="sshdontstartshellorcommand">SSHDontStartShellOrCommand</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, no shell or command is started.</p>
+<h3 id="sshenablecompression">SSHEnableCompression</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, compression is enabled.</p>
+<h3 id="sshenablelegazysingledesforssh2">SSHEnableLegazySingleDESForSSH2</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, legacy use of Single-DES in SSH-2 is enabled.</p>
+<h3 id="sshenabletrustedx11forwarding">SSHEnableTrustedX11Forwarding</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, trusted X11 forwarding is enabled.</p>
+<h3 id="sshenablex11forwarding">SSHEnableX11Forwarding</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, X11 forwarding is enabled.</p>
+<h3 id="sshencryptioncipherselectionpolicy">SSHEncryptionCipherSelectionPolicy</h3>
+<p>Type: <code>string</code>, Default Value: <code>aes,chacha20,blowfish,3des,WARN,arcfour,des</code><br>
+Encryption cipher policy.</p>
+<h3 id="sshforcepseudoterminalallocation">SSHForcePseudoTerminalAllocation</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, pseudo terminal allocation is enforced.</p>
+<h3 id="sshgssapilibraryorder">SSHGSSAPILibraryOrder</h3>
+<p>Type: <code>string</code>, Default Value: <code>gssapi32,sspi,custom</code><br>
+GSSAPI library order.</p>
+<h3 id="sshkeyexchangealgorithmselectionpolicy">SSHKeyExchangeAlgorithmSelectionPolicy</h3>
+<p>Type: <code>string</code>, Default Value: <code>ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1</code><br>
+Key exchange algorithm policy.</p>
+<h3 id="sshmaxdatabeforerekey">SSHMaxDataBeforeRekey</h3>
+<p>Type: <code>string</code>, Default Value: <code>1G</code><br>
+Max data before re-key.</p>
+<h3 id="sshmaxminutesbeforerekey">SSHMaxMinutesBeforeRekey</h3>
+<p>Type: <code>int</code>, Default Value: <code>60</code><br>
+Max minutes before re-key.</p>
+<h3 id="sshprotocolversion">SSHProtocolVersion</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+0 = Version1Only<br>
+1 = Version1<br>
+2 = Version2<br>
+3 = Version2Only</p>
+<h3 id="sshremotecommand">SSHRemoteCommand</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+SSH remote command to execute after connect.</p>
+<h3 id="sshterminalmodestosend">SSHTerminalModesToSend</h3>
+<p>Type: <code>string</code>, Default Value: <code>INTR=A,QUIT=A,ERASE=A,KILL=A,EOF=A,EOL=A,EOL2=A,START=A,STOP=A,SUSP=A,DSUSP=A,REPRINT=A,WERASE=A,LNEXT=A,FLUSH=A,SWTCH=A,STATUS=A,DISCARD=A,IGNPAR=A,PARMRK=A,INPCK=A,ISTRIP=A,INLCR=A,IGNCR=A,ICRNL=A,IUCLC=A,IXON=A,IXANY=A,IXOFF=A,IMAXBEL=A,ISIG=A,ICANON=A,XCASE=A,ECHO=A,ECHOE=A,ECHOK=A,ECHONL=A,NOFLSH=A,TOSTOP=A,IEXTEN=A,ECHOCTL=A,ECHOKE=A,PENDIN=A,OPOST=A,OLCUC=A,ONLCR=A,OCRNL=A,ONOCR=A,ONLRET=A,CS7=A,CS8=A,PARENB=A,PARODD=A,</code><br>
+Terminal Modes</p>
+<h3 id="sshusersuppliedgssapilibrarypath">SSHUserSuppliedGSSAPILibraryPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+User-supplied GSSAPI library</p>
+<h3 id="sshx11authenticationprotocol">SSHX11AuthenticationProtocol</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+SSHX11AuthenticationProtocol:<br>
+1 = MIT_Magic_COOKIE_1<br>
+2 = XDM_Authorization_1</p>
+<h3 id="sshx11authorityfileforlocaldisplay">SSHX11AuthorityFileForLocalDisplay</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+X auth file for local displa.</p>
+<h3 id="sshxdisplaylocation">SSHXDisplayLocation</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+X Display location.</p>
+<h2 id="tunnels">Tunnels</h2>
+<h3 id="sshlocalportsacceptconnectionsfromotherhosts">SSHLocalPortsAcceptConnectionsFromOtherHosts</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, local ports accept connections from other hosts.</p>
+<h3 id="sshremoteportsacceptconnectionsfromotherhosts">SSHRemotePortsAcceptConnectionsFromOtherHosts</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, remote ports accept connections from other hosts.</p>
+<h2 id="private-key">Private Key</h2>
+<h3 id="privatekeypath">PrivateKeyPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Specifies the path to the private key file.</p>
+<h3 id="passphrase">Passphrase</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Specifies the private key passphrase.</p>
+<h2 id="connect-task">Connect Task</h2>
+<h3 id="preconnecttaskfromparent">PreConnectTaskFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Connect Task values from the parent folder.</p>
+<h3 id="preconnecttaskmode">PreConnectTaskMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Use connect task from parent folder<br>
+1 = Use an existing task<br>
+2 = Specify a task name.</p>
+<h3 id="preconnecttaskname">PreConnectTaskName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a task object to this object as connect task by specifying the task object's name.</p>
+<h3 id="preconnecttaskid">PreConnectTaskId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a task object to this object as connect task by specifying the task object's GUID.</p>
+<h3 id="preconnecttaskwait">PreConnectTaskWait</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the connection will be started after the task finished.</p>
+<h3 id="preconnecttaskconditionfirst">PreConnectTaskConditionFirst</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the task will only be executed if it is the first connection in a folder to be connected.</p>
+<h3 id="preconnecttaskconditionabort">PreConnectTaskConditionAbort</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the connection will be closed when the task fails (exit code &lt;&gt; 0).</p>
+<h2 id="disconnect-task">Disconnect Task</h2>
+<h3 id="postdisconnecttaskfromparent">PostDisconnectTaskFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Disconnect Task values from the parent folder.</p>
+<h3 id="postdisconnecttaskmode">PostDisconnectTaskMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Use disconnect task from parent folder<br>
+1 = Use an existing task<br>
+2 = Specify a task name.</p>
+<h3 id="postdisconnecttaskname">PostDisconnectTaskName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a task object to this object as disconnect task by specifying the task object's name.</p>
+<h3 id="postdisconnecttaskid">PostDisconnectTaskId</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a task object to this object as disconnect task by specifying the task object's GUID.</p>
+<h3 id="postdisconnecttaskwait">PostDisconnectTaskWait</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the connection will be closed after the task finished.</p>
+<h3 id="postdisconnecttaskconditionlast">PostDisconnectTaskConditionLast</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the task will only be executed if it is the last active connection in a folder.</p>
+<h2 id="window-mode">Window Mode</h2>
+<h3 id="displaymode">DisplayMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Embedded (Tabbed)<br>
+1 = External Window<br>
+2 = Full Screen (where supported).</p>
+<h3 id="externalscreenmode">ExternalScreenMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Remember Screen<br>
+Any other number indicates the display number.</p>
+<h3 id="externalscreen">ExternalScreen</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies on which Screen the External Window will be shown (Windows).</p>
+<h3 id="externalscreenosx">ExternalScreenOSX</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies on which Screen the External Window will be shown (macOS).</p>
+<h3 id="externalpositionmode">ExternalPositionMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Remember position<br>
+1 = Custom left and right coordinates</p>
+<h3 id="externaltop">ExternalTop</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the last known position (top) of the external window.</p>
+<h3 id="externalleft">ExternalLeft</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the last known position (left) of the external window.</p>
+<h3 id="externalwidth">ExternalWidth</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the last known width of the external window.</p>
+<h3 id="externalheight">ExternalHeight</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Specifies the last known height of the external window.</p>
+<h3 id="externalsizemode">ExternalSizeMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Remember Size<br>
+1 = Custom width and height<br>
+2 = Maximize</p>
+<h3 id="minimizemainwindow">MinimizeMainWindow</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, the main window will be minimized after the connection was established.</p>
+<h3 id="fixedsize">FixedSize</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Specifies whether or not the control or form should be expanded automatically to fill the container or maximized form</p>
+<h2 id="dashboard">Dashboard</h2>
+<h3 id="dashboarduseappsettings">DashboardUseAppSettings</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the plugin default settings for the dashboard are used.</p>
+<h3 id="dashboardautoshowfiles">DashboardAutoShowFiles</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the dashboard will automatically show recordings and log files.</p>
+<h2 id="royal-server">Royal Server</h2>
+<h3 id="managementendpointfromparent">ManagementEndpointFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Royal Server values from the parent folder.</p>
+<h3 id="managementendpointid">ManagementEndpointID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a Royal Server object to this object by specifying the Royal Server object's GUID.</p>
+<h3 id="managementendpointname">ManagementEndpointName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a Royal Server object to this object by specifying the Royal Server object's name.</p>
+<h2 id="secure-gateway">Secure Gateway</h2>
+<h3 id="securegatewayfromparent">SecureGatewayFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Secure Gateway values from the parent folder.</p>
+<h3 id="securegatewayusagemode">SecureGatewayUsageMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Never<br>
+1 = Always<br>
+2 = On Demand</p>
+<h3 id="securegatewayid">SecureGatewayID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a Secure Gateway or Royal Server object to this object by specifying the Secure Gateway or Royal Server object's GUID.</p>
+<h2 id="remote-desktop-gateway">Remote Desktop Gateway</h2>
+<h3 id="rdsgatewayfromparent">RDSGatewayFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Remote Desktop Gateway values from the parent folder.</p>
+<h3 id="rdsgatewayusagemode">RDSGatewayUsageMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Never<br>
+1 = Always<br>
+2 = On Demand</p>
+<h3 id="rdsgatewayid">RDSGatewayID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+Assign a Remote Desktop Gateway object to this object by specifying the Remote Desktop Gateway object's GUID.</p>
+<h3 id="rdsgatewayname">RDSGatewayName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a Remote Desktop Gateway object to this object by specifying the Remote Desktop Gateway object's name.</p>
+<h2 id="custom-fields">Custom Fields</h2>
+<h3 id="customfield1fromparent">CustomField1FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField1 value from the parent folder.</p>
+<h3 id="customfield2fromparent">CustomField2FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField2 value from the parent folder.</p>
+<h3 id="customfield3fromparent">CustomField3FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField3 value from the parent folder.</p>
+<h3 id="customfield4fromparent">CustomField4FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField4 value from the parent folder.</p>
+<h3 id="customfield5fromparent">CustomField5FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField5 value from the parent folder.</p>
+<h3 id="customfield6fromparent">CustomField6FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField6 value from the parent folder.</p>
+<h3 id="customfield7fromparent">CustomField7FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField7 value from the parent folder.</p>
+<h3 id="customfield8fromparent">CustomField8FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField8 value from the parent folder.</p>
+<h3 id="customfield9fromparent">CustomField9FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField9 value from the parent folder.</p>
+<h3 id="customfield10fromparent">CustomField10FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField10 value from the parent folder.</p>
+<h3 id="customfield11fromparent">CustomField11FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField11 value from the parent folder.</p>
+<h3 id="customfield12fromparent">CustomField12FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField12 value from the parent folder.</p>
+<h3 id="customfield13fromparent">CustomField13FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField13 value from the parent folder.</p>
+<h3 id="customfield14fromparent">CustomField14FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField14 value from the parent folder.</p>
+<h3 id="customfield15fromparent">CustomField15FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField15 value from the parent folder.</p>
+<h3 id="customfield16fromparent">CustomField16FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField16 value from the parent folder.</p>
+<h3 id="customfield17fromparent">CustomField17FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField17 value from the parent folder.</p>
+<h3 id="customfield18fromparent">CustomField18FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField18 value from the parent folder.</p>
+<h3 id="customfield19fromparent">CustomField19FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField19 value from the parent folder.</p>
+<h3 id="customfield20fromparent">CustomField20FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField20 value from the parent folder.</p>
+<h3 id="customfield1">CustomField1</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield2">CustomField2</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield3">CustomField3</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield4">CustomField4</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield5">CustomField5</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield6">CustomField6</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield7">CustomField7</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield8">CustomField8</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield9">CustomField9</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield10">CustomField10</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield11">CustomField11</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield12">CustomField12</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield13">CustomField13</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield14">CustomField14</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield15">CustomField15</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield16">CustomField16</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield17">CustomField17</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield18">CustomField18</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield19">CustomField19</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield20">CustomField20</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h2 id="custom-properties">Custom Properties</h2>
+<h3 id="custompropertiesfromparent">CustomPropertiesFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Custom Properties from the parent folder.</p>
+<h3 id="customproperties">CustomProperties</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom properties allow you to collect additional information for an object.</p>
+<h2 id="notes">Notes</h2>
+<h3 id="notesfromparent">NotesFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Notes value from the parent folder.</p>
+<h3 id="notes-1">Notes</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Store HTML formatted notes to the object.</p>
+<h2 id="changes">Changes</h2>
+<h3 id="created">Created</h3>
+<p>Type: <code>DateTime</code>, Default Value: <code>DateTime.Now</code><br>
+The date and time the object was created.</p>
+<h3 id="createdby">CreatedBy</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The user who initially created the object.</p>
+<h3 id="modified">Modified</h3>
+<p>Type: <code>DateTime</code>, Default Value: <code>DateTime.Now</code><br>
+The last date and time the object was modified.</p>
+<h3 id="modifiedby">ModifiedBy</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The user who last modified the object.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/scripting/objects/connections/royalsshconnection.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

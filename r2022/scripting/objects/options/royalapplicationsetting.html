@@ -1,0 +1,1021 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RoyalApplicationSetting </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="RoyalApplicationSetting ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-scripting">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="scripting_object_royalapplicationsetting">
+<h1 id="royalapplicationsetting">RoyalApplicationSetting</h1>
+
+<h2 id="general">General</h2>
+<h3 id="customimagename">CustomImageName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+A custom image name from a pre-defined set of images</p>
+<h3 id="autobackupfile">AutoBackupFile</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Creates a .backup file in the same directory where the document is stored.</p>
+<h3 id="name">Name</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The display name of the object.</p>
+<h3 id="autostartdocumentmode">AutoStartDocumentMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>3</code><br>
+0 = Empty<br>
+1 = Open last files<br>
+2 = Open selected files (from AutoStartDocumentList)<br>
+3 = Getting Started Page (Legacy)</p>
+<h3 id="description">Description</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The description text of the object.</p>
+<h3 id="autostartdocumentlist">AutoStartDocumentList</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list of files Royal TS will open when it starts</p>
+<h3 id="autoreconnectmode">AutoReconnectMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Prompt<br>
+1 = Always Reconnect<br>
+2 = Never Reconnect</p>
+<h3 id="donotshowgettingstartedpageonstartup">DoNotShowGettingStartedPageOnStartup</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Don't show the getting started page on launch (macOS only)</p>
+<h3 id="favorite">Favorite</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether or not the object is a favorite.</p>
+<h3 id="donotcreatedashboardonstartup">DoNotCreateDashboardOnStartup</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Don't create the Dashboard tab</p>
+<h3 id="startminimized">StartMinimized</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Starts Royal TS minimized</p>
+<h3 id="colorfromparent">ColorFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Color value from the parent folder.</p>
+<h3 id="color">Color</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a custom color as hex string to the object (#FF0000 for red). Empty string is the default color value (no custom color assigned).</p>
+<h3 id="colorname">ColorName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Assign a color from a color palette to the object. If both, a color name and a custom color (hex string) are provided, the color name is preferred.</p>
+<h3 id="autobackupgen">AutoBackupGen</h3>
+<p>Type: <code>int</code>, Default Value: <code>10</code><br>
+Backup History (0 = disable)</p>
+<h3 id="autobackuppath">AutoBackupPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>%temp%</code><br>
+Backup Path</p>
+<h3 id="registerfiletypes">RegisterFileTypes</h3>
+<p>Type: <code>string</code>, Default Value: <code>.rtsx;.rtsz</code><br>
+.rtsz = Royal TS Document<br>
+.rtsx = Royal TS V2 Document</p>
+<h3 id="registerurlprotocols">RegisterUrlProtocols</h3>
+<p>Type: <code>string</code>, Default Value: <code>rtsx;royalappslicense;rtscli</code><br>
+rtsx<br>
+royalappslicense</p>
+<h3 id="confirmclose">ConfirmClose</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Application Close; Show a warning for active connections</p>
+<h3 id="id">ID</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The unique object identifier (GUID) of the object.</p>
+<h3 id="externalid">ExternalID</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The external unique object identifier (GUID) of the object.</p>
+<h3 id="checkforupdatesonstartup">CheckForUpdatesOnStartup</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Check for Updates</p>
+<h3 id="checkforbetaupdates">CheckForBetaUpdates</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Check for Updates: Include Beta Releases</p>
+<h3 id="checkforserverupdates">CheckForServerUpdates</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Checks for server update</p>
+<h3 id="checkforserverbetaupdates">CheckForServerBetaUpdates</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Checks for server beta updates</p>
+<h3 id="checkforpluginupdates">CheckForPlugInUpdates</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Check for Plugin Updates</p>
+<h3 id="updatepreference">UpdatePreference</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Download and install when closed<br>
+1 = Download installer using browser<br>
+2 = Download zip using browser</p>
+<h3 id="collectusagestatistics">CollectUsageStatistics</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Collect anonymous usage statistics</p>
+<h3 id="autoremoveadhocwhendisconnected">AutoRemoveAdHocWhenDisconnected</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Remove Ad Hoc connection after closing the tab</p>
+<h3 id="adhocidentifierenabled">AdHocIdentifierEnabled</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Use Ad Hoc Identifier</p>
+<h3 id="adhocidentifierstring">AdHocIdentifierString</h3>
+<p>Type: <code>string</code>, Default Value: <code> (Ad Hoc)</code><br>
+Ad Hoc connection identifier</p>
+<h3 id="minimizetosystray">MinimizeToSysTray</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Minimize to Notification Area (Systray)</p>
+<h3 id="deepkeyboardhook">DeepKeyboardHook</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Deep Keyboard Hooks are used to recognize some keyboard shortcuts.</p>
+<h3 id="deepkeyboardhookforexternalapps">DeepKeyboardHookForExternalApps</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Deep Keyboard Hooks are also used when Royal TS hosts external applications.</p>
+<h3 id="windowwidth">WindowWidth</h3>
+<p>Type: <code>int</code>, Default Value: <code>999</code><br>
+Window Width</p>
+<h3 id="windowheight">WindowHeight</h3>
+<p>Type: <code>int</code>, Default Value: <code>743</code><br>
+Window Height</p>
+<h3 id="positiontop">PositionTop</h3>
+<p>Type: <code>int</code>, Default Value: <code>25</code><br>
+Window Top Position</p>
+<h3 id="positionleft">PositionLeft</h3>
+<p>Type: <code>int</code>, Default Value: <code>25</code><br>
+Window Left Position</p>
+<h3 id="windowmaximized">WindowMaximized</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Window Maximized</p>
+<h3 id="screenid">ScreenId</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+The screen id (display) where Royal TS was open last time. For multimonitor setups</p>
+<h3 id="panelslideindelay">PanelSlideInDelay</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+The delay in ms until the panel slides in</p>
+<h3 id="overviewzoomlevelwin">OverviewZoomLevelWin</h3>
+<p>Type: <code>int</code>, Default Value: <code>250</code><br>
+Zoom level for Overview page (on Windows)</p>
+<h3 id="overviewzoomlevel">OverviewZoomLevel</h3>
+<p>Type: <code>double</code>, Default Value: <code>.28</code><br>
+OverviewZoomLevel for overview page</p>
+<h3 id="overviewautomaticallyadjustzoomlevel">OverviewAutomaticallyAdjustZoomLevel</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Automatically adjust Overview Zoom Level</p>
+<h3 id="overviewhidden">OverviewHidden</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hide Overview tab</p>
+<h3 id="superstartpagebehavior">SuperStartPageBehavior</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+0 = Show never<br>
+1 = Show always<br>
+2 = Show when new content is available</p>
+<h3 id="showwindowlistalphabetically">ShowWindowListAlphabetically</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show Window List Alphabetically</p>
+<h3 id="keepasspath">KeePassPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Path to the keepass exe</p>
+<h3 id="showtoolbar">ShowToolbar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show Toolbar (macOS)</p>
+<h3 id="showribbon">ShowRibbon</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Shows the ribbon if true. Ribbon is collapsed if false</p>
+<h3 id="useextendedfullscreen">UseExtendedFullScreen</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether to maximize screen real estate when entering full screen or not (macOS only)</p>
+<h2 id="behavior">Behavior</h2>
+<h3 id="allowbackgroundconnect">AllowBackgroundConnect</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Background connect when holding the Shift key</p>
+<h3 id="autofocus">AutoFocus</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Automatically focus active connections</p>
+<h3 id="autoswitchtotabstabsrequiringattention">AutoSwitchToTabsTabsRequiringAttention</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Automatically switch to tabs requiring attention</p>
+<h3 id="closetabactivationmode">CloseTabActivationMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Select Dashboard (when available)<br>
+1 = Select tab to the left<br>
+2 = Select tab to the right</p>
+<h3 id="connectallinfolderbehavior">ConnectAllInFolderBehavior</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Always ask what to do<br>
+1 = Include connections from subfolders<br>
+2 = Only connections from root level</p>
+<h3 id="disableexternalwindowdrag">DisableExternalWindowDrag</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A tab cannot be dragged out of the tab bar to create an external window.</p>
+<h3 id="dontclosetabonremotedisconnect">DontCloseTabOnRemoteDisconnect</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Keep remotely disconnected tabs open</p>
+<h3 id="externalwindowselectdashboard">ExternalWindowSelectDashboard</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+External Window: Select Dashboard</p>
+<h3 id="monitorconnectionstateofdisconnectedtabs">MonitorConnectionStateOfDisconnectedTabs</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Monitor the connection state of disconnected tabs (requires DontCloseTabOnRemoteDisconnect to be enabled)</p>
+<h3 id="mousedoubleclickmodeactive">MouseDoubleClickModeActive</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+0 = Do nothing<br>
+1 = Edit Properties<br>
+2 = Disconnect<br>
+3 = Reconnect</p>
+<h3 id="mousedoubleclickmodeconnectiontabs">MouseDoubleClickModeConnectionTabs</h3>
+<p>Type: <code>int</code>, Default Value: <code>4</code><br>
+0 = Do nothing<br>
+1 = Edit Properties<br>
+2 = Disconnect<br>
+3 = Reconnect<br>
+4 = External</p>
+<h3 id="mousedoubleclickmodecredentials">MouseDoubleClickModeCredentials</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Do nothing<br>
+1 = Edit Properties<br>
+2 = Copy Username<br>
+3 = Copy Password</p>
+<h3 id="mousedoubleclickmodeinactive">MouseDoubleClickModeInactive</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+0 = Do nothing<br>
+1 = Edit Properties<br>
+2 = Connect</p>
+<h3 id="mousedoubleclickmodetasks">MouseDoubleClickModeTasks</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+0 = Do nothing<br>
+1 = Edit Properties<br>
+2 = Execute Task</p>
+<h3 id="overrideapplymode">OverrideApplyMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Apply override when Alt key is pressed<br>
+1 = Always apply override, except when Alt key is pressed<br>
+2 = Apply override when Ctrl key is pressed<br>
+3 = Always apply override, except when Ctrl key is pressed</p>
+<h3 id="tabswitchermode">TabSwitcherMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Activation Sequence<br>
+1 = Display Order<br>
+2 = Alphabetical</p>
+<h3 id="tracknavigationselectionintabbar">TrackNavigationSelectionInTabBar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Track Navigation tree selection in tab bar</p>
+<h3 id="tracktabselectioninnavigation">TrackTabSelectionInNavigation</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Track tab selection in Navigation tree</p>
+<h2 id="browser-extension">Browser Extension</h2>
+<h3 id="pmauthenticationtimeout">PMAuthenticationTimeout</h3>
+<p>Type: <code>int</code>, Default Value: <code>300</code><br>
+The Browser Extensions Authentication Timeout in Seconds</p>
+<h3 id="pminstanceidtrust">PMInstanceIDTrust</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list of Instance ID trust settings for Browser Extension Verification</p>
+<h3 id="pmlistenerport">PMListenerPort</h3>
+<p>Type: <code>int</code>, Default Value: <code>54890</code><br>
+Browser Extensions Port</p>
+<h3 id="pmstartlisteneronlaunch">PMStartListenerOnLaunch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Enable Browser Extensions</p>
+<h3 id="pmverifybrowsersignature">PMVerifyBrowserSignature</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Enable Browser Extensions Browser Signature Verification</p>
+<h2 id="dynamic-folder">Dynamic Folder</h2>
+<h3 id="dynamicfolderevaluateshellpersonalizationfile">DynamicFolderEvaluateShellPersonalizationFile</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+When executing dynamic folder scripts, by default the shell personalization file will be evaluated. Disable this setting to disable evaluating the shell personalization file.</p>
+<h3 id="dynamicfoldershellname">DynamicFolderShellName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Configure the shell to execute Dynamic Folder scripts with. Valid values are empty string (System Default Shell), 'bash' or 'zsh'.</p>
+<h3 id="dynfolderbashargs">DynFolderBashArgs</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional Bash arguments for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderbashpath">DynFolderBashPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The path to Bash (Windows Subsystem for Linux - wsl.exe) for dynamic folder and dynamic credential bash scripts.</p>
+<h3 id="dynfolderperlargs">DynFolderPerlArgs</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional Perl arguments for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderperlpath">DynFolderPerlPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The path to the Perl executable for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderphpargs">DynFolderPhpArgs</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional Php arguments for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderphppath">DynFolderPhpPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The path to the PHP executable for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderpowershellargs">DynFolderPowerShellArgs</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional PowerShell arguments for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderpowershellnoprofile">DynFolderPowerShellNoProfile</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Prevents the PowerShell profile to be loaded.</p>
+<h3 id="dynfolderpowershellpath">DynFolderPowerShellPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The path to the PowerShell executable for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderpythonargs">DynFolderPythonArgs</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional Python arguments for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderpythonpath">DynFolderPythonPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The path to the Python executable for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderpythonversion">DynFolderPythonVersion</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Configure the Python version to use: 0 = Automatic (latest version installed), 2 = Version 2 or older, 3 = Version 3</p>
+<h3 id="dynfolderrubyargs">DynFolderRubyArgs</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional Ruby arguments for dynamic folder and dynamic credential scripts.</p>
+<h3 id="dynfolderrubypath">DynFolderRubyPath</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The path to the Ruby executable for dynamic folder and dynamic credential scripts.</p>
+<h2 id="logging">Logging</h2>
+<h3 id="loggingconsoleloggingusecolors">LoggingConsoleLoggingUseColors</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Use Console Color Output</p>
+<h3 id="loggingcreatenewfilemode">LoggingCreateNewFileMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = never (overwrite)<br>
+1 = on exit<br>
+2 = on exit or after some time/log entries which is defined in LoggingCreateNewFileThreshold and LoggingCreateNewFileUnit</p>
+<h3 id="loggingcreatenewfilethreshold">LoggingCreateNewFileThreshold</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+If LoggingCreateNewFileMode is set to 2 the threshold controls when a new file will be created</p>
+<h3 id="loggingcreatenewfileunit">LoggingCreateNewFileUnit</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = minutes<br>
+1 = log entries</p>
+<h3 id="loggingeventlogtemplate">LoggingEventLogTemplate</h3>
+<p>Type: <code>string</code>, Default Value: <code>$Message${0}{0}Details:{0}$Details${0}{0}More Information:{0}Local User: $LocalUser${0}Local Host: $LocalHost${0}Remote User: $RemoteUser${0}URI: $RemoteURI${0}Action: $Action${0}Object ID:$ObjectID${0}Object Display Name: $ObjectDisplayName${0}Object Type: $ObjectType${0}{0}Plugin ID: $PluginID${0}Plugin Name: $PluginName${0}Plugin Version: $PluginVersion$</code><br>
+Event Log Template</p>
+<h3 id="loggingfilename">LoggingFileName</h3>
+<p>Type: <code>string</code>, Default Value: <code>RoyalTSLog.rtsl</code><br>
+Logfile Name</p>
+<h3 id="loggingfilepath">LoggingFilePath</h3>
+<p>Type: <code>string</code>, Default Value: <code>%temp%</code><br>
+Log Directory</p>
+<h3 id="logginglevelconsole">LoggingLevelConsole</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+-1 = uninitialized<br>
+0 = Activity<br>
+1 = Information<br>
+2 = Warning<br>
+3 = Error<br>
+4 = Debug<br>
+5 =Verbose</p>
+<h3 id="logginglevelfile">LoggingLevelFile</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+-1 = uninitialized<br>
+0 = Activity<br>
+1 = Information<br>
+2 = Warning<br>
+3 = Error<br>
+4 = Debug<br>
+5 =Verbose</p>
+<h3 id="loggingleveltracefile">LoggingLevelTraceFile</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+-1 = uninitialized<br>
+0 = Activity<br>
+1 = Information<br>
+2 = Warning<br>
+3 = Error<br>
+4 = Debug<br>
+5 =Verbose</p>
+<h3 id="logginglevelwindowseventlog">LoggingLevelWindowsEventLog</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+-1 = uninitialized<br>
+0 = Activity<br>
+1 = Information<br>
+2 = Warning<br>
+3 = Error<br>
+4 = Debug<br>
+5 =Verbose</p>
+<h3 id="loggingsavetofilemode">LoggingSaveToFileMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = never<br>
+1 = on exit<br>
+2 = on exit or after some time/log entries which is defined in LoggingSaveToFileThreshold and LoggingSaveToFileUnit</p>
+<h3 id="loggingsavetofilethreshold">LoggingSaveToFileThreshold</h3>
+<p>Type: <code>int</code>, Default Value: <code>60</code><br>
+If LoggingSaveToFileMode is set to 2, the threshold and unit controls when the file is saved</p>
+<h3 id="loggingsavetofileunit">LoggingSaveToFileUnit</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = minutes<br>
+1 = log entries</p>
+<h3 id="loggingtracefilename">LoggingTraceFileName</h3>
+<p>Type: <code>string</code>, Default Value: <code>RoyalTSTrace.rtsl</code><br>
+Trace File Name</p>
+<h3 id="loggingtracefileoverrideonstart">LoggingTraceFileOverrideOnStart</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Overwrite File on Application Start</p>
+<h3 id="loggingtracefilepath">LoggingTraceFilePath</h3>
+<p>Type: <code>string</code>, Default Value: <code>%temp%</code><br>
+Trace File Directory</p>
+<h3 id="logginguseconsolelogging">LoggingUseConsoleLogging</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+-1 = uninitialized<br>
+0 = disabled<br>
+1 = enabled</p>
+<h3 id="loggingusestandardlogging">LoggingUseStandardLogging</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Enable Internal Logging</p>
+<h3 id="loggingusetracefilelogging">LoggingUseTraceFileLogging</h3>
+<p>Type: <code>int</code>, Default Value: <code>-1</code><br>
+-1 = uninitialized<br>
+0 = disabled<br>
+1 = enabled</p>
+<h3 id="loggingusewindowseventlog">LoggingUseWindowsEventLog</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Enable Logging to the Windows Event Log</p>
+<h2 id="messages">Messages</h2>
+<h3 id="dontshowdocumentmodifiednotification">DontShowDocumentModifiedNotification</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A notification is shown when a document is modified on disk</p>
+<h3 id="dontshowextendedfullscreenintroduction">DontShowExtendedFullScreenIntroduction</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A popup showing a quick introduction to the extended full screen feature</p>
+<h3 id="dontshowmaintenanceextensionnotification">DontShowMaintenanceExtensionNotification</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A dialog is shown when maintenance can be extended</p>
+<h3 id="dontshowmajorupgradenotification">DontShowMajorUpgradeNotification</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A dialog is shown when a new major version is available</p>
+<h3 id="dontshowrestoreconnectionsdialog">DontShowRestoreConnectionsDialog</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A dialog is shown that allows to reconnect to previously disconnected sessions</p>
+<h2 id="notifications">Notifications</h2>
+<h3 id="notifyconnection">NotifyConnection</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If enabled, connection activities may show a Windows notification.</p>
+<h3 id="notifydocument">NotifyDocument</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If enabled, document and file operations may show a Windows notification.</p>
+<h3 id="notifyplugins">NotifyPlugins</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If enabled, plugins may show a Windows notification.</p>
+<h2 id="password-generator">Password Generator</h2>
+<h3 id="passwordgeneratoravoidambiguouscharacters">PasswordGeneratorAvoidAmbiguousCharacters</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Password Generator Avoid Ambiguous Characters</p>
+<h3 id="passwordgeneratorincludedigits">PasswordGeneratorIncludeDigits</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Password Generator Include Digits</p>
+<h3 id="passwordgeneratorincludesymbols">PasswordGeneratorIncludeSymbols</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Password Generator Include Symbols</p>
+<h3 id="passwordgeneratorincludeuppercaseletters">PasswordGeneratorIncludeUpperCaseLetters</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Password Generator Include Uppercase Letters</p>
+<h3 id="passwordgeneratorlength">PasswordGeneratorLength</h3>
+<p>Type: <code>int</code>, Default Value: <code>12</code><br>
+Password Generator Length</p>
+<h2 id="passwords">Passwords</h2>
+<h3 id="passwordpwnedcheck">PasswordPwnedCheck</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If enabled, passwords will be securely verified and ensured it hasn't been pwned.</p>
+<h2 id="policy">Policy</h2>
+<h3 id="policydonotallowapplicationdocumentwithoutpassword">PolicyDoNotAllowApplicationDocumentWithoutPassword</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is allowed to have an application document without password protection.</p>
+<h3 id="policydonotallowcheckforbetaupdates">PolicyDoNotAllowCheckForBetaUpdates</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is able to configure Royal TS to check for beta updates.</p>
+<h3 id="policydonotallowcheckforupdates">PolicyDoNotAllowCheckForUpdates</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is able to configure Royal TS to check for updates.</p>
+<h3 id="policydonotallowcreatecredentialobjects">PolicyDoNotAllowCreateCredentialObjects</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is allowed to create credential objects in Royal TS.</p>
+<h3 id="policydonotallowcreatecredentialobjectsindocumentswithoutpassword">PolicyDoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is allowed to create credential objects in a document without password protection.</p>
+<h3 id="policydonotallowdocumentswithoutpassword">PolicyDoNotAllowDocumentsWithoutPassword</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is able to load or save Royal TS documents without password protection.</p>
+<h3 id="policydonotallowrevealpasswords">PolicyDoNotAllowRevealPasswords</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is allowed to create credential objects in a document without password protection.</p>
+<h3 id="policydonotallowweakdocumentpasswords">PolicyDoNotAllowWeakDocumentPasswords</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is able to specify weak document passwords. The password strength indicator in Royal TS must show 'Great' (color green) in order to accept the password.</p>
+<h3 id="policydonotallowwindowscredentialmanager">PolicyDoNotAllowWindowsCredentialManager</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+This policy setting allows you to manage if a user is allowed to save document passwords in the Windows Credential Manager.</p>
+<h2 id="proxy-server">Proxy Server</h2>
+<h3 id="proxyenabled">ProxyEnabled</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use a Proxy Server</p>
+<h3 id="proxypassword">ProxyPassword</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Password</p>
+<h3 id="proxyport">ProxyPort</h3>
+<p>Type: <code>int</code>, Default Value: <code>8080</code><br>
+Port</p>
+<h3 id="proxyserver">ProxyServer</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Proxy Server</p>
+<h3 id="proxyusername">ProxyUsername</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Username</p>
+<h2 id="screenshots">Screenshots</h2>
+<h3 id="screenshotfilename">ScreenshotFileName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Use Custom File Name (leave empty for default file name)</p>
+<h3 id="screenshotfolder">ScreenshotFolder</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Use Custom Folder (leave empty for Pictures folder)</p>
+<h3 id="screenshotmaxsize">ScreenshotMaxSize</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Limit Screenshot Size (0 for full size)</p>
+<h2 id="search-options">Search Options</h2>
+<h3 id="showcredentialtreesearch">ShowCredentialTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show Credential Panel Search</p>
+<h3 id="shownavigationtreesearch">ShowNavigationTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show Navigation Panel Search</p>
+<h3 id="showtasktreesearch">ShowTaskTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show Tasks Panel Search</p>
+<h3 id="showtodoitemstreesearch">ShowTodoItemsTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show Todo Items Panel Search</p>
+<h2 id="sort-options">Sort Options</h2>
+<h3 id="sortdefaultcriteria">SortDefaultCriteria</h3>
+<p>Type: <code>RoyalStore.SortArgument</code>, Default Value: <code>new RoyalStore.SortArgument() { SortCriteria1 = RoyalStore.SortCriteria.ObjectType, SortDirection1 = RoyalStore.SortDirection.Ascending, SortCriteria2 = RoyalStore.SortCriteria.Name, SortDirection2 = RoyalStore.SortDirection.Ascending, SortCriteria3 = RoyalStore.SortCriteria.None, SortDirection3 = RoyalStore.SortDirection.Ascending }</code><br>
+Default Sort Settings</p>
+<h2 id="tab-scan">Tab Scan</h2>
+<h3 id="tabscaninterval">TabScanInterval</h3>
+<p>Type: <code>int</code>, Default Value: <code>5</code><br>
+Tab Scan Interval (in seconds)</p>
+<h2 id="user-interface">User Interface</h2>
+<h3 id="activesuperview">ActiveSuperView</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Overview<br>
+1 = Dashboard</p>
+<h3 id="activetabbold">ActiveTabBold</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Display active tab caption bold</p>
+<h3 id="allowanimations">AllowAnimations</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Allow Animations</p>
+<h3 id="allowformglass">AllowFormGlass</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = form glass disabled<br>
+1= form glass enabled<br>
+2 = automatic</p>
+<h3 id="autohidedocumentslist">AutoHideDocumentsList</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether or not the document list is hidden automatically on macOS.</p>
+<h3 id="colorizeconnection">ColorizeConnection</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show colorized border</p>
+<h3 id="colorizetab">ColorizeTab</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use colors in Tabs</p>
+<h3 id="colorizetitlebar">ColorizeTitleBar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show colorized title bar</p>
+<h3 id="colorizetree">ColorizeTree</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use colors in the Navigation tree</p>
+<h3 id="connectionborderpadding">ConnectionBorderPadding</h3>
+<p>Type: <code>int</code>, Default Value: <code>2</code><br>
+Border Size</p>
+<h3 id="disabledisplayscalingonhighdpisettings">DisableDisplayScalingOnHighDpiSettings</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If false (default), the OS will scale Royal TS on high DPI displays which may result in lower quality graphics and icons. If true, Royal TS will act as a dpi aware application which provides high quality graphics and icons but may have side effects on remote connections.</p>
+<h3 id="documentslistposition">DocumentsListPosition</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = left<br>
+1 = right</p>
+<h3 id="dpiawareness">DpiAwareness</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Off (best compatibility but blurry on high DPI screens)<br>
+1 = System (scaling based on primary screen)<br>
+2 = Per Monitor</p>
+<h3 id="enabledirectx">EnableDirectX</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Enables hardware accelerated DirectX rendering where possible</p>
+<h3 id="enablepixelscrolling">EnablePixelScrolling</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Enable Pixel-Scrolling in Navigation</p>
+<h3 id="fontsize">FontSize</h3>
+<p>Type: <code>double</code>, Default Value: <code>9.00</code><br>
+Font size in navigation tree and lists.</p>
+<h3 id="forcetreelines">ForceTreeLines</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Always show lines in the Navigation tree</p>
+<h3 id="fuzzytreesearch">FuzzyTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+When enabled, performs a fuzzy tree search instead of a regular search</p>
+<h3 id="includedescriptionintreesearch">IncludeDescriptionInTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Include Description in search</p>
+<h3 id="includefoldersintreesearch">IncludeFoldersInTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Include Folders in search</p>
+<h3 id="includenotesintreesearch">IncludeNotesInTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Include Notes in search</p>
+<h3 id="includeonlyconnectedintreesearch">IncludeOnlyConnectedInTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Include only Connected in search</p>
+<h3 id="includeonlyfavoritesintreesearch">IncludeOnlyFavoritesInTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Include only Favorites in search</p>
+<h3 id="includeuriintreesearch">IncludeUriInTreeSearch</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Include URI (Computer Name or URL) in search</p>
+<h3 id="maxtabsize">MaxTabSize</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The maximum size of a tab header</p>
+<h3 id="panelactivation">PanelActivation</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Hover<br>
+1 = Click</p>
+<h3 id="resizewindowtosessionsize">ResizeWindowToSessionSize</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether or not to resize the application window to the currently visible session size</p>
+<h3 id="scrollbarstyle">ScrollbarStyle</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Always<br>
+1 = Auto Expand<br>
+2 = Auto Hide</p>
+<h3 id="showcoloredactiveconnectionicons">ShowColoredActiveConnectionIcons</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show colored active connection icons</p>
+<h3 id="showcoloredinactiveconnectionicons">ShowColoredInactiveConnectionIcons</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show colored inactive connection icons</p>
+<h3 id="showconnectiontypeintabtooltip">ShowConnectionTypeInTabTooltip</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show Connection Type in Tab Tooltip (macOS)</p>
+<h3 id="showdescriptioninwindowtitle">ShowDescriptionInWindowTitle</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show the Description in the main window title</p>
+<h3 id="showdocumentnameinwindowtitle">ShowDocumentNameInWindowTitle</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show the Document Name in the main window title</p>
+<h3 id="showfavoriteindicator">ShowFavoriteIndicator</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Shows an indicator for favorites</p>
+<h3 id="showmainfilterbuttons">ShowMainFilterButtons</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+When enabled, the main filter buttons (Favorites, Active and Inactive) are shown directly in the search box.</p>
+<h3 id="showparentfoldernameinwindowtitle">ShowParentFolderNameInWindowTitle</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Show the Folder Name in the main window title</p>
+<h3 id="showstatusbar">ShowStatusBar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show the Status Bar</p>
+<h3 id="showtabbar">ShowTabBar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show Tabs</p>
+<h3 id="showtabbarinexternalwindows">ShowTabBarInExternalWindows</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Whether or not to show the tab bar in external windows</p>
+<h3 id="showtabpreviewthumbnails">ShowTabPreviewThumbnails</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show Tab Preview Thumbnails</p>
+<h3 id="showtabtitleinwindowtitle">ShowTabTitleInWindowTitle</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show the Tab Title in the main window title</p>
+<h3 id="showtaskbarthumbnails">ShowTaskbarThumbnails</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Enable Taskbar Thumbnails</p>
+<h3 id="showtooltipsinforms">ShowTooltipsInForms</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show Tooltips in Dialogs</p>
+<h3 id="showtooltipsintree">ShowTooltipsInTree</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Show Tooltips in the Navigation tree</p>
+<h3 id="tabcustomcaption">TabCustomCaption</h3>
+<p>Type: <code>string</code>, Default Value: <code>$Name$</code><br>
+Display a custom tab caption using replacement tokens</p>
+<h3 id="tabmultiline">TabMultiLine</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Display tabs in multiple lines</p>
+<h3 id="tabpreviewthumbnailssize">TabPreviewThumbnailsSize</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Small<br>
+1 = Medium<br>
+2 = Large</p>
+<h3 id="tabsizemode">TabSizeMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Auto<br>
+1 = Fill<br>
+2 = Manual</p>
+<h3 id="treefontbold">TreeFontBold</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Render tree view items bold</p>
+<h3 id="treefontsizeosx">TreeFontSizeOSX</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Small<br>
+1 = Medium<br>
+2 = Large</p>
+<h3 id="twoletterisolanguagename">TwoLetterISOLanguageName</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Language (like en for English or de for German)</p>
+<h3 id="uithememac">UIThemeMac</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Automatic<br>
+1 = Dark<br>
+2 = Light</p>
+<h2 id="custom-fields">Custom Fields</h2>
+<h3 id="customfieldname1">CustomFieldName1</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 1</p>
+<h3 id="customfieldname2">CustomFieldName2</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 2</p>
+<h3 id="customfieldname3">CustomFieldName3</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 3</p>
+<h3 id="customfieldname4">CustomFieldName4</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 4</p>
+<h3 id="customfieldname5">CustomFieldName5</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 5</p>
+<h3 id="customfieldname6">CustomFieldName6</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 6</p>
+<h3 id="customfieldname7">CustomFieldName7</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 7</p>
+<h3 id="customfieldname8">CustomFieldName8</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 8</p>
+<h3 id="customfieldname9">CustomFieldName9</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 9</p>
+<h3 id="customfieldname10">CustomFieldName10</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 10</p>
+<h3 id="customfieldname11">CustomFieldName11</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 11</p>
+<h3 id="customfieldname12">CustomFieldName12</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 12</p>
+<h3 id="customfieldname13">CustomFieldName13</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 13</p>
+<h3 id="customfieldname14">CustomFieldName14</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 14</p>
+<h3 id="customfieldname15">CustomFieldName15</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 15</p>
+<h3 id="customfieldname16">CustomFieldName16</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 16</p>
+<h3 id="customfieldname17">CustomFieldName17</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 17</p>
+<h3 id="customfieldname18">CustomFieldName18</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 18</p>
+<h3 id="customfieldname19">CustomFieldName19</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 19</p>
+<h3 id="customfieldname20">CustomFieldName20</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Caption of Custom Field 20</p>
+<h3 id="customfield1fromparent">CustomField1FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField1 value from the parent folder.</p>
+<h3 id="customfield2fromparent">CustomField2FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField2 value from the parent folder.</p>
+<h3 id="customfield3fromparent">CustomField3FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField3 value from the parent folder.</p>
+<h3 id="customfield4fromparent">CustomField4FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField4 value from the parent folder.</p>
+<h3 id="customfield5fromparent">CustomField5FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField5 value from the parent folder.</p>
+<h3 id="customfield6fromparent">CustomField6FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField6 value from the parent folder.</p>
+<h3 id="customfield7fromparent">CustomField7FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField7 value from the parent folder.</p>
+<h3 id="customfield8fromparent">CustomField8FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField8 value from the parent folder.</p>
+<h3 id="customfield9fromparent">CustomField9FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField9 value from the parent folder.</p>
+<h3 id="customfield10fromparent">CustomField10FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField10 value from the parent folder.</p>
+<h3 id="customfield11fromparent">CustomField11FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField11 value from the parent folder.</p>
+<h3 id="customfield12fromparent">CustomField12FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField12 value from the parent folder.</p>
+<h3 id="customfield13fromparent">CustomField13FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField13 value from the parent folder.</p>
+<h3 id="customfield14fromparent">CustomField14FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField14 value from the parent folder.</p>
+<h3 id="customfield15fromparent">CustomField15FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField15 value from the parent folder.</p>
+<h3 id="customfield16fromparent">CustomField16FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField16 value from the parent folder.</p>
+<h3 id="customfield17fromparent">CustomField17FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField17 value from the parent folder.</p>
+<h3 id="customfield18fromparent">CustomField18FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField18 value from the parent folder.</p>
+<h3 id="customfield19fromparent">CustomField19FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField19 value from the parent folder.</p>
+<h3 id="customfield20fromparent">CustomField20FromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the CustomField20 value from the parent folder.</p>
+<h3 id="customfield1">CustomField1</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield2">CustomField2</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield3">CustomField3</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield4">CustomField4</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield5">CustomField5</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield6">CustomField6</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield7">CustomField7</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield8">CustomField8</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield9">CustomField9</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield10">CustomField10</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object.</p>
+<h3 id="customfield11">CustomField11</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield12">CustomField12</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield13">CustomField13</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield14">CustomField14</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield15">CustomField15</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield16">CustomField16</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield17">CustomField17</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield18">CustomField18</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield19">CustomField19</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h3 id="customfield20">CustomField20</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom fields allow you to collect additional information to the object. The content of this custom field will be stored encrypted in your document.</p>
+<h2 id="custom-properties">Custom Properties</h2>
+<h3 id="custompropertiesfromparent">CustomPropertiesFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Custom Properties from the parent folder.</p>
+<h3 id="customproperties">CustomProperties</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Custom properties allow you to collect additional information for an object.</p>
+<h2 id="notes">Notes</h2>
+<h3 id="notesfromparent">NotesFromParent</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Use the Notes value from the parent folder.</p>
+<h3 id="notes-1">Notes</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Store HTML formatted notes to the object.</p>
+<h2 id="changes">Changes</h2>
+<h3 id="created">Created</h3>
+<p>Type: <code>DateTime</code>, Default Value: <code>DateTime.Now</code><br>
+The date and time the object was created.</p>
+<h3 id="createdby">CreatedBy</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The user who initially created the object.</p>
+<h3 id="modified">Modified</h3>
+<p>Type: <code>DateTime</code>, Default Value: <code>DateTime.Now</code><br>
+The last date and time the object was modified.</p>
+<h3 id="modifiedby">ModifiedBy</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The user who last modified the object.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/scripting/objects/options/royalapplicationsetting.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

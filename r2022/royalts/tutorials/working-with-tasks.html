@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Working with Tasks </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Working with Tasks ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_tutorials_tasks">
+<h1 id="working-with-tasks">Working with Tasks</h1>
+
+<p>Royal TS offers powerful task automation using Command Tasks and Key Sequence Tasks.</p>
+<p>A <strong>Command Task</strong> is a definition of a program (executable or batch file), the command line arguments and a working directory. Command Tasks are always executed locally, where Royal TS is running. Using tools like <a href="https://technet.microsoft.com/en-us/sysinternals/bb897553">PsExec</a> you are also able to execute tasks remotely.</p>
+<p>A <strong>Key Sequence Task</strong> can be used to invoke keyboard input in one or more active connections to easily automate command execution.</p>
+<p>By using special replacement tokens you can pass connection specific variables (like $URI$ or $CustomField1$) to the task upon execution.</p>
+<p>See also: <a class="xref" href="../reference/tasks/command.html">Command Task</a> and <a class="xref" href="../reference/tasks/key-sequence.html">Key Sequence Task</a></p>
+<h2 id="create-a-command-task">Create a Command Task</h2>
+<p>In this example, a ping task is created:</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a folder.</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Edit</strong> group, click on <strong>Add</strong>.</li>
+<li>Click on <strong>Command Task</strong> in the drop down menu.</li>
+<li>Type &quot;PING (cont.)&quot; in the <strong>Display Name</strong> box.</li>
+<li>Click the big star-shaped icon at the upper right corner of the properties dialog to mark the object as a favorite command task.</li>
+<li>Check the <strong>No confirmation</strong> required check box.</li>
+<li>Click on <strong>Command</strong>.</li>
+<li>In the <strong>Command</strong> text box, type: %windir%\system32\ping.exe</li>
+<li>In the <strong>Arguments</strong> text box, type: $URI$ -t</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use the fly-out button on the right to display a list of available replacement tokens.</p>
+</div>
+<ol start="10">
+<li>In the <strong>Working Directory</strong> text box, type: %windir%\system32</li>
+<li>To add the Command Task and exit the dialog, click <strong>OK</strong>.</li>
+</ol>
+<h2 id="create-a-key-sequence-task">Create a Key Sequence Task</h2>
+<p>In this example, a task to send a simple command like ls -al is created:</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a folder.</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Edit</strong> group, click on <strong>Add</strong>.</li>
+<li>Click on <strong>Key Sequence Task</strong> in the drop down menu.</li>
+<li>Type &quot;ls -al&quot; in the <strong>Display Name</strong> box.</li>
+<li>Check the big star-shaped icon at the upper right corner of the properties dialog to mark the object as a favorite key sequence task.</li>
+<li>Check the <strong>No confirmation</strong> required check box.</li>
+<li>Click on <strong>Key Sequence</strong>.</li>
+<li>In the text box, type: ls -al</li>
+<li>Click on <strong>Insert</strong> and select <strong>Enter</strong></li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The Insert drop down button provides access to a list of all available replacement tokens and special keys (like Enter, Tab, etc.).</p>
+</div>
+<ol start="10">
+<li>The text box should now read: ls -al{ENTER}</li>
+<li>To add the Key Sequence Task and exit the dialog, click <strong>OK</strong>.</li>
+</ol>
+<h2 id="share-tasks-within-a-team">Share Tasks within a Team</h2>
+<p>To share tasks, create a dedicated shared document containing all shared tasks. If there's already a shared document for connections, you may also use the existing file and add all tasks you want to share. Tasks are available as soon as the document containing the tasks is opened.</p>
+<h2 id="execute-tasks-on-demand">Execute Tasks on Demand</h2>
+<p>By default, tasks are executed when they are double-clicked in the <strong>Navigation</strong> panel as well as in the <strong>Tasks</strong> panel or by executing them using the <strong>Favorite Tasks</strong> menu.</p>
+<p>In this example, the previously created ping task will be executed against a selection in the <strong>Navigation</strong> panel:</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a Remote Desktop connection</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Clipboard and Favorite Tasks</strong> group, click on <strong>Command Tasks</strong></li>
+<li>Click on <strong>PING (cont.)</strong></li>
+</ol>
+<p>This example shows how to execute a task against multiple connections:</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a folder containing multiple Remote Desktop connections</li>
+<li>In the <strong>Dashboard</strong> panel, select two or more Remote Desktop connections</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Clipboard and Favorite Tasks</strong> group, click on <strong>Command Tasks</strong></li>
+<li>Click on <strong>PING (cont.)</strong><br>
+Note that one task is executed for each selected connection.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Key Sequence Tasks can only be executed when active connections are selected. Inactive connections are ignored.</p>
+</div>
+<h2 id="connect-and-disconnect-tasks">Connect and Disconnect Tasks</h2>
+<p>The following example assumes that you already have a Connection and Command Task created:</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a connection.</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Edit</strong> group, click on <strong>Properties</strong>.</li>
+<li>In the connection properties dialog, click <strong>Tasks</strong>.</li>
+<li>In the <strong>Connect Task</strong> tab page, open the <strong>Task</strong> drop down box.</li>
+<li>From the Task drop down list, select the Command Task you want to execute before this connection will be established.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use the <strong>Add</strong> button to create a new <strong>Command Task</strong> and use the <strong>Edit</strong> button to open or change the properties of the selected task.</p>
+</div>
+<ol start="6">
+<li>Optionally configure to wait for the task, only run the task if no other connection of the folder is active or to abort the task if it fails. These settings might be useful for scenarios where you want to establish a VPN connection automatically.</li>
+<li>To apply the changes and exit the dialog, click <strong>OK</strong>.</li>
+</ol>
+<p>The above procedure also applies to <strong>Disconnect Tasks</strong>, which are executed after a session was disconnected.</p>
+<h2 id="execute-key-sequence-tasks-after-connect">Execute Key Sequence Tasks after Connect</h2>
+<p>The following example assumes that you already have a <strong>Connection</strong> and <strong>Key Sequence Task</strong> created:</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a connection.</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Edit</strong> group, click on <strong>Properties</strong>.</li>
+<li>In the connection properties dialog, click <strong>Tasks</strong> and switch to the <strong>Key Sequence</strong> tab page.</li>
+<li>In the Key Sequence tab page, open the <strong>Key Sequence Mode</strong> drop down box and select Use an existing key sequence task.</li>
+<li>From the <strong>Task</strong> drop down list, select the <strong>Key Sequence Task</strong> you want to execute right after the connection is established.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use the <strong>Add</strong> button to create a new <strong>Key Sequence Task</strong> and use the <strong>Edit</strong> button to open or change the properties of the selected task.</p>
+</div>
+<ol start="6">
+<li>To apply the changes and exit the dialog, click <strong>OK</strong>.</li>
+</ol>
+<h2 id="execute-an-ad-hoc-key-sequence">Execute an Ad Hoc Key Sequence</h2>
+<p>The following example assumes that you are working on an active connection or you have selected one or more active connections in the folder dashboard:</p>
+<ol>
+<li>On the <strong>Home</strong> or <strong>Actions</strong> tab, click the <strong>Key Sequence Tasks</strong> drop down button.</li>
+<li>Click on <strong>Ad Hoc Key Sequence</strong>. The Ad Hoc Key Sequence dialog is shown.</li>
+<li>Enter a key sequence to be sent to the selected active connections. Use the <strong>Insert</strong> button and select any special keys or replacement tokens from the connection objects if needed.</li>
+<li>Click <strong>OK</strong> to send the key sequence to all selected active connections.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Check the option Create a key sequence task to preserve the task and save it in one of your documents.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/tutorials/working-with-tasks.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

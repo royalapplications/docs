@@ -1,0 +1,5941 @@
+{
+  "homepages": [],
+  "source_base_path": "/Volumes/Ext_500GB_TB3/Repos/docs/src/r2022",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/ActivityMonitor_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/ActivityMonitor_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/ApplicationDownload_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/ApplicationDownload_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/ApplicationOptions_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/ApplicationOptions_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Credential_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Credential_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/DynamicFolder_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/DynamicFolder_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/GettingStarted/Step1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/GettingStarted/Step2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/GettingStarted/Step3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/GettingStarted/Step4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/GettingStarted/Step5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/GettingStarted/Step6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Logging_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Logging_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/MFA_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/MFA_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/ModuleManagement_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/ModuleManagement_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/PageLicense_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/PageLicense_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/PageSecureGateway_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/PageSecureGateway_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/PageTunnels_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/PageTunnels_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/RoyalDocument_Flat_48x4849.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/RoyalDocument_Flat_48x4849.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/RoyalServer_ApplicationIcon_256x256.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/RoyalServer_ApplicationIcon_256x256.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/RoyalTS_ApplicationIcon_256x256.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/RoyalTS_ApplicationIcon_256x256.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Service_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Service_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tools_48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tools_48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/screenshot_howroyalserverworks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/screenshot_howroyalserverworks.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ActionCommandPalette_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ActionCommandPalette_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ActionContextPalette_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ActionContextPalette_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ActionSaveScreenshot_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ActionSaveScreenshot_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_AddGeneralCustomize_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_AddGeneralCustomize_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ApplicationCrown_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ApplicationCrown_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ApplicationIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ApplicationIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ApplicationLog_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ApplicationLog_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ApplicationOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ApplicationOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ApplicationPanelKeySequence_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ApplicationPanelKeySequence_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ApplicationPanelProperties_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ApplicationPanelProperties_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ApplicationPlugins_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ApplicationPlugins_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_EditCopyToDefault_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_EditCopyToDefault_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_EditSort_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_EditSort_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_FileExport_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_FileExport_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_FileIconRTSZ_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_FileIconRTSZ_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_FileIconTXT_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_FileIconTXT_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_FileImport_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_FileImport_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_FolderClosed_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_FolderClosed_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_GeneralRoyalServer_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_GeneralRoyalServer_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_GeneralTemplate_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_GeneralTemplate_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_Notifications_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_Notifications_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageAutoFill_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageAutoFill_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageCredential_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageCredential_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageCustomFields_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageCustomFields_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageDashboard_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageDashboard_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageDeletedObjects_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageDeletedObjects_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageEncryption_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageEncryption_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageInformation_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageInformation_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageKeyFile_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageKeyFile_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageKeyboard_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageKeyboard_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageLicense_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageLicense_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageLockdown_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageLockdown_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageMouseEvents_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageMouseEvents_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageNavigation_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageNavigation_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageNotes_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageNotes_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageProxy_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageProxy_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageRDSGateway_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageRDSGateway_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageRoyalPasswords_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageRoyalPasswords_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageSecureGateway_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageSecureGateway_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageSecurity_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageSecurity_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageTabScan_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageTabScan_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageTasks_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageTasks_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageTroubleshooting_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageTroubleshooting_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageUserInterface_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageUserInterface_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageUserSpecificSettings_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageUserSpecificSettings_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_PageWindowMode_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_PageWindowMode_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ScriptPaths_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ScriptPaths_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_Script_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_Script_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_TaskKeySequence_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_TaskKeySequence_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ToDo_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ToDo_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Application/SVG_ViewTunnels_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Application/SVG_ViewTunnels_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/Step1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/Step1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/Step2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/Step2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/Step3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/Step3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/connections_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/connections_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/connections_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/connections_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/dashboards_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/dashboards_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/dashboards_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/dashboards_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_07.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_ribbonandbackstage_07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/intro_yourfirstconnection_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_03.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_04.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_05.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_06.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/panelsandtabs_06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/plugins_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/plugins_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/plugins_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/plugins_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/security_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/security_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/GettingStarted/security_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/GettingStarted/security_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/ExternalApp/externalapp_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/ExternalApp/externalapp_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PageSecurity_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PageSecurity_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Proxy_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Proxy_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Tools_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Tools_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/HyperV/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/HyperV/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/HyperV/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/HyperV/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/HyperV/hyperv_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/HyperV/hyperv_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageColors_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageColors_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageCounters_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageCounters_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/Performance/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/Performance/performance_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/Performance/performance_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageColors_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageColors_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PowerShellScript_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/SVG_PowerShellScript_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/PowerShell/powershell_dashboard_02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageHyperV_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageHyperV_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageInput_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageInput_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PagePerformance_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PagePerformance_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageRedirection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageRedirection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageStartProgram_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageStartProgram_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TeamViewer/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TeamViewer/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageColors_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageColors_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageInput_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageInput_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageLogging_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageLogging_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageProxy_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageProxy_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSSHSettings_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSSHSettings_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSerial_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSerial_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageTunnels_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageTunnels_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIconConnection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIconConnection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageInput_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageInput_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageLogging_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageLogging_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageProxy_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageProxy_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSecurity_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSecurity_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSerial_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSerial_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIconConnection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIconConnection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/rebex_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalRebex/rebex_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/TerminalServices/terminalservices_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/TerminalServices/terminalservices_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VMware/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VMware/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VMware/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VMware/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VMware/vmware_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VMware/vmware_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PageInput_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PageInput_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIconConnection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIconConnection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTight/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PageInput_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PageInput_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PluginIconConnection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PluginIconConnection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PageInput_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PageInput_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PluginIconConnection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PluginIconConnection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/VncUltra/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageAutoFill_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageAutoFill_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageCustomContent_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PageCustomContent_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIconConnection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIconConnection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/chrome_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageChrome/chrome_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageAdvanced_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageAdvanced_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageAutoFill_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageAutoFill_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageCustomContent_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageCustomContent_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PluginIconConnection_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PluginIconConnection_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/ie_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WebPageIE/ie_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_ViewFilter_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_ViewFilter_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/windowsevents_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsEvents/windowsevents_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsProcesses/windowsprocesses_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsProcesses/windowsprocesses_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PageDisplayOptions_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PageDisplayOptions_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/SVG_ViewFilter_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/SVG_ViewFilter_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/windowsservices_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Connections/WindowsServices/windowsservices_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/Csv/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/Csv/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/DynamicFolder/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/DynamicFolder/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/KeePass/SVG_FileIconKeePass_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/KeePass/SVG_FileIconKeePass_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/LastPass/SVG_LastPass_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/LastPass/SVG_LastPass_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/MsRdcm/SVG_FileIconRDCM_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/MsRdcm/SVG_FileIconRDCM_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/RemoteDesktopManager/SVG_FileIconRDM_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/RemoteDesktopManager/SVG_FileIconRDM_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/RoyalTSLegacy/SVG_FileIconRTSX_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/RoyalTSLegacy/SVG_FileIconRTSX_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Import/mRemote/SVG_FileIconmRemote_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Import/mRemote/SVG_FileIconmRemote_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PageCommand_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PageCommand_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Tasks/CommandTask/commandtask_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Tasks/CommandTask/commandtask_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PageKeySequenceTask_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PageKeySequenceTask_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PluginIcon_32.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Tasks/KeySequenceTask/SVG_PluginIcon_32.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTS/Plugins/Tasks/KeySequenceTask/keysequencetask_dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTS/Plugins/Tasks/KeySequenceTask/keysequencetask_dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTSX/GettingStarted/screenshot_connections_light.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTSX/GettingStarted/screenshot_connections_light.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTSX/GettingStarted/screenshot_documents_light.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTSX/GettingStarted/screenshot_documents_light.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalTSX/GettingStarted/screenshot_plugins_light.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalTSX/GettingStarted/screenshot_plugins_light.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_2-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_2-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Scripting/rJSON/Screenshot_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Scripting/rJSON/Screenshot_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/toc.yml",
+      "output": {
+        "resource": {
+          "relative_path": "images/toc.yml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "QCI929L82OXme31xCgITwWBMXeSBMk/+3m56G+wfspw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "missing.md",
+      "output": {
+        ".html": {
+          "relative_path": "missing.html",
+          "hash": "m3ayjPd5K3MWBAv1MWyQVQp6BAvvzw4Ju7wG9WFlYWY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/_shared/module-protocols.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/_shared/module-protocols.html",
+          "hash": "Esl7+NQ27zYDTe4dyQOrwL0J2Xp/FvTMms+cCsB2ZXk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/application-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/application-settings.html",
+          "hash": "DIRUcio1P19CD+WfxpL7Ymqe0T4T0xDbeEtS5VFCsOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/backup.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/backup.html",
+          "hash": "8vtN60D8uYGmS6v0I0Rwo4sx7A8war4DJ7/qeiFrJCY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/index.html",
+          "hash": "6BgPS8qiGxOcHuMCenL8PXP/S6Dl3dSNo7hT24mdshc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/management-scripts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/management-scripts/index.html",
+          "hash": "eAKkeGHMbsJ2VYAyf/ULI/BJi3taExrAh9YUgmDea4s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/management-scripts/pepare-managed-server.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/management-scripts/pepare-managed-server.html",
+          "hash": "i2D/41HYK40vD8VCwt8zhB3P/a+RP6HJaqNZq6pKfJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/management-scripts/uninstall.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/management-scripts/uninstall.html",
+          "hash": "A8T+uJXD8FJzep2VuvpJYGpDPozC4t5ieY/L/5697NE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/performance-counters.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/performance-counters.html",
+          "hash": "J5F/F6f5Zl6CL9VXyNQupuMHoyA25anHNWBtisBq+YM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/trace-flags.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/trace-flags.html",
+          "hash": "OWCDCqGMH9hcTdQQPRb8+4NJjZIwgp4m4frzVB01afA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/document-store/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/document-store/configuration.html",
+          "hash": "LAMFiLlnFLiM4a7J3SoK63Nxz7IQPqGeIougVZurxQI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/document-store/documents.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/document-store/documents.html",
+          "hash": "GSByUL7VNh9ErgVbg3Mw/B0wneEdM/n91ptlDyXhBh8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/document-store/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/document-store/index.html",
+          "hash": "q5HhbrDtP5Qvn0nS7wKLZxyfzQ8Nu+zQF5AhsPwAueU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/document-store/permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/document-store/permissions.html",
+          "hash": "uMkQXPcyCIGGsSOXS5IYCODGe6HOKUM1qEYYrNCKFQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/index.html",
+          "hash": "uGzSdRsGkung2WQKrX32T4VN/vR94NQmeGh2qkg7ebI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/management-endpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/management-endpoint.html",
+          "hash": "RjbZZjQlCiEwmIsBATyEI4ju5qstlN5dWuyVcP9ErjE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/secure-gateway/gateway-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/secure-gateway/gateway-configuration.html",
+          "hash": "F0I90CvEsjTlrfHakmKQDmi+rpaKeSh379jJUgGUy8U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/secure-gateway/gateway-connections.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/secure-gateway/gateway-connections.html",
+          "hash": "SWzmalAPfzOfjgORYD2VPiaPBTEUMgQzIzOcOZz23Ic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/secure-gateway/gateway-security-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/secure-gateway/gateway-security-configuration.html",
+          "hash": "e4KayAyK0o7vZZxNVecGsh5SJYQFapMoX2gwl83C41w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/secure-gateway/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/secure-gateway/index.html",
+          "hash": "6yB0mbukvSScPsgzDXXb/LUSxbJgj6Ym+9uoB8Z+bxI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/components/secure-gateway/permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/components/secure-gateway/permissions.html",
+          "hash": "gnPnvr7dJvn6yGqdNwhDwAqDl7rEKvtYiooux2RVjgw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/index.html",
+          "hash": "Pn7YBnDzB+hY58BwMfIJxtAJZWfC2qmSIXJrj0bpZSU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/configuration.html",
+          "hash": "R2VwGT3b1WWkscJ8PtAOU/m9XTbu6kx2wj7I5uxOgAI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/how-is-royal-server-working.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/how-is-royal-server-working.html",
+          "hash": "fTUK/KmneHccHmZ7xTyrq1cTNnIGZK5+LvmgTznBXAQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/index.html",
+          "hash": "twQWcHC+PP8Lu/sXyfXjIbQVEWF/3tZgafABwV/jKx4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/installation.html",
+          "hash": "Yop4XwlmMR2i6SH1+hv9VYJTpax/jCLrmZxbJIsFlTw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/release-notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/release-notes.html",
+          "hash": "mtTlWBIUJPMGb/Ib3JcLkMYnOHInllobIkK8ED2owhQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/royal-tsx-management-connection.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/royal-tsx-management-connection.html",
+          "hash": "y06xxjIwmUvUXmwT4xRKjpsXUhEz4RLS2todf350vMs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/what-are-royal-server-components.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/what-are-royal-server-components.html",
+          "hash": "U9yItV9H06cRP9Ps+Mla7j28B3bOY8YCw7QmRGsEUbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/what-is-royal-server.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/what-is-royal-server.html",
+          "hash": "nnAvlM/jIVApe7RW0jPq8xmdfbXrSSy2ASEqGAzxjsU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/introduction/what-is-royal-ts.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/introduction/what-is-royal-ts.html",
+          "hash": "FRUaDSxh8GEcIxuC2SGwi+gXKBCj2jnWUv5xtUAj34k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/license/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/license/index.html",
+          "hash": "PzHzAleZXYhvnl6+XpIW+wvAinUTV1HoEJbXzeuOcgw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/license/installed-licenses.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/license/installed-licenses.html",
+          "hash": "RjfyXZ36NqOxJ8L/SsX/4ssII4e+nGApoU1KTEZg26A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/licensing.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/licensing.html",
+          "hash": "ZVP9wS2EWj+wH+lkVHyw/9NG0aqQUfX10aMBWl9/zVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/dynamic-folder.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/dynamic-folder.html",
+          "hash": "cPuJMwhC/UG4K6RV3Gpv9/s43nL9832OB/1hIT4fzek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/general-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/general-configuration.html",
+          "hash": "P/S8fFffAeLjlFSG3t780n+vaxKkvzL8pM8vcLv9LYI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/health.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/health.html",
+          "hash": "K2HKn38kZ/9pn1md5HRCpUkkMCWuDFSP615Wd/HdAqE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/index.html",
+          "hash": "LvNH/rWvUPNflN6qMIhqpfkAz7rPrSs5UQu7xqbOC6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/logging.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/logging.html",
+          "hash": "LLtMLznkCubi26UorWPlp+XiCH/Tlm0eAd9DHisKBQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/modules.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/modules.html",
+          "hash": "LOuGvoeDWz9lb5nKjDNebuJZUtYfbhyyL/p3wz94wHA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/multi-factor-authentication/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/multi-factor-authentication/index.html",
+          "hash": "hYjjiap41FmCZZXAyiFXx08T/YR6IwAUmptCdgYQV1E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/multi-factor-authentication/provider/duo.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/multi-factor-authentication/provider/duo.html",
+          "hash": "mywkpxfvcyKjwgNifUI9/A62eHpqHtETnK75xCe4O4I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/multi-factor-authentication/provider/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/multi-factor-authentication/provider/index.html",
+          "hash": "5JnpmvEm9HYcusnOV0YXjnIEDO689+Os0+/tH1EtPt4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/multi-factor-authentication/provider/totp.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/multi-factor-authentication/provider/totp.html",
+          "hash": "4S8aI2GqRnxZ3dQT2VVbAY38KinlTeKCRLvVFb0i3NQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/overview.html",
+          "hash": "u3LscIaYEGr15FaDCHp+jR0KsZtXdGwCWqE+fbSvBAY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/permissions.html",
+          "hash": "reg2zf1CLbJESaadVTf8/TzC7KT2+PLrkcZhbf9JgQY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/security-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/security-configuration.html",
+          "hash": "ovx1HBJL9iHHVtnl8GaPtro7WLXRcr0ykTWCPn7qZho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/service-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/service-configuration.html",
+          "hash": "3TLaEBCGYrLjTxpFWShTgFLmckCtoRysk21FUhqyqDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/management/update-checks.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/management/update-checks.html",
+          "hash": "gN5dQMQmIAYl4qg3v9v1GfkX3yc7YeiUsLbuDyHWAVA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/document-store.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/document-store.html",
+          "hash": "Ud/Y3jlxM6yCt2XnS/9WbvIfZZJL+xKVTumTMv4t8Uw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/hyper-v-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/hyper-v-module.html",
+          "hash": "XDVu4KL8uJaZ5LwN8tCJsgbFJg7rgKHfbeJfLAE3ETw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/index.html",
+          "hash": "7mnxV0Ko/Qq4O+XeozDxlVe8G8EKeElrH8k8z1+3Kos="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/royal-server-management.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/royal-server-management.html",
+          "hash": "a7qtIj+6HpgiEertU9akXi4Xd/diMYmJi1+qAzDyMq0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/script-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/script-module.html",
+          "hash": "EpOiPH5NWec2XvbPiff9Zl9tLN6gLUioui5hZci6sEg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/terminal-services-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/terminal-services-module.html",
+          "hash": "30UV8OaEqKhj8y83PY2QfkWY8S2ExDXPYL5BPzP8u7U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/vmware-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/vmware-module.html",
+          "hash": "mpxX4UVOr3GE+kK1P1hA/REwc5FU9boi3ustt486oic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/windows-events-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/windows-events-module.html",
+          "hash": "5i9qh+jm/ym/4zcD1qrnvhkaIAj6I3SHzDHZ4XOhRIo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/windows-processes-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/windows-processes-module.html",
+          "hash": "Rj4uylIEIMqFE0/FMr52XaX+ExwrmSvgpHVfarhLbg8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/modules/windows-services-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/modules/windows-services-module.html",
+          "hash": "m4DjEMxjDDNeEK62GcQcErhEVMpv5ErHHIlWl6RWmCM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/royal-server-homepage.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/royal-server-homepage.html",
+          "hash": "9EQ15RSd7sKsvQxCuw6snbluZjuhgyTNP1lSII+1erw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/royal-server-system-requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/royal-server-system-requirements.html",
+          "hash": "b0knq7SaBqk28+/DmSTCd/p7I1Omm4uRNP9qwr3hMFQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/getting-started.html",
+          "hash": "dOGL+XzgpcXu+drSoEHoCkKGzN+hwngSarhnJMQp2A0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/index.html",
+          "hash": "AFr9jrl+vLPH0w8tWzWHBLrXsjzJ+qZ0C9E0M/3SoyA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/module-reference/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/module-reference/index.html",
+          "hash": "CQIYh9Z8D3lwZplJiQ9mlVT9zy7SuMnNmPItriB/qWI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/module-reference/module-document-store.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/module-reference/module-document-store.html",
+          "hash": "AGzZKhmQ3Hkv2iXisy9qtyiRtwmx0hcAf5b5IRXdHmk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/module-reference/module-hyper-v.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/module-reference/module-hyper-v.html",
+          "hash": "2PNkqFfNkbo1mjMBYImlC6uXCCG6mqcRMCX9kDXwfQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/module-reference/module-script.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/module-reference/module-script.html",
+          "hash": "VAzIs/m+lIkWdDz+HuLlB155/XFf5RcePGUrUZjARNU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/module-reference/module-windows-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/module-reference/module-windows-events.html",
+          "hash": "dVEW5R2rZS5cxBFqZCA/rX2NpPRZBixsIONrS7i7BqY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/module-reference/module-windows-processes.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/module-reference/module-windows-processes.html",
+          "hash": "49kF81oMH6SjB0zoBGAXzMD6U/hbkvgld6mMvDcOtco="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodule.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodule.html",
+          "hash": "L5JGq9R0XYbx14jxYPI9ZFL9NEqjL5J4wRuO18B9LrE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodulecommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodulecommand.html",
+          "hash": "SHKpw4xz1oQUnENpX5STWgWc/Car4TNgiPER2VPpn/I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodulecommandparameter.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/powershell-commandlets/get-royalservermodulecommandparameter.html",
+          "hash": "a0StSSflW7sx1Fzp5a66LeeU8I7INp267MYDpcrCAsg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/powershell-commandlets/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/powershell-commandlets/index.html",
+          "hash": "4zpkNKnz+o7aybX3rABMFaPsIQXTXgQPhZSAP6r5C0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/powershell-commandlets/invoke-royalservercommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/powershell-commandlets/invoke-royalservercommand.html",
+          "hash": "LtimSxPFe3ynhCOcd27blX5ncZugypC1yKI/RhkDuHE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/scripting/powershell-commandlets/new-royalserverconfig.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/scripting/powershell-commandlets/new-royalserverconfig.html",
+          "hash": "c66+eoAEEzF/vUY4n2qGToZSpIUVf3T2uGiDXLwdVYQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "royalserver/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/toc.html",
+          "hash": "wOrolFRWDVE7A88fHLU6svHJYO5+7uCf4mEn0v1qDkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/activeplugin.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/activeplugin.html",
+          "hash": "nNUdWaBiKvFFB6PG4ELslph0kb4c3WRyg+CH95UuIrE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/autofill.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/autofill.html",
+          "hash": "obM6ndLZiuuqeB9X2gV7ehJVXoTBEVo4fcolNHXTDYw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/computername-gw.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/computername-gw.html",
+          "hash": "rgRx/YACP+XQWGaHYjWptAM2q2jHTGrAzTmOcEo/7vE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/computername.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/computername.html",
+          "hash": "z6Eaui5lfW4msW+OCakvKo2NXSp60uoskgfSyyusXBY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/credentialmodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/credentialmodes.html",
+          "hash": "nXLP/buBUa2Xx5FABE/J4lsh9/EPZpIoMNakJ/mIys4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/credentials.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/credentials.html",
+          "hash": "fEDw1vUYK6dP0e/8trw3dcM4MD60yb7w7cq/WcOku3Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/customfields.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/customfields.html",
+          "hash": "qaQ45zdb7afJ1SnX9naQsaKLnFHHWCWDZKWB2zxONjA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/customproperties.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/customproperties.html",
+          "hash": "bk/36/eNewlxXzegpXPZhinvyMotE/sdcuAIZ4VTzrU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/dashboard.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/dashboard.html",
+          "hash": "Klu/lJM4WjBcsZar6INuczxoQ4DJqxNhVXtuIX2CFzw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/description.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/description.html",
+          "hash": "lfLdC+YmlwcgNN2c2OneNp72p5kkI9rip703bg+73Kw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/displayname.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/displayname.html",
+          "hash": "PzZLjnGP8nzVppSgplkXuw+EoCRBdxFjW+peHGuMolc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/inheritance-apply.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/inheritance-apply.html",
+          "hash": "Z7Fz/NrtPk7XfvxHEVjSQv03pFTns6dyUepIAqSTAYI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/inheritance-editsource.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/inheritance-editsource.html",
+          "hash": "dKHF21nzDsOQHsbSJvTvPkV4kKvBM7/L8Ys7n+u0ITw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/macaddress.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/macaddress.html",
+          "hash": "6IG8GnQgeJYLqCn7fbdIRGnnHD6QkbqsmOT5/+n+Mvw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/notes.html",
+          "hash": "wrWo/YnOKvwbzj7TTA4NVZuPhLaUrM5gMZxqI9QlRlk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/parentfolder-connection-warning.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/parentfolder-connection-warning.html",
+          "hash": "x/vr2uKSQaFw7Goc7ABofuIPX+aPnWg+IQsH7M1IYbg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/parentfolder.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/parentfolder.html",
+          "hash": "6YrhTd9lKvZ5/OoWiOu6TeFPeiqvfMfLF0W7je9B4mA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/rdgateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/rdgateway.html",
+          "hash": "N09NK9fC+jJvVunDWHAjVRF8YflpyWvdaQWLIILxgEc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/rebexciphers.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/rebexciphers.html",
+          "hash": "nZB9V52UZukrroHyPp6S5EXVDIadWeu9Cz3yExZA2KE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/royalserver.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/royalserver.html",
+          "hash": "IvXemt8LhoagqPdJ4uR3rUGmS/tjpXedUt4IuJ1Oo+U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/royalserversupport.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/royalserversupport.html",
+          "hash": "ZgVunN2JhZLzwk8/h9YI1T9cpm+7ag1lDlA6MXJDAAM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/securegateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/securegateway.html",
+          "hash": "wfBiwb7zdRGylwbdkMlgiNCURBGU83wsLXzDJJr6mOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/tasks.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/tasks.html",
+          "hash": "+T8fy/ER6smTLRks0lSnVWbskdLLLe15vk/eWii3nEo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/terminalpalette.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/terminalpalette.html",
+          "hash": "DzpwycWHqZzv3DHi33/RCQGq9jHvd0YsUymrd3r1hQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/windowmode.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/windowmode.html",
+          "hash": "oAG5GCfsOj5f3v0mGfOuXzihaHw3TmrF9cnTebBKVlk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/appsettings.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/appsettings.html",
+          "hash": "3m8S7pIEO2pf3tilyHZWTQcFVvohP+WvieHnFKAfw14="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/cli.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/cli.html",
+          "hash": "NNTO3mqMohJ+m7gz/4NCaPFJr249li/Xex5t13Ap+r4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/default-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/default-settings.html",
+          "hash": "Xt5PqDFZm4Nsp4r4X9mbRVWYQCKh6U7DzbA6k+1XwTo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/export.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/export.html",
+          "hash": "si/pJy3HkJxWhQtd6NTCfKgFk/L1GvdtlhFotMv/k4E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/import.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/import.html",
+          "hash": "EnBmhqgr5b4krkTq6inoguE6G6Fv/TD4FRIKXiNhIQA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/index.html",
+          "hash": "mjVUNfkeQlc3VBqZobF9cisXtJ9xN/2ps/jnXB2aYAo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/tokens.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/tokens.html",
+          "hash": "wIBEj45G+hktMHTAr86rVL6brmQ8PoecRJpAWKwFDa0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/advanced/uri.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/advanced/uri.html",
+          "hash": "xwpI+7ofm3SXAP7er0zPPMD5Lc4fxYdxTCWWEOFz/6I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/connections.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/connections.html",
+          "hash": "WIBvXDOeMLqijIJr1Luhw1xflscUF8rBP+6GT+y6ITw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/dashboards.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/dashboards.html",
+          "hash": "FugCfsaa0+IVnb6C32eIQrg3LIvus3HVL9rJT1bmOgU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/documents-and-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/documents-and-files.html",
+          "hash": "TO2zDRzhPykg7Z/rsllZ9I0wJkQtHTMwWn+RocSfaQk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/index.html",
+          "hash": "ONI6tkSoYOGzARBvyVj6ybcjWjpal7SawkHvQuKMaJs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/panels-and-tabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/panels-and-tabs.html",
+          "hash": "/pIEhIeIk8uP/xrWcMBHL4emQmLDTQ+dwNJIIiFVMWc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/plugins.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/plugins.html",
+          "hash": "3MVk+L/lU6iht8EPP84ZBOUjsdDrBaBqO7DzjJU9Oos="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/ribbon-and-backstage.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/ribbon-and-backstage.html",
+          "hash": "dE+5qywIDB+nEof8r2yI9kIxpJWcNDxYR5SXzQEwrn0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/security.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/security.html",
+          "hash": "8YN2GTxCwxSC2MSB9pvCnbKlt6ELcVOlg772lM601+g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/getting-started/your-first-connection.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/getting-started/your-first-connection.html",
+          "hash": "MlthwBJMtUfyjZYY2xnj5rSwb1+ySHGdLFJhLJ3obKw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/introduction/faqs.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/introduction/faqs.html",
+          "hash": "MdPEbvnPb254CiqcdPwq5/U6EU+IEYHGp/EDFsXQpp4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/introduction/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/introduction/index.html",
+          "hash": "DHd+WO0kdPlQwKlQTl47i25gxJ/p/2K59PsHEXbNisY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/introduction/introducing-royal-server.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/introduction/introducing-royal-server.html",
+          "hash": "y5bZRnkziyG/5agQJ9BvubNUOqQUrGg54b1jp2RSHxI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/introduction/license-agreement.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/introduction/license-agreement.html",
+          "hash": "F51C7GamwFg4A9M0ZgWUDDXXCMqcOjI2P8NgS5qCIZ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/introduction/system-requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/introduction/system-requirements.html",
+          "hash": "UWrCnyqthjVWyg3RN/ZHhoyMYgtE8cyjPLb2pLj7PN8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/introduction/what-is-royal-ts.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/introduction/what-is-royal-ts.html",
+          "hash": "n58rHjm2XmaWjzHXTK4lUtrawVNjWuvWeFsbXKZLwPA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/external-app.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/external-app.html",
+          "hash": "5Jochglaz6mHShGxwgHi5TmJa/rKeZhDJVt+vb/yzFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/filetransfer.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/filetransfer.html",
+          "hash": "aeZLL6ViwS0mbPI21It4+vkvbEm5myyl7ZOm3yhaV64="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/hyper-v.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/hyper-v.html",
+          "hash": "NVpMAdbkC33Mqls+ren3hK4/2NYCxgEVVxtVJ1cGeTM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/index.html",
+          "hash": "y9wAeghUB2lMV69FlbZ+QXxeJsdB/SP+JTTbeWd2N78="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/perf-view.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/perf-view.html",
+          "hash": "DazMMMHcz21JDWjJz5KOVrsasfdWH0VEH8XNsOeF26g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/powershell.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/powershell.html",
+          "hash": "Qm1ohhwn+PJ1X6FoIaLzs6wXHoiMvCKoEv4cqCEbICM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/rdp.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/rdp.html",
+          "hash": "ojYA6T3L10ofiwkLdUzksd75bIWSbZBfug5htr+R5q0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/teamviewer.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/teamviewer.html",
+          "hash": "KSEHGO4skv4CN3oxPLSIa4Ge/PW3GFQ6QgYS2n7VSWI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/terminal-putty.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/terminal-putty.html",
+          "hash": "S8kfCrZQgCoXtOAdBcGKQDLlUKaDrkMr2kb1IAc0jdk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/terminal-rebex.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/terminal-rebex.html",
+          "hash": "PQYO2Wxe3KFIfEkVCZ+hQfzFDSPxRbh4KdXZRCNRCvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/terminal-services.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/terminal-services.html",
+          "hash": "Zq+Wrhvi5WBTrDn/8qITUH/SaV0bnxXrYkzGnrk8JWs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/vmware.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/vmware.html",
+          "hash": "O/92a+cXrGHV3ekdoefMt6Dev51Y/atMC1CIQqCgbjc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/vnc-tight.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/vnc-tight.html",
+          "hash": "V0gZ+NhaqKiAUO1QmxIHbZy8S4BDhXgLitI1I6kpNak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/vnc-ultra.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/vnc-ultra.html",
+          "hash": "NGpjS2JX3Hgl5JuQj4ObMQ1S91X6dXkeTLn8WgXVTb4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/vnc.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/vnc.html",
+          "hash": "imBSVkO55Ll0pzd9kKIk7FIpjgEm9bBIxP8RgTgG0bc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/web-page-chrome.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/web-page-chrome.html",
+          "hash": "ngcDJ4I14dh5o5jWUMha35RA/hbKygGvKNgY7R47gmg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/web-page-ie.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/web-page-ie.html",
+          "hash": "u4mVv7e57T77JFuDIHo1ZQFO2END4eT1RdGKnaZsMEo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/windows-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/windows-events.html",
+          "hash": "dq6+ngiVrBWWVHEEx8BVe/upaiz9d2/ULxolDGgUiG4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/windows-processes.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/windows-processes.html",
+          "hash": "kJ38MKNh8zZtuAMXp6ywuVKAo9gnDZaMYhA7QcDUCMg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/connections/windows-services.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/connections/windows-services.html",
+          "hash": "Sd3bh1Ia/Y2q7L3HmqYMp9yF5ghS6sm4Jn1Dq1EmCaM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/gateways/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/gateways/index.html",
+          "hash": "8BorkojaaPcxsCDUzSSGiR/hj+Rm+aDxvSp07jTkfzo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/gateways/rdpgateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/gateways/rdpgateway.html",
+          "hash": "Aw+kt8WcQ8WA/5uhf2FRqfAmVjFW5F6l94siTJMuAdI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/gateways/royalserver.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/gateways/royalserver.html",
+          "hash": "W6IdYc85TXuWxzDVb7R2PWJgd3CivVSfLK8mlZ7yAbo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/gateways/securegateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/gateways/securegateway.html",
+          "hash": "bq9wCvyKee6BTAT8E6NLHsfO3Y2rNsz88YeXMb5vLJg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/index.html",
+          "hash": "ufr3uJJA7zqnOTuLDta7QMfGNqZ6jbMYPWQA8Gyhjik="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/options.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/options.html",
+          "hash": "mMyjdisJdC4aw/C/9FWXfCOyBQq8ooRALJuDoBcy6bM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/organization/credential.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/organization/credential.html",
+          "hash": "VMb7cKiICjDJ1mvCQEqALBSVxstx9YXzmb5+FQgbgN4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/organization/document.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/organization/document.html",
+          "hash": "6zXGlcnUQ/8kbbX0wp9kTyBw1WMVSQ1tVhxz8iqTjhw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/organization/dynamic-folder.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/organization/dynamic-folder.html",
+          "hash": "5LS97rz2rqFMYhuuaulgykBFXsBBm0YOgKSiSYXmM0g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/organization/folder.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/organization/folder.html",
+          "hash": "cpx7+tfX/X2VhBcR76TXHANddoBKMHvTsqVbEqpjZ4k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/organization/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/organization/index.html",
+          "hash": "QL7ksBFMsrlod3GVZZQ8MGKs872mrQhJ/SGzxOon54c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/organization/information.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/organization/information.html",
+          "hash": "jJWD6s3HBaUopRGfs8ZPS9BT4b/bDI3yvCm5Dv9K0UI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/organization/todo-item.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/organization/todo-item.html",
+          "hash": "As68q/tXKnuGmRjJvYA4HonawmZYeenK/P5pt3NsvzU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/tasks/adhoc-key-sequence.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/tasks/adhoc-key-sequence.html",
+          "hash": "HwdGaErPvvHBcZhoF+WoStMgoZYGSdt0WbeTBFegv/A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/tasks/command.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/tasks/command.html",
+          "hash": "r98HBNxruLhLoxNuvlcL7Wlx+GlXaZtuXA9GnMaqj8U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/tasks/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/tasks/index.html",
+          "hash": "Nt85lmURhkVMQtrpn2oedIIUP/zqPN7UcuiJIQbikzE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/reference/tasks/key-sequence.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/reference/tasks/key-sequence.html",
+          "hash": "SOqO2d+JRhYEjt3HU1kgixk+yogwPmKMX3bu5X7MAbE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "royalts/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/toc.html",
+          "hash": "fUgZQToV5q6DnozJ3PSd/OkmF0grPkTjJ65n7dc6lzU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/bulk-operations.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/bulk-operations.html",
+          "hash": "TgFl1OVmwbHjG7WPjeSqEFuwT/dPlMLNE0ASsWpy67s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/index.html",
+          "hash": "SAaHPkRNrtXEv54jYi6TGvcqU99PXXg2ZAk9Fv/a6ls="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/more.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/more.html",
+          "hash": "uwyPhWHJjOKMX4EIehsrFynjsmabs4sfIImc0ffqb6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-adhoc.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-adhoc.html",
+          "hash": "OtQ6MYWTayNocwEfZdQSrtU96d+nLB5JfjTG33968EE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-connections.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-connections.html",
+          "hash": "JnAmPaiNxXjbGgCq6Z8y1a7dxFwPx2NcJ/MNEq4Jn60="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-credentials.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-credentials.html",
+          "hash": "PRswSRKbiTJ/Zabj0Bb7fLZtINtuZ8S+SHQa6om1kRc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-documents.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-documents.html",
+          "hash": "H0IVAAMNrQc4ssqHMBAaMB8F0XHfPoRiDNRXH9thsZI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-lockdown-documents.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-lockdown-documents.html",
+          "hash": "tja0PHSSvwhfyVE/uLbBefHsL16UdH5kNqTft0vM/wk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-overrides.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-overrides.html",
+          "hash": "mhdg9ku0RlkZql1c3ScUkvtqYJlwyDh55xaIHxW4Swk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-tasks.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-tasks.html",
+          "hash": "jl3xXkr3vQSXO8kvUb83dx1ZUwJfZjr4jcwhb1Jyw9g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-templates.html",
+          "hash": "3U3Zcl87av81RfGnYc+E/SELF83NS8yZRmqUUx1RkDI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/tutorials/working-with-todo.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/tutorials/working-with-todo.html",
+          "hash": "10XqbPnRz32tTP+VBKW46AbYOhCZuzz8H8Mm9AkK2Uc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/user-interface/color-palettes.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/user-interface/color-palettes.html",
+          "hash": "wEHR3GGk/asOE2CAvTTgA/yddVjjpwMzAzz+Ch67dYQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/user-interface/commands.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/user-interface/commands.html",
+          "hash": "0LkcVmXqaDislf+4bOAo1QpysfjSUn8ebxmVVcELdlM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/user-interface/dashboards.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/user-interface/dashboards.html",
+          "hash": "5igX+wZfIK1KRJWmmAbo/11GNav96XithsSyiT2E4JU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/user-interface/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/user-interface/index.html",
+          "hash": "/AtmD3RL/HKvbwW3TVBLSegluakmk0UsSAo/JxI1N1w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalts/user-interface/panels.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/user-interface/panels.html",
+          "hash": "0DjP0QAAPUkPtN+uodHo3ORQHq44kaZiwY+ssvhIiMY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/applescript.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/applescript.html",
+          "hash": "DilFil9c6mXGabmX8+VPu25tFJpiBapoa04vg6/gPXY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Close-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Close-RoyalDocument.html",
+          "hash": "GwjwBRhdDTc5NAIVBT9eOgqQHqntss8RHkXnsyPD4Do="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Close-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Close-RoyalServerDocument.html",
+          "hash": "fsxceQias7VtB18FAcT3LQWRGIl+g0zMyZ0CgMr97+w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Copy-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Copy-RoyalObject.html",
+          "hash": "VlMlbKDa1OInM+r5Zco9rlpk1/0jSIs9q+eIz0uFGDE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Get-RoyalDocumentType.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Get-RoyalDocumentType.html",
+          "hash": "8uPDukSIthrAdHEw5n1Jx4quu0QDeH8PJudGoe/bBCA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Get-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Get-RoyalObject.html",
+          "hash": "LRBZmB0gTZ9UQxL3JfF3fm+rZYb4b4M4eTqzjErzl0s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Get-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Get-RoyalObjectCustomProperty.html",
+          "hash": "tf6nX4sfFf7j6LpCOQXCTprz95gyI9ZmQoBMlHnUHXg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Get-RoyalObjectValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Get-RoyalObjectValue.html",
+          "hash": "gHXjtMvjByakZE96G+pZQO3b2S847yOJY2vG5YcQTB8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Get-RoyalPropertyHelp.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Get-RoyalPropertyHelp.html",
+          "hash": "Ugrx4sNUIIWyuL8KtTcALLRByUVumLWoTEf4VecKEJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Get-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Get-RoyalServerDocument.html",
+          "hash": "TYoZcDVEw0xrxK1EfCCoG3VjE3Bq740F2LAyckYYh+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Move-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Move-RoyalObject.html",
+          "hash": "icvv6WeorNSMldzG9VR7mjdlps1DmDP9AH+sGba07IA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/New-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/New-RoyalDocument.html",
+          "hash": "j2fcdNKQa9BqeG2XmXQKaLUiTIl6+KTqxpr8YPIQrUY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/New-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/New-RoyalObject.html",
+          "hash": "GFCC0KFLX694BqMFpTNFnBZlzaisoXBD3I8QSG4+ews="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/New-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/New-RoyalObjectCustomProperty.html",
+          "hash": "x4Kz7sj/yc/NdoVzoKh37atT1BcbO6tvXv5ay6TKw60="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/New-RoyalStore.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/New-RoyalStore.html",
+          "hash": "FyHyeS5xEHHMDASss44c9tZnQ3EgTJgFsTf6meMEIh0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Open-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Open-RoyalDocument.html",
+          "hash": "fQAArK4SLfhR9mMZ8ZHacW/BRoq3g97i2sWb/BU9wYo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Open-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Open-RoyalServerDocument.html",
+          "hash": "o2SZXhEdswFFecNpQZg32zhYN1BlKaOl0ah2oZNKYcg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Out-RoyalDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Out-RoyalDocument.html",
+          "hash": "v/kRLSu90iHo9zdg5pz0nTy0tO1drNdyJPz5cuVn2kU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Out-RoyalServerDocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Out-RoyalServerDocument.html",
+          "hash": "77dIoE62+LaDi/L2nS0bp5hq+5lULWwr/len7YsjoXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Remove-RoyalObject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Remove-RoyalObject.html",
+          "hash": "OrqarL6iZnIB3t2fjurqk0TPO1r6TrCuGl5Ddk7V+Dw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html",
+          "hash": "ijOGwEMphBWaTH/ZJgJ1DcPuFj8utGTA8eAumEhuZ2s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html",
+          "hash": "sNQVuCz91u1YOn0a0GQWxovbXmeNz981VGrJhYPrXYs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Set-RoyalDocumentType.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Set-RoyalDocumentType.html",
+          "hash": "TWm7eL6Bt5oreGtlwZYMzZEAiMr5bMPyI3ZzcU7//PI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html",
+          "hash": "/vvzx67a47f3WlVXmB0WHcrWM4rBT2cAFdHEWFtHJs4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html",
+          "hash": "p+nAwBW2NE4yKsOyi46aEmgNjKj3XwNgbX664vyna18="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Set-RoyalObjectValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Set-RoyalObjectValue.html",
+          "hash": "DFe9QM4HmbxwMbmgTEdC8ovHspK2TfGseqEJ8f0XaAY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/Set-RoyalSortOrder.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/Set-RoyalSortOrder.html",
+          "hash": "G3FHNGD8FsSm9lcKUb6jt8zxIYFQXem+I9DAUKuf0CQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/about_RoyalDocument.PowerShell.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/about_RoyalDocument.PowerShell.html",
+          "hash": "6UrymTcYeNM2+mEVWnNRsYtTJ/IKBwNKxR/8ez7AM60="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/cmdlet-reference/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/cmdlet-reference/index.html",
+          "hash": "fBD8fDrve0oNeCCjk4mbCfgXO6PODdbtG43XUr2PQYs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/index.html",
+          "hash": "tq4Y+Rn1mtVgrE8yxfdTu5cxUd2PPTH/nPhwM8GGgM4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/_shared/create-store.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/_shared/create-store.html",
+          "hash": "j5lIwyRMnPmOpwZVU/HjTkaHa6rPOXozUK2tIg3dnwI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/_shared/royal-store-close-note.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/_shared/royal-store-close-note.html",
+          "hash": "p7lTmXdTZdG5kuymqh3pCUPiH7dAy8xxDDC3MpbfNSo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/_shared/royal-store-referencde-note.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/_shared/royal-store-referencde-note.html",
+          "hash": "SAwGbTadqQEmg6CJeSXuaLYwT+QTPTmT8oHBNGo5tPo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/create-connection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/create-connection.html",
+          "hash": "leGgxHTjhUVYjSWr6av5HD1aSnuUJodP2gp/KWw4eXM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/create-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/create-document.html",
+          "hash": "rUpDkrVfSs7fOdkbMJscSC6l9IFYaOWcGzEEZxEq/9g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/index.html",
+          "hash": "clfE5Jrgp/i/aBSXcVK3xBOetaqnwga//VgAlSog5zg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/install-module.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/install-module.html",
+          "hash": "FszmzDOdNqNUYscLrKTuLWR6kHFzRvnipfSP7+ntykM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/open-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/open-document.html",
+          "hash": "5CNI6Nwq9lLiSMRw/QIyAChk8KwOhf6qHsLFiSzxpZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/document/samples/working-with-credentials.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/document/samples/working-with-credentials.html",
+          "hash": "1UMUkFZhR/eyNrUsUJ3sPov77prWpHmtB3gKntTlJPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/intro.html",
+          "hash": "ilZdThS72IAFwin4RH5C2SJJ2/l0l3fkdt2XEl+wt8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/index.html",
+          "hash": "qx3mlzOetwv6um/pjxOKQAnstBmLiM7qUEN4Y1FQwt8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalappconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalappconnection.html",
+          "hash": "O3w3o5aMTvhudYUMw4S9kfex3wlqTWu95hEH6C8maV4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalfiletransferconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalfiletransferconnection.html",
+          "hash": "m+dTpttbmsCEi3bTsRbeYRCX3OEgEbD5nRsG706FRVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalhypervconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalhypervconnection.html",
+          "hash": "M8Qm/S9/YRbfCpOouGTVQdZtihAKbmVHZY7Zn+CUMT8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalperformanceconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalperformanceconnection.html",
+          "hash": "5qZ6QARzwQOw5WTH/M1Nkirf6MalERX2IqcEtZ/jegQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalpowershellconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalpowershellconnection.html",
+          "hash": "A5jBbcJ3bIr2US4DzDjyRHkH9+KnI8JcQJMVazSKwIo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalrdsconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalrdsconnection.html",
+          "hash": "7ylwSnQ6yqQC63W79TEvX9xGbeao4z3rWVDcbsRDpPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalsshconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalsshconnection.html",
+          "hash": "+pqISYCPlfwVy4z56AAirD0yYwSc8SN9DYWw4rw4wqQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalteamviewerconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalteamviewerconnection.html",
+          "hash": "bZCDcwU/ANdbzoWaC0geDY8wn4ej8971+dI+5Z0riSg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalterminalservicesconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalterminalservicesconnection.html",
+          "hash": "OU7iG2H7Q5U1TKSlHfYEdO5ToFj2ac3Kj/d3ksMg1yE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalvmwareconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalvmwareconnection.html",
+          "hash": "YvEYAxs50CLsXDBhEHW6d6PvD/3yy3MLeNrrndwjMIY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalvncconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalvncconnection.html",
+          "hash": "GypB7k92/0fRqBU1lMRc4kLjo5eIkuFdZywPGwB0xTA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwebconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwebconnection.html",
+          "hash": "Cpr9nWf5UJ+ea/HKPrA30IhnXqgdE4sBN5gSZuaH6TM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwindowseventsconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwindowseventsconnection.html",
+          "hash": "FVyL1GTpqgiP1AqU9157Vp5kDWFBjs3HFZlSBD+O1sA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwindowsprocessesconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwindowsprocessesconnection.html",
+          "hash": "rTLOIEAJdziO4Uhh196fsqDlIeLFEAZuR98F58O22HI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/connections/royalwindowsservicesconnection.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/connections/royalwindowsservicesconnection.html",
+          "hash": "/MWkhfZrlF4bRJWjo3rH4ieScEfSMQmzaSUDOXl75Fo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/index.html",
+          "hash": "Xn9mdjKxwJQeybZaxy4mKxo4Pbr6okZwXAfuGGebigc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/royalmanagementendpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/royalmanagementendpoint.html",
+          "hash": "2StJyRijr3jAHGil3EyEhWA1DMU57QeVjnzzn3i6Vc0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/royalrdsgateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/royalrdsgateway.html",
+          "hash": "u8AoFjouq7jwmvdDa1aEC/x83ghgdHyIbG/3k+N4WEc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/gateways/royalsecuregateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/gateways/royalsecuregateway.html",
+          "hash": "Cgo8rIpXvqRMJIM27R1o8/6MrLCSRt5XcOBGIpSNiK4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/index.html",
+          "hash": "MPB3w3oWbkNlR7a/nJwvDHWZIyjrvy64T+I5y3YN8Xo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/options/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/options/index.html",
+          "hash": "bmg5GU+c5hYe/UWaUauVxjC+fEc3ldV+hQnX9vBp2cI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/options/royalapplicationsetting.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/options/royalapplicationsetting.html",
+          "hash": "iDIYFxHYhtcOEmiB0Xe47T4n7+KvZ8m+RuwCpK5F32c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/index.html",
+          "hash": "nc1pBWzGx6GT28Tx02Laty0or7mruuswaNW54J7c3wQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royalcredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royalcredential.html",
+          "hash": "kdp5o1NvoZbPU0V5ygNFzbvRv1l8VmP9iYi8GecOWgc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaldocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaldocument.html",
+          "hash": "FwdSXKWbrFwF7358gYmYVbb0GzB8aGIVYWDqLmftASs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaldynamiccredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaldynamiccredential.html",
+          "hash": "Lfwj3GHycAMCB/Is5xuwhd3wInIFa7Os+m7TsNGLeho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaldynamicfolder.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaldynamicfolder.html",
+          "hash": "XBkBPy9jcSPp0bGhSgqPfQw4i4qsQCLTaiC4c9hkyd0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royalfolder.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royalfolder.html",
+          "hash": "ysAOHNKYu0ZI3IOa5YRY/UGlV7UgdaDUeH8pz2feUac="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royalinformation.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royalinformation.html",
+          "hash": "0RoxIJtIHZtgkpn7mK17e6kddYybTxNwPrbkomeBG9M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/organization/royaltodo.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/organization/royaltodo.html",
+          "hash": "maDL7GKUBiIRa2kmowETZbylNXLUNcG4JvlKiyPlqb8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/tasks/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/tasks/index.html",
+          "hash": "bj8WmSWUGt705NSAJNUb8me3lCwIcviNdzuQHJOADIk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/tasks/royalcommandtask.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/tasks/royalcommandtask.html",
+          "hash": "meawLivEBU6SFQSbCZtqJZwLG61SK+9XHB1Mxudzh2k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/objects/tasks/royalkeysequencetask.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/objects/tasks/royalkeysequencetask.html",
+          "hash": "ZBbjVH/Dc2BTiaqPZ8tybPpwfi9UQ32ZmQ935uCU1uo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/advanced-scenarios.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/advanced-scenarios.html",
+          "hash": "riCvVuwUi/hJQSPcEuA64eblIdVFCI3aiEPt307S47w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/index.html",
+          "hash": "KcnfMwUitADhoRmftuGmSVreqOXJmHKy5044JuIf5eQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsonautofillelement.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsonautofillelement.html",
+          "hash": "QyyUrfilKBQUalaxbWXyULP6h2SRRNa/hqGdaifjP1A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsoncustomproperty.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsoncustomproperty.html",
+          "hash": "pmuBVSSvszw9rLg1qS7HyF4fpiyc2f9jsHxyJrs8bTw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsondocument.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsondocument.html",
+          "hash": "ahRDZy88P1HkckSx9+LNJQAVM3U6FZ6GweQB4yrixMA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsondynamiccredential.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsondynamiccredential.html",
+          "hash": "9Rul3Hdgz7RiCTqGb/yUXaxJKW45cBWpg/UFvRO7OuM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/available-properties/royaljsonobject.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/available-properties/royaljsonobject.html",
+          "hash": "NOGbjuVRIzYj/vi0WpBoEcdEIffAa06rJXhhL7PU484="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/building-folder-hierachies.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/building-folder-hierachies.html",
+          "hash": "c9t4e8bwRV1Msmke4KFG8QkasfJonup1l1BRuYZXVtI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/dynamic-credentials.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/dynamic-credentials.html",
+          "hash": "PFTMhxJqDaMG1fKXepqN+hrcSWyDPwVZfyAXNg9k1FU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/dynamic-folders.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/dynamic-folders.html",
+          "hash": "a+/1w8FF8ovhyILi8k1Fzv3ZC9nqAfnINAaKRt1Gzis="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/index.html",
+          "hash": "nyC6PzKtwuH01acgSgjcBB3wf3rIvnXIN1TdTdT1PBs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/introduction.html",
+          "hash": "QTnX+P0Iab3OKe0IzsaRSFvV4E8SDJ1jv6J18UP+cU8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/json-schema.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/json-schema.html",
+          "hash": "JA6506e6yrT1dq2ptKQzuFrLrvYxGl/s8kO2+iZAttE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/object-references-and-inheritance.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/object-references-and-inheritance.html",
+          "hash": "tTVZuAroLCDabNRddhaBrlmFI+kdBuQ3AcZcp67ZH9s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/the-data-format.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/the-data-format.html",
+          "hash": "W+Yorrc+hGc5KNIDkLhtYK5gxYypfpKh46jvKHVx2mQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/rjson/tokens.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/rjson/tokens.html",
+          "hash": "euxp9Tt1lrkoNdLrz1UwfwAQa2PKOYqFm9kJh68X+uc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Get-RoyalServerLicense.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Get-RoyalServerLicense.html",
+          "hash": "I/Wd4Mwh0fs8TZwtV1961EiAOh/dQxJOQVHkj9i+5SQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Get-RoyalServerModule.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Get-RoyalServerModule.html",
+          "hash": "WaGkQlHNKOnGH79bikK7JDGNBqJF5wwXxjG9s2uSFcY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Get-RoyalServerModuleCommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Get-RoyalServerModuleCommand.html",
+          "hash": "cDmfTmKM3Def9sB7YFExVZ6UiQPYtEpjxHUQFS+YIv0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Get-RoyalServerModuleCommandParameter.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Get-RoyalServerModuleCommandParameter.html",
+          "hash": "kvWf4zRFAZXAQpZT/5L5Ruh/qg9+Ec33+e+BcXHUDBU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Install-RoyalServerLicense.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Install-RoyalServerLicense.html",
+          "hash": "7+6KP97l7by4jBT3OfidFn8CJ8YEuN7ldqTGco3ytfw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Invoke-RoyalServerCommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Invoke-RoyalServerCommand.html",
+          "hash": "6OjwqBrmMPVyfltlVBFFIF3w8fr+p4kUjCnsoQcFwOc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/New-RoyalServerConfig.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/New-RoyalServerConfig.html",
+          "hash": "hMXbDU8VSMWTl48c31C7fq/JAxfbDGdK+KmlTBQqkhs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/Uninstall-RoyalServerLicense.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/Uninstall-RoyalServerLicense.html",
+          "hash": "xhFkUbM7L5bhNfNDPs7qPNGI0dEeSzQEe+hZLUVIYT0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/about_RoyalServer.PowerShell.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/about_RoyalServer.PowerShell.html",
+          "hash": "p/vRnSmUzyNBR63tih/3ZjWjpUKs0hJTPX6x3avX+WQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripting/server/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/server/index.html",
+          "hash": "VqQa5BCjsQ3ztQlf2zmO5nL4WMW7tO8/hn6Qr2EPjg4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "scripting/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "scripting/toc.html",
+          "hash": "NFP/BpjJ3pMMgceZpuMew9Kk3ZuYqZvxQoD2su3FuzI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "JTc2qpp8fskFW+0EBg8rfHhHILMAvH5f5iLkXRAvG6Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build didn't contain group .",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableGroupCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 278,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Security Configuration </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Security Configuration ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="security-configuration">Security Configuration</h1>
+
+<img src="/r2021/images/RoyalServer/Service_48x48.png" class="icon-def" alt="">
+<p>The Security Configuration panel displays and changes the security configuration of Royal Server.</p>
+<h2 id="show-or-activate-the-service-configuration-panel">Show or Activate the Service Configuration Panel</h2>
+<p>In The Royal Server Console Navigation Bar, click on the <strong>Royal Server</strong> group and then on the <strong>Security Configuration</strong> entry.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any change in this panel requires a restart of Royal Server.</p>
+</div>
+<h2 id="features">Features</h2>
+<p><strong>Require Authentication</strong></p>
+<p>Specifies, if Royal Server is only accepting authenticated requests. Using this setting, Royal Server objects in Royal TS need to be configured with a Credential. Royal Server only accepts user accounts that are in the local Windows group 'Royal Server Users' (these can also be accounts or groups from the Windows domain the server belongs to). If the specified credential is not member of this group, Royal Server will return an authentication error.</p>
+<p><strong>Block IPs After Unsuccessful Login Attempts</strong></p>
+<p>In order to prevent brute force attacks on Royal Server, this setting blocks IPs that issue unsuccessful authentication requests for the specified amount of time. For example, block an IP for 5 minutes if it issues 4 unsuccessful requests within 3 minutes. The blocked requests will be logged.</p>
+<p><em>Blocking time (in minutes)</em></p>
+<p>Specifies the time an IP is blocked after it tries to log on too many times unsuccessfully.</p>
+<p><em>Number of attempts</em></p>
+<p>Specifies the number of failed attempts after which an IP is blocked for the specified amount of time.</p>
+<p><em>Time frame (in minutes)</em></p>
+<p>Only failed login attempts within this time frame are relevant for the IP blocking.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/management/security-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

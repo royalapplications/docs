@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Working with Connections </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Working with Connections ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_tutorials_connections">
+<h1 id="working-with-connections">Working with Connections</h1>
+
+<p>To learn more about Connection basics, read chapter <a class="xref" href="../getting-started/connections.html">Connections</a>.</p>
+<h2 id="connect-to-a-session">Connect to a Session</h2>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a connection. By default, selecting an inactive connection in the Navigation panel brings up the <strong>Dashboard</strong> for the connection.</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Actions</strong> group, click on <strong>Connect</strong>.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Royal TS offers many ways to connect to a session. You will find the <strong>Connect</strong> command in various places, such as the context menu in the <strong>Navigation</strong> panel or the <strong>Actions</strong> tab on the ribbon. By default, double-clicking an inactive connection in the Navigation panel also executes the Connect command.</p>
+</div>
+<h2 id="connect-with-options">Connect with Options</h2>
+<p>The <strong>Connect with Options</strong> feature allows you to directly <strong>override</strong> specific connection settings before you connect. Connecting using the Connect with Options feature will not affect the configuration of the connection. The applied overrides are temporary and are gone as soon as the session is disconnected.</p>
+<p>Here are some useful examples on how to use this feature:</p>
+<ul>
+<li>Consider a <strong>Remote Desktop</strong> connection you usually use which is not configured to connect to the Admin/Console session but occasionally you need to connect to the Admin/Console session. Ensure that the <strong>Console/Admin Session</strong> item is checked and click <strong>Connect</strong> in the <strong>Connect with Options</strong> menu.</li>
+<li>Consider a <strong>Remote Desktop</strong> connection which is configured to automatically log on with your credential but occasionally you need to log on with a different account. Ensure that the <strong>Auto Logon</strong> item is unchecked and click <strong>Connect</strong> in the <strong>Connect with Options</strong> menu.</li>
+<li>Consider a connection which is configured to open embedded in the main window but occasionally you want to open the session in an external window. Ensure that the <strong>External</strong> item is checked and click <strong>Connect</strong> in the <strong>Connect with Options</strong> menu.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can combine most of the overrides in the <strong>Connect with Options</strong> menu. Some overrides, such as <strong>Embedded, External, Full Screen</strong> or specified screens can be cleared by just clicking them again when checked.</p>
+</div>
+<h2 id="change-connection-settings-while-connected">Change Connection Settings while Connected</h2>
+<p>The <strong>Change</strong> drop down menu (on the <strong>Home</strong> or <strong>Actions</strong> tab) can be used to temporarily change the <strong>Window Mode</strong> or other connection specific settings while connected. Here's an example on how to move a connection which is embedded to an external window and back to the main window tab:</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a connection.</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Actions</strong> group, click on <strong>Connect</strong>. Wait until the session is established in the main window tab.</li>
+<li>On the <strong>Actions</strong> tab, in the <strong>Common Actions</strong> group, click on <strong>Change</strong> and on <strong>External</strong> in the drop down menu. The session will now be moved to an external window.</li>
+<li>To move the session back, click again on <strong>Change</strong> and on <strong>Embedded</strong> in the drop down menu.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/tutorials/working-with-connections.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
