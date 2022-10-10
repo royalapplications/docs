@@ -8,7 +8,7 @@
     <title>General Configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="General Configuration ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -75,7 +75,7 @@
 <p><strong>Language</strong></p>
 <p>This setting lets you change the user interface language of the Royal Server Configuration Tool (requires a restart of the tool).</p>
 <p><strong>Localhost Aliases</strong></p>
-<p>This setting allows to specify which hosts should be considered as localhost. This information is used when determining, if a query should be executed against the server where Royal Server is installed and also for licensing calculations (localhost is not counted towards the number of managed servers)</p>
+<p>This setting allows to specify which hosts should be considered as localhost. This information is used when determining, if a query should be executed against the server where Royal Server is installed and also for licensing calculations (localhost is not counted towards the number of managed servers).</p>
 <p><strong>Reset Configuration</strong></p>
 <p>This function resets the Royal Server Configuration back to defaults.</p>
 <div class="NOTE">
@@ -84,8 +84,18 @@
 If you want to remove Royal Server and all configuration information completely from the machine, save the cleanup_installation.ps1 file in the <code>./scripts/</code> installation subdirectory before uninstalling and execute it with administrative rights after the uninstallation.</p>
 </div>
 <p><strong>Copy Configuration</strong></p>
-<p>This function copies Royal Server troubleshooting information into the clipboard which could be included in a ticket. It can contain the installed licenses (not the full license key), the current configuration, the log information since the last restart of Royal Server and the Document Store information. All this will be copied into the clipboard, where the user can later check it/modify it and send it to us if we ask for it while troubleshooting.</p>
+<p>This function copies Royal Server troubleshooting information into the clipboard which could be included in a ticket. It can contain</p>
+<ul>
+<li>Installed Licenses (not the full license key)</li>
+<li>Current configuration</li>
+<li>Log Information since the last restart of Royal Server and</li>
+<li>Document Store information.</li>
+</ul>
+<p>All this will be copied into the clipboard, where the user can later check it/modify it and send it to us if we ask for it while troubleshooting.</p>
 <p>A ticket can be opened via our <a href="https://support.royalapps.com/support/home">support portal</a></p>
+<h2 id="uninstalling-royal-server">Uninstalling Royal Server</h2>
+<p>Royal Server is installed via an MSI package which can easily be uninstalled.</p>
+<p>Additionally, if you want to remove all changes a Royal Server installation did to a server, copy the cleanup_installation.ps1 file in the <code>./scripts/</code> installation subdirectory before uninstalling and execute it with administrative rights after the uninstallation.</p>
 </article>
           </div>
           

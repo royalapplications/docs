@@ -8,7 +8,7 @@
     <title>How is Royal Server Working? </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="How is Royal Server Working? ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -72,7 +72,7 @@
 <p>Royal Server consists of three components: the Management Endpoint, the Secure Gateway and the Document Store.
 For the Management Endpoint and the Document Store component: Royal Server is based on HTTP/S and is using Windows security features like local users and groups to ensure proper authentication.</p>
 <p>The Secure Gateway component is based on SSH standards.</p>
-<p><img src="/r2021/images/RoyalServer/screenshot_howroyalserverworks.png" alt=""></p>
+<p><img src="/r2022/images/RoyalServer/screenshot_howroyalserverworks.png" alt=""></p>
 <p>The basic flow of Management Endpoint connections works like this: Client devices like desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS are accessing Royal Server over HTTP/S (possibly using a VPN tunnel). Royal Server itself is using different technologies to talk to the managed servers, depending on the used <a href="what-are-royal-server-components.html">component</a> and module. The Secure Gateway component is using a standards-based SSH connection.</p>
 <h3 id="royal-server-is-agentless">Royal Server is agentless</h3>
 <p>There is no need for the installation of an agent on the managed server. Nevertheless, the machine where Royal Server is running needs to be able to access the managed server over the network. Please check <a href="configuration.html#configuration-of-managed-servers">Configuration of Managed Servers</a> for details.</p>

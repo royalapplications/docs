@@ -8,7 +8,7 @@
     <title>Logging </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Logging ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -98,7 +98,7 @@
 <p>Up to <code>Royal Server V3</code>, the rolling mechanism changes the file once per day to limit the file size.</p>
 <p><strong>Example:</strong></p>
 <p>If you set the Log File to &quot;logserverlog.txt&quot;, you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a file name formatted like <em>logserverlog<yyyymmdd>.txt</yyyymmdd></em>, e.g. logserverlog20210101.txt. The file logserverlog.txt always contains the current day.</p>
-<p>As of <code>Royal Server V4</code>, the file log provider uses a rolling interval and appends the time period between file name and file extension. The rolling interval is set to a <code>Day</code> (3) by default. Furthermore, the log file is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.</p>
+<p>As of Royal Server V4, the file log provider uses a rolling interval and appends the time period between file name and file extension. The rolling interval is set to a <code>Day</code> (3) by default. Furthermore, the log file is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.</p>
 <p><strong>Example:</strong></p>
 <p>If you set the Log File to &quot;logserverlog*.txt&quot;, you will find a file with the name formatted like logserverlog*[yyyyMMdd].txt in the specified directory, e.g. logserverlog_20210101.txt. On the next day, a new log file will be created, e.g. logserverlog_20210102.txt.</p>
 <p>If you want to configure a different interval, change the value for <code>FileLogRollingInterval</code> in<code> %ProgramData%\RoyalServer\appsettings.json</code>.</p>

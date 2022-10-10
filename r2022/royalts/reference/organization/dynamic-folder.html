@@ -8,7 +8,7 @@
     <title> Dynamic Folder </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" Dynamic Folder ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -67,7 +67,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="royalts_reference_organization_dynamic-folder">
-<h1 id="-dynamic-folder"><img src="/r2021/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header" alt=""> Dynamic Folder</h1>
+<h1 id="-dynamic-folder"><img src="/r2022/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header" alt=""> Dynamic Folder</h1>
 
 <p>A <strong>Dynamic Folder</strong> allows you to import data from external sources. All imported objects are read-only but credential objects can be assigned to other objects outside of dynamic folders.</p>
 <h2 id="dynamic-folder-properties">Dynamic Folder Properties</h2>
@@ -85,7 +85,7 @@
 <p>Click the icon picker button next in the display name text box to select and assign a custom icon to the object.</p>
 <h4 id="description">Description</h4>
 <p>Enter a description for the object.</p>
-<h2 id="-dynamic-folder-script"><img src="/r2021/images/RoyalTS/Application/SVG_Script_32.svg#img_header" alt=""> Dynamic Folder Script</h2>
+<h2 id="-dynamic-folder-script"><img src="/r2022/images/RoyalTS/Application/SVG_Script_32.svg#img_header" alt=""> Dynamic Folder Script</h2>
 <p>The <strong>Dynamic Folder Script</strong> page allows you to configure the script and the interpreter which populates the dynamic folder content.</p>
 <h4 id="script-interpreter">Script Interpreter</h4>
 <p>Select the script interpreter you want to use when the script is executed. Some interpreters may need additional files to be installed on your system.</p>
@@ -98,7 +98,7 @@
 <p>Royal TS for Windows expects the script output to be UTF8 encoded. Depending on your script interpreter and system locale, encoding might be different by default. Also, older PowerShell versions do not use UTF8 encoding by default.
 Here's an example on how to set output encoding in PowerShell: <code>[System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8</code></p>
 </div>
-<h2 id="-dynamic-credential-script"><img src="/r2021/images/RoyalTS/Application/SVG_Script_32.svg#img_header" alt=""> Dynamic Credential Script</h2>
+<h2 id="-dynamic-credential-script"><img src="/r2022/images/RoyalTS/Application/SVG_Script_32.svg#img_header" alt=""> Dynamic Credential Script</h2>
 <p>The <strong>Dynamic Credential Script</strong> page allows you to configure the script and the interpreter which will be called to gather the credential information at connect-time.</p>
 <h4 id="script-interpreter-1">Script Interpreter</h4>
 <p>Select the script interpreter you want to use when the script is executed. Some interpreters may need additional files to be installed on your system.</p>
@@ -106,7 +106,7 @@ Here's an example on how to set output encoding in PowerShell: <code>[System.Con
 <p>Use the Tokens drop down to insert <a class="xref" href="../../advanced/tokens.html">replacement tokens</a> into the script. This way you can use the configured credentials in your script.</p>
 <h4 id="script-1">Script</h4>
 <p>The script to be executed which creates a Royal JSON output for the credential information.</p>
-<h2 id="-credentials"><img src="/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
+<h2 id="-credentials"><img src="/r2022/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
 <p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
 <h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
 <p>When selected, no credentials are configured for the object. Connections that require credentials may prompt to enter credentials or fail to connect.</p>
@@ -148,7 +148,7 @@ Here's an example on how to set output encoding in PowerShell: <code>[System.Con
 <p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
 
 <p>See also: <a class="xref" href="../../tutorials/working-with-credentials.html">Working with Credentials</a>, <a class="xref" href="credential.html">Credential</a>, <a href="https://www.royalapps.com/go/kb-all-teamsharing">About shared documents</a></p>
-<h2 id="-tasks"><img src="/r2021/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header" alt=""> Tasks</h2>
+<h2 id="-tasks"><img src="/r2022/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header" alt=""> Tasks</h2>
 <p>You can specify a task to be executed before a connection is established and after it has been disconnected. For example: establish a VPN connection before you connect and close it after disconnect.</p>
 <h3 id="connect-task">Connect Task</h3>
 <h4 id="do-not-execute-a-task">Do not execute a task</h4>
@@ -203,7 +203,7 @@ Here's an example on how to set output encoding in PowerShell: <code>[System.Con
 <p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will disconnect the VPN connection after the last connection is disconnected.</p>
 </div>
 <p>See also: <a class="xref" href="../../tutorials/working-with-tasks.html">Working with Tasks</a>, <a class="xref" href="../tasks/command.html">Command Task</a></p>
-<h3 id="-key-sequence"><img src="/r2021/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header" alt=""> Key Sequence</h3>
+<h3 id="-key-sequence"><img src="/r2022/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header" alt=""> Key Sequence</h3>
 <p>The <strong>Key Sequence</strong> page allows you to configure a sequence of key strokes (simulating keyboard events) to be sent to the connection after the connection has been established.</p>
 <h4 id="do-not-send-a-key-sequence">Do not send a key sequence</h4>
 <p>This is the default value. If selected, no key sequence is sent to the remote session after connect.</p>
@@ -234,7 +234,7 @@ Here's an example on how to set output encoding in PowerShell: <code>[System.Con
 </div>
 <h4 id="edit-source">Edit Source</h4>
 <p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
-<h2 id="-royal-server"><img src="/r2021/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header" alt=""> Royal Server</h2>
+<h2 id="-royal-server"><img src="/r2022/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header" alt=""> Royal Server</h2>
 <p>The <strong>Royal Server</strong> page allows you to configure a Royal Server object for supported connections or choose to use a Royal Server configuration from the parent folder.</p>
 <h4 id="use-royal-server-from-the-parent-folder">Use Royal Server from the parent folder</h4>
 <p>If checked, Royal TS will look for a configured Royal Server in the parent folder. This option is not available on the document level.</p>
@@ -250,7 +250,7 @@ Here's an example on how to set output encoding in PowerShell: <code>[System.Con
 <p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
 
 <p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
-<h2 id="-advanced"><img src="/r2021/images/RoyalTS/Application/SVG_PageAdvanced_32.svg#img_header" alt=""> Advanced</h2>
+<h2 id="-advanced"><img src="/r2022/images/RoyalTS/Application/SVG_PageAdvanced_32.svg#img_header" alt=""> Advanced</h2>
 <p>The <strong>Advanced</strong> page allows you to configure advanced dynamic folder settings.</p>
 <h4 id="automatically-reload-folder-contents">Automatically reload folder contents</h4>
 <p>If checked, Royal TS will automatically reload the folder contents when the document is opened.</p>
@@ -260,7 +260,7 @@ Here's an example on how to set output encoding in PowerShell: <code>[System.Con
 <h5>Note</h5>
 <p>This option is only available for personal (not shared) documents.</p>
 </div>
-<h2 id="-notes"><img src="/r2021/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
+<h2 id="-notes"><img src="/r2022/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
 <p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
 <h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
 <p>When selected, Royal TS will display the notes from the parent folder in the notes panel. This option is not available on the document level.</p>
@@ -268,20 +268,20 @@ Here's an example on how to set output encoding in PowerShell: <code>[System.Con
 <h5>Tip</h5>
 <p>To embed images, drag them into the editor using drag &amp; drop.</p>
 </div>
-<h2 id="-custom-properties"><img src="/r2021/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header" alt=""> Custom Properties</h2>
+<h2 id="-custom-properties"><img src="/r2022/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header" alt=""> Custom Properties</h2>
 <p>The <strong>Custom Properties</strong> page allows you to enter and store additional information for the object. Various data formats are available, including protected fields. You can also group properties by using Header.</p>
 <h4 id="inherit-from-parent">Inherit from Parent</h4>
 <p>When checked, the properties configured on the parent folder are shown but are read-only.</p>
 <h4 id="custom-properties">Custom Properties</h4>
 <p>Use the '+' icon to add a header or a Field or multiple fields based on a template. Click on the label to name the field and enter a value. Click the 'Gear' icon to remove a field or header. The 'Gear' icon also shows additional options, like moving a field up or down.</p>
-<h2 id="-custom-fields"><img src="/r2021/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Fields</h2>
+<h2 id="-custom-fields"><img src="/r2022/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Fields</h2>
 <p>The <strong>Custom Fields</strong> page allows you to enter and store additional information for the object. Custom fields can be used in tasks and templates to inject values from the context connection.</p>
 <p>Standard custom fields are also shown in the folder dashboard views and in the properties panel. Protected custom fields can be used to store confidential data (for example when you need an additional password in a task). If you make use of protected custom fields, make sure you encrypt and password protect your document.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Custom fields can be used in Tasks and in the Properties Panel. You can put web page URLs (like an iLO management address) or command lines (such as programs or batch files) in the custom fields and execute them using tasks or directly from the properties panel. Each individual custom field can also be configured to be inherited from the parent folder.</p>
 </div>
-<h2 id="-parent-folder"><img src="/r2021/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header" alt=""> Parent Folder</h2>
+<h2 id="-parent-folder"><img src="/r2022/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header" alt=""> Parent Folder</h2>
 <p>The <strong>Parent Folder</strong> page allows you to view or change the parent folder of the selected object. To move multiple objects to another folder use the parent folder page in bulk-edit mode or use the move to command from the <strong>Edit</strong> tab (see <a class="xref" href="../../tutorials/working-with-connections.html">Working with Connections</a>).</p>
 </article>
           </div>
