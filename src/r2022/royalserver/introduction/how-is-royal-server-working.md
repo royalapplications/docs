@@ -45,11 +45,11 @@ For this, there are two basic ways this can be done:
 > communication protocol that is using dynamic ports (TCP/135 for > standard RPC and a randomly assigned port between 1024-65535 
 > (for Windows 2003 and older) or 49152-65535 (for Windows 2008 and newer).
 > 
-> For details to prepare servers to be managed by Royal Server please check our [Pepare a Managed Server](./pepare-managed-server.md) script.
+> For details to prepare servers to be managed by Royal Server please check our [Prepare a Managed Server](../advanced/management-scripts/prepare-managed-server.md) script.
 
 ## Under the hood - Document Store
 The Document Store component is based on HTTPs/SSL communication between Royal TS/X and Royal Server. Check the 
-[Service Configuration](../management/service-configuration.html) and [Security Configuration](../management/security-configuration.md) for
+[Service Configuration](../management/service-configuration.md) and [Security Configuration](../management/security-configuration.md) for
 more details.
 
 ## Under the hood - Secure Gateway

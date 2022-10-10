@@ -169,9 +169,9 @@
     - name: Cleanup an Installation
       order: 5000
       href: advanced/management-scripts/uninstall.md
-    - name: Pepare a Managed Server
+    - name: Prepare a Managed Server
       order: 5000
-      href: advanced/management-scripts/pepare-managed-server.md
+      href: advanced/management-scripts/prepare-managed-server.md
     href: advanced/management-scripts/index.md
   href: advanced/index.md
 - name: Scripting
