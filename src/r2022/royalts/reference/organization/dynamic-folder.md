@@ -4,7 +4,7 @@ name: Dynamic Folder
 order: 9980
 ---
 
-# ![](/r2021/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header) Dynamic Folder
+# ![](/r2022/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header) Dynamic Folder
 A **Dynamic Folder** allows you to import data from external sources. All imported objects are read-only but credential objects can be assigned to other objects outside of dynamic folders.
 
 ## Dynamic Folder Properties
@@ -19,7 +19,7 @@ See also: [Dynamic Folder and RoyalJSON](https://www.royalapplications.com/go/kb
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/r2021/images/RoyalTS/Application/SVG_Script_32.svg#img_header) Dynamic Folder Script
+## ![](/r2022/images/RoyalTS/Application/SVG_Script_32.svg#img_header) Dynamic Folder Script
 The **Dynamic Folder Script** page allows you to configure the script and the interpreter which populates the dynamic folder content.
 
 #### Script Interpreter
@@ -35,7 +35,7 @@ The script to be executed which creates a Royal JSON output for the folder conte
 > Royal TS for Windows expects the script output to be UTF8 encoded. Depending on your script interpreter and system locale, encoding might be different by default. Also, older PowerShell versions do not use UTF8 encoding by default. 
 > Here's an example on how to set output encoding in PowerShell: `[System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8`
 
-## ![](/r2021/images/RoyalTS/Application/SVG_Script_32.svg#img_header) Dynamic Credential Script
+## ![](/r2022/images/RoyalTS/Application/SVG_Script_32.svg#img_header) Dynamic Credential Script
 The **Dynamic Credential Script** page allows you to configure the script and the interpreter which will be called to gather the credential information at connect-time.
 
 #### Script Interpreter
@@ -51,7 +51,7 @@ The script to be executed which creates a Royal JSON output for the credential i
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
 [!include[royalserver.md](~/royalts/_shared/royalserver.md)]
 
-## ![](/r2021/images/RoyalTS/Application/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2022/images/RoyalTS/Application/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced dynamic folder settings.
 
 #### Automatically reload folder contents

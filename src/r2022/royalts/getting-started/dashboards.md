@@ -17,11 +17,11 @@ In the following example, we will change the default settings for the Remote Des
 3. In the **Registered Plugins** list, select the **Remote Desktop Protocol Connection (based on Microsoft RDP ActiveX)** entry.
 4. Click the **Dashboard** button and adjust the dashboard settings.
 
-![](/r2021/images/RoyalTS/GettingStarted/Dashboards_01.png)
+![](/r2022/images/RoyalTS/GettingStarted/Dashboards_01.png)
 
 ## Use custom Dashboard Settings for individual Connections
 In addition to configuring the application default dashboard settings for a connection type, you can still use a different dashboard settings for individual connections. In most connection property dialogs you'll find a configuration page called **Dashboard**:
 
-![](/r2021/images/RoyalTS/GettingStarted/Dashboards_02.png)
+![](/r2022/images/RoyalTS/GettingStarted/Dashboards_02.png)
 
 Set the configuration to **Use connection specific settings** and adjust the dashboard settings individually.

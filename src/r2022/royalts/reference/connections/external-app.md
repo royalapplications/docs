@@ -4,13 +4,13 @@ name: External Application
 order: 9900
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PluginIcon_32.svg#img_header) External Application
+# ![](/r2022/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PluginIcon_32.svg#img_header) External Application
 The **External Application** connection can be used to integrate external applications (executables) into Royal TS.
 
 ## Dashboard
 The **External Application Dashboard** is shown in the **Dashboard** panel when you select an External Application connection in the **Navigation** panel. It can be configured to show windows of currently running processes. Use the **Connect (Ad Hoc)** button in the toolbar to create a new ad hoc external application connection based on the selection. You can move the resulting connection to your document by using drag & drop.
 
-![ExternalApp_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/ExternalApp/externalapp_dashboard.png)
+![ExternalApp_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/ExternalApp/externalapp_dashboard.png)
 
 ## Dashboard Features
 Enumerates and shows a list of all windows available from the currently running processes.
@@ -61,7 +61,7 @@ The window picker can be used to populate the required fields to start the appli
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2022/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced external application settings.
 
 ### Options

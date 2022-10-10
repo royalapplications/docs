@@ -3,12 +3,12 @@ uid: royalts_advanced_import
 name: Import Data
 order: 10600
 ---
-# ![](/r2021/images/RoyalTS/Application/SVG_FileImport_32.svg#img_header)Import Data
+# ![](/r2022/images/RoyalTS/Application/SVG_FileImport_32.svg#img_header)Import Data
 To import the content of a different file format the following examples will only work if you created a new document or opened an existing one. 
 
 An alternative to import external data is to just open a different file as a document using the **Open** command. Most of the file formats below support the **Open** command to convert the file to a Royal TS document. Make sure you select the correct file type filter in the **Open File** dialog.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/RoyalTSLegacy/SVG_FileIconRTSX_32.svg#img_header)Import Royal TS 1.x Documents (.rts)
+## ![](/r2022/images/RoyalTS/Plugins/Import/RoyalTSLegacy/SVG_FileIconRTSX_32.svg#img_header)Import Royal TS 1.x Documents (.rts)
 Royal TS allows you to import your Royal TS V1.x files into an existing Royal TS document or convert your Royal TS V1.x into a new Royal TS document.
 
 1. In the **Navigation** panel, select a document or folder.
@@ -30,7 +30,7 @@ Royal TS allows you to import your Royal TS V1.x files into an existing Royal TS
 
 The selected Royal TS 1.x file appears in the **Navigation** panel and can be saved as a new Royal TS document to finish the conversion.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg#img_header)Import Remote Desktop Files (.rdp)
+## ![](/r2022/images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg#img_header)Import Remote Desktop Files (.rdp)
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the **Import** group, click on **Remote Desktop Files (.rdp)**.
 3. Click on the **Add** button to add .rdp files to the list for import.
@@ -46,7 +46,7 @@ During setup, you can choose to create a file association for .rdp files. Double
 > [!Note]
 > You can also use Open with... in Windows Explorer to manually create a file association to .rdp files.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/Csv/SVG_PluginIcon_32.svg#img_header)Import from CSV File
+## ![](/r2022/images/RoyalTS/Plugins/Import/Csv/SVG_PluginIcon_32.svg#img_header)Import from CSV File
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the Import group, click on **Comma Separated File (.csv)**.
 3. Choose which **Object Type** to create. In the **CSV File** text box, type the path and file name of the comma separated file or click on the browse button (...) to pick a file.
@@ -71,7 +71,7 @@ During setup, you can choose to create a file association for .rdp files. Double
 * Adapt the default settings of your connection type to import before you start the import. All properties without a mapping will be set to the value of the default setting.
 * Apply static values for all imported connections. For example, add a mapping for **SmartReconnect** and instead of using a column header from the .csv file, type **true** to activate this setting on all imported **Remote Desktop** connections.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/DynamicFolder/SVG_PluginIcon_32.svg#img_header)Import Dynamic Folder
+## ![](/r2022/images/RoyalTS/Plugins/Import/DynamicFolder/SVG_PluginIcon_32.svg#img_header)Import Dynamic Folder
 
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the **Import** group, click on **Dynamic Folder File (.rdfe)**.
@@ -84,25 +84,25 @@ During setup, you can choose to create a file association for .rdp files. Double
 3. Pick a .rjson file to import.
 4. Click on **Open** to start the import. -->
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/mRemote/SVG_FileIconmRemote_32.svg#img_header)Import mRemote File
+## ![](/r2022/images/RoyalTS/Plugins/Import/mRemote/SVG_FileIconmRemote_32.svg#img_header)Import mRemote File
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the **Import** group, click on **More -> mRemote File (.xml)**.
 3. Pick a mRemote file to import.
 4. Click on **Open** to start the import.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/MsRdcm/SVG_FileIconRdcm_32.svg#img_header)Import RDG File
+## ![](/r2022/images/RoyalTS/Plugins/Import/MsRdcm/SVG_FileIconRdcm_32.svg#img_header)Import RDG File
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the **Import** group, click on **More -> Remote Desktop Connection Manager File (.rdg)**.
 3. Pick a .rdg file to import.
 4. Click on **Open** to start the import.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/RemoteDesktopManager/SVG_FileIconRdm_32.svg#img_header)Import RDM File
+## ![](/r2022/images/RoyalTS/Plugins/Import/RemoteDesktopManager/SVG_FileIconRdm_32.svg#img_header)Import RDM File
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the **Import** group, click on **More -> Remote Desktop Manager File (.rdm)**.
 3. Pick a .rdm file to import.
 4. Click on **Open** to start the import.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/KeePass/SVG_FileIconKeePass_32.svg#img_header)Import KeePass V2 File
+## ![](/r2022/images/RoyalTS/Plugins/Import/KeePass/SVG_FileIconKeePass_32.svg#img_header)Import KeePass V2 File
 1. In the Navigation panel, select a document or folder.
 2. On the Data tab, in the Import group, click on More -> KeePass V2.x File (.kdbx).
 3. Pick a .kdbx file to import.
@@ -121,7 +121,7 @@ When you import a KeePass file or open a KeePass file for the first time, Royal 
 5. Enter the new path to the executable in the KeePass Executable Path text box.
 6. Click **OK** to save the new settings and close the dialog.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/LastPass/SVG_LastPass_32.svg#img_header)Open a LastPass Vault
+## ![](/r2022/images/RoyalTS/Plugins/Import/LastPass/SVG_LastPass_32.svg#img_header)Open a LastPass Vault
 The following example assumes that you've already have a LastPass account with credentials:
 
 1. Click the File ribbon tab to open the backstage view.

@@ -4,13 +4,13 @@ name: Remote Desktop
 order: 10000
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg#img_header) Remote Desktop 
+# ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg#img_header) Remote Desktop 
 The **Remote Desktop** connection *(based on Microsoft RDP ActiveX)* can be used to connect to remote computers or Hyper-V guests using the remote desktop protocol (RDP) which is built into Windows.
 
 ## Dashboard
 The **Remote Desktop Dashboard** is shown in the **Dashboard** panel when you select a Remote Desktop connection in the **Navigation** panel. Depending on the Hyper-V configuration of your connection you will either see the **Hyper-V** dashboard pane, the **Sessions** dashboard pane, or both.
 
-![RemoteDesktop_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png)
+![RemoteDesktop_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png)
 
 ## Hyper-V Features
 -   List of all hosted Hyper-V guests (or instances) and their state.
@@ -91,7 +91,7 @@ Similar to the /console or /admin switch from the original terminal services cli
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 #### Color Depth
 The color depth (in bits per pixel) for the control's connection.
 
@@ -132,7 +132,7 @@ If checked, Royal TS will also use the configured credentials to retrieve the da
 [!include[royalserver.md](~/royalts/_shared/royalserver.md)]
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg#img_header) Advanced
 ### Authentication
 #### Authentication Level
 Specifies the authentication level to use for the connection.
@@ -183,7 +183,7 @@ Specifies the load balancing cookie that will be placed in the X.224 Connection 
 > [!Tip]
 > This field is often used for Azure based connections. After importing .rdp files created by the Azure portal, you may find specific load balancing cookies in your configuration.
 
-## ![](/r2021/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
+## ![](/r2022/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
 The **Remote Desktop Gateway** page allows you to setup your connection to use a Remote Desktop Gateway.
 
 #### Gateway Mode
@@ -227,7 +227,7 @@ Specify the Logon Method for the gateway server.
 > This makes sharing files across team members very easy while keeping credentials safe.
 > See Work with [Personal Credentials in a Shared Document](xref:royalts_tutorials_credentials#working-with-personal-credentials-and-a-shared-document) for more information.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageHyperV_32.svg#img_header) Hyper-V
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageHyperV_32.svg#img_header) Hyper-V
 The **Hyper-V** page allows you to setup your connection as a Hyper-V host to display the Hyper-V management in the Dashboard and optionally allows you to configure a target instance you want to connect to by default.
 
 #### Hyper-V Mode
@@ -255,7 +255,7 @@ Enter an instance ID (GUID) or click on the browse button (...) on the right to 
 #### Enhanced Session Mode
 Local resources, like audio, printers, clipboard, drives, USB devices, etc. can be redirected. Enhanced session mode requires a supported guest operating system, and may require additional configuration inside the virtual machine. See also: [Enhanced Session Mode](https://technet.microsoft.com/en-us/library/dn282274.aspx)
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PagePerformance_32.svg#img_header) Performance
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PagePerformance_32.svg#img_header) Performance
 The **Performance** page allows you to configure various Remote Desktop settings which will directly impact the connection performance.
 
 #### Connection Speed
@@ -302,7 +302,7 @@ Specifies if bandwidth changes are automatically detected.
 #### Cache Size
 Caching and memory management drastically changed in RDP version 8 (when connecting from a Windows 8/Server 20112 to another Windows 8/Server 2012) and will take much more client side memory as with previous RDP versions. The cache size setting allows you to configure how much client side memory Royal TS should use for RDP 8 connections.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageRedirection_32.svg#img_header) Redirection
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageRedirection_32.svg#img_header) Redirection
 The Redirection page allows you to configure device and resource redirection for use in the remote session.
 
 #### Printers
@@ -349,7 +349,7 @@ pecifies whether the default audio input device is redirected from the client to
 > [!Note]
 > Record Audio from this computer requires Windows 7/Windows 2008R2 or later.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageInput_32.svg#img_header) Input
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageInput_32.svg#img_header) Input
 The **Input** page allows you to configure keyboard behavior and keyboard layout in the remote session.
 
 #### Accelerator Passthrough
@@ -367,7 +367,7 @@ Specify a predefined or custom keyboard layout in your remote session.
 > [!Note]
 > This setting will only be effective for freshly logged on sessions. Changing this setting will not affect sessions where a user is already logged on. Ensure you log off the user before you change this setting.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageStartProgram_32.svg#img_header) Program
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageStartProgram_32.svg#img_header) Program
 The **Program** page allows you to configure the program to be started on the remote server upon connection.
 
 #### Program

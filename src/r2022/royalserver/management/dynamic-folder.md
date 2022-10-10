@@ -5,7 +5,7 @@ order: 9050
 
 # Dynamic Folder
 
-<img src="/r2021/images/RoyalServer/DynamicFolder_48x48.png" class="icon-def" alt="" />
+<img src="/r2022/images/RoyalServer/DynamicFolder_48x48.png" class="icon-def" alt="" />
 
 The Dyamic Folder Configuration panel displays and changes the configuration of executing Dynamic Folders for Royal TS/X.
 

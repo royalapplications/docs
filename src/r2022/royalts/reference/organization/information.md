@@ -4,7 +4,7 @@ name: Information
 order: 9960
 ---
 
-# ![](/r2021/images/RoyalTS/Application/SVG_PageInformation_32.svg#img_header) Information
+# ![](/r2022/images/RoyalTS/Application/SVG_PageInformation_32.svg#img_header) Information
 **Information** objects are used to store arbitrary data like credit card information, passport, identity, software license, etc. The dashboard of information objects provide quick and easy access to the data.
 
 ## Information Properties

@@ -1,4 +1,4 @@
-## ![](/r2021/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header) Secure Gateway
+## ![](/r2022/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header) Secure Gateway
 The **Secure Gateway** page allows you to configure a Secure Gateway object for supported connections or choose to use a Secure Gateway configuration from the parent folder.
 
 #### Use Secure Gateway from the parent folder

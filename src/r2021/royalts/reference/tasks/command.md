@@ -5,7 +5,7 @@ order: 10000
 ---
 
 
-# ![](/r2021/images/RoyalTS/Plugins/Tasks/CommandTasks/SVG_PluginIcon_32.svg#img_header) Command Task
+# ![](/r2021/images/RoyalTS/Plugins/Tasks/CommandTask/SVG_PluginIcon_32.svg#img_header) Command Task
 **Command Tasks** are used to execute command lines (programs or batch scripts) from within Royal TS. Command tasks can run "stand-alone" (like a shortcut) or in context of a selected connection - which also allows you to "inject" variables (replacement tokens) to the command line (like the PING task).
 
 ## Dashboard

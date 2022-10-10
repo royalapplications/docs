@@ -4,13 +4,13 @@ name: Terminal (Rebex)
 order: 9960
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIcon_32.svg#img_header) Terminal (Rebex)
+# ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIcon_32.svg#img_header) Terminal (Rebex)
 The **Terminal** connection based on Rebex can be used to connect to remote computers using Telnet or Secure Shell (SSH). It can also be used to connect to devices using the Serial Port.
 
 ## Dashboard
 The **Terminal Dashboard** is shown in the **Dashboard** panel when you select a Terminal connection based on the Rebex plugin in the **Navigation** panel. The dashboard will show files with the extension .ans (ANSI recordings) and files with the extension .log. Logging and recording configuration can be found in [Logging](#logging).
 
-![Rebex_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/rebex_dashboard.png)
+![Rebex_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/rebex_dashboard.png)
 
 ## Dashboard Features
 - Click the **Open in Explorer** button to open the folder containing the selected file in Windows Explorer.
@@ -51,7 +51,7 @@ The Terminal (Rebex) Properties dialog is shown:
 - for an existing Terminal connection by selecting a Terminal connection which is configured to use the Rebex based plugin and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Terminal connections which are configured to use the Rebex based plugin were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIconConnection_32.svg#img_header) Terminal Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIconConnection_32.svg#img_header) Terminal Properties
 The **Terminal Connection** page allows you to configure basic connection settings, such as host name and the connection type (Telnet, SSH or Serial Port).
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 
@@ -66,7 +66,7 @@ Specify the TCP port for the connection.
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure font settings as well as tab appearance settings based on the connection status.
 
 ### Text
@@ -111,7 +111,7 @@ If checked, scrollback is reset on display activity (when data is received).
 #### Data Received Indicator
 If checked, Royal TS will show a * character at the end of the tab caption to indicate that data was received.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg#img_header) Colors
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg#img_header) Colors
 The **Colors** page allows you to modify the terminal palette and colors for different text styles.
 
 #### Color Scheme
@@ -143,7 +143,7 @@ Configure regular expression based highlighting rules.
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced Terminal settings.
 
 #### Encoding
@@ -176,7 +176,7 @@ If checked, Royal TS will ignore substitute characters (1A), otherwise Royal TS 
 #### Implicit CR in LF
 If checked, Royal TS implies a carriage return in every received linefeed.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSecurity_32.svg#img_header) Security
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSecurity_32.svg#img_header) Security
 The **Security** page allows you to adjust security settings and allowed algorithms.
 
 ### General
@@ -194,7 +194,7 @@ If checked, Royal TS will display a warning if the fingerprint doesn't match.
 
 [!include[rebexciphers.md](~/royalts/_shared/rebexciphers.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageInput_32.svg#img_header) Input
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageInput_32.svg#img_header) Input
 The **Input** page allows you to configure keyboard behavior in the remote session.
 
 ### Keyboard
@@ -255,7 +255,7 @@ If checked, line paste delay will be enabled. You can quickly enable or disable 
 #### Line Paste Delay in ms
 The time span in ms between each line when pasted from the clipboard.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSerial_32.svg#img_header) Serial Port
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSerial_32.svg#img_header) Serial Port
 The **Serial Port** page allows you to configure the port settings to connect to devices using RS232.
 
 #### Port Name
@@ -288,7 +288,7 @@ Set the number of milliseconds before a time-out occurs when a read operation do
 #### Write Timeout
 Set the number of milliseconds before a time-out occurs when a write operation does not finish.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageProxy_32.svg#img_header) Proxy Settings
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageProxy_32.svg#img_header) Proxy Settings
 The **Proxy Settings** page allows you to configure a proxy server used to connect to the remote server.
 
 #### Proxy Mode
@@ -307,7 +307,7 @@ Specify the proxy server port to use.
 ### Credential Mode
 [!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageLogging_32.svg#img_header) Logging
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageLogging_32.svg#img_header) Logging
 The **Logging** page allows you to configure ANSI session recordings and logging. Recordings as well as log files can be viewed using the Dashboard.
 
 #### Path

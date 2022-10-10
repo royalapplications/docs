@@ -1,4 +1,4 @@
-## ![](/r2021/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header) Custom Properties
+## ![](/r2022/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header) Custom Properties
 The **Custom Properties** page allows you to enter and store additional information for the object. Various data formats are available, including protected fields. You can also group properties by using Header.
 
 #### Inherit from Parent

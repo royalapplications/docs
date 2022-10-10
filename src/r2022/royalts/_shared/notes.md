@@ -1,4 +1,4 @@
-## ![](/r2021/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header) Notes
+## ![](/r2022/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header) Notes
 The **Notes** page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.
 
 #### Use Notes from the parent folder

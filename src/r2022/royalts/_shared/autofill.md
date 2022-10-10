@@ -1,4 +1,4 @@
-## ![](/r2021/images/RoyalTS/Application/SVG_PageAutoFill_32.svg#img_header) Auto Fill
+## ![](/r2022/images/RoyalTS/Application/SVG_PageAutoFill_32.svg#img_header) Auto Fill
 The **Auto Fill** page allows you to configure automatic form submission for web pages in Royal TS using Web Page connections or using the [Royal Passwords](http://www.royalts.com/main/Passwords/Browsers.aspx) browser plugins.
 
 #### URL *(only visible for Credential objects)*

@@ -5,7 +5,7 @@ order: 7010
 
 # Permissions
 
-<img src="/r2021/images/RoyalServer/Credential_48x48.png" class="icon-def" alt="" />
+<img src="/r2022/images/RoyalServer/Credential_48x48.png" class="icon-def" alt="" />
 
 The Logins panel displays the users that have access to the Document Store functionality in Royal Server.
 

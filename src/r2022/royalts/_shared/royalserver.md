@@ -1,4 +1,4 @@
-## ![](/r2021/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header) Royal Server
+## ![](/r2022/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header) Royal Server
 The **Royal Server** page allows you to configure a Royal Server object for supported connections or choose to use a Royal Server configuration from the parent folder.
 
 #### Use Royal Server from the parent folder

@@ -4,7 +4,7 @@ name: File Transfer
 order: 9940
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PluginIcon_32.svg#img_header) File Transfer
+# ![](/r2022/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PluginIcon_32.svg#img_header) File Transfer
 The **File Transfer** connection allows you to browse and transfer files on FTP, SFTP and SCP file servers.
 
 ## Dashboard
@@ -46,7 +46,7 @@ Specify the TCP port for the File Transfer connection. The default port for FTP 
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Tools_32.svg#img_header) Advanced
+## ![](/r2022/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Tools_32.svg#img_header) Advanced
 On the **Advanced** page you can tweak advanced file transfer settings like passive mode for FTP connection and whether or not to use large buffers for file transfers.
 
 ### Common
@@ -96,7 +96,7 @@ The following transfer modes are available:
 #### Passive Mode
 If checked, passive mode is used for FTP file transfers.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PageSecurity_32.svg#img_header) Security
+## ![](/r2022/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PageSecurity_32.svg#img_header) Security
 The **Security** page allows you to adjust security settings and allowed algorithms.
 
 ### General
@@ -111,7 +111,7 @@ If checked, keyboard-interactive authentication is preferred over password authe
 
 [!include[rebexciphers.md](~/royalts/_shared/rebexciphers.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Proxy_32.svg#img_header) Proxy Settings
+## ![](/r2022/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_Proxy_32.svg#img_header) Proxy Settings
 The **Proxy Settings** page allows you to configure a proxy server used to connect to the remote server.
 
 #### Proxy Mode

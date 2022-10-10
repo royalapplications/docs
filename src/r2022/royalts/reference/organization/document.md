@@ -4,7 +4,7 @@ name: Document
 order: 10000
 ---
 
-# ![](/r2021/images/RoyalTS/Application/SVG_FileIconRTSZ_32.svg#img_header) Document
+# ![](/r2022/images/RoyalTS/Application/SVG_FileIconRTSZ_32.svg#img_header) Document
 A **Document** in Royal TS is used to store and organize objects like connections, credentials and tasks in folders.
 
 ## Document Properties
@@ -48,8 +48,8 @@ If checked, Royal TS will automatically save all changes to the document when th
 
 See also: [About shared documents](http://support.royalapplications.com/knowledgebase/articles/341144)
 
-## ![](/r2021/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header) Security
-### ![](/r2021/images/RoyalTS/Application/SVG_PageEncryption_32.svg#img_header) Encryption
+## ![](/r2022/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header) Security
+### ![](/r2022/images/RoyalTS/Application/SVG_PageEncryption_32.svg#img_header) Encryption
 If you want to store your credentials and passwords in the current document, it's recommended to provide an encryption password. Royal TS will prompt for this password when you open the document.
 
 #### Enable Encryption
@@ -68,7 +68,7 @@ Confirm your password.
 
 Read more about Security and Encryption in Royal TS [here](xref:royalts_intro_security).
 
-### ![](/r2021/images/RoyalTS/Application/SVG_PageLockdown_32.svg#img_header) Lockdown
+### ![](/r2022/images/RoyalTS/Application/SVG_PageLockdown_32.svg#img_header) Lockdown
 A locked down document prevents certain actions, such as viewing the password. Those actions are only available after providing the **Lockdown-Password**. To lock down a document, an encryption password must be configured and the **Encrypt complete file** checkbox must be checked.
 
 #### Encrypt complete file
@@ -93,7 +93,7 @@ After setting a lockdown password, individual restrictions can be set in the che
 
 See also Working with [Lockdown Document](xref:royalts_tutorials_lockdown).
 
-## ![](/r2021/images/RoyalTS/Application/SVG_PageUserSpecificSettings_32.svg#img_header) User Specific Settings
+## ![](/r2022/images/RoyalTS/Application/SVG_PageUserSpecificSettings_32.svg#img_header) User Specific Settings
 Configure which settings you want to save locally per user instead of inside the document. By default, all settings are saved in the document.
 
 #### Favorites
@@ -102,7 +102,7 @@ If checked, favorites are tracked for each user individually.
 #### Folder State
 If checked, the state of each folder (expanded or collapsed) is tracked for each user individually.
 
-## ![](/r2021/images/RoyalTS/Application/SVG_PageDeletedObjects_32.svg#img_header) Deleted Objects
+## ![](/r2022/images/RoyalTS/Application/SVG_PageDeletedObjects_32.svg#img_header) Deleted Objects
 The **Deleted Objects** page allows you to configure the retention (in days) for deleted objects, recover deleted objects and purge all deleted objects permanently.
 
 #### Retention (in Days)

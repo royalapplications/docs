@@ -4,13 +4,13 @@ name: Terminal Services
 order: 9840
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PluginIcon_32.svg#img_header) Terminal Services
+# ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PluginIcon_32.svg#img_header) Terminal Services
 The **Terminal Services** connection can be used to display terminal sessions from one or more computers and provide basic management tasks.
 
 ## Dashboard
 The **Terminal Services Dashboard** is shown in the **Dashboard** panel when you select a Terminal Services connection in the **Navigation** panel.
 
-![TerminalServices_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/TerminalServices/terminalservices_dashboard.png)
+![TerminalServices_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/TerminalServices/terminalservices_dashboard.png)
 
 ## Dashboard Features
 - List of all terminal services sessions and their state.
@@ -44,7 +44,7 @@ The **Terminal Services** page allows you to configure basic connection settings
 [!include[computername.md](~/royalts/_shared/computername.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 #### Auto Refresh (in sec.)

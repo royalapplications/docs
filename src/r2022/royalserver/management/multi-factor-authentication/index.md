@@ -5,7 +5,7 @@ order: 9065
 
 ## General Information
 
-<img src="/r2021/images/RoyalServer/MFA_48x48.png" class="icon-def" alt="" />
+<img src="/r2022/images/RoyalServer/MFA_48x48.png" class="icon-def" alt="" />
 
 The Multi-Factor Authentication panel allows the configuration of a second factor for each user and the settings of the provider (if needed).
 

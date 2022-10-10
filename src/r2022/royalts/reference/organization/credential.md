@@ -4,7 +4,7 @@ name: Credential
 order: 9970
 ---
 
-# ![](/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Credential
+# ![](/r2022/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Credential
 **Credentials** are used to store username and password in a secure manner. By using and assigning credentials to connections, you can easily share your connections document while having all your credentials stored in a separate, private document.
 
 ## Usage of Credentials
@@ -43,7 +43,7 @@ Enter the password for the credential.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/r2021/images/RoyalTS/Application/SVG_PageKeyFile_32.svg#img_header) Private Key File
+## ![](/r2022/images/RoyalTS/Application/SVG_PageKeyFile_32.svg#img_header) Private Key File
 The **Private Key File** tab page allows you to configure a path to a private key file and a passphrase. These settings are optional and only used by connection types supporting these settings (Terminal connections using SSH protocol, for example).
 
 #### Private Key File

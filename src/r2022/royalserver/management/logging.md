@@ -5,7 +5,7 @@ order: 9010
 
 # Logging
 
-<img src="/r2021/images/RoyalServer/Logging_48x48.png" class="icon-def" alt="" />
+<img src="/r2022/images/RoyalServer/Logging_48x48.png" class="icon-def" alt="" />
 
 The Logging Configuration panel displays and changes the logging configuration of Royal Server.
 

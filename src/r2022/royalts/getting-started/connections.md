@@ -20,7 +20,7 @@ You may also switch to the **Edit** tab and select the connection object you wan
 ## Show all Object Types
 Selecting the **More...** menu item displays a dialog where you can choose from all available object types including connections based on a specific plugin or based on a custom connection template:
 
-![](/r2021/images/RoyalTS/GettingStarted/Connections_02.png)
+![](/r2022/images/RoyalTS/GettingStarted/Connections_02.png)
 
 See also: [Plugins](xref:royalts_intro_plugins) and [Templates](xref:royalts_tutorials_templates)
 

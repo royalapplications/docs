@@ -6,7 +6,7 @@ order: 9030
 
 # Modules
 
-<img src="/r2021/images/RoyalServer/ModuleManagement_48x48.png" class="icon-def" alt="" />
+<img src="/r2022/images/RoyalServer/ModuleManagement_48x48.png" class="icon-def" alt="" />
 
 The Modules panel displays the currently installed modules.
 

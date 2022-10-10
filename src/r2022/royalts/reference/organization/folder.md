@@ -4,7 +4,7 @@ name: Folder
 order: 9990
 ---
 
-# ![](/r2021/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header) Folder
+# ![](/r2022/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header) Folder
 A **Folder** is used to organize objects, such as connections, credentials and tasks.
 
 ## Folder Properties

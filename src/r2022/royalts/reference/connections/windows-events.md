@@ -4,13 +4,13 @@ name: Windows Events View
 order: 9870
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PluginIcon_32.svg#img_header) Windows Events View
+# ![](/r2022/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PluginIcon_32.svg#img_header) Windows Events View
 The **Windows Events View** can be used to display Windows Events from one or more computers using custom query filters.
 
 ## Dashboard
 The **Windows Events View** is shown in the **Dashboard** panel when you select a Windows Events View in the **Navigation** panel.
 
-![WindowsEvents_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/windowsevents_dashboard.png)
+![WindowsEvents_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/WindowsEvents/windowsevents_dashboard.png)
 
 ## Dashboard Features
 - List of windows events from one or more computers.
@@ -42,7 +42,7 @@ The **Windows Events** page allows you to configure basic connection settings.
 [!include[computername.md](~/royalts/_shared/computername.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 #### Auto Refresh (in sec.)
@@ -63,7 +63,7 @@ If checked, horizontal lines are shown in the grid.
 #### Show Vertical Lines
 If checked, vertical lines are shown in the grid.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_ViewFilter_32.svg#img_header) Filter
+## ![](/r2022/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_ViewFilter_32.svg#img_header) Filter
 The **Filter** page allows you to configure basic filtering or an advanced WMI query filter.
 
 ### Basic

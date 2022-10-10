@@ -74,7 +74,7 @@ Also, please take a look at our [Module Reference](xref:royalserver_scripting_mo
 
 ## SEE ALSO
 
-- https://docs.royalapps.com/r2021/scripting/intro
+- https://docs.royalapps.com/r2022/scripting/intro
 
 ## KEYWORDS
 

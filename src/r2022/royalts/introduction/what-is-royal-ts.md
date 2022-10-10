@@ -3,7 +3,7 @@ name: What is Royal TS
 order: 10000
 ---
 
-![](/r2021/images/RoyalTS/Application/SVG_ApplicationIcon_32.svg#img_floatright#img_large)
+![](/r2022/images/RoyalTS/Application/SVG_ApplicationIcon_32.svg#img_floatright#img_large)
 # What is Royal TS
 Royal TS provides powerful, easy and secure access to your remote systems. It's the perfect tool for server admins, system engineers, developers and IT focused information workers who constantly need to access remote systems with different protocols (like RDP, VNC, SSH, HTTP/S, and many more).
 

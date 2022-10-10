@@ -5,7 +5,7 @@ order: 7020
 
 # Configuration
 
-<img src="/r2021/images/RoyalServer/ApplicationOptions_48x48.png" class="icon-def" alt="" />
+<img src="/r2022/images/RoyalServer/ApplicationOptions_48x48.png" class="icon-def" alt="" />
 
 The  Configuration panel displays and changes the configuration of the Document Store component of Royal Server.
 

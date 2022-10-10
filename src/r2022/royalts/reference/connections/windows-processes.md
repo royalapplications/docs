@@ -4,13 +4,13 @@ name: Windows Processes
 order: 9860
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PluginIcon_32.svg#img_header) Windows Processes
+# ![](/r2022/images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PluginIcon_32.svg#img_header) Windows Processes
 The **Windows Processes** connection can be used to display Windows processes from one or more computers.
 
 ## Dashboard
 The **Windows Processes** are shown in the **Dashboard** panel when you select a Windows Processes connection in the **Navigation** panel.
 
-![WindowsProcesses_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/WindowsProcesses/windowsprocesses_dashboard.png)
+![WindowsProcesses_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/WindowsProcesses/windowsprocesses_dashboard.png)
 
 ## Dashboard Features
 - List of windows processes from one or more computers.
@@ -42,7 +42,7 @@ The **Windows Processes** page allows you to configure basic connection settings
 [!include[computername.md](~/royalts/_shared/computername.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 #### Auto Refresh (in sec.)

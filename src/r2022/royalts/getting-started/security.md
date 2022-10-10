@@ -20,11 +20,11 @@ Royal TS also features password strength indicators wherever passwords are used.
 
 Whenever you enter a password in Royal TS, you get immediately a sense how secure your password is:
 
-![](/r2021/images/RoyalTS/GettingStarted/Security_01.png)
+![](/r2022/images/RoyalTS/GettingStarted/Security_01.png)
 
 Password Generator
 In addition to indicate the strength of the password, Royal TS also features a password generator:
 
-![](/r2021/images/RoyalTS/GettingStarted/Security_02.png)
+![](/r2022/images/RoyalTS/GettingStarted/Security_02.png)
 
 See also: [Document Security](xref:royalts_reference_organization_document#-security)

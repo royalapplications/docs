@@ -6,7 +6,7 @@ order: 10099
 
 # What is Royal Server?
 
- <img src="/r2021/images/RoyalServer/RoyalServer_ApplicationIcon_256x256.png" style="float: right;width: 50%;height: 50%;max-width:128px">
+ <img src="/r2022/images/RoyalServer/RoyalServer_ApplicationIcon_256x256.png" style="float: right;width: 50%;height: 50%;max-width:128px">
 
 Transmitting screen content, mouse and keyboard data to read Windows Events or restart a service? This seems like overkill! Royal Server provides common remote management tasks to cross-platform clients Royal TS/X for Windows, macOS, iOS and Android - using their native UI. The combination of Royal Server and the award winning Royal TS/X remote management clients takes remote systems management to a whole new level.
 

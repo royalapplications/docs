@@ -4,13 +4,13 @@ name: VMware
 order: 9820
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/VMware/SVG_PluginIcon_32.svg#img_header) VMware
+# ![](/r2022/images/RoyalTS/Plugins/Connections/VMware/SVG_PluginIcon_32.svg#img_header) VMware
 The **VMware** connection can be used to display VMware guest instances from one or more computers and provide basic management tasks as well as the ability to connect to the guest instance console.
 
 ## Dashboard
 The **VMware Dashboard** is shown in the **Dashboard** panel when you select a VMware connection in the **Navigation** panel.
 
-![VMware_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/VMware/vmware_dashboard.png)
+![VMware_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/VMware/vmware_dashboard.png)
 
 ## Dashboard Features
 - List of all hosted VMware guests (or instances) and their state.
@@ -53,7 +53,7 @@ The SSH Port is used for ad hoc Terminal connections to the VMware host. Default
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/VMware/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/VMware/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure grid and auto refresh settings.
 
 #### Auto Refresh (in sec.)

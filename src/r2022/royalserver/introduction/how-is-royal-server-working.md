@@ -10,7 +10,7 @@ For the Management Endpoint and the Document Store component: Royal Server is ba
 
 The Secure Gateway component is based on SSH standards.
 
-![](/r2021/images/RoyalServer/screenshot_howroyalserverworks.png)
+![](/r2022/images/RoyalServer/screenshot_howroyalserverworks.png)
 
 The basic flow of Management Endpoint connections works like this: Client devices like desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS are accessing Royal Server over HTTP/S (possibly using a VPN tunnel). Royal Server itself is using different technologies to talk to the managed servers, depending on the used [component](./what-are-royal-server-components.md) and module. The Secure Gateway component is using a standards-based SSH connection.
 

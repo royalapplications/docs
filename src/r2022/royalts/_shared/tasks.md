@@ -1,4 +1,4 @@
-## ![](/r2021/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header) Tasks
+## ![](/r2022/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header) Tasks
 You can specify a task to be executed before a connection is established and after it has been disconnected. For example: establish a VPN connection before you connect and close it after disconnect.
 
 ### Connect Task
@@ -62,7 +62,7 @@ If checked, the task will only be executed if it is the last active connection i
 
 See also: [Working with Tasks](xref:royalts_tutorials_tasks), [Command Task](xref:royalts_reference_tasks_command)
 
-### ![](/r2021/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header) Key Sequence
+### ![](/r2022/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header) Key Sequence
 The **Key Sequence** page allows you to configure a sequence of key strokes (simulating keyboard events) to be sent to the connection after the connection has been established.
 
 #### Do not send a key sequence

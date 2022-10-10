@@ -4,13 +4,13 @@ name: Terminal (PuTTY)
 order: 9950
 ---
 
-# ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIcon_32.svg#img_header) Terminal (PuTTY)
+# ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIcon_32.svg#img_header) Terminal (PuTTY)
 The **Terminal** connection based on PuTTY can be used to connect to remote computers using Telnet, Secure Shell (SSH) (incl. Tunneling support), RAW or rlogin. It can also be used to connect to devices using the Serial Port.
 
 ## Dashboard
 The **Terminal Dashboard** is shown in the **Dashboard** panel when you select a Terminal connection based on the PuTTY plugin in the **Navigation** panel. The dashboard will show files with the extension .log. Logging and recording configuration can be found in [Logging](#-logging).
 
-![PuTTY_Dashboard](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png)
+![PuTTY_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png)
 
 ## Dashboard Features
 - Click the **Open in Explorer** button to open the folder containing the selected file in Windows Explorer.
@@ -48,7 +48,7 @@ The Terminal (PuTTY) Properties dialog is shown:
 - for an existing Terminal connection by selecting a Terminal connection which is configured to use the PuTTY based plugin and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Terminal connections which are configured to use the PuTTY based plugin were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIconConnection_32.svg#img_header) Terminal Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIconConnection_32.svg#img_header) Terminal Properties
 The The Terminal Connection page allows you to configure basic connection settings, such as host name and the connection type (Telnet, SSH or Serial Port). page allows you to configure basic connection settings, such as host name and the connection type (Telnet, SSH, RAW, rlogin or Serial Port). You can also configure the connection to use an existing PuTTY connection or import an existing PuTTY connection.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
@@ -73,7 +73,7 @@ Specify the TCP port for the connection.
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 The **Display Options** page allows you to configure font settings and appearance settings.
 
 ### Font
@@ -142,7 +142,7 @@ If checked, the PuTTY window will be always on top.
 #### Full Screen on Alt-Enter
 If checked, Alt-Enter will change the PuTTY window into Full Screen mode.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageColors_32.svg#img_header) Colors
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageColors_32.svg#img_header) Colors
 The **Colors** page allows you to modify the terminal palette and colors for different text styles.
 
 ### Color Usage
@@ -176,7 +176,7 @@ Adjust the ANSI color palette for individual colors.
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced Terminal settings.
 
 ### General
@@ -292,7 +292,7 @@ If checked, VT100 line drawing is enabled even in UTF-8 mode.
 ### Environment
 The Environment tab can be used to set specific variables and values for the connection.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSSHSettings_32.svg#img_header) SSH Settings
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSSHSettings_32.svg#img_header) SSH Settings
 The **SSH Settings** page allows you to configure settings specific for SSH connections.
 
 ### General
@@ -384,7 +384,7 @@ Configure the X11 authentication protocol.
 #### X Authority File for Local Display
 Specify a X authentication file for the local display.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageInput_32.svg#img_header) Input
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageInput_32.svg#img_header) Input
 The **Input** page allows you to configure keyboard behavior in the remote session.
 
 ### Keyboard
@@ -467,7 +467,7 @@ If this box is checked, the Backspace key on the keyboard will send the Telnet s
 #### Telnet Return Key sends New Line (instead of ^M)
 If checked, PuTTY sends Control-M instead of the Telnet New Line code when you press Return.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageTunnels_32.svg#img_header) Tunnels
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageTunnels_32.svg#img_header) Tunnels
 The **Tunnels** page allows you to configure SSH port forwarding (tunneling).
 
 #### Local Ports accept Connections from other Hosts
@@ -476,7 +476,7 @@ If checked, it allows you to set up local-to-remote port forwarding in such a wa
 #### Remote Ports accept Connections from other Hosts
 If checked, machines other than the SSH server machine can connect to the forwarded port.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSerial_32.svg#img_header) Serial Port
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSerial_32.svg#img_header) Serial Port
 The **Serial Port** page allows you to configure the port settings to connect to devices using RS232.
 
 #### Port Name
@@ -500,7 +500,7 @@ Set the standard number of stop bits per byte.
 #### Parity
 Set the parity checking protocol.
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageProxy_32.svg#img_header) Proxy Settings
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageProxy_32.svg#img_header) Proxy Settings
 The **Proxy Settings** page allows you to configure a proxy server used to connect to the remote server.
 
 #### Proxy Mode
@@ -521,7 +521,7 @@ Specify the proxy server port to use.
 ### Credential Mode
 [!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]
 
-## ![](/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageLogging_32.svg#img_header) Logging
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageLogging_32.svg#img_header) Logging
 The **Logging** page allows you to configure session logging. Log files can be viewed using the Dashboard.
 
 ### General Logging Options

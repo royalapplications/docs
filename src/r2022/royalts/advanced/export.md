@@ -3,9 +3,9 @@ uid: royalts_advanced_export
 name: Export Data
 order: 10500
 ---
-# ![](/r2021/images/RoyalTS/Application/SVG_FileExport_32.svg#img_header)Export Data
+# ![](/r2022/images/RoyalTS/Application/SVG_FileExport_32.svg#img_header)Export Data
 
-## ![](/r2021/images/RoyalTS/Application/SVG_FileIconTXT_32.svg#img_header)Export to CSV File
+## ![](/r2022/images/RoyalTS/Application/SVG_FileIconTXT_32.svg#img_header)Export to CSV File
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the Export group, click on **Comma Separated File (.csv)**.
 3. Type a destination file name into the Save as text box.
@@ -16,7 +16,7 @@ order: 10500
 8. The **Include Passwords** check box also allows you to export passwords and encrypted custom fields. If your document is password protected you will be prompted to enter the password to continue.
 9. To start the export, click on **OK**.
 
-## ![](/r2021/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header)Export Dynamic Folder
+## ![](/r2022/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header)Export Dynamic Folder
 1. In the **Navigation** panel, select a dynamic folder.
 2. On the **Data** tab, in the **Export** group, click on **Dynamic Folder (.rdfe)**.
 3. Type a destination file name into the **Save as** text box.
@@ -26,7 +26,7 @@ order: 10500
 7. The **Anonymize Custom Properties** check box also allows you to control whether or not to remove sensitive information from the custom properties.
 8. To start the export, click on **OK**.
 
-## ![](/r2021/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header)Export Log Entries
+## ![](/r2022/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header)Export Log Entries
 Royal TS keeps an internal log which tracks user activity and errors. Exporting the log entries can be useful for troubleshooting issues or for processing user activity to create time sheets or reports.
 1. On the **View** tab, in the **Panels** group, click on **Log**.
 2. Click the **Save** button in the Log panel toolbar.

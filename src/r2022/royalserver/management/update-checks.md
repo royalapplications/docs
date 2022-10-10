@@ -5,7 +5,7 @@ order: 9040
 
 # Update Checks
 
-<img src="/r2021/images/RoyalServer/ApplicationDownload_48x48.png" class="icon-def" alt="" />
+<img src="/r2022/images/RoyalServer/ApplicationDownload_48x48.png" class="icon-def" alt="" />
 
 The **Update Checks** panel displays the configuration of the Update Checks.
 
