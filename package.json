@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "watch": "npm-watch serve",
-    "serve": "cd ./src/r2022 && docfx docfx-serve.json --serve"
+    "serve": "cd ./src/r2022 && docfx docfx.json"
   },
   "watch": {
     "serve": {
