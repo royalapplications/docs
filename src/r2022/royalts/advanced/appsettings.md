@@ -140,3 +140,7 @@ The path Royal TS is using for roaming configuration files like:
 ### LocalConfigurationPath
 Default Value: `%LOCALAPPDATA%`
 The path Royal TS is using for local files which are not available when users roam.
+
+### DisableAccessibility
+Default Value: `false`  
+Gets or sets whether the accessibility features (interaction with accessibility tools such as Microsoft Narrator) are disabled.
