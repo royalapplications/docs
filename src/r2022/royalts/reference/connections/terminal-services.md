@@ -37,7 +37,7 @@ The Terminal Services Properties dialog is shown:
 - for an existing Terminal Services connection by selecting a Terminal Services connection and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Terminal Services connections were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## Terminal Services Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalServices/SVG_PluginIcon_32.svg#img_header) Terminal Services Properties
 The **Terminal Services** page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]

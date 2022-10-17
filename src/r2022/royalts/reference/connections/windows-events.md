@@ -35,7 +35,7 @@ The Windows Events View Properties dialog is shown:
 - for an existing Windows Events View by selecting a Windows Events View and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Windows Events Views were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## Windows Events Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PluginIcon_32.svg#img_header) Windows Events Properties
 The **Windows Events** page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]

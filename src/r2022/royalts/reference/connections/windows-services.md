@@ -35,7 +35,7 @@ The Windows Services Properties dialog is shown:
 - for an existing Windows Services connection by selecting a Windows Services connection and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Windows Services connections were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## Windows Services Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PluginIcon_32.svg#img_header) Windows Services Properties
 The **Windows Services** page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]

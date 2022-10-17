@@ -41,7 +41,7 @@ The PowerShell Connection Properties dialog is shown:
 - for an existing PowerShell Connection by selecting a PowerShell Connection and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple PowerShell Connections were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## PowerShell Connection Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/PowerShell/SVG_PluginIcon_32.svg#img_header) PowerShell Connection Properties
 The **PowerShell** page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]

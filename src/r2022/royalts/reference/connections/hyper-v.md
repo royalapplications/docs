@@ -40,7 +40,7 @@ The Hyper-V Properties dialog is shown:
 - for an existing Hyper-V connection by selecting a Hyper-V connection and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Hyper-V connections were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## Hyper-V Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/HyperV/SVG_PluginIcon_32.svg#img_header) Hyper-V Properties
 The **Hyper-V** page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]

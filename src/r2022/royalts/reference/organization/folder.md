@@ -32,3 +32,4 @@ The folder property dialog is shown:
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
 [!include[customfields.md](~/royalts/_shared/customfields.md)]
+[!include[parentfolder.md](~/royalts/_shared/parentfolder.md)]

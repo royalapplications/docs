@@ -34,7 +34,7 @@ The External Application Properties dialog is shown:
 - for an existing External Application connection by selecting an External Application connection and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple External Application connections were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## External Application Properties
+## ![](/r2022/images/RoyalTS/Plugins/Connections/ExternalApp/SVG_PluginIcon_32.svg#img_header) External Application Properties
 The **Terminal Connection** page allows you to configure basic connection settings, such as host name and the connection type (Telnet, SSH or Serial Port).
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 

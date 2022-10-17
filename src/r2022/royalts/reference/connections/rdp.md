@@ -79,6 +79,7 @@ The Remote Desktop Properties dialog is shown:
 - as a bulk-edit dialog when multiple Remote Desktop connections were selected in the **Folder / Document Dashboard** and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked.  
   See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg#img_header) Remote Desktop Properties
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[computername.md](~/royalts/_shared/computername.md)]
 

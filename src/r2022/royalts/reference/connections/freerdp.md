@@ -4,13 +4,13 @@ name: Remote Desktop (FreeRDP)
 order: 9995
 ---
 
-# ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg#img_header) Remote Desktop 
+# ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PluginIcon_32.svg#img_header) Remote Desktop 
 The **Remote Desktop** connection *(based on FreeRDP)* can be used to connect to remote computers or Hyper-V guests using the remote desktop protocol (RDP).
 
 ## Dashboard
 The **Remote Desktop Dashboard** is shown in the **Dashboard** panel when you select a Remote Desktop connection in the **Navigation** panel. Depending on the Hyper-V configuration of your connection you will either see the **Hyper-V** dashboard pane, the **Sessions** dashboard pane, or both.
 
-![RemoteDesktop_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/remotedesktop_dashboard.png)
+![RemoteDesktop_Dashboard](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/remotedesktop_dashboard.png)
 
 ## Hyper-V Features
 -   List of all hosted Hyper-V guests (or instances) and their state.
@@ -49,6 +49,7 @@ The Remote Desktop Properties dialog is shown:
 - as a bulk-edit dialog when multiple Remote Desktop connections were selected in the **Folder / Document Dashboard** and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked.  
   See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PluginIconConnectionInactive_32.svg#img_header) Remote Desktop Properties
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[computername.md](~/royalts/_shared/computername.md)]
 
@@ -61,7 +62,7 @@ Similar to the /console or /admin switch from the original terminal services cli
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
 
-## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageDisplayOptions_32.svg#img_header) Display Options
 #### Color Depth
 The color depth (in bits per pixel) for the control's connection.
 
@@ -101,7 +102,7 @@ If checked, Royal TS will also use the configured credentials to retrieve the da
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
-## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageAdvanced_32.svg#img_header) Advanced
 ### Authentication
 #### Authentication Level
 Specifies the authentication level to use for the connection.
@@ -178,7 +179,7 @@ Specify the Logon Method for the gateway server.
 > This makes sharing files across team members very easy while keeping credentials safe.
 > See Work with [Personal Credentials in a Shared Document](xref:royalts_tutorials_credentials#working-with-personal-credentials-and-a-shared-document) for more information.
 
-## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageHyperV_32.svg#img_header) Hyper-V
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageHyperV_32.svg#img_header) Hyper-V
 The **Hyper-V** page allows you to setup your connection as a Hyper-V host to display the Hyper-V management in the Dashboard and optionally allows you to configure a target instance you want to connect to by default.
 
 #### Hyper-V Mode
@@ -203,7 +204,7 @@ Enter an instance ID (GUID) or click on the browse button (...) on the right to 
 > [!Note]
 > Instance browsing relies on WMI. Ensure that all the necessary firewall ports for WMI are open and that the user account running Royal TS (beware of UAC) or the credentials set in the Remote Desktop connection have local administrative rights on the remote Hyper-V host computer.
 
-## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PagePerformance_32.svg#img_header) Performance
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PagePerformance_32.svg#img_header) Performance
 The **Performance** page allows you to configure various Remote Desktop settings which will directly impact the connection performance.
 
 #### Connection Speed
@@ -230,7 +231,7 @@ If not checked, themes are ignored and not displayed.
 #### Hardware Acceleration
 If checked, hardware acceleration will be used where supported. Overview thumbnails may not work with hardware acceleration enabled.
 
-## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageRedirection_32.svg#img_header) Redirection
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageRedirection_32.svg#img_header) Redirection
 The Redirection page allows you to configure device and resource redirection for use in the remote session.
 
 #### Clipboard
@@ -251,7 +252,7 @@ pecifies whether the default audio input device is redirected from the client to
 > [!Note]
 > Record Audio from this computer requires Windows 7/Windows 2008R2 or later.
 
-## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageInput_32.svg#img_header) Input
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageInput_32.svg#img_header) Input
 The **Input** page allows you to configure keyboard behavior and keyboard layout in the remote session.
 
 #### Accelerator Passthrough
@@ -269,7 +270,7 @@ Specify a predefined or custom keyboard layout in your remote session.
 > [!Note]
 > This setting will only be effective for freshly logged on sessions. Changing this setting will not affect sessions where a user is already logged on. Ensure you log off the user before you change this setting.
 
-## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageStartProgram_32.svg#img_header) Program
+## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageStartProgram_32.svg#img_header) Program
 The **Program** page allows you to configure the program to be started on the remote server upon connection.
 
 #### Program

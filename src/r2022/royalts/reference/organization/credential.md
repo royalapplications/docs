@@ -52,6 +52,19 @@ The path to the private key file.
 #### Passphrase
 The passphrase used for the private key file.
 
+## ![](/r2022/images/RoyalTS/Application/SVG_MFA_32.svg#img_header) MFA
+In case your connection requires a multi-factor-authentication (MFA) code included in your username or password, you can configure where the MFA code should be added here. A MFA code prompt will appear before the connection is established.
+
+#### MFA Mode
+- Disabled: no MFA code is required.
+- Prompt: an MFA code is required. Royal TS will prompt for the code upon connect.
+
+#### Property
+Select whicht property should be used to add the MFA code (*Effective Username* or *Effective Password*).
+
+#### Template
+Use the **{Value}** token to insert the property value (*username* or *password*). Use the **{MfaCode}** token to insert the *MFA code*.
+
 [!include[autofill.md](~/royalts/_shared/autofill.md)]
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
