@@ -19,7 +19,8 @@ When selected, assign an existing credential to the object using the drop-down l
 > The drop-down list supports sorting and filtering "as you type" to easily find the correct credential.
 
 #### Specify a credential name
-When selected, enter or choose a credential name you want to assign to the object during connect-time.
+When selected, enter or choose a credential name you want to assign to the object during connect-time.  
+If you enter '**?**' (without the quotes) as credential name, Royal TS will prompt for credentials by showing the credential picker dialog.
 
 > [!Note]
 > Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.
