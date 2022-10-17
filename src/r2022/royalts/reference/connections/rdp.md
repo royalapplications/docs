@@ -1,6 +1,6 @@
 ---
 uid: royalts_reference_connections_rdp
-name: Remote Desktop
+name: Remote Desktop (ActiveX)
 order: 10000
 ---
 
@@ -131,6 +131,7 @@ If checked, Royal TS will also use the configured credentials to retrieve the da
 
 [!include[royalserver.md](~/royalts/_shared/royalserver.md)]
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
+[!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
 ## ![](/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg#img_header) Advanced
 ### Authentication
