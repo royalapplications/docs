@@ -94,7 +94,7 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <li>for an existing VMware connection by selecting a VMware connection and clicking on the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
 <li>as a bulk-edit dialog when multiple VMware connections were selected in the Folder / Document Dashboard and the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab is clicked. See also: <a class="xref" href="../../tutorials/bulk-operations.html">Bulk Operations</a></li>
 </ul>
-<h2 id="vmware-properties">VMware Properties</h2>
+<h2 id="-vmware-properties"><img src="/r2022/images/RoyalTS/Plugins/Connections/VMware/SVG_PluginIcon_32.svg#img_header" alt=""> VMware Properties</h2>
 <p>The <strong>VMware</strong> page allows you to configure basic connection settings.</p>
 <h4 id="display-name-required">Display Name <em>(required)</em></h4>
 <p>Enter a display name for object.</p>
@@ -364,6 +364,15 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
 
 <p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h2 id="-advanced"><img src="/r2022/images/RoyalTS/Plugins/Connections/VMware/SVG_PageDisplayOptions_32.svg#img_header" alt=""> Advanced</h2>
+<p>The <strong>Advanced</strong> page allows you to configure VMware connection settings such as port configuration or instance filtering.</p>
+<h3 id="ssh-port-1">SSH Port</h3>
+<p>The SSH port is used for ad hoc Terminal connections to the VMware host.<br>
+The default port is 22.</p>
+<h3 id="automatically-connect-to-virtual-machine-console">Automatically connect to Virtual Machine Console</h3>
+<p>If checked, a VMRC connection to the specified Virtual Machine ID is established immediately.</p>
+<h3 id="virtual-machine-id">Virtual Machine ID</h3>
+<p>Specify a Virtual Machine ID (Management Object Reference) to directly start a vmware Remote Console session using the Connect command.</p>
 <h2 id="-notes"><img src="/r2022/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
 <p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
 <h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
