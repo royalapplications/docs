@@ -200,7 +200,8 @@ Changing the window size will force a reconnect, so that the remote desktop will
 <p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the correct credential.</p>
 </div>
 <h4 id="specify-a-credential-name">Specify a credential name</h4>
-<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.</p>
+<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.<br>
+If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal TS will prompt for credentials by showing the credential picker dialog.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
@@ -419,6 +420,20 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
 
 <p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h2 id="-active-plugin"><img src="/r2022/images/RoyalTS/Application/SVG_ApplicationPlugins_32.svg#img_header" alt=""> Active Plugin</h2>
+<p>The <strong>Active Plugin</strong> page allows you to setup which plugin should be used for this connection.</p>
+<h4 id="use-application-default-setting">Use Application Default Setting</h4>
+<p>If checked, the application default plugin is used for this connection. Clear the check box to configure a specific plugin for this connection.</p>
+<p>Click on <strong>Open Plugin Management</strong> to change the default plugin for this connection type.</p>
+<h4 id="active-plugin">Active Plugin</h4>
+<p>Select the plugin which should be used for this connection.</p>
+<h4 id="information">Information</h4>
+<p>Click on the information button to open the selected plugin information page.</p>
+<h4 id="settings">Settings</h4>
+<p>Click on the settings button to open the selected plugin settings page.</p>
+<h4 id="open-plugin-management">Open Plugin Management</h4>
+<p>Click to open the Plugin management dialog.</p>
+<p>See also: <a class="xref" href="../../getting-started/plugins.html">Plugins</a></p>
 <h2 id="-advanced"><img src="/r2022/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PageAdvanced_32.svg#img_header" alt=""> Advanced</h2>
 <h3 id="authentication">Authentication</h3>
 <h4 id="authentication-level">Authentication Level</h4>

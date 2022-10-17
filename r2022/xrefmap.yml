@@ -178,6 +178,9 @@ references:
 - uid: royalts_reference_connections_filetransfer
   name: " File Transfer"
   href: royalts/reference/connections/filetransfer.html
+- uid: royalts_reference_connections_freerdp
+  name: " Remote Desktop"
+  href: royalts/reference/connections/freerdp.html
 - uid: royalts_reference_connections_hyper-v
   name: " Hyper-V"
   href: royalts/reference/connections/hyper-v.html
