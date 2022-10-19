@@ -52,6 +52,9 @@ Some connection types may provide a different way to send key sequences (Direct 
 - **Always use Direct Mode (where supported)**  
   This option will force Royal TS to always send the task directly to the active connection when the connection type supports the Direct Mode. If you set this option and execute the task on a connection which doesn't support Direct Mode, the task will be sent using keyboard input simulation.
 
+#### Do not send scan codes
+If checked, keyboard input simulation does not send scan codes. Can be used in case of keyboard layout issues.
+
 #### No confirmation required
 If checked, tasks executed from the Favorite Key Sequence Tasks menu do not show the Task Context confirmation window.
 
