@@ -2641,7 +2641,7 @@
           "hash": "Ln1AOUzByvSWd8jdCVxWmvzqiIfohY3xTKTfpeC2qSU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2653,7 +2653,7 @@
           "hash": "jSoOEfm7V64B9PdJO6UUWJK2TVacOjQsHlY3l90mzJo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -4585,7 +4585,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/tasks/key-sequence.html",
-          "hash": "fuI3qzlIWUtcv+xEWec9YvM+bW59jW7BA1QXmZxlfQ8="
+          "hash": "ZD8T3NMxRxWFyIRG9wgKZmX4NDEKL6hB92BqIA0MEdI="
         }
       },
       "is_incremental": false,
@@ -6035,19 +6035,17 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build didn't contain group .",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableGroupCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 279,
-          "skipped_file_count": 0
+          "skipped_file_count": 278
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
