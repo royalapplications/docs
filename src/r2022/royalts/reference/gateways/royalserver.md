@@ -54,15 +54,28 @@ Specify the TCP port of the Secure Gateway (default port is 22).
 #### Test
 Click to test the Secure Gateway connectivity.
 
-#### Prefer Keyboard-Interactive Authentication
-If checked, keyboard-interactive authentication is preferred over password authentication.
-
 ## ![](/r2022/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Secure Gateway Credentials
 The **Credentials** page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.
 
 [!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]
 
 See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](xref:royalts_reference_organization_credential), [About shared documents](https://www.royalapps.com/go/kb-all-teamsharing)
+
+## ![](/r2022/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header) Security
+The **Security** page allows you to adjust security settings and allowed algorithms.
+
+### General
+#### Fingerprint
+Shows the fingerprint of the server.
+
+#### Prefer Keyboard-Interactive Authentication
+If checked, keyboard-interactive authentication is preferred over password authentication.
+
+> [!Note]
+> You may need to enable this option when your servers requires multi-factor authentication (MFA).
+
+[!include[rebexciphers.md](~/royalts/_shared/rebexciphers.md)]
+[!include[dependent-gateway.md](~/royalts/_shared/dependent-gateway.md)]
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]

@@ -37,6 +37,9 @@ If checked, keyboard-interactive authentication is preferred over password authe
 [!include[description.md](~/royalts/_shared/description.md)]
 
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
+
+[!include[dependent-gateway.md](~/royalts/_shared/dependent-gateway.md)]
+
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
 [!include[customfields.md](~/royalts/_shared/customfields.md)]

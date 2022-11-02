@@ -64,6 +64,8 @@ The **Credentials** page allows you to assign a credential to the object. You ca
 
 See also: [Working with Credentials](xref:royalts_tutorials_credentials), [Credential](xref:royalts_reference_organization_credential), [About shared documents](https://www.royalapps.com/go/kb-all-teamsharing)
 
+[!include[dependent-gateway.md](~/royalts/_shared/dependent-gateway.md)]
+
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
 [!include[customfields.md](~/royalts/_shared/customfields.md)]

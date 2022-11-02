@@ -31,12 +31,26 @@ Specify the TCP port of the Secure Gateway (default port is 22).
 #### Test
 Click to test the Secure Gateway connectivity..
 
-#### Prefer Keyboard-Interactive Authentication
-If checked, keyboard-interactive authentication is preferred over password authentication.
-
 [!include[description.md](~/royalts/_shared/description.md)]
 
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
+
+## ![](/r2022/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header) Security
+The **Security** page allows you to adjust security settings and allowed algorithms.
+
+### General
+#### Fingerprint
+Shows the fingerprint of the server.
+
+#### Prefer Keyboard-Interactive Authentication
+If checked, keyboard-interactive authentication is preferred over password authentication.
+
+> [!Note]
+> You may need to enable this option when your servers requires multi-factor authentication (MFA).
+
+[!include[rebexciphers.md](~/royalts/_shared/rebexciphers.md)]
+[!include[dependent-gateway.md](~/royalts/_shared/dependent-gateway.md)]
+
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
 [!include[customfields.md](~/royalts/_shared/customfields.md)]
