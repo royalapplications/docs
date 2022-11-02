@@ -8,7 +8,7 @@
     <title> Royal Server </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content=" Royal Server ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -142,8 +142,6 @@ If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal
 <p>Specify the TCP port of the Secure Gateway (default port is 22).</p>
 <h4 id="test-1">Test</h4>
 <p>Click to test the Secure Gateway connectivity.</p>
-<h4 id="prefer-keyboard-interactive-authentication">Prefer Keyboard-Interactive Authentication</h4>
-<p>If checked, keyboard-interactive authentication is preferred over password authentication.</p>
 <h2 id="-secure-gateway-credentials"><img src="/r2022/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Secure Gateway Credentials</h2>
 <p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
 <h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
@@ -173,6 +171,34 @@ If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal
 </div>
 
 <p>See also: <a class="xref" href="../../tutorials/working-with-credentials.html">Working with Credentials</a>, <a class="xref" href="../organization/credential.html">Credential</a>, <a href="https://www.royalapps.com/go/kb-all-teamsharing">About shared documents</a></p>
+<h2 id="-security"><img src="/r2022/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header" alt=""> Security</h2>
+<p>The <strong>Security</strong> page allows you to adjust security settings and allowed algorithms.</p>
+<h3 id="general">General</h3>
+<h4 id="fingerprint">Fingerprint</h4>
+<p>Shows the fingerprint of the server.</p>
+<h4 id="prefer-keyboard-interactive-authentication">Prefer Keyboard-Interactive Authentication</h4>
+<p>If checked, keyboard-interactive authentication is preferred over password authentication.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You may need to enable this option when your servers requires multi-factor authentication (MFA).</p>
+</div>
+<h4 id="ciphers">Ciphers</h4>
+<p>Use drag and drop, ALT + UP and ALT + DOWN keys or use the up and down buttons in the cipher header bar to reorder the list of algorithm. Checking/unchecking an algorithm will enable/disable it.</p>
+<p>You can configure the following ciphers:</p>
+<ul>
+<li>Encryption Key Algorithms</li>
+<li>Host Key Algorithms</li>
+<li>Key Exchange Algorithms</li>
+<li>Mac Algorithms</li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Ciphers with a warning icon are considered weak (insecure).</p>
+</div>
+<h2 id="-dependent-gateway"><img src="/r2022/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header" alt=""> Dependent Gateway</h2>
+<p>Multiple Secure Gateways can be used in series for nested tunneling. Specify the dependent Secure Gateway or Royal Server object for nested tunnneling.</p>
+<h4 id="dependent-gateway">Dependent Gateway</h4>
+<p>The Secure Gateway object to connect to before connecting to the current Secure Gateway.</p>
 <h2 id="-notes"><img src="/r2022/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
 <p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
 <h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
