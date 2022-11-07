@@ -5,6 +5,7 @@
   - name: What is Royal Server?
     href: introduction\what-is-royal-server.md
     order: 10099
+    href: introduction/what-is-royal-server.md
   - name: What is Royal TS?
     href: introduction\what-is-royal-ts.md
     order: 10098
@@ -14,15 +15,19 @@
   - name: What are Royal Server Components?
     href: introduction\what-are-royal-server-components.md
     order: 10080
+    href: introduction/how-is-royal-server-working.md
   - name: Installation
     href: introduction\installation.md
     order: 10070
+    href: introduction/installation.md
   - name: Configuration
     href: introduction\configuration.md
     order: 10060
+    href: introduction/configuration.md
   - name: Royal TS/X Management Connection
     href: introduction\royal-tsx-management-connection.md
     order: 10040
+    href: introduction/royal-tsx-management-connection.md
   - name: Release Notes
     href: introduction\release-notes.md
     order: 10030
@@ -33,12 +38,15 @@
   - name: Overview
     href: management\overview.md
     order: 9095
+    href: management/overview.md
   - name: Health
     href: management\health.md
     order: 9090
+    href: management/health.md
   - name: General Configuration
     href: management\general-configuration.md
     order: 9080
+    href: management/general-configuration.md
   - name: Service Configuration
     href: management\service-configuration.md
     order: 9070
@@ -53,24 +61,30 @@
       - name: DUO
         href: management\multi-factor-authentication\provider\duo.md
         order: 7020
+        href: management/multi-factor-authentication/provider/duo.md
       - name: TOTP
         href: management\multi-factor-authentication\provider\totp.md
         order: 7010
   - name: Security Configuration
     href: management\security-configuration.md
     order: 9060
+    href: management/security-configuration.md
   - name: Dynamic Folder
     href: management\dynamic-folder.md
     order: 9050
+    href: management/dynamic-folder.md
   - name: Update Checks
     href: management\update-checks.md
     order: 9040
+    href: management/update-checks.md
   - name: Modules
     href: management\modules.md
     order: 9030
+    href: management/modules.md
   - name: Permissions
     href: management\permissions.md
     order: 9020
+    href: management/permissions.md
   - name: Logging
     href: management\logging.md
     order: 9010
@@ -81,27 +95,35 @@
   - name: Document Store
     href: modules\document-store.md
     order: 8090
+    href: modules/document-store.md
   - name: Hyper-V Module
     href: modules\hyper-v-module.md
     order: 8080
+    href: modules/hyper-v-module.md
   - name: Royal Server Management
     href: modules\royal-server-management.md
     order: 8070
+    href: modules/royal-server-management.md
   - name: Script Module
     href: modules\script-module.md
     order: 8060
+    href: modules/script-module.md
   - name: Terminal Services Module
     href: modules\terminal-services-module.md
     order: 8050
+    href: modules/terminal-services-module.md
   - name: VMware Module
     href: modules\vmware-module.md
     order: 8040
+    href: modules/vmware-module.md
   - name: Windows Events Module
     href: modules\windows-events-module.md
     order: 8030
+    href: modules/windows-events-module.md
   - name: Windows Processes Module
     href: modules\windows-processes-module.md
     order: 8020
+    href: modules/windows-processes-module.md
   - name: Windows Services Module
     href: modules\windows-services-module.md
     order: 8010
@@ -132,12 +154,15 @@
     - name: Gateway Configuration
       href: components\secure-gateway\gateway-configuration.md
       order: 7040
+      href: components/secure-gateway/gateway-configuration.md
     - name: Gateway Security Configuration
       href: components\secure-gateway\gateway-security-configuration.md
       order: 7030
+      href: components/secure-gateway/gateway-security-configuration.md
     - name: Gateway Connections
       href: components\secure-gateway\gateway-connections.md
       order: 7020
+      href: components/secure-gateway/gateway-connections.md
     - name: Permissions
       href: components\secure-gateway\permissions.md
       order: 7010
@@ -155,6 +180,7 @@
   - name: Application Settings
     href: advanced\application-settings.md
     order: 5000
+    href: advanced/trace-flags.md
   - name: Backup
     href: advanced\backup.md
     order: 5000
@@ -188,12 +214,15 @@
     - name: Module Document Store
       href: scripting\module-reference\module-document-store.md
       order: 4000
+      href: scripting/module-reference/module-document-store.md
     - name: Module Hyper-V
       href: scripting\module-reference\module-hyper-v.md
       order: 4000
+      href: scripting/module-reference/module-hyper-v.md
     - name: Module Script
       href: scripting\module-reference\module-script.md
       order: 4000
+      href: scripting/module-reference/module-windows-processes.md
     - name: Module Windows Events (EventLog)
       href: scripting\module-reference\module-windows-events.md
       order: 4000
@@ -213,19 +242,21 @@
     - name: Get-RoyalServerModuleCommandParameter
       href: scripting\powershell-commandlets\get-royalservermodulecommandparameter.md
       order: 4000
+      href: scripting/powershell-commandlets/get-royalservermodulecommandparameter.md
     - name: Invoke-RoyalServerCommand
       href: scripting\powershell-commandlets\invoke-royalservercommand.md
       order: 4000
+      href: scripting/powershell-commandlets/get-royalservermodule.md
     - name: New-RoyalServerConfig
       href: scripting\powershell-commandlets\new-royalserverconfig.md
       order: 4000
 - name: Royal Server Homepage
-  href: https://royalapps.com/server/main/features
   order: 1040
+  href: https://royalapps.com/server/main/features
 - name: System Requirements
-  href: https://www.royalapps.com/go/kb-server-main-systemrequirements
   order: 1030
+  href: https://www.royalapps.com/go/kb-server-main-systemrequirements
 - name: Licensing
-  href: licensing.md
   order: 1010
+  href: licensing.md
 

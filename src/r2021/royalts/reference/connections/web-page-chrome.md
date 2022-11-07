@@ -89,7 +89,7 @@ Set the initial zoom factor for the web page.
 
 ### Security
 #### Use Basic Authentication
-If enabled, Royal TS will include the authentication header for basic authentication when requesting a web site. This setting will be ignored when no credential is set.
+the Basic Authentication toggle is no longer available to the user as it is automatically enabled by Royal TS, if a credential is defined/assigned within a web page connection.
 
 #### Ignore Certificate Errors
 If checked, the certificate errors are suppressed.
