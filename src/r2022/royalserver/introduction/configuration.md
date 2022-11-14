@@ -76,4 +76,4 @@ In case the Windows Firewall is enabled the following two rules must be enabled:
 - Windows Management Instrumentation (WMI-In), and
 - Windows Management Instrumentation (DCOM-In)
 
-For the above two steps, we have also prepared a PowerShell script (in `<royal-server-installation-dir>\scripts\prepare_server.ps1`). See the [Preparing a Managed Server](xref:royalserver_advanced_management-scripts_pepare) chapter.
+For the above two steps, we have also prepared a PowerShell script (in `<royal-server-installation-dir>\scripts\prepare_server.ps1`). See the [Preparing a Managed Server](xref:royalserver_advanced_management_scripts_prepare) chapter.

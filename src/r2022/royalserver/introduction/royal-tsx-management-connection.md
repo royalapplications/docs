@@ -5,7 +5,7 @@ order: 10040
 
 # Royal TS/X Management Connection
 
-In order to use Royal Server, you need to create a Connection Object in Royal TS/X.
+In order to use Royal Server, you need to create a Royal Server Object in Royal TS/X.
 The following connections support Royal Server:
 - Windows Events
 - Hyper-V
@@ -26,7 +26,7 @@ category of the Windows Events connection. If you forget this step, Royal TS/X t
 directly without Royal Server.
 
 > [!NOTE]
-> The credential configured on the management connection (that is not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log or query Windows Services). In most scenarios, a user account who is member of the Local Administrators group is fine. For low privilege environments a number of steps are necessary to grant non-administrative users the required rights.
+> The credential configured on the management connection (that is not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log) on the target host. In most scenarios, a user account who is member of the Local Administrators group is fine. For low privilege environments a number of steps are necessary to grant non-administrative users the required rights depending on the plugin.
 
 To access Royal Server you can install the latest version of Royal TS/X:
 
