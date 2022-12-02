@@ -3535,6 +3535,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "royalts/_shared/dependent-gateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalts/_shared/dependent-gateway.html",
+          "hash": "QZHnYcYzq2UVbdt3R4Su34/y6UbygAneFZGQSNzRrqs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "royalts/_shared/description.md",
       "output": {
         ".html": {
@@ -4247,7 +4259,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/index.html",
-          "hash": "8jbC4ZCk4DL921gfaBjCIbqSlfd8Udf+vtCJk6xMC7U="
+          "hash": "owuqoI8Z00pyeoKcYH8MQQTRVqvTv2pHAyf96g2QBUM="
         }
       },
       "is_incremental": false,
@@ -4271,7 +4283,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/royalserver.html",
-          "hash": "y/7rrad/I5nWouQiuwmAnXFKBaV5kfZ5xqyMS31n4Bg="
+          "hash": "K0/KQZ89WA0v2dx5u7je2T2Od5hYV+1j+WhavsDHhyg="
         }
       },
       "is_incremental": false,
@@ -4283,7 +4295,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/securegateway.html",
-          "hash": "ARz+6axCwB4tYU+sxybrg7tCAaAp08eUB6yZ0AA9bKs="
+          "hash": "+yoHHuyTcIZ3tWbAq/32Ev81wWmwZmu9eIyk4jq3Nu0="
         }
       },
       "is_incremental": false,
@@ -4295,7 +4307,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/index.html",
-          "hash": "FgWxBYmyL4t6EEZxFVK+H7sMmaKuI4p0v8/zIbDqBY4="
+          "hash": "4PMlKEOJHzHwOAc2cRSshMH/YqEq5nJnIA4UxqDg13U="
         }
       },
       "is_incremental": false,
@@ -4331,7 +4343,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/document.html",
-          "hash": "5tQIjFE4OPAwKxHFLVyVsdBhNnKQqUkxpJd8LO61xs0="
+          "hash": "Al+IGe3g4MF/z3udggC2v/uJHAuvUNGAQr3Kf88T9ks="
         }
       },
       "is_incremental": false,
@@ -4367,7 +4379,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/organization/index.html",
-          "hash": "g9tAtHpByRZDduKUlXX+TfDEutTzetHEDQ0mCewV7VU="
+          "hash": "Tsew2MTvi/p7CkCsRTuT96YAu/5UZLNfSOV/YypU6zo="
         }
       },
       "is_incremental": false,
@@ -5135,7 +5147,7 @@
       "output": {
         ".html": {
           "relative_path": "scripting/intro.html",
-          "hash": "0mX4gGOuUPSWoim8FLqkMLKq34sl1quztJyw3P6Y2Ck="
+          "hash": "ejjrvvA3h1g/rQEFcHaI+IhdvrmM9z4hbtCQ/tvKF5U="
         }
       },
       "is_incremental": false,
@@ -5867,7 +5879,7 @@
       "output": {
         ".html": {
           "relative_path": "scripting/toc.html",
-          "hash": "NFP/BpjJ3pMMgceZpuMew9Kk3ZuYqZvxQoD2su3FuzI="
+          "hash": "LX+cxTQJqsUmLBAuVE4njEO44YJ9BKZCrO7nuMtHxSo="
         }
       },
       "is_incremental": false,
@@ -5900,7 +5912,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 279,
+          "total_file_count": 280,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
