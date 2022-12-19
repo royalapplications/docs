@@ -7,6 +7,7 @@
       <span class="pull-right">
         <a href="#top">Back to top</a>
       </span>
+      <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
       {{{_appFooter}}}
       {{^_appFooter}}<span>Copyright © <strong>Royal Apps</strong></span>{{/_appFooter}}
     </div>
