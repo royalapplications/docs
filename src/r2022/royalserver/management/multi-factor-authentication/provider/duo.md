@@ -20,7 +20,7 @@ First, you need to configure an _Application_ that is being secured by DUO - in 
 If you do not have users in your DUO configuration, create a user by clicking on **Users** and **Add User**.
 
 > **Important**  
-> After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end of it, you see a long sequence of letter and numbers - this is the DUO user id and you need it to configure it in the Royal Server Configuration Tool.
+> After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end of it, you see a long sequence of letters and numbers - this is the DUO user id and you need it to configure it in the Royal Server Configuration Tool.
 
 **Example:**
 [https://admin-12abcdef.duosecurity.com/users/**HUGA65C32A3T2U0I20TF**]()
@@ -33,7 +33,7 @@ Notice the bold part at the end. The user id in this example is HUGA65C32A3T2U0I
 If you do not have 2FA devices (e.g. Smartphone or a token) in your DUO configuration, create one by navigating to a User and add a phone or hardware token.
 
 > [!NOTE]
-> Make sure the new device is activated by clicking on **Activate**.
+> Make sure the new device is activated by clicking on **Activate** and assigned to a DUO user.
 
 ## Configure DUO in the Royal Server Configuration Tool
 
@@ -41,7 +41,7 @@ If you do not have 2FA devices (e.g. Smartphone or a token) in your DUO configur
 
 Ensure that the _"DUO"_ provider is enabled in the Providers tab of the Multi-Factor Authentication Panel.
 
-Click on **Configure...** and enter the `Integration Key`, the `Secret Key` and the `API Hostname` from DUO Application created in the DUO web console backend.
+Click on **Configure...** and enter the `Integration Key`, the `Secret Key` and the `Host` (=API Hostname) from the DUO Application created in the DUO web console backend previously.
 
 > [!NOTE]
 > A change requires a restart of Royal Server.
@@ -51,7 +51,7 @@ Click on **Configure...** and enter the `Integration Key`, the `Secret Key` and 
 In the Users tab
 - Click on **Add...**.
 - Click on **Select User...** to select a user and `DUO` as provider.
-- Select for which feature this user is reqiured to present a second factor (e.g. Document Store or Secure Gateway)
+- Select for which feature this user is reqiured to present a second factor (Document Store or Secure Gateway)
 - Specify an optional comment
 - Specify the caching time. Each successful authentication is then cached for the specified minutes.
 - Specify the DUO user id (see above)

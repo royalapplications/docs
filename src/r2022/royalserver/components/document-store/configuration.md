@@ -36,7 +36,7 @@ When saving a document on Royal Server it always creates a backup first. You can
 
 _Access Rules Enabled_
 
-Additionally to the security restriction that the client needs to have credentials, that are a member of the Windows group "Royal Server Users" Access Rules offer a more fine grained configuration on who can read/write documents. This configuration is then done for each document.
+Additionally to the security restriction that the client needs to have credentials, that are a member of the Windows group "Royal Server Users" Access Rules offer a more fine grained configuration on who can read/write documents. This configuration is then done for each document. For more information about Access Rules, please see [Royal Server Documents](xref:royalserver_components_document-store_documents).
 
 > [!NOTE]
 > Enabling Access Rules immediately denies access to all documents unless read/write access is specified for documents.

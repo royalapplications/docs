@@ -18,7 +18,7 @@ A number of more volatile settings are stored in a configuration database (see b
 
 Configuration settings are primarily stored in `%ProgramData%\RoyalServer\appsettings.json`.
 
-If the `appsettings.json` file is not present on start-up, it will automatically be generated.
+If the `appsettings.json` file is not present on start-up, it will automatically be generated containing default values.
 
 > [!NOTE]
 > Your settings from a previous Royal Server V3 installation will be imported. If no previous Royal Server V3 installation can be detected, default values will apply.
@@ -26,14 +26,14 @@ If the `appsettings.json` file is not present on start-up, it will automatically
 ### 2. Documents
 
 Royal Server stores the Document Store files in the directory configured in the Configuration Tool. By default the documents are located at `%ProgramData%\RoyalServer\DocumentStore\`.
-There two sup directories:
+There are two subdirectories:
 
 * `Documents` containing one folder per document named with the unique document id. Inside, you can find:
-  - **default.rtsz** (Royal TS/X document)  
+  - **default.rtsz** (the Royal TS/X document)  
     This can be opened directly by Royal TS/X unless the setting "Document can only be opened by Royal Server" was checked during creation of the document.
   - **default.backup**  
     With each save, a backup file will be created with the previous document version.
-  - **<randomstring>.rtszbackup**  
+  - **__<randomstring>.rtszbackup**  
     This is a history of the last versions of the Document as specified in the Document Store "Number of Backups" setting
   - **meta.json**  
     Metadatafile that contains information like the document name, if additional encryption is applied, number of backups etc..
@@ -49,7 +49,7 @@ Royal Server is directly working with this directory for the Document Store. If 
 Royal Servr uses a small database for more volatile configurations that can be found here: `%ProgramData%\RoyalServer\royalserverV4.db`.
 The following information is stored in this database:
 - All Access Control entires configured for securing Documents in the Document Store component (ACLs)
-- All user configurations for Multi-Factor Authentication
+- All user configurations for Multi-Factor Authentication for the Document Store as well as the Secure Gateway.
 
 ### 4. Licence Information
 

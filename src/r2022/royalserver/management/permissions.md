@@ -7,7 +7,7 @@ order: 9020
 
 <img src="/r2022/images/RoyalServer/Credential_48x48.png" class="icon-def" alt="" />
 
-The **Permissions** panel displays the users that have access to the Royal Server Modules.
+The **Permissions** panel displays the users that have access to Royal Server Management Modules.
 
 ## Show or Activate the Permissions Pane
 
@@ -16,11 +16,23 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 > [!NOTE]
 > The permissions for Royal Server are valid for all Management Connections as well as the Document Store functionality.
 
-## Features
+## Effective Permissions
 
-- The panel lists all users that are members of the local Windows Group `Royal Server Users`. If you have added Groups, this list is resolving all recursive groups and shows all users.
-- Use the **Refresh** button to refresh the list of permissions. Remark: Depending on your environment, this might take some time.
-- Use the **Configure...** button to open the Windows user interface for managing Users and Groups.
+The Effective Permissions tab lets you check all relevant permissions of the specified user.
+Enter a username and click **Check Permissions** button. The Configuration Tool will list the following permissions:
 
-> [!NOTE]
-> Royal Server is caching the allowed users for 5 minutes by default. So if you change the users in the `Royal Server Users` group, you will not see the change immediately but it takes up to 5 minutes to be effective. If you want to force the change, restart Royal Server. If you want to configure the 5 minute timeframe, change the UserCachingInSeconds value in the RoyalServer.exe.config file.
+Category **Autzorization Groups**:
+- `Royal Server Users` - the specified user is member of Windows group and can use Management Connections and the Document Store
+- `Royal Server Gateway Users` - the specified user member of this Windows group and can use the Secure Gateway component
+- `Royal Server Administrators` - the specified user is member of this Windows group and can execute administrative tasks
+
+Category **Documents**:
+In this category all Royal Documents hosted by Royal server are listed and for each it shows if the user can read or
+modify the document.
+
+The button `Clear Cache` allows you to clear the cache from the currently specified user or for all users immediately. 
+
+## Users
+The Users tab shows all users that are member of the `Royal Server Users` Windows group. 
+The button `Refresh` refreshes the list.
+The button `Configure` opens the Local Users and Groups UI of Windows to configure group memberships 

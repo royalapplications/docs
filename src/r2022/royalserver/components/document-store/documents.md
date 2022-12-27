@@ -1,4 +1,5 @@
 ---
+uid: royalserver_components_document-store_documents
 name: Documents
 order: 7010
 ---
@@ -7,7 +8,7 @@ order: 7010
 
 <img src="/r2022/images/RoyalServer/RoyalDocument_Flat_48x48.png" class="icon-def" alt="" />
 
-The  Documents panel displays and changes the documents hosted by the Document Store component of Royal Server.
+The  Documents panel displays the documents hosted by the Document Store component of Royal Server and lets the user change properties for each document.
 
 ## Show or Activate the Document Store Configuration Panel
 
@@ -16,10 +17,10 @@ In The Royal Server Configuration Navigation Bar, click on the **Document Store*
 ## Features
 
 - The panel lists all documents that are hosted by Royal Server.
-- Use the **Edit -> Document Name...** button to check the settings or change the name or comment of the document.
-- Use the **Edit -> Access Rules...** button to configure Access Rules for the selected document
+- Use the **Edit -> View Settings...** button to check the settings of the document.
+- Use the **Edit -> Edit Access Rules...** button to configure Access Rules for the selected document
 - Use the **Add ->New..**. button to add a new document to Royal Server
-- Use the **Add ->Exiting...** button to import an existing document to Royal Server
+- Use the **Add ->Exiting...** button to import an existing document (*.rtsz file) to Royal Server
 - Use the **Remove** button to delete a document from Royal Server
 
 ### Add a New Document
