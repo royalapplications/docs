@@ -182,6 +182,8 @@ Leave empty for the default PuTTY window title match: <code>- PuTTY</code></p>
 <p>Control whether Alt-F4 will close the window or not.</p>
 <h4 id="show-system-menu-on-alt-space">Show System Menu on Alt-Space</h4>
 <p>If checked, Alt-Space will bring up the system menu.</p>
+<h4 id="show-system-menu-on-alt-alone">Show System Menu on Alt Alone</h4>
+<p>If checked, pressing Alt will bring up the system menu.</p>
 <h4 id="ensure-window-is-always-on-top">Ensure Window is Always on Top</h4>
 <p>If checked, the PuTTY window will be always on top.</p>
 <h4 id="full-screen-on-alt-enter">Full Screen on Alt-Enter</h4>
@@ -354,7 +356,7 @@ When selected, the connection will open in an external window in full screen mod
 <h5>Note</h5>
 <p>This option is only available for connections supporting full screen and multiple monitors (like Remote Desktop).</p>
 </div>
-<h4 id="dont-show-the-connection-bar">Dont show the connection bar</h4>
+<h4 id="dont-show-the-connection-bar">Don't show the connection bar</h4>
 <p>If checked, the connection bar will not be shown in full screen mode.</p>
 <div class="NOTE">
 <h5>Note</h5>
@@ -522,6 +524,8 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <h2 id="-ssh-settings"><img src="/r2021/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSSHSettings_32.svg#img_header" alt=""> SSH Settings</h2>
 <p>The <strong>SSH Settings</strong> page allows you to configure settings specific for SSH connections.</p>
 <h3 id="general-1">General</h3>
+<h4 id="use-hostkey">Use Hostkey</h4>
+<p>If checked, PuTTY's hostkey command line option will be set with the value specified in the Fingerprint property.</p>
 <h4 id="fingerprint">Fingerprint</h4>
 <p>Specify an MD5-based host key fingerprint of the form displayed in PuTTY's Event Log and host key dialog box or a base64-encoded blob describing an SSH-2 public key in OpenSSH's one-line public key format. Pre-populating the fingerprint can be helpful when connecting through SSH tunnels, proxy servers or secure gateways.</p>
 <h4 id="ssh-remote-command">SSH Remote Command</h4>

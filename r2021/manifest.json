@@ -3731,7 +3731,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/windowmode.html",
-          "hash": "dDKGYFREj5oG/USL6GpHZe3oy8oDR2mfb0cyFNtVjkE="
+          "hash": "6ddcGXe2AhPlquNtvhxnF/BknOI2SlZAu1PBuWC1rMg="
         }
       },
       "is_incremental": false,
@@ -4019,7 +4019,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/external-app.html",
-          "hash": "1+B2Mn4n18yDexfprqYCh0dcsjiLEcQr6ra7TD2mwso="
+          "hash": "paoxLYWYTHOduz23Krd/Uz07Lsu+JcXTdrDdJ56BjVg="
         }
       },
       "is_incremental": false,
@@ -4031,7 +4031,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/filetransfer.html",
-          "hash": "DNx1gL0aZ5/fOAI4JmjkN0O2KEw361H100HDhPyXqjw="
+          "hash": "Ad4EPEVTzA/qwFTdiHwTKxkRqba/+FGT/ySPvwdxlxs="
         }
       },
       "is_incremental": false,
@@ -4043,7 +4043,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/hyper-v.html",
-          "hash": "KTaqnMTE/ubb5Le+uuEuaPchKUeXSsIIdB9He40bA5w="
+          "hash": "58nZyghafiKnqzNS+dx1mLxXjfSn7ZwyFDKURikqTVM="
         }
       },
       "is_incremental": false,
@@ -4067,7 +4067,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/perf-view.html",
-          "hash": "9Nodjh2y1NN6LiTWlr1lmW69p2ttpiZEIliJjhP4F48="
+          "hash": "Sa0e+M7oY60CnvZM74aR62JdV8k23mUlHI8VFixhyto="
         }
       },
       "is_incremental": false,
@@ -4079,7 +4079,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/powershell.html",
-          "hash": "NwiuSCbkZUQYcxdL/OqOmYjUxbjsyIo6UXVfe4n04X0="
+          "hash": "OS7MiBHR6xkTeJDO+lq7VqtUmt5hOQ9Vj0dh6ffjeNM="
         }
       },
       "is_incremental": false,
@@ -4091,7 +4091,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/rdp.html",
-          "hash": "Mv4iJAO7V+Vd+C9BwfrbRgXHzNd4dSho4IGVp5EhEII="
+          "hash": "xsIqT5s1FVksNzt2Z1g7lpywAlzHDZGDI9MB5vhPHJo="
         }
       },
       "is_incremental": false,
@@ -4115,7 +4115,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-putty.html",
-          "hash": "iiMXF554QVtfzGEVE4xIe3nMzwlM0+0BMcqHzTh4Ot0="
+          "hash": "sL7pWbU2s1h6UOyvWb0jpEcf2OWebKLwOS7FhE9ohPk="
         }
       },
       "is_incremental": false,
@@ -4127,7 +4127,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-rebex.html",
-          "hash": "vQ7o5/SAE8vSJ3VuyIIse6QKwcqDaOcC1VG1qxOG8P4="
+          "hash": "J2kco6fJqfPYvElblEjR9QmfRI4kaCNuWGSq97c7Q70="
         }
       },
       "is_incremental": false,
@@ -4139,7 +4139,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-services.html",
-          "hash": "H1NTDQ+LmEXn090SLUWsK0FgakG2tcXkhOiq6K5u+Wo="
+          "hash": "drG/XF1nKwA3fDOAt5uWmEHWDQ9f1JQgUgzgDFKlOcM="
         }
       },
       "is_incremental": false,
@@ -4151,7 +4151,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vmware.html",
-          "hash": "jsOo7Vem4xPXg3cDhGwYiRmAuWvDmKwh23xH8jw8lws="
+          "hash": "DHeW6RqsfABS0FRkBTtgC2Xe/SnJ7pnUlMF+YKHs3H0="
         }
       },
       "is_incremental": false,
@@ -4163,7 +4163,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc-tight.html",
-          "hash": "8bB63aMPn/tLDG4Ho1i2JbLTL5CJtY+0Tr/agD/fhgQ="
+          "hash": "nrLC2NuSOPhiGLnFGa1oxu6Jc5Ur0ydnR66jteaHnss="
         }
       },
       "is_incremental": false,
@@ -4175,7 +4175,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc-ultra.html",
-          "hash": "eKe1CYcZ5S/l3drmQz8kAQwiJm5nj198xhjxludg/fY="
+          "hash": "dCzdbqlFi4F5eGkJgXMU4sqWEiXURgzjC1iFqd6kxDg="
         }
       },
       "is_incremental": false,
@@ -4187,7 +4187,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc.html",
-          "hash": "wpdhHmvnp74sxeZu69Zz7LSSBRkhs3JHLZ+kemF56/U="
+          "hash": "kozr75f+qj8+gW04JyWr6tKxb0CuYeXVDpgCWBefk8s="
         }
       },
       "is_incremental": false,
@@ -4199,7 +4199,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/web-page-chrome.html",
-          "hash": "N4eMPtjhW5XFVPeHUZFMGKiXDbb6vBXiu5NSSFEIpBE="
+          "hash": "S/eDyhELYUfw9NPeAJZ+SC3aTsLqEPzWsvCCKkrxLkg="
         }
       },
       "is_incremental": false,
@@ -4211,7 +4211,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/web-page-ie.html",
-          "hash": "+SHw8SVdG1liNY6DwATYtpo1HTwgjA1Jz9WFQQkWU/A="
+          "hash": "h9x9ahAU778fcZA3E+b5j/+AHecQxA9VQ+YfieZPONM="
         }
       },
       "is_incremental": false,
@@ -4223,7 +4223,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-events.html",
-          "hash": "YEujjjCe+KpmhXaWZjA7voel2kjcg2jo3EwwILWRt0M="
+          "hash": "+LU1p322mgmK0Ezw6lr/m3N/yVghQ9R6Fa22x2XyMAc="
         }
       },
       "is_incremental": false,
@@ -4235,7 +4235,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-processes.html",
-          "hash": "hqmzmSvgz4glUQJTRNSI68qsta/wrF8O5bDN3cePqr4="
+          "hash": "Ww/4TRkSbPnpx3zOSqqhd6hQXz/kR+NcKAeLAra1TN4="
         }
       },
       "is_incremental": false,
@@ -4247,7 +4247,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-services.html",
-          "hash": "t8TJbeukwRE2WdpUadfC2qv/bOp8OZo3rS8l+tRrvCw="
+          "hash": "0yFigvTdxpwUD99Pxyw4F0c31PZHVQPk7CjBVJ0Eei8="
         }
       },
       "is_incremental": false,

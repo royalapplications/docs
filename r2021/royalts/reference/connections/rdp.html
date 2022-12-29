@@ -334,7 +334,7 @@ When selected, the connection will open in an external window in full screen mod
 <h5>Note</h5>
 <p>This option is only available for connections supporting full screen and multiple monitors (like Remote Desktop).</p>
 </div>
-<h4 id="dont-show-the-connection-bar">Dont show the connection bar</h4>
+<h4 id="dont-show-the-connection-bar">Don't show the connection bar</h4>
 <p>If checked, the connection bar will not be shown in full screen mode.</p>
 <div class="NOTE">
 <h5>Note</h5>
@@ -455,6 +455,12 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <h5>Note</h5>
 <p>Experimental: Microsoft does not provide an official (public) API for setting the restricted admin mode on the ActiveX control Our implementation is experimental. There's no guarantee that it will always work.</p>
 </div>
+<h4 id="remote-credential-guard">Remote Credential Guard</h4>
+<p>In this mode, credentials won't be sent to the remote server, by sending the Kerberos requests back to the client that wants to establish the connection. Furthermore, it provides single sign-on experiences for Remote Desktop sessions.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting will be ignored when Restricted Admin Mode is enabled.</p>
+</div>
 <h3 id="connection">Connection</h3>
 <h4 id="compression">Compression</h4>
 <p>Specifies whether compression is enabled.</p>
@@ -466,6 +472,8 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <p>When background input is enabled the client accepts mouse input even when Royal TS or the external client window is not active.</p>
 <h4 id="session-takeover-warning">Session Takeover Warning</h4>
 <p>When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.</p>
+<h4 id="use-redirection-server-name">Use Redirection Server Name</h4>
+<p>Gets and sets whether to use the redirection server name.</p>
 <h4 id="automatic-reconnect">Automatic Reconnect</h4>
 <p>Specifies whether to enable the client to reconnect automatically to a session in the event of a network disconnection. If checked, enter the number of times to try to reconnect during automatic reconnection.</p>
 <h4 id="load-balance-info">Load Balance Info</h4>
@@ -497,7 +505,7 @@ Use a Remote Desktop Gateway server if a direct connection cannot be made to the
 </ul>
 <h4 id="gateway-server">Gateway Server</h4>
 <p>Specifies the host name of the Remote Desktop Gateway server.</p>
-<h4 id="logon-method">Logon Method</h4>
+<h4 id="configuration">Configuration</h4>
 <p>Specify the Logon Method for the gateway server.</p>
 <ul>
 <li><strong>Ask for credentials on connect</strong><br>

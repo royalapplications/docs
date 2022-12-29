@@ -3865,7 +3865,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/_shared/windowmode.html",
-          "hash": "otItMdWCu3N2olHXgAzLhYU/yzJ8ZkcCI1RhvFueMhI="
+          "hash": "yDFaTyKyKzSQW0mQUzCcCs6mL4MM8dc3YIZ1dRg0QEI="
         }
       },
       "is_incremental": false,
@@ -4153,7 +4153,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/external-app.html",
-          "hash": "1qmjbQFv5AZfeE92f6/i7hTIOfj/klqq1wUTA7Rf49E="
+          "hash": "RUZTyJuxLDlIeDBZ8vA0WE8JeTV4Gp6K6raLq+oDHLk="
         }
       },
       "is_incremental": false,
@@ -4165,7 +4165,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/filetransfer.html",
-          "hash": "WLnWKZkhYZhygNhib5R0y3E8zk+0D2MaMZ6Rs/0Haxo="
+          "hash": "lbMP1UaWdJI6tB3sxg23jSnVOGkonli3pJqDKA6OF1M="
         }
       },
       "is_incremental": false,
@@ -4177,7 +4177,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/freerdp.html",
-          "hash": "KAL28b8eG02fa/y4NUrQhYtXE0PO6RNgdGeYN/lIIyk="
+          "hash": "Jd4bjQBnkAVukYvHhbkb1A6RQ5Ju+QLg543F70qBMnM="
         }
       },
       "is_incremental": false,
@@ -4189,7 +4189,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/hyper-v.html",
-          "hash": "uMm9its0zf4d1++AnIkOGmD3HK1Xyua360700EAw++c="
+          "hash": "A8876Mgt8eR6vmk/zx5c0qw2m3xtsE1mGizQIFYFe+s="
         }
       },
       "is_incremental": false,
@@ -4213,7 +4213,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/perf-view.html",
-          "hash": "MMmWvgc6l/KfkArumf1W/06kKiI1JCf2ZiXDoM37XcA="
+          "hash": "wKjdbwgg5qNAwEUnUYFubeofU/gljVRjJo7/Z1suRXk="
         }
       },
       "is_incremental": false,
@@ -4225,7 +4225,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/powershell.html",
-          "hash": "BhLwIeAm69d9E1+FsUHbqoK6KL3WLxpgLLB1qN4Od1E="
+          "hash": "p+MFpErma6hWzQ0ptFM5si+YStw1NfsRkSB1V2FvFcw="
         }
       },
       "is_incremental": false,
@@ -4237,7 +4237,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/rdp.html",
-          "hash": "o0I5TrIcYom+daT/8q+c8tYcE6ORHna5wJDlW5hFrX0="
+          "hash": "gtJGmYGYQrTcKHPzqM/Nj7LWHtaCm96FerZEUS8V+1E="
         }
       },
       "is_incremental": false,
@@ -4261,7 +4261,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-putty.html",
-          "hash": "yzf4x3m/BfeJ94kpi9A4jA9mmuoeB6a7ALlQjSKzgqY="
+          "hash": "UvsfnadjRI3Wf1lAlFKUzZBtYs/t/K220pmCZTGCZYc="
         }
       },
       "is_incremental": false,
@@ -4273,7 +4273,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-rebex.html",
-          "hash": "1emm081/pxYdDbtgsbvg9hVnCbxiUvOeVXk4rDfKd4Y="
+          "hash": "1rht9tJJTEw8a4UcCx8KXkCmkOPeCTZcbOPCxtaRRCc="
         }
       },
       "is_incremental": false,
@@ -4285,7 +4285,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-services.html",
-          "hash": "lNwjPlUpjnOQK2GmZ2DJ702fFtJ2hnLqAPwNXFwx/X4="
+          "hash": "WwRsZPgdq0G7tfKZbBfbu/EMwZMV7t/gzLRZv1XESpQ="
         }
       },
       "is_incremental": false,
@@ -4297,7 +4297,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vmware.html",
-          "hash": "XdOPgQYgBZwCFInV7sP7JhexknRDdt5XvDxEWAkw6IE="
+          "hash": "GDtCYpUcXSPHXT7uhR4dcn4pUkFLNvKxIedYsuMVaVY="
         }
       },
       "is_incremental": false,
@@ -4309,7 +4309,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc-tight.html",
-          "hash": "DWzLItcpwOmcjzgIY46fbOwkZV2u24wWlMubCua2p7I="
+          "hash": "gDSiBFThYVurH2Gpg/3hryHd7wIepiHD0h4svulvWfs="
         }
       },
       "is_incremental": false,
@@ -4321,7 +4321,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc-ultra.html",
-          "hash": "uN3GJN1GBKkDJxYqAiBi1FP4An7mO4JIIh+9qjW3lkY="
+          "hash": "huT1XFKMaFuI7Ei3qXRuA3LXZzjP54qkHGprngY7CzE="
         }
       },
       "is_incremental": false,
@@ -4333,7 +4333,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vnc.html",
-          "hash": "ZANJZgipVDuYIOcbPYm777qmBaNEPwYebqE++8sq2lM="
+          "hash": "uFIJ8QnUgacpp+dYz3mwt9TMS5Jcu6d6OhUe0e5qbcI="
         }
       },
       "is_incremental": false,
@@ -4345,7 +4345,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/web-page-chrome.html",
-          "hash": "Jvt6II+GygyYOvsx6AfaWAaGvkJqVYCd/IRO0iZWNAw="
+          "hash": "iee62PQIhzfswB2q6tevaZdwoOrSVtErua0hxrXGOhY="
         }
       },
       "is_incremental": false,
@@ -4357,7 +4357,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/web-page-ie.html",
-          "hash": "xLcrr4EkJX5rDusz2LlBr6+XI4DI1k5BgIE2CgAau+c="
+          "hash": "ncMPD2foZ8/CW6DhU8WWSpt9+CW5217xYtev6IrpIBg="
         }
       },
       "is_incremental": false,
@@ -4369,7 +4369,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-events.html",
-          "hash": "gzGh9spmgDXFisUqqH8GCI09QWFIqx1Rp71hBrU9Wa0="
+          "hash": "OH2BkNOh5zSZz0uuNVQ5i/CMtAljsAT5YlL2Zs26rHQ="
         }
       },
       "is_incremental": false,
@@ -4381,7 +4381,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-processes.html",
-          "hash": "sqJkRhlX/X4G4FY1EFq82C+HRYTDGDM5mUCqw24Z/EY="
+          "hash": "LY0YQNK2t1Jm+aT/7OvTqPdS9CVjbFlIuuDXmfR0FMU="
         }
       },
       "is_incremental": false,
@@ -4393,7 +4393,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-services.html",
-          "hash": "/sUiOSBX0o5HdIhL5tk9rKSrMQfkJDQlHaRJEdmQ7C0="
+          "hash": "+BjNvmOIyxtk6MuoVtrAZPcPiAz603P9W9CRhXlleNQ="
         }
       },
       "is_incremental": false,
