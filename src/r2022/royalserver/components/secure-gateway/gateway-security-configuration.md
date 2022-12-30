@@ -16,7 +16,7 @@ In The Royal Server Configuration Navigation Bar, click on the Secure Gateway gr
 > [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
-## Features
+## General
 
 **Only allow Royal TS/X as clients**
 
@@ -34,3 +34,18 @@ SSH brute force attacks try to log on with the same user many times to guess the
 | Blocking time (in minutes) | Specifies the time an IP is blocked after it tries to log on too many times unsuccessfully.                     |
 | Number of attempts         | Specifies the number of failed attempts t log in after which an IP is blocked for the specified amount of time. |
 | Time frame (in minutes)    | Only failed login attempts within the last minutes in this time frame are relevant.                             |
+
+
+## Ciphers
+
+The Secure Gateway component is based on SSH and uses many encryption related algoriths under the hood. In some environments it is required to only allow specific
+algorithms. You can specify algoriths in the following categories:
+- Encryption Key Algorithms
+- Host Key Algorithms
+- Key Exchange Algorithms
+- Mac Algorithms
+
+Additionally to enable or disable specific algorithms, you can sort them.
+
+> [!NOTE]
+> Any change in this panel requires a restart of Royal Server.
