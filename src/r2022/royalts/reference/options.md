@@ -271,11 +271,14 @@ Adjust the border size of the colorized connection border.
 #### Show colorized border
 If checked, a colorized border will be drawn around the connection. Connections with the default color (black) will not show a colorized border.
 
+#### Use colors in Tabs
+If checked, the tab caption will be colorized with the configured color of the connection.
+
 #### Enable Taskbar Thumbnails
 If checked, Royal TS will display thumbnails for each tab in the taskbar.
 
-#### Use colors in Tabs
-If checked, the tab caption will be colorized with the configured color of the connection.
+## ![](/r2022/images/RoyalTS/Application/SVG_SkinsColorScheme_32.svg#img_header) Appearance
+The **Appearance** page allows you to adjust the color scheme.
 
 ## ![](/r2022/images/RoyalTS/Application/SVG_PageMouseEvents_32.svg#img_header) Behavior
 The **Beharior** page allows you to configure the default behavior of connections, tabs and when the mouse is used.
