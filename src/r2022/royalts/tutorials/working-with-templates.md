@@ -56,10 +56,3 @@ As mentioned above in **Example 1** you can use templates to create an ad hoc co
 > [!Tip]
 > You can also use the Folder Dashboard and select multiple connections to create one ad hoc connections for each selected connection.
 
-## Connect from the Dashboard
-1.  In the **Navigation** panel, select a template.
-2.  Type the URI (URL/Hostname/IP depending of the connection type) in the **Ad Hoc Connect** text box.
-3.  Press Enter or click the **Connect** button in the text box.
-
-> [!Note]
-> The URI you entered in the Ad Hoc Connect text box will be replaced with the $URI$ token. If the $URI$ token is not specified in the template the entered URI will be set as the URI in the ad hoc connection.

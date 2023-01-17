@@ -231,6 +231,12 @@ When checked, Royal TS will include the description field text in the search.
 #### Include Notes
 When checked, Royal TS will include the notes text in the search. Enabling this option may impact search performance.
 
+#### Include Folders
+When checked, Royal TS will include all objects in a folder when the folder name matches the search text. Enabling this option may impact search performance.
+
+#### Show Main Filter Buttons
+When checked, the main filter buttons (Favorites, Active and Inactive) are shown directly in the search box.
+
 #### Perform Fuzzy Searches
 When checked, Royal TS will perform fuzzy searches in the Navigation tree. Enabling this option may impact search performance.
 
@@ -520,9 +526,6 @@ The **Troubleshooting** page allows you to specify your contact information that
 ### Error Reporting
 Leave name and email address blank to send error reports anonymously.
 
-#### Name
-Enter your name.
-
 #### Email Address
 Enter your email address which we should use to contact you.
 
@@ -583,6 +586,12 @@ Specify additional arguments to be passed on to the script interpreter.
 
 #### Do not load the PowerShell profile (applies to PowerShell only)
 If checked the -noprofile parameter will be used.
+
+## ![](/r2022/images/RoyalTS/Application/SVG_DynamicFolderClosed_32.svg#img_header) Debugging
+If checked, additional log entries are written.
+
+#### Enable Debug Logging
+When debug logging is enabled, additional log entries will be generated when executing dynamic folder scripts. These log entries can be used to diagnose issues in your scripts. Please note that this can cause sensitive data to be logged and should only be enabled for debugging purposes!
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 

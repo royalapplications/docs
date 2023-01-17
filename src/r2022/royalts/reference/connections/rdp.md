@@ -102,6 +102,17 @@ The color depth (in bits per pixel) for the control's connection.
 #### Desktop Size
 Select one of the predefined desktop sizes or specify your own desktop width and height.
 
+#### Scale Factor
+Select the initial remote desktop scale factor. Older clients or servers may not support desktop scaling
+
+- **Automatic**  
+  Automatically set scale factor.
+- **Custom percentage**  
+  Manually set scale factor.
+
+#### Local Zoom
+Can show Scroll Bars in the remote session when zoom level has changed.
+
 #### Resize Mode
 Configure how Royal TS handles session window resize events.
 
@@ -160,6 +171,12 @@ In this mode, credentials won't be sent to the remote server, which can protect 
 > [!Note]
 > Experimental: Microsoft does not provide an official (public) API for setting the restricted admin mode on the ActiveX control Our implementation is experimental. There's no guarantee that it will always work.
 
+#### Remote Credential Guard
+In this mode, credentials won't be sent to the remote server, by sending the Kerberos requests back to the client that wants to establish the connection. Furthermore, it provides single sign-on experiences for Remote Desktop sessions. 
+
+> [!Note]
+> This setting will be ignored when Restricted Admin Mode is enabled.
+
 ### Connection
 #### Compression
 Specifies whether compression is enabled.
@@ -175,6 +192,9 @@ When background input is enabled the client accepts mouse input even when Royal 
 
 #### Session Takeover Warning
 When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.
+
+#### Use Redirection Server Name
+Gets and sets whether to use the redirection server name.
 
 #### Automatic Reconnect
 Specifies whether to enable the client to reconnect automatically to a session in the event of a network disconnection. If checked, enter the number of times to try to reconnect during automatic reconnection.
@@ -208,7 +228,7 @@ Specifies when to use a Remote Desktop Gateway server.
 #### Gateway Server
 Specifies the host name of the Remote Desktop Gateway server.
 
-#### Logon Method
+#### Configuration
 Specify the Logon Method for the gateway server.
 - **Ask for credentials on connect**  
   No credentials configured. Connections that require credentials may prompt the user to enter credentials upon connecting or will fail to connect.

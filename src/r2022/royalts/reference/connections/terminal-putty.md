@@ -136,6 +136,9 @@ Control whether Alt-F4 will close the window or not.
 #### Show System Menu on Alt-Space
 If checked, Alt-Space will bring up the system menu.
 
+#### Show System Menu on Alt Alone
+If checked, pressing Alt will bring up the system menu.
+
 #### Ensure Window is Always on Top
 If checked, the PuTTY window will be always on top.
 
@@ -296,6 +299,9 @@ The Environment tab can be used to set specific variables and values for the con
 The **SSH Settings** page allows you to configure settings specific for SSH connections.
 
 ### General
+#### Use Hostkey
+If checked, PuTTY's hostkey command line option will be set with the value specified in the Fingerprint property.
+
 #### Fingerprint
 Specify an MD5-based host key fingerprint of the form displayed in PuTTY's Event Log and host key dialog box or a base64-encoded blob describing an SSH-2 public key in OpenSSH's one-line public key format. Pre-populating the fingerprint can be helpful when connecting through SSH tunnels, proxy servers or secure gateways.
 

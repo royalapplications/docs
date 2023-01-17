@@ -111,6 +111,9 @@ If checked, scrollback is reset on display activity (when data is received).
 #### Data Received Indicator
 If checked, Royal TS will show a * character at the end of the tab caption to indicate that data was received.
 
+#### Indicator for Inactivity
+If checked, the tab caption of the background tab is rendered *italic* when no data is received for a configured amount of seconds.
+
 ## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg#img_header) Colors
 The **Colors** page allows you to modify the terminal palette and colors for different text styles.
 

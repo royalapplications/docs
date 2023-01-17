@@ -15,7 +15,7 @@ If checked, the connection will use all monitors if connected in Full Screen mod
 > [!Note]
 > This option is only available for connections supporting full screen and multiple monitors (like Remote Desktop).
 
-#### Dont show the connection bar
+#### Don't show the connection bar
 If checked, the connection bar will not be shown in full screen mode.
 
 > [!Note]

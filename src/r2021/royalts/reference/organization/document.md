@@ -46,7 +46,7 @@ If checked, Royal TS will automatically save all changes to the document when th
 > [!Note]
 > To ensure proper file merging, it's recommended to set an appropriate retention in the Deleted Objects page. A retention of 30 days, for example, requires each user to save and merge at least once every 30 days. Otherwise, deleted objects may reappear.
 
-See also: [About shared documents](http://support.royalapplications.com/knowledgebase/articles/341144)
+See also: [About shared documents](https://www.royalapps.com/go/kb-all-teamsharing)
 
 ## ![](/r2021/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header) Security
 ### ![](/r2021/images/RoyalTS/Application/SVG_PageEncryption_32.svg#img_header) Encryption
