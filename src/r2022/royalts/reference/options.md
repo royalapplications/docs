@@ -285,6 +285,25 @@ If checked, Royal TS will display thumbnails for each tab in the taskbar.
 
 ## ![](/r2022/images/RoyalTS/Application/SVG_SkinsColorScheme_32.svg#img_header) Appearance
 The **Appearance** page allows you to adjust the color scheme.
+#### Color Scheme Mode
+The Color Scheme Mode allows you to pick from four different presets which will change the appearance:
+- Default Colors
+- Light Colors
+- Dark Colors
+- Follow Windows Color Scheme
+
+### General Settings
+#### Compact User Interface
+If enabled, the application will switch to the compact user interface setting. Selecting *Automatic* enables the setting for Windows 10 or earlier and disables it for Windows 11.
+
+#### Rounded Corners
+If enabled, rounded corners will be active within the application. Note that this does not affect the Windows rounded corners as they are handled by the operating system. Selecting *Automatic* will disable the setting for Windows 10 or earlier and enables it for Windows 11.
+
+#### Accent Color Configuration
+This setting affects the *Primary Background* and *Foreground Colors*. When set to *Automatic*, Royal TS will try to follow the Windows OS accent color configuration. You can also *Specify a Base Color* and let Royal TS figure out the other colors based on this color. Selecting *Custom* allows you to set each of the *Primary Background* and *Foreground Colors* individually.
+
+### Color Settings
+The various Color Settings allow you to adjust the look of Royal TS even further.
 
 ## ![](/r2022/images/RoyalTS/Application/SVG_PageMouseEvents_32.svg#img_header) Behavior
 The **Behavior** page allows you to configure the default behavior of connections, tabs and when the mouse is used.
