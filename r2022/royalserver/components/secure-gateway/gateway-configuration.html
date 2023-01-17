@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../../logo.svg" alt="">
               </a>
             </div>
@@ -79,7 +79,7 @@
 </div>
 <h2 id="features">Features</h2>
 <p><strong>Enable Royal Server Secure Gateway</strong></p>
-<p>Enable or Disable the Secure Gateway.</p>
+<p>If checked, the Secure Gateway Component is active.</p>
 <p><strong>IP Address</strong></p>
 <p>Specify the IP Address the Secure Gateway is binding to. Use this to IP Address to connect to the Secure Gateway - e.g. via Royal TS/X. By default, the unspecified address (0.0.0.0) is assigned .i.e it listens on all available IP4 addresses.</p>
 <p><strong>Port</strong></p>
@@ -87,18 +87,23 @@
 <div class="NOTE">
 <h5>Note</h5>
 <p>The Secure Gateway is basically a SSH server with tunnel support. The default port of SSH is 22.<br>
-If you see a lot of SSH brute force attacks on Royal Server change the port to a non-standard one or use the &quot;Only allow Royal TS/X as clients&quot; setting.</p>
+If your Royal Server is reachable over the internet and  you see a lot of SSH brute force attacks harden the <a href="gateway-security-configuration.html">security configuration of Royal Server</a>.</p>
 </div>
 <p><strong>Timeout</strong></p>
 <p>Specify the timeout of a Secure Gateway connection in seconds when the connection is idle.
-Setting the value to 0 or -1 disables closing idle sessions.
+Setting the value to 0 disables closing idle sessions.
 The minimum allowed duration is 30 seconds.</p>
 <p><strong>Max. Connections</strong></p>
-<p>Specify the maximum number of connections the Secure Gateway is accepting.</p>
+<p>Specify the maximum number of concurrent sconnections the Secure Gateway is accepting.</p>
 <p><strong>Use Compression</strong></p>
 <p>Specify that the Secure Gateway supports compression of network traffic.</p>
 <p><strong>Certificate</strong></p>
-<p>The Secure Gateway is based on SSH and needs a certificate to work. During the installation of Royal Server a self-signed certificate with the name &quot;RoyalServer-SecureGateway&quot; is automatically installed. In the user interface, you can configure your own, issue a new one or export a certificate (this is useful when running Royal Server in a load balanced environment).</p>
+<p>The Secure Gateway is based on SSH and needs a certificate to work. During the installation of Royal Server a self-signed certificate with the name &quot;RoyalServer-SecureGateway&quot; is automatically installed. Alternatively, you can configure your own, issue a new one or export a certificate.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you plan to use Royal Server in a load balanced environment, you need to make sure that all Royal Servers are using the same certificate for the Secure Gateway.
+If this is not the case, Royal TS/X clients will issue a changed Thumbprint warning each time the load balancer routs to a different Royal Server installation.</p>
+</div>
 </article>
           </div>
           
@@ -127,6 +132,7 @@ The minimum allowed duration is 30 seconds.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

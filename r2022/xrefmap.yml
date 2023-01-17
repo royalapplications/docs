@@ -82,11 +82,20 @@ references:
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
   href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
+- uid: royalserver_advanced_management_scripts_cleanup
+  name: Cleanup an Installation
+  href: royalserver/advanced/management-scripts/uninstall.html
 - uid: royalserver_advanced_management_scripts_prepare
   name: Prepare a Managed Server
   href: royalserver/advanced/management-scripts/prepare-managed-server.html
+- uid: royalserver_advanced_traceflags
+  name: Trace Flags
+  href: royalserver/advanced/trace-flags.html
+- uid: royalserver_components_document-store_documents
+  name: Documents
+  href: royalserver/components/document-store/documents.html
 - uid: royalserver_configtool_management
-  name: Health
+  name: Overview
   href: royalserver/management/index.html
 - uid: royalserver_introduction
   name: What is Royal Server?
@@ -109,9 +118,15 @@ references:
 - uid: royalserver_scripting_module-reference
   name: Module References
   href: royalserver/scripting/module-reference/index.html
+- uid: royalserver_what-are-royal-server-components
+  name: Royal Server Components
+  href: royalserver/introduction/what-are-royal-server-components.html
 - uid: royalserver_what-is-royal-server
   name: What is Royal Server?
   href: royalserver/introduction/what-is-royal-server.html
+- uid: royalserver_what-is-royalts
+  name: What is Royal TS?
+  href: royalserver/introduction/what-is-royal-ts.html
 - uid: royalts_advanced
   name: Import Data
   href: royalts/advanced/index.html

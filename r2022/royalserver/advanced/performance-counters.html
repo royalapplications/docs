@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
@@ -143,6 +143,21 @@
 </tr>
 </tbody>
 </table>
+<p>Additionally to the not persisted values of the Performance Counters, the following counter values are logged as well every minute:</p>
+<ul>
+<li>CPU Usage %</li>
+<li>Memory Private Working Set</li>
+<li>Threads</li>
+<li>Requests / Sec</li>
+<li>Requests Total</li>
+<li>UpTime</li>
+</ul>
+<p>Example log entry:
+<code>2022-11-14 13:17:54.029 [INF] [NORM] CPU: 0, PrivateBytes 112MB, Threads: 51, RequestsPerSecond: 0, TotalRequests: 46, UpTime: &quot;02:12:02.0433234&quot; </code></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The performance values will only be logged when the Trace Flag 'TRACEFLAG_LOG_PERFORMANCE_VALUES' is set to true. See for <a class="xref" href="trace-flags.html">Trace Flags</a> details.</p>
+</div>
 </article>
           </div>
           
@@ -171,6 +186,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

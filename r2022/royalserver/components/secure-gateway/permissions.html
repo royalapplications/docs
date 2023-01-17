@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../../logo.svg" alt="">
               </a>
             </div>
@@ -70,20 +70,30 @@
 <h1 id="permissions">Permissions</h1>
 
 <img src="/r2022/images/RoyalServer/Credential_48x48.png" class="icon-def" alt="">
-<p>The Logins panel displays the users that have access to the Secure Gateway functionality in Royal Server.</p>
+<p>The <strong>Permissions</strong> panel displays the users that have access to Royal Server Secure Gateway Module.</p>
 <h2 id="show-or-activate-the-permissions-pane">Show or Activate the Permissions Pane</h2>
 <p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>Secure Gateway</strong> group and then on the <strong>Permissions</strong> entry.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>The panel lists all users that are members of the local Windows Group <code>Royal Server Gateway Users</code>. If you have added Groups, this list is resolving all recursive groups and shows all users.</li>
-<li>Use the <strong>Refresh</strong> button to refresh the list of permissions.<br>
-<em>Remark</em>: Depending on your environment, this might take some time.</li>
-<li>Use the <strong>Configure...</strong> button to open the Windows UI for managing Users and Groups.</li>
-</ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you change the users in the <code>Royal Server Gateway Users</code> Windows group, Royal Server is not immediately picking up new members but caches the list for 5 minutes (default). To force a reload of the members restart Royal Server.</p>
+<p>The permissions for Royal Server are valid for all Secure Gateway Connections.</p>
 </div>
+<h2 id="effective-permissions">Effective Permissions</h2>
+<p>The Effective Permissions tab lets you check all relevant permissions of the specified user.
+Enter a username and click <strong>Check Permissions</strong> button. The Configuration Tool will list the following permissions:</p>
+<p>Category <strong>Autzorization Groups</strong>:</p>
+<ul>
+<li><code>Royal Server Users</code> - the specified user is member of Windows group and can use Management Connections and the Document Store</li>
+<li><code>Royal Server Gateway Users</code> - the specified user member of this Windows group and can use the Secure Gateway component</li>
+<li><code>Royal Server Administrators</code> - the specified user is member of this Windows group and can execute administrative tasks</li>
+</ul>
+<p>Category <strong>Documents</strong>:
+In this category all Royal Documents hosted by Royal server are listed and for each it shows if the user can read or
+modify the document.</p>
+<p>The button <code>Clear Cache</code> allows you to clear the cache from the currently specified user or for all users immediately.</p>
+<h2 id="users">Users</h2>
+<p>The Users tab shows all users that are member of the <code>Royal Server Gateway Users</code> Windows group.
+The button <code>Refresh</code> refreshes the list.
+The button <code>Configure</code> opens the Local Users and Groups UI of Windows to configure group memberships</p>
 </article>
           </div>
           
@@ -112,6 +122,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
@@ -78,22 +78,22 @@
 A number of more volatile settings are stored in a configuration database (see below)</p>
 <h3 id="1-configuration-settings">1. Configuration Settings</h3>
 <p>Configuration settings are primarily stored in <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
-<p>If the <code>appsettings.json</code> file is not present on start-up, it will automatically be generated.</p>
+<p>If the <code>appsettings.json</code> file is not present on start-up, it will automatically be generated containing default values.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Your settings from a previous Royal Server V3 installation will be imported. If no previous Royal Server V3 installation can be detected, default values will apply.</p>
 </div>
 <h3 id="2-documents">2. Documents</h3>
 <p>Royal Server stores the Document Store files in the directory configured in the Configuration Tool. By default the documents are located at <code>%ProgramData%\RoyalServer\DocumentStore\</code>.
-There two sup directories:</p>
+There are two subdirectories:</p>
 <ul>
 <li><code>Documents</code> containing one folder per document named with the unique document id. Inside, you can find:
 <ul>
-<li><strong>default.rtsz</strong> (Royal TS/X document)<br>
+<li><strong>default.rtsz</strong> (the Royal TS/X document)<br>
 This can be opened directly by Royal TS/X unless the setting &quot;Document can only be opened by Royal Server&quot; was checked during creation of the document.</li>
 <li><strong>default.backup</strong><br>
 With each save, a backup file will be created with the previous document version.</li>
-<li><strong><randomstring>.rtszbackup</randomstring></strong><br>
+<li><strong>__<randomstring>.rtszbackup</randomstring></strong><br>
 This is a history of the last versions of the Document as specified in the Document Store &quot;Number of Backups&quot; setting</li>
 <li><strong>meta.json</strong><br>
 Metadatafile that contains information like the document name, if additional encryption is applied, number of backups etc..</li>
@@ -111,7 +111,7 @@ Metadatafile that contains information like the document name, if additional enc
 The following information is stored in this database:</p>
 <ul>
 <li>All Access Control entires configured for securing Documents in the Document Store component (ACLs)</li>
-<li>All user configurations for Multi-Factor Authentication</li>
+<li>All user configurations for Multi-Factor Authentication for the Document Store as well as the Secure Gateway.</li>
 </ul>
 <h3 id="4-licence-information">4. Licence Information</h3>
 <p>License Information is stored encrypted the following folder <code>%ProgramData%\RoyalServer\Licenses\</code>.</p>
@@ -151,6 +151,7 @@ The following information is stored in this database:</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

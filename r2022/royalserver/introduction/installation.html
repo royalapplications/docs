@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
@@ -70,11 +70,11 @@
 <h1 id="installing-and-uninstalling-royal-server">Installing and Uninstalling Royal Server</h1>
 
 <h2 id="install-royal-server">Install Royal Server</h2>
-<p>Royal Server is distributed via a single <em>.msi</em>-file. The installation requires administrative rights, a destination directory and it takes just a minute to install Royal Server.</p>
+<p>Royal Server is distributed via a single <em>.msi</em>-file. The installation requires administrative rights, a destination directory and it takes about a minute to install Royal Server.</p>
 <p>When the configuration tool is launched for the first time, you will be asked to provide your <a class="xref" href="what-is-royal-server.html#licensing">License Information</a> and to set a Worker Account.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>It is strongly recommended to configure a Worker Account in order to allow the Royal Server to access network resources (accessing other servers). Royal Server is not starting when no Worker Account is configured. The Worker Account also needs the rights to work with the configured Windows Accounts that should be allowed to authenticate with Royal Server. If domain groups/users are configured, this account needs to be a domain account that has the required rights to query these accounts.</p>
+<p>It is strongly recommended to configure a Worker Account in order to allow the Royal Server to access network resources (accessing other servers). Royal Server will not start when no Worker Account is configured. The Worker Account also needs the rights to work with the configured Windows Accounts that should be allowed to authenticate with Royal Server. If domain groups/users are configured, this account needs to be a domain account that has the required rights to query these accounts.</p>
 </div>
 <p>Additionally, the Management Endpoint component of Royal Server is using HTTPS with a self-signed certificate that is created during the installation. You can also configure your own certificates if needed.</p>
 <p>See also: <a class="xref" href="../management/service-configuration.html">Service Configuration</a>.</p>
@@ -82,8 +82,9 @@
 <p>Since the installation is msi-based, just uninstall Royal Server using the Add/Remove Programs tool. Uninstalling Royal Server is not removing the configuration (by default), so you can easily switch between versions.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you want to remove Royal Server and all configuration information completely from the machine, save the <code>cleanup_installation.ps1</code> file in the <code>./scripts/</code> folder of your Royal Server installation before uninstalling and execute it with administrative rights after uninstalling.</p>
+<p>If you want to remove Royal Server and all configuration information completely from the machine, backup the <code>cleanup_installation.ps1</code> file in the <code>./scripts/</code> folder of your Royal Server installation before uninstalling and execute it with administrative rights after uninstalling.</p>
 </div>
+<p>See also: <a class="xref" href="../advanced/management-scripts/uninstall.html">Cleanup Script</a></p>
 </article>
           </div>
           
@@ -112,6 +113,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

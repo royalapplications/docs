@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
@@ -66,19 +66,16 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="royalserver_advanced_traceflags">
 <h1 id="trace-flags">Trace Flags</h1>
 
-<p>Royal Server is using Trace Flags to fine tune its behavior. These are settings that can be tweaked that are too low-level to be integrated in the user interface.</p>
+<p>Royal Server is using Trace Flags to fine tune its behavior. These are settings that can be tweaked that are too low-level to be integrated in the user interface. Most of the time they will be tweaked when you open a ticket and our support team needs more information on whats going on.</p>
 <p>Trace Flags can be enabled in the application configuration file (<code>RoyalServer.exe.config</code>):</p>
 <pre><code class="lang-xml"> &lt;appSettings&gt;
      ...
-
      &lt;add key=&quot;TraceFlag_1&quot; value=&quot;true&quot;/&gt;
-
      &lt;add key=&quot;TraceFlag_2&quot; value=&quot;true&quot;/&gt;
      ...
-
  &lt;/appSettings&gt;
 </code></pre>
 <p>Add the Trace Flag to the appSettings and set the value to &quot;true&quot; (&quot;false&quot; is default, any other value will be ignored)</p>
@@ -92,40 +89,44 @@
 </thead>
 <tbody>
 <tr>
-<td>TraceFlag_1</td>
-<td>Populate Royal Server Performance Counter</td>
+<td>TRACEFLAG_POPULATE_PERFCOUNTER</td>
+<td>Populate Royal Server Performance Counters</td>
 </tr>
 <tr>
-<td>TraceFlag_2</td>
+<td>TRACEFLAG_LOG_PERFORMANCE_VALUES</td>
 <td>Log Royal Server Performance Values</td>
 </tr>
 <tr>
-<td>TraceFlag_4</td>
+<td>TRACEFLAG_LOG_REQUEST_BEGIN_END</td>
 <td>Log start- and end-time for each request</td>
 </tr>
 <tr>
-<td>TraceFlag_5</td>
-<td>Disable Royal Server monitoring its own performance (Note: graphs on the Health won't work and the <code>TraceFlag_2</code> won't have accurate numbers</td>
+<td>TRACEFLAG_DISABLE_INTERNAL_PERFORMANCE_MONITORING</td>
+<td>Disable Royal Server monitoring its own performance (Note: graphs on the Health won't work and the <code>TRACEFLAG_LOG_PERFORMANCE_VALUES</code> won't have accurate numbers</td>
 </tr>
 <tr>
-<td>TraceFlag_6</td>
-<td>Triggers a garbage collection every 3 minutes</td>
+<td>TRACEFLAG_IS_MEMBER_OF_DEBUGLOG</td>
+<td>Enables detailed log information for group membership resolutions</td>
 </tr>
 <tr>
-<td>TraceFlag_7</td>
-<td>Use a synchronous authentication mechanism (instead of using the internal cache)</td>
-</tr>
-<tr>
-<td>TraceFlag_8</td>
-<td>Enables detailed log information for group membership calculations</td>
-</tr>
-<tr>
-<td>TraceFlag_9</td>
+<td>TRACEFLAG_REBEX_DETAIL_LOG</td>
 <td>Enables detailed log information for Secure Gateway connections</td>
 </tr>
 <tr>
-<td>TraceFlag_10</td>
+<td>TRACEFLAG_VALIDATE_CREDENTIALS</td>
 <td>Uses a different way to authenticate Windows users ValidateCredentials() instead of Logon()</td>
+</tr>
+<tr>
+<td>TRACEFLAG_USE_NETWORK_AS_LOGON_TYPE</td>
+<td>Use Network as Logon Type</td>
+</tr>
+<tr>
+<td>TRACEFLAG_NON_ZERO_INITIAL_WINDOW_SIZE</td>
+<td>Secure Gateway (SSH) setting necessary in some environments</td>
+</tr>
+<tr>
+<td>TRACEFLAG_ACCOUNT_CACHE_DETAIL_LOG</td>
+<td>Detailed account cache logging</td>
 </tr>
 </tbody>
 </table>
@@ -161,6 +162,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

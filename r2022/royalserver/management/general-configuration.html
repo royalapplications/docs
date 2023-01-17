@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
@@ -76,9 +76,9 @@
 <p><strong>Language</strong></p>
 <p>This setting lets you change the user interface language of the Royal Server Configuration Tool (requires a restart of the tool).</p>
 <p><strong>Localhost Aliases</strong></p>
-<p>This setting allows to specify which hosts should be considered as localhost. This information is used when determining, if a query should be executed against the server where Royal Server is installed and also for licensing calculations (localhost is not counted towards the number of managed servers)</p>
+<p>This setting allows to specify which hosts should be considered as localhost. This information is used when determining, if a query should be executed against the server where Royal Server is installed.</p>
 <p><strong>Reset Configuration</strong></p>
-<p>This function resets the Royal Server Configuration back to defaults.</p>
+<p>This function resets the Royal Server Configuration back to defaults after installation.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>This will NOT change the following configurations:</p>
@@ -88,10 +88,18 @@
 <li>MFA User Configuration</li>
 <li>Installed Licenses</li>
 </ul>
+<p>If you want to remove all side effects of a Royal Server installation, please use the <a href="../advanced/management-scripts/uninstall.html">cleanup script</a>.</p>
 </div>
 <p><strong>Copy Configuration</strong></p>
-<p>This function copies Royal Server troubleshooting information into the clipboard which could be included in a ticket. It can contain the installed licenses (not the full license key), the current configuration, the log information since the last restart of Royal Server and the Document Store information. All this will be copied into the clipboard, where the user can later check it/modify it and send it to us if we ask for it while troubleshooting.</p>
-<p>A ticket can be opened via our <a href="https://support.royalapps.com/support/home">support portal</a></p>
+<p>This function copies Royal Server configuration information and troubleshooting information in the clipboard which could be included in a ticket.
+You can include the following information:</p>
+<ul>
+<li>the current configuration</li>
+<li>the Royal Server logs (since the last restart)</li>
+<li>the Document Store configuration</li>
+<li>installed licenses</li>
+</ul>
+<p>This information is very helpful for troubleshooting a support ticket. A ticket can be opened via our <a href="https://support.royalapps.com/support/home">support portal</a></p>
 <h3 id="headers">Headers</h3>
 <p>In this view, you can add/modify the HTTP header Royal Server is sending back to the client.</p>
 <h3 id="uninstalling-royal-server">Uninstalling Royal Server</h3>
@@ -131,6 +139,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

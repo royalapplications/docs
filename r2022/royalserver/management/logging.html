@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
@@ -73,9 +73,32 @@
 <p>The Logging Configuration panel displays and changes the logging configuration of Royal Server.</p>
 <h2 id="show-or-activate-the-logging-panel">Show or Activate the Logging Panel</h2>
 <p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>Royal Server</strong> group and then on the <strong>Logging</strong> entry.</p>
-<h2 id="features">Features</h2>
-<p><strong>Log Level</strong></p>
-<p>The following Log Levels are supported:</p>
+<h2 id="windows-event-log">Windows Event Log</h2>
+<p>If enabled, Royal Server logs to the Windows Event Log &quot;Royal Server&quot; with the specified Log Level and Separator.</p>
+<p><strong>Log Level</strong>
+The following Log Levels are supported:</p>
+<ul>
+<li>No Logging (logging is disabled)</li>
+<li>Debug (this setting is intended for trouble shooting only since it generates a significant amount of data)</li>
+<li>Information (a lot of information is logged, including the meta data of all requests and responses Royal Server is executing. If you need to see the full data of the request or response, check Request/Response Logging)</li>
+<li>Warning</li>
+<li>Error</li>
+<li>Fatal</li>
+</ul>
+<p><strong>Log Separator</strong>
+Specifies a separation character in the Log File. Possible values are <code> </code> (space), <code>,</code>, <code>|</code> or <code>#</code> .</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In rare cases where Royal Server cannot start properly catastrophic errors are logged in the <code>Application</code> log of the Windows Event Log.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any change in this panel requires a restart of Royal Server.</p>
+</div>
+<h2 id="file-log">File Log</h2>
+<p>If enabled, Royal Server logs to a file. Additionally, the content of this file is shown by the Configuration Tool.</p>
+<p><strong>Log Level</strong>
+The following Log Levels are supported:</p>
 <ul>
 <li>No Logging (logging is disabled)</li>
 <li>Debug (this setting is intended for trouble shooting only since it generates a significant amount of data)</li>
@@ -85,23 +108,15 @@
 <li>Fatal</li>
 </ul>
 <p>A default setting of Warning or Error is recommended.</p>
-<p><strong>Type</strong></p>
-<p><em>Type: Windows Event Log</em></p>
-<p>Royal Server is writing the logs in a separate Windows Event Log called 'Royal Server Log'.</p>
-<p><em>Type: File</em></p>
-<p>Royal Server is writing the logs in a specified file.</p>
-<p>Using <strong>Open log...</strong> is opening the currently specified log.</p>
-<h3 id="log-directory">Log Directory</h3>
-<p>Specifies the directory where the log files should be written to (if Type <em>File</em> is selected), by default this is <code>%ProgramData%\RoyalServer\Logs</code>. You can also use variables like <code>%TEMP%</code>.</p>
-<h3 id="log-file">Log File</h3>
-<p>Specifies the log file name (if Type <em>File</em> is selected).</p>
-<p>Up to <code>Royal Server V3</code>, the rolling mechanism changes the file once per day to limit the file size.</p>
+<p><strong>Log Directory</strong>
+Specifies the directory where the log files should be written to (if Type <em>File</em> is selected), by default this is <code>%ProgramData%\RoyalServer\Logs</code>. You can also use variables like <code>%TEMP%</code>.</p>
+<p><strong>File Name</strong>
+Specifies the log file name.</p>
+<p><strong>Log Separator</strong>
+Specifies a separation character in the Log File. Possible values are <code> </code> (space), <code>,</code>, <code>|</code> or <code>#</code> .</p>
 <p><strong>Example:</strong></p>
-<p>If you set the Log File to &quot;logserverlog.txt&quot;, you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a file name formatted like <em>logserverlog<yyyymmdd>.txt</yyyymmdd></em>, e.g. logserverlog20210101.txt. The file logserverlog.txt always contains the current day.</p>
-<p>As of <code>Royal Server V4</code>, the file log provider uses a rolling interval and appends the time period between file name and file extension. The rolling interval is set to a <code>Day</code> (3) by default. Furthermore, the log file is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.</p>
-<p><strong>Example:</strong></p>
-<p>If you set the Log File to &quot;logserverlog*.txt&quot;, you will find a file with the name formatted like logserverlog*[yyyyMMdd].txt in the specified directory, e.g. logserverlog_20210101.txt. On the next day, a new log file will be created, e.g. logserverlog_20210102.txt.</p>
-<p>If you want to configure a different interval, change the value for <code>FileLogRollingInterval</code> in<code> %ProgramData%\RoyalServer\appsettings.json</code>.</p>
+<p>If you set the Log File to &quot;logserverlog.txt&quot;, you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a file name formatted like <em>logserverlog<yyyymmdd>.txt</yyyymmdd></em>, e.g. logserverlog20230101.txt. The file logserverlog.txt always contains the current day. The rolling interval is set to a <code>Day</code> (3) by default.
+If you want to configure a different interval, change the value for <code>FileLogRollingInterval</code> in<code> %ProgramData%\RoyalServer\appsettings.json</code>.</p>
 <p>Allowed values:</p>
 <table>
 <thead>
@@ -146,21 +161,25 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
+<p>The Log File is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
 <p>Any change in this panel requires a restart of Royal Server.</p>
 </div>
-<p><strong>Request/Response Logging</strong></p>
-<p>If checked, the complete requests and responses will be logged in separate files. The destination directory can be specified. This type of logging is only supported to files.</p>
+<h2 id="requestresponse-logging">Request/Response Logging</h2>
+<p>If checked, all requests and responses from the Management Endpoint and the Document Store will be logged <strong>completely</strong> in two separate files. The destination directory can be specified. This type of logging is only supported to files.</p>
 <div class="WARNING">
 <h5>Warning</h5>
 <p>Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.</p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Be aware that for each request, two log files will be generated. One <em><guid>_request.xml</guid></em> file and one <em><guid>_response.xml</guid></em> file.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Enabling Request/Response Logging can have a huge impact on the Royal Server performance as well as the amount of data written to disc. It is strongly recommended to use this only for debugging purposes.</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Enabling Request/Response Logging can have a huge impact on the Royal Server performance as well as the amount of data written to disc. It is strongly recommended to use this only for debugging purposes.</p>
+<p>Be aware that for each request, two log files will be generated. One <em><guid>_request.xml</guid></em> file and one <em><guid>_response.xml</guid></em> file.</p>
 </div>
 </article>
           </div>
@@ -190,6 +209,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

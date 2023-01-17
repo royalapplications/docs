@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../../logo.svg" alt="">
               </a>
             </div>
@@ -70,7 +70,6 @@
 <h2 id="general-information">General Information</h2>
 
 <img src="/r2022/images/RoyalServer/MFA_48x48.png" class="icon-def" alt="">
-<p>The Multi-Factor Authentication panel allows the configuration of a second factor for each user and the settings of the provider (if needed).</p>
 <p>Royal Server supports Multi-Factor Authentication to enhance secure access to the following components:</p>
 <ul>
 <li>Secure Gateway</li>
@@ -80,18 +79,25 @@
 <h5>Note</h5>
 <p>The abbreviation 'MFA' means Multi-Factor Authentication</p>
 </div>
+<p>The Multi-Factor Authentication panel allows the configuration of a second factor for each user and the settings of the provider (if needed).</p>
 <h4 id="securing-the-document-store">Securing the Document Store</h4>
-<p>If you have MFA provider enabled for the Document Store, opening a document hosted by Royal Server only works when the user has the proper permissions, the proper Access Rules are met (if configured) and if the user can provide the second factor.</p>
+<p>If you have user configured to use MFA for the Document Store, opening a document hosted by Royal Server only works when the user has the proper permissions, the proper Access Rules are met (if configured) and if the user can provide the second factor.</p>
 <h4 id="securing-the-secure-gateway">Securing the Secure Gateway</h4>
-<p>If you have MFA enabled for the Secure Gateway, opening a connection in Royal TS/X that is based on a Secure Gateway Tunnel, e.g. Terminal or Remote Desktop connections, only works when the user
-is able to provider the second factor additionally to username and password before the tunnel is opened.</p>
+<p>If you have user configured to use MFA for the Secure Gateway, opening a connection in Royal TS/X that is based on a Secure Gateway Tunnel, e.g. Terminal or Remote Desktop connections, only works when the user is able to provider the second factor additionally to username and password before the tunnel is opened.</p>
+<h4 id="supported-providers">Supported Providers</h4>
+<p>The following MFA Providers are supported:</p>
+<ul>
+<li><a href="provider/totp.html">Generic TOTP (Google, Microsoft etc.)</a></li>
+<li><a href="provider/duo.html">DUO</a></li>
+<li><a href="provider/yubikey.html">YubiKey</a></li>
+</ul>
 <h2 id="show-or-activate-the-multi-factor-authentication-pane">Show or Activate the Multi-Factor Authentication Pane</h2>
 <p>In The Royal Server Configuration Tool Navigation Bar, click on the Royal Server group and then on the Multi-Factor Authentication entry.</p>
 <h2 id="features">Features</h2>
 <p><strong>Enable Multi-Factor Authenticationn</strong></p>
 <p>If checked, Royal Server requests a second factor for configured users.</p>
 <p><strong>Reject Unknown Users</strong></p>
-<p>If checked, Royal Server rejects all authentication requests for users that are not configured in the Users datagrid.</p>
+<p>If checked, Royal Server rejects all authentication requests for users that are not configured in the Multi-Factor Authentication Users datagrid.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>This setting requires Enable Multi-Factor Authentication to be enabled.</p>
@@ -101,22 +107,18 @@ is able to provider the second factor additionally to username and password befo
 <p>For each user the follwing properties can be configured:</p>
 <ul>
 <li>Username</li>
-<li>MFA Provider (currently TOTP and DUO are supported) and additional provider-specific settings</li>
+<li>MFA Provider</li>
 <li>Required for opening a Document Store document</li>
 <li>Required for opening a Secure Gateway connection</li>
 <li>Comment</li>
+<li>Additional settings for the selected MFA provider</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>A user can only have a single provider configured.</p>
+<p>One user can only have one provider configured.</p>
 </div>
-<h2 id="configuring-provider">Configuring Provider</h2>
+<h2 id="configuring-providers">Configuring Providers</h2>
 <p>On the Providers tab, you can enable or disable a provider. If some additional configuration for a provider is needed, you can enter this by using the Configure button.</p>
-<p>Royal Server supports the following provider:</p>
-<ul>
-<li><a href="provider/totp.html">TOTP</a></li>
-<li><a href="provider/duo.html">DUO</a></li>
-</ul>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Disabling a provider does not remove the configuration of the provider or of users configured for this provider. However, these configured users can not
@@ -150,6 +152,7 @@ use Royal Server as long as the provider is disabled.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>

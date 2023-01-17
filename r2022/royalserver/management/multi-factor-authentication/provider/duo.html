@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../../index.html">
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../../../logo.svg" alt="">
               </a>
             </div>
@@ -78,7 +78,7 @@
 <p>If you do not have users in your DUO configuration, create a user by clicking on <strong>Users</strong> and <strong>Add User</strong>.</p>
 <blockquote>
 <p><strong>Important</strong><br>
-After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end of it, you see a long sequence of letter and numbers - this is the DUO user id and you need it to configure it in the Royal Server Configuration Tool.</p>
+After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end of it, you see a long sequence of letters and numbers - this is the DUO user id and you need it to configure it in the Royal Server Configuration Tool.</p>
 </blockquote>
 <p><strong>Example:</strong>
 <a href="">https://admin-12abcdef.duosecurity.com/users/<strong>HUGA65C32A3T2U0I20TF</strong></a></p>
@@ -87,12 +87,12 @@ After the creation of a user (or when you editing it), take a close look at the 
 <p>If you do not have 2FA devices (e.g. Smartphone or a token) in your DUO configuration, create one by navigating to a User and add a phone or hardware token.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Make sure the new device is activated by clicking on <strong>Activate</strong>.</p>
+<p>Make sure the new device is activated by clicking on <strong>Activate</strong> and assigned to a DUO user.</p>
 </div>
 <h2 id="configure-duo-in-the-royal-server-configuration-tool">Configure DUO in the Royal Server Configuration Tool</h2>
 <h3 id="configuring-the-duo-provider">Configuring the DUO provider</h3>
 <p>Ensure that the <em>&quot;DUO&quot;</em> provider is enabled in the Providers tab of the Multi-Factor Authentication Panel.</p>
-<p>Click on <strong>Configure...</strong> and enter the <code>Integration Key</code>, the <code>Secret Key</code> and the <code>API Hostname</code> from DUO Application created in the DUO web console backend.</p>
+<p>Click on <strong>Configure...</strong> and enter the <code>Integration Key</code>, the <code>Secret Key</code> and the <code>Host</code> (=API Hostname) from the DUO Application created in the DUO web console backend previously.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>A change requires a restart of Royal Server.</p>
@@ -102,7 +102,7 @@ After the creation of a user (or when you editing it), take a close look at the 
 <ul>
 <li>Click on <strong>Add...</strong>.</li>
 <li>Click on <strong>Select User...</strong> to select a user and <code>DUO</code> as provider.</li>
-<li>Select for which feature this user is reqiured to present a second factor (e.g. Document Store or Secure Gateway)</li>
+<li>Select for which feature this user is reqiured to present a second factor (Document Store or Secure Gateway)</li>
 <li>Specify an optional comment</li>
 <li>Specify the caching time. Each successful authentication is then cached for the specified minutes.</li>
 <li>Specify the DUO user id (see above)</li>
@@ -140,6 +140,7 @@ After the creation of a user (or when you editing it), take a close look at the 
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
             
             <span>Copyright © <strong>Royal Apps</strong></span>
           </div>
