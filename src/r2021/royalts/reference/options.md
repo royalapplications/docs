@@ -284,7 +284,7 @@ If checked, Royal TS will display thumbnails for each tab in the taskbar.
 If checked, the tab caption will be colorized with the configured color of the connection.
 
 ## ![](/r2021/images/RoyalTS/Application/SVG_PageMouseEvents_32.svg#img_header) Behavior
-The **Beharior** page allows you to configure the default behavior of connections, tabs and when the mouse is used.
+The **Behavior** page allows you to configure the default behavior of connections, tabs and when the mouse is used.
 
 ### Navigation Tree
 #### Track Navigation tree selection in the tab bar
