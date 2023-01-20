@@ -10,6 +10,7 @@ In the topic [Configuration of Managed Servers](xref:royalserver_introduction_co
 
 You can do this manually or use our script. You can find it in
 `<royal-server-installation-directory>\scripts\prepare_server.ps1`. For each step, the script is asking for permission to do the necessary changes.
+Just copy the script over to the machine you want to manage via Royal Server and execute it in an elevanted PowerShell prompt.
 
 The script is doing the following steps:
 
