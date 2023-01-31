@@ -90,13 +90,6 @@ If enabled, you can specify a custom width or height for the web browser. This c
 #### Zoom Factor
 Set the initial zoom factor for the web page.
 
-### Security
-#### Use Basic Authentication
-the Basic Authentication toggle is no longer available to the user as it is automatically enabled by Royal TS, if a credential is defined/assigned within a web page connection.
-
-#### Ignore Certificate Errors
-If checked, the certificate errors are suppressed.
-
 ## ![](/r2021/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header) Engine
 The **Engine** settings page allows you to create a dedicated Browser Engine for isolation. You can set various options like JavaScript, Proxy or security related options.
 
