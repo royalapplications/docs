@@ -482,6 +482,12 @@ If checked, it allows you to set up local-to-remote port forwarding in such a wa
 #### Remote Ports accept Connections from other Hosts
 If checked, machines other than the SSH server machine can connect to the forwarded port.
 
+#### Source Port
+Set the source port.
+
+#### Destination
+Set the destination.
+
 ## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSerial_32.svg#img_header) Serial Port
 The **Serial Port** page allows you to configure the port settings to connect to devices using RS232.
 
@@ -509,6 +515,8 @@ Set the parity checking protocol.
 ## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageProxy_32.svg#img_header) Proxy Settings
 The **Proxy Settings** page allows you to configure a proxy server used to connect to the remote server.
 
+### General
+
 #### Proxy Mode
 - No proxy (direct connect): (No proxy server will be used to connect to the remote server)
 - Socks 4
@@ -526,6 +534,22 @@ Specify the proxy server port to use.
 
 ### Credential Mode
 [!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]
+
+### Advanced
+
+#### Exclude Host/IPs
+Enter a comma seperated list of hosts or IPs. You may also use wildcards like: _192.168.88.*, *.example.com_
+
+#### Consider Proxying Local Host Connections
+Connections to the local host (the host name localhost, and any loopback IP address) are never proxied. You can change that by enabling this option.
+
+#### DNS Lookup at Proxy End
+- No: PuTTY will do DNS resolution.
+- Auto: PuTTY will resolve depending on the proxy mode.
+- Yes: PuTTY will always pass host names to the proxy.
+
+#### Telnet or Local Proxy Command:
+You can use a command such as: _%user\n%pass\nconnect %host %port\n_
 
 ## ![](/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageLogging_32.svg#img_header) Logging
 The **Logging** page allows you to configure session logging. Log files can be viewed using the Dashboard.

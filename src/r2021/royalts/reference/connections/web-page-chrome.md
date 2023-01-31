@@ -69,6 +69,9 @@ The **Advanced** page allows you to configure advanced Web Page settings.
 #### Show Toolbar
 If enabled, a browser toolbar with basic commands and access to the URL is shown.
 
+#### Ignore Certificate Errors
+If enabled, the certificate errors are suppressed.
+
 #### Open Links in Default Browser
 If enabled, each clicked link will be opened in your default browser and not in the connection tab or window.
 
@@ -84,7 +87,7 @@ If enabled, the web page will be refreshed automatically. The minimum value is 5
 #### Custom Browser Size
 If enabled, you can specify a custom width or height for the web browser. This can be useful to test a web page at different screen resolutions.
 
-#### Zoom Factory
+#### Zoom Factor
 Set the initial zoom factor for the web page.
 
 ### Security
@@ -106,9 +109,6 @@ A two lower case letter ISO 639-1 language code. For example, you can set it to 
 
 #### Load Images
 If enabled, images are automatically loaded.
-
-#### Allow Plugins
-If enabled, plugins can be loaded.
 
 #### Allow Zooming
 If enabled, the zoom factor can be changed in the browser.
