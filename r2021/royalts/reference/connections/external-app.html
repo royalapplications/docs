@@ -104,16 +104,21 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <p>Click the icon picker button next in the display name text box to select and assign a custom icon to the object.</p>
 <h4 id="command">Command</h4>
 <p>Specify the executable (.exe file) or click on the browse button '...' to browse for an executable on your computer or your network.</p>
+<h4 id="window-picker">Window Picker</h4>
+<p>The window picker can be used to populate the required fields to start the application based on a running application.</p>
 <h4 id="arguments">Arguments</h4>
 <p>Specify any command line arguments if necessary.</p>
 <h4 id="working-directory">Working Directory</h4>
 <p>Specify the working directory.</p>
 <div class="NOTE">
 <h5>Note</h5>
-</div>
 <p>To securely inject a username or password from an assigned credential, use the <a class="xref" href="../../advanced/tokens.html">replacement tokens</a> menu of the fly-out button at the right.</p>
-<h4 id="window-picker">Window Picker</h4>
-<p>The window picker can be used to populate the required fields to start the application based on a running application.</p>
+</div>
+<h4 id="embed-method">Embed Method</h4>
+<ul>
+<li><strong>Window</strong> Classic re-parenting method. May have ALT-TAB order and focus restore issues.</li>
+<li><strong>Client Area</strong> Deeper integration with correct ALT-TAB order but there will be no main menu and application may appear inactive or unfocused.</li>
+</ul>
 <h4 id="description">Description</h4>
 <p>Enter a description for the object.</p>
 <h2 id="-credentials"><img src="/r2021/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
@@ -351,6 +356,8 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <h3 id="process-tracking">Process Tracking</h3>
 <h4 id="window-title-match">Window Title Match</h4>
 <p>Enter the window title or part of the window title to identify the window Royal TS should embed into the tab. Optional: Leave empty if you want Royal TS to use the main window of the process.</p>
+<h4 id="skip-title-matches">Skip Title Matches</h4>
+<p>The number of title matches to skip. Useful when an application shows multiple windows with the same title, such as WinSCP.</p>
 <h4 id="process-name-to-track">Process Name to Track</h4>
 <p>Enter the process name (other than the configured command) to identify the process Royal TS should track or embed into the tab. Optional: Leave empty if you want Royal TS to use the original process provided in the command field.</p>
 <h4 id="command-line-match">Command Line Match</h4>

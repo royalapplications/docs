@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: advanced-restoring-a-previous-version-of-a-document
+  name: Restoring a previous version of a Royal Document
+  href: royalserver/advanced/restoring-previous-version-document.html
 - uid: Close-RoyalDocument
   name: Close-RoyalDocument
   href: scripting/document/cmdlet-reference/Close-RoyalDocument.html

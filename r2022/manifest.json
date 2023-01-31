@@ -2776,6 +2776,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "royalserver/advanced/restoring-previous-version-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/advanced/restoring-previous-version-document.html",
+          "hash": "HAjn1zS1GK8XP3YOdHihJvJI1NTso+06FLojYnjJJ8M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "royalserver/advanced/trace-flags.md",
       "output": {
         ".html": {
@@ -2792,7 +2804,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/configuration.html",
-          "hash": "B+VwcqnxT0MXkCSFC2QC/W0iStPnmY5oOVle5BN3Wko="
+          "hash": "bziuc5gwR6vs735iu2aSR6zby3X6WGdmWNTk7NXh5Gc="
         }
       },
       "is_incremental": false,
@@ -2804,7 +2816,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/documents.html",
-          "hash": "rH+BT7qx93PvXqyFvR+uTzk4pbGEesXq7u8hCk0z+wo="
+          "hash": "5mlAtAB07re/wGIQGp4RqT1S6IFifoGShkmHSMNBHC4="
         }
       },
       "is_incremental": false,
@@ -2816,7 +2828,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/components/document-store/index.html",
-          "hash": "fSnMD0yR8E+TpczKQgsNgdjdwO2QawVQMWckluCsWqw="
+          "hash": "Yu41CUVXAPTjjZzkQ6LINDvjFmdQji6zvaG3DWzPcN4="
         }
       },
       "is_incremental": false,
@@ -3584,7 +3596,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/toc.html",
-          "hash": "hPT8qkklVu5qXLVcNPZm+rZynV6DvfYDmPNhfjX1ARU="
+          "hash": "MXCWGFZvykv93AZ/gFFLR1ZTZ9yC9DNXsrvTmIILQ7g="
         }
       },
       "is_incremental": false,
@@ -4184,7 +4196,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/external-app.html",
-          "hash": "srl1yWQ/xQIOsBIRsl5wQUNm5R6NhMPxSx6e4Ceiaz0="
+          "hash": "O8adKc+MOmBB1tK6Tm87sz271DUaFoFVDsRa7FW4Isg="
         }
       },
       "is_incremental": false,
@@ -4220,7 +4232,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/hyper-v.html",
-          "hash": "LrYX4txPAOv7mtSg02xpm26F0rw/FTDw0fA9Iamc4bs="
+          "hash": "+cRY2hNvVb5TjL2zgmCyXvwXwR9Au/Zih+tbCyDYVek="
         }
       },
       "is_incremental": false,
@@ -4244,7 +4256,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/perf-view.html",
-          "hash": "a1pj9C+2y28jA3tL8Cw26m3TRYa3Lfk+K0yweXQQkfM="
+          "hash": "dfze2UK1BmMn5qaOC3IMlkabvGC3+lw5LhCut0pUZCY="
         }
       },
       "is_incremental": false,
@@ -4316,7 +4328,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/terminal-services.html",
-          "hash": "1y8F4GjMEK0nQk7vneNcRTA4p+E94uqr0q3taHl1wnI="
+          "hash": "eyzUQ1ydD7WCs4IDj/uWu2sLge8QfAokQBkjqkTR2+c="
         }
       },
       "is_incremental": false,
@@ -4328,7 +4340,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/vmware.html",
-          "hash": "jT2vohrhUVYWSblYP4ePlPbXwwWRdZ0d3L5MCQPe59w="
+          "hash": "RF2zdHv0lfs+kG8OBKS8NTzvdpVNoLOVzzhoBQZ0Vj4="
         }
       },
       "is_incremental": false,
@@ -4400,7 +4412,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-events.html",
-          "hash": "URyBFgmpdNFssFy6iM/mxUFeki2gbhowIrJSdiVtOYQ="
+          "hash": "0SvItg5ObjTn4u+Jws8tto1I6AeMjPngWDR7aZlVg+A="
         }
       },
       "is_incremental": false,
@@ -4412,7 +4424,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-processes.html",
-          "hash": "WjQHe3dHUSfK5SvnaQkSolCKp/qUwiAz4OUg7Vv11ao="
+          "hash": "+ObvwFaqhoVv36Ecp6LMhvQPShmyoo9rN4sESuvaudU="
         }
       },
       "is_incremental": false,
@@ -4424,7 +4436,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/connections/windows-services.html",
-          "hash": "YmElRz7+My/h0bs7hUZIrHGSwQ44TuCnPvWifkDQzo0="
+          "hash": "sClHRaQIFp1RTyPzAaqFOx9yRhYk+BxBwTpGx0l3q/w="
         }
       },
       "is_incremental": false,
@@ -4436,7 +4448,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/index.html",
-          "hash": "DmIwzEWwHEyFfT5w5oJ6vABNVETh/eqCIWAOy97goYk="
+          "hash": "awy3RZ+ehO10LT78GK2XtGnXrwY/JLg6QBM7FVsNzSA="
         }
       },
       "is_incremental": false,
@@ -4460,7 +4472,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/royalserver.html",
-          "hash": "gngndXtCXTXWuiiR6LoT2tJG7wQO3cHqA93fhOOEAHc="
+          "hash": "nr5I+QNwLz5CTDFbZ6hHzactRNwixeBL7R4u1SysbwM="
         }
       },
       "is_incremental": false,
@@ -4496,7 +4508,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/options.html",
-          "hash": "9uzj9oVdD42vKfijewgUDRsMoksAKZdsUD3F3Tch/Rk="
+          "hash": "wbXoqGCAuhhk2/reh8c1BHkkn8WX/ImtXkqTpehom3s="
         }
       },
       "is_incremental": false,
@@ -6089,7 +6101,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 281,
+          "total_file_count": 282,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

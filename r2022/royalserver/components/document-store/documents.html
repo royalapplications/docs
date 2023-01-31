@@ -72,12 +72,12 @@
 <img src="/r2022/images/RoyalServer/RoyalDocument_Flat_48x48.png" class="icon-def" alt="">
 <p>The  Documents panel displays the documents hosted by the Document Store component of Royal Server and lets the user change properties for each document.</p>
 <h2 id="show-or-activate-the-document-store-configuration-panel">Show or Activate the Document Store Configuration Panel</h2>
-<p>In The Royal Server Configuration Navigation Bar, click on the <strong>Document Store</strong> group and then on the <strong>Documents</strong> entry.</p>
+<p>In t    he Royal Server Configuration Navigation Bar, click on the <strong>Document Store</strong> group and then on the <strong>Documents</strong> entry.</p>
 <h2 id="features">Features</h2>
 <ul>
 <li>The panel lists all documents that are hosted by Royal Server.</li>
-<li>Use the <strong>Edit -&gt; View Settings...</strong> button to check the settings of the document.</li>
-<li>Use the <strong>Edit -&gt; Edit Access Rules...</strong> button to configure Access Rules for the selected document</li>
+<li>Use the <strong>View Settings...</strong> button to check the settings of the document.</li>
+<li>Use the <strong>Edit Access Rules...</strong> button to configure Access Rules for the selected document</li>
 <li>Use the <strong>Add -&gt;New..</strong>. button to add a new document to Royal Server</li>
 <li>Use the <strong>Add -&gt;Exiting...</strong> button to import an existing document (*.rtsz file) to Royal Server</li>
 <li>Use the <strong>Remove</strong> button to delete a document from Royal Server</li>
@@ -91,6 +91,10 @@
 <li>specify a document password which is required when opening it in our clients</li>
 <li>specify that the document should be locked down. In this mode the document is opened read only unless you unlock it using the lockdown password. Also, additional policies can be specified like <em>&quot;Do not allow to reveal passwords in this document&quot;</em> or <em>&quot;Do not allow to edit or modify this document&quot;</em>.</li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Detailed information on working with Lockdown Documents can be found at the <a href="https://docs.royalapps.com/r2022/royalts/tutorials/working-with-lockdown-documents.html">Royal TS Documentation</a>.</p>
+</div>
 <h3 id="import-an-existing-document">Import an Existing Document</h3>
 <p>When importing an existing document, you need to specify the following settings:</p>
 <ul>
@@ -104,10 +108,12 @@
 <h5>Note</h5>
 <p>The internal data structure of Royal Documents contains an ID. If you import an existing document, please make sure that this document is not loaded in Royal TS from the file system at the same time as the IDs will be the same.</p>
 </div>
-<h3 id="delete-a-document">Delete a Document</h3>
-<p>When deleting a document, the document is not immediately deleted but moved in the <em>Deleted Documents</em> subfolder of the Document Store root folder you have configured.</p>
-<h3 id="edit-document-name">Edit Document Name</h3>
-<p>After a new document was created or an existing document was imported, only the document name can be changed in the user interface.</p>
+<h3 id="remove-a-document">Remove a Document</h3>
+<p>When removing a document, the document is removed from the list of documents but the file is moved in the <em>Deleted Documents</em> subfolder of the Document Store root folder you have configured.</p>
+<h3 id="refresh-the-document-list">Refresh the Document List</h3>
+<p>Refreshes the list of documents in the user interface.</p>
+<h3 id="view-settings-of-a-document">View Settings of a Document</h3>
+<p>Displays the settings of the document.</p>
 <h3 id="edit-access-rules">Edit Access Rules</h3>
 <p>If Access Rules are enabled, clients will get access to documents hosted by Royal Server only if a read and/or write rule is configured. Specify for each rule</p>
 <ul>
@@ -117,7 +123,7 @@
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If both a grand and a deny rule specified, the deny rule is stronger and access is denied.
+<p>If for a document both a grant and a deny rule is specified, the deny rule is stronger and access is denied.
 (<code>Modify</code> is not enough to work with a document, <code>Read</code> also has to be specified to load it from Royal Server)</p>
 </div>
 </article>
