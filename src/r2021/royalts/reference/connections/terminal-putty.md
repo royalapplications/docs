@@ -173,6 +173,19 @@ Adjust the ANSI color palette for individual colors.
 [!include[terminalpalette.md](~/royalts/_shared/terminalpalette.md)]
 
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
+
+### Private Key File
+
+#### Save Mode
+- Path to Private Key Fie
+- Embed Private Key File
+
+#### Private Key File
+Specify the full path to the private key file or click on browse button to browse for the file.
+
+#### Passphrase
+Enter a passphrase.
+
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
