@@ -653,6 +653,10 @@ If checked, PuTTY will automatically copy the selected text to the system clipbo
 <p>If checked, it allows you to set up local-to-remote port forwarding in such a way that machines other than your client PC can connect to the forwarded port (this also applies to dynamic SOCKS forwarding).</p>
 <h4 id="remote-ports-accept-connections-from-other-hosts">Remote Ports accept Connections from other Hosts</h4>
 <p>If checked, machines other than the SSH server machine can connect to the forwarded port.</p>
+<h4 id="source-port">Source Port</h4>
+<p>Set the source port.</p>
+<h4 id="destination">Destination</h4>
+<p>Set the destination.</p>
 <h2 id="-serial-port"><img src="/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSerial_32.svg#img_header" alt=""> Serial Port</h2>
 <p>The <strong>Serial Port</strong> page allows you to configure the port settings to connect to devices using RS232.</p>
 <h4 id="port-name">Port Name</h4>
@@ -673,6 +677,7 @@ If checked, PuTTY will automatically copy the selected text to the system clipbo
 <p>Set the parity checking protocol.</p>
 <h2 id="-proxy-settings"><img src="/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageProxy_32.svg#img_header" alt=""> Proxy Settings</h2>
 <p>The <strong>Proxy Settings</strong> page allows you to configure a proxy server used to connect to the remote server.</p>
+<h3 id="general-2">General</h3>
 <h4 id="proxy-mode">Proxy Mode</h4>
 <ul>
 <li>No proxy (direct connect): (No proxy server will be used to connect to the remote server)</li>
@@ -713,6 +718,19 @@ If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal
 <h5>Note</h5>
 <p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
 </div>
+<h3 id="advanced">Advanced</h3>
+<h4 id="exclude-hostips">Exclude Host/IPs</h4>
+<p>Enter a comma seperated list of hosts or IPs. You may also use wildcards like: <em>192.168.88.*, *.example.com</em></p>
+<h4 id="consider-proxying-local-host-connections">Consider Proxying Local Host Connections</h4>
+<p>Connections to the local host (the host name localhost, and any loopback IP address) are never proxied. You can change that by enabling this option.</p>
+<h4 id="dns-lookup-at-proxy-end">DNS Lookup at Proxy End</h4>
+<ul>
+<li>No: PuTTY will do DNS resolution.</li>
+<li>Auto: PuTTY will resolve depending on the proxy mode.</li>
+<li>Yes: PuTTY will always pass host names to the proxy.</li>
+</ul>
+<h4 id="telnet-or-local-proxy-command">Telnet or Local Proxy Command:</h4>
+<p>You can use a command such as: <em>%user\n%pass\nconnect %host %port\n</em></p>
 <h2 id="-logging"><img src="/r2022/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageLogging_32.svg#img_header" alt=""> Logging</h2>
 <p>The <strong>Logging</strong> page allows you to configure session logging. Log files can be viewed using the Dashboard.</p>
 <h3 id="general-logging-options">General Logging Options</h3>
