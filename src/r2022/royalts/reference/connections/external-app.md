@@ -41,6 +41,9 @@ The **Terminal Connection** page allows you to configure basic connection settin
 #### Command
 Specify the executable (.exe file) or click on the browse button '...' to browse for an executable on your computer or your network.
 
+#### Window Picker
+The window picker can be used to populate the required fields to start the application based on a running application.
+
 #### Arguments
 Specify any command line arguments if necessary.
 
@@ -48,10 +51,12 @@ Specify any command line arguments if necessary.
 Specify the working directory.
 
 > [!Note]
-To securely inject a username or password from an assigned credential, use the [replacement tokens](xref:royalts_advanced_tokens) menu of the fly-out button at the right.
+> To securely inject a username or password from an assigned credential, use the [replacement tokens](xref:royalts_advanced_tokens) menu of the fly-out button at the right.
 
-#### Window Picker
-The window picker can be used to populate the required fields to start the application based on a running application.
+#### Embed Method
+
+- **Window** Classic re-parenting method. May have ALT-TAB order and focus restore issues.
+- **Client Area** Deeper integration with correct ALT-TAB order but there will be no main menu and application may appear inactive or unfocused.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
@@ -86,6 +91,9 @@ Royal TS will kill the process when the external app connection is disconnected.
 ### Process Tracking
 #### Window Title Match
 Enter the window title or part of the window title to identify the window Royal TS should embed into the tab. Optional: Leave empty if you want Royal TS to use the main window of the process.
+
+#### Skip Title Matches
+The number of title matches to skip. Useful when an application shows multiple windows with the same title, such as WinSCP.
 
 #### Process Name to Track
 Enter the process name (other than the configured command) to identify the process Royal TS should track or embed into the tab. Optional: Leave empty if you want Royal TS to use the original process provided in the command field.

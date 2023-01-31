@@ -48,9 +48,6 @@ Whether or not to use https to communicate with the VMware host.
 #### Ignore Certificate Errors
 If enabled, connection will succeed even when the certificate is invalid (expired or self-signed).
 
-#### SSH Port
-The SSH Port is used for ad hoc Terminal connections to the VMware host. Default port is 22.
-
 [!include[description.md](~/royalts/_shared/description.md)]
 
 ## ![](/r2022/images/RoyalTS/Plugins/Connections/VMware/SVG_PageDisplayOptions_32.svg#img_header) Display Options
@@ -62,7 +59,7 @@ If enabled, the data will be refreshed automatically.
 #### Max. Column Width
 If checked, the columns will use all available horizontal space.
 
-##### Show Horizontal Lines
+#### Show Horizontal Lines
 If checked, horizontal lines are shown in the grid.
 
 #### Show Vertical Lines

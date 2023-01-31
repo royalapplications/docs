@@ -62,7 +62,7 @@ If enabled, the data will be refreshed automatically.
 #### Max. Column Width
 If checked, the columns will use all available horizontal space.
 
-##### Show Horizontal Lines
+#### Show Horizontal Lines
 If checked, horizontal lines are shown in the grid.
 
 #### Show Vertical Lines

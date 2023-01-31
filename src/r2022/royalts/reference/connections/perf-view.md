@@ -123,10 +123,10 @@ Specify the color for the time bar. The time bar is only shown when the chart is
 ## ![](/r2022/images/RoyalTS/Plugins/Connections/Performance/SVG_PageAdvanced_32.svg#img_header) Advanced
 The **Advanced** page allows you to configure advanced Performance View settings.
 
-#### Show Counter List
+#### Details Panel
 Whether or not to initially show the list of configured counters. The counter list can always be shown or hidden using the Actions context tab.
 
-#### Show Chart Legend
+#### Chart Legend
 Whether or not to initially show the chart legend. The chart legend can always be shown or hidden using the Actions context tab.
 
 #### Sample Automatically
