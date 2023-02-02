@@ -23,7 +23,7 @@ Invoke-RoyalServerCommand
      [-RoyalServerConfig] <RoyalServerConfig>
      [-DestinationHost] <string>
      [[-Credential] <PSCredential>]
-     [[-MaxRecords\] <int>]
+     [[-MaxRecords] <int>]
      [[-Offset] <int>]
      [[-Timeout] <int>]
      [<CommonParameters>]
@@ -35,13 +35,13 @@ The Invoke-RoyalServerCommand cmdlet invokes a command at Royal Server.
 
 **RELATED LINKS**
 
-New-RoyalServerconfig
+- [New-RoyalServerconfig](./new-royalserverconfig.md)
 
-Get-RoyalServerModule
+- [Get-RoyalServerModule](./get-royalservermodule.md)
 
-Get-RoyalServerModuleCommand
+- [Get-RoyalServerModuleCommand](./get-royalservermodulecommand.md)
 
-Get-RoyalServerModuleCommandParameter
+- [Get-RoyalServerModuleCommandParameter](./get-royalservermodulecommandparameter.md)
 
 ## REMARKS
 

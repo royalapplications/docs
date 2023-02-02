@@ -61,5 +61,5 @@ $config
 # Interactive : False
 # UseSSL      : False
 
-# This command shows how to create a new RoyalServerConfig. It is neede for the Invoke-RoyalServercommand commandlet.
+# This command shows how to create a new RoyalServerConfig. It is needed for the Invoke-RoyalServercommand commandlet.
 ```

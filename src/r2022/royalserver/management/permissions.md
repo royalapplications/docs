@@ -30,7 +30,7 @@ Category **Documents**:
 In this category all Royal Documents hosted by Royal server are listed and for each it shows if the user can read or
 modify the document.
 
-The button `Clear Cache` allows you to clear the cache from the currently specified user or for all users immediately. 
+The button `Clear Cache` allows you to clear the cache for the currently specified user or for all users immediately. 
 
 ## Users
 The Users tab shows all users that are member of the `Royal Server Users` Windows group. 
