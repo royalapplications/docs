@@ -82,7 +82,7 @@ Here's a sample JSON file:
         "DoNotCreateDashboardOnStartup": true,
         "DoNotShowGettingStartedPageOnStartup": true,
         "SuperStartPageBehavior": 0,
-        "AutoStartDocumentMode": 3,
+        "AutoStartDocumentMode": 1,
         "WelcomeWindowLicenseAgreementVersion": 999,
         "WelcomeWindowUpdateCheckAndFeatureTrackingVersion": 999
     },
