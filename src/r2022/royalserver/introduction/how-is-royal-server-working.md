@@ -6,30 +6,29 @@ order: 10080
 # How is Royal Server Working?
 
 Royal Server consists of three components: the Management Endpoint, the Secure Gateway and the Document Store.
-For the Management Endpoint and the Document Store component: Royal Server is based on HTTP/S and is using Windows security features like local users and groups to ensure proper authentication.
+For the Management Endpoint and Document Store components: Royal Server is based on HTTP/S and uses Windows security features such as local users and groups to ensure proper authentication.
 
 The Secure Gateway component is based on SSH standards.
 
 ![](/r2022/images/RoyalServer/screenshot_howroyalserverworks.png)
 
-The basic flow of Management Endpoint connections works like this: Client devices like desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS are accessing Royal Server over HTTP/S (possibly using a VPN tunnel). Royal Server itself is using different technologies to talk to the managed servers, depending on the used [component](./what-are-royal-server-components.md) and module. The Secure Gateway component is using a standards-based SSH connection.
+The basic flow of Management Endpoint connections is as follows: Client devices such as desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS access Royal Server via HTTP/S (possibly using a VPN tunnel). Royal Server itself uses different technologies to communicate with the managed servers, depending on the [component](./what-are-royal-server-components.md) and module used. The Secure Gateway component uses a standards-based SSH connection.
 
 ### Royal Server is agentless
-There is no need for the installation of an agent on the managed server. Nevertheless, the machine where Royal Server is running needs to be able to access the managed server over the network. Please check [Configuration of Managed Servers](./configuration.md#configuration-of-managed-servers) for details.
+There is no need to install an agent on the managed server. However, the machine running Royal Server must be able to access the managed server over the network. Please refer to [Configuration of Managed Servers](./configuration.md#configuration-of-managed-servers) for details.
 
-Royal Server features three major components:
+Royal Server consists of three main components:
 - Management Endpoint (a way to manage servers remotely)
-- Document Store (host Royal Documents and share with the team)
-- Secure Gateway (enable a secure SSH-based communication to your servers)
+- Document Store (hosts Royal documents and shares them with the team)
+- Secure Gateway (enables secure SSH based communication with your servers)
 
 ## Under the hood - Management Endpoint
 
-Royal Server needs to query managed servers in order to get the required information (e.g. getting the list of Windows Services).
+Royal Server needs to query managed servers to get the information it needs (e.g. to get the list of Windows services).
 
-For this, there are two basic ways this can be done:
-- using WMI
-- using CIM
-
+There are two basic ways to do this:
+- Using WMI
+- Using CIM
 
 [!include[module-protocols.md](../_shared/module-protocols.md)]
 
