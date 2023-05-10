@@ -22,4 +22,4 @@ We believe that the most common operations on remote servers are task based and 
 
 Royal Server is designed to fill this gap, providing common management tasks for specific operations. Our client applications are designed to provide access to all these tasks using the native user interface of the platform or device. For example, restarting a Windows service on multiple hosts has never been faster or easier. Instead of connecting to a machine using a GUI and clicking around, you simply issue the command "restart the Windows service called 'Spooler' on 192.168.1.1". This saves bandwidth and is much faster - especially if you want to do this on multiple machines at the same time.
 
-[!include[licensing.md](../licensing.md)]
+[!include[licensing.md](../general/licensing.md)]

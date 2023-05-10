@@ -1,6 +1,7 @@
 ---
+uid: royalserver_general_logging
 name: Logging
-order: 9010
+order: 9098
 ---
 
 # Logging
@@ -11,10 +12,9 @@ The Logging Configuration panel displays and changes the logging configuration o
 
 ## Show or Activate the Logging Panel
 
-In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Server** group and then on the **Logging** entry.
+In The Royal Server Configuration Tool Navigation Bar, click on the **General** group and then on the **Logging** entry.
 
-## Windows Event Log
-If enabled, Royal Server logs to the Windows Event Log "Royal Server" with the specified Log Level and Separator.
+For the File and Windows Event Log you can specify the Log Level and Separator.
 
 **Log Level**
 The following Log Levels are supported:
@@ -28,6 +28,11 @@ The following Log Levels are supported:
 
 **Log Separator**
 Specifies a separation character in the Log File. Possible values are ` ` (space), `,`, `|` or `#` .
+
+
+
+## Windows Event Log
+If enabled, Royal Server logs to the Windows Event Log "Royal Server" with the specified Log Level and Separator.
 
 > [!NOTE]
 > In rare cases where Royal Server cannot start properly catastrophic errors are logged in the `Application` log of the Windows Event Log.
@@ -38,16 +43,6 @@ Specifies a separation character in the Log File. Possible values are ` ` (space
 ## File Log
 If enabled, Royal Server logs to a file. Additionally, the content of this file is shown by the Configuration Tool.
 
-**Log Level**
-The following Log Levels are supported:
-
-- No Logging (logging is disabled)
-- Debug (this setting is intended for trouble shooting only since it generates a significant amount of data)
-- Information (a lot of information is logged, including the meta data of all requests and responses Royal Server is executing. If you need to see the full data of the request or response, check Request/Response Logging)
-- Warning
-- Error
-- Fatal
-
 A default setting of Warning or Error is recommended.
 
 **Log Directory**
@@ -55,9 +50,6 @@ Specifies the directory where the log files should be written to (if Type _File_
 
 **File Name**
 Specifies the log file name.
-
-**Log Separator**
-Specifies a separation character in the Log File. Possible values are ` ` (space), `,`, `|` or `#` .
 
 **Example:**
 

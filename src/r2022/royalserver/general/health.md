@@ -1,6 +1,7 @@
 ---
+uid: royalserver_general_health
 name: Health
-order: 9090
+order: 9092
 ---
 
 # Health
@@ -11,7 +12,7 @@ The Health panel displays the current performance data of Royal Server with an u
 
 ## Show or Activate the Health Panel
 
-In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Server** group and then on the **Health** entry.
+In The Royal Server Configuration Tool Navigation Bar, click on the **General** group and then on the **Health** entry.
 
 ## Features
 

@@ -1,6 +1,7 @@
 ---
-name: Update Checks
-order: 9040
+uid: royalserver_general_updatesettings
+name: Update Settings
+order: 9099
 ---
 
 # Update Checks
@@ -11,7 +12,7 @@ The **Update Checks** panel displays the configuration of the Update Checks.
 
 ## Show or Activate the Update Checks Panel
 
-In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Server** group and then on the **Update Checks** entry.
+In The Royal Server Configuration Tool Navigation Bar, click on the **General** group and then on the **Update Settings** entry.
 
 The Royal Server Configuration Tool can check for new versions. This is executed
 
