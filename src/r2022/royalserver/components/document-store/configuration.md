@@ -1,4 +1,5 @@
 ---
+uid: royalserver_components_document-store-configuration
 name: Configuration
 order: 7020
 ---
