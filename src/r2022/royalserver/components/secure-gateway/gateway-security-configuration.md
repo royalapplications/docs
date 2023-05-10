@@ -1,6 +1,7 @@
 ---
+uid: royalserver_components_secure-gateway_gateway-security-configuration
 name: Gateway Security Configuration
-order: 7030
+order: 7020
 ---
 
 # Gateway Security Configuration
@@ -11,7 +12,7 @@ The Gateway Security Configuration panel displays and changes the security confi
 
 ## Show or Activate the Gateway Security Configuration Panel
 
-In The Royal Server Configuration Navigation Bar, click on the Secure Gateway group and then on the Gateway Security Configuration entry.
+In The Royal Server Configuration Tool Navigation Bar, click on the **Secure Gateway** group and then on the **Security Configuration** entry.
 
 > [!NOTE]
 > Any change in this panel requires a restart of Royal Server.

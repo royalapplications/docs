@@ -1,17 +1,18 @@
 ---
+uid: royalserver_components_secure-gateway_gateway-connections
 name: Gateway Connections
-order: 7020
+order: 7007
 ---
 
 # Gateway Connections
 
 <img src="/r2022/images/RoyalServer/PageTunnels_48x48.png" class="icon-def" alt="" />
 
-The Gateway Connections panel displays the current status of the Secure Gateway component.
+The Gateway Connections panel displays all currently open Secure Gateway Connections.
 
 ## Show or Activate the Gateway Connections Panel
 
-In The Royal Server Configuration Tool Navigation Bar, click on the Secure Gateway group and then on the Gateway Connections entry.
+In The Royal Server Configuration Tool Navigation Bar, click on the **Secure Gateway** group and then on the **Active Connections** entry.
 
 ## Features
 
