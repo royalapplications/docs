@@ -1,7 +1,7 @@
 ---
 uid: royalserver_components_secure-gateway_gateway-security-configuration
 name: Gateway Security Configuration
-order: 7020
+order: 7009
 ---
 
 # Gateway Security Configuration
