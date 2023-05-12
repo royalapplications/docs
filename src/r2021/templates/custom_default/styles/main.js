@@ -103,7 +103,51 @@ $(function () {
     return result;
   }
 
+  function calculateTargetVersionInfo(version) {
+    const currentHref =
+      document.location.pathname +
+      document.location.search +
+      document.location.hash;
+
+    const segments = currentHref.split("/");
+    const targetVersion = version || segments[1];
+    segments[1] = version;
+    const targetHref = segments.join("/");
+
+    return {
+      currentHref,
+      targetHref,
+      targetVersion,
+    };
+  }
+
+  function setupVersionSelector() {
+    $versionSelect = $("#version-select");
+    if (!$versionSelect.length) {
+      return;
+    }
+
+    $versionSelect.val(calculateTargetVersionInfo().targetVersion);
+
+    $versionSelect.on("change", function (e) {
+      const targetVersion = this.value;
+      const targetHref = calculateTargetVersionInfo(targetVersion).targetHref;
+
+      $.ajax({
+        type: "HEAD",
+        url: targetHref,
+        success: function () {
+          document.location.href = targetHref;
+        },
+        error: function () {
+          document.location.href = `/${targetVersion}/index.html`;
+        },
+      });
+    });
+  }
+
   setupAnchorJs(anchors);
   setupHighlightJs(hljs);
+  setupVersionSelector();
   expandToc();
 });

@@ -13,7 +13,7 @@
         "src/**/templates/**/*",
         "src/**/*.md"
       ],
-      "extensions": "md,css,partial",
+      "extensions": "md,css,js,partial,liquid",
       "quiet": true,
       "legacyWatch": true,
       "delay": 500,

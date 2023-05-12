@@ -3,8 +3,9 @@
     color: #ddd;
   }
 
-  .img-thumbnail, body {
-      background-color: #131313;
+  .img-thumbnail,
+  body {
+    background-color: #131313;
   }
 
   .sidefilter {
@@ -16,14 +17,16 @@
   .sidetoc {
     background-color: #1f1f1f;
     border-left-color: #2f2f2f;
-    border-right-color: #2f2f2f; 
+    border-right-color: #2f2f2f;
   }
 
   body .toc {
     background-color: #1f1f1f;
   }
 
-  .sidenav, .fixed_header, .toc {
+  .sidenav,
+  .fixed_header,
+  .toc {
     background-color: #1f1f1f;
   }
 
@@ -33,10 +36,11 @@
 
   .toc .nav > li > a:hover,
   .toc .nav > li > a:focus {
-    color: #9A9A9A;
+    color: #9a9a9a;
   }
 
-  .toc-filter, .toc-filter > input {
+  .toc-filter,
+  .toc-filter > input {
     background: #131313;
     color: #ddd;
   }
@@ -61,7 +65,7 @@
     -webkit-filter: invert(100%);
   }
 
-  .table-striped>tbody>tr:nth-of-type(odd) {
+  .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: #3e3e3e;
   }
 
@@ -310,7 +314,7 @@ td.hljs-ln-line.hljs-ln-numbers {
 #wrapper .article button,
 #wrapper .article a {
   color: #eb9526;
-} 
+}
 
 #wrapper .sidenav button:hover,
 #wrapper .sidenav button:focus,
@@ -347,7 +351,7 @@ td.hljs-ln-line.hljs-ln-numbers {
 #wrapper.ra-royalserver .article button,
 #wrapper.ra-royalserver .article a {
   color: #ed1a57;
-} 
+}
 
 #wrapper.ra-royalserver .sidenav button:hover,
 #wrapper.ra-royalserver .sidenav button:focus,
@@ -357,7 +361,7 @@ td.hljs-ln-line.hljs-ln-numbers {
 #wrapper.ra-royalserver .article button:focus,
 #wrapper.ra-royalserver .article a:hover,
 #wrapper.ra-royalserver .article a:focus {
-  color: #C51A4B;
+  color: #c51a4b;
 }
 
 #wrapper.ra-royalserver .toc .nav > li.active > a,
@@ -384,7 +388,7 @@ td.hljs-ln-line.hljs-ln-numbers {
 #wrapper.ra-scripting .article button,
 #wrapper.ra-scripting .article a {
   color: #76a033;
-} 
+}
 
 #wrapper.ra-scripting .sidenav button:hover,
 #wrapper.ra-scripting .sidenav button:focus,
@@ -448,10 +452,6 @@ article h2#properties {
     content: "\00a0";
   }
 }
-
-
-
-
 
 /* Highlight.JS Theme */
 
@@ -607,4 +607,44 @@ article h2#properties {
   .hljs-strong {
     font-weight: bold;
   }
+}
+
+/* spacing utitlities */
+.p-s0 {
+  margin-left: 0;
+}
+
+.p-s1 {
+  margin-left: 0.75rem;
+}
+
+.p-s2 {
+  margin-left: 1.5rem;
+}
+
+.p-e0 {
+  margin-right: 0;
+}
+
+.p-e1 {
+  margin-right: 0.75rem;
+}
+
+.p-e2 {
+  margin-right: 1.5rem;
+}
+
+.p-x0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.p-x1 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.p-x2 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
