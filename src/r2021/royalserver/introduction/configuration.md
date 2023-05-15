@@ -10,7 +10,7 @@ There are various options how manged Royal Server configuration settings.
 
 ## Royal Server Configuration Tool
 
-The most common way is to use the `Royal Server Configuration Tool` which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it to  manage the different modules, your license(s), set up certificates, and grant permissions, etc.. Additionally, it sports a health monitor to easily monitor resource usage.
+The most common way is to use the `Royal Server Configuration Tool` which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it to manage the different modules, your license(s), set up certificates, and grant permissions, etc.. Additionally, it sports a health monitor to easily monitor resource usage.
 
 ## Configuration File
 
@@ -69,4 +69,4 @@ In case the Windows Firewall is enabled the following two rules must be enabled:
 - Windows Management Instrumentation (WMI-In), and
 - Windows Management Instrumentation (DCOM-In)
 
-For the above two steps, we have also prepared a PowerShell script (in `<royal-server-installation-dir>\scripts\prepare_server.ps1`). See the [Preparing a Managed Server](xref:royalserver_advanced_management-scripts_pepare) chapter.
+For the above two steps, we have also prepared a PowerShell script (in `<royal-server-installation-dir>\scripts\prepare_server.ps1`). See the [Preparing a Managed Server](xref:royalserver_advanced_management-scripts_prepare) chapter.
