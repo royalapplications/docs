@@ -8,7 +8,7 @@
     <title>Module Windows Events (EventLog) </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Module Windows Events (EventLog) ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -75,7 +75,7 @@
 <p>The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
 </div>
 <h2 id="command-getentries">Command &quot;GetEntries&quot;</h2>
-<p>Gets entries of the Windows Eventlog.</p>
+<p>Gets entries of the Windows Event Log.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li>CommandProvider: either &quot;WMI&quot; or &quot;CIM&quot; is supported</li>
@@ -319,6 +319,15 @@ $entries = $response.Responses[0].Result
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -329,8 +338,9 @@ $entries = $response.Responses[0].Result
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

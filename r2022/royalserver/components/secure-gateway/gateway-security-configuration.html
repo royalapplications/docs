@@ -8,7 +8,7 @@
     <title>Gateway Security Configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Gateway Security Configuration ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -66,13 +66,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="gateway-security-configuration">Gateway Security Configuration</h1>
+            <article class="content wrap" id="_content" data-uid="royalserver_components_secure-gateway_gateway-security-configuration">
 
-<img src="/r2022/images/RoyalServer/PageSecureGateway_48x48.png" class="icon-def" alt="">
+<img src="/r2022/images/RoyalServer/Svg/SVG_SecurityConfiguration_32.svg" class="icon-left icon-lg" alt="">
+<h1 id="gateway-security-configuration">Gateway Security Configuration</h1>
 <p>The Gateway Security Configuration panel displays and changes the security configuration of the Secure Gateway component of Royal Server.</p>
 <h2 id="show-or-activate-the-gateway-security-configuration-panel">Show or Activate the Gateway Security Configuration Panel</h2>
-<p>In The Royal Server Configuration Navigation Bar, click on the Secure Gateway group and then on the Gateway Security Configuration entry.</p>
+<p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>Secure Gateway</strong> group and then on the <strong>Security Configuration</strong> entry.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Any change in this panel requires a restart of Royal Server.</p>
@@ -109,8 +109,8 @@
 </tbody>
 </table>
 <h2 id="ciphers">Ciphers</h2>
-<p>The Secure Gateway component is based on SSH and uses many encryption related algoriths under the hood. In some environments it is required to only allow specific
-algorithms. You can specify algoriths in the following categories:</p>
+<p>The Secure Gateway component is based on SSH and uses many encryption related algorithms under the hood. In some environments it is required to only allow specific
+algorithms. You can specify algorithms in the following categories:</p>
 <ul>
 <li>Encryption Key Algorithms</li>
 <li>Host Key Algorithms</li>
@@ -127,6 +127,15 @@ algorithms. You can specify algoriths in the following categories:</p>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -137,8 +146,9 @@ algorithms. You can specify algoriths in the following categories:</p>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

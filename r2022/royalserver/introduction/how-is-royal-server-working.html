@@ -8,7 +8,7 @@
     <title>How is Royal Server Working? </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="How is Royal Server Working? ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -66,28 +66,28 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="royalserver_introduction_how-is-royal-server-working">
 <h1 id="how-is-royal-server-working">How is Royal Server Working?</h1>
 
 <p>Royal Server consists of three components: the Management Endpoint, the Secure Gateway and the Document Store.
-For the Management Endpoint and the Document Store component: Royal Server is based on HTTP/S and is using Windows security features like local users and groups to ensure proper authentication.</p>
+For the Management Endpoint and Document Store components: Royal Server is based on HTTP/S and uses Windows security features such as local users and groups to ensure proper authentication.</p>
 <p>The Secure Gateway component is based on SSH standards.</p>
 <p><img src="/r2022/images/RoyalServer/screenshot_howroyalserverworks.png" alt=""></p>
-<p>The basic flow of Management Endpoint connections works like this: Client devices like desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS are accessing Royal Server over HTTP/S (possibly using a VPN tunnel). Royal Server itself is using different technologies to talk to the managed servers, depending on the used <a href="what-are-royal-server-components.html">component</a> and module. The Secure Gateway component is using a standards-based SSH connection.</p>
+<p>The basic flow of Management Endpoint connections is as follows: Client devices such as desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS access Royal Server via HTTP/S (possibly using a VPN tunnel). Royal Server itself uses different technologies to communicate with the managed servers, depending on the <a href="what-are-royal-server-components.html">component</a> and module used. The Secure Gateway component uses a standards-based SSH connection.</p>
 <h3 id="royal-server-is-agentless">Royal Server is agentless</h3>
-<p>There is no need for the installation of an agent on the managed server. Nevertheless, the machine where Royal Server is running needs to be able to access the managed server over the network. Please check <a href="configuration.html#configuration-of-managed-servers">Configuration of Managed Servers</a> for details.</p>
-<p>Royal Server features three major components:</p>
+<p>There is no need to install an agent on the managed server. However, the machine running Royal Server must be able to access the managed server over the network. Please refer to <a href="configuration.html#configuration-of-managed-servers">Configuration of Managed Servers</a> for details.</p>
+<p>Royal Server consists of three main components:</p>
 <ul>
 <li>Management Endpoint (a way to manage servers remotely)</li>
-<li>Document Store (host Royal Documents and share with the team)</li>
-<li>Secure Gateway (enable a secure SSH-based communication to your servers)</li>
+<li>Document Store (hosts Royal documents and shares them with the team)</li>
+<li>Secure Gateway (enables secure SSH based communication with your servers)</li>
 </ul>
 <h2 id="under-the-hood---management-endpoint">Under the hood - Management Endpoint</h2>
-<p>Royal Server needs to query managed servers in order to get the required information (e.g. getting the list of Windows Services).</p>
-<p>For this, there are two basic ways this can be done:</p>
+<p>Royal Server needs to query managed servers to get the information it needs (e.g. to get the list of Windows services).</p>
+<p>There are two basic ways to do this:</p>
 <ul>
-<li>using WMI</li>
-<li>using CIM</li>
+<li>Using WMI</li>
+<li>Using CIM</li>
 </ul>
 <table>
 <thead>
@@ -101,7 +101,7 @@ For the Management Endpoint and the Document Store component: Royal Server is ba
 <tr>
 <td>Eventlog</td>
 <td>WMI/CIM</td>
-<td>user needs to have the rights to read the Windows eventlog</td>
+<td>User needs to have the rights to read the Windows Event Log</td>
 </tr>
 <tr>
 <td>Hyper-V</td>
@@ -116,17 +116,17 @@ For the Management Endpoint and the Document Store component: Royal Server is ba
 <tr>
 <td>RoyalDocumentStore</td>
 <td>-</td>
-<td>internal module used by Royal Server</td>
+<td>Internal module used by Royal Server</td>
 </tr>
 <tr>
 <td>RoyalServerManagement</td>
 <td>-</td>
-<td>internal module used by Royal Server</td>
+<td>Internal module used by Royal Server</td>
 </tr>
 <tr>
 <td>Script</td>
 <td>WMI/CIM</td>
-<td>PowerShell remoting for PS</td>
+<td>PowerShell Remoting for PS</td>
 </tr>
 <tr>
 <td>Terminal Services</td>
@@ -155,20 +155,29 @@ interface through which instrumented components provide information and notifica
 <p>WMI is Microsoft's implementation of Web-Based Enterprise Management (WBEM) and Common Information Model (CIM). It relies on a binary
 communication protocol that is using dynamic ports (TCP/135 for &gt; standard RPC and a randomly assigned port between 1024-65535
 (for Windows 2003 and older) or 49152-65535 (for Windows 2008 and newer).</p>
-<p>For details to prepare servers to be managed by Royal Server please check our <a href="../advanced/management-scripts/prepare-managed-server.html">Prepare a Managed Server</a> script.</p>
+<p>For details to prepare servers to be managed by Royal Server please check our <a class="xref" href="../advanced/management-scripts/prepare-managed-server.html">Prepare a Managed Server</a> script.</p>
 </div>
 <h2 id="under-the-hood---document-store">Under the hood - Document Store</h2>
 <p>The Document Store component is based on HTTPs/SSL communication between Royal TS/X and Royal Server. Check the
-<a href="../management/service-configuration.html">Service Configuration</a> and <a href="../management/security-configuration.html">Security Configuration</a> for
+<a class="xref" href="../components/management/service-configuration.html">Service Configuration</a> and <a class="xref" href="../components/management/security-configuration.html">Security Configuration</a> for
 more details.</p>
 <h2 id="under-the-hood---secure-gateway">Under the hood - Secure Gateway</h2>
-<p>Secure Gateway connections are based on SSH. Check <a href="../components/secure-gateway/gateway-configuration.html">Gateway Configuration</a> and
-<a href="../components/secure-gateway/gateway-security-configuration.html">Gateway Security Configuration</a> for more details.</p>
+<p>Secure Gateway connections are based on SSH. Check <a class="xref" href="../components/secure-gateway/gateway-configuration.html">Gateway Configuration</a> and
+<a class="xref" href="../components/secure-gateway/gateway-security-configuration.html">Gateway Security Configuration</a> for more details.</p>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -179,8 +188,9 @@ more details.</p>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

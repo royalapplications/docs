@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Loading and Saving a Document from Royal Server </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Loading and Saving a Document from Royal Server ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalserver_scripting_examples_load-and-save-documents">
+<h3 id="loading-and-saving-a-document-from-royal-server">Loading and Saving a Document from Royal Server</h3>
+
+<p>This example</p>
+<ol>
+<li>loads a document from Royal Server</li>
+<li>stores it locally</li>
+<li>loads it in memory</li>
+<li>changes it</li>
+<li>saves it back to the file system and</li>
+<li>saves it back to Royal Server</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This examples is using CmdLets from the PowerShell modules 'RoyalServer.PowerShell' and 'RoyalDocument.PowerShell'. Please
+make sure you have installed these first via the 'Install-Module' CmdLet.</p>
+</div>
+<pre><code class="lang-powershell">import-module RoyalServer.PowerShell
+import-module RoyalDocument.PowerShell
+
+$psDocId = &quot;875fbed2-2d67-4067-a5a8-5fae2bc38f56&quot; #guid of the document
+$psDocName = &quot;psdoc&quot;
+
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+
+$royalserverhost = “x.x.x.x”
+$destinationhost = “x.x.x.x”
+$gatewayusername = “username”
+$pwd = “x”
+$path = “x.rtsz&quot;
+
+
+$gatewaypassword = convertto-securestring -string $pwd  -asplaintext -force
+$gatewaycredential = New-Object System.Management.Automation.PSCredential ($gatewayusername, $gatewaypassword)
+$config = New-RoyalServerConfig -Host $royalserverhost -UseSSL $true -Port 54899 -Credential $gatewaycredential
+
+
+##############################
+# 1. Load document from Royal Server
+##############################
+$loadArgz =  @{&quot;DocumentId&quot; = &quot;$psDocId&quot;; &quot;DocumentName&quot; = &quot;PS Document&quot;}
+$documentLoadedFromServer = Invoke-RoyalServerCommand -ModuleID RoyalDocumentStore -Command LoadDocument -Arguments $loadArgz -DestinationHost $destinationHost -RoyalServerConfig $config 
+
+##############################
+# 2. Save document to filesystem
+##############################
+$docContent = $documentLoadedFromServer.Responses[0].Result.Rows[0].DocumentContent
+$decodedDocContent = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($docContent))
+$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+[System.IO.File]::WriteAllLines($path, $decodedDocContent, $Utf8NoBomEncoding)
+
+##############################
+# 3. Load document in memory
+##############################
+$Store = New-RoyalStore -UserName ($env:USERDOMAIN + '\' + $env:USERNAME)
+$doc = Open-RoyalDocument -Store $store -FileName $path
+
+##############################
+# 4. Change document in memory
+##############################
+$Folder = New-RoyalObject -Folder $doc -Type RoyalFolder -Name 'RoyalDocument.PowerShell example'
+$RDS = New-RoyalObject -Folder $Folder -Type RoyalRDSConnection -Name &quot;name of the connection&quot; -Description &quot;demo server&quot;
+Set-RoyalObjectValue -Object $RDS -Property URI -Value srv01.demo.local
+$creator = &quot;scriptuser&quot;
+$RDS.CreatedBy = $creator
+$RDS.ModifiedBy = $creator
+
+###############################
+# 5. Save document to filesystem
+##############################
+Out-RoyalDocument -Document $doc -FileName $path
+
+##############################
+# 6. Save document to Royal Server
+##############################
+$documentContentInBytes = [System.IO.File]::ReadAllBytes($path)
+$documentContent = [System.Convert]::ToBase64String($documentContentInBytes)
+$command = &quot;SaveDocument&quot;
+$argz =  @{&quot;DocumentId&quot; = &quot;$psDocId&quot;; &quot;DocumentName&quot; = &quot;$psDocName&quot;; &quot;DocumentContent&quot; = &quot;$documentContent&quot; }
+
+
+Write-Host &quot;Saving $documentName to Royal Server...&quot;
+Invoke-RoyalServerCommand -ModuleID RoyalDocumentStore -Command SaveDocument -Arguments $argz -DestinationHost $destinationHost -RoyalServerConfig $config 
+
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/scripting/examples/Load-and-Save-Document.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

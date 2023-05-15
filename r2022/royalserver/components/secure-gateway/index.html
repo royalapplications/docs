@@ -8,7 +8,7 @@
     <title>Secure Gateway </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Secure Gateway ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -66,17 +66,28 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="secure-gateway">Secure Gateway</h1>
+            <article class="content wrap" id="_content" data-uid="royalserver_components_secure-gateway">
 
-<p>The Secure Gateway is a component in Royal Server that enables the user to securely tunnel the traffic through Royal Server. This is done by using an encrypted SSH tunnel (aka port forwarding).</p>
+<img src="/r2022/images/RoyalServer/Svg/SVG_SecureGateway_32.svg" class="icon-left icon-lg" alt="">
+<h1 id="secure-gateway">Secure Gateway</h1>
+<p>The Secure Gateway is a component in Royal Server that enables the user to securely tunnel the traffic through Royal Server. This is done by using an encrypted SSH tunnel (also known as port forwarding).</p>
 <h3 id="accessing-the-secure-gateway-component">Accessing the Secure Gateway component</h3>
 <p>The Secure Gateway is only accepting authenticated requests and the Secure Gateway configuration in Royal TS/X needs to be configured with a Credential. The Secure Gateway only accepts user accounts that are in the local Windows group <code>Royal Server Gateway Users</code>. If the specified Credential is not member of this group, the Secure Gateway component will return an authentication error.</p>
+<p>See details on <a class="xref" href="../../general/permissions.html">Permissions</a>.</p>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -87,8 +98,9 @@
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

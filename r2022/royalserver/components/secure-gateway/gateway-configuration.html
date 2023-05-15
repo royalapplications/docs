@@ -8,7 +8,7 @@
     <title>Gateway Configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Gateway Configuration ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -66,13 +66,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="gateway-configuration">Gateway Configuration</h1>
+            <article class="content wrap" id="_content" data-uid="royalserver_components_secure-gateway_gateway-configuration">
 
-<img src="/r2022/images/RoyalServer/PageSecureGateway_48x48.png" class="icon-def" alt="">
+<img src="/r2022/images/RoyalServer/Svg/SVG_SecureGateway_32.svg" class="icon-left icon-lg" alt="">
+<h1 id="gateway-configuration">Gateway Configuration</h1>
 <p>The Gateway Configuration panel displays and changes the configuration of the Secure Gateway component of Royal Server.</p>
 <h2 id="show-or-activate-the-gateway-configuration-panel">Show or Activate the Gateway Configuration Panel</h2>
-<p>In The Royal Server Configuration Navigation Bar, click on the Secure Gateway group and then on the Gateway Configuration entry.</p>
+<p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>Secure Gateway</strong> group and then on the <strong>Secure Gateway Configuration</strong> entry.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Any change in this panel requires a restart of Royal Server.</p>
@@ -80,35 +80,44 @@
 <h2 id="features">Features</h2>
 <p><strong>Enable Royal Server Secure Gateway</strong></p>
 <p>If checked, the Secure Gateway Component is active.</p>
-<p><strong>IP Address</strong></p>
-<p>Specify the IP Address the Secure Gateway is binding to. Use this to IP Address to connect to the Secure Gateway - e.g. via Royal TS/X. By default, the unspecified address (0.0.0.0) is assigned .i.e it listens on all available IP4 addresses.</p>
-<p><strong>Port</strong></p>
-<p>Specify the Port the Secure Gateway is binding to. Default is 22.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The Secure Gateway is basically a SSH server with tunnel support. The default port of SSH is 22.<br>
-If your Royal Server is reachable over the internet and  you see a lot of SSH brute force attacks harden the <a href="gateway-security-configuration.html">security configuration of Royal Server</a>.</p>
-</div>
+<p><strong>Use Compression</strong></p>
+<p>Specify that the Secure Gateway supports compression of network traffic.</p>
 <p><strong>Timeout</strong></p>
 <p>Specify the timeout of a Secure Gateway connection in seconds when the connection is idle.
 Setting the value to 0 disables closing idle sessions.
 The minimum allowed duration is 30 seconds.</p>
 <p><strong>Max. Connections</strong></p>
-<p>Specify the maximum number of concurrent sconnections the Secure Gateway is accepting.</p>
-<p><strong>Use Compression</strong></p>
-<p>Specify that the Secure Gateway supports compression of network traffic.</p>
+<p>Specify the maximum number of concurrent connections the Secure Gateway is accepting.</p>
 <p><strong>Certificate</strong></p>
-<p>The Secure Gateway is based on SSH and needs a certificate to work. During the installation of Royal Server a self-signed certificate with the name &quot;RoyalServer-SecureGateway&quot; is automatically installed. Alternatively, you can configure your own, issue a new one or export a certificate.</p>
+<p>The Secure Gateway is based on SSH and needs a certificate to work. During the installation of Royal Server a self-signed certificate with the name &quot;RoyalServer-SecureGateway&quot; is automatically installed. Alternatively, you can configure your own certificate, issue a new one or export a certificate.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If you plan to use Royal Server in a load balanced environment, you need to make sure that all Royal Servers are using the same certificate for the Secure Gateway.
 If this is not the case, Royal TS/X clients will issue a changed Thumbprint warning each time the load balancer routs to a different Royal Server installation.</p>
 </div>
+<p><strong>Primary Secure Gateway Binding</strong></p>
+<p>Specify the IP Address and Port the Secure Gateway is binding to. Use this to IP Address to connect to the Secure Gateway - e.g. via Royal TS/X. By default, the unspecified address (0.0.0.0) is assigned .i.e it listens on all available IP4 addresses.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Secure Gateway is basically a SSH server with tunnel support. The default port of SSH is 22.<br>
+If your Royal Server is reachable over the internet and you see a lot of SSH brute force attacks harden the <a href="gateway-security-configuration.html">security configuration of Royal Server</a>.</p>
+</div>
+<p><strong>Additional Bindings</strong></p>
+<p>Additionally to the Primary Binding you can specify Additional Bindings. These can be disabled, edited or deleted.</p>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -119,8 +128,9 @@ If this is not the case, Royal TS/X clients will issue a changed Thumbprint warn
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

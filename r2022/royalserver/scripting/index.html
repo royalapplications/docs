@@ -8,7 +8,7 @@
     <title>Getting Started </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Getting Started ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -70,13 +70,10 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <h2 id="registration-of-the-royaldocument-commandlets">Registration of the RoyalDocument Commandlets</h2>
-<p>In order to work with the RoyalServer PowerShell commandlets, you need to register them with your PowerShell session. Just issue the following command and you are good to go:</p>
-<pre><code class="lang-powershell">Import-Module &lt;Path-to-RoyalServer-installation&gt;\\RoyalServer.PowerShell.dll -Force
+<p>In order to work with the RoyalServer PowerShell commandlets, you need to install the RoyalServer.PowerShell module and import it for the current session:</p>
+<pre><code class="lang-powershell">Install-Module RoyalServer.PowerShell
+Import-Module RoyalServer.PowerShell
 </code></pre>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Usually, Royal Server is installed to <code>%ProgramFiles(x86)%\RoyalServer</code>.</p>
-</div>
 <p>If you like to have the RoyalServer CommandLets in all your PowerShell sessions, include this line in your PowerShell profile. To locate where your profile is call <code>$profile</code> in your PowerShell session. Usually, this location is at <code>%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</code>.</p>
 <h2 id="first-steps">First Steps</h2>
 <p>Setting up a connection to Royal Server looks like this:</p>
@@ -114,6 +111,15 @@ foreach($response in $response.Responses)
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -124,8 +130,9 @@ foreach($response in $response.Responses)
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

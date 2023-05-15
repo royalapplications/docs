@@ -8,7 +8,7 @@
     <title>Royal TS/X Management Connection </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Royal TS/X Management Connection ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -80,29 +80,38 @@ The following connections support Royal Server:</p>
 <li>VM Ware</li>
 <li>Windows Services</li>
 </ul>
-<p>Start by creating a &quot;Royal Server&quot; object that has configured proper values for IP, Port and the Royal Server Credentials.
-Use the &quot;Test&quot; Button to verify connectivity.</p>
+<p>Start by creating a Royal Server object with the correct IP, port and Royal Server credentials configured.
+Use the <code>Test</code> button to check connectivity.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The configured user needs to be in the &quot;Royal Server Users&quot; group on Royal Server to get acccess.</p>
+<p>The configured user needs to be in the &quot;Royal Server Users&quot; group on Royal Server to get access.</p>
 </div>
-<p>Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the &quot;Royal Server&quot;
-category of the Windows Events connection. If you forget this step, Royal TS/X tries to connect to this machine
-directly without Royal Server.</p>
+<p>Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the &quot;Royal Server&quot; category of the Windows Events connection. If you forget to do this, Royal TS/X will try to connect to this machine directly without Royal Server.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The credential configured on the management connection (that is not the credential on the Royal Server object) needs to have proper rights to read the information (e.g. read the Windows Event Log) on the target host. In most scenarios, a user account who is member of the Local Administrators group is fine. For low privilege environments a number of steps are necessary to grant non-administrative users the required rights depending on the plugin.</p>
+<p>The credential configured on the management connection (that is not the credential on the Royal Server object) must have sufficient rights to read information (e.g. read the Windows Event Log) on the target host. In most scenarios a user account that is a member of the Local Administrators group is sufficient. For low privilege environments, depending on the plugin, a number of steps are required to grant non-administrative users the required rights.</p>
 </div>
-<p>To access Royal Server you can install the latest version of Royal TS/X:</p>
-<p><a href="https://www.royalapps.com/ts/win/download">Get the latest version of Royal TS (for Windows)</a></p>
-<p><a href="https://www.royalapps.com/ts/mac/download">Get the latest version of Royal TSX (for OS X)</a></p>
-<p>Alternativly, you can use the Royal Server PowerShell API to query Royal Server from the command line:
-<a href="../scripting/index.html">Using Royal Server via PowerShell</a></p>
+<p>To access Royal Server, please install the latest version of Royal TS/X:</p>
+<ul>
+<li><a href="https://www.royalapps.com/ts/win/download">Get the latest version of Royal TS (for Windows)</a></li>
+<li><a href="https://www.royalapps.com/ts/mac/download">Get the latest version of Royal TSX (for OS X)</a></li>
+</ul>
+<p>Alternativly, you can use the Royal Server PowerShell API to query Royal Server from the command line.</p>
+<p>See <a href="../scripting/index.html">Using Royal Server via PowerShell</a></p>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -113,8 +122,9 @@ directly without Royal Server.</p>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

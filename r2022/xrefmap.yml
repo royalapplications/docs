@@ -85,6 +85,9 @@ references:
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
   href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
+- uid: royalserver_advanced_high-availability-installation
+  name: royalserver_advanced_high-availability-installation
+  href: royalserver/advanced/_high-availability-installation.html
 - uid: royalserver_advanced_management_scripts_cleanup
   name: Cleanup an Installation
   href: royalserver/advanced/management-scripts/uninstall.html
@@ -94,30 +97,120 @@ references:
 - uid: royalserver_advanced_traceflags
   name: Trace Flags
   href: royalserver/advanced/trace-flags.html
+- uid: royalserver_components_document-store
+  name: Document Store
+  href: royalserver/components/document-store/index.html
 - uid: royalserver_components_document-store_documents
   name: Documents
   href: royalserver/components/document-store/documents.html
-- uid: royalserver_configtool_management
-  name: Overview
-  href: royalserver/management/index.html
+- uid: royalserver_components_document-store-configuration
+  name: Configuration
+  href: royalserver/components/document-store/configuration.html
+- uid: royalserver_components_management
+  name: Royal Server Management Endpoint
+  href: royalserver/components/management/index.html
+- uid: royalserver_components_secure-gateway
+  name: Secure Gateway
+  href: royalserver/components/secure-gateway/index.html
+- uid: royalserver_components_secure-gateway_gateway-cipher-configuration
+  name: Gateway Security Configuration
+  href: royalserver/components/secure-gateway/gateway-ciphers.html
+- uid: royalserver_components_secure-gateway_gateway-configuration
+  name: Gateway Configuration
+  href: royalserver/components/secure-gateway/gateway-configuration.html
+- uid: royalserver_components_secure-gateway_gateway-connections
+  name: Gateway Connections
+  href: royalserver/components/secure-gateway/gateway-connections.html
+- uid: royalserver_components_secure-gateway_gateway-security-configuration
+  name: Gateway Security Configuration
+  href: royalserver/components/secure-gateway/gateway-security-configuration.html
+- uid: royalserver_general
+  name: Royal Server Configuration
+  href: royalserver/general/index.html
+- uid: royalserver_general_certificate-store
+  name: Certificate Store
+  href: royalserver/general/certificate-store.html
+- uid: royalserver_general_configuration
+  name: General Configuration
+  href: royalserver/general/general-configuration.html
+- uid: royalserver_general_health
+  name: Health
+  href: royalserver/general/health.html
+- uid: royalserver_general_licensing
+  name: Licensing
+  href: royalserver/general/licensing.html
+- uid: royalserver_general_logging
+  name: Logging
+  href: royalserver/general/logging.html
+- uid: royalserver_general_multifactor-authentication
+  name: Multi Factor Authentication
+  href: royalserver/general/mfa.html
+- uid: royalserver_general_multifactor-user-store
+  name: Multi Factor User Store
+  href: royalserver/general/mfa-user-store.html
+- uid: royalserver_general_permissions
+  name: Permissions
+  href: royalserver/general/permissions.html
+- uid: royalserver_general_updatesettings
+  name: Update Checks
+  href: royalserver/general/update-settings.html
 - uid: royalserver_introduction
   name: What is Royal Server?
   href: royalserver/introduction/index.html
 - uid: royalserver_introduction_configuration
   name: Royal Server Configuration
   href: royalserver/introduction/configuration.html
-- uid: royalserver_licensing
-  name: Licensing
-  href: royalserver/licensing.html
+- uid: royalserver_introduction_how-is-royal-server-working
+  name: How is Royal Server Working?
+  href: royalserver/introduction/how-is-royal-server-working.html
+- uid: royalserver_management_dynamic-folder
+  name: Dynamic Folder
+  href: royalserver/components/management/dynamic-folder.html
 - uid: royalserver_management_modules
   name: Modules
-  href: royalserver/management/modules.html
+  href: royalserver/components/management/modules.html
+- uid: royalserver_management_security-configuration
+  name: Security Configuration
+  href: royalserver/components/management/security-configuration.html
 - uid: royalserver_management_service-configuration
   name: Service Configuration
-  href: royalserver/management/service-configuration.html
+  href: royalserver/components/management/service-configuration.html
 - uid: royalserver_modules
   name: Royal Server Modules
   href: royalserver/modules/index.html
+- uid: royalserver_modules_document-store
+  name: Document Store
+  href: royalserver/modules/document-store.html
+- uid: royalserver_modules_hyperv
+  name: Hyper-V Module
+  href: royalserver/modules/hyper-v-module.html
+- uid: royalserver_modules_management
+  name: Royal Server Management Module
+  href: royalserver/modules/royal-server-management.html
+- uid: royalserver_modules_script
+  name: Script Module
+  href: royalserver/modules/script-module.html
+- uid: royalserver_modules_terminal-services
+  name: Terminal Services Module
+  href: royalserver/modules/terminal-services-module.html
+- uid: royalserver_modules_vmware
+  name: VMware Module
+  href: royalserver/modules/vmware-module.html
+- uid: royalserver_modules_windows-events
+  name: Windows Events Module
+  href: royalserver/modules/windows-events-module.html
+- uid: royalserver_modules_windows-processes
+  name: Windows Processes Module
+  href: royalserver/modules/windows-processes-module.html
+- uid: royalserver_modules_windows-services
+  name: Windows Services Module
+  href: royalserver/modules/windows-services-module.html
+- uid: royalserver_scripting_examples_advanced-scripting-examples
+  name: Examples using RoyalServer.PowerShell and RoyalDocument.PowerShell
+  href: royalserver/scripting/examples/index.html
+- uid: royalserver_scripting_examples_load-and-save-documents
+  name: Loading and Saving a Document from Royal Server
+  href: royalserver/scripting/examples/Load-and-Save-Document.html
 - uid: royalserver_scripting_module-reference
   name: Module References
   href: royalserver/scripting/module-reference/index.html

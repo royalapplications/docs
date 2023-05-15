@@ -8,7 +8,7 @@
     <title>Invoke-RoyalServerCommand </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Invoke-RoyalServerCommand ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -81,7 +81,7 @@
      [-RoyalServerConfig] &lt;RoyalServerConfig&gt;
      [-DestinationHost] &lt;string&gt;
      [[-Credential] &lt;PSCredential&gt;]
-     [[-MaxRecords\] &lt;int&gt;]
+     [[-MaxRecords] &lt;int&gt;]
      [[-Offset] &lt;int&gt;]
      [[-Timeout] &lt;int&gt;]
      [&lt;CommonParameters&gt;]
@@ -89,10 +89,16 @@
 <h2 id="description">DESCRIPTION</h2>
 <p>The Invoke-RoyalServerCommand cmdlet invokes a command at Royal Server.</p>
 <p><strong>RELATED LINKS</strong></p>
-<p>New-RoyalServerconfig</p>
-<p>Get-RoyalServerModule</p>
-<p>Get-RoyalServerModuleCommand</p>
-<p>Get-RoyalServerModuleCommandParameter</p>
+<ul>
+<li><p><a href="new-royalserverconfig.html">New-RoyalServerconfig</a></p>
+</li>
+<li><p><a href="get-royalservermodule.html">Get-RoyalServerModule</a></p>
+</li>
+<li><p><a href="get-royalservermodulecommand.html">Get-RoyalServerModuleCommand</a></p>
+</li>
+<li><p><a href="get-royalservermodulecommandparameter.html">Get-RoyalServerModuleCommandParameter</a></p>
+</li>
+</ul>
 <h2 id="remarks">REMARKS</h2>
 <p>To see the examples, type: &quot;get-help Invoke-RoyalServerCommand -examples&quot;.</p>
 <p>For more information, type: &quot;get-help Invoke-RoyalServerCommand -detailed&quot;.</p>
@@ -124,6 +130,15 @@ Invoke-RoyalServerCommand -Module Processes -Command &quot;ListProcesses&quot; -
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -134,8 +149,9 @@ Invoke-RoyalServerCommand -Module Processes -Command &quot;ListProcesses&quot; -
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

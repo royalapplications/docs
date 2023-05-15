@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Logging </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Logging ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalserver_general_logging">
+
+<img src="/r2022/images/RoyalServer/Svg/SVG_Logging_32.svg" class="icon-left icon-lg" alt="">
+<h1 id="logging">Logging</h1>
+<p>The Logging Configuration panel displays and changes the logging configuration of Royal Server.</p>
+<h2 id="show-or-activate-the-logging-panel">Show or Activate the Logging Panel</h2>
+<p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>General</strong> group and then on the <strong>Logging</strong> entry.</p>
+<p>For the File and Windows Event Log you can specify the Log Level and Separator.</p>
+<p><strong>Log Level</strong>
+The following Log Levels are supported:</p>
+<ul>
+<li>No Logging (logging is disabled)</li>
+<li>Debug (this setting is intended for trouble shooting only since it generates a significant amount of data)</li>
+<li>Information (a lot of information is logged, including the meta data of all requests and responses Royal Server is executing. If you need to see the full data of the request or response, check Request/Response Logging)</li>
+<li>Warning</li>
+<li>Error</li>
+<li>Fatal</li>
+</ul>
+<p><strong>Log Separator</strong>
+Specifies a separation character in the Log File. Possible values are <code> </code> (space), <code>,</code>, <code>|</code> or <code>#</code> .</p>
+<h2 id="windows-event-log">Windows Event Log</h2>
+<p>If enabled, Royal Server logs to the Windows Event Log &quot;Royal Server&quot; with the specified Log Level and Separator.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In rare cases where Royal Server cannot start properly catastrophic errors are logged in the <code>Application</code> log of the Windows Event Log.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any change in this panel requires a restart of Royal Server.</p>
+</div>
+<h2 id="file-log">File Log</h2>
+<p>If enabled, Royal Server logs to a file. Additionally, the content of this file is shown by the Configuration Tool.</p>
+<p>A default setting of Warning or Error is recommended.</p>
+<p><strong>Log Directory</strong>
+Specifies the directory where the log files should be written to (if Type <em>File</em> is selected), by default this is <code>%ProgramData%\RoyalServer\Logs</code>. You can also use variables like <code>%TEMP%</code>.</p>
+<p><strong>File Name</strong>
+Specifies the log file name.</p>
+<p><strong>Example:</strong></p>
+<p>If you set the Log File to &quot;logserverlog.txt&quot;, you will find a file with that name in the specified directory. On the next day, the content of this file is moved to a file name formatted like <em>logserverlog<yyyymmdd>.txt</yyyymmdd></em>, e.g. logserverlog20230101.txt. The file logserverlog.txt always contains the current day. The rolling interval is set to a <code>Day</code> (3) by default.
+If you want to configure a different interval, change the value for <code>FileLogRollingInterval</code> in<code> %ProgramData%\RoyalServer\appsettings.json</code>.</p>
+<p>Allowed values:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infinite</td>
+<td style="text-align: center;">0</td>
+<td>The log file will never roll. Appends no time period information.</td>
+</tr>
+<tr>
+<td>Year</td>
+<td style="text-align: center;">1</td>
+<td>Roll every year. Appends <code>yyyy</code>.</td>
+</tr>
+<tr>
+<td>Month</td>
+<td style="text-align: center;">2</td>
+<td>Roll every calendar month. Appends <code>yyyyMM</code>.</td>
+</tr>
+<tr>
+<td>Day</td>
+<td style="text-align: center;">3</td>
+<td>Roll every day. Appends <code>yyyyMMdd</code>.</td>
+</tr>
+<tr>
+<td>Hour</td>
+<td style="text-align: center;">4</td>
+<td>Roll every hour. Appends <code>yyyyMMddHH</code>.</td>
+</tr>
+<tr>
+<td>Minute</td>
+<td style="text-align: center;">5</td>
+<td>Roll every minute. Appends <code>yyyyMMddHHmm</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Log File is limited to 1GB, in order to avoid bringing down the server with runaway disk usage. Once this limit is reached, no events will be written until the next roll interval starts.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any change in this panel requires a restart of Royal Server.</p>
+</div>
+<h2 id="requestresponse-logging">Request/Response Logging</h2>
+<p>If checked, all requests and responses from the Management Endpoint and the Document Store will be logged <strong>completely</strong> in two separate files. The destination directory can be specified. This type of logging is only supported to files.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Enabling Request/Response Logging can have a huge impact on the Royal Server performance as well as the amount of data written to disc. It is strongly recommended to use this only for debugging purposes.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Be aware that for each request, two log files will be generated. One <em><guid>_request.xml</guid></em> file and one <em><guid>_response.xml</guid></em> file.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/general/logging.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

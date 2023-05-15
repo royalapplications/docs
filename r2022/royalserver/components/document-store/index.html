@@ -8,7 +8,7 @@
     <title>Document Store </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Document Store ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -66,10 +66,21 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="document-store">Document Store</h1>
+            <article class="content wrap" id="_content" data-uid="royalserver_components_document-store">
 
-<p>The Document Store is a component in Royal Server that enables the user to securely load and save Royal Documents directly from Royal Server - no more shared files needed.</p>
+<img src="/r2022/images/RoyalServer/Svg/SVG_DocumentStore_32.svg" class="icon-left icon-lg" alt="">
+<h1 id="document-store">Document Store</h1>
+<p>The Document Store is a component in Royal Server that enables the user to securely load and save Royal Documents directly from Royal Server - no more shared files needed. To work with Documents hosted by Royal Server, you need to use Royal TS/X.</p>
+<h2 id="settings">Settings</h2>
+<p>If enabled, Royal Server hosts Documents for Royal TS/X clients. You can</p>
+<ul>
+<li>Specify the Documents Folder (this is where the Documents and backups will be stored),</li>
+<li>Specify the number of backups (each change in the file triggers a backup) and</li>
+<li>Specify if Access Rules are enabled</li>
+</ul>
+<p><strong>Access Rules</strong></p>
+<p>Additionally to the restricted access via the permissions, hosted documents can have Access Rules defined. For a give group or user you can specify Read or Modify rights for each document separately.</p>
+<p>More information about the Access Rules and how they can be configured can be found <a class="xref" href="documents.html">here</a>.</p>
 <h2 id="accessing-documents-from-the-document-store">Accessing Documents from the Document Store</h2>
 <p>In order to access documents, you first need to complete the following <strong>steps in Royal TS/X</strong>:</p>
 <ol>
@@ -79,14 +90,23 @@
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Any user that wants to load or save with the Document Store needs to be a member of the &quot;Royal Server Users&quot; group.<br>
-Create, import or delete a document requires the user to be member of the &quot;Royal Server Administrators&quot; group. If done via the Configuration Tool, the Worker Account is used for these operations.</p>
+<p>Any user that wants to load or save with the Document Store needs to be a member of the <code>Royal Server Users</code> group.
+Create, import or delete a document requires the user to be member of the <code>Royal Server Administrators</code> group. If done via the Configuration Tool, the Worker Account is used for these operations.</p>
 </div>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -97,8 +117,9 @@ Create, import or delete a document requires the user to be member of the &quot;
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

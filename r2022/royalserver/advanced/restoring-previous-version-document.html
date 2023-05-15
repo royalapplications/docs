@@ -8,7 +8,7 @@
     <title>Restoring a previous version of a Royal Document </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Restoring a previous version of a Royal Document ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
 The default number of backups per document is 10.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>Documents hosted by Royal Server are potentially open by multipe clients. Although Royal TS/X and Royal Server offer a sophisticated way of merging
+<p>Documents hosted by Royal Server are potentially open by multiple clients. Although Royal TS/X and Royal Server offer a sophisticated way of merging
 different versions of a document it is strongly recommended to make sure that</p>
 <ol>
 <li>Royal Server is shut down during that process and</li>
@@ -106,6 +106,15 @@ a folder with that name.</li>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -116,8 +125,9 @@ a folder with that name.</li>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>
