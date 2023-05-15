@@ -200,6 +200,12 @@ blockquote {
   height: 48px;
 }
 
+.screenshot {
+  border: solid 1px #cccccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 a.external-link::after {
   color: #337ab7;
   cursor: pointer;
