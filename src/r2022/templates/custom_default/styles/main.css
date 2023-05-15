@@ -170,9 +170,34 @@ blockquote {
   border-radius: 4px;
 }
 
-img.icon-def {
+.icon-def {
   float: left;
   margin-right: 7px;
+}
+
+.icon-left {
+  float: left;
+  margin-right: 7px;
+  padding-bottom: 7px;
+}
+
+.icon-left + h1 {
+  margin-bottom: 12px;
+}
+
+.icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-lg {
+  width: 48px;
+  height: 48px;
 }
 
 a.external-link::after {
