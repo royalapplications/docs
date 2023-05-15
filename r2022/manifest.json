@@ -2938,7 +2938,7 @@
           "hash": "ZBUuqWKfmJmiwfohS5bzBMGO8rmnxs5miNjQOxCCKYY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2972,18 +2972,6 @@
         ".html": {
           "relative_path": "royalserver/_shared/module-protocols.html",
           "hash": "adOPrdqPKv+vTvqnNZwSsQ8yP9jFDQhZuUpVOxpM0tY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "royalserver/advanced/_high-availability-installation.md",
-      "output": {
-        ".html": {
-          "relative_path": "royalserver/advanced/_high-availability-installation.html",
-          "hash": "t2BrO1IKZY5sllJPxT9eUnhjZXuF6SroNHGwpygpw0k="
         }
       },
       "is_incremental": false,
@@ -3883,7 +3871,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/toc.html",
-          "hash": "8BrQDQ8ZrrB6oLL+PblezBIPC2z+Z/izIKNHYFoI5Pc="
+          "hash": "dbR4X4NwKu6Z/QI18r6IFFO/7vug5EUsP6B5BDn6h7s="
         }
       },
       "is_incremental": false,
@@ -6386,8 +6374,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 283,
-          "skipped_file_count": 283
+          "total_file_count": 282,
+          "skipped_file_count": 282
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

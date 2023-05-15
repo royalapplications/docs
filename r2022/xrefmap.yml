@@ -85,9 +85,6 @@ references:
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
   href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
-- uid: royalserver_advanced_high-availability-installation
-  name: royalserver_advanced_high-availability-installation
-  href: royalserver/advanced/_high-availability-installation.html
 - uid: royalserver_advanced_management_scripts_cleanup
   name: Cleanup an Installation
   href: royalserver/advanced/management-scripts/uninstall.html
