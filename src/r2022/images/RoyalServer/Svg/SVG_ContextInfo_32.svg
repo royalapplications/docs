@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+  <style type="text / css">
+    .Red{fill:#CD4C32;}
+    .Green{fill:#4EA17E;}
+    .Blue{fill:#3E79B4;}
+    .Yellow{fill:#EAB765;}
+    .Black{fill:#797979;}
+    .Gray{fill:#B4B4B5;}
+    .White{fill:#FFFFFF;}
+  </style>
+    <g id="icon">
+        <circle class="White" cx="15.5" cy="15.5" r="13.9" style="fill:#fff;"/>
+        <path class="Black" d="M15.5,1C23.503,1 30,7.497 30,15.5C30,23.503 23.503,30 15.5,30C7.497,30 1,23.503 1,15.5C1,7.497 7.497,1 15.5,1ZM15.5,2.2C8.16,2.2 2.2,8.16 2.2,15.5C2.2,22.84 8.16,28.8 15.5,28.8C22.84,28.8 28.8,22.84 28.8,15.5C28.8,8.16 22.84,2.2 15.5,2.2Z" style="fill:#797979;"/>
+        <path class="Black" d="M15.5,11L15.5,24M15.5,7L15.5,9" style="fill:#797979;fill-rule:nonzero;"/>
+        <path class="Black" d="M14.5,11L16.5,11L16.5,24L14.5,24L14.5,11ZM14.5,7L16.5,7L16.5,9L14.5,9L14.5,7Z" style="fill:#797979;"/>
+    </g>
+</svg>
