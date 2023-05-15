@@ -1,12 +1,12 @@
 ---
 uid: royalserver_components_document-store-configuration
 name: Configuration
-order: 7020
+order: 7120
 ---
 
-# Configuration
+<img src="/r2022/images/RoyalServer/Svg/SVG_DocumentStore_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/ApplicationOptions_48x48.png" class="icon-def" alt="" />
+# Configuration
 
 The  Configuration panel displays and changes the configuration of the Document Store component of Royal Server.
 
@@ -31,9 +31,8 @@ Specify where Royal Server is storing the documents physically.
 
 **Number of Backups**
 
-When saving a document on Royal Server it always creates a backup first. You can specify how many backups Royal Server should keep. 
- [More details on Royal Document backups and how they can be restored](xref:advanced-restoring-a-previous-version-of-a-document).
-
+When saving a document on Royal Server it always creates a backup first. You can specify how many backups Royal Server should keep.
+[More details on Royal Document backups and how they can be restored](xref:advanced-restoring-a-previous-version-of-a-document).
 
 **Access Rules Enabled**
 

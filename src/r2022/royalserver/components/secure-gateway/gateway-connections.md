@@ -1,12 +1,12 @@
 ---
 uid: royalserver_components_secure-gateway_gateway-connections
 name: Gateway Connections
-order: 7007
+order: 7210
 ---
 
-# Gateway Connections
+<img src="/r2022/images/RoyalServer/Svg/SVG_Tunnels_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/PageTunnels_48x48.png" class="icon-def" alt="" />
+# Gateway Connections
 
 The Gateway Connections panel displays all currently open Secure Gateway Connections.
 

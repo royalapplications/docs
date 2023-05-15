@@ -1,7 +1,7 @@
 ---
 uid: royalserver_advanced_management_scripts_prepare
 name: Prepare a Managed Server
-order: 5000
+order: 5120
 ---
 
 # Prepare a Managed Server

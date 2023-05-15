@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules_hyperv
 name: Hyper-V Module
 order: 8080
 ---

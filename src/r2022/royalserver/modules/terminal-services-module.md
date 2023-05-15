@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules_terminal-services
 name: Terminal Services Module
 order: 8050
 ---

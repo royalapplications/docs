@@ -1,12 +1,12 @@
 ---
 uid: royalserver_components_document-store_documents
 name: Documents
-order: 7010
+order: 7110
 ---
 
-# Documents
+<img src="/r2022/images/RoyalServer/Svg/SVG_Document_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/RoyalDocument_Flat_48x48.png" class="icon-def" alt="" />
+# Documents
 
 The  Documents panel displays the documents hosted by the Document Store component of Royal Server and lets the Royal Server administrator change the Access Rules for each document.
 
@@ -22,53 +22,66 @@ In the Royal Server Configuration Navigation Bar, click on the **Document Store*
 
 ### Add a New Document
 
-When adding a new document, you can specify the following settings:
+Choose the option "New..." from the "Add..." dropdown to open a dialog to add a new document.
+
+When adding a new document, you can specify the following:
 
 - Document Name
 - Document Comment
-- if the document can only be opened via Royal Server. This is an additional layer of security - this file (even if copied) cannot be opened by Royal TS/X direcetly.
-- specify an encryption document password which is required when opening it in our clients
-- specify that the document should be locked down. In this mode the document is opened read only unless you unlock it using the lockdown password. Also, additional policies can be specified like _"Do not allow to reveal passwords in this document"_, _"Do not allow to edit or modify this document"_ or 
-_"Allow passwords in web page connections"_.
+- Choose whether the document can only be opened via Royal Server or not. This adds an additional layer of security so that the file (even if copied) cannot be opened by Royal TS/X directly.
+- Specify if the document should be encrypted. In this mode the encryption password is required when opening it in our clients.
+- Specify if the document should be locked down. In this mode the document is opened read-only unless you unlock it using the lockdown password.<br>
+  On top of this, these additional policies can be selected:
+  - Do not allow to reveal passwords in this document
+  - Do not allow to edit or modify this document
+  - Allow passwords in web page connections
 
 > [!NOTE]  
 > Detailed information on working with Lockdown Documents can be found at the [Royal TS Documentation](https://docs.royalapps.com/r2022/royalts/tutorials/working-with-lockdown-documents.html).
 
-
-
 ### Add an Existing Document
 
-When importing an existing document, you need to specify the following settings:
+Choose the option "Existing..." from the "Add..." dropdown to open a dialog to import an existing document.
 
-- the File to import
+When importing an existing document, you need to specify the following:
+
+- File to import
 - Document Name
 - Document Comment
-- specify the documents password
-- if the document can only be viewed via Royal Server. This is an additional layer of security - this file (even if copied) cannot be opened by Royal TS.
+- Specify the document's password, if required.
+- Choose whether the document can only be opened via Royal Server or not. This adds an additional layer of security so that the file (even if copied) cannot be opened by Royal TS/X directly.
 
 > [!NOTE]  
 > The internal data structure of Royal Documents contains an ID. If you import an existing document, please make sure that this document is not loaded in Royal TS from the file system at the same time as the IDs will be the same.
 
+### Refresh the Document List
+
+Click the "Refresh" button to refresh the list of documents in the user interface.
+
 ### Remove a Document
+
+In the document grid click on the "Delete"-icon (<img src="/r2022/images/RoyalServer/Svg/SVG_ContextDelete_32.svg" class="icon-sm" alt="" />) on the document you want to remove.
 
 When removing a document, the document is removed from the list of documents but the file is moved in the _Deleted Documents_ subfolder of the Document Store root folder you have configured.
 
-### Refresh the Document List
-
-Refreshes the list of documents in the user interface.
-
 ### View Settings of a Document
 
-Displays the settings of the document.
+In the document grid click on the "Information"-icon (<img src="/r2022/images/RoyalServer/Svg/SVG_ContextInfo_32.svg" class="icon-sm" alt="" />) on the document you want to view.
+
+This will open a dialog which displays the settings of the document.
 
 ### Edit Access Rules
 
-If Access Rules are enabled, clients will get access to documents hosted by Royal Server only if a read and/or write rule is configured. Specify for each rule
+In the document grid click on the "Access Rules"-icon (<img src="/r2022/images/RoyalServer/Svg/SVG_ContextAcl_32.svg" class="icon-sm" alt="" />) on the document you want to view.
 
-- the operation (read or modify)
-- the permission type (grant or deny)
-- the Windows user or group
+This will open an additional grid which allows you to manage the access rules for the document.
+
+If Access Rules are enabled, clients will get access to documents hosted by Royal Server only if a read and/or write rule is configured. Specify for each rule the following:
+
+- Operation (Read or Modify)
+- Permission Type (Grant or Deny)
+- Windows User or Group
 
 > [!NOTE]
-> If for a document both a grant and a deny rule is specified, the deny rule is stronger and access is denied.
+> If both, a grant and a deny rule is specified on a document, the deny rule is stronger and access is denied.
 > (`Modify` is not enough to work with a document, `Read` also has to be specified to load it from Royal Server)

@@ -35,7 +35,7 @@ The Windows Processes module can be used to query the running processes on a mac
 
 ## Examples
 
-- For all commands a destination password is required which is passed over as a securestring which is converted in PowerShell like this:
+- For all commands a destination password is required which is passed over as a secure string which is converted in PowerShell like this:
 
   ```powershell
   $destinationpassword = convertto-securestring -string "your-secure-password" -asplaintext -force

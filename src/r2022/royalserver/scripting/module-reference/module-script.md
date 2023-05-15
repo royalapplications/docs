@@ -10,10 +10,10 @@ The Script module can be used to execute scripts on Royal Server or a remote hos
 > [!NOTE]
 > The necessary configuration to talk to Royal Server via Script is described in "Getting Started".
 
-> [!NOTE] 
-> About the Parameter `PrimaryOutputMode`  
+> [!NOTE]
+> About the Parameter `PrimaryOutputMode`
 >
-> The module usually is used by Royal TS/X and in these user interfaces you can choose between a plain text output (like in normal Powershell scripts) and a Grid-output which layouts the returned data nicely in a datagrid. Depending on the script, one or the other is preferable.
+> The module usually is used by Royal TS/X and in these user interfaces you can choose between a plain text output (like in normal Powershell scripts) and a Grid-output which layouts the returned data nicely in a data grid. Depending on the script, one or the other is preferable.
 
 ## Command "ExecutePowershell"
 

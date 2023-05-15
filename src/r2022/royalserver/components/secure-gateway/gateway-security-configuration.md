@@ -1,12 +1,12 @@
 ---
 uid: royalserver_components_secure-gateway_gateway-security-configuration
 name: Gateway Security Configuration
-order: 7009
+order: 7230
 ---
 
-# Gateway Security Configuration
+<img src="/r2022/images/RoyalServer/Svg/SVG_SecurityConfiguration_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/PageSecureGateway_48x48.png" class="icon-def" alt="" />
+# Gateway Security Configuration
 
 The Gateway Security Configuration panel displays and changes the security configuration of the Secure Gateway component of Royal Server.
 
@@ -36,11 +36,11 @@ SSH brute force attacks try to log on with the same user many times to guess the
 | Number of attempts         | Specifies the number of failed attempts t log in after which an IP is blocked for the specified amount of time. |
 | Time frame (in minutes)    | Only failed login attempts within the last minutes in this time frame are relevant.                             |
 
-
 ## Ciphers
 
-The Secure Gateway component is based on SSH and uses many encryption related algoriths under the hood. In some environments it is required to only allow specific
-algorithms. You can specify algoriths in the following categories:
+The Secure Gateway component is based on SSH and uses many encryption related algorithms under the hood. In some environments it is required to only allow specific
+algorithms. You can specify algorithms in the following categories:
+
 - Encryption Key Algorithms
 - Host Key Algorithms
 - Key Exchange Algorithms

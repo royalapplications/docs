@@ -13,4 +13,4 @@ Royal TS is the perfect tool for server administrators, system engineers, develo
 For more information about Royal TS please check the website [https://www.royalapps.com/ts](https://www.royalapps.com/ts).
 
 > [!NOTE]
-> Please note that [Royal Server](https://www.royalapps.com/server/) and [Royal TS/X](https://www.royalapps.com/ts/) are licensed separately. If you purchase a Royal Server licence, you will still need Client licences for most scenarios.
+> Please note that [Royal Server](https://www.royalapps.com/server/) and [Royal TS/X](https://www.royalapps.com/ts/) are licensed separately. If you purchase a Royal Server license, you will still need Client licenses for most scenarios.

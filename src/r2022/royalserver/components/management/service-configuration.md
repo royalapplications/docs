@@ -1,12 +1,12 @@
 ---
 uid: royalserver_management_service-configuration
 name: Service Configuration
-order: 9070
+order: 7340
 ---
 
-# Service Configuration
+<img src="/r2022/images/RoyalServer/Svg/SVG_RoyalServer_32.svg" class="icon-left icon-lg">
 
-<img src="/r2022/images/RoyalServer/Service_48x48.png" class="icon-def" alt="" />
+# Service Configuration
 
 The Service Configuration panel displays and changes the configuration of Royal Server.
 
@@ -16,7 +16,6 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 
 > [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
-
 
 ## Features
 
@@ -49,5 +48,3 @@ Royal Server uses communication via HTTPs/SSL to encrypt communication. This is 
 
 > [!NOTE]
 > Until Royal Server V3 and below it was possible to deactivate HTTPS/SSL encryption, as of Royal Server V4 this is not possible anymore, only secure connections are supported.
-
-

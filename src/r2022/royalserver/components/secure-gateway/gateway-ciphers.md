@@ -1,12 +1,12 @@
 ---
 uid: royalserver_components_secure-gateway_gateway-cipher-configuration
 name: Gateway Cipher Configuration
-order: 7030
+order: 7220
 ---
 
-# Gateway Security Configuration
+<img src="/r2022/images/RoyalServer/Svg/SVG_Ciphers_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/PageSecureGateway_48x48.png" class="icon-def" alt="" />
+# Gateway Security Configuration
 
 The Gateway Security Configuration panel displays and changes the security configuration of the Secure Gateway component of Royal Server.
 
@@ -19,7 +19,8 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Secure Gat
 
 ## Ciphers
 
-The Secure Gateway component is based on SSH and uses many encryption related algoriths under the hood. In some environments it is required to only allow specific algorithms. You can specify algoriths in the following categories:
+The Secure Gateway component is based on SSH and uses many encryption related algorithms under the hood. In some environments it is required to only allow specific algorithms. You can specify algorithms in the following categories:
+
 - Encryption Key Algorithms
 - Host Key Algorithms
 - Key Exchange Algorithms

@@ -1,11 +1,12 @@
 ---
+uid: royalserver_management_security-configuration
 name: Security Configuration
-order: 9060
+order: 7330
 ---
 
-# Security Configuration
+<img src="/r2022/images/RoyalServer/Svg/SVG_SecurityConfiguration_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/Shield_48x48.png" class="icon-def" alt="" />
+# Security Configuration
 
 The Security Configuration panel displays and changes the security configuration of Royal Server.
 
@@ -23,7 +24,7 @@ In The Royal Server Console Navigation Bar, click on the **Royal Server** group 
 If checked, Royal Server is only accepting authenticated requests. Using this setting, Royal Server objects in Royal TS need to be configured with a Credential. Royal Server only accepts user accounts that are in the local Windows group 'Royal Server Users' (these can also be accounts or groups from the Windows domain the server belongs to). If the specified credential is not member of this group, Royal Server will return an authentication error.
 
 > [!NOTE]
-> Additionally, Royal Server accepts requets from members of the 'Royal Server Administrators' and 'Administrators' group as well as requests that use the Worker Account.
+> Additionally, Royal Server accepts requests from members of the 'Royal Server Administrators' and 'Administrators' group as well as requests that use the Worker Account.
 
 **Block IPs After Unsuccessful Login Attempts**
 

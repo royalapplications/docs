@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules_windows-events
 name: Windows Events Module
 order: 8030
 ---

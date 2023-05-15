@@ -1,14 +1,16 @@
 ---
 uid: royalserver_general_licensing
 name: Licensing
-order: 10000
+order: 9005
 ---
+
+<img src="/r2022/images/RoyalServer/Svg/SVG_License_32.svg" class="icon-left icon-lg" alt="" />
 
 # Licensing
 
 Please check out our [License Agreement](https://www.royalapps.com/go/kb-server-main-licenseagreement).
 
-Each Royal Server installation requires an installed license and e area gladly issueing trial licenses. Please get your 30-day trial license under [https://www.royalapps.com/trial/](https://www.royalapps.com/trial/) in order to test Royal Server with all features.
+Each Royal Server installation requires an installed license and e area gladly issuing trial licenses. Please get your 30-day trial license under [https://www.royalapps.com/trial/](https://www.royalapps.com/trial/) in order to test Royal Server with all features.
 
 Alternatively, you can buy a license. Each license includes at least a 12 month software maintenance (free upgrades and priority email support). For more information visit: [https://www.royalapps.com/server/](https://www.royalapps.com/server/).
 
@@ -16,8 +18,6 @@ Alternatively, you can buy a license. Each license includes at least a 12 month 
 > Please note that [Royal Server](https://www.royalapps.com/server/) and [Royal TS/X](https://www.royalapps.com/ts/) are licensed separately. So if you are purchasing a Royal Server license (aka server) you still need client licenses for most scenarios (aka Royal TS/X). If you have questions to our licensing, don't hesitate to [get in touch with our support team](https://support.royalapps.com/support/tickets/new).
 
 # Installed Licenses
-
-<img src="/r2022/images/RoyalServer/PageLicense_48x48.png" class="icon-def" alt="" />
 
 The Installed Licenses panel displays the installed licenses.
 

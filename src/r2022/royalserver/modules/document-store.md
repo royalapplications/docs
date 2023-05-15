@@ -1,5 +1,6 @@
 ---
-name: Document Store
+uid: royalserver_modules_document-store
+name: Document Store Module
 order: 8090
 ---
 

@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules_vmware
 name: VMware Module
 order: 8040
 ---

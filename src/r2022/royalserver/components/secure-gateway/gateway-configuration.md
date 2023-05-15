@@ -1,12 +1,12 @@
 ---
 uid: royalserver_components_secure-gateway_gateway-configuration
 name: Secure Gateway Configuration
-order: 7010
+order: 7240
 ---
 
-# Gateway Configuration
+<img src="/r2022/images/RoyalServer/Svg/SVG_SecureGateway_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/PageSecureGateway_48x48.png" class="icon-def" alt="" />
+# Gateway Configuration
 
 The Gateway Configuration panel displays and changes the configuration of the Secure Gateway component of Royal Server.
 
@@ -35,7 +35,7 @@ The minimum allowed duration is 30 seconds.
 
 **Max. Connections**
 
-Specify the maximum number of concurrent sconnections the Secure Gateway is accepting.
+Specify the maximum number of concurrent connections the Secure Gateway is accepting.
 
 **Certificate**
 
@@ -51,7 +51,7 @@ Specify the IP Address and Port the Secure Gateway is binding to. Use this to IP
 
 > [!NOTE]
 > The Secure Gateway is basically a SSH server with tunnel support. The default port of SSH is 22.  
-> If your Royal Server is reachable over the internet and  you see a lot of SSH brute force attacks harden the [security configuration of Royal Server](gateway-security-configuration.md).
+> If your Royal Server is reachable over the internet and you see a lot of SSH brute force attacks harden the [security configuration of Royal Server](./gateway-security-configuration.md).
 
 **Additional Bindings**
 

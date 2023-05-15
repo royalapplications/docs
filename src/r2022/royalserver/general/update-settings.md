@@ -1,12 +1,12 @@
 ---
 uid: royalserver_general_updatesettings
 name: Update Settings
-order: 9099
+order: 9010
 ---
 
-# Update Checks
+<img src="/r2022/images/RoyalServer/Svg/SVG_UpdateCheck_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/ApplicationDownload_48x48.png" class="icon-def" alt="" />
+# Update Checks
 
 The **Update Checks** panel displays the configuration of the Update Checks.
 

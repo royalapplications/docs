@@ -1,12 +1,12 @@
 ---
 uid: royalserver_management_modules
 name: Modules
-order: 9030
+order: 7310
 ---
 
-# Modules
+<img src="/r2022/images/RoyalServer/Svg/SVG_Modules_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/ModuleManagement_48x48.png" class="icon-def" alt="" />
+# Modules
 
 The Modules panel displays the currently installed modules.
 
@@ -24,17 +24,7 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 
 The following modules are distributed with Royal Server
 
-- EventLog (queries Windows Event Logs)
-- HyperV (manages Hyper-V virtual machines)
-- Processes (list and kill Windows processes)
-- RoyalDocumentStore (this module enables the Document Store functionality)
-- RoyalServerManagement (this module enables Royal Server internal functionalities)
-- Script (executes Scripts on the destination server)
-- Terminal Services (manages terminal sessions)
-- WindowsServices (manages Windows services)
-- ModuleInfo (module for displaying the available modules)
-
-For a detailed description of all modules see [Royal Server Modules](xref:royalserver_modules)
+[!include[module-protocols.md](../../_shared/module-list.md)]
 
 > [!NOTE]
 > If you want to completely disable a functionality, e.g. you don't want any user to be able to list/kill processes, you can delete the module dll file in <RoyalServerInstallationDir>\RoyalServer.ManagementEndpoint.Module\ and restart Royal Server.

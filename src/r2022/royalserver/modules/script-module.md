@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules_script
 name: Script Module
 order: 8060
 ---

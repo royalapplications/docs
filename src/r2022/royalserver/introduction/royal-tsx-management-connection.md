@@ -7,10 +7,11 @@ order: 10040
 
 In order to use Royal Server, you need to create a Royal Server Object in Royal TS/X.
 The following connections support Royal Server:
+
 - Windows Events
 - Hyper-V
 - Windows Processes
-- Powershell 
+- Powershell
 - Terminal Services
 - VM Ware
 - Windows Services
@@ -19,7 +20,7 @@ Start by creating a Royal Server object with the correct IP, port and Royal Serv
 Use the `Test` button to check connectivity.
 
 > [!NOTE]
-> The configured user needs to be in the "Royal Server Users" group on Royal Server to get acccess.
+> The configured user needs to be in the "Royal Server Users" group on Royal Server to get access.
 
 Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the "Royal Server" category of the Windows Events connection. If you forget to do this, Royal TS/X will try to connect to this machine directly without Royal Server.
 
@@ -28,9 +29,10 @@ Then create e.g. a Windows Events connection and specify the Royal Server object
 
 To access Royal Server, please install the latest version of Royal TS/X:
 
-[Get the latest version of Royal TS (for Windows)](https://www.royalapps.com/ts/win/download)
+- [Get the latest version of Royal TS (for Windows)](https://www.royalapps.com/ts/win/download)
+- [Get the latest version of Royal TSX (for OS X)](https://www.royalapps.com/ts/mac/download)
 
-[Get the latest version of Royal TSX (for OS X)](https://www.royalapps.com/ts/mac/download)
+Alternativly, you can use the Royal Server PowerShell API to query Royal Server from the command line.
 
-Alternativly, you can use the Royal Server PowerShell API to query Royal Server from the command line:
-[Using Royal Server via PowerShell](../scripting/index.md)
+See [Using Royal Server via PowerShell](../scripting/index.md)
+

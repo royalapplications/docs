@@ -1,13 +1,14 @@
 ---
+uid: royalserver_management_dynamic-folder
 name: Dynamic Folder
-order: 9050
+order: 7320
 ---
+
+<img src="/r2022/images/RoyalServer/Svg/SVG_DynamicFolder_32.svg" class="icon-left icon-lg" alt="" />
 
 # Dynamic Folder
 
-<img src="/r2022/images/RoyalServer/DynamicFolder_48x48.png" class="icon-def" alt="" />
-
-The Dyamic Folder Configuration panel displays and changes the configuration of executing Dynamic Folders for Royal TS/X.
+The Dynamic Folder Configuration panel displays and changes the configuration of executing Dynamic Folders for Royal TS/X.
 
 ## Show or Activate the Dynamic Folder Configuration Panel
 
@@ -20,7 +21,7 @@ In The Royal Server Console Navigation Bar, click on the **Royal Server** group 
 
 ## Configuring Script interpreters
 
-In order to execute script, Royal Server needs configuration infomation on where to find the script interpreter.
+In order to execute script, Royal Server needs configuration information on where to find the script interpreter.
 The following script interpreters are supported:
 
 - PowerShell
@@ -34,5 +35,3 @@ For each interpreter, you can configure the path of the executable, e.g. php.exe
 
 > [!NOTE]
 > These interpreters are not installed on Windows by default and need to be installed upfront.
-
-

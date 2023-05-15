@@ -1,12 +1,12 @@
 ---
 uid: royalserver_general_health
 name: Health
-order: 9092
+order: 9080
 ---
 
-# Health
+<img src="/r2022/images/RoyalServer/Svg/SVG_Health_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/ActivityMonitor_48x48.png" class="icon-def" alt="" />
+# Health
 
 The Health panel displays the current performance data of Royal Server with an update refresh rate of 2 seconds.
 
@@ -16,7 +16,7 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **General** 
 
 ## Features
 
-- Displays the Requests/sec of the Management Endpoint Component 
+- Displays the Requests/sec of the Management Endpoint Component
 - Displays the Total Requests of the Management Endpoint Component (since the Royal Server was started)
 - Displays the Server Up Time
 - Displays the number of currently open Secure Gateway connections

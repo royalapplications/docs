@@ -10,13 +10,13 @@ The EventLog module can be used to query the Windows Event Log.
 > [!NOTE]
 > The necessary configuration to talk to Royal Server (the variable `$config`) is described in "Getting Started".
 
-> [!NOTE] 
-> About the parameter `CommandProvider`  
+> [!NOTE]
+> About the parameter `CommandProvider`
 >
-> The underlaying communication protocol can be either WMI (Windows Management Instrumentation) or CIM. WMI can be more efficient but might require more open ports for the communication.
+> The underlying communication protocol can be either WMI (Windows Management Instrumentation) or CIM. WMI can be more efficient but might require more open ports for the communication.
 
 > [!NOTE]
-> About the parameter `NamespaceVersion`  
+> About the parameter `NamespaceVersion`
 >
 > The parameter `NamespaceVersion` relates to the fact, that Microsoft changed the internal implementation of Hyper-V. Starting from Windows Server 2008 and up to Windows Server 2008 R2 the namespace used for hypervisor management was "_root\\virtualization_" (aka V1). Windows Server 2012 introduced a refactored namespace "_root\\virtualization\\v2_", offering also the V1 version for backwards compatibility with existing tools.
 

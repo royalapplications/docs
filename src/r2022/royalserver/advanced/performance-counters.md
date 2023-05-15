@@ -1,6 +1,6 @@
 ---
 name: Performance Counter
-order: 5000
+order: 5060
 ---
 
 # Performance Counter

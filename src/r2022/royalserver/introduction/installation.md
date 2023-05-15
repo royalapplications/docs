@@ -16,7 +16,7 @@ When the configuration tool is launched for the first time, you will be asked to
 
 In addition, the Management Endpoint component of Royal Server uses HTTPS with a self-signed certificate that is created by default during installation. You can also configure your own certificates if required.
 
-See also: [Service Configuration](xref:royalserver_management_service-configuration).
+See also [Service Configuration](xref:royalserver_management_service-configuration)
 
 ## Uninstall Royal Server
 
@@ -25,4 +25,4 @@ As the installation is msi-based, simply uninstall Royal Server using the Add/Re
 > [!NOTE]
 > If you wish to completely remove Royal Server and all configuration information from the machine, back up the `cleanup_installation.ps1` file in the `./scripts/` folder of your Royal Server installation before uninstalling, and run it with administrator privileges after uninstalling.
 
-See also: [Cleanup Script](xref:royalserver_advanced_management_scripts_cleanup)
+See also [Cleanup Script](xref:royalserver_advanced_management_scripts_cleanup)

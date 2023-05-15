@@ -1,5 +1,5 @@
 ---
 uid: royalserver_advanced_high-availability-installation
-name: High availability installation
-order: 5001
+name: High Availability Installation
+order: 5070
 ---

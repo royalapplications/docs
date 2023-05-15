@@ -1,12 +1,12 @@
 ---
 uid: royalserver_general_logging
 name: Logging
-order: 9098
+order: 9020
 ---
 
-# Logging
+<img src="/r2022/images/RoyalServer/Svg/SVG_Logging_32.svg" class="icon-left icon-lg" alt="" />
 
-<img src="/r2022/images/RoyalServer/Logging_48x48.png" class="icon-def" alt="" />
+# Logging
 
 The Logging Configuration panel displays and changes the logging configuration of Royal Server.
 
@@ -29,9 +29,8 @@ The following Log Levels are supported:
 **Log Separator**
 Specifies a separation character in the Log File. Possible values are ` ` (space), `,`, `|` or `#` .
 
-
-
 ## Windows Event Log
+
 If enabled, Royal Server logs to the Windows Event Log "Royal Server" with the specified Log Level and Separator.
 
 > [!NOTE]
@@ -41,6 +40,7 @@ If enabled, Royal Server logs to the Windows Event Log "Royal Server" with the s
 > Any change in this panel requires a restart of Royal Server.
 
 ## File Log
+
 If enabled, Royal Server logs to a file. Additionally, the content of this file is shown by the Configuration Tool.
 
 A default setting of Warning or Error is recommended.
@@ -73,7 +73,7 @@ Allowed values:
 > [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
-## Request/Response Logging 
+## Request/Response Logging
 
 If checked, all requests and responses from the Management Endpoint and the Document Store will be logged **completely** in two separate files. The destination directory can be specified. This type of logging is only supported to files.
 

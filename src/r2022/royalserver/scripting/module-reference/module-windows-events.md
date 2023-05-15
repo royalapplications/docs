@@ -12,7 +12,7 @@ The EventLog module can be used to query the Windows Event Log.
 
 ## Command "GetEntries"
 
-Gets entries of the Windows Eventlog.
+Gets entries of the Windows Event Log.
 
 **Parameters:**
 

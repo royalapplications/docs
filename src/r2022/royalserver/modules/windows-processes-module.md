@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules_windows-processes
 name: Windows Processes Module
 order: 8020
 ---

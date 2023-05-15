@@ -1,4 +1,5 @@
 ---
+uid: royalserver_modules_windows-services
 name: Windows Services Module
 order: 8010
 ---

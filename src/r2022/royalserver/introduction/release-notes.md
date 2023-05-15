@@ -5,6 +5,6 @@ order: 10030
 
 # Release Notes
 
-Please visit the [Release Notes Page](https://support.royalapps.com/support/solutions/articles/17000113547).
+Please visit the [Release Notes Page](https://support.royalapps.com/support/solutions/articles/17000128635-royal-server-v5-release-notes).
 
-For Beta Release please visit the [Beta Release Notes Page](https://support.royalapps.com/support/solutions/articles/17000113545).
+For Beta Release please visit the [Beta Release Notes Page](https://support.royalapps.com/support/solutions/articles/17000128637-royal-server-v5-beta).
