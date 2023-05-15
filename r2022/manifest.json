@@ -60,10 +60,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalServer/GettingStarted/Step1.png",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step01.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalServer/GettingStarted/Step1.png"
+          "relative_path": "images/RoyalServer/GettingStarted/Step01.png"
         }
       },
       "is_incremental": false,
@@ -71,10 +71,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalServer/GettingStarted/Step2.png",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step02.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalServer/GettingStarted/Step2.png"
+          "relative_path": "images/RoyalServer/GettingStarted/Step02.png"
         }
       },
       "is_incremental": false,
@@ -82,10 +82,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalServer/GettingStarted/Step3.png",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step03.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalServer/GettingStarted/Step3.png"
+          "relative_path": "images/RoyalServer/GettingStarted/Step03.png"
         }
       },
       "is_incremental": false,
@@ -93,10 +93,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalServer/GettingStarted/Step4.png",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step04.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalServer/GettingStarted/Step4.png"
+          "relative_path": "images/RoyalServer/GettingStarted/Step04.png"
         }
       },
       "is_incremental": false,
@@ -104,10 +104,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalServer/GettingStarted/Step5.png",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step05.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalServer/GettingStarted/Step5.png"
+          "relative_path": "images/RoyalServer/GettingStarted/Step05.png"
         }
       },
       "is_incremental": false,
@@ -115,10 +115,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/RoyalServer/GettingStarted/Step6.png",
+      "source_relative_path": "images/RoyalServer/GettingStarted/Step06.png",
       "output": {
         "resource": {
-          "relative_path": "images/RoyalServer/GettingStarted/Step6.png"
+          "relative_path": "images/RoyalServer/GettingStarted/Step06.png"
         }
       },
       "is_incremental": false,
@@ -2935,10 +2935,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "5ztLellmskzCz4i3vaZAPkqwKleKR2/H2hvLGM8j5N0="
+          "hash": "ZBUuqWKfmJmiwfohS5bzBMGO8rmnxs5miNjQOxCCKYY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -3451,7 +3451,7 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/introduction/how-is-royal-server-working.html",
-          "hash": "2oRF26o2N1DSSbbN6Q28guY7zFd/YQEolGOpQtKJgwI="
+          "hash": "wyo2ERZ50Mo9Iu35tHJl0Vngq2i8+CMq1DJG4n6LfSA="
         }
       },
       "is_incremental": false,

@@ -74,7 +74,7 @@ For the Management Endpoint and Document Store components: Royal Server is based
 <p>The Secure Gateway component is based on SSH standards.</p>
 <p><img src="/r2022/images/RoyalServer/screenshot_howroyalserverworks.png" alt=""></p>
 <p>The basic flow of Management Endpoint connections is as follows: Client devices such as desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS access Royal Server via HTTP/S (possibly using a VPN tunnel). Royal Server itself uses different technologies to communicate with the managed servers, depending on the <a href="what-are-royal-server-components.html">component</a> and module used. The Secure Gateway component uses a standards-based SSH connection.</p>
-<h3 id="royal-server-is-agentless">Royal Server is agentless</h3>
+<h3 id="royal-server-is-agentless">Royal Server is Agentless</h3>
 <p>There is no need to install an agent on the managed server. However, the machine running Royal Server must be able to access the managed server over the network. Please refer to <a href="configuration.html#configuration-of-managed-servers">Configuration of Managed Servers</a> for details.</p>
 <p>Royal Server consists of three main components:</p>
 <ul>
@@ -82,7 +82,7 @@ For the Management Endpoint and Document Store components: Royal Server is based
 <li>Document Store (hosts Royal documents and shares them with the team)</li>
 <li>Secure Gateway (enables secure SSH based communication with your servers)</li>
 </ul>
-<h2 id="under-the-hood---management-endpoint">Under the hood - Management Endpoint</h2>
+<h2 id="under-the-hood---management-endpoint">Under the Hood - Management Endpoint</h2>
 <p>Royal Server needs to query managed servers to get the information it needs (e.g. to get the list of Windows services).</p>
 <p>There are two basic ways to do this:</p>
 <ul>
@@ -157,11 +157,11 @@ communication protocol that is using dynamic ports (TCP/135 for &gt; standard RP
 (for Windows 2003 and older) or 49152-65535 (for Windows 2008 and newer).</p>
 <p>For details to prepare servers to be managed by Royal Server please check our <a class="xref" href="../advanced/management-scripts/prepare-managed-server.html">Prepare a Managed Server</a> script.</p>
 </div>
-<h2 id="under-the-hood---document-store">Under the hood - Document Store</h2>
+<h2 id="under-the-hood---document-store">Under the Hood - Document Store</h2>
 <p>The Document Store component is based on HTTPs/SSL communication between Royal TS/X and Royal Server. Check the
 <a class="xref" href="../components/management/service-configuration.html">Service Configuration</a> and <a class="xref" href="../components/management/security-configuration.html">Security Configuration</a> for
 more details.</p>
-<h2 id="under-the-hood---secure-gateway">Under the hood - Secure Gateway</h2>
+<h2 id="under-the-hood---secure-gateway">Under the Hood - Secure Gateway</h2>
 <p>Secure Gateway connections are based on SSH. Check <a class="xref" href="../components/secure-gateway/gateway-configuration.html">Gateway Configuration</a> and
 <a class="xref" href="../components/secure-gateway/gateway-security-configuration.html">Gateway Security Configuration</a> for more details.</p>
 </article>
