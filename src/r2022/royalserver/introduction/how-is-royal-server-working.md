@@ -15,7 +15,7 @@ The Secure Gateway component is based on SSH standards.
 
 The basic flow of Management Endpoint connections is as follows: Client devices such as desktop computers running Royal TS/X or mobile devices running Royal TS for Android or iOS access Royal Server via HTTP/S (possibly using a VPN tunnel). Royal Server itself uses different technologies to communicate with the managed servers, depending on the [component](./what-are-royal-server-components.md) and module used. The Secure Gateway component uses a standards-based SSH connection.
 
-### Royal Server is agentless
+### Royal Server is Agentless
 
 There is no need to install an agent on the managed server. However, the machine running Royal Server must be able to access the managed server over the network. Please refer to [Configuration of Managed Servers](./configuration.md#configuration-of-managed-servers) for details.
 
@@ -25,7 +25,7 @@ Royal Server consists of three main components:
 - Document Store (hosts Royal documents and shares them with the team)
 - Secure Gateway (enables secure SSH based communication with your servers)
 
-## Under the hood - Management Endpoint
+## Under the Hood - Management Endpoint
 
 Royal Server needs to query managed servers to get the information it needs (e.g. to get the list of Windows services).
 
@@ -49,13 +49,13 @@ There are two basic ways to do this:
 >
 > For details to prepare servers to be managed by Royal Server please check our [Prepare a Managed Server](xref:royalserver_advanced_management_scripts_prepare) script.
 
-## Under the hood - Document Store
+## Under the Hood - Document Store
 
 The Document Store component is based on HTTPs/SSL communication between Royal TS/X and Royal Server. Check the
 [Service Configuration](xref:royalserver_management_service-configuration) and [Security Configuration](xref:royalserver_management_security-configuration) for
 more details.
 
-## Under the hood - Secure Gateway
+## Under the Hood - Secure Gateway
 
 Secure Gateway connections are based on SSH. Check [Gateway Configuration](xref:royalserver_components_secure-gateway_gateway-configuration) and
 [Gateway Security Configuration](xref:royalserver_components_secure-gateway_gateway-security-configuration) for more details.
