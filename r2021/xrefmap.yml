@@ -82,9 +82,9 @@ references:
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
   href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
-- uid: royalserver_advanced_management-scripts_pepare
-  name: Pepare a Managed Server
-  href: royalserver/advanced/management-scripts/pepare-managed-server.html
+- uid: royalserver_advanced_management-scripts_prepare
+  name: Prepare a Managed Server
+  href: royalserver/advanced/management-scripts/prepare-managed-server.html
 - uid: royalserver_configtool_management
   name: Health
   href: royalserver/management/index.html

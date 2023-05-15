@@ -8,7 +8,7 @@
     <title>Royal Server Configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Royal Server Configuration ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -71,7 +71,7 @@
 
 <p>There are various options how manged Royal Server configuration settings.</p>
 <h2 id="royal-server-configuration-tool">Royal Server Configuration Tool</h2>
-<p>The most common way is to use the <code>Royal Server Configuration Tool</code> which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it to  manage the different modules, your license(s), set up certificates, and grant permissions, etc.. Additionally, it sports a health monitor to easily monitor resource usage.</p>
+<p>The most common way is to use the <code>Royal Server Configuration Tool</code> which provides a graphical user interface to modify the configuration, and the possibility to stop and (re)start the server. You can use it to manage the different modules, your license(s), set up certificates, and grant permissions, etc.. Additionally, it sports a health monitor to easily monitor resource usage.</p>
 <h2 id="configuration-file">Configuration File</h2>
 <p>Up to Royal Server V3 configuration settings were mainly kept in Windows Registry and could only be modified via the Royal Server Configuration Tool.
 This changed in of Royal Server V4, where configuration settings are primarily file based and stored in <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
@@ -115,12 +115,21 @@ set RS_SecureGateway__GatewayEnabled=false
 <li>Windows Management Instrumentation (WMI-In), and</li>
 <li>Windows Management Instrumentation (DCOM-In)</li>
 </ul>
-<p>For the above two steps, we have also prepared a PowerShell script (in <code>&lt;royal-server-installation-dir&gt;\scripts\prepare_server.ps1</code>). See the <a class="xref" href="../advanced/management-scripts/pepare-managed-server.html">Preparing a Managed Server</a> chapter.</p>
+<p>For the above two steps, we have also prepared a PowerShell script (in <code>&lt;royal-server-installation-dir&gt;\scripts\prepare_server.ps1</code>). See the <a class="xref" href="../advanced/management-scripts/prepare-managed-server.html">Preparing a Managed Server</a> chapter.</p>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -131,8 +140,9 @@ set RS_SecureGateway__GatewayEnabled=false
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>

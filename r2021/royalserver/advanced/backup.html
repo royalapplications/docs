@@ -8,7 +8,7 @@
     <title>Backing Up Royal Server </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Backing Up Royal Server ">
-    <meta name="generator" content="docfx 2.59.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -106,7 +106,7 @@ Metadatafile that contains information like the document name, if additional enc
 <h2 id="royal-server-v3">Royal Server V3</h2>
 <p>After installation, a fully configured and running Royal Server stores its configuration in the following places:</p>
 <h3 id="1-configuration-settings-1">1. Configuration Settings</h3>
-<p>Most of the Royal Server settings are stored in the Windows Registry under the key <code>HKEY_LOCAL_MACHINE\SOFTWARE\Royal Server</code>. Most of these values are stored directly and can be manipulated via &quot;<code>regedt32.exe</code>&quot; or a script. Some are encrypted for security reasons. Backing this key and its subkeys up saves the configuration of Royal Server excluding the Document store documents and the document ACLs.</p>
+<p>Most of the Royal Server settings are stored in the Windows Registry under the key <code>HKEY_LOCAL_MACHINE\SOFTWARE\Royal Server</code>. Most of these values are stored directly and can be manipulated via &quot;<code>regedt32.exe</code>&quot; or a script. Some are encrypted for security reasons. Backing this key and its sub keys up saves the configuration of Royal Server excluding the Document store documents and the document ACLs.</p>
 <h3 id="2-documents-v3">2. Documents V3</h3>
 <p>see <a href="#2-documents">Royal Server V4</a></p>
 <h3 id="3-access-rules-for-the-document-store-files-1">3. Access Rules for the Document Store files</h3>
@@ -116,6 +116,15 @@ Metadatafile that contains information like the document name, if additional enc
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2022">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>
               <div class="contribution">
                 <ul class="nav">
                   <li>
@@ -126,8 +135,9 @@ Metadatafile that contains information like the document name, if additional enc
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
-              </nav>
+              </nav>    
             </div>
+            
           </div>
         </div>
       </div>
