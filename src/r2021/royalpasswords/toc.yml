@@ -1,4 +1,4 @@
-- order: 10000
-  name: Royal Passwords Documentation
+- name: Royal Passwords Documentation
   href: intro.md
+  order: 10000
 
