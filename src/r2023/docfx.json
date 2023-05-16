@@ -1,0 +1,47 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": ["toc.yml", "*.md"]
+      },
+      {
+        "files": ["royalts/**.md", "royalts/**/toc.yml", "*.md"]
+      },
+      {
+        "files": ["royalserver/**.md", "royalserver/**/toc.yml", "*.md"]
+      },
+      // {
+      //   "files": [
+      //     "mobile/**.md",
+      //     "mobile/**/toc.yml",
+      //     "*.md"
+      //   ]
+      // },
+      // {
+      //   "files": [
+      //     "royalpasswords/**.md",
+      //     "royalpasswords/**/toc.yml",
+      //     "*.md"
+      //   ]
+      // },
+      {
+        "files": ["scripting/**.md", "scripting/**/toc.yml", "*.md"]
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"]
+      }
+    ],
+    "dest": "../../.output/gh-pages/r2023",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": ["default", "./templates/custom_default/"],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": true,
+    "disableGitFeatures": false
+  }
+}

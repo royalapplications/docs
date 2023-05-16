@@ -10,7 +10,7 @@
           <option value="r2021">Royal TS V6 / Royal Server V4</option>
         </select>
       </div>
-    </div>
+    </div>    
     {{^_disableContribution}}
     <div class="contribution">
       <ul class="nav">
