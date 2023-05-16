@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Replacement Tokens </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Replacement Tokens ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_advanced_tokens">
+<h1 id="replacement-tokens">Replacement Tokens</h1>
+
+<h2 id="what-are-replacement-tokens">What are Replacement Tokens?</h2>
+<p>Replacement tokens are special variables that can be used in certain places to replace/insert data or information which is only available at execution time, such as starting a connection, executing a task in the context of a connection, or creating an object from a template.</p>
+<h2 id="example">Example</h2>
+<p>Let's take a look at the built-in <strong>Ping</strong> task, which can be executed in context of a connection by right-clicking an existing connection and selecting the <strong>Command Tasks -&gt; Ping</strong> command.</p>
+<p>The <strong>URI</strong> of the selected connection (computer name / IP address) will be replaced in the <strong>Ping</strong> command task argument using the <code>$URI$</code> replacement token.</p>
+<p>See also <a class="xref" href="../tutorials/working-with-tasks.html">Working with Tasks</a></p>
+<h2 id="where-can-i-use-replacement-tokens">Where can I use Replacement Tokens?</h2>
+<p>Replacement Tokens can be used in <a class="xref" href="../reference/tasks/command.html">Command Tasks</a>, <a class="xref" href="../reference/tasks/key-sequence.html">Key Sequence Tasks</a>, <a class="xref" href="../tutorials/working-with-templates.html">Templates</a> but also in <a class="xref" href="../reference/connections/index.html">Connections</a> in some places where mentioned.</p>
+<ul>
+<li>In <a class="xref" href="../reference/tasks/command.html">Command Tasks</a>, use the <strong>fly-out-button</strong> (right arrow) in the <code>Command</code>, <code>Arguments</code> or <code>Working Directory</code>.</li>
+<li>In <a class="xref" href="../reference/tasks/key-sequence.html">Key Sequence Tasks</a>, use the <strong>Insert</strong> button to insert replacement tokens and/or special keys.</li>
+<li>In <a class="xref" href="../tutorials/working-with-templates.html">Templates</a> use the <strong>Template Tokens</strong> button at the top right for a list of available tokens.</li>
+<li>In <a class="xref" href="../reference/connections/index.html">Connections</a>, you can use replacement tokens only in places where it is explicitly mentioned in the docs. The <strong>URI</strong> property (computer name or web address), for example, can resolve replacement tokens. In these cases, the tokens must be entered manually as there's no fly-out-button available.</li>
+</ul>
+<h2 id="context">Context</h2>
+<p>When you execute a task or template in the context of one or more connections (the selected connections), the specified tokens such as <code>$URI$</code> or <code>$CustomField1$</code> are resolved and replaced from the context connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If no context is available (for example, by simply connecting to a connection), the context is the object itself. This means, using the token <code>$CustomField1$</code> in the <strong>Computer Name</strong> field of a connection will use the value of <strong>Custom Field 1</strong> of the very same connection.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you want to use a value from the task itself instead of the context connection, you can prefix the token with <code>this.</code>. For example: <code>$this.CustomField1$</code> will resolve the value of the <strong>Custom Field 1</strong> from the task instead of the context connection.</p>
+</div>
+<h2 id="available-tokens">Available Tokens</h2>
+<h3 id="object-properties">Object Properties</h3>
+<p>In general, you can refer to any of the available properties for each involved object type. A complete reference of properties for each type can be found <a class="xref" href="../../scripting/objects/index.html">here</a>.</p>
+<p>For example: if you want to use the <strong>MAC address</strong> specified in a <a class="xref" href="../reference/connections/terminal-rebex.html#mac-address">Terminal</a> connection, you can use the <a class="xref" href="../../scripting/objects/connections/royalsshconnection.html#physicaladdress">corresponding property</a> as a replacement token: <code>$PhysicalAddress$</code></p>
+<h3 id="custom-properties">Custom Properties</h3>
+<p>Each object can have an arbitrary number of <strong>Custom Properties</strong>, such as the <a class="xref" href="../reference/connections/rdp.html#-custom-properties">Remote Desktop connection</a>. To access the value of a custom property, you need to use the <code>CustomProperty.</code> prefix and the <strong>alphanumeric name WITHOUT spaces</strong> of the property.</p>
+<p>For example: if you have a custom property with the name: <code>User's Start-Date:</code> you can access the value using the token <code>$CustomProperty.UsersStartDate$</code></p>
+<h3 id="date-and-time">Date and Time</h3>
+<p>With the prefix <code>DateTime.</code> and the <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings">format string</a> after the <code>.</code> character you can get the current date and/or time in the format specified.</p>
+<p>For example: <code>$DateTime.yyyy-MM-dd$</code> you will get <code>2021-08-31</code>.</p>
+<h3 id="environment-variables">Environment Variables</h3>
+<p>The prefix <code>Env.</code> provides access to environment variables.</p>
+<p>For example: <code>$Env.USERNAME$</code> will resolve the environment variable <code>%USERNAME%</code>.</p>
+<h3 id="special-tokens">Special Tokens</h3>
+<p>A number of special tokens are also available, mainly for easier access to credential information after the credential (either set directly or referenced by ID or name) has been resolved:</p>
+<ul>
+<li><code>$EffectiveUsername$</code>: the user name of the resolved credential</li>
+<li><code>$EffectiveUserdomain$</code>: the domain portion of the effective user name (if available)</li>
+<li><code>$EffectiveUsernameWithoutDomain$</code>: the user name portion without the domain of the effective user name</li>
+<li><code>$EffectivePassword$</code>: the password of the resolved credential</li>
+<li><code>$EffectiveKeyFile$</code>: the configured key file path of the resolved credential</li>
+<li><code>$EffectivePassphrase$</code>: the pass phrase for the key file of the resolved credential</li>
+<li><code>$EffectiveID$</code>: the ID (GUID) of the context object</li>
+<li><code>$DocumentFilePath</code>: the path to the .rtsz file (document) of the context object</li>
+<li><code>$DocumentFolderPath$</code>: the path to the folder where the .rtsz file (document)  of the context object is located</li>
+</ul>
+<h3 id="royaljson-rjson-tokens">RoyalJSON (rJSON) Tokens</h3>
+<p>There are a couple of special tokens/prefixes for dynamic folder scripts. Read the <a class="xref" href="../../scripting/rjson/tokens.html">Tokens</a> section of the RoyalJSON documentation for more information.</p>
+<h2 id="lockdown-documents">Lockdown Documents</h2>
+<p>Replacement tokens for <strong>protected/encrypted</strong> properties, such as passwords, may not be resolved if the document of the object is locked down. See also: <a class="xref" href="../tutorials/working-with-lockdown-documents.html#lock-and-unlock-lockdown-documents">Working with Lockdown Documents</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/advanced/tokens.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

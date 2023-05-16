@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Backing Up Royal Server </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Backing Up Royal Server ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="backing-up-royal-server">Backing Up Royal Server</h1>
+
+<div class="NOTE">
+<h5>Note</h5>
+<p>Whenever you make changes in the places mentioned below, it's best to stop Royal Server and start it again after the changes have been applied.</p>
+</div>
+<h2 id="royal-server-v4">Royal Server V4</h2>
+<p>After installation, a fully configured and running Royal Server stores its data and configuration by default in <code>%ProgramData%\RoyalServer\</code>.
+A number of more volatile settings are stored in a configuration database (see below)</p>
+<h3 id="1-configuration-settings">1. Configuration Settings</h3>
+<p>Configuration settings are primarily stored in <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
+<p>If the <code>appsettings.json</code> file is not present on start-up, it will automatically be generated containing default values.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Your settings from a previous Royal Server V3 installation will be imported. If no previous Royal Server V3 installation can be detected, default values will apply.</p>
+</div>
+<h3 id="2-documents">2. Documents</h3>
+<p>Royal Server stores the Document Store files in the directory configured in the Configuration Tool. By default the documents are located at <code>%ProgramData%\RoyalServer\DocumentStore\</code>.
+There are two subdirectories:</p>
+<ul>
+<li><code>Documents</code> containing one folder per document named with the unique document id. Inside, you can find:
+<ul>
+<li><strong>default.rtsz</strong> (the Royal TS/X document)<br>
+This can be opened directly by Royal TS/X unless the setting &quot;Document can only be opened by Royal Server&quot; was checked during creation of the document.</li>
+<li><strong>default.backup</strong><br>
+With each save, a backup file will be created with the previous document version.</li>
+<li><strong>__<randomstring>.rtszbackup</randomstring></strong><br>
+This is a history of the last versions of the Document as specified in the Document Store &quot;Number of Backups&quot; setting</li>
+<li><strong>meta.json</strong><br>
+Metadatafile that contains information like the document name, if additional encryption is applied, number of backups etc..</li>
+</ul>
+</li>
+<li><code>DeletedDocuments</code> contains one folder per deleted document named with the unique document id</li>
+</ul>
+<p>Royal Server is directly working with this directory for the Document Store. If you restore the contents of this directory from a backup Royal Server just picks up the files and works with them.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Note that Access Control Lists are not stored in these file system files. If you want to back them up as well, see below.</p>
+</div>
+<h3 id="3-configuration-database">3. Configuration Database</h3>
+<p>Royal Servr uses a small database for more volatile configurations that can be found here: <code>%ProgramData%\RoyalServer\royalserverV4.db</code>.
+The following information is stored in this database:</p>
+<ul>
+<li>All Access Control entires configured for securing Documents in the Document Store component (ACLs)</li>
+<li>All user configurations for Multi-Factor Authentication for the Document Store as well as the Secure Gateway.</li>
+</ul>
+<h3 id="4-license-information">4. License Information</h3>
+<p>License Information is stored encrypted the following folder <code>%ProgramData%\RoyalServer\Licenses\</code>.</p>
+<h2 id="royal-server-v3">Royal Server V3</h2>
+<p>After installation, a fully configured and running Royal Server stores its configuration in the following places:</p>
+<h3 id="1-configuration-settings-v3">1. Configuration Settings V3</h3>
+<p>Most of the Royal Server settings are stored in the Windows Registry under the key <code>HKEY_LOCAL_MACHINE\SOFTWARE\Royal Server</code>. Most of these values are stored directly and can be manipulated via &quot;<code>regedt32.exe</code>&quot; or a script. Some are encrypted for security reasons. Backing this key and its sub keys up saves the configuration of Royal Server excluding the Document store documents and the document ACLs.</p>
+<h3 id="2-documents-v3">2. Documents V3</h3>
+<p>see <a href="#2-documents">Royal Server V4</a></p>
+<h3 id="3-access-rules-for-the-document-store-files-v3">3. Access Rules for the Document Store files V3</h3>
+<p>The access rules due to their complexity are stored in a small database that can be found here: <code>%ProgramData%\RoyalServer\royalserver.db</code>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/advanced/backup.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

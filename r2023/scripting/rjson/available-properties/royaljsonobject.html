@@ -1,0 +1,1125 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RoyalJSONObject </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="RoyalJSONObject ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-scripting">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="royaljsonobject">RoyalJSONObject</h1>
+
+<h2 id="type">Type</h2>
+<ul>
+<li><strong>Required</strong>: Yes</li>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The type of the object.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>Folder</li>
+<li>Credential</li>
+<li>DynamicCredential</li>
+<li>ToDo</li>
+<li>Information</li>
+<li>CommandTask</li>
+<li>KeySequenceTask</li>
+<li>SecureGateway</li>
+<li>RoyalServer</li>
+<li>RemoteDesktopGateway</li>
+<li>RemoteDesktopConnection</li>
+<li>TerminalConnection</li>
+<li>WebConnection</li>
+<li>VNCConnection</li>
+<li>FileTransferConnection</li>
+<li>TeamViewerConnection</li>
+<li>ExternalApplicationConnection</li>
+<li>PerformanceConnection</li>
+<li>VMwareConnection</li>
+<li>HyperVConnection</li>
+<li>WindowsEventsConnection</li>
+<li>WindowsServicesConnection</li>
+<li>WindowsProcessesConnection</li>
+<li>TerminalServicesConnection</li>
+<li>PowerShellConnection</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;Type&quot;: &quot;Folder&quot;</code></li>
+</ul>
+<h2 id="name">Name</h2>
+<ul>
+<li><strong>Required</strong>: Yes</li>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The (display) name of the object.</li>
+<li><strong>Example</strong>: <code>&quot;Name&quot;: &quot;My Folder&quot;</code></li>
+</ul>
+<h2 id="id">ID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The ID of the object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the ID of the resulting object. If you pass in any other string, a GUID will be generated for the object and the string you pass in will be stored as external ID.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;ID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;ID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="computername">ComputerName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types, Credential, Secure Gateway, Royal Server, Remote Desktop Gateway</li>
+<li><strong>Description</strong>: The computer name (IP address/FQDN) of this object. Can also be used to set the URL of web connections and credentials.</li>
+<li><strong>Example</strong>: <code>&quot;ComputerName&quot;: &quot;vm01.local&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;ComputerName&quot;: &quot;10.0.0.1&quot;</code></li>
+<li><strong>Example 3</strong>: <code>&quot;ComputerName&quot;: &quot;https://www.royalapps.com/&quot;</code></li>
+</ul>
+<h2 id="url">URL</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: See <a href="#computername">ComputerName</a></li>
+<li><strong>Description</strong>: Alias for <a href="#computername">ComputerName</a>.</li>
+<li><strong>Example</strong>: <code>&quot;URL&quot;: &quot;vm01.local&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;URL&quot;: &quot;10.0.0.1&quot;</code></li>
+<li><strong>Example 3</strong>: <code>&quot;URL&quot;: &quot;https://www.royalapps.com/&quot;</code></li>
+</ul>
+<h2 id="port">Port</h2>
+<ul>
+<li><strong>Data Type</strong>: Integer</li>
+<li><strong>Applies To</strong>: Most connection types</li>
+<li><strong>Description</strong>: The port of this object.</li>
+<li><strong>Example</strong>: <code>&quot;Port&quot;: 5900</code></li>
+</ul>
+<h2 id="description">Description</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The description of the object.</li>
+<li><strong>Example</strong>: <code>&quot;Description&quot;: &quot;Interesting object&quot;</code></li>
+</ul>
+<h2 id="favorite">Favorite</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: Specifies whether or not the object is a favorite.</li>
+<li><strong>Example</strong>: <code>&quot;Favorite&quot;: true</code></li>
+</ul>
+<h2 id="colorfromparent">ColorFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: Specifies whether or not the object gets its color from its parent.</li>
+<li><strong>Example</strong>: <code>&quot;ColorFromParent&quot;: false</code></li>
+</ul>
+<h2 id="color">Color</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The color of the object, specified as Hex (HTML) color (i.e. #FFFFFF for white).</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>Hex Color String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;Color&quot;: &quot;#FF0000&quot;</code></li>
+</ul>
+<h2 id="iconname">IconName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: The icon library icon name of the object.</li>
+<li><strong>Example</strong>: <code>&quot;IconName&quot;: &quot;Flat/Objects/User ID&quot;</code></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The notes of the object.</li>
+<li><strong>Example</strong>: <code>&quot;Notes&quot;: &quot;Notes support &lt;strong&gt;HTML&lt;/strong&gt;&quot;</code></li>
+</ul>
+<h2 id="path">Path</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The folder path of the object. This may be used as an alternative to nesting objects in Folder objects. The <a href="#path"><code>Path</code></a> property takes precedence over folder nesting, so if both are used, the object will be placed in the folder pointed to by the <a href="#path"><code>Path</code></a> property.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>A folder path either in *NIX (<code>This/Is/A/Test</code>) or in Windows (<code>This\Is\A\Test</code>) format</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;Path&quot;: &quot;Path/To/Object&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;Path&quot;: &quot;Path\To\Object&quot;</code></li>
+</ul>
+<h2 id="customfield1">CustomField1</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 1 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField1&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield2">CustomField2</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 2 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField2&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield3">CustomField3</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 3 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField3&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield4">CustomField4</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 4 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField4&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield5">CustomField5</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 5 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField5&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield6">CustomField6</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 6 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField6&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield7">CustomField7</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 7 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField7&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield8">CustomField8</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 8 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField8&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield9">CustomField9</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 9 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField9&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield10">CustomField10</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 10 (non-protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField10&quot;: &quot;Text in this field won't be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield11">CustomField11</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 11 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField11&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield12">CustomField12</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 12 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField12&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield13">CustomField13</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 13 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField13&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield14">CustomField14</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 14 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField14&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield15">CustomField15</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 15 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField15&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield16">CustomField16</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 16 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField16&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield17">CustomField17</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 17 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField17&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield18">CustomField18</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 18 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField18&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield19">CustomField19</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 19 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField19&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="customfield20">CustomField20</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types except To-Do</li>
+<li><strong>Description</strong>: Custom Field 20 (protected).</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;CustomField20&quot;: &quot;Text in this field will be encrypted&quot;</code></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li><strong>Data Type</strong>: Key/Value pairs</li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is <a href="../../objects/index.html">available here</a>.</li>
+<li><strong>Example</strong>: <code>&quot;Properties&quot;: { &quot;IsExpanded&quot;: &quot;True&quot; }</code></li>
+</ul>
+<h2 id="customproperties">CustomProperties</h2>
+<ul>
+<li><strong>Data Type</strong>: Key/Value pairs</li>
+<li><strong>Alternative Data Type</strong>: Array of <a href="royaljsoncustomproperty.html">RoyalJSONCustomProperty</a></li>
+<li><strong>Applies To</strong>: All object types</li>
+<li><strong>Description</strong>: The custom properties of the object. You can either pass in key/value pairs or an array of objects of type RoyalJSONCustomProperty. If using key/value pairs, the key will be the name of the custom property and the value will be its value. All custom properties specified that way will be of type <code>Text</code>. It's not possible to specify a different type when using key/value pairs. If using an array of objects instead, specify the name of the custom property using <code>Name</code>, the value using <code>Value</code> and the type using <code>Type</code> (Supported types are: <code>Text</code>, <code>Protected</code>, <code>URL</code>, <code>Email</code>, <code>Address</code>, <code>Phone</code>, <code>Date</code>, <code>YesNo</code>, <code>Header</code>)</li>
+<li><strong>Example</strong>: <code>&quot;CustomProperties&quot;: { &quot;PIN Code&quot;: &quot;1234&quot; }</code></li>
+<li><strong>Example 2</strong>: <code>&quot;CustomProperties&quot;: [ { &quot;Name&quot;: &quot;PIN Code&quot;, &quot;Value&quot;: &quot;1234&quot;, &quot;Type&quot;: &quot;Protected&quot; } ]</code></li>
+</ul>
+<h2 id="credentialsfromparent">CredentialsFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Most object types that support credentials</li>
+<li><strong>Description</strong>: Specifies whether or not to use the credentials of the parent folder.</li>
+<li><strong>Example</strong>: <code>&quot;CredentialsFromParent&quot;: true</code></li>
+</ul>
+<h2 id="credentialsfromcontextconnection">CredentialsFromContextConnection</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Remote Desktop Gateway, Command Task</li>
+<li><strong>Description</strong>: Specifies whether or not to use the credentials of the context connection.</li>
+<li><strong>Example</strong>: <code>&quot;CredentialsFromContextConnection&quot;: false</code></li>
+</ul>
+<h2 id="credentialid">CredentialID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types that support credentials</li>
+<li><strong>Description</strong>: The ID of the credential that is assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;CredentialID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;CredentialID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="credentialname">CredentialName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Most object types that support credentials</li>
+<li><strong>Description</strong>: The name of the credential that is assigned to this object.</li>
+<li><strong>Example</strong>: <code>&quot;CredentialName&quot;: &quot;Administrator&quot;</code></li>
+</ul>
+<h2 id="username">Username</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types that support credentials, Credential</li>
+<li><strong>Description</strong>: The username of this object.</li>
+<li><strong>Example</strong>: <code>&quot;Username&quot;: &quot;administrator&quot;</code></li>
+</ul>
+<h2 id="password">Password</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types that support credentials, Credential</li>
+<li><strong>Description</strong>: The password of this object.</li>
+<li><strong>Example</strong>: <code>&quot;Password&quot;: &quot;!dfhe8yr498hh@&quot;</code></li>
+</ul>
+<h2 id="keyfilepath">KeyFilePath</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types that support private key files, Credential</li>
+<li><strong>Description</strong>: The private key file path of this object.</li>
+<li><strong>Example</strong>: <code>&quot;KeyFilePath&quot;: &quot;/Path/To/Key/File&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;KeyFilePath&quot;: &quot;c:\Path\To\Key\File&quot;</code></li>
+</ul>
+<h2 id="keyfilecontent">KeyFileContent</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types that support private key files, Credential</li>
+<li><strong>Description</strong>: The content of the private key file of this object.</li>
+<li><strong>Example</strong>: <code>&quot;KeyFileContent&quot;: &quot;-----BEGIN RSA PRIVATE KEY----- ...&quot;</code></li>
+</ul>
+<h2 id="keyfilepassphrase">KeyFilePassphrase</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All object types that support private key files, Credential</li>
+<li><strong>Description</strong>: The passphrase of this object's private key file.</li>
+<li><strong>Example</strong>: <code>&quot;KeyFilePassphrase&quot;: &quot;^234hsd9344hf@&quot;</code></li>
+</ul>
+<h2 id="autofillelements">AutoFillElements</h2>
+<ul>
+<li><strong>Data Type</strong>: Array of <a href="royaljsonautofillelement.html">RoyalJSONAutoFillElement</a></li>
+<li><strong>Applies To</strong>: Credential, Web connection</li>
+<li><strong>Description</strong>: The auto fill elements for the credential or web connection.</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;AutoFillElements&quot;: [ { &quot;Element&quot;: &quot;#username&quot;, &quot;Action&quot;: &quot;Fill&quot;, &quot;Value&quot;: &quot;$$EffectiveUsername$$&quot; } ]</code></li>
+</ul>
+<h2 id="autofilldelay">AutoFillDelay</h2>
+<ul>
+<li><strong>Data Type</strong>: Integer</li>
+<li><strong>Applies To</strong>: Credential, Web connection</li>
+<li><strong>Description</strong>: The delay in milliseconds before the auto fill script is executed.</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;AutoFillDelay&quot;: 200</code></li>
+</ul>
+<h2 id="retryautofilluntilsuccess">RetryAutoFillUntilSuccess</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Credential, Web connection</li>
+<li><strong>Description</strong>: Whether or not auto fill is retried until all fields have been found.</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;RetryAutoFillUntilSuccess&quot;: true</code></li>
+</ul>
+<h2 id="objects">Objects</h2>
+<ul>
+<li><strong>Data Type</strong>: Array of <a href="royaljsonobject.html">RoyalJSONObject</a></li>
+<li><strong>Applies To</strong>: Folder</li>
+<li><strong>Description</strong>: An array of objects that will be direct descendants of the current folder.</li>
+<li><strong>Example</strong>: <code>&quot;Objects&quot;: [ { &quot;Type&quot;: &quot;Credential&quot;, &quot;Name&quot;: &quot;A Credential&quot; } ]</code></li>
+</ul>
+<h2 id="status">Status</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: To-Do</li>
+<li><strong>Description</strong>: The status of this To-Do item.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>Active</li>
+<li>Completed</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;Status&quot;: &quot;Completed&quot;</code></li>
+</ul>
+<h2 id="noconfirmationrequired">NoConfirmationRequired</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Key Sequence Task, Command Task</li>
+<li><strong>Description</strong>: Specifies whether or not user confirmation is required to run this task.</li>
+<li><strong>Example</strong>: <code>&quot;NoConfirmationRequired&quot;: true</code></li>
+</ul>
+<h2 id="commandmac">CommandMac</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Command Task</li>
+<li><strong>Description</strong>: The command this task executes on macOS.</li>
+<li><strong>Example</strong>: <code>&quot;CommandMac&quot;: &quot;ping&quot;</code></li>
+</ul>
+<h2 id="argumentsmac">ArgumentsMac</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Command Task</li>
+<li><strong>Description</strong>: The arguments required to run this task on macOS.</li>
+<li><strong>Example</strong>: <code>&quot;ArgumentsMac&quot;: &quot;$URI$&quot;</code></li>
+</ul>
+<h2 id="workingdirectorymac">WorkingDirectoryMac</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Command Task</li>
+<li><strong>Description</strong>: The working directory of this task for macOS.</li>
+<li><strong>Example</strong>: <code>&quot;WorkingDirectoryMac&quot;: &quot;/Path/To/Working/Directory&quot;</code></li>
+</ul>
+<h2 id="commandwindows">CommandWindows</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Command Task</li>
+<li><strong>Description</strong>: The command this task executes on Windows.</li>
+<li><strong>Example</strong>: <code>&quot;CommandWindows&quot;: &quot;ping&quot;</code></li>
+</ul>
+<h2 id="argumentswindows">ArgumentsWindows</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Command Task</li>
+<li><strong>Description</strong>: The arguments required to run this task on Windows.</li>
+<li><strong>Example</strong>: <code>&quot;ArgumentsWindows&quot;: &quot;$URI$&quot;</code></li>
+</ul>
+<h2 id="workingdirectorywindows">WorkingDirectoryWindows</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Command Task</li>
+<li><strong>Description</strong>: The working directory of this task for Windows.</li>
+<li><strong>Example</strong>: <code>&quot;WorkingDirectoryWindows&quot;: &quot;c:\Path\To\Working/Directory&quot;</code></li>
+</ul>
+<h2 id="keysequence">KeySequence</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Key Sequence Task, All connection types, Folder</li>
+<li><strong>Description</strong>: The key sequence that will be executed before the connection is established if set on a connection or a folder. The key sequence that the key sequence task executes if set on a key sequence task object.</li>
+<li><strong>Example</strong>: <code>&quot;KeySequence&quot;: &quot;{WAIT:5000}abc{ENTER}&quot;</code></li>
+</ul>
+<h2 id="dependentsecuregatewayid">DependentSecureGatewayID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Secure Gateway, Royal Server</li>
+<li><strong>Description</strong>: The ID of a dependent Secure Gateway that is to be assigned to this gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Dependent Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the dependent secure gateway.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Supported since</strong>: Royal TS 6.0, Royal TSX 5.0</li>
+<li><strong>Example</strong>: <code>&quot;DependentSecureGatewayID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;DependentSecureGatewayID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="usessl">UseSSL</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: VMware connection, Royal Server</li>
+<li><strong>Description</strong>: Specifies whether or not to use SSL for this object.</li>
+<li><strong>Example</strong>: <code>&quot;UseSSL&quot;: &quot;true&quot;</code></li>
+</ul>
+<h2 id="securegatewayport">SecureGatewayPort</h2>
+<ul>
+<li><strong>Data Type</strong>: Integer</li>
+<li><strong>Applies To</strong>: Secure Gateway, Royal Server</li>
+<li><strong>Description</strong>: The Secure Gateway port.</li>
+<li><strong>Example</strong>: <code>&quot;Port&quot;: 22</code></li>
+</ul>
+<h2 id="securegatewaycredentialid">SecureGatewayCredentialID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Secure Gateway, Royal Server</li>
+<li><strong>Description</strong>: The ID of the credential that is assigned to the Secure Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;SecureGatewayCredentialID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;SecureGatewayCredentialID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="securegatewaycredentialname">SecureGatewayCredentialName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Secure Gateway, Royal Server</li>
+<li><strong>Description</strong>: The name of the credential that is assigned to the Secure Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;SecureGatewayCredentialName&quot;: &quot;root&quot;</code></li>
+</ul>
+<h2 id="securegatewayusername">SecureGatewayUsername</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Secure Gateway, Royal Server</li>
+<li><strong>Description</strong>: The username of the Secure Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;SecureGatewayUsername&quot;: &quot;root&quot;</code></li>
+</ul>
+<h2 id="securegatewaypassword">SecureGatewayPassword</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Secure Gateway, Royal Server</li>
+<li><strong>Description</strong>: The password of the Secure Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;SecureGatewayPassword&quot;: &quot;!dfhe8yr498hh@&quot;</code></li>
+</ul>
+<h2 id="macaddress">MACAddress</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Most connection types</li>
+<li><strong>Description</strong>: The physical (MAC) address of this connection.</li>
+<li><strong>Example</strong>: <code>&quot;MACAddress&quot;: &quot;FF:FF:FF:FF:FF:FF&quot;</code></li>
+</ul>
+<h2 id="windowmode">WindowMode</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: Most connection types</li>
+<li><strong>Description</strong>: The window mode of this connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>Embedded</li>
+<li>External</li>
+<li>FullScreen</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;WindowMode&quot;: &quot;External&quot;</code></li>
+</ul>
+<h2 id="consolesession">ConsoleSession</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Remote Desktop connection</li>
+<li><strong>Description</strong>: Specifies whether or not to connect to the console/admin session of this Remote Desktop connection.</li>
+<li><strong>Example</strong>: <code>&quot;ConsoleSession&quot;: true</code></li>
+</ul>
+<h2 id="nla">NLA</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Remote Desktop connection</li>
+<li><strong>Description</strong>: Specifies whether or not to use NLA (Network Level Authentication) for this Remote Desktop connection.</li>
+<li><strong>Example</strong>: <code>&quot;NLA&quot;: true</code></li>
+</ul>
+<h2 id="resizemode">ResizeMode</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: Remote Desktop connection</li>
+<li><strong>Description</strong>: The resize mode of this Remote Desktop connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>ScrollBars</li>
+<li>SmartSizing</li>
+<li>SmartReconnect</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;ResizeMode&quot;: &quot;SmartReconnect&quot;</code></li>
+</ul>
+<h2 id="hypervmode">HyperVMode</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: Remote Desktop connection</li>
+<li><strong>Description</strong>: The Hyper-V mode of this Remote Desktop connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>None</li>
+<li>HyperVHost</li>
+<li>HyperVInstance</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;HyperVMode&quot;: &quot;HyperVInstance&quot;</code></li>
+</ul>
+<h2 id="hypervport">HyperVPort</h2>
+<ul>
+<li><strong>Data Type</strong>: Integer</li>
+<li><strong>Applies To</strong>: Remote Desktop connection</li>
+<li><strong>Description</strong>: The Hyper-V port of this Remote Desktop Connection.</li>
+<li><strong>Example</strong>: <code>&quot;HyperVPort&quot;: 2179</code></li>
+</ul>
+<h2 id="hypervinstanceid">HyperVInstanceID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Remote Desktop connection</li>
+<li><strong>Description</strong>: The Hyper-V Instance ID (VM ID) of this Remote Desktop connection.</li>
+<li><strong>Example</strong>: <code>&quot;HyperVInstanceID&quot;: &quot;12345&quot;</code></li>
+</ul>
+<h2 id="useenhancedhypervsessionmode">UseEnhancedHyperVSessionMode</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Remote Desktop connection</li>
+<li><strong>Description</strong>: Specifies whether or not to use enhanced Hyper-V session mode for this Remote Desktop connection.</li>
+<li><strong>Example</strong>: <code>&quot;UseEnhancedHyperVSessionMode&quot;: false</code></li>
+</ul>
+<h2 id="remotedesktopgatewaycomputername">RemoteDesktopGatewayComputerName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Remote Desktop Gateway</li>
+<li><strong>Description</strong>: The computer name (IP address/FQDN) of the Remote Desktop Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayComputerName&quot;: &quot;rdg-01.local&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;RemoteDesktopGatewayComputerName&quot;: &quot;10.0.1.5&quot;</code></li>
+</ul>
+<h2 id="remotedesktopgatewaycredentialsfromconnection">RemoteDesktopGatewayCredentialsFromConnection</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Remote Desktop Gateway</li>
+<li><strong>Description</strong>: Specifies whether or not to use the credentials of the connection for the Remote Desktop Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayCredentialsFromConnection&quot;: false</code></li>
+</ul>
+<h2 id="remotedesktopgatewayusername">RemoteDesktopGatewayUsername</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Remote Desktop Gateway</li>
+<li><strong>Description</strong>: The username of the Remote Desktop Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayUsername&quot;: &quot;administrator&quot;</code></li>
+</ul>
+<h2 id="remotedesktopgatewaypassword">RemoteDesktopGatewayPassword</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Remote Desktop Gateway</li>
+<li><strong>Description</strong>: The password of the Remote Desktop Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayPassword&quot;: &quot;!dfhe8yr498hh@&quot;</code></li>
+</ul>
+<h2 id="remotedesktopgatewaycredentialid">RemoteDesktopGatewayCredentialID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Remote Desktop Gateway</li>
+<li><strong>Description</strong>: The ID of the credential that is assigned to the Remote Desktop Gateway. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway Credential ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayCredentialID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;RemoteDesktopGatewayCredentialID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="remotedesktopgatewaycredentialname">RemoteDesktopGatewayCredentialName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Remote Desktop Gateway</li>
+<li><strong>Description</strong>: The name of the credential that is assigned to the Remote Desktop Gateway.</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayCredentialName&quot;: &quot;Administrator&quot;</code></li>
+</ul>
+<h2 id="terminalconnectiontype">TerminalConnectionType</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: Terminal connection</li>
+<li><strong>Description</strong>: The connection type of this terminal connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>SSH</li>
+<li>Telnet</li>
+<li>SerialPort</li>
+<li>CustomTerminal</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;TerminalConnectionType&quot;: &quot;SSH&quot;</code></li>
+</ul>
+<h2 id="serialportname">SerialPortName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Terminal connection</li>
+<li><strong>Description</strong>: The serial port name of this terminal connection.</li>
+<li><strong>Example</strong>: <code>&quot;SerialPortName&quot;: &quot;COM1&quot;</code></li>
+</ul>
+<h2 id="baudrate">BaudRate</h2>
+<ul>
+<li><strong>Data Type</strong>: Integer</li>
+<li><strong>Applies To</strong>: Terminal connection</li>
+<li><strong>Description</strong>: The baud rate of the serial port connection.</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;BaudRate&quot;: 9600</code></li>
+</ul>
+<h2 id="databits">DataBits</h2>
+<ul>
+<li><strong>Data Type</strong>: Integer</li>
+<li><strong>Applies To</strong>: Terminal connection</li>
+<li><strong>Description</strong>: The standard length of data bits per byte of the serial port connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>5 through 8</li>
+</ul>
+</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;DataBits&quot;: 8</code></li>
+</ul>
+<h2 id="parity">Parity</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: Terminal connection</li>
+<li><strong>Description</strong>: The parity bit for the serial port connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>None</li>
+<li>Odd</li>
+<li>Even</li>
+<li>Mark</li>
+<li>Space</li>
+</ul>
+</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;Parity&quot;: &quot;None&quot;</code></li>
+</ul>
+<h2 id="stopbits">StopBits</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: Terminal connection</li>
+<li><strong>Description</strong>: The number of stop bits used for the serial port connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>None</li>
+<li>One</li>
+<li>Two</li>
+<li>OnePointFive</li>
+</ul>
+</li>
+<li><strong>Supported since</strong>: Royal TS 5.1, Royal TSX 4.1.2</li>
+<li><strong>Example</strong>: <code>&quot;StopBits&quot;: &quot;One&quot;</code></li>
+</ul>
+<h2 id="customcommand">CustomCommand</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Terminal connection</li>
+<li><strong>Description</strong>: The custom command of this terminal connection.</li>
+<li><strong>Example</strong>: <code>&quot;CustomCommand&quot;: &quot;ls -lh /&quot;</code></li>
+</ul>
+<h2 id="filetransferconnectiontype">FileTransferConnectionType</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: File Transfer connection</li>
+<li><strong>Description</strong>: The connection type of this file transfer connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>FTP</li>
+<li>FTPWithImplicitSSL</li>
+<li>FTPWithExplicitTLSSSL</li>
+<li>SFTP</li>
+<li>SCP</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;FileTransferConnectionType&quot;: &quot;SFTP&quot;</code></li>
+</ul>
+<h2 id="passivemode">PassiveMode</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: File Transfer connection</li>
+<li><strong>Description</strong>: Specifies whether or not to use passive mode for this FTP file transfer connection.</li>
+<li><strong>Example</strong>: <code>&quot;PassiveMode&quot;: true</code></li>
+</ul>
+<h2 id="teamviewerconnectiontype">TeamViewerConnectionType</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: TeamViewer connection</li>
+<li><strong>Description</strong>: The connection type of this TeamViewer connection.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>RemoteControl</li>
+<li>FileTransfer</li>
+<li>Meeting</li>
+<li>VPN</li>
+<li>ManagementConsole</li>
+<li>PromptForType</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;TeamViewerConnectionType&quot;: &quot;RemoteControl&quot;</code></li>
+</ul>
+<h2 id="usecim">UseCIM</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Some management connections</li>
+<li><strong>Description</strong>: Specifies whether or not to use CIM for this management connection.</li>
+<li><strong>Example</strong>: <code>&quot;UseCIM&quot;: true</code></li>
+</ul>
+<h2 id="script">Script</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: PowerShell connection</li>
+<li><strong>Description</strong>: The script of this PowerShell connection.</li>
+<li><strong>Example</strong>: <code>&quot;Script&quot;: &quot;Write-Host \&quot;Hello World\&quot;&quot;</code></li>
+</ul>
+<h2 id="connecttaskfromparent">ConnectTaskFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: Specifies whether or not to use the connect task from the parent folder of this object.</li>
+<li><strong>Example</strong>: <code>&quot;ConnectTaskFromParent&quot;: false</code></li>
+</ul>
+<h2 id="connecttaskid">ConnectTaskID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: The ID of the command task that is to be assigned to this object as connect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Connect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;ConnectTaskID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;ConnectTaskID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="connecttaskname">ConnectTaskName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: The name of the command task that is to be assigned to this object as connect task.</li>
+<li><strong>Example</strong>: <code>&quot;ConnectTaskName&quot;: &quot;Start VPN&quot;</code></li>
+</ul>
+<h2 id="disconnecttaskfromparent">DisconnectTaskFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: Specifies whether or not to use the disconnect task from the parent folder of this object.</li>
+<li><strong>Example</strong>: <code>&quot;DisconnectTaskFromParent&quot;: false</code></li>
+</ul>
+<h2 id="disconnecttaskid">DisconnectTaskID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: The ID of the command task that is to be assigned to this object as disconnect task. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Disconnect Task ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;DisconnectTaskID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;DisconnectTaskID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="disconnecttaskname">DisconnectTaskName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: The name of the command task that is to be assigned to this object as disconnect task.</li>
+<li><strong>Example</strong>: <code>&quot;DisconnectTaskName&quot;: &quot;root&quot;</code></li>
+</ul>
+<h2 id="keysequencefromparent">KeySequenceFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: Specifies whether or not to use the connect key sequence from the parent folder of this object.</li>
+<li><strong>Example</strong>: <code>&quot;KeySequenceFromParent&quot;: false</code></li>
+</ul>
+<h2 id="keysequenceid">KeySequenceID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: The ID of the key sequence task that is to be assigned to this object as connect key sequence. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Key Sequence ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;KeySequenceID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;KeySequenceID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="keysequencename">KeySequenceName</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types, Folder</li>
+<li><strong>Description</strong>: The name of the key sequence task that is to be assigned to this object as connect key sequence.</li>
+<li><strong>Example</strong>: <code>&quot;KeySequenceName&quot;: &quot;sudo&quot;</code></li>
+</ul>
+<h2 id="securegatewayfromparent">SecureGatewayFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: All connection types that support Secure Gateways, Folder</li>
+<li><strong>Description</strong>: Specifies whether or not to use the Secure Gateway from the parent folder of this object.</li>
+<li><strong>Example</strong>: <code>&quot;SecureGatewayFromParent&quot;: false</code></li>
+</ul>
+<h2 id="securegatewayid">SecureGatewayID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types that support Secure Gateways, Folder</li>
+<li><strong>Description</strong>: The ID of the Secure Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Secure Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;SecureGatewayID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;SecureGatewayID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="securegatewayusage">SecureGatewayUsage</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: All connection types that support Secure Gateways, Folder</li>
+<li><strong>Description</strong>: Specifies how the assigned Secure Gateway should be used.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>Never</li>
+<li>Always</li>
+<li>OnDemand</li>
+</ul>
+</li>
+<li><strong>Supported since</strong>: Royal TS 6.0, Royal TSX 5.0</li>
+<li><strong>Example</strong>: <code>&quot;SecureGatewayUsage&quot;: &quot;Always&quot;</code></li>
+</ul>
+<h2 id="royalserverfromparent">RoyalServerFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: All connection types that support Royal Server, Folder</li>
+<li><strong>Description</strong>: Specifies whether or not to use the Royal Server from the parent folder of this object.</li>
+<li><strong>Example</strong>: <code>&quot;RoyalServerFromParent&quot;: false</code></li>
+</ul>
+<h2 id="royalserverid">RoyalServerID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: All connection types that support Royal Server, Folder</li>
+<li><strong>Description</strong>: The ID of the Royal Server that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Royal Server ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;RoyalServerID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;RoyalServerID&quot;: &quot;0001&quot;</code></li>
+</ul>
+<h2 id="remotedesktopgatewayfromparent">RemoteDesktopGatewayFromParent</h2>
+<ul>
+<li><strong>Data Type</strong>: Boolean</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Folder</li>
+<li><strong>Description</strong>: Specifies whether or not to use the Remote Desktop Gateway from the parent folder of this object.</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayFromParent&quot;: true</code></li>
+</ul>
+<h2 id="remotedesktopgatewayusage">RemoteDesktopGatewayUsage</h2>
+<ul>
+<li><strong>Data Type</strong>: Enumeration</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Folder</li>
+<li><strong>Description</strong>: The usage mode of the Remote Desktop Gateway.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>Never</li>
+<li>Always</li>
+<li>OnDemand</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayUsage&quot;: &quot;Always&quot;</code></li>
+</ul>
+<h2 id="remotedesktopgatewayid">RemoteDesktopGatewayID</h2>
+<ul>
+<li><strong>Data Type</strong>: String</li>
+<li><strong>Applies To</strong>: Remote Desktop connection, Folder</li>
+<li><strong>Description</strong>: The ID of the Remote Desktop Gateway that is to be assigned to this object. This can either be a GUID (formatted as string) or any other generic string. If you pass in a GUID it will be directly used to set the Remote Desktop Gateway ID of the resulting object. No validation is performed in this case. If you pass in any other string, the external to internal ID mapping table will be searched for a match. If no match is found, the property will be ignored. Otherwise the internal ID will be used to reference the credential.</li>
+<li><strong>Supported Values</strong>:
+<ul>
+<li>GUID formatted as string</li>
+<li>String</li>
+</ul>
+</li>
+<li><strong>Example</strong>: <code>&quot;RemoteDesktopGatewayID&quot;: &quot;041471cd-1202-40a6-84e3-83f3ceb57a99&quot;</code></li>
+<li><strong>Example 2</strong>: <code>&quot;RemoteDesktopGatewayID&quot;: &quot;0001&quot;</code></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/scripting/rjson/available-properties/royaljsonobject.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

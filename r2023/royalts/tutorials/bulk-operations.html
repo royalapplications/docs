@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bulk Operations </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bulk Operations ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_tutorials_bulk">
+<h1 id="bulk-operations">Bulk Operations</h1>
+
+<h2 id="bulk-add">Bulk-Add</h2>
+<p>When adding connections (like <a class="xref" href="../reference/connections/rdp.html">Remote Desktop</a>), Royal TS can create multiple connections with the same configuration in one easy step.</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a folder.</li>
+<li>On the <strong>Home</strong> tab, in the <strong>Edit</strong> group, click on <strong>Add</strong>.</li>
+<li>Click on <strong>Remote Desktop</strong> in the drop down menu.</li>
+<li>Type a list of DNS names or IP addresses, separated by semicolons (;) in the Computer Name box.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Click on the <strong>browse button (...)</strong> to open the Entry Editor dialog which also features a network browser dialog. The Entry Editor dialog can be used to search for computers in your local network or Active Directory and to add multiple entries for different servers with the same settings at the same time.You cannot enter individual Display Names in bulk-add mode. The Display Name for each computer will be the same as the Computer Name.</p>
+</div>
+<ol start="5">
+<li>Optionally adjust any setting you want to change for the connections in the wizard dialog.</li>
+<li>To add all the specified connections and exit the dialog, click <strong>OK</strong>.</li>
+</ol>
+<h2 id="bulk-edit">Bulk-Edit</h2>
+<p>Use bulk-edit to change one or more properties on multiple objects.</p>
+<ol>
+<li>In the <strong>Navigation</strong> panel, select a folder (or a document).</li>
+<li>In the <strong>Dashboard</strong> panel, select two or more objects (using SHIFT+CLICK or CTRL+CLICK).</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The <a class="xref" href="../user-interface/panels.html#-dashboard">Folder Dashboard</a>, provides many features helping you to prepare a tailored list of connections or objects in the selected folder and optionally all sub-folders. Add additional columns, reorder columns, and sort or filter columns until you see all the connections you want to edit.</p>
+</div>
+<ol start="3">
+<li>On the <strong>Home</strong> tab, in the <strong>Edit</strong> group, click on <strong>Properties</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Edit dialog looks slightly different in bulk-edit mode. <strong>All controls are disabled by default</strong> and can be <strong>enabled individually using the Bulk-Edit button on the upper right corner</strong>. Selecting multiple objects from the same type (for example Remote Desktop Connections) allows you to select from all available settings while selecting multiple objects from a different type offers only the common settings across those types. Also note that the settings are based on the Default Settings and do not reflect the settings of any selected connection.</p>
+</div>
+<ol start="4">
+<li>Look for the setting(s) you want to change for all the selected connections and click on the <strong>Bulk-Edit</strong> button in the upper right corner to enable the setting(s).</li>
+<li>Click on <strong>OK</strong>. Only the enabled settings will be applied to the selection.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/tutorials/bulk-operations.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

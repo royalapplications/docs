@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Terminal (PuTTY) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" Terminal (PuTTY) ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_reference_connections_terminal-putty">
+<h1 id="-terminal-putty"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIcon_32.svg#img_header" alt=""> Terminal (PuTTY)</h1>
+
+<p>The <strong>Terminal</strong> connection based on PuTTY can be used to connect to remote computers using Telnet, Secure Shell (SSH) (incl. Tunneling support), RAW or rlogin. It can also be used to connect to devices using the Serial Port.</p>
+<h2 id="dashboard">Dashboard</h2>
+<p>The <strong>Terminal Dashboard</strong> is shown in the <strong>Dashboard</strong> panel when you select a Terminal connection based on the PuTTY plugin in the <strong>Navigation</strong> panel. The dashboard will show files with the extension .log. Logging and recording configuration can be found in <a href="#-logging">Logging</a>.</p>
+<p><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/putty_dashboard.png" alt="PuTTY_Dashboard"></p>
+<h2 id="dashboard-features">Dashboard Features</h2>
+<ul>
+<li>Click the <strong>Open in Explorer</strong> button to open the folder containing the selected file in Windows Explorer.</li>
+<li>Copy path to clipboard context menu.</li>
+<li>Grid search and customization, including sort, filter and group.</li>
+<li><strong>Delete File</strong> allows you to directly delete a log file from the <strong>Dashboard</strong>.</li>
+<li>The <strong>Export</strong> drop down menu allows you to export a recording to a different file format.</li>
+<li>Click <strong>Refresh</strong> to refresh the file list.</li>
+</ul>
+<h2 id="dashboard-settings">Dashboard Settings</h2>
+<p>To configure the application default settings for the included dashboard, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on <strong>Dashboard</strong> for the Terminal plugin based on PuTTY.<br>
+To configure individual dashboard settings for a connection, use the <a href="#dashboard">Dashboard</a> property page.</p>
+<h2 id="plugin-settings">Plugin Settings</h2>
+<p>To configure the plugin settings, open the Plugins Management and click on <strong>Settings</strong> for the Terminal plugin based on PuTTY:</p>
+<h4 id="executable">Executable</h4>
+<p>Specify your own PuTTY executable. If no executable is specified or if the configured executable cannot be found, the PuTTY.exe included in Royal TS will be used.</p>
+<h4 id="registry-base-path">Registry Base Path</h4>
+<p>Enter the registry base path without the hive.</p>
+<p>For KiTTY use: <code>Software\9bis.com\KiTTY</code><br>
+Leave empty for the default PuTTY base path: <code>Software\SimonTatham\PuTTY</code></p>
+<h4 id="window-title-match">Window Title Match</h4>
+<p>Enter the window title Royal TS should look for to identify the session window.<br>
+For KiTTY use: <code>- KiTTY</code><br>
+Leave empty for the default PuTTY window title match: <code>- PuTTY</code></p>
+<h2 id="connection-properties">Connection Properties</h2>
+<p>The Terminal (PuTTY) Properties dialog is shown:</p>
+<ul>
+<li>for a new Terminal connection by clicking the <strong>Terminal</strong> menu item in the <strong>Add</strong> drop down menu in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab when the PuTTY based plugin is set as the default plugin.</li>
+<li>for a new Terminal connection by clicking the <strong>More...</strong> menu item in the <strong>Add</strong> drop down menu in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab and selecting the <strong>Terminal (based on PuTTY)</strong> entry from the list of available objects.</li>
+<li>for an existing Terminal connection by selecting a Terminal connection which is configured to use the PuTTY based plugin and clicking on the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
+<li>as a bulk-edit dialog when multiple Terminal connections which are configured to use the PuTTY based plugin were selected in the Folder / Document Dashboard and the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab is clicked. See also: <a class="xref" href="../../tutorials/bulk-operations.html">Bulk Operations</a></li>
+</ul>
+<h2 id="-terminal-properties"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PluginIconConnection_32.svg#img_header" alt=""> Terminal Properties</h2>
+<p>The The Terminal Connection page allows you to configure basic connection settings, such as host name and the connection type (Telnet, SSH or Serial Port). page allows you to configure basic connection settings, such as host name and the connection type (Telnet, SSH, RAW, rlogin or Serial Port). You can also configure the connection to use an existing PuTTY connection or import an existing PuTTY connection.</p>
+<h4 id="display-name-required">Display Name <em>(required)</em></h4>
+<p>Enter a display name for object.</p>
+<h4 id="color">Color</h4>
+<p>Click the color picker button in the display name text box to select a color. In the <a class="xref" href="../options.html#-user-interface">User Interface</a> settings you can configure to show the color in the navigation tree, the connection tab or as connection border.</p>
+<h4 id="icon">Icon</h4>
+<p>Click the icon picker button next in the display name text box to select and assign a custom icon to the object.</p>
+<h4 id="connection-type">Connection Type</h4>
+<p>Select one of the supported connection types: <strong>Existing PuTTY Session, SSH Connection, Telnet Connection, Serial Port Connection, Raw or Rlogin</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Depending on the selected connection type, availability of some property pages may change.</p>
+</div>
+<h4 id="putty-session-only-available-when-existing-putty-session-is-selected">PuTTY Session (only available when Existing PuTTY Session is selected)</h4>
+<p>The drop down list will show all available PuTTY sessions.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If you specify an existing PuTTY session, it will only use the Computer Name, Port and configured credentials of your connection. All other settings will actually be used from the saved PuTTY session.</p>
+</div>
+<h4 id="computer-name-required">Computer Name <em>(required)</em></h4>
+<p>Enter the computer name or the IP address.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Click on the browse button (...) to open the <strong>Entry Editor</strong> dialog. The entry editor can be used to search for computers in your network and to add multiple entries for different servers with the same settings at the same time (when supported).</p>
+<p>Alternatively, you can also just specify more computer names by separating them with a semicolon for bulk-add operations.</p>
+<p><a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+</div>
+<h4 id="port">Port</h4>
+<p>Specify the TCP port for the connection.</p>
+<h4 id="description">Description</h4>
+<p>Enter a description for the object.</p>
+<h4 id="mac-address">MAC Address</h4>
+<p>Use this optional field to record the remote computer's MAC address. You can then use this field in templates or tasks, like a wake-on-lan task, for example.</p>
+<h2 id="-display-options"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageDisplayOptions_32.svg#img_header" alt=""> Display Options</h2>
+<p>The <strong>Display Options</strong> page allows you to configure font settings and appearance settings.</p>
+<h3 id="font">Font</h3>
+<h4 id="font-1">Font</h4>
+<p>Select the font used for the terminal control.</p>
+<h4 id="font-size">Font Size</h4>
+<p>Select the font size used for the terminal control.</p>
+<h4 id="font-is-bold">Font is Bold</h4>
+<p>If checked, the terminal will print all characters bold.</p>
+<h4 id="font-quality">Font Quality</h4>
+<p>Specify the font quality (anti-aliasing mode).</p>
+<h4 id="cursor-appearance">Cursor Appearance</h4>
+<p>Configure the appearance of the cursor.</p>
+<h4 id="hide-mouse-pointer-when-typing">Hide Mouse Pointer when Typing</h4>
+<p>If checked, the mouse pointer is hidden while you type.</p>
+<h4 id="blink-cursor">Blink Cursor</h4>
+<p>Enable or disable cursor blinking.</p>
+<h4 id="enable-blinking-text">Enable Blinking Text</h4>
+<p>Enable or disable blinking text.</p>
+<h3 id="display">Display</h3>
+<h4 id="terminal-columns">Terminal Columns</h4>
+<p>Enter the number of columns for the terminal. This setting will only be applied on specific window resize actions.</p>
+<h4 id="terminal-rows">Terminal Rows</h4>
+<p>Enter the number of rows for the terminal. This setting will only be applied on specific window resize actions.</p>
+<h4 id="window-resize-action">Window Resize Action</h4>
+<p>Configure how PuTTY should behave when the window is resized.</p>
+<h4 id="display-scrollbar">Display Scrollbar</h4>
+<p>Shows or hides the scrollbar in the terminal.</p>
+<h4 id="sunken-edge-border">Sunken-Edge Border</h4>
+<p>Show or hide a sunken-edge border.</p>
+<h4 id="gap-between-text-and-window-edge">Gap between Text and Window Edge</h4>
+<p>Configure the gap between text and border.</p>
+<h3 id="external-window">External Window</h3>
+<h4 id="window-title">Window Title</h4>
+<p>By default the window title will contain the host name followed by ‘PuTTY’, for example server1.example.com - PuTTY. If you want a different window title, this is where to set it. The title string set here is therefore only the initial window title. <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+<h4 id="separate-window-and-icon-titles">Separate Window and Icon Titles</h4>
+<p>If you want to see window and icon titles, enable this option.</p>
+<h4 id="warn-before-closing-window">Warn before closing Window</h4>
+<p>When checked, a warning is shown before the window is closed.</p>
+<h4 id="close-window-on-alt-f4">Close Window on Alt-F4</h4>
+<p>Control whether Alt-F4 will close the window or not.</p>
+<h4 id="show-system-menu-on-alt-space">Show System Menu on Alt-Space</h4>
+<p>If checked, Alt-Space will bring up the system menu.</p>
+<h4 id="show-system-menu-on-alt-alone">Show System Menu on Alt Alone</h4>
+<p>If checked, pressing Alt will bring up the system menu.</p>
+<h4 id="ensure-window-is-always-on-top">Ensure Window is Always on Top</h4>
+<p>If checked, the PuTTY window will be always on top.</p>
+<h4 id="full-screen-on-alt-enter">Full Screen on Alt-Enter</h4>
+<p>If checked, Alt-Enter will change the PuTTY window into Full Screen mode.</p>
+<h2 id="-colors"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageColors_32.svg#img_header" alt=""> Colors</h2>
+<p>The <strong>Colors</strong> page allows you to modify the terminal palette and colors for different text styles.</p>
+<h3 id="color-usage">Color Usage</h3>
+<h4 id="use-background-color-to-erase-screen">Use Background Color to Erase Screen</h4>
+<p>Not all terminals agree on what color to turn the screen when the server sends a ‘clear screen’ sequence. Background-color erase can be turned on and off by control sequences sent by the server. This configuration option controls the default state.</p>
+<h4 id="allow-terminal-to-specify-ansi-colors">Allow Terminal to Specify ANSI Colors</h4>
+<p>If it is disabled, PuTTY will ignore any control sequences sent by the server to request colored text.</p>
+<h4 id="allow-terminal-to-use-xterm-256-color-mode">Allow Terminal to Use xterm 256-Color Mode</h4>
+<p>If disabled, PuTTY will ignore any control sequences sent by the server which use the extended 256-color mode supported by recent versions of xterm.</p>
+<h4 id="bold-text-is-a-different-color">Bold Text is a Different Color</h4>
+<p>If disabled, bold and non-bold text will be displayed in the same color, and instead the font will change to indicate the difference.</p>
+<h4 id="attempt-to-use-logical-palette">Attempt to Use Logical Palette</h4>
+<p>If you are not getting the colors you ask for on an 8-bit display, you can try enabling this option.</p>
+<h4 id="use-system-colors">Use System Colors</h4>
+<p>Enabling this option will cause PuTTY to ignore the configured colors for ‘Default Background/Foreground’ and ‘Cursor Color/Text’, instead going with the system-wide defaults.</p>
+<h4 id="normal-and-bright-colors">Normal and Bright Colors</h4>
+<p>Adjust the ANSI color palette for individual colors.</p>
+<h4 id="palette">Palette</h4>
+<p>The drop-down button allows you to apply built-in or custom terminal color schemes. It also allows you to export and manage terminal palettes for easy sharing.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can read more about this topic <a class="xref" href="../../user-interface/color-palettes.html#terminal-color-palettes">here</a></p>
+</div>
+<h2 id="-credentials"><img src="/r2023/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
+<p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
+<h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
+<p>When selected, no credentials are configured for the object. Connections that require credentials may prompt to enter credentials or fail to connect.</p>
+<h4 id="use-credentials-from-the-parent-folder-not-always-available">Use credentials from the parent folder <em>(not always available)</em></h4>
+<p>When selected, Royal TS will look for a configured credential in the parent folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Not available for Royal Server objects, Secure Gateway objects, Remote Desktop Gateway objects and Key Sequence Tasks</p>
+</div>
+<h4 id="use-from-this-connection-not-always-available">Use from this connection <em>(not always available)</em></h4>
+<p>When selected, the username and password is used from the context connection object.</p>
+<h4 id="specify-username-and-password">Specify username and password</h4>
+<p>When selected, a username and password can be provided. For domain accounts use the syntax &quot;domain\username&quot; (without the quotes).</p>
+<h4 id="use-an-existing-credential">Use an existing credential</h4>
+<p>When selected, assign an existing credential to the object using the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the correct credential.</p>
+</div>
+<h4 id="specify-a-credential-name">Specify a credential name</h4>
+<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.<br>
+If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal TS will prompt for credentials by showing the credential picker dialog.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
+</div>
+<h4 id="omit-domain">Omit Domain</h4>
+<p>When checked, Royal TS will omit the domain portion of the username (domain\username or username@domain).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Omit Domain</strong> checkbox is not available for all object types!</p>
+</div>
+<h4 id="automatic-logon">Automatic Logon</h4>
+<p>When checked, Royal TS will use the credentials to log on to the connection automatically. This setting applies only to connection types supporting automatic logon and is ignored if a connection doesn't support automatic logon.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To access the configured credentials through replacement tokens (for example in Auto Fill or Key Sequence Task configurations), use the replacement tokens $EffeciveUsername$ and $EffectivePassword$.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
+<p>See also: <a class="xref" href="../../tutorials/working-with-credentials.html">Working with Credentials</a>, <a class="xref" href="../organization/credential.html">Credential</a>, <a href="https://www.royalapps.com/go/kb-all-teamsharing">About shared documents</a></p>
+<h3 id="private-key-file">Private Key File</h3>
+<h4 id="save-mode">Save Mode</h4>
+<ul>
+<li>Path to Private Key Fie</li>
+<li>Embed Private Key File</li>
+</ul>
+<h4 id="private-key-file-1">Private Key File</h4>
+<p>Specify the full path to the private key file or click on browse button to browse for the file.</p>
+<h4 id="passphrase">Passphrase</h4>
+<p>Enter a passphrase.</p>
+<h2 id="-tasks"><img src="/r2023/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header" alt=""> Tasks</h2>
+<p>You can specify a task to be executed before a connection is established and after it has been disconnected. For example: establish a VPN connection before you connect and close it after disconnect.</p>
+<h3 id="connect-task">Connect Task</h3>
+<h4 id="do-not-execute-a-task">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is established.</p>
+<h4 id="use-task-from-parent-folder">Use task from parent folder</h4>
+<p>Royal TS will look for a configured connect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-connect-task-completion">Wait for connect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be established.</p>
+<h4 id="execute-for-first-connection-in-folder">Execute for first connection in folder</h4>
+<p>If checked, the task will only be executed if no other connection in the same folder is active.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will establish the VPN connection only for your first connection.</p>
+</div>
+<h4 id="abort-when-connect-task-fails">Abort when connect task fails</h4>
+<p>If checked, the connection will not be established when the configured task fails and returns an Exit Code other than 0.</p>
+<h3 id="disconnect-task">Disconnect Task</h3>
+<h4 id="do-not-execute-a-task-1">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is disconnected.</p>
+<h4 id="use-task-from-parent-folder-1">Use task from parent folder</h4>
+<p>Royal TS will look for a configured disconnect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task-1">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name-1">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during disconnect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-disconnect-task-completion">Wait for disconnect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be disconnected.</p>
+<h4 id="execute-for-last-connection-in-folder">Execute for last connection in folder</h4>
+<p>If checked, the task will only be executed if it is the last active connection in the folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will disconnect the VPN connection after the last connection is disconnected.</p>
+</div>
+<p>See also: <a class="xref" href="../../tutorials/working-with-tasks.html">Working with Tasks</a>, <a class="xref" href="../tasks/command.html">Command Task</a></p>
+<h3 id="-key-sequence"><img src="/r2023/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header" alt=""> Key Sequence</h3>
+<p>The <strong>Key Sequence</strong> page allows you to configure a sequence of key strokes (simulating keyboard events) to be sent to the connection after the connection has been established.</p>
+<h4 id="do-not-send-a-key-sequence">Do not send a key sequence</h4>
+<p>This is the default value. If selected, no key sequence is sent to the remote session after connect.</p>
+<h4 id="use-key-sequence-task-from-parent-folder">Use key sequence task from parent folder</h4>
+<p>Royal TS will look for a configured key sequence task in the parent folder. This option is not available on the document level.</p>
+<h4 id="specify-a-key-sequence">Specify a key sequence</h4>
+<p>If selected, a key sequence can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use the fly-out button to the right to show a list of available replacement tokens and special key commands. Use the WAIT command anywhere in the sequence to delay the sequence.</p>
+<p>Examples for Key Sequences:</p>
+<ul>
+<li>A group policy is set to show a message whenever a user is attempting to log on interactively. Create a key sequence &quot;{WAIT:1000}{ENTER}&quot; which will wait 1 second (1000ms) after successfully connected to the remote desktop session and sends the ENTER key to the remote session to confirm the message.</li>
+<li>A web page connection to a flash based application which requires you to log on using a username and password can be configured to send the appropriate key sequence after the connection has been established.</li>
+</ul>
+</div>
+<h4 id="use-an-existing-key-sequence-task">Use an existing key sequence task</h4>
+<p>If selected, a key sequence task can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a key sequence is in progress, do not interact with Royal TS or any other application after you connect. The status bar message indicates when a key sequence is in progress and when it has finished.</p>
+</div>
+<h4 id="specify-a-key-sequence-task-name">Specify a key sequence task name</h4>
+<p>When selected, enter or choose a key sequence task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+<h2 id="-window-mode"><img src="/r2023/images/RoyalTS/Application/SVG_PageWindowMode_32.svg#img_header" alt=""> Window Mode</h2>
+<p>The <strong>Window Mode</strong> page allows you to control where the connection should open. Most connection types support <strong>Main Window (Embedded)</strong> mode and <strong>External Window</strong> mode. Remote Desktop connections, for example, additionally support <strong>External Window (Full Screen)</strong> mode.</p>
+<h4 id="open-connection-in">Open connection in</h4>
+<ul>
+<li><strong>Main Window (Embedded)</strong><br>
+When selected, the connection will be embedded in the main window.</li>
+<li><strong>External Window</strong>
+When selected, the connection will open in an external window.</li>
+<li><strong>External Window (Full Screen)</strong><br>
+When selected, the connection will open in an external window in full screen mode (no window title bar and borders).</li>
+</ul>
+<h4 id="use-multiple-monitors">Use Multiple Monitors</h4>
+<p>If checked, the connection will use all monitors if connected in Full Screen mode or if the connection is changed to use Full Screen mode while connected.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for connections supporting full screen and multiple monitors (like Remote Desktop).</p>
+</div>
+<h4 id="dont-show-the-connection-bar">Don't show the connection bar</h4>
+<p>If checked, the connection bar will not be shown in full screen mode.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for Remote Desktop connections. To display the connection bar, use the Ctrl + Alt + Home keyboard shortcut.</p>
+</div>
+<h3 id="external-window-settings">External Window Settings</h3>
+<p>The following settings can be configured when the window mode configuration is set to external window.</p>
+<h4 id="screen">Screen</h4>
+<ul>
+<li><strong>Remember Screen</strong><br>
+Royal TS remembers which screen the connection was on after you've disconnected the connection and tries to open the external connection window on the same screen the next time you connect.</li>
+<li><strong>Screen 1 ... 9</strong><br>
+Choose on which screen you want the external connection to be opened.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Setting the <strong>Screen</strong> configuration to a screen which is currently not available on your computer will be ignored as long as the screen is not available. A common scenario for this is, working with the same file on a laptop computer with only one screen and a workstation with multiple screens connected. Setting connections to open on the Screen 3 will open on the main display on your laptop while the same connection will open on your workstation on <strong>Screen 3</strong>.</p>
+</div>
+<h4 id="position">Position</h4>
+<ul>
+<li><strong>Remember Position</strong><br>
+Royal TS will remember the last window position after you've disconnected the connection and tries to open the external connection window at the same position the next time you connect.</li>
+<li><strong>Custom Left and Top</strong><br>
+Specify the left and top coordinates (in pixels) where the external connection window should be positioned.</li>
+</ul>
+<h4 id="size">Size</h4>
+<ul>
+<li><strong>Remember Size</strong><br>
+Royal TS will remember the last window size after you've disconnected the connection and tries to open the external connection window with the same size the next time you connect.</li>
+<li><strong>Custom Width and Height</strong><br>
+Specify the width and height (in pixels) of the external connection window.</li>
+<li><strong>Maximize</strong><br>
+The external connection window will be maximized.</li>
+<li><strong>Preferred Size</strong><br>
+The external connection window will use the sized configured in the connection. This setting will only be effective for connection types supporting a custom client size (for example the <strong>Desktop Size</strong> in the <a class="xref" href="rdp.html#-display-options">Display Options of a Remote Desktop Connection</a>). If a connection type doesn't support a custom client size the setting will be ignored and the external window will be maximized.</li>
+</ul>
+<h4 id="minimize-main-window">Minimize Main Window</h4>
+<p>When checked, Royal TS will minimize the main window after the connection was established.</p>
+<h4 id="open-display-properties">Open Display Properties</h4>
+<p>Opens the display properties control panel. With the control panel you can identify your screens.</p>
+<h2 id="-dashboard"><img src="/r2023/images/RoyalTS/Application/SVG_PageDashboard_32.svg#img_header" alt=""> Dashboard</h2>
+<p>The <strong>Dashboard</strong> page allows you to setup the default dashboard behavior for this connection. Dashboards are updated when a selection has changed. By default, the dashboard tab is shown and activated for inactive connections.</p>
+<h4 id="use-the-plugin-default-settings">Use the plugin default settings</h4>
+<p>If selected, Royal TS will use the plugin default settings for the dashboard. You can change the plugin default settings by clicking on the <strong>Settings...</strong> button. Changes to the plugin default settings will affect all connections using the same plugin and the default settings. See also: Plugins</p>
+<h4 id="use-connection-specific-settings">Use connection specific settings</h4>
+<p>If selected, Royal TS allows you to configure the dashboard settings for the connection.</p>
+<h2 id="-secure-gateway"><img src="/r2023/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header" alt=""> Secure Gateway</h2>
+<p>The <strong>Secure Gateway</strong> page allows you to configure a Secure Gateway object for supported connections or choose to use a Secure Gateway configuration from the parent folder.</p>
+<h4 id="use-secure-gateway-from-the-parent-folder">Use Secure Gateway from the parent folder</h4>
+<p>If checked, Royal TS will look for a configured Secure Gateway in the parent folder. This option is not available on the document level.</p>
+<h4 id="gateway-usage">Gateway Usage</h4>
+<ul>
+<li><strong>Never</strong><br>
+The Secure Gateway is never used and Royal TS will directly connect to the remote computer.</li>
+<li><strong>Always</strong><br>
+The Secure Gateway is always used and Royal TS will tunnel all communication to the remote computer through the gateway.</li>
+<li><strong>On Demand</strong><br>
+The Secure Gateway will be used if the target machine cannot be reached directly.</li>
+</ul>
+<h4 id="direct-connect-no-secure-gateway">Direct Connect (No Secure Gateway)</h4>
+<p>This is the default value. If selected, no Secure Gateway is used and Royal TS will directly connect to the remote computer.</p>
+<h4 id="specify-a-secure-gateway-object">Specify a Secure Gateway object</h4>
+<p>The selected Secure Gateway object is used for supported connections.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Secure Gateway is a component included in Royal Server and can be used to connect through an SSH tunnel (port forwarding).</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
+<p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h2 id="-active-plugin"><img src="/r2023/images/RoyalTS/Application/SVG_ApplicationPlugins_32.svg#img_header" alt=""> Active Plugin</h2>
+<p>The <strong>Active Plugin</strong> page allows you to setup which plugin should be used for this connection.</p>
+<h4 id="use-application-default-setting">Use Application Default Setting</h4>
+<p>If checked, the application default plugin is used for this connection. Clear the check box to configure a specific plugin for this connection.</p>
+<p>Click on <strong>Open Plugin Management</strong> to change the default plugin for this connection type.</p>
+<h4 id="active-plugin">Active Plugin</h4>
+<p>Select the plugin which should be used for this connection.</p>
+<h4 id="information">Information</h4>
+<p>Click on the information button to open the selected plugin information page.</p>
+<h4 id="settings">Settings</h4>
+<p>Click on the settings button to open the selected plugin settings page.</p>
+<h4 id="open-plugin-management">Open Plugin Management</h4>
+<p>Click to open the Plugin management dialog.</p>
+<p>See also: <a class="xref" href="../../getting-started/plugins.html">Plugins</a></p>
+<h2 id="-advanced"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageAdvanced_32.svg#img_header" alt=""> Advanced</h2>
+<p>The <strong>Advanced</strong> page allows you to configure advanced Terminal settings.</p>
+<h3 id="general">General</h3>
+<h4 id="encoding">Encoding</h4>
+<p>Select one of the supported encoding settings.</p>
+<h4 id="e-response">^E Response</h4>
+<p>Configure how PuTTY should answer back to the ^E sequence.</p>
+<h4 id="local-echo">Local Echo</h4>
+<p>Specify the local echo discipline.</p>
+<h4 id="local-line-editing">Local Line Editing</h4>
+<p>Specify the line editing discipline.</p>
+<h4 id="auto-wrap">Auto Wrap</h4>
+<p>Specify whether or not to turn on auto wrap mode for the connection.</p>
+<h4 id="dec-origin-mode">DEC Origin Mode</h4>
+<p>Specify whether or not to turn on DEC origin mode for the connection.</p>
+<h4 id="implicit-cr-in-lf">Implicit CR in LF</h4>
+<p>If checked, the PuTTY connection implies a carriage return in every received linefeed.</p>
+<h4 id="implicit-lf-in-cr">Implicit LF in CR</h4>
+<p>If checked, the PuTTY connection implies a linefeed in every received carriage return.</p>
+<h4 id="force-non-destructive-backspace">Force Non-Destructive Backspace</h4>
+<p>If checked, PuTTY will treat incoming destructive backspace characters (7F) as non-destructive backspace characters (08).</p>
+<h4 id="terminal-speeds">Terminal Speeds</h4>
+<p>Set the speeds for the data connection.</p>
+<h4 id="printer">Printer</h4>
+<p>Select a printer to select ANSI printer output for remote-controlled printing.</p>
+<h3 id="bell">Bell</h3>
+<h4 id="bell-action">Bell Action</h4>
+<p>Action to happen when a bell occurs.</p>
+<h4 id="sound-file">Sound File</h4>
+<p>Specify a custom sound file (.wav file) to play as a bell.</p>
+<h4 id="taskbar-indicator">Taskbar Indicator</h4>
+<p>Taskbar caption indicator on bell.</p>
+<h4 id="bell-overload-temporary">Bell Overload (Temporary)</h4>
+<p>Temporarily disable bell when over-used.</p>
+<h4 id="number-of-bells">Number of Bells</h4>
+<p>Specify the number of bells threshold used to determine bell over-use.</p>
+<h4 id="bell-overload-timespan">Bell Overload Timespan</h4>
+<p>Specify the number of seconds for the over-use threshold.</p>
+<h4 id="seconds-of-silence">Seconds of Silence</h4>
+<p>Specify the number of seconds silence is needed to re-enable the bell after it was temporarily disabled.</p>
+<h3 id="features">Features</h3>
+<h4 id="remote-window-title-query">Remote Window Title Query</h4>
+<p>PuTTY can optionally provide the xterm service of allowing server applications to find out the local window title. This feature is disabled by default, but you can turn it on if you really want it.</p>
+<h4 id="disable-remote-controlled-terminal-resizing">Disable Remote-Controlled Terminal Resizing</h4>
+<p>If checked, PuTTY will not respond to server commands which may cause terminal resizing.</p>
+<h4 id="disable-remote-controlled-window-title-change">Disable Remote-Controlled Window Title Change</h4>
+<p>If checked, PuTTY will ignore server commands which would update the window title.</p>
+<h4 id="disable-remote-controlled-character-set-configuration">Disable Remote-Controlled Character Set Configuration</h4>
+<p>PuTTY has the ability to change its character set configuration in response to commands from the server. If checked, PuTTY will ignore those server commands.</p>
+<h4 id="disable-switching-to-alternate-terminal-screen">Disable Switching to Alternate Terminal Screen</h4>
+<p>Many terminals, including PuTTY, support an ‘alternate screen’. If checked, the alternate screen is disabled.</p>
+<h4 id="disable-arabic-text-shaping">Disable Arabic Text Shaping</h4>
+<p>If checked, Arabic text shaping is disabled.</p>
+<h4 id="disable-bidirectional-text-display">Disable Bidirectional Text Display</h4>
+<p>If checked, bidirectional text display is disabled.</p>
+<h3 id="connection">Connection</h3>
+<h4 id="logical-name-for-remote-host">Logical Name for Remote Host</h4>
+<p>Enter the logical name for the remote host for SSH key lookup or similar.</p>
+<h4 id="internet-protocol-version">Internet Protocol Version</h4>
+<p>Choose which IP version PuTTY should use.</p>
+<h4 id="keep-alive-interval-sec">Keep Alive Interval (sec.)</h4>
+<p>Interval between sending of null packets to keep the session active. Set to 0 to turn keepalive off.</p>
+<h4 id="disable-nagles-algorithm-tcp_nodelay-option">Disable Nagle's Algorithm (TCP_NODELAY Option)</h4>
+<p>The Nagle algorithm is disabled by default for interactive connections.</p>
+<h4 id="enable-tcp-keepalives-so_keepalive-option">Enable TCP Keepalives (SO_KEEPALIVE Option)</h4>
+<p>TCP keepalives may be more useful for ensuring that half-open connections are terminated than for keeping a connection alive. TCP keepalives are disabled by default.</p>
+<h3 id="translation">Translation</h3>
+<h4 id="line-drawing-handling">Line drawing handling</h4>
+<p>Configure how PuTTY should handle line drawing.</p>
+<h4 id="treal-cjik-ambiguous-characters-as-wide">Treal CJIK Ambiguous Characters as Wide</h4>
+<p>If checked, PUTTY will treat CJIK ambiguous characters as wide.</p>
+<h4 id="caps-lock-acts-as-cyrillic-switch">Caps Lock acts as Cyrillic Switch</h4>
+<p>If checked, PuTTY will treat the Caps Lock key to switch to and back from Cyrillic.</p>
+<h4 id="copy-and-paste-line-drawing-characters-as-lqqqk">Copy and Paste Line Drawing Characters as lqqqk</h4>
+<p>If checked, PuTTY will use lqqqk characters in clipboard operations.</p>
+<h4 id="vt100-line-drawing-even-in-utf-8-mode">VT100 Line Drawing even in UTF-8 Mode</h4>
+<p>If checked, VT100 line drawing is enabled even in UTF-8 mode.</p>
+<h3 id="environment">Environment</h3>
+<p>The Environment tab can be used to set specific variables and values for the connection.</p>
+<h2 id="-ssh-settings"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSSHSettings_32.svg#img_header" alt=""> SSH Settings</h2>
+<p>The <strong>SSH Settings</strong> page allows you to configure settings specific for SSH connections.</p>
+<h3 id="general-1">General</h3>
+<h4 id="use-hostkey">Use Hostkey</h4>
+<p>If checked, PuTTY's hostkey command line option will be set with the value specified in the Fingerprint property.</p>
+<h4 id="fingerprint">Fingerprint</h4>
+<p>Specify an MD5-based host key fingerprint of the form displayed in PuTTY's Event Log and host key dialog box or a base64-encoded blob describing an SSH-2 public key in OpenSSH's one-line public key format. Pre-populating the fingerprint can be helpful when connecting through SSH tunnels, proxy servers or secure gateways.</p>
+<h4 id="ssh-remote-command">SSH Remote Command</h4>
+<p>In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+<h4 id="preferred-protocol-version">Preferred Protocol Version</h4>
+<p>PuTTY will attempt to use protocol 1 if the server you connect to does not offer protocol 2, and vice versa.<br>
+If you select ‘1 only’ or ‘2 only’ here, PuTTY will only connect if the server you connect to offers the SSH protocol version you have specified.</p>
+<h4 id="dont-start-a-shell-or-command">Don't Start a Shell or Command</h4>
+<p>If checked, a session is started but without a pseudo-terminal.</p>
+<h4 id="enable-compression">Enable Compression</h4>
+<p>This enables data compression in the SSH connection. This can help make the most of a low-bandwidth connection.</p>
+<h3 id="encryption">Encryption</h3>
+<h4 id="encryption-cipher-policy">Encryption Cipher Policy</h4>
+<p>When you make an SSH connection, PuTTY will search down the list from the top until it finds an algorithm supported by the server, and then use that. If the algorithm PuTTY finds is below the ‘warn below here’ line, you will see a warning box when you make the connection.</p>
+<h4 id="enable-legacy-single-des-ssh-2">Enable Legacy Single-DES (SSH-2)</h4>
+<p>Single-DES is not recommended in the SSH 2 draft protocol standards, but one or two server implementations do support it.</p>
+<h3 id="kex">Kex</h3>
+<h4 id="key-exchange-algorithm-policy">Key Exchange Algorithm Policy</h4>
+<p>PuTTY supports a variety of SSH-2 key exchange methods, and allows you to choose which one you prefer to use. If the first algorithm PuTTY finds is below the ‘warn below here’ line, you will see a warning box when you make the connection.</p>
+<h4 id="max-minutes-before-rekey">Max Minutes before Rekey</h4>
+<p>Configure the timespan between rekey attempts. Set to 0 to disable rekey.</p>
+<h4 id="max-data-before-rekey">Max Data before Rekey</h4>
+<p>Use 1M for 1 megabyte, 1G for 1 gigabyte, etc.</p>
+<h3 id="auth">Auth</h3>
+<h4 id="bypass-authentication-ssh-2">Bypass Authentication (SSH-2)</h4>
+<p>In SSH-2, it is possible to establish a connection without using SSH's mechanisms to identify or authenticate oneself to the server.</p>
+<h4 id="display-pre-authentication-banner-ssh-2">Display Pre-Authentication Banner (SSH-2)</h4>
+<p>SSH-2 servers can provide a message for clients to display to the prospective user before the user logs in.</p>
+<h4 id="attempt-authentication-using-pageant">Attempt Authentication using Pageant</h4>
+<p>If this option is enabled, then PuTTY will look for Pageant (the SSH private-key storage agent) and attempt to authenticate with any suitable public keys Pageant currently holds.</p>
+<h4 id="attempt-tis-or-cryptocard-authentication-ssh-1">Attempt TIS or CryptoCard Authentication (SSH-1)</h4>
+<p>TIS and CryptoCard authentication are (despite their names) generic forms of simple challenge/response authentication available in SSH protocol version 1 only.</p>
+<h4 id="attempt-keyboard-interactive-authentication-ssh-2">Attempt Keyboard-Interactive Authentication (SSH-2)</h4>
+<p>The SSH-2 equivalent of TIS authentication is called ‘keyboard-interactive’.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You may need to enable this option when your servers requires multi-factor authentication (MFA).</p>
+</div>
+<h4 id="allow-agent-forwarding">Allow Agent Forwarding</h4>
+<p>This option allows the SSH server to open forwarded connections back to your local copy of Pageant. If you are not running Pageant, this option will do nothing.</p>
+<h4 id="allow-attempted-changes-of-username-ssh-2">Allow attempted Changes of Username (SSH-2)</h4>
+<p>The SSH-2 protocol does allow changes of username, in principle, but does not make it mandatory for SSH-2 servers to accept them. If you know your server can cope with it, you can enable this option.</p>
+<h3 id="gssapi">GSSAPI</h3>
+<h4 id="attempt-gssapi-authentication-ssh-2">Attempt GSSAPI Authentication (SSH-2)</h4>
+<p>If it is enabled, GSSAPI authentication will be attempted, and (typically) if your client machine has valid Kerberos credentials loaded, then PuTTY should be able to authenticate automatically to servers that support Kerberos logins.</p>
+<h4 id="allow-gssapi-credential-delegation">Allow GSSAPI Credential Delegation</h4>
+<p>If you enable this option, then not only will PuTTY be able to log in automatically to a server that accepts your Kerberos credentials, but also you will be able to connect out from that server to other Kerberos-supporting services and use the same credentials just as automatically.</p>
+<h4 id="gssapi-library-order">GSSAPI Library Order</h4>
+<p>Configure the preferred order of GSSAPI libraries.</p>
+<h4 id="user-supplied-gssapi-library">User-Supplied GSSAPI Library</h4>
+<p>Specify a custom GSSAPI library (DLL).</p>
+<h3 id="tty">TTY</h3>
+<h4 id="dont-allocate-a-pseudo-terminal">Don't Allocate a Pseudo Terminal</h4>
+<p>Occasionally you might find you have a need to run a session not in a pseudo-terminal.</p>
+<h3 id="x11">X11</h3>
+<h4 id="enable-x11-forwarding">Enable X11 Forwarding</h4>
+<p>Check to enable X11 forwarding for this connection.</p>
+<h4 id="x-display-location">X Display Location</h4>
+<p>The ‘X display location’ box is blank by default, which means that PuTTY will try to use a sensible default such as :0, which is the usual display location where your X server will be installed.</p>
+<h4 id="x11-authentication-protocol">X11 Authentication Protocol</h4>
+<p>Configure the X11 authentication protocol.</p>
+<h4 id="x-authority-file-for-local-display">X Authority File for Local Display</h4>
+<p>Specify a X authentication file for the local display.</p>
+<h2 id="-input"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageInput_32.svg#img_header" alt=""> Input</h2>
+<p>The <strong>Input</strong> page allows you to configure keyboard behavior in the remote session.</p>
+<h3 id="keyboard">Keyboard</h3>
+<h4 id="terminal-name">Terminal Name</h4>
+<p>Default is xterm. Allows you to set a custom terminal name.</p>
+<h4 id="function-key-mode">Function Key Mode</h4>
+<p>Specify how to encode function keys such as F1-F20, INS, Del, Home, etc.</p>
+<h4 id="backspace-sequence">Backspace Sequence</h4>
+<p>Specify the backspace key sequence 0x08 (^H) or 0x7F (^?).</p>
+<h4 id="home-and-end-key">Home and End Key</h4>
+<p>Specify the behavior of the Home and End keys.</p>
+<h4 id="cursor-key-mode">Cursor Key Mode</h4>
+<p>Specify the initial cursor key mode Normal or Application.</p>
+<h4 id="ignore-remote-cursor-key-mode">Ignore Remote Cursor Key Mode</h4>
+<p>If checked, PuTTY will ignore cursor key mode changes requested by the remote server.</p>
+<h4 id="numeric-keypad">Numeric Keypad</h4>
+<p>Specify the numeric keyboard mode.</p>
+<h4 id="disable-application-keypad-mode">Disable Application Keypad Mode</h4>
+<p>If checked, PuTTY will ignore keypad mode changes from the application on the server.</p>
+<h4 id="use-altgr-as-compose-key">Use AltGr as Compose Key</h4>
+<p>DEC terminals have a Compose key, which provides an easy-to-remember way of typing accented characters. If checked, AltGr acts as compose key.</p>
+<h4 id="control-alt-is-different-from-altgr">Control-Alt is Different from AltGr</h4>
+<p>If checked, the key combination Ctrl + Left Alt is treated the same way as the AltGr key.</p>
+<h3 id="mouse">Mouse</h3>
+<h4 id="mouse-button-mode">Mouse Button Mode</h4>
+<p>Choose Compromise for right-click paste and middle-click extend. Windows for middle-click extends and right-click brings up the context menu. xtermn for right-click extend and middle click paste.</p>
+<h4 id="selection-mode">Selection Mode</h4>
+<p>Specify the initial selection mode.</p>
+<h4 id="shift-overrides-applications-use-of-mouse">Shift Overrides Applications use of Mouse</h4>
+<p>If checked, the terminal screen reverts to the last entries when you press a key.</p>
+<h4 id="disable-xterm-style-mouse-reporting">Disable xterm-Style Mouse Reporting</h4>
+<p>When checked, the mouse will always do copy and paste in the normal way.</p>
+<h3 id="clipboard">Clipboard</h3>
+<p>Auto-copy selected text to system clipboard
+If checked, PuTTY will automatically copy the selected text to the system clipboard.</p>
+<h4 id="mouse-paste-action">Mouse paste action</h4>
+<p>Select the mouse paste action performed by PuTTY.</p>
+<h4 id="ctrlshift--ins">{Ctrl,Shift} + Ins</h4>
+<p>Select the action performed by PuTTY when pressing Ctrl, Shift and Insert.</p>
+<h4 id="ctrl--shift--cv">Ctrl + Shift + {C,V}</h4>
+<p>Select the action performed by PuTTY when pressing Ctrl, Shift and C or V key.</p>
+<h4 id="permit-control-characters-in-pasted-text">Permit control characters in pasted te&amp;xt</h4>
+<p>If checked, PuTTY allows you to paste text with control characters.</p>
+<h4 id="paste-to-clipboard-in-rtf-as-well-as-plain-text">Paste to Clipboard in RTF as well as Plain Text</h4>
+<p>If checked, PuTTY will write formatting information to the clipboard as well as the actual text you copy.</p>
+<h3 id="scrollback">Scrollback</h3>
+<h4 id="scrollback-lines">Scrollback Lines</h4>
+<p>Specify the number of lines kept in the scrollback buffer.</p>
+<h3 id="telnet">Telnet</h3>
+<h4 id="telnet-old_environ-ambiguity">Telnet OLD_ENVIRON Ambiguity</h4>
+<p>This setting allows you to choose whether PuTTY claims to be BSD or RFC-compliant (OLD_ENVIRON/NEW_ENVIRON).</p>
+<h4 id="telnet-negotiation-mode">Telnet Negotiation Mode</h4>
+<p>In active mode, PuTTY starts to send negotiations as soon as the connection is opened. In passive mode, PuTTY will wait to negotiate until it sees a negotiation from the server.</p>
+<h4 id="telnet-keyboard-sends-special-commands">Telnet Keyboard sends Special Commands</h4>
+<p>If this box is checked, the Backspace key on the keyboard will send the Telnet special backspace code, and Control-C will send the Telnet special interrupt code.</p>
+<h4 id="telnet-return-key-sends-new-line-instead-of-m">Telnet Return Key sends New Line (instead of ^M)</h4>
+<p>If checked, PuTTY sends Control-M instead of the Telnet New Line code when you press Return.</p>
+<h2 id="-tunnels"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageTunnels_32.svg#img_header" alt=""> Tunnels</h2>
+<p>The <strong>Tunnels</strong> page allows you to configure SSH port forwarding (tunneling).</p>
+<h4 id="local-ports-accept-connections-from-other-hosts">Local Ports accept Connections from other Hosts</h4>
+<p>If checked, it allows you to set up local-to-remote port forwarding in such a way that machines other than your client PC can connect to the forwarded port (this also applies to dynamic SOCKS forwarding).</p>
+<h4 id="remote-ports-accept-connections-from-other-hosts">Remote Ports accept Connections from other Hosts</h4>
+<p>If checked, machines other than the SSH server machine can connect to the forwarded port.</p>
+<h4 id="source-port">Source Port</h4>
+<p>Set the source port.</p>
+<h4 id="destination">Destination</h4>
+<p>Set the destination.</p>
+<h2 id="-serial-port"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageSerial_32.svg#img_header" alt=""> Serial Port</h2>
+<p>The <strong>Serial Port</strong> page allows you to configure the port settings to connect to devices using RS232.</p>
+<h4 id="port-name">Port Name</h4>
+<p>Set the port for communications.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The Port Name must begin with COM.</p>
+</div>
+<h4 id="handshake">Handshake</h4>
+<p>Set the handshaking protocol for serial port transmission of data.</p>
+<h4 id="baud-rate">Baud Rate</h4>
+<p>Set the speed of the serial port communication.</p>
+<h4 id="data-bits">Data Bits</h4>
+<p>Set the standard length of data bits per byte.</p>
+<h4 id="stop-bits">Stop Bits</h4>
+<p>Set the standard number of stop bits per byte.</p>
+<h4 id="parity">Parity</h4>
+<p>Set the parity checking protocol.</p>
+<h2 id="-proxy-settings"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageProxy_32.svg#img_header" alt=""> Proxy Settings</h2>
+<p>The <strong>Proxy Settings</strong> page allows you to configure a proxy server used to connect to the remote server.</p>
+<h3 id="general-2">General</h3>
+<h4 id="proxy-mode">Proxy Mode</h4>
+<ul>
+<li>No proxy (direct connect): (No proxy server will be used to connect to the remote server)</li>
+<li>Socks 4</li>
+<li>Socks 4a</li>
+<li>Socks 5</li>
+<li>HTTP Connect</li>
+<li>Telnet</li>
+<li>Local</li>
+</ul>
+<h4 id="proxy-server">Proxy Server</h4>
+<p>Specify the proxy server name (FQDN) or IP address to use.</p>
+<h4 id="port-1">Port</h4>
+<p>Specify the proxy server port to use.</p>
+<h3 id="credential-mode">Credential Mode</h3>
+<h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
+<p>When selected, no credentials are configured for the object. Connections that require credentials may prompt to enter credentials or fail to connect.</p>
+<h4 id="use-credentials-from-the-parent-folder-not-always-available">Use credentials from the parent folder <em>(not always available)</em></h4>
+<p>When selected, Royal TS will look for a configured credential in the parent folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Not available for Royal Server objects, Secure Gateway objects, Remote Desktop Gateway objects and Key Sequence Tasks</p>
+</div>
+<h4 id="use-from-this-connection-not-always-available">Use from this connection <em>(not always available)</em></h4>
+<p>When selected, the username and password is used from the context connection object.</p>
+<h4 id="specify-username-and-password">Specify username and password</h4>
+<p>When selected, a username and password can be provided. For domain accounts use the syntax &quot;domain\username&quot; (without the quotes).</p>
+<h4 id="use-an-existing-credential">Use an existing credential</h4>
+<p>When selected, assign an existing credential to the object using the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the correct credential.</p>
+</div>
+<h4 id="specify-a-credential-name">Specify a credential name</h4>
+<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.<br>
+If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal TS will prompt for credentials by showing the credential picker dialog.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
+</div>
+<h3 id="advanced">Advanced</h3>
+<h4 id="exclude-hostips">Exclude Host/IPs</h4>
+<p>Enter a comma seperated list of hosts or IPs. You may also use wildcards like: <em>192.168.88.*, *.example.com</em></p>
+<h4 id="consider-proxying-local-host-connections">Consider Proxying Local Host Connections</h4>
+<p>Connections to the local host (the host name localhost, and any loopback IP address) are never proxied. You can change that by enabling this option.</p>
+<h4 id="dns-lookup-at-proxy-end">DNS Lookup at Proxy End</h4>
+<ul>
+<li>No: PuTTY will do DNS resolution.</li>
+<li>Auto: PuTTY will resolve depending on the proxy mode.</li>
+<li>Yes: PuTTY will always pass host names to the proxy.</li>
+</ul>
+<h4 id="telnet-or-local-proxy-command">Telnet or Local Proxy Command:</h4>
+<p>You can use a command such as: <em>%user\n%pass\nconnect %host %port\n</em></p>
+<h2 id="-logging"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageLogging_32.svg#img_header" alt=""> Logging</h2>
+<p>The <strong>Logging</strong> page allows you to configure session logging. Log files can be viewed using the Dashboard.</p>
+<h3 id="general-logging-options">General Logging Options</h3>
+<h4 id="session-logging">Session Logging</h4>
+<p>Choose which type of information should be logged during a session.</p>
+<h4 id="omit-known-password-fields">Omit Known Password Fields</h4>
+<p>If checked, the content of known password fields is not logged. Applies only to SSH packet logging.</p>
+<h4 id="omit-session-data">Omit Session Data</h4>
+<p>If checked, no session data is logged. Applies only to SSH packet logging.</p>
+<h3 id="log-file-options">Log File Options</h3>
+<h4 id="log-file-name">Log File Name</h4>
+<p>The log file name can contain &amp;Y, &amp;M, &amp;D for date, &amp;T for time, and &amp;H for host name. If you leave the log file name blank, Royal TS will generate a file name based on the connection name and the time stamp. <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+<h4 id="path">Path</h4>
+<p>Specify a path where all the log files are saved. Each log file will be named automatically based on the connection name and the time stamp.</p>
+<h4 id="open-in-explorer">Open in Explorer</h4>
+<p>Click to open the specified folder in the Windows Explorer.</p>
+<h4 id="create-sub-directory-with-connection-name">Create Sub-Directory with Connection Name</h4>
+<p>If checked, Royal TS will create a directory with the connection name and write the recording files into it.</p>
+<h4 id="log-file-options-1">Log File Options</h4>
+<p>Configure what to do if the log file already exists.</p>
+<h4 id="flush-log-file-frequently">Flush Log File Frequently</h4>
+<p>If checked, PuTTY will flush data as soon as it is displayed, so that if you view the log file while a session is still open, it will be up to date; and if the client system crashes, there's a greater chance that the data will be preserved. If PuTTY is running slowly with logging enabled, you could try unchecking this option.</p>
+<h2 id="-notes"><img src="/r2023/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
+<p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
+<h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
+<p>When selected, Royal TS will display the notes from the parent folder in the notes panel. This option is not available on the document level.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To embed images, drag them into the editor using drag &amp; drop.</p>
+</div>
+<h2 id="-custom-properties"><img src="/r2023/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header" alt=""> Custom Properties</h2>
+<p>The <strong>Custom Properties</strong> page allows you to enter and store additional information for the object. Various data formats are available, including protected fields. You can also group properties by using Header.</p>
+<h4 id="inherit-from-parent">Inherit from Parent</h4>
+<p>When checked, the properties configured on the parent folder are shown but are read-only.</p>
+<h4 id="custom-properties">Custom Properties</h4>
+<p>Use the '+' icon to add a header or a Field or multiple fields based on a template. Click on the label to name the field and enter a value. Click the 'Gear' icon to remove a field or header. The 'Gear' icon also shows additional options, like moving a field up or down.</p>
+<h2 id="-custom-fields"><img src="/r2023/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Fields</h2>
+<p>The <strong>Custom Fields</strong> page allows you to enter and store additional information for the object. Custom fields can be used in tasks and templates to inject values from the context connection.</p>
+<p>Standard custom fields are also shown in the folder dashboard views and in the properties panel. Protected custom fields can be used to store confidential data (for example when you need an additional password in a task). If you make use of protected custom fields, make sure you encrypt and password protect your document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Custom fields can be used in Tasks and in the Properties Panel. You can put web page URLs (like an iLO management address) or command lines (such as programs or batch files) in the custom fields and execute them using tasks or directly from the properties panel. Each individual custom field can also be configured to be inherited from the parent folder.</p>
+</div>
+<h2 id="-parent-folder"><img src="/r2023/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header" alt=""> Parent Folder</h2>
+<p>The <strong>Parent Folder</strong> page allows you to view or change the parent folder of the selected object. To move multiple objects to another folder use the parent folder page in bulk-edit mode or use the move to command from the <strong>Edit</strong> tab (see <a class="xref" href="../../tutorials/working-with-connections.html">Working with Connections</a>).</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot create connections in the <strong>Application</strong> document. Moving a folder containing connections to a folder in the <strong>Application</strong> document will fail.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalts/reference/connections/terminal-putty.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

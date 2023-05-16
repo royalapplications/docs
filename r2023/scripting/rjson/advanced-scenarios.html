@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Advanced scenarios </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Advanced scenarios ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-scripting">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="scripting_rjson_advanced-scenarios">
+<h1 id="advanced-scenarios">Advanced scenarios</h1>
+
+<p>While rJSON was designed to be easy to use for regular users as well as developers, we also wanted it to be as powerful as you need it to be. For that reason we decided to expose only a small subset of functionality as first-class properties but also provide a way to drop down one level lower, to our <a href="../objects/index.html">RoyalDocument</a> data model.</p>
+<p>Because dropping down to the RoyalDocument level requires knowledge of our internal data model, it's generally not recommended to go that route unless you really need to access properties that aren't exposed through rJSON.</p>
+<p>The RoyalDocument data model is vastly more complicated to use than rJSON. A good example for demonstrating the complexity is setting up credentials for a connection. While in rJSON, the only thing required to assign a username and password to a connection is to set the two respective properties (<code>Username</code> and <code>Password</code>). In the RoyalDocument data model however five properties are required: First you need to disable inheritance (<code>CredentialFromParent</code>), then you need to set the correct credential mode (<code>CredentialMode</code>), you also need to ensure that autologon is enabled (<code>CredentialAutologon</code>) and finally you assign the username (<code>CredentialUsername</code>) and password (<code>CredentialPassword</code>).</p>
+<p>Of course not everything is that complicated in the RoyalDocument data model but complexity is often hidden and will only become apparent when something doesn't work as expected. Another reason we do not recommend using the RoyalDocument data model is that it can change at any time and we cannot guarantee a stable API.</p>
+<p>So with the disclaimer out of the way, let's look at how you can access the RoyalDocument data model. Here's an example:</p>
+<pre><code class="lang-json">{
+	&quot;Objects&quot;: [
+		{
+			&quot;Type&quot;: &quot;TerminalConnection&quot;,
+			&quot;TerminalConnectionType&quot;: &quot;SSH&quot;,
+			&quot;Name&quot;: &quot;VM01&quot;,
+			&quot;ComputerName&quot;: &quot;vm01&quot;,
+			&quot;Properties&quot;: {
+				&quot;EnableLoggingOSX&quot;: true,
+				&quot;LogDirectoryOSX&quot;: &quot;~/vm01-logs&quot;,
+				&quot;RecorderOutputPath&quot;: &quot;%USERPROFILE%\\vm01-logs&quot;,
+				&quot;RecordStartOnConnect&quot;: true,
+				&quot;PuttyLogging&quot;: 1
+			}
+		}
+	]
+}
+</code></pre>
+<p>In this example we configure an SSH connection using rJSON and then start dropping down into the RoyalDocument layer starting at line 8. The <a href="available-properties/royaljsonobject.html#properties"><code>Properties</code></a> key is used to specify that we intend to set some RoyalDocument properties. Line 9 and 10 are Royal TSX (for macOS) specific and enable logging for the SSH connection and configure the logging directory respectively. Line 11-13 basically do the same for Royal TS (for Windows).
+The result of this example is a single SSH connection which is properly configured for logging on both macOS and Windows.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/scripting/rjson/advanced-scenarios.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

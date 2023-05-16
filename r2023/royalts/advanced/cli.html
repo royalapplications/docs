@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Command Line </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Command Line ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_advanced_cli">
+<h1 id="command-line">Command Line</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Royal TS ships with a command line interface (CLI) which allows you to execute certain commands through a command prompt or a batch script. To invoke these commands use the <code>rtscli.exe</code> program in the directory where Royal TS has been installed (usually <code>C:\Program Files\Royal TS V6</code>).</p>
+<h2 id="use-cases">Use Cases</h2>
+<p>The CLI can be used to automate common actions. For example, you can write a batch script which opens a document and establishes one or more connections.</p>
+<h2 id="usage">Usage</h2>
+<p>If you run <code>rtscli.exe -h</code> you will see a help screen like this:</p>
+<pre><code class="lang-batch">Royal TS CLI: 6.0.20319
+usage: rtscli &lt;scope&gt; &lt;command&gt; [args] [options]
+Type 'rtscli [scope] [command] -h|--help' for help on a specific scope and/or command.
+
+Available scopes:
+
+  action    Provides the ability to work with connections.
+  document  Provides the ability to work with documents (.rtsz file).
+
+For more information, visit https://royalapps.com/go/help-ts-win-v6-commandline
+</code></pre>
+<h3 id="scopes">Scopes</h3>
+<p>The CLI provides different scopes and each scope provides a different set of commands. The <strong>document</strong> scope, for example, provides commands to open or close documents where the <strong>action</strong> scope provides commands to work with connections.</p>
+<p>To find out which commands are available for a specific scope, simply type <code>rtscli.exe document -h</code>:</p>
+<pre><code class="lang-batch">Royal TS CLI: 6.0.20319
+usage: rtscli document &lt;command&gt; [args] [options]
+Type 'rtscli document &lt;command&gt; -h|--help' for help on a command in this scope.
+
+Provides the ability to work with documents (.rtsz file).
+
+  close  Closes a Royal TS document.
+  open   Opens a Royal TS document.
+
+For more information, visit https://royalapps.com/go/help-ts-win-commandline
+</code></pre>
+<h3 id="commands">Commands</h3>
+<p>As shown above, you can see that the document scope provides two commands at the moment: <strong>open</strong> and <strong>close</strong>. To find out more about a command, you can type <code>rtscli.exe document open -h</code>:</p>
+<pre><code class="lang-batch">usage: rtscli &lt;scope&gt; &lt;command&gt; [args] [options]
+Type 'rtscli [scope] [command] -h|--help' for help on a specific scope and/or command.
+
+
+  -h, --help                 Shows the help for this command.
+  -v, --verbose              Shows additional output for troubleshooting.
+  -s, --silent               Shows no output at all.
+  -b, --background           Prevents the main window from being focused.
+      --create-link          Creates a link instead of executing the command.
+  -f, --file=VALUE           The path to the file to open.
+  -p, --password=VALUE       Optional: The password for the document, in case
+                               it is password protected.
+</code></pre>
+<h3 id="arguments-and-options">Arguments and Options</h3>
+<p>Each command provides a different set of arguments and options. Whether or not an argument is required or optional is shown on the help screen as well. Here's an example for the <code>rtscli.exe action connect -h</code> command:</p>
+<pre><code class="lang-batch">usage: rtscli &lt;scope&gt; &lt;command&gt; [args] [options]
+Type 'rtscli [scope] [command] -h|--help' for help on a specific scope and/or command.
+
+The argument -i|--id and/or -n|--name are required.
+
+  -h, --help                 Shows the help for this command.
+  -v, --verbose              Shows additional output for troubleshooting.
+  -s, --silent               Shows no output at all.
+  -b, --background           Prevents the main window from being focused.
+      --create-link          Creates a link instead of executing the command.
+  -i, --id=VALUE             The unique identifier of the connection to execute
+                               the action for. Note: Can be omitted when a name
+                               is specified.
+  -n, --name=VALUE           The name of the connection to execute the action.
+                               Note: The action will be executed for all
+                               matching connections when no id is specified.
+  -a, --adhoc                Optional: Creates an ad hoc connection and
+                               connects to it.
+      --template-id=VALUE    Optional: The unique identifier of an existing
+                               template which should be used to connect.
+      --credential-id=VALUE  Optional: The unique identifier of an existing
+                               credential which should be overridden to connect.
+      --credential-name=VALUE
+                             Optional: The name of an existing credential which
+                               should be overridden to connect. Note: When the
+                               argument --credential-id is not used and
+                               multiple credentials with the specified name are
+                               found, a prompt to select the correct credential
+                               will appear.
+  -u, --username=VALUE       Optional: The user name which should be overridden
+                               to connect.
+  -p, --password=VALUE       Optional: The password which should be overridden
+                               to connect.
+      --property=VALUE       Optional: Property to override. Can be used
+                               multiple times to set multiple properties. For
+                               example: --property=&quot;AutoRefresh&quot;:&quot;True&quot; --
+                               property=&quot;AutoRefreshIntervalInSeconds&quot;:&quot;5&quot;
+</code></pre>
+<p>This command requires either the --id argument or the --name argument to work. All the other arguments are optional.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/advanced/cli.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

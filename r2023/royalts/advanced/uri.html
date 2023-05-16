@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>URI Scheme </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="URI Scheme ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_advanced_uri">
+<h1 id="uri-scheme">URI Scheme</h1>
+
+<h2 id="cli-commands">CLI Commands</h2>
+<p>Royal TS allows you to execute any <a class="xref" href="cli.html">CLI command</a> using the uri scheme <code>rtscli://</code>. Here's an example:</p>
+<ul>
+<li>Connect to a connection with the name <code>QNAP (SSH)</code> using the cli:
+<pre><code class="lang-batch">rtscli.exe action connect -n &quot;QNAP (SSH)&quot;
+</code></pre>
+</li>
+<li>The same command using an URI:
+<pre><code class="lang-batch">rtscli://local/action/connect?-n=QNAP+(SSH)
+</code></pre>
+</li>
+</ul>
+<h3 id="create-link">Create Link</h3>
+<p>Every CLI command provides an option <code>--create-link</code> which allows you to convert the current CLI command in a URI command:</p>
+<pre><code class="lang-batch">rtscli.exe action connect -n &quot;QNAP (SSH)&quot; --create-link
+</code></pre>
+<p>In this case, the command will not be executed, instead the <code>rtscli://local/action/connect?-n=QNAP+(SSH)</code> URI command will be printed out.</p>
+<h2 id="legacy-uri-scheme">Legacy URI Scheme</h2>
+<p>Royal TS V6 can still be invoked using the legacy URI scheme with the following syntax:</p>
+<pre><code class="lang-batch">rtsx://&lt;protocol-identifier&gt;%3a%2f%2f[username:password@]&lt;uri&gt;
+  ?action=&lt;connect|disconnect&gt;
+  &amp;using=&lt;uri|name|id|adhoc&gt;
+  &amp;username=&lt;username&gt;
+  &amp;password=&lt;password&gt;
+  &amp;credential=&lt;name&gt;
+  &amp;property_&lt;name&gt;=value
+  &amp;donotactivate=&lt;true&gt;
+</code></pre>
+<h3 id="protocol-identifier">Protocol Identifier</h3>
+<p>Specify the protocol identifier or an alias for the connection type you want to connect to. A list of available protocol identifiers can be found <a href="https://www.royalapplications.com/go/kb-ts-win-protocolhandlers">here</a>.</p>
+<p><strong>This parameter is required.</strong></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The protocol-identifier must be terminated with the URL encoded :// characters (%3a%2f%2f). Make sure that special characters in the credential name or URI must be URL encoded as well.</p>
+</div>
+<h3 id="username-and-password">Username and Password</h3>
+<p>If both, username and password is specified, Royal TS will use these credentials to connect. If only the username is specified, Royal TS will use the username to find a credential with the specified name.</p>
+<h3 id="uri">URI</h3>
+<p>Depending on the using parameter, provide one of the following as URI:</p>
+<ul>
+<li>using=uri: computer name or ip address</li>
+<li>using=name: object name</li>
+<li>using=id: the ID (Guid) of the object</li>
+<li>using=adhoc: the computer name or ip address</li>
+</ul>
+<p><strong>This parameter is required.</strong></p>
+<h3 id="action">Action</h3>
+<p>Action to execute (default is connect): connect or disconnect.</p>
+<h3 id="using">Using</h3>
+<p>Search for existing object by uri, name, id or create a new ad hoc connection. The default value if not specified is <em>adhoc</em>.</p>
+<h3 id="username">Username</h3>
+<p>Provide a user name.</p>
+<h3 id="password">Password</h3>
+<p>Provide a password.</p>
+<h3 id="property_">Property_<name></name></h3>
+<p>Provide one or more property values.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This parameter is optional and can only be used for using=adhoc connections. For detailed information about properties and their values, visit Object Properties chapter in the scripting reference</p>
+</div>
+<h3 id="donotactivate">DoNotActivate</h3>
+<p>Main window will not be activated.</p>
+<h3 id="examples">Examples</h3>
+<pre><code class="lang-batch">rtsx://rdp%3a%2f%2f192.168.5.16?using=uri
+</code></pre>
+<p>Connects to the remote desktop connection with the computer name 192.168.5.16.</p>
+<pre><code class="lang-batch">rtsx://rdp%3a%2f%2fadmin@192.168.5.16
+</code></pre>
+<p>Connects to an ad hoc remote desktop connection to 192.168.5.16 using the credential with the name admin.</p>
+<pre><code class="lang-batch">rtsx://rdp%3a%2f%2fadmin@Web%20Server%201?using=name
+</code></pre>
+<p>Connects to an existing remote desktop connection named &quot;Web Server 1&quot; (without the quotes) using the credential with the name admin.</p>
+<pre><code class="lang-batch">rtsx://rdp%3a%2f%2fWeb%20Server%201?using=name&amp;action=disconnect
+</code></pre>
+<p>Disconnects the remote desktop connection named &quot;Web Server 1&quot; (without the quotes).</p>
+<pre><code class="lang-batch">rtsx://filetransfer%3a%2f%2f3c74baad-8303-47cd-a2d5-7dc40975acdc?using=id
+</code></pre>
+<p>Connects to the file transfer connection with the specified id.</p>
+<pre><code class="lang-batch">rtsx://rdp%3a%2f%2f192.168.5.16?using=adhoc&amp;action=connect&amp;property_Description=Connected%20using%20URI&amp;property_ColorDepth=8
+</code></pre>
+<p>Connects to an ad hoc remote desktop connection with the computer name 192.168.5.16 and sets the property Description to &quot;Connected using URI&quot; and the property ColorDepth to 8 bit.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalts/advanced/uri.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

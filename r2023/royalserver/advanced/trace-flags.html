@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Trace Flags </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Trace Flags ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalserver_advanced_traceflags">
+<h1 id="trace-flags">Trace Flags</h1>
+
+<p>Royal Server is using Trace Flags to fine tune its behavior. These are settings that can be tweaked that are too low-level to be integrated in the user interface. Most of the time they will be tweaked when you open a ticket and our support team needs more information on whats going on.</p>
+<p>Trace Flags can be enabled in the application configuration file (<code>RoyalServer.exe.config</code>):</p>
+<pre><code class="lang-xml"> &lt;appSettings&gt;
+     ...
+     &lt;add key=&quot;TraceFlag_1&quot; value=&quot;true&quot;/&gt;
+     &lt;add key=&quot;TraceFlag_2&quot; value=&quot;true&quot;/&gt;
+     ...
+ &lt;/appSettings&gt;
+</code></pre>
+<p>Add the Trace Flag to the appSettings and set the value to &quot;true&quot; (&quot;false&quot; is default, any other value will be ignored)</p>
+<h2 id="list-of-supported-trace-flags">List of supported Trace Flags</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRACEFLAG_POPULATE_PERFCOUNTER</td>
+<td>Populate Royal Server Performance Counters</td>
+</tr>
+<tr>
+<td>TRACEFLAG_LOG_PERFORMANCE_VALUES</td>
+<td>Log Royal Server Performance Values</td>
+</tr>
+<tr>
+<td>TRACEFLAG_LOG_REQUEST_BEGIN_END</td>
+<td>Log start- and end-time for each request</td>
+</tr>
+<tr>
+<td>TRACEFLAG_DISABLE_INTERNAL_PERFORMANCE_MONITORING</td>
+<td>Disable Royal Server monitoring its own performance (Note: graphs on the Health won't work and the <code>TRACEFLAG_LOG_PERFORMANCE_VALUES</code> won't have accurate numbers</td>
+</tr>
+<tr>
+<td>TRACEFLAG_IS_MEMBER_OF_DEBUGLOG</td>
+<td>Enables detailed log information for group membership resolutions</td>
+</tr>
+<tr>
+<td>TRACEFLAG_REBEX_DETAIL_LOG</td>
+<td>Enables detailed log information for Secure Gateway connections</td>
+</tr>
+<tr>
+<td>TRACEFLAG_VALIDATE_CREDENTIALS</td>
+<td>Uses a different way to authenticate Windows users ValidateCredentials() instead of Logon()</td>
+</tr>
+<tr>
+<td>TRACEFLAG_USE_NETWORK_AS_LOGON_TYPE</td>
+<td>Use Network as Logon Type</td>
+</tr>
+<tr>
+<td>TRACEFLAG_NON_ZERO_INITIAL_WINDOW_SIZE</td>
+<td>Secure Gateway (SSH) setting necessary in some environments</td>
+</tr>
+<tr>
+<td>TRACEFLAG_ACCOUNT_CACHE_DETAIL_LOG</td>
+<td>Detailed account cache logging</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Not all Trace Flags are available in all Versions of Royal Server.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/advanced/trace-flags.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Module Document Store </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Module Document Store ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="module-document-store">Module Document Store</h1>
+
+<p>The Document Store can be scripted via Power Shell.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The necessary configuration to talk to Royal Server via Script is described in &quot;Getting Started&quot;</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The documents you receive or are able to load/save are determined by your credentials if you have ACLs (access control lists) enabled.</p>
+</div>
+<h2 id="command-getdocumentlist">Command &quot;GetDocumentList&quot;</h2>
+<p>No Parameters</p>
+<h2 id="command-loaddocument">Command &quot;LoadDocument&quot;</h2>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>DocumentId [string]</li>
+<li>DocumentName [string]</li>
+</ul>
+<p>The Parameter DocumentName is purely for logging purposes used.</p>
+<h2 id="command-savedocument">Command &quot;SaveDocument&quot;</h2>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>DocumentId [string]</li>
+<li>DocumentContent [string]</li>
+<li>DocumentName [string]</li>
+<li>DocumentPassword [string]</li>
+</ul>
+<p>The parameter &quot;DocumentContent&quot; needs to be Base64 encoded. The parameter DocumentName is purely for logging purposes used.</p>
+<p>The basic flow is to first retrieve the available documents via the command &quot;GetDocumentList&quot;, then open a specific document via &quot;LoadDocument&quot; and save it back via &quot;SaveDocument&quot;.</p>
+<h2 id="examples">Examples</h2>
+<ul>
+<li><p>Get all available documents from Royal Server</p>
+<pre><code class="lang-powershell">$command = &quot;GetDocumentList&quot;
+
+$argz =  @{}
+
+$entries = Invoke-RoyalServerCommand -Module RoyalDocumentStore -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost [string]::Empty
+
+# enumerate the documents
+foreach($d in $entries.Results)
+{
+    #the DocumentId is used for loading/saving single documents
+    Write-Host ($d.DocumentName + &quot;(&quot; + $d.DocumentId + &quot;)&quot;)
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If Access Rules are enabled, the number of returned documents depends on the configured rules.</p>
+</div>
+</li>
+<li><p>Load a specific document from Royal Server which is not encrypted/locked down and save it locally to the temp-directory:</p>
+<pre><code class="lang-powershell">$command = &quot;LoadDocument&quot;
+
+$argz =  @{&quot;DocumentId&quot; = &quot;b7a2684d-cc99-4abe-98e8-39cad648cf6e&quot;}
+
+$docDocument = Invoke-RoyalServerCommand -Module RoyalDocumentStore -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost [string]::Empty
+
+$docuBase64Encoded = $docDocument.Results[0].DocumentContent
+
+$doc = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($docuBase64Encoded))
+
+# save it
+
+$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+
+[System.IO.File]::WriteAllLines('C:\\temp\\doc_from_server.rtsz', $doc, $Utf8NoBomEncoding)
+</code></pre>
+</li>
+<li><p>Load a specific document from Royal Server which is encrypted and potentially locked down and save it locally to the temp-directory:</p>
+<pre><code class="lang-powershell">$command = &quot;LoadDocument&quot;
+
+$argz =  @{&quot;DocumentId&quot; = &quot;22a3c00e-5269-4305-b640-954582f83a5f&quot;}
+
+$docDocument = Invoke-RoyalServerCommand -Module RoyalDocumentStore -Command $command -RoyalServerConfig $config -Arguments $argz -DestinationHost [string]::Empty
+
+$docuBase64Encoded = $docDocument.Results[0].DocumentContent
+
+# save it
+[System.Convert]::FromBase64String($docuBase64Encoded) | Set-Content C:\\temp\\enc_doc_from_server.rtsz -Encoding Byte
+</code></pre>
+</li>
+<li><p>Load a specific document from the file system and save it to Royal Server (this document needs to be hosted by Royal Server, you can not create a new document with that process):</p>
+<pre><code class="lang-powershell"># load doc from filesystem
+
+$loadedDoc = Get-Content C:\\temp\\plain.rtsz -Encoding Byte
+
+$loadedDocBase64 =[System.Convert]::ToBase64String($loadedDoc)
+
+$command = &quot;SaveDocument&quot;
+
+$argz =  @{&quot;DocumentId&quot; = &quot;518ada8f-05ee-4daa-9720-0956ee348332&quot;; &quot;DocumentContent&quot; = $loadedDocBase64}
+
+Invoke-RoyalServerCommand -Module RoyalDocumentStore -Command $command -RoyalServerConfig $config -DestinationHost $destinationHost -DestinationUsername $username -DestinationPassword $destinationpassword -Arguments $argz
+</code></pre>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/scripting/module-reference/module-document-store.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

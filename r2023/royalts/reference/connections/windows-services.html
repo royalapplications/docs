@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Windows Services </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" Windows Services ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_reference_connections_windows-services">
+<h1 id="-windows-services"><img src="/r2023/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PluginIcon_32.svg#img_header" alt=""> Windows Services</h1>
+
+<p>The <strong>Windows Services</strong> connection can be used to display Windows services from one or more computers.</p>
+<h2 id="dashboard">Dashboard</h2>
+<p>The <strong>Windows Services</strong> are shown in the <strong>Dashboard</strong> panel when you select a Windows Services connection in the <strong>Navigation</strong> panel.</p>
+<p><img src="/r2023/images/RoyalTS/Plugins/Connections/WindowsServices/windowsservices_dashboard.png" alt="WindowsServices_Dashboard"></p>
+<h2 id="dashboard-features">Dashboard Features</h2>
+<ul>
+<li>List of windows services from one or more computers.</li>
+<li>Grid search and customization, including sort, filter and group.</li>
+<li>Ability to start, stop and restart one or more services.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The Windows Services connection relies on WMI. Ensure that all the necessary firewall ports for WMI are open and that the credentials set in the connection properties have the permission to manage services on the remote computer(s).</p>
+</div>
+<h2 id="royal-server-support">Royal Server Support</h2>
+<p>The dashboard data can also be gathered using a Royal Server. For more information about Royal Server, click <a class="xref" href="../../introduction/introducing-royal-server.html">here</a></p>
+<h2 id="dashboard-settings">Dashboard Settings</h2>
+<p>To configure the application default settings for the included dashboard, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on <strong>Dashboard</strong> for the Windows Services plugin.<br>
+To configure individual dashboard settings for a connection, use the <a href="#dashboard">Dashboard</a> property page.</p>
+<h2 id="plugin-settings">Plugin Settings</h2>
+<p>The Windows Services connection plugin does not offer any plugin settings at this time.</p>
+<h2 id="connection-properties">Connection Properties</h2>
+<p>The Windows Services Properties dialog is shown:</p>
+<ul>
+<li>for a new Windows Services connection by clicking the <strong>More...</strong> menu item in the <strong>Add</strong> drop down menu in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab and selecting the <strong>Windows Services</strong> entry from the list of available objects.</li>
+<li>for an existing Windows Services connection by selecting a Windows Services connection and clicking on the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
+<li>as a bulk-edit dialog when multiple Windows Services connections were selected in the Folder / Document Dashboard and the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab is clicked. See also: <a class="xref" href="../../tutorials/bulk-operations.html">Bulk Operations</a></li>
+</ul>
+<h2 id="-windows-services-properties"><img src="/r2023/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PluginIcon_32.svg#img_header" alt=""> Windows Services Properties</h2>
+<p>The <strong>Windows Services</strong> page allows you to configure basic connection settings.</p>
+<h4 id="display-name-required">Display Name <em>(required)</em></h4>
+<p>Enter a display name for object.</p>
+<h4 id="color">Color</h4>
+<p>Click the color picker button in the display name text box to select a color. In the <a class="xref" href="../options.html#-user-interface">User Interface</a> settings you can configure to show the color in the navigation tree, the connection tab or as connection border.</p>
+<h4 id="icon">Icon</h4>
+<p>Click the icon picker button next in the display name text box to select and assign a custom icon to the object.</p>
+<h4 id="computer-name-required">Computer Name <em>(required)</em></h4>
+<p>Enter the computer name or the IP address.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Click on the browse button (...) to open the <strong>Entry Editor</strong> dialog. The entry editor can be used to search for computers in your network and to add multiple entries for different servers with the same settings at the same time (when supported).</p>
+<p>Alternatively, you can also just specify more computer names by separating them with a semicolon for bulk-add operations.</p>
+<p><a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+</div>
+<h4 id="description">Description</h4>
+<p>Enter a description for the object.</p>
+<h2 id="-display-options"><img src="/r2023/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_PageDisplayOptions_32.svg#img_header" alt=""> Display Options</h2>
+<p>The <strong>Display Options</strong> page allows you to configure grid and auto refresh settings.</p>
+<h4 id="auto-refresh-in-sec">Auto Refresh (in sec.)</h4>
+<p>If enabled, the data will be refreshed automatically.</p>
+<h4 id="show-details-panel">Show Details Panel</h4>
+<p>If checked, the details panel is shown.</p>
+<h4 id="max-column-width">Max. Column Width</h4>
+<p>If checked, the columns will use all available horizontal space.</p>
+<h4 id="show-horizontal-lines">Show Horizontal Lines</h4>
+<p>If checked, horizontal lines are shown in the grid.</p>
+<h4 id="show-vertical-lines">Show Vertical Lines</h4>
+<p>If checked, vertical lines are shown in the grid.</p>
+<h2 id="-filter"><img src="/r2023/images/RoyalTS/Plugins/Connections/WindowsServices/SVG_ViewFilter_32.svg#img_header" alt=""> Filter</h2>
+<p>The <strong>Filter</strong> page allows you to configure basic filtering or an advanced WMI query filter.</p>
+<p>You can specify your own WQL-Where-Clause. The toolbar features helpers and a link to the WQL query documentation as well as a test button to verify if the query can be executed successfully.</p>
+<h2 id="-credentials"><img src="/r2023/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
+<p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
+<h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
+<p>When selected, no credentials are configured for the object. Connections that require credentials may prompt to enter credentials or fail to connect.</p>
+<h4 id="use-credentials-from-the-parent-folder-not-always-available">Use credentials from the parent folder <em>(not always available)</em></h4>
+<p>When selected, Royal TS will look for a configured credential in the parent folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Not available for Royal Server objects, Secure Gateway objects, Remote Desktop Gateway objects and Key Sequence Tasks</p>
+</div>
+<h4 id="use-from-this-connection-not-always-available">Use from this connection <em>(not always available)</em></h4>
+<p>When selected, the username and password is used from the context connection object.</p>
+<h4 id="specify-username-and-password">Specify username and password</h4>
+<p>When selected, a username and password can be provided. For domain accounts use the syntax &quot;domain\username&quot; (without the quotes).</p>
+<h4 id="use-an-existing-credential">Use an existing credential</h4>
+<p>When selected, assign an existing credential to the object using the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the correct credential.</p>
+</div>
+<h4 id="specify-a-credential-name">Specify a credential name</h4>
+<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.<br>
+If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal TS will prompt for credentials by showing the credential picker dialog.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
+</div>
+<h4 id="omit-domain">Omit Domain</h4>
+<p>When checked, Royal TS will omit the domain portion of the username (domain\username or username@domain).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Omit Domain</strong> checkbox is not available for all object types!</p>
+</div>
+<h4 id="automatic-logon">Automatic Logon</h4>
+<p>When checked, Royal TS will use the credentials to log on to the connection automatically. This setting applies only to connection types supporting automatic logon and is ignored if a connection doesn't support automatic logon.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To access the configured credentials through replacement tokens (for example in Auto Fill or Key Sequence Task configurations), use the replacement tokens $EffeciveUsername$ and $EffectivePassword$.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
+<p>See also: <a class="xref" href="../../tutorials/working-with-credentials.html">Working with Credentials</a>, <a class="xref" href="../organization/credential.html">Credential</a>, <a href="https://www.royalapps.com/go/kb-all-teamsharing">About shared documents</a></p>
+<h2 id="-tasks"><img src="/r2023/images/RoyalTS/Application/SVG_PageTasks_32.svg#img_header" alt=""> Tasks</h2>
+<p>You can specify a task to be executed before a connection is established and after it has been disconnected. For example: establish a VPN connection before you connect and close it after disconnect.</p>
+<h3 id="connect-task">Connect Task</h3>
+<h4 id="do-not-execute-a-task">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is established.</p>
+<h4 id="use-task-from-parent-folder">Use task from parent folder</h4>
+<p>Royal TS will look for a configured connect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-connect-task-completion">Wait for connect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be established.</p>
+<h4 id="execute-for-first-connection-in-folder">Execute for first connection in folder</h4>
+<p>If checked, the task will only be executed if no other connection in the same folder is active.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will establish the VPN connection only for your first connection.</p>
+</div>
+<h4 id="abort-when-connect-task-fails">Abort when connect task fails</h4>
+<p>If checked, the connection will not be established when the configured task fails and returns an Exit Code other than 0.</p>
+<h3 id="disconnect-task">Disconnect Task</h3>
+<h4 id="do-not-execute-a-task-1">Do not execute a task</h4>
+<p>Royal TS will not execute a command task when a connection is disconnected.</p>
+<h4 id="use-task-from-parent-folder-1">Use task from parent folder</h4>
+<p>Royal TS will look for a configured disconnect task in the parent folder. This option is not available on the document level.</p>
+<h4 id="use-an-existing-task-1">Use an existing task</h4>
+<p>Choose a command task from the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the task you are looking for.</p>
+</div>
+<h4 id="specify-a-task-name-1">Specify a task name</h4>
+<p>When selected, enter or choose a task name you want to assign to the object during disconnect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="wait-for-disconnect-task-completion">Wait for disconnect task completion</h4>
+<p>If checked, Royal TS will wait for the selected task to finish before the connection will be disconnected.</p>
+<h4 id="execute-for-last-connection-in-folder">Execute for last connection in folder</h4>
+<p>If checked, the task will only be executed if it is the last active connection in the folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting might be useful if you need to setup a VPN connection. Put all your connections which require you to setup this VPN in one folder and Royal TS will disconnect the VPN connection after the last connection is disconnected.</p>
+</div>
+<p>See also: <a class="xref" href="../../tutorials/working-with-tasks.html">Working with Tasks</a>, <a class="xref" href="../tasks/command.html">Command Task</a></p>
+<h3 id="-key-sequence"><img src="/r2023/images/RoyalTS/Application/SVG_TaskKeySequence_32.svg#img_header" alt=""> Key Sequence</h3>
+<p>The <strong>Key Sequence</strong> page allows you to configure a sequence of key strokes (simulating keyboard events) to be sent to the connection after the connection has been established.</p>
+<h4 id="do-not-send-a-key-sequence">Do not send a key sequence</h4>
+<p>This is the default value. If selected, no key sequence is sent to the remote session after connect.</p>
+<h4 id="use-key-sequence-task-from-parent-folder">Use key sequence task from parent folder</h4>
+<p>Royal TS will look for a configured key sequence task in the parent folder. This option is not available on the document level.</p>
+<h4 id="specify-a-key-sequence">Specify a key sequence</h4>
+<p>If selected, a key sequence can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use the fly-out button to the right to show a list of available replacement tokens and special key commands. Use the WAIT command anywhere in the sequence to delay the sequence.</p>
+<p>Examples for Key Sequences:</p>
+<ul>
+<li>A group policy is set to show a message whenever a user is attempting to log on interactively. Create a key sequence &quot;{WAIT:1000}{ENTER}&quot; which will wait 1 second (1000ms) after successfully connected to the remote desktop session and sends the ENTER key to the remote session to confirm the message.</li>
+<li>A web page connection to a flash based application which requires you to log on using a username and password can be configured to send the appropriate key sequence after the connection has been established.</li>
+</ul>
+</div>
+<h4 id="use-an-existing-key-sequence-task">Use an existing key sequence task</h4>
+<p>If selected, a key sequence task can be specified for this connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a key sequence is in progress, do not interact with Royal TS or any other application after you connect. The status bar message indicates when a key sequence is in progress and when it has finished.</p>
+</div>
+<h4 id="specify-a-key-sequence-task-name">Specify a key sequence task name</h4>
+<p>When selected, enter or choose a key sequence task name you want to assign to the object during connect-time.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a task by name is recommended when a team of users share the same configuration file. Each user can define his own task as long as it is using the same name and saves the task in his own personal and protected document. This makes sharing files across team members very easy.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+<h2 id="-window-mode"><img src="/r2023/images/RoyalTS/Application/SVG_PageWindowMode_32.svg#img_header" alt=""> Window Mode</h2>
+<p>The <strong>Window Mode</strong> page allows you to control where the connection should open. Most connection types support <strong>Main Window (Embedded)</strong> mode and <strong>External Window</strong> mode. Remote Desktop connections, for example, additionally support <strong>External Window (Full Screen)</strong> mode.</p>
+<h4 id="open-connection-in">Open connection in</h4>
+<ul>
+<li><strong>Main Window (Embedded)</strong><br>
+When selected, the connection will be embedded in the main window.</li>
+<li><strong>External Window</strong>
+When selected, the connection will open in an external window.</li>
+<li><strong>External Window (Full Screen)</strong><br>
+When selected, the connection will open in an external window in full screen mode (no window title bar and borders).</li>
+</ul>
+<h4 id="use-multiple-monitors">Use Multiple Monitors</h4>
+<p>If checked, the connection will use all monitors if connected in Full Screen mode or if the connection is changed to use Full Screen mode while connected.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for connections supporting full screen and multiple monitors (like Remote Desktop).</p>
+</div>
+<h4 id="dont-show-the-connection-bar">Don't show the connection bar</h4>
+<p>If checked, the connection bar will not be shown in full screen mode.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option is only available for Remote Desktop connections. To display the connection bar, use the Ctrl + Alt + Home keyboard shortcut.</p>
+</div>
+<h3 id="external-window-settings">External Window Settings</h3>
+<p>The following settings can be configured when the window mode configuration is set to external window.</p>
+<h4 id="screen">Screen</h4>
+<ul>
+<li><strong>Remember Screen</strong><br>
+Royal TS remembers which screen the connection was on after you've disconnected the connection and tries to open the external connection window on the same screen the next time you connect.</li>
+<li><strong>Screen 1 ... 9</strong><br>
+Choose on which screen you want the external connection to be opened.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Setting the <strong>Screen</strong> configuration to a screen which is currently not available on your computer will be ignored as long as the screen is not available. A common scenario for this is, working with the same file on a laptop computer with only one screen and a workstation with multiple screens connected. Setting connections to open on the Screen 3 will open on the main display on your laptop while the same connection will open on your workstation on <strong>Screen 3</strong>.</p>
+</div>
+<h4 id="position">Position</h4>
+<ul>
+<li><strong>Remember Position</strong><br>
+Royal TS will remember the last window position after you've disconnected the connection and tries to open the external connection window at the same position the next time you connect.</li>
+<li><strong>Custom Left and Top</strong><br>
+Specify the left and top coordinates (in pixels) where the external connection window should be positioned.</li>
+</ul>
+<h4 id="size">Size</h4>
+<ul>
+<li><strong>Remember Size</strong><br>
+Royal TS will remember the last window size after you've disconnected the connection and tries to open the external connection window with the same size the next time you connect.</li>
+<li><strong>Custom Width and Height</strong><br>
+Specify the width and height (in pixels) of the external connection window.</li>
+<li><strong>Maximize</strong><br>
+The external connection window will be maximized.</li>
+<li><strong>Preferred Size</strong><br>
+The external connection window will use the sized configured in the connection. This setting will only be effective for connection types supporting a custom client size (for example the <strong>Desktop Size</strong> in the <a class="xref" href="rdp.html#-display-options">Display Options of a Remote Desktop Connection</a>). If a connection type doesn't support a custom client size the setting will be ignored and the external window will be maximized.</li>
+</ul>
+<h4 id="minimize-main-window">Minimize Main Window</h4>
+<p>When checked, Royal TS will minimize the main window after the connection was established.</p>
+<h4 id="open-display-properties">Open Display Properties</h4>
+<p>Opens the display properties control panel. With the control panel you can identify your screens.</p>
+<h2 id="-dashboard"><img src="/r2023/images/RoyalTS/Application/SVG_PageDashboard_32.svg#img_header" alt=""> Dashboard</h2>
+<p>The <strong>Dashboard</strong> page allows you to setup the default dashboard behavior for this connection. Dashboards are updated when a selection has changed. By default, the dashboard tab is shown and activated for inactive connections.</p>
+<h4 id="use-the-plugin-default-settings">Use the plugin default settings</h4>
+<p>If selected, Royal TS will use the plugin default settings for the dashboard. You can change the plugin default settings by clicking on the <strong>Settings...</strong> button. Changes to the plugin default settings will affect all connections using the same plugin and the default settings. See also: Plugins</p>
+<h4 id="use-connection-specific-settings">Use connection specific settings</h4>
+<p>If selected, Royal TS allows you to configure the dashboard settings for the connection.</p>
+<h2 id="-royal-server"><img src="/r2023/images/RoyalTS/Application/SVG_PageManagementEndpoint_32.svg#img_header" alt=""> Royal Server</h2>
+<p>The <strong>Royal Server</strong> page allows you to configure a Royal Server object for supported connections or choose to use a Royal Server configuration from the parent folder.</p>
+<h4 id="use-royal-server-from-the-parent-folder">Use Royal Server from the parent folder</h4>
+<p>If checked, Royal TS will look for a configured Royal Server in the parent folder. This option is not available on the document level.</p>
+<h4 id="direct-connect-no-royal-server">Direct Connect (No Royal Server)</h4>
+<p>This is the default value. If selected, no Royal Server is used and Royal TS will directly connect to the remote computer.</p>
+<h4 id="specify-a-royal-server-object">Specify a Royal Server object</h4>
+<p>The selected Royal Server object is used for supported connections.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Royal Server is a product which allows you to gather information and execute management tasks securely on your managed servers.</p>
+</div>
+<h4 id="edit-source">Edit Source</h4>
+<p>Opens the properties dialog of the source object for the configuration. This button will only be available when the object is configured to use the parent configuration.</p>
+
+<p>See also: <a class="xref" href="../../introduction/introducing-royal-server.html">Introducing Royal Server</a></p>
+<h2 id="-notes"><img src="/r2023/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
+<p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
+<h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
+<p>When selected, Royal TS will display the notes from the parent folder in the notes panel. This option is not available on the document level.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To embed images, drag them into the editor using drag &amp; drop.</p>
+</div>
+<h2 id="-custom-properties"><img src="/r2023/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header" alt=""> Custom Properties</h2>
+<p>The <strong>Custom Properties</strong> page allows you to enter and store additional information for the object. Various data formats are available, including protected fields. You can also group properties by using Header.</p>
+<h4 id="inherit-from-parent">Inherit from Parent</h4>
+<p>When checked, the properties configured on the parent folder are shown but are read-only.</p>
+<h4 id="custom-properties">Custom Properties</h4>
+<p>Use the '+' icon to add a header or a Field or multiple fields based on a template. Click on the label to name the field and enter a value. Click the 'Gear' icon to remove a field or header. The 'Gear' icon also shows additional options, like moving a field up or down.</p>
+<h2 id="-custom-fields"><img src="/r2023/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Fields</h2>
+<p>The <strong>Custom Fields</strong> page allows you to enter and store additional information for the object. Custom fields can be used in tasks and templates to inject values from the context connection.</p>
+<p>Standard custom fields are also shown in the folder dashboard views and in the properties panel. Protected custom fields can be used to store confidential data (for example when you need an additional password in a task). If you make use of protected custom fields, make sure you encrypt and password protect your document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Custom fields can be used in Tasks and in the Properties Panel. You can put web page URLs (like an iLO management address) or command lines (such as programs or batch files) in the custom fields and execute them using tasks or directly from the properties panel. Each individual custom field can also be configured to be inherited from the parent folder.</p>
+</div>
+<h2 id="-parent-folder"><img src="/r2023/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header" alt=""> Parent Folder</h2>
+<p>The <strong>Parent Folder</strong> page allows you to view or change the parent folder of the selected object. To move multiple objects to another folder use the parent folder page in bulk-edit mode or use the move to command from the <strong>Edit</strong> tab (see <a class="xref" href="../../tutorials/working-with-connections.html">Working with Connections</a>).</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot create connections in the <strong>Application</strong> document. Moving a folder containing connections to a folder in the <strong>Application</strong> document will fail.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalts/reference/connections/windows-services.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

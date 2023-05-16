@@ -1,0 +1,597 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: advanced-restoring-a-previous-version-of-a-document
+  name: Restoring a previous version of a Royal Document
+  href: royalserver/advanced/restoring-previous-version-document.html
+- uid: Close-RoyalDocument
+  name: Close-RoyalDocument
+  href: scripting/document/cmdlet-reference/Close-RoyalDocument.html
+- uid: Close-RoyalServerDocument
+  name: Close-RoyalServerDocument
+  href: scripting/document/cmdlet-reference/Close-RoyalServerDocument.html
+- uid: Copy-RoyalObject
+  name: Copy-RoyalObject
+  href: scripting/document/cmdlet-reference/Copy-RoyalObject.html
+- uid: Get-RoyalDocumentType
+  name: Get-RoyalDocumentType
+  href: scripting/document/cmdlet-reference/Get-RoyalDocumentType.html
+- uid: Get-RoyalObject
+  name: Get-RoyalObject
+  href: scripting/document/cmdlet-reference/Get-RoyalObject.html
+- uid: Get-RoyalObjectCustomProperty
+  name: Get-RoyalObjectCustomProperty
+  href: scripting/document/cmdlet-reference/Get-RoyalObjectCustomProperty.html
+- uid: Get-RoyalObjectValue
+  name: Get-RoyalObjectValue
+  href: scripting/document/cmdlet-reference/Get-RoyalObjectValue.html
+- uid: Get-RoyalPropertyHelp
+  name: Get-RoyalPropertyHelp
+  href: scripting/document/cmdlet-reference/Get-RoyalPropertyHelp.html
+- uid: Get-RoyalServerDocument
+  name: Get-RoyalServerDocument
+  href: scripting/document/cmdlet-reference/Get-RoyalServerDocument.html
+- uid: Get-RoyalServerLicense
+  name: Get-RoyalServerLicense
+  href: scripting/server/Get-RoyalServerLicense.html
+- uid: Get-RoyalServerModule
+  name: Get-RoyalServerModule
+  href: scripting/server/Get-RoyalServerModule.html
+- uid: Get-RoyalServerModuleCommand
+  name: Get-RoyalServerModuleCommand
+  href: scripting/server/Get-RoyalServerModuleCommand.html
+- uid: Get-RoyalServerModuleCommandParameter
+  name: Get-RoyalServerModuleCommandParameter
+  href: scripting/server/Get-RoyalServerModuleCommandParameter.html
+- uid: Install-RoyalServerLicense
+  name: Install-RoyalServerLicense
+  href: scripting/server/Install-RoyalServerLicense.html
+- uid: Invoke-RoyalServerCommand
+  name: Invoke-RoyalServerCommand
+  href: scripting/server/Invoke-RoyalServerCommand.html
+- uid: Move-RoyalObject
+  name: Move-RoyalObject
+  href: scripting/document/cmdlet-reference/Move-RoyalObject.html
+- uid: New-RoyalDocument
+  name: New-RoyalDocument
+  href: scripting/document/cmdlet-reference/New-RoyalDocument.html
+- uid: New-RoyalObject
+  name: New-RoyalObject
+  href: scripting/document/cmdlet-reference/New-RoyalObject.html
+- uid: New-RoyalObjectCustomProperty
+  name: New-RoyalObjectCustomProperty
+  href: scripting/document/cmdlet-reference/New-RoyalObjectCustomProperty.html
+- uid: New-RoyalServerConfig
+  name: New-RoyalServerConfig
+  href: scripting/server/New-RoyalServerConfig.html
+- uid: New-RoyalStore
+  name: New-RoyalStore
+  href: scripting/document/cmdlet-reference/New-RoyalStore.html
+- uid: Open-RoyalDocument
+  name: Open-RoyalDocument
+  href: scripting/document/cmdlet-reference/Open-RoyalDocument.html
+- uid: Open-RoyalServerDocument
+  name: Open-RoyalServerDocument
+  href: scripting/document/cmdlet-reference/Open-RoyalServerDocument.html
+- uid: Out-RoyalDocument
+  name: Out-RoyalDocument
+  href: scripting/document/cmdlet-reference/Out-RoyalDocument.html
+- uid: Out-RoyalServerDocument
+  name: Out-RoyalServerDocument
+  href: scripting/document/cmdlet-reference/Out-RoyalServerDocument.html
+- uid: Remove-RoyalObject
+  name: Remove-RoyalObject
+  href: scripting/document/cmdlet-reference/Remove-RoyalObject.html
+- uid: Remove-RoyalObjectCustomProperty
+  name: Remove-RoyalObjectCustomProperty
+  href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
+- uid: royalserver_advanced_management_scripts_cleanup
+  name: Cleanup an Installation
+  href: royalserver/advanced/management-scripts/uninstall.html
+- uid: royalserver_advanced_management_scripts_prepare
+  name: Prepare a Managed Server
+  href: royalserver/advanced/management-scripts/prepare-managed-server.html
+- uid: royalserver_advanced_traceflags
+  name: Trace Flags
+  href: royalserver/advanced/trace-flags.html
+- uid: royalserver_components_document-store
+  name: Document Store
+  href: royalserver/components/document-store/index.html
+- uid: royalserver_components_document-store_documents
+  name: Documents
+  href: royalserver/components/document-store/documents.html
+- uid: royalserver_components_document-store-configuration
+  name: Configuration
+  href: royalserver/components/document-store/configuration.html
+- uid: royalserver_components_management
+  name: Royal Server Management Endpoint
+  href: royalserver/components/management/index.html
+- uid: royalserver_components_secure-gateway
+  name: Secure Gateway
+  href: royalserver/components/secure-gateway/index.html
+- uid: royalserver_components_secure-gateway_gateway-cipher-configuration
+  name: Gateway Security Configuration
+  href: royalserver/components/secure-gateway/gateway-ciphers.html
+- uid: royalserver_components_secure-gateway_gateway-configuration
+  name: Gateway Configuration
+  href: royalserver/components/secure-gateway/gateway-configuration.html
+- uid: royalserver_components_secure-gateway_gateway-connections
+  name: Gateway Connections
+  href: royalserver/components/secure-gateway/gateway-connections.html
+- uid: royalserver_components_secure-gateway_gateway-security-configuration
+  name: Gateway Security Configuration
+  href: royalserver/components/secure-gateway/gateway-security-configuration.html
+- uid: royalserver_general
+  name: Royal Server Configuration
+  href: royalserver/general/index.html
+- uid: royalserver_general_certificate-store
+  name: Certificate Store
+  href: royalserver/general/certificate-store.html
+- uid: royalserver_general_configuration
+  name: General Configuration
+  href: royalserver/general/general-configuration.html
+- uid: royalserver_general_health
+  name: Health
+  href: royalserver/general/health.html
+- uid: royalserver_general_licensing
+  name: Licensing
+  href: royalserver/general/licensing.html
+- uid: royalserver_general_logging
+  name: Logging
+  href: royalserver/general/logging.html
+- uid: royalserver_general_multifactor-authentication
+  name: Multi Factor Authentication
+  href: royalserver/general/mfa.html
+- uid: royalserver_general_multifactor-user-store
+  name: Multi Factor User Store
+  href: royalserver/general/mfa-user-store.html
+- uid: royalserver_general_permissions
+  name: Permissions
+  href: royalserver/general/permissions.html
+- uid: royalserver_general_updatesettings
+  name: Update Checks
+  href: royalserver/general/update-settings.html
+- uid: royalserver_introduction
+  name: What is Royal Server?
+  href: royalserver/introduction/index.html
+- uid: royalserver_introduction_configuration
+  name: Royal Server Configuration
+  href: royalserver/introduction/configuration.html
+- uid: royalserver_introduction_how-is-royal-server-working
+  name: How is Royal Server Working?
+  href: royalserver/introduction/how-is-royal-server-working.html
+- uid: royalserver_management_dynamic-folder
+  name: Dynamic Folder
+  href: royalserver/components/management/dynamic-folder.html
+- uid: royalserver_management_modules
+  name: Modules
+  href: royalserver/components/management/modules.html
+- uid: royalserver_management_security-configuration
+  name: Security Configuration
+  href: royalserver/components/management/security-configuration.html
+- uid: royalserver_management_service-configuration
+  name: Service Configuration
+  href: royalserver/components/management/service-configuration.html
+- uid: royalserver_modules
+  name: Royal Server Modules
+  href: royalserver/modules/index.html
+- uid: royalserver_modules_document-store
+  name: Document Store
+  href: royalserver/modules/document-store.html
+- uid: royalserver_modules_hyperv
+  name: Hyper-V Module
+  href: royalserver/modules/hyper-v-module.html
+- uid: royalserver_modules_management
+  name: Royal Server Management Module
+  href: royalserver/modules/royal-server-management.html
+- uid: royalserver_modules_script
+  name: Script Module
+  href: royalserver/modules/script-module.html
+- uid: royalserver_modules_terminal-services
+  name: Terminal Services Module
+  href: royalserver/modules/terminal-services-module.html
+- uid: royalserver_modules_vmware
+  name: VMware Module
+  href: royalserver/modules/vmware-module.html
+- uid: royalserver_modules_windows-events
+  name: Windows Events Module
+  href: royalserver/modules/windows-events-module.html
+- uid: royalserver_modules_windows-processes
+  name: Windows Processes Module
+  href: royalserver/modules/windows-processes-module.html
+- uid: royalserver_modules_windows-services
+  name: Windows Services Module
+  href: royalserver/modules/windows-services-module.html
+- uid: royalserver_scripting_examples_advanced-scripting-examples
+  name: Examples using RoyalServer.PowerShell and RoyalDocument.PowerShell
+  href: royalserver/scripting/examples/index.html
+- uid: royalserver_scripting_examples_load-and-save-documents
+  name: Loading and Saving a Document from Royal Server
+  href: royalserver/scripting/examples/Load-and-Save-Document.html
+- uid: royalserver_scripting_module-reference
+  name: Module References
+  href: royalserver/scripting/module-reference/index.html
+- uid: royalserver_what-are-royal-server-components
+  name: Royal Server Components
+  href: royalserver/introduction/what-are-royal-server-components.html
+- uid: royalserver_what-is-royal-server
+  name: What is Royal Server?
+  href: royalserver/introduction/what-is-royal-server.html
+- uid: royalserver_what-is-royalts
+  name: What is Royal TS?
+  href: royalserver/introduction/what-is-royal-ts.html
+- uid: royalts_advanced
+  name: Import Data
+  href: royalts/advanced/index.html
+- uid: royalts_advanced_appsettings
+  name: Application Settings
+  href: royalts/advanced/appsettings.html
+- uid: royalts_advanced_cli
+  name: Command Line
+  href: royalts/advanced/cli.html
+- uid: royalts_advanced_default-settings
+  name: Default Settings
+  href: royalts/advanced/default-settings.html
+- uid: royalts_advanced_export
+  name: Export Data
+  href: royalts/advanced/export.html
+- uid: royalts_advanced_import
+  name: Import Data
+  href: royalts/advanced/import.html
+- uid: royalts_advanced_tokens
+  name: Replacement Tokens
+  href: royalts/advanced/tokens.html
+- uid: royalts_advanced_uri
+  name: URI Scheme
+  href: royalts/advanced/uri.html
+- uid: royalts_intro_connections
+  name: Connections
+  href: royalts/getting-started/connections.html
+- uid: royalts_intro_dashboards
+  name: Dashboards
+  href: royalts/getting-started/dashboards.html
+- uid: royalts_intro_documents
+  name: Documents and Files
+  href: royalts/getting-started/documents-and-files.html
+- uid: royalts_intro_first-connection
+  name: Your First Connection
+  href: royalts/getting-started/your-first-connection.html
+- uid: royalts_intro_panels
+  name: Panels and Tabs
+  href: royalts/getting-started/panels-and-tabs.html
+- uid: royalts_intro_plugins
+  name: Plugins
+  href: royalts/getting-started/plugins.html
+- uid: royalts_intro_ribbon
+  name: Ribbon and Backstage
+  href: royalts/getting-started/ribbon-and-backstage.html
+- uid: royalts_intro_royalserver
+  name: Introducing Royal Server
+  href: royalts/introduction/introducing-royal-server.html
+- uid: royalts_intro_security
+  name: Security
+  href: royalts/getting-started/security.html
+- uid: royalts_introduction
+  name: What is Royal TS
+  href: royalts/introduction/index.html
+- uid: royalts_reference
+  name: " Document"
+  href: royalts/reference/index.html
+- uid: royalts_reference_connections
+  name: Connections
+  href: royalts/reference/connections/index.html
+- uid: royalts_reference_connections_external-app
+  name: " External Application"
+  href: royalts/reference/connections/external-app.html
+- uid: royalts_reference_connections_filetransfer
+  name: " File Transfer"
+  href: royalts/reference/connections/filetransfer.html
+- uid: royalts_reference_connections_freerdp
+  name: " Remote Desktop"
+  href: royalts/reference/connections/freerdp.html
+- uid: royalts_reference_connections_hyper-v
+  name: " Hyper-V"
+  href: royalts/reference/connections/hyper-v.html
+- uid: royalts_reference_connections_perf-view
+  name: " Performance View"
+  href: royalts/reference/connections/perf-view.html
+- uid: royalts_reference_connections_powershell
+  name: " PowerShell Connection"
+  href: royalts/reference/connections/powershell.html
+- uid: royalts_reference_connections_rdp
+  name: " Remote Desktop"
+  href: royalts/reference/connections/rdp.html
+- uid: royalts_reference_connections_teamviewer
+  name: " TeamViewer"
+  href: royalts/reference/connections/teamviewer.html
+- uid: royalts_reference_connections_terminal-putty
+  name: " Terminal (PuTTY)"
+  href: royalts/reference/connections/terminal-putty.html
+- uid: royalts_reference_connections_terminal-rebex
+  name: " Terminal (Rebex)"
+  href: royalts/reference/connections/terminal-rebex.html
+- uid: royalts_reference_connections_terminal-services
+  name: " Terminal Services"
+  href: royalts/reference/connections/terminal-services.html
+- uid: royalts_reference_connections_vmware
+  name: " VMware"
+  href: royalts/reference/connections/vmware.html
+- uid: royalts_reference_connections_vnc
+  name: " VNC (Integrated)"
+  href: royalts/reference/connections/vnc.html
+- uid: royalts_reference_connections_vnc-tight
+  name: " VNC (Tight)"
+  href: royalts/reference/connections/vnc-tight.html
+- uid: royalts_reference_connections_vnc-ultra
+  name: " VNC (Ultra)"
+  href: royalts/reference/connections/vnc-ultra.html
+- uid: royalts_reference_connections_web-page-chrome
+  name: " Web Page (Chrome)"
+  href: royalts/reference/connections/web-page-chrome.html
+- uid: royalts_reference_connections_web-page-ie
+  name: " Web Page (IE)"
+  href: royalts/reference/connections/web-page-ie.html
+- uid: royalts_reference_connections_windows-events
+  name: " Windows Events View"
+  href: royalts/reference/connections/windows-events.html
+- uid: royalts_reference_connections_windows-processes
+  name: " Windows Processes"
+  href: royalts/reference/connections/windows-processes.html
+- uid: royalts_reference_connections_windows-services
+  name: " Windows Services"
+  href: royalts/reference/connections/windows-services.html
+- uid: royalts_reference_gateways
+  name: " Royal Server"
+  href: royalts/reference/gateways/index.html
+- uid: royalts_reference_options
+  name: Options
+  href: royalts/reference/options.html
+- uid: royalts_reference_organization
+  name: " Document"
+  href: royalts/reference/organization/index.html
+- uid: royalts_reference_organization_credential
+  name: " Credential"
+  href: royalts/reference/organization/credential.html
+- uid: royalts_reference_organization_document
+  name: " Document"
+  href: royalts/reference/organization/document.html
+- uid: royalts_reference_organization_dynamic-folder
+  name: " Dynamic Folder"
+  href: royalts/reference/organization/dynamic-folder.html
+- uid: royalts_reference_organization_folder
+  name: " Folder"
+  href: royalts/reference/organization/folder.html
+- uid: royalts_reference_organization_information
+  name: " Information"
+  href: royalts/reference/organization/information.html
+- uid: royalts_reference_organization_todo
+  name: " To-Do Item"
+  href: royalts/reference/organization/todo-item.html
+- uid: royalts_reference_rdpgateway
+  name: " Remote Desktop Gateway"
+  href: royalts/reference/gateways/rdpgateway.html
+- uid: royalts_reference_royalserver
+  name: " Royal Server"
+  href: royalts/reference/gateways/royalserver.html
+- uid: royalts_reference_securegateway
+  name: " Secure Gateway"
+  href: royalts/reference/gateways/securegateway.html
+- uid: royalts_reference_tasks
+  name: " Command Task"
+  href: royalts/reference/tasks/index.html
+- uid: royalts_reference_tasks_adhoc-key-sequence
+  name: " Ad Hoc Key Sequence"
+  href: royalts/reference/tasks/adhoc-key-sequence.html
+- uid: royalts_reference_tasks_command
+  name: " Command Task"
+  href: royalts/reference/tasks/command.html
+- uid: royalts_reference_tasks_key-sequence
+  name: " Key Sequence Task"
+  href: royalts/reference/tasks/key-sequence.html
+- uid: royalts_tutorials_bulk
+  name: Bulk Operations
+  href: royalts/tutorials/bulk-operations.html
+- uid: royalts_tutorials_connections
+  name: Working with Connections
+  href: royalts/tutorials/working-with-connections.html
+- uid: royalts_tutorials_credentials
+  name: Working with Credentials
+  href: royalts/tutorials/working-with-credentials.html
+- uid: royalts_tutorials_documents
+  name: Working with Documents
+  href: royalts/tutorials/working-with-documents.html
+- uid: royalts_tutorials_lockdown
+  name: Working with Lockdown Documents
+  href: royalts/tutorials/working-with-lockdown-documents.html
+- uid: royalts_tutorials_overrides
+  name: Working with Overrides
+  href: royalts/tutorials/working-with-overrides.html
+- uid: royalts_tutorials_tasks
+  name: Working with Tasks
+  href: royalts/tutorials/working-with-tasks.html
+- uid: royalts_tutorials_templates
+  name: Working with Templates
+  href: royalts/tutorials/working-with-templates.html
+- uid: royalts_tutorials_todo
+  name: Working with To-Do Items
+  href: royalts/tutorials/working-with-todo.html
+- uid: royalts_ui_color-palettes
+  name: Color Palettes
+  href: royalts/user-interface/color-palettes.html
+- uid: royalts_ui_commands
+  name: Commands
+  href: royalts/user-interface/commands.html
+- uid: royalts_ui_dashboards
+  name: Dashboards
+  href: royalts/user-interface/dashboards.html
+- uid: royalts_ui_panels
+  name: Panels
+  href: royalts/user-interface/panels.html
+- uid: royaltsx_tutorials_adhoc
+  name: Working with Ad Hoc Connections
+  href: royalts/tutorials/working-with-adhoc.html
+- uid: royaltsx_tutorials_more
+  name: royaltsx_tutorials_more
+  href: royalts/tutorials/more.html
+- uid: scripting_docps
+  name: RoyalDocument.Powershell
+  href: scripting/document/index.html
+- uid: scripting_docps_reference
+  name: RoyalDocument PowerShell Module
+  href: scripting/document/cmdlet-reference/index.html
+- uid: scripting_docps_samples
+  name: Install Module
+  href: scripting/document/samples/index.html
+- uid: scripting_docs_samples_createconnection
+  name: Create a new Connection
+  href: scripting/document/samples/create-connection.html
+- uid: scripting_docs_samples_createdoc
+  name: Creating a new Document
+  href: scripting/document/samples/create-document.html
+- uid: scripting_docs_samples_installmodule
+  name: Install Module
+  href: scripting/document/samples/install-module.html
+- uid: scripting_docs_samples_opendoc
+  name: Open an existing Document
+  href: scripting/document/samples/open-document.html
+- uid: scripting_docs_samples_workingwithcredentials
+  name: Working with Credentials
+  href: scripting/document/samples/working-with-credentials.html
+- uid: scripting_object_connections
+  name: Connections
+  href: scripting/objects/connections/index.html
+- uid: scripting_object_gateways
+  name: Gateways
+  href: scripting/objects/gateways/index.html
+- uid: scripting_object_options
+  name: Options
+  href: scripting/objects/options/index.html
+- uid: scripting_object_organization
+  name: Organization
+  href: scripting/objects/organization/index.html
+- uid: scripting_object_royalappconnection
+  name: RoyalAppConnection
+  href: scripting/objects/connections/royalappconnection.html
+- uid: scripting_object_royalapplicationsetting
+  name: RoyalApplicationSetting
+  href: scripting/objects/options/royalapplicationsetting.html
+- uid: scripting_object_royalcommandtask
+  name: RoyalCommandTask
+  href: scripting/objects/tasks/royalcommandtask.html
+- uid: scripting_object_royalcredential
+  name: RoyalCredential
+  href: scripting/objects/organization/royalcredential.html
+- uid: scripting_object_royaldocument
+  name: RoyalDocument
+  href: scripting/objects/organization/royaldocument.html
+- uid: scripting_object_royaldynamiccredential
+  name: RoyalDynamicCredential
+  href: scripting/objects/organization/royaldynamiccredential.html
+- uid: scripting_object_royaldynamicfolder
+  name: RoyalDynamicFolder
+  href: scripting/objects/organization/royaldynamicfolder.html
+- uid: scripting_object_royalfiletransferconnection
+  name: RoyalFileTransferConnection
+  href: scripting/objects/connections/royalfiletransferconnection.html
+- uid: scripting_object_royalfolder
+  name: RoyalFolder
+  href: scripting/objects/organization/royalfolder.html
+- uid: scripting_object_royalhypervconnection
+  name: RoyalHyperVConnection
+  href: scripting/objects/connections/royalhypervconnection.html
+- uid: scripting_object_royalinformation
+  name: RoyalInformation
+  href: scripting/objects/organization/royalinformation.html
+- uid: scripting_object_royalkeysequencetask
+  name: RoyalKeySequenceTask
+  href: scripting/objects/tasks/royalkeysequencetask.html
+- uid: scripting_object_royalmanagementendpoint
+  name: RoyalManagementEndpoint
+  href: scripting/objects/gateways/royalmanagementendpoint.html
+- uid: scripting_object_royalperformanceconnection
+  name: RoyalPerformanceConnection
+  href: scripting/objects/connections/royalperformanceconnection.html
+- uid: scripting_object_royalpowershellconnection
+  name: RoyalPowerShellConnection
+  href: scripting/objects/connections/royalpowershellconnection.html
+- uid: scripting_object_royalrdsconnection
+  name: RoyalRDSConnection
+  href: scripting/objects/connections/royalrdsconnection.html
+- uid: scripting_object_royalrdsgateway
+  name: RoyalRDSGateway
+  href: scripting/objects/gateways/royalrdsgateway.html
+- uid: scripting_object_royalsecuregateway
+  name: RoyalSecureGateway
+  href: scripting/objects/gateways/royalsecuregateway.html
+- uid: scripting_object_royalsshconnection
+  name: RoyalSSHConnection
+  href: scripting/objects/connections/royalsshconnection.html
+- uid: scripting_object_royalteamviewerconnection
+  name: RoyalTeamViewerConnection
+  href: scripting/objects/connections/royalteamviewerconnection.html
+- uid: scripting_object_royalterminalservicesconnection
+  name: RoyalTerminalServicesConnection
+  href: scripting/objects/connections/royalterminalservicesconnection.html
+- uid: scripting_object_royaltodo
+  name: RoyalToDo
+  href: scripting/objects/organization/royaltodo.html
+- uid: scripting_object_royalvmwareconnection
+  name: RoyalVMwareConnection
+  href: scripting/objects/connections/royalvmwareconnection.html
+- uid: scripting_object_royalvncconnection
+  name: RoyalVNCConnection
+  href: scripting/objects/connections/royalvncconnection.html
+- uid: scripting_object_royalwebconnection
+  name: RoyalWebConnection
+  href: scripting/objects/connections/royalwebconnection.html
+- uid: scripting_object_royalwindowseventsconnection
+  name: RoyalWindowsEventsConnection
+  href: scripting/objects/connections/royalwindowseventsconnection.html
+- uid: scripting_object_royalwindowsprocessesconnection
+  name: RoyalWindowsProcessesConnection
+  href: scripting/objects/connections/royalwindowsprocessesconnection.html
+- uid: scripting_object_royalwindowsservicesconnection
+  name: RoyalWindowsServicesConnection
+  href: scripting/objects/connections/royalwindowsservicesconnection.html
+- uid: scripting_object_tasks
+  name: Tasks
+  href: scripting/objects/tasks/index.html
+- uid: scripting_objects
+  name: Object Properties
+  href: scripting/objects/index.html
+- uid: scripting_rjson
+  name: Introduction
+  href: scripting/rjson/index.html
+- uid: scripting_rjson_advanced-scenarios
+  name: Advanced scenarios
+  href: scripting/rjson/advanced-scenarios.html
+- uid: scripting_rjson_available_properties
+  name: RoyalJSONDocument (Root Element)
+  href: scripting/rjson/available-properties/index.html
+- uid: scripting_rjson_tokens
+  name: Tokens
+  href: scripting/rjson/tokens.html
+- uid: scripting_serverps
+  name: RoyalServer Powershell
+  href: scripting/server/index.html
+- uid: Set-RoyalDocumentPassword
+  name: Set-RoyalDocumentPassword
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
+- uid: Set-RoyalDocumentType
+  name: Set-RoyalDocumentType
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
+- uid: Set-RoyalObjectCustomProperty
+  name: Set-RoyalObjectCustomProperty
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
+- uid: Set-RoyalObjectCustomPropertyPosition
+  name: Set-RoyalObjectCustomPropertyPosition
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
+- uid: Set-RoyalObjectValue
+  name: Set-RoyalObjectValue
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
+- uid: Set-RoyalSortOrder
+  name: Set-RoyalSortOrder
+  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
+- uid: Uninstall-RoyalServerLicense
+  name: Uninstall-RoyalServerLicense
+  href: scripting/server/Uninstall-RoyalServerLicense.html

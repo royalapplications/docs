@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Object references and inheritance </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Object references and inheritance ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-scripting">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="object-references-and-inheritance">Object references and inheritance</h1>
+
+<p>One of the core features of Royal TS/X is to be able to assign objects to other objects, essentially creating object references. This, for instance, makes it possible to use a single credential object for hundreds or thousands of connections. Now, when the password of the credential expires it must only be changed in a single, central place instead of for each connection individually.
+While credential objects are the most common example for object references, other objects, like Secure Gateways and command- and key-sequence tasks can be referenced too.</p>
+<p>Depending on the object type, multiple different ways to assign the object may be available. Credentials, for instance can be assigned using their ID (In the UI this is called &quot;Use an existing credential&quot;), their name (&quot;Specify a credential name&quot;) or even inherited from their parent folder (&quot;Use credentials from parent folder&quot;). Of course, you can also directly enter your username and password by using the &quot;Specify username and password&quot; mode.
+Secure Gateways on the other hand can only be referenced by their ID or inherited from the object's parent folder. So there are slight differences that you need to be aware of when dealing with object references. The best way to learn those is to study which options are available in the UI for the various object types.</p>
+<p>This should give you a quick overview over how object references and inheritance works in Royal TS/X. Now let's jump right into how this can be expressed in rJSON:</p>
+<pre><code class="lang-json">{
+	&quot;Objects&quot;: [
+		{
+			&quot;Type&quot;: &quot;Folder&quot;,
+			&quot;Name&quot;: &quot;Shared&quot;,
+			&quot;Objects&quot;: [
+				{
+					&quot;Type&quot;: &quot;Credential&quot;,
+					&quot;Name&quot;: &quot;Domain Admin&quot;,
+					&quot;Username&quot;: &quot;administrator&quot;,
+					&quot;Password&quot;: &quot;@he38qewhq82r!&quot;,
+					&quot;ID&quot;: &quot;00001&quot;
+				},
+				{
+					&quot;Type&quot;: &quot;SecureGateway&quot;,
+					&quot;Name&quot;: &quot;Gateway 01&quot;,
+					&quot;ComputerName&quot;: &quot;gateway01&quot;,
+					&quot;CredentialID&quot;: &quot;00001&quot;,
+					&quot;ID&quot;: &quot;00002&quot;
+				},
+				{
+					&quot;Type&quot;: &quot;KeySequenceTask&quot;,
+					&quot;Name&quot;: &quot;List Root Directory&quot;,
+					&quot;KeySequence&quot;: &quot;ls -lh /&quot;
+				}
+			],
+		},
+		{
+			&quot;Type&quot;: &quot;Folder&quot;,
+			&quot;Name&quot;: &quot;Connections&quot;,
+			&quot;CredentialID&quot;: &quot;00001&quot;,
+			&quot;SecureGatewayID&quot;: &quot;00002&quot;,
+			&quot;Objects&quot;: [
+				{
+					&quot;Type&quot;: &quot;RemoteDesktopConnection&quot;,
+					&quot;Name&quot;: &quot;Hyper-V VM 01&quot;,
+					&quot;ComputerName&quot;: &quot;hyper-v-vm-01&quot;,
+					&quot;CredentialsFromParent&quot;: true,
+					&quot;SecureGatewayFromParent&quot;: true
+				},
+				{
+					&quot;Type&quot;: &quot;RemoteDesktopConnection&quot;,
+					&quot;Name&quot;: &quot;Hyper-V VM 02&quot;,
+					&quot;ComputerName&quot;: &quot;hyper-v-vm-02&quot;,
+					&quot;CredentialsFromParent&quot;: true,
+					&quot;SecureGatewayFromParent&quot;: true
+				},
+				{
+					&quot;Type&quot;: &quot;RemoteDesktopConnection&quot;,
+					&quot;Name&quot;: &quot;Hyper-V VM 03&quot;,
+					&quot;ComputerName&quot;: &quot;hyper-v-vm-03&quot;,
+					&quot;CredentialsFromParent&quot;: true,
+					&quot;SecureGatewayFromParent&quot;: true
+				},
+				{
+					&quot;Type&quot;: &quot;TerminalConnection&quot;,
+					&quot;TerminalConnectionType&quot;: &quot;SSH&quot;,
+					&quot;Name&quot;: &quot;MailServer 01&quot;,
+					&quot;ComputerName&quot;: &quot;mail-server-01&quot;,
+					&quot;Username&quot;: &quot;root&quot;,
+					&quot;Password&quot;: &quot;@(h8e3r12!&quot;,
+					&quot;SecureGatewayFromParent&quot;: true,
+					&quot;KeySequenceName&quot;: &quot;List Root Directory&quot;
+				}
+			]
+		}
+	]
+}
+</code></pre>
+<p>Alright, so let's first look at what this gives us in Royal TSX:</p>
+<p><img src="../../images/Scripting/rJSON/Screenshot_6.png" alt=""></p>
+<p>Here's what we have:</p>
+<ul>
+<li>Two folders (&quot;Shared&quot; and &quot;Connections&quot;)</li>
+<li>One credential (&quot;Domain Admin&quot;)</li>
+<li>One Secure Gateway (&quot;Gateway 01&quot;)</li>
+<li>One key sequence task (&quot;List Root Directory&quot;)</li>
+<li>Three Remote Desktop connections</li>
+<li>One SSH connection</li>
+</ul>
+<p>What you don't get to see in the screenshot is how the various objects are connected to each other. Let's start with the &quot;Domain Admin&quot; credential.</p>
+<p>In line 12 we express that we would like the credential to have the ID &quot;00001&quot;. We can then use this ID to refer to the credential from other objects. In line 31 we set the <code>CredentialID</code> property of the &quot;Connections&quot; folder to the ID of our &quot;Domain Admin&quot; credential (ID &quot;00001&quot;).
+This basically means: Assign &quot;Domain Admin&quot; to &quot;Connections&quot;.
+Now that we have our credential assigned to the &quot;Connections&quot; folder, we want the connections themselves to actually use that credential. To do so, we specify <code>&quot;CredentialsFromParent&quot;: true</code> in lines 38, 45 and 52. Now all of the three Remote Desktop connections inherit the credentials from their parent folder, &quot;Connections&quot;.</p>
+<p>For the &quot;MailServer 01&quot; SSH connection we want to use a different set of credentials and since no other object uses the same credentials, we directly specify the username and password of this connection in lines 60 and 61 using the <code>Username</code> and <code>Password</code> properties.</p>
+<p>That's it for credential assignment. Because we need a Secure Gateway to connect to each of our remote machines, we also assign the Secure Gateway object (ID &quot;00002&quot;) to the &quot;Connections&quot; folder and let the connections inherit it from their parent folder. In line 32 we specify <code>&quot;SecureGatewayID&quot;: &quot;00002&quot;</code> on our &quot;Connections&quot; folder. Then, for each of our connections we set <code>&quot;SecureGatewayFromParent&quot;: true</code> to let them inherit the Secure Gateway configuration from their parent folder.</p>
+<p>That's it for Secure Gateway assignment. Last but not least, we defined a key sequence task which lists the contents of the root directory. The definition of the object starts at line 21. For demo purposes we chose a different approach to assign this task to the SSH connection. Instead of referring to it by its ID, we use its name &quot;List Root Directory&quot;. So in line 63 we have this: <code>&quot;KeySequenceName&quot;: &quot;List Root Directory&quot;</code>. This means, when the connection is established, launch the key sequence task with the name &quot;List Root Directory&quot;.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/scripting/rjson/object-references-and-inheritance.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

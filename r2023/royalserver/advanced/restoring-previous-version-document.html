@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Restoring a previous version of a Royal Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Restoring a previous version of a Royal Document ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="advanced-restoring-a-previous-version-of-a-document">
+<h1 id="restoring-a-previous-version-of-a-royal-document">Restoring a previous version of a Royal Document</h1>
+
+<p>Whenever Royal TS/X users save a document hosted by Royal Server the document is updated on the serer but also a backup of the previous version is made.
+The default number of backups per document is 10.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Documents hosted by Royal Server are potentially open by multiple clients. Although Royal TS/X and Royal Server offer a sophisticated way of merging
+different versions of a document it is strongly recommended to make sure that</p>
+<ol>
+<li>Royal Server is shut down during that process and</li>
+<li>No Royal TS/X client has the particular file open. If you restore an old version of a document, a client (with a newer version open) might overwrite the backup again with newer content.</li>
+</ol>
+</div>
+<p>In order to restore a previous version of a document execute the following steps:</p>
+<ol>
+<li>Find the document in the document list in the Configuration Tool that you want to restore. Make note of the column &quot;Id&quot; which represents the ID of the document.</li>
+<li>All document store backups are stored in Document Root Folder which is configured at the Document Store group and then on the Configuration entry. The default
+path is 'C:\ProgramData\RoyalServer\DocumentStore'. In this folder you find a directory &quot;Documents&quot; where the currently hosted documents are stored. Inside this folder, you find a number of folders with names that are GUIDs (globally unique identifier), one folder per document. These folders represent one document each. The &quot;Id&quot; from the UI corresponds to
+a folder with that name.</li>
+<li>Open the folder with the Document ID in Windows Explorer</li>
+<li>Inside this folder you find the following files:</li>
+</ol>
+<ul>
+<li>meta.json (this file contains some meta-information displayed in the Configuration Tool)</li>
+<li>default.rtsz (the document in the current version)</li>
+<li>Zero or more files with the extension *.rtszbackup.</li>
+</ul>
+<ol start="5">
+<li>Stop Royal Server</li>
+<li>Either delete the default.rtsz file or copy it to a safe place. then,</li>
+<li>Chose the version of the file you want to restore based on the timestamp of the backup files</li>
+<li>Copy the selected file and rename it to default.rtsz</li>
+<li>Start Royal Server</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">[BETA] Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2022/royalserver/advanced/restoring-previous-version-document.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
