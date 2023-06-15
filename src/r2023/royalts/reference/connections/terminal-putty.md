@@ -490,6 +490,16 @@ This option allows the SSH server to open forwarded connections back to your loc
 
 The SSH-2 protocol does allow changes of username, in principle, but does not make it mandatory for SSH-2 servers to accept them. If you know your server can cope with it, you can enable this option.
 
+### Credentials
+
+#### Certificate to use with the private key
+
+OpenSSH certificate to use with the private key specified on the credentials page.
+
+#### Plugin command to run
+
+Enter the full command line for the authentication plugin to run.
+
 ### GSSAPI
 
 #### Attempt GSSAPI Authentication (SSH-2)
