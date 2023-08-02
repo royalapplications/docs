@@ -56,3 +56,14 @@ Specify the IP Address and Port the Secure Gateway is binding to. Use this to IP
 **Additional Bindings**
 
 Additionally to the Primary Binding you can specify Additional Bindings. These can be disabled, edited or deleted.
+
+**Advanced Performance Configuration Settings**
+
+Tweaking the settings below may occasionally increase transfer speed.
+
+> [!NOTE]
+> These settings can only be applied by editing the section `SecureGateway` in `%AppData%\RoyalServer\appsettings.json`.
+
+- _ReceiveBuffer_: Optionally, set a value (in bytes) that specifies the size of the buffer for incoming data. Default value is null.
+- _SendBuffer_: Optionally, set a value (in bytes) that specifies the size of the buffer for outgoing data. Default value is null.
+- _UseLargeBuffers_: If true, large buffers will be applied for send and receive, if not explicitly configured otherwise. Default value is false.

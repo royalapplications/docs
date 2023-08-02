@@ -7,6 +7,7 @@ order: 5000
 
 - [Application Settings](./application-settings.md)
 - [Backup](./backup.md)
-- [Performance Counter](./performance-counters.md)
-- [Trace Flags](./trace-flags.md)
 - [Management Scripts](./management-scripts/index.md)
+- [Performance Counter](./performance-counters.md)
+- [Server-Limits](./server-limits.md)
+- [Trace Flags](./trace-flags.md)

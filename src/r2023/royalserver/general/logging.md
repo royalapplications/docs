@@ -85,3 +85,35 @@ If checked, all requests and responses from the Management Endpoint and the Docu
 
 > [!NOTE]
 > Be aware that for each request, two log files will be generated. One _<guid>\_request.xml_ file and one _<guid>\_response.xml_ file.
+
+## Syslog Logging
+
+Syslog support is currently only supported as an experimental feature and the setup/configuration may vary depending on your server setup.
+
+> [!NOTE]
+> Syslog support can only be activated by editing `%AppData%\RoyalServer\appsettings.json`.
+
+Available configuration keys:
+
+- _SysLogEnabled_: Enable or disable the syslog logging.
+- _SysLogProtocol_: The protocol to use.
+  - Allowed values: `Udp`, `Tcp`
+  - The default value is `Udp`.
+- _SysLogTarget_: The hostname or ip of the syslog server.
+- _SysLogPort_: The port the syslog server is listening on.
+- _SysLogFacility_: An integer specifying the category of the system generating the log message according to the `RFC3164`.
+  - Allowed values: 0 - 23.
+  - The default value is 16 (Local0).
+- _SysLogLogLevel_: The log level to apply.
+  - Allowed values: `Verbose`, `Debug`, `Information`, `Warning`, `Error`, `Fatal`
+  - The default value is Information.
+- _SysLogFramingType_: How to frame i.e. delimit syslog messages on the wire.
+  - Allowed values: `CRLF`, `CR`, `LF`, `NUL`, `OCTET_COUNTING`,
+  - The default value is `OCTET_COUNTING` (as described in RFC5425 and RFC6587).
+- _SysLogFormat_
+  - Allowed values: `Local`, `RFC3164`, `RFC5424`
+  - The default value is `RFC5424`.
+- _SysLogSslProtocols_: Comma separated list of SSL/TLS protocols used for a secure channel.
+  - Allowed values: see System.Security.Authentication.SslProtocols
+  - Default value is `Tls12`.
+- _SysLogIgnoreCertificateErrors_: If set to `true`, all certificate errors will be ignored when using protocol `Tcp`.
