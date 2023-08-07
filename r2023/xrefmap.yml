@@ -448,6 +448,9 @@ references:
 - uid: scripting_docs_samples_createdoc
   name: Creating a new Document
   href: scripting/document/samples/create-document.html
+- uid: scripting_docs_samples_createroyalmanagementendpoint
+  name: Create a Royal Management Endpoint
+  href: scripting/document/samples/create-royal-management-endpoint.html
 - uid: scripting_docs_samples_installmodule
   name: Install Module
   href: scripting/document/samples/install-module.html
