@@ -6,7 +6,7 @@
       <div class="form-group">
         <label for="version-select">Version</label>
         <select id="version-select" class="form-control">
-          <option value="r2023">[BETA] Royal TS V7 / Royal Server V5</option>
+          <option value="r2023">Royal TS V7 / Royal Server V5</option>
           <option value="r2021">Royal TS V6 / Royal Server V4</option>
         </select>
       </div>
