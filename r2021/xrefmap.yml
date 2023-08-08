@@ -82,6 +82,27 @@ references:
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
   href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
+- uid: Set-RoyalDocumentPassword
+  name: Set-RoyalDocumentPassword
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
+- uid: Set-RoyalDocumentType
+  name: Set-RoyalDocumentType
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
+- uid: Set-RoyalObjectCustomProperty
+  name: Set-RoyalObjectCustomProperty
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
+- uid: Set-RoyalObjectCustomPropertyPosition
+  name: Set-RoyalObjectCustomPropertyPosition
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
+- uid: Set-RoyalObjectValue
+  name: Set-RoyalObjectValue
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
+- uid: Set-RoyalSortOrder
+  name: Set-RoyalSortOrder
+  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
+- uid: Uninstall-RoyalServerLicense
+  name: Uninstall-RoyalServerLicense
+  href: scripting/server/Uninstall-RoyalServerLicense.html
 - uid: royalserver_advanced_management-scripts_prepare
   name: Prepare a Managed Server
   href: royalserver/advanced/management-scripts/prepare-managed-server.html
@@ -337,6 +358,9 @@ references:
 - uid: scripting_docs_samples_createdoc
   name: Creating a new Document
   href: scripting/document/samples/create-document.html
+- uid: scripting_docs_samples_createroyalmanagementendpoint
+  name: Create a Royal Management Endpoint
+  href: scripting/document/samples/create-royal-management-endpoint.html
 - uid: scripting_docs_samples_installmodule
   name: Install Module
   href: scripting/document/samples/install-module.html
@@ -463,24 +487,3 @@ references:
 - uid: scripting_serverps
   name: RoyalServer Powershell
   href: scripting/server/index.html
-- uid: Set-RoyalDocumentPassword
-  name: Set-RoyalDocumentPassword
-  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
-- uid: Set-RoyalDocumentType
-  name: Set-RoyalDocumentType
-  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
-- uid: Set-RoyalObjectCustomProperty
-  name: Set-RoyalObjectCustomProperty
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
-- uid: Set-RoyalObjectCustomPropertyPosition
-  name: Set-RoyalObjectCustomPropertyPosition
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
-- uid: Set-RoyalObjectValue
-  name: Set-RoyalObjectValue
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
-- uid: Set-RoyalSortOrder
-  name: Set-RoyalSortOrder
-  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
-- uid: Uninstall-RoyalServerLicense
-  name: Uninstall-RoyalServerLicense
-  href: scripting/server/Uninstall-RoyalServerLicense.html
