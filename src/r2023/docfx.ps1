@@ -32,7 +32,7 @@ if (!(Test-Path ../../.output/gh-pages))  {
 
 Set-Location $PSScriptRoot
 $docfxJson = Join-Path -Path $PSScriptRoot -ChildPath "docfx.json"
-docfx $docfxJson
+docfx $docfxJson --logLevel=Warning
 
 if ($serve) {
   $docfxJsonServe = Join-Path -Path $PSScriptRoot -ChildPath "docfx-serve.json"
