@@ -1,227 +1,227 @@
-- items:
-  - name: What is Royal Server?
-    order: 10099
-    href: introduction/what-is-royal-server.md
-  - name: What is Royal TS?
-    order: 10098
-    href: introduction/what-is-royal-ts.md
-  - name: Royal Server Components
-    order: 10081
-    href: introduction/what-are-royal-server-components.md
-  - name: How is Royal Server Working?
-    order: 10080
-    href: introduction/how-is-royal-server-working.md
-  - name: Installation
-    order: 10070
-    href: introduction/installation.md
-  - name: Configuration
-    order: 10060
-    href: introduction/configuration.md
-  - name: Royal TS/X Management Connection
-    order: 10040
-    href: introduction/royal-tsx-management-connection.md
-  - name: Release Notes
-    order: 10030
-    href: introduction/release-notes.md
-  name: Introduction
+- href: introduction/index.md
   order: 10000
-  href: introduction/index.md
-- items:
-  - name: Health
-    order: 9080
-    href: general/health.md
-  - name: General Configuration
-    order: 9070
-    href: general/general-configuration.md
-  - name: Manage Certificates
-    order: 9060
-    href: general/certificate-store.md
-  - name: Multi Factor Authentication
-    order: 9050
-    href: general/mfa.md
-  - name: Multi Factor User Store
-    order: 9040
-    href: general/mfa-user-store.md
-  - name: Permissions
-    order: 9030
-    href: general/permissions.md
-  - name: Logging
-    order: 9020
-    href: general/logging.md
-  - name: Update Settings
-    order: 9010
-    href: general/update-settings.md
-  - name: Licensing
-    order: 9005
-    href: general/licensing.md
-  name: Royal Server Configuration
+  items:
+  - href: introduction/what-is-royal-server.md
+    order: 10099
+    name: What is Royal Server?
+  - href: introduction/what-is-royal-ts.md
+    order: 10098
+    name: What is Royal TS?
+  - href: introduction/what-are-royal-server-components.md
+    order: 10081
+    name: Royal Server Components
+  - href: introduction/how-is-royal-server-working.md
+    order: 10080
+    name: How is Royal Server Working?
+  - href: introduction/installation.md
+    order: 10070
+    name: Installation
+  - href: introduction/configuration.md
+    order: 10060
+    name: Configuration
+  - href: introduction/royal-tsx-management-connection.md
+    order: 10040
+    name: Royal TS/X Management Connection
+  - href: introduction/release-notes.md
+    order: 10030
+    name: Release Notes
+  name: Introduction
+- href: general/index.md
   order: 9000
-  href: general/index.md
-- items:
-  - name: Document Store Module
-    order: 8090
-    href: modules/document-store.md
-  - name: Hyper-V Module
-    order: 8080
-    href: modules/hyper-v-module.md
-  - name: Royal Server Management Module
-    order: 8070
-    href: modules/royal-server-management.md
-  - name: Script Module
-    order: 8060
-    href: modules/script-module.md
-  - name: Terminal Services Module
-    order: 8050
-    href: modules/terminal-services-module.md
-  - name: VMware Module
-    order: 8040
-    href: modules/vmware-module.md
-  - name: Windows Events Module
-    order: 8030
-    href: modules/windows-events-module.md
-  - name: Windows Processes Module
-    order: 8020
-    href: modules/windows-processes-module.md
-  - name: Windows Services Module
-    order: 8010
-    href: modules/windows-services-module.md
-  name: Royal Server Modules
+  items:
+  - href: general/health.md
+    order: 9080
+    name: Health
+  - href: general/general-configuration.md
+    order: 9070
+    name: General Configuration
+  - href: general/certificate-store.md
+    order: 9060
+    name: Manage Certificates
+  - href: general/mfa.md
+    order: 9050
+    name: Multi Factor Authentication
+  - href: general/mfa-user-store.md
+    order: 9040
+    name: Multi Factor User Store
+  - href: general/permissions.md
+    order: 9030
+    name: Permissions
+  - href: general/logging.md
+    order: 9020
+    name: Logging
+  - href: general/update-settings.md
+    order: 9010
+    name: Update Settings
+  - href: general/licensing.md
+    order: 9005
+    name: Licensing
+  name: Royal Server Configuration
+- href: modules/index.md
   order: 8000
-  href: modules/index.md
-- items:
-  - items:
-    - name: Service Configuration
-      order: 7340
-      href: components/management/service-configuration.md
-    - name: Security Configuration
-      order: 7330
-      href: components/management/security-configuration.md
-    - name: Dynamic Folder
-      order: 7320
-      href: components/management/dynamic-folder.md
-    - name: Modules
-      order: 7310
-      href: components/management/modules.md
-    name: Management Endpoint
-    order: 7300
-    href: components/management/index.md
-  - items:
-    - name: Secure Gateway Configuration
-      order: 7240
-      href: components/secure-gateway/gateway-configuration.md
-    - name: Gateway Security Configuration
-      order: 7230
-      href: components/secure-gateway/gateway-security-configuration.md
-    - name: Gateway Cipher Configuration
-      order: 7220
-      href: components/secure-gateway/gateway-ciphers.md
-    - name: Gateway Connections
-      order: 7210
-      href: components/secure-gateway/gateway-connections.md
-    name: Secure Gateway
-    order: 7200
-    href: components/secure-gateway/index.md
-  - items:
-    - name: Configuration
-      order: 7120
-      href: components/document-store/configuration.md
-    - name: Documents
-      order: 7110
-      href: components/document-store/documents.md
-    name: Document Store
-    order: 7100
-    href: components/document-store/index.md
-  name: Royal Server Components
+  items:
+  - href: modules/document-store.md
+    order: 8090
+    name: Document Store Module
+  - href: modules/hyper-v-module.md
+    order: 8080
+    name: Hyper-V Module
+  - href: modules/royal-server-management.md
+    order: 8070
+    name: Royal Server Management Module
+  - href: modules/script-module.md
+    order: 8060
+    name: Script Module
+  - href: modules/terminal-services-module.md
+    order: 8050
+    name: Terminal Services Module
+  - href: modules/vmware-module.md
+    order: 8040
+    name: VMware Module
+  - href: modules/windows-events-module.md
+    order: 8030
+    name: Windows Events Module
+  - href: modules/windows-processes-module.md
+    order: 8020
+    name: Windows Processes Module
+  - href: modules/windows-services-module.md
+    order: 8010
+    name: Windows Services Module
+  name: Royal Server Modules
+- href: components/index.md
   order: 7000
-  href: components/index.md
-- items:
-  - name: Application Settings
-    order: 5090
-    href: advanced/application-settings.md
-  - name: Backup
-    order: 5080
-    href: advanced/backup.md
-  - items:
-    - name: Prepare a Managed Server
-      order: 5120
-      href: advanced/management-scripts/prepare-managed-server.md
-    - name: Cleanup an Installation
-      order: 5110
-      href: advanced/management-scripts/uninstall.md
-    name: Management Scripts
-    order: 5065
-    href: advanced/management-scripts/index.md
-  - name: Performance Counter
-    order: 5060
-    href: advanced/performance-counters.md
-  - name: Server Limits
-    order: 5055
-    href: advanced/server-limits.md
-  - name: Trace Flags
-    order: 5050
-    href: advanced/trace-flags.md
-  - name: Restoring Document Versions
-    order: 5040
-    href: advanced/restoring-previous-version-document.md
-  name: Advanced Topics
+  items:
+  - href: components/management/index.md
+    order: 7300
+    items:
+    - href: components/management/service-configuration.md
+      order: 7340
+      name: Service Configuration
+    - href: components/management/security-configuration.md
+      order: 7330
+      name: Security Configuration
+    - href: components/management/dynamic-folder.md
+      order: 7320
+      name: Dynamic Folder
+    - href: components/management/modules.md
+      order: 7310
+      name: Modules
+    name: Management Endpoint
+  - href: components/secure-gateway/index.md
+    order: 7200
+    items:
+    - href: components/secure-gateway/gateway-configuration.md
+      order: 7240
+      name: Secure Gateway Configuration
+    - href: components/secure-gateway/gateway-security-configuration.md
+      order: 7230
+      name: Gateway Security Configuration
+    - href: components/secure-gateway/gateway-ciphers.md
+      order: 7220
+      name: Gateway Cipher Configuration
+    - href: components/secure-gateway/gateway-connections.md
+      order: 7210
+      name: Gateway Connections
+    name: Secure Gateway
+  - href: components/document-store/index.md
+    order: 7100
+    items:
+    - href: components/document-store/configuration.md
+      order: 7120
+      name: Configuration
+    - href: components/document-store/documents.md
+      order: 7110
+      name: Documents
+    name: Document Store
+  name: Royal Server Components
+- href: advanced/index.md
   order: 5000
-  href: advanced/index.md
-- items:
-  - items:
-    - name: Loading and Saving a Document from Royal Server
-      order: 7000
-      href: scripting/examples/Load-and-Save-Document.md
-    name: Advanced Scripting Examples
-    order: 4300
-    href: scripting/examples/index.md
-  - items:
-    - name: Get-RoyalServerModuleCommandParameter
-      order: 4000
-      href: scripting/powershell-commandlets/get-royalservermodulecommandparameter.md
-    - name: Invoke-RoyalServerCommand
-      order: 4000
-      href: scripting/powershell-commandlets/invoke-royalservercommand.md
-    - name: Get-RoyalServerModule
-      order: 4000
-      href: scripting/powershell-commandlets/get-royalservermodule.md
-    - name: New-RoyalServerConfig
-      order: 4000
-      href: scripting/powershell-commandlets/new-royalserverconfig.md
-    - name: Get-RoyalServerModuleCommand
-      order: 4000
-      href: scripting/powershell-commandlets/get-royalservermodulecommand.md
-    name: PowerShell Commandlets
-    order: 4300
-    href: scripting/powershell-commandlets/index.md
-  - items:
-    - name: Module Document Store
-      order: 4000
-      href: scripting/module-reference/module-document-store.md
-    - name: Module Hyper-V
-      order: 4000
-      href: scripting/module-reference/module-hyper-v.md
-    - name: Module Script
-      order: 4000
-      href: scripting/module-reference/module-script.md
-    - name: Module Windows Processes
-      order: 4000
-      href: scripting/module-reference/module-windows-processes.md
-    - name: Module Windows Events (EventLog)
-      order: 4000
-      href: scripting/module-reference/module-windows-events.md
-    name: Module References
-    order: 4200
-    href: scripting/module-reference/index.md
-  - name: Getting Started
-    order: 4010
-    href: scripting/getting-started.md
-  name: Scripting
+  items:
+  - href: advanced/application-settings.md
+    order: 5090
+    name: Application Settings
+  - href: advanced/backup.md
+    order: 5080
+    name: Backup
+  - href: advanced/management-scripts/index.md
+    order: 5065
+    items:
+    - href: advanced/management-scripts/prepare-managed-server.md
+      order: 5120
+      name: Prepare a Managed Server
+    - href: advanced/management-scripts/uninstall.md
+      order: 5110
+      name: Cleanup an Installation
+    name: Management Scripts
+  - href: advanced/performance-counters.md
+    order: 5060
+    name: Performance Counter
+  - href: advanced/server-limits.md
+    order: 5055
+    name: Server Limits
+  - href: advanced/trace-flags.md
+    order: 5050
+    name: Trace Flags
+  - href: advanced/restoring-previous-version-document.md
+    order: 5040
+    name: Restoring Document Versions
+  name: Advanced Topics
+- href: scripting/index.md
   order: 4000
-  href: scripting/index.md
-- name: Royal Server Homepage
+  items:
+  - href: scripting/examples/index.md
+    order: 4300
+    items:
+    - href: scripting/examples/Load-and-Save-Document.md
+      order: 7000
+      name: Loading and Saving a Document from Royal Server
+    name: Advanced Scripting Examples
+  - href: scripting/powershell-commandlets/index.md
+    order: 4300
+    items:
+    - href: scripting/powershell-commandlets/get-royalservermodulecommandparameter.md
+      order: 4000
+      name: Get-RoyalServerModuleCommandParameter
+    - href: scripting/powershell-commandlets/invoke-royalservercommand.md
+      order: 4000
+      name: Invoke-RoyalServerCommand
+    - href: scripting/powershell-commandlets/get-royalservermodule.md
+      order: 4000
+      name: Get-RoyalServerModule
+    - href: scripting/powershell-commandlets/new-royalserverconfig.md
+      order: 4000
+      name: New-RoyalServerConfig
+    - href: scripting/powershell-commandlets/get-royalservermodulecommand.md
+      order: 4000
+      name: Get-RoyalServerModuleCommand
+    name: PowerShell Commandlets
+  - href: scripting/module-reference/index.md
+    order: 4200
+    items:
+    - href: scripting/module-reference/module-document-store.md
+      order: 4000
+      name: Module Document Store
+    - href: scripting/module-reference/module-hyper-v.md
+      order: 4000
+      name: Module Hyper-V
+    - href: scripting/module-reference/module-script.md
+      order: 4000
+      name: Module Script
+    - href: scripting/module-reference/module-windows-processes.md
+      order: 4000
+      name: Module Windows Processes
+    - href: scripting/module-reference/module-windows-events.md
+      order: 4000
+      name: Module Windows Events (EventLog)
+    name: Module References
+  - href: scripting/getting-started.md
+    order: 4010
+    name: Getting Started
+  name: Scripting
+- href: https://royalapps.com/server/main/features
   order: 1040
-  href: https://royalapps.com/server/main/features
-- name: System Requirements
+  name: Royal Server Homepage
+- href: https://www.royalapps.com/go/kb-server-main-systemrequirements
   order: 1030
-  href: https://www.royalapps.com/go/kb-server-main-systemrequirements
+  name: System Requirements
 

@@ -1,4 +1,5 @@
-// Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
+// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
 var common = require('./common.js');
 var classCategory = 'class';
 var namespaceCategory = 'ns';
@@ -20,7 +21,6 @@ exports.transform = function (model) {
       case 'namespace':
         model.isNamespace = true;
         if (model.children) groupChildren(model, namespaceCategory);
-        model[getTypePropertyName(model.type)] = true;
         break;
       case 'class':
       case 'interface':
@@ -193,12 +193,12 @@ function handleItem(vm, gitContribute, gitUrlPattern) {
   vm.sourceurl = common.getViewSourceHref(vm, null, gitUrlPattern);
 
   // set to null incase mustache looks up
-  vm.summary = vm.summary || null;
-  vm.remarks = vm.remarks || null;
-  vm.conceptual = vm.conceptual || null;
-  vm.syntax = vm.syntax || null;
-  vm.implements = vm.implements || null;
-  vm.example = vm.example || null;
+  vm.summary = vm.summary || "";
+  vm.remarks = vm.remarks || "";
+  vm.conceptual = vm.conceptual || "";
+  vm.syntax = vm.syntax || "";
+  vm.implements = vm.implements || "";
+  vm.example = vm.example || "";
   common.processSeeAlso(vm);
 
   // id is used as default template's bookmark
