@@ -10,7 +10,7 @@ Below you find a quick start guide for Royal TS, Royal TSX and Royal Server. Use
 
 #### Create a new document to store your connections
 
-<img style="margin: 0 0.7em 0 0.7em" src="./images/RoyalTS/GettingStarted/Step1.png" alt-text="Step 1">
+<img class="screenshot" src="./images/RoyalTS/GettingStarted/Step1.png" alt-text="Step 1">
 
 Provide a name for the document and click OK.
 
@@ -20,7 +20,7 @@ Provide a name for the document and click OK.
 
 #### Select the document or a folder in your document and create a new connection
 
-<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalTS/GettingStarted/Step2.png" alt-text="Step 2">
+<img class="screenshot" src="./images/RoyalTS/GettingStarted/Step2.png" alt-text="Step 2">
 
 In this example we add a new remote desktop connection. Enter a display name and computer name for the new connection.
 
@@ -30,7 +30,7 @@ In this example we add a new remote desktop connection. Enter a display name and
 
 #### Select the connection and click Connect
 
-<img style="float: right; margin: 0 0.7em 0 0.7em" src="./images/RoyalTS/GettingStarted/Step3.png" alt-text="Step 3">
+<img class="screenshot" src="./images/RoyalTS/GettingStarted/Step3.png" alt-text="Step 3">
 
 </div>
 
@@ -120,7 +120,7 @@ After installation Royal Server needs to be provided with a Worker Account confi
 
 <br />
 
-<img class="screenshot" src="./images/RoyalServer/GettingStarted/Step01.png" alt-text="Step 1">
+<img class="screenshot screenshot-server" src="./images/RoyalServer/GettingStarted/Step01.png" alt-text="Step 1">
 
 <br />
 
@@ -136,7 +136,7 @@ Royal Server can only be accessed by accounts that are member of the "Royal Serv
 
 <br />
 
-<img class="screenshot" src="./images/RoyalServer/GettingStarted/Step02.png" alt-text="Step 2">
+<img class="screenshot screenshot-server" src="./images/RoyalServer/GettingStarted/Step02.png" alt-text="Step 2">
 
 <br />
 
@@ -150,7 +150,7 @@ In order to prepare a centrally stored Royal Document for your team you need to 
 
 <br />
 
-<img class="screenshot" src="./images/RoyalServer/GettingStarted/Step03.png" alt-text="Step 3">
+<img class="screenshot screenshot-server" src="./images/RoyalServer/GettingStarted/Step03.png" alt-text="Step 3">
 
 <br />
 <br />
@@ -159,7 +159,7 @@ To enable the Document store select "Document Store" and click "Enable", save an
 
 <br />
 
-<img class="screenshot" src="./images/RoyalServer/GettingStarted/Step04.png" alt-text="Step 4">
+<img class="screenshot screenshot-server" src="./images/RoyalServer/GettingStarted/Step04.png" alt-text="Step 4">
 
 <br />
 <br />
@@ -168,7 +168,7 @@ Then select "Documents" and click "Add" -> "New..." to add a new Royal Document.
 
 <br />
 
-<img class="screenshot" src="./images/RoyalServer/GettingStarted/Step05.png" alt-text="Step 5">
+<img class="screenshot screenshot-server" src="./images/RoyalServer/GettingStarted/Step05.png" alt-text="Step 5">
 
 <br />
 <br />
@@ -177,7 +177,7 @@ You now have a centrally stored document that can be shared and used within a te
 
 <br />
 
-<img class="screenshot" src="./images/RoyalServer/GettingStarted/Step06.png" alt-text="Step 6">
+<img class="screenshot screenshot-server" src="./images/RoyalServer/GettingStarted/Step06.png" alt-text="Step 6">
 
 <br />
 

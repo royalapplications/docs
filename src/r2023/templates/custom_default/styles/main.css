@@ -156,6 +156,18 @@ img[src*="#img_large"] {
   height: 8em;
 }
 
+.screenshot {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.screenshot.screenshot-server {
+  border: solid 1px #cccccc;
+}
+
 table td {
   vertical-align: middle !important;
 }
@@ -198,12 +210,6 @@ blockquote {
 .icon-lg {
   width: 48px;
   height: 48px;
-}
-
-.screenshot {
-  border: solid 1px #cccccc;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 a.external-link::after {
