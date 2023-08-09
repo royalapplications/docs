@@ -439,130 +439,68 @@ Copies the credential's password to the clipboard.</li>
 <p>The number of seconds each tab page should be shown before Royal TS will select the next one.</p>
 <h2 id="-logging"><img src="/r2023/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header" alt=""> Logging</h2>
 <p>The <strong>Logging</strong> page allows you to configure how Royal TS keeps records of user activity, error and debug information.</p>
-<h3 id="internal-logging">Internal Logging</h3>
-<h4 id="enable-internal-logging">Enable Internal Logging</h4>
-<p>Turns internal logging on and off.</p>
-<h4 id="logging-level">Logging Level:</h4>
-<p>Select which log entry severities to include in the internal log.</p>
-<h4 id="save-to-file">Save to File</h4>
-<p>This option allows you to save the log to a file either when you close Royal TS or after period of time/number of log entries.</p>
-<ul>
-<li><strong>never:</strong> log is cleared and lost when you close Royal TS.</li>
-<li><strong>on exit:</strong> a log file is written to disk when you close Royal TS.</li>
-<li><strong>on exit or after n minutes/log entries:</strong> a log file is written to disk when you close Royal TS or after a defined number of minutes/log entries.</li>
-</ul>
-<h4 id="create-new-file">Create New File</h4>
-<p>This option allows you to control when Royal TS creates new log files, when to keep log files and how often the log file is written to for storage.</p>
-<ul>
-<li><strong>never (overwrite):</strong> the log is always saved to the same file and overwritten whenever it is saved to disk.</li>
-<li><strong>on exit:</strong> a new log file is created when you close Royal TS.</li>
-<li><strong>on exit or after n minutes/log entries:</strong> a new log file is created when you close Royal TS or after a defined number of minutes/log entries.</li>
-</ul>
-<h4 id="logfile-directory">Logfile Directory</h4>
-<p>Specify a directory where the log files should be stored. Use the browse button (...) to browse for a folder.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>You can also use environment variables in the Logfile Directory, such as %TEMP%.</p>
-</div>
-<h4 id="logfile-name">Logfile Name</h4>
-<p>Specify the name of the log file.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>If you have configured to create multiple logfiles, the file name is automatically extended and will include the time stamp.</p>
-</div>
-<h3 id="event-log">Event Log</h3>
-<h4 id="enable-logging-to-the-windows-event-log">Enable Logging to the Windows Event Log</h4>
+<h3 id="general-1">General</h3>
+<h4 id="log-level">Log Level:</h4>
+<p>Select which log entry severities to include in the log.</p>
+<h4 id="internal-log">Internal Log</h4>
+<p>If checked, Royal TS keeps log entries in memory and can be viewed using the <strong>Log</strong> command on the <strong>View</strong> ribbon tab.</p>
+<h4 id="windows-event-log">Windows Event Log</h4>
 <p>If checked, Royal TS writes log entries to the Windows Event Log.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>Royal TS creates a new Windows Event Log called &quot;Royal TS&quot;. If you want to use this option, Royal TS needs to be started at least once using local administrator rights in order to create the new Event Log on your system.</p>
 </div>
-<h4 id="logging-level-1">Logging Level</h4>
-<p>Select which log entry severities to include in the internal log.</p>
-<h4 id="template">Template</h4>
-<p>Use the template to control which information should be published to the event log. You can use the following replacement tokens in the event log message:</p>
-<table>
-<thead>
-<tr>
-<th>Replacement Token</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math">\(Action\)</span></td>
-<td>The value of the action field, such as Connect or Disconnect.</td>
-</tr>
-<tr>
-<td><span class="math">\(CustomField1\)</span> up to <span class="math">\(CustomField10\)</span></td>
-<td>The value of the custom field.</td>
-</tr>
-<tr>
-<td><span class="math">\(Details\)</span></td>
-<td>The log entry details.</td>
-</tr>
-<tr>
-<td><span class="math">\(LocalHost\)</span></td>
-<td>The computer name running Royal TS.</td>
-</tr>
-<tr>
-<td><span class="math">\(LocalUser\)</span></td>
-<td>The user account name running Royal TS.</td>
-</tr>
-<tr>
-<td><span class="math">\(Message\)</span></td>
-<td>The log entry message.</td>
-</tr>
-<tr>
-<td><span class="math">\(ObjectDisplayName\)</span></td>
-<td>The name of the object in context to the log entry.</td>
-</tr>
-<tr>
-<td><span class="math">\(ObjectID\)</span></td>
-<td>The ID (Guid) of the object in context to the log entry.</td>
-</tr>
-<tr>
-<td><span class="math">\(ObjectType\)</span></td>
-<td>The type of object in context to the log entry.</td>
-</tr>
-<tr>
-<td><span class="math">\(RemoteURI\)</span></td>
-<td>The URI (computer name, IP or URL) of the object in context to the log entry.</td>
-</tr>
-<tr>
-<td><span class="math">\(RemoteUser\)</span></td>
-<td>The username used on the object in context to the log entry.</td>
-</tr>
-<tr>
-<td><span class="math">\(Severity\)</span></td>
-<td>The log entry's severity.</td>
-</tr>
-<tr>
-<td><span class="math">\(TimeStamp\)</span></td>
-<td>Date and time of the log entry.</td>
-</tr>
-</tbody>
-</table>
-<h4 id="reset-template">Reset Template</h4>
-<p>Click the button to reset the event log template to the default setting.</p>
-<h3 id="console">Console</h3>
-<h4 id="enable-logging-to-the-console">Enable Logging to the Console</h4>
-<p>If checked, Royal TS writes log entries to the STDOUT console.</p>
-<h4 id="logging-level-2">Logging Level</h4>
-<p>Select which log entry severities to include in the console log.</p>
-<h4 id="use-color-output">Use Color Output</h4>
-<p>If checked, log messages are shown in different colors depending of the log level.</p>
-<h3 id="trace-file">Trace File</h3>
-<h4 id="enable-logging-to-a-trace-file">Enable Logging to a Trace File</h4>
-<p>If checked, Royal TS writes log entries to a trace file.</p>
-<h4 id="logging-level-3">Logging Level</h4>
-<p>Select which log entry severities to include in the trace file log.</p>
-<h4 id="trace-file-directory">Trace File Directory</h4>
-<p>Specify a directory where the trace file should be saved. Click the browse button (or Ctrl + B) to select a folder. You may also use environment variables like %TEMP%</p>
-<h4 id="trace-file-name">Trace File Name</h4>
-<p>Specify the name of the trace file.</p>
-<h4 id="overwrite-file-on-application-start">Overwrite File on Application Start</h4>
-<p>If checked, the trace file is overwritten when Royal TS starts, otherwise the trace messages will be appended to the existing file.</p>
+<h3 id="log-file">Log File</h3>
+<p>If checked, Royal TS writes log entries to a file.</p>
+<h4 id="path">Path</h4>
+<p>Specify a directory where the file should be saved. Click the browse button to select a folder.</p>
+<h4 id="max-size-in-mb">Max. Size in MB</h4>
+<p>Specify the maximum file size before a new log file is written.</p>
+<h4 id="files-to-keep">Files to Keep</h4>
+<p>Specify how many log files should be kept.</p>
+<h3 id="advanced">Advanced</h3>
+<p>Since Royal TS is using <em>Serilog</em> as a logging framework you can configure more advanced logging scenarios.</p>
+<p>The following <em>Serilog sinks</em> are included:</p>
+<ul>
+<li><a href="https://github.com/serilog-contrib/serilog-sinks-elasticsearch">Elastic Search</a></li>
+<li><a href="https://github.com/serilog/serilog-sinks-eventlog">Event Log</a></li>
+<li><a href="https://github.com/serilog/serilog-sinks-file">File</a></li>
+<li><a href="https://github.com/FantasticFiasco/serilog-sinks-http">HTTP</a></li>
+<li><a href="https://github.com/serilog-mssql/serilog-sinks-mssqlserver">MS SQL Server</a></li>
+<li><a href="https://github.com/serilog-contrib/serilog-sinks-splunk">Splunk</a></li>
+<li><a href="https://github.com/IonxSolutions/serilog-sinks-syslog">Syslog</a></li>
+</ul>
+<p>Here is an example how to specify a custom serilog configuration to log using the file sink:</p>
+<pre><code class="lang-json">{
+  &quot;WriteTo&quot;: [
+    {
+      &quot;Name&quot;: &quot;File&quot;,
+      &quot;Args&quot;: {
+        &quot;path&quot;: &quot;C:\\log.txt&quot;,
+        &quot;rollingInterval&quot;: &quot;Day&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+<p>Here is an example to send log entries to a syslog server:</p>
+<pre><code class="lang-json">{
+  &quot;WriteTo&quot;: [
+    {
+      &quot;Name&quot;: &quot;UdpSyslog&quot;,
+      &quot;Args&quot;: {
+        &quot;host&quot;: &quot;localhost&quot;,
+        &quot;port&quot;: 514,
+        &quot;sourceHost&quot;: &quot;my-host&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Any configuration specified in the <strong>Advanced</strong> text box will override the UI configuration.</p>
+</div>
 <h2 id="-troubleshooting"><img src="/r2023/images/RoyalTS/Application/SVG_PageTroubleshooting_32.svg#img_header" alt=""> Troubleshooting</h2>
 <p>The <strong>Troubleshooting</strong> page allows you to specify your contact information that will be appended to the error reports by Royal TS and also lets you reset application settings.</p>
 <h3 id="error-reporting">Error Reporting</h3>
@@ -602,7 +540,7 @@ Copies the credential's password to the clipboard.</li>
 <p>To use the dynamic folder or dynamic credential feature, scripts must be executed on your system. Configure the path to the script interpreter executables for each supported scripting language.</p>
 <h4 id="script-interpreter">Script Interpreter</h4>
 <p>Select a scripting language.</p>
-<h4 id="path">Path</h4>
+<h4 id="path-1">Path</h4>
 <p>Specify the path to the executable.</p>
 <div class="TIP">
 <h5>Tip</h5>
