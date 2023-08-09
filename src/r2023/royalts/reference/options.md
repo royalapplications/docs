@@ -587,118 +587,87 @@ The number of seconds each tab page should be shown before Royal TS will select 
 
 The **Logging** page allows you to configure how Royal TS keeps records of user activity, error and debug information.
 
-### Internal Logging
+### General
 
-#### Enable Internal Logging
+#### Log Level:
 
-Turns internal logging on and off.
+Select which log entry severities to include in the log.
 
-#### Logging Level:
+#### Internal Log
 
-Select which log entry severities to include in the internal log.
+If checked, Royal TS keeps log entries in memory and can be viewed using the **Log** command on the **View** ribbon tab.
 
-#### Save to File
-
-This option allows you to save the log to a file either when you close Royal TS or after period of time/number of log entries.
-
-- **never:** log is cleared and lost when you close Royal TS.
-- **on exit:** a log file is written to disk when you close Royal TS.
-- **on exit or after n minutes/log entries:** a log file is written to disk when you close Royal TS or after a defined number of minutes/log entries.
-
-#### Create New File
-
-This option allows you to control when Royal TS creates new log files, when to keep log files and how often the log file is written to for storage.
-
-- **never (overwrite):** the log is always saved to the same file and overwritten whenever it is saved to disk.
-- **on exit:** a new log file is created when you close Royal TS.
-- **on exit or after n minutes/log entries:** a new log file is created when you close Royal TS or after a defined number of minutes/log entries.
-
-#### Logfile Directory
-
-Specify a directory where the log files should be stored. Use the browse button (...) to browse for a folder.
-
-> [!Tip]
-> You can also use environment variables in the Logfile Directory, such as %TEMP%.
-
-#### Logfile Name
-
-Specify the name of the log file.
-
-> [!Note]
-> If you have configured to create multiple logfiles, the file name is automatically extended and will include the time stamp.
-
-### Event Log
-
-#### Enable Logging to the Windows Event Log
-
+#### Windows Event Log
 If checked, Royal TS writes log entries to the Windows Event Log.
 
 > [!Important]
 > Royal TS creates a new Windows Event Log called "Royal TS". If you want to use this option, Royal TS needs to be started at least once using local administrator rights in order to create the new Event Log on your system.
 
-#### Logging Level
+### Log File
 
-Select which log entry severities to include in the internal log.
+If checked, Royal TS writes log entries to a file.
 
-#### Template
+#### Path
 
-Use the template to control which information should be published to the event log. You can use the following replacement tokens in the event log message:
+Specify a directory where the file should be saved. Click the browse button to select a folder.
 
-| Replacement Token                    | Description                                                                   |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| $Action$                             | The value of the action field, such as Connect or Disconnect.                 |
-| $CustomField1$ up to $CustomField10$ | The value of the custom field.                                                |
-| $Details$                            | The log entry details.                                                        |
-| $LocalHost$                          | The computer name running Royal TS.                                           |
-| $LocalUser$                          | The user account name running Royal TS.                                       |
-| $Message$                            | The log entry message.                                                        |
-| $ObjectDisplayName$                  | The name of the object in context to the log entry.                           |
-| $ObjectID$                           | The ID (Guid) of the object in context to the log entry.                      |
-| $ObjectType$                         | The type of object in context to the log entry.                               |
-| $RemoteURI$                          | The URI (computer name, IP or URL) of the object in context to the log entry. |
-| $RemoteUser$                         | The username used on the object in context to the log entry.                  |
-| $Severity$                           | The log entry's severity.                                                     |
-| $TimeStamp$                          | Date and time of the log entry.                                               |
+#### Max. Size in MB
 
-#### Reset Template
+Specify the maximum file size before a new log file is written.
 
-Click the button to reset the event log template to the default setting.
+#### Files to Keep
 
-### Console
+Specify how many log files should be kept.
 
-#### Enable Logging to the Console
+### Advanced
 
-If checked, Royal TS writes log entries to the STDOUT console.
+Since Royal TS is using *Serilog* as a logging framework you can configure more advanced logging scenarios.
 
-#### Logging Level
+The following *Serilog sinks* are included:
 
-Select which log entry severities to include in the console log.
+- [Elastic Search](https://github.com/serilog-contrib/serilog-sinks-elasticsearch)
+- [Event Log](https://github.com/serilog/serilog-sinks-eventlog)
+- [File](https://github.com/serilog/serilog-sinks-file)
+- [HTTP](https://github.com/FantasticFiasco/serilog-sinks-http)
+- [MS SQL Server](https://github.com/serilog-mssql/serilog-sinks-mssqlserver)
+- [Splunk](https://github.com/serilog-contrib/serilog-sinks-splunk)
+- [Syslog](https://github.com/IonxSolutions/serilog-sinks-syslog)
 
-#### Use Color Output
+Here is an example how to specify a custom serilog configuration to log using the file sink:
 
-If checked, log messages are shown in different colors depending of the log level.
+```json
+{
+  "WriteTo": [
+    {
+      "Name": "File",
+      "Args": {
+        "path": "C:\\log.txt",
+        "rollingInterval": "Day"
+      }
+    }
+  ]
+}
+```
 
-### Trace File
+Here is an example to send log entries to a syslog server:
 
-#### Enable Logging to a Trace File
+```json
+{
+  "WriteTo": [
+    {
+      "Name": "UdpSyslog",
+      "Args": {
+        "host": "localhost",
+        "port": 514,
+        "sourceHost": "my-host"
+      }
+    }
+  ]
+}
+```
 
-If checked, Royal TS writes log entries to a trace file.
-
-#### Logging Level
-
-Select which log entry severities to include in the trace file log.
-
-#### Trace File Directory
-
-Specify a directory where the trace file should be saved. Click the browse button (or Ctrl + B) to select a folder. You may also use environment variables like %TEMP%
-
-#### Trace File Name
-
-Specify the name of the trace file.
-
-#### Overwrite File on Application Start
-
-If checked, the trace file is overwritten when Royal TS starts, otherwise the trace messages will be appended to the existing file.
+> [!Important]
+> Any configuration specified in the **Advanced** text box will override the UI configuration.
 
 ## ![](/r2023/images/RoyalTS/Application/SVG_PageTroubleshooting_32.svg#img_header) Troubleshooting
 
