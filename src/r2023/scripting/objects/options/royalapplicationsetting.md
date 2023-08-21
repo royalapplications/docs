@@ -34,7 +34,7 @@ Type: `int`, Default Value: `0`
  2 = Never Reconnect  
 ### DoNotShowGettingStartedPageOnStartup
 Type: `bool`, Default Value: `false`  
-Don't show the getting started page on launch (macOS only)  
+Don't show the getting started page on launch. When setting the value to true, make sure the AutoStartDocumentMode property is not set to 3.  
 ### Favorite
 Type: `bool`, Default Value: `false`  
 Whether or not the object is a favorite.  
@@ -167,6 +167,10 @@ Show Toolbar (macOS)
 ### ShowRibbon
 Type: `bool`, Default Value: `true`  
 Shows the ribbon if true. Ribbon is collapsed if false  
+### RibbonCommandLayout
+Type: `int`, Default Value: `0`  
+0 = Classic   
+ 1 = Simplified  
 ### UseExtendedFullScreen
 Type: `bool`, Default Value: `false`  
 Whether to maximize screen real estate when entering full screen or not (macOS only)  
@@ -201,20 +205,26 @@ Type: `bool`, Default Value: `false`
 External Window: Select Dashboard  
 ### MonitorConnectionStateOfDisconnectedTabs
 Type: `bool`, Default Value: `true`  
-Monitor the connection state of disconnected tabs (requires DontCloseTabOnRemoteDisconnect to be enabled)  
+Monitor the connection state of disconnected tabs  
+### MonitorConnectionStateOfNavigationPanelItems
+Type: `bool`, Default Value: `true`  
+Monitor the connection state of navigation panel connection items  
 ### MouseDoubleClickModeActive
 Type: `int`, Default Value: `2`  
 0 = Do nothing   
  1 = Edit Properties   
  2 = Disconnect   
- 3 = Reconnect  
+ 3 = Reconnect   
+ 4 = Connect Ad Hoc   
+ 5 = Focus  
 ### MouseDoubleClickModeConnectionTabs
 Type: `int`, Default Value: `4`  
 0 = Do nothing   
  1 = Edit Properties   
  2 = Disconnect   
  3 = Reconnect   
- 4 = External  
+ 4 = External   
+ 5 = Connect Ad Hoc  
 ### MouseDoubleClickModeCredentials
 Type: `int`, Default Value: `1`  
 0 = Do nothing   
@@ -265,6 +275,9 @@ Enable Browser Extensions
 Type: `bool`, Default Value: `true`  
 Enable Browser Extensions Browser Signature Verification  
 ## Dynamic Folder
+### DynamicFolderEnableDebugLogging
+Type: `bool`, Default Value: `false`  
+When executing dynamic folder scripts, additional debug log entries will be generated when scripts are executed. Enable this setting to diagnose programming issues.  
 ### DynamicFolderEvaluateShellPersonalizationFile
 Type: `bool`, Default Value: `true`  
 When executing dynamic folder scripts, by default the shell personalization file will be evaluated. Disable this setting to disable evaluating the shell personalization file.  
@@ -412,21 +425,108 @@ Type: `int`, Default Value: `-1`
 Type: `bool`, Default Value: `true`  
 Enable Logging to the Windows Event Log  
 ## Messages
+### DontShowActivateForScreenshotWarning
+Type: `bool`, Default Value: `false`  
+A warning is shown for hidden connections when a screenshot cannot be made   
+### DontShowActivateForTypingClipboardWarning
+Type: `bool`, Default Value: `false`  
+A warning is shown for hidden connections when clipboard text cannot be typed   
+### DontShowActiveTunnelsHint
+Type: `bool`, Default Value: `false`  
+Hint in the active tunnels view (info bar)  
+### DontShowClearLogWarning
+Type: `bool`, Default Value: `false`  
+A warning is shown when the user wants to clear the log  
+### DontShowClipboardTokenWarning
+Type: `bool`, Default Value: `false`  
+Warning before the clipboard is accessed for token replacement.  
+### DontShowColorSettingInfo
+Type: `bool`, Default Value: `false`  
+An information popup is shown when a user configures a color assignment and colors aren't rendered.  
+### DontShowCredentialAssignmentHint
+Type: `bool`, Default Value: `false`  
+Hint in the credential assignment (info bar)  
+### DontShowDashboardIntroduction
+Type: `bool`, Default Value: `false`  
+A popup showing a quick introduction to the Dashboard feature.  
 ### DontShowDocumentModifiedNotification
 Type: `bool`, Default Value: `false`  
 A notification is shown when a document is modified on disk  
+### DontShowDuplicateNameWarning
+Type: `bool`, Default Value: `false`  
+warning when the name already exists  
+### DontShowEncryptionInfo
+Type: `bool`, Default Value: `false`  
+An information popup is shown when a user inserts a credential to a document with no encryption.  
 ### DontShowExtendedFullScreenIntroduction
 Type: `bool`, Default Value: `false`  
 A popup showing a quick introduction to the extended full screen feature  
+### DontShowFileConversionMessage
+Type: `bool`, Default Value: `false`  
+A popup asking the user to convert the file to the new format  
+### DontShowFolderActionWarning
+Type: `bool`, Default Value: `false`  
+warning on connect/disconnect for all in folder  
+### DontShowKeepassMessage
+Type: `bool`, Default Value: `false`  
+A popup showing the keypass path message.  
 ### DontShowMaintenanceExtensionNotification
 Type: `bool`, Default Value: `false`  
 A dialog is shown when maintenance can be extended  
 ### DontShowMajorUpgradeNotification
 Type: `bool`, Default Value: `false`  
 A dialog is shown when a new major version is available  
+### DontShowManagementEndpointAssignmentHint
+Type: `bool`, Default Value: `false`  
+Hint in the Royal Server assignment (info bar)  
+### DontShowMixedTypeBulkEditWarning
+Type: `bool`, Default Value: `false`  
+A warning is shown when the users hits properties for mixed types  
+### DontShowMoveObjectWarning
+Type: `bool`, Default Value: `false`  
+An information popup is shown when a user moves objects from one document to another.  
+### DontShowOverviewDownloadInfo
+Type: `bool`, Default Value: `false`  
+Download info in the overview page.  
+### DontShowOverviewInfo
+Type: `bool`, Default Value: `false`  
+Information about the new feature overview.  
+### DontShowPropertiesPaletteHint
+Type: `bool`, Default Value: `false`  
+Hint in the properties palette view (info bar)  
+### DontShowPropertyEditorTabClosePrompt
+Type: `bool`, Default Value: `false`  
+Prompt when closing a property editor tab using the close button on the tab.  
+### DontShowRDPConnectionFailMessage
+Type: `bool`, Default Value: `false`  
+A warning is shown when the RDP connection failed  
+### DontShowRemoteDesktopGatewayAssignmentHint
+Type: `bool`, Default Value: `false`  
+Hint in the remote desktop gateway assignment (info bar)  
 ### DontShowRestoreConnectionsDialog
 Type: `bool`, Default Value: `false`  
 A dialog is shown that allows to reconnect to previously disconnected sessions  
+### DontShowSecureGatewayAssignmentHint
+Type: `bool`, Default Value: `false`  
+Hint in the secure gateway assignment (info bar)  
+### DontShowSharedDocumentCredentialWarning
+Type: `bool`, Default Value: `false`  
+Warns user when a credential is created in a shared document.  
+### DontShowShowOnlyConnectedWarning
+Type: `bool`, Default Value: `false`  
+A warning is shown when enabling show only connected  
+### DontShowShowOnlyFavoritesWarning
+Type: `bool`, Default Value: `false`  
+A warning is shown when enabling show only favorites  
+### DontShowTaskAssignmentHint
+Type: `bool`, Default Value: `false`  
+Hint in the task assignment (info bar)  
+### DontShowTaskContextHint
+Type: `bool`, Default Value: `false`  
+Hint in the task context (info bar)  
+### DontShowTypingClipboardTextVeryLongWarning
+Type: `bool`, Default Value: `false`  
+A warning is shown when the clipboard text to be typed is very long  
 ## Notifications
 ### NotifyConnection
 Type: `bool`, Default Value: `true`  
@@ -457,6 +557,13 @@ Password Generator Length
 ### PasswordPwnedCheck
 Type: `bool`, Default Value: `false`  
 If enabled, passwords will be securely verified and ensured it hasn't been pwned.  
+## Plugins
+### DisabledPlugins
+Type: `string[]`, Default Value: `new string[] { }`  
+List of disabled plugins (GUIDs).  
+### DisabledPluginsLocked
+Type: `bool`, Default Value: `false`  
+Whether or not to lock the UI to enable/disable plugins  
 ## Policy
 ### PolicyDoNotAllowApplicationDocumentWithoutPassword
 Type: `bool`, Default Value: `false`  
@@ -563,6 +670,12 @@ Show colorized title bar
 ### ColorizeTree
 Type: `bool`, Default Value: `false`  
 Use colors in the Navigation tree  
+### ColorSchemeMode
+Type: `int`, Default Value: `0`  
+0 = Default   
+ 1 = Light   
+ 2 = Dark   
+ 3 = Follow System  
 ### ConnectionBorderPadding
 Type: `int`, Default Value: `2`  
 Border Size  
@@ -574,7 +687,7 @@ Type: `int`, Default Value: `0`
 0 = left   
  1 = right  
 ### DpiAwareness
-Type: `int`, Default Value: `0`  
+Type: `int`, Default Value: `1`  
 0 = Off (best compatibility but blurry on high DPI screens)   
  1 = System (scaling based on primary screen)   
  2 = Per Monitor  

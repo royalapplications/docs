@@ -240,6 +240,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ### DashboardAutoShowData
 Type: `bool`, Default Value: `false`  
 If set to true, the dashboard will load the data.  

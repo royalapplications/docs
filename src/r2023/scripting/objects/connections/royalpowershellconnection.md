@@ -66,58 +66,58 @@ Type: `bool`, Default Value: `false`
 Use HTTPS.  
 ## Colors
 ### BackgroundColor
-Type: `int`, Default Value: `5`  
+Type: `int`, Default Value: `0`  
 Specifies the background color of the output stream.  
 ### CustomPalette0Black
-Type: `string`, Default Value: `#000000`  
-The normal black ANSI color value.  
+Type: `string`, Default Value: `#0C0C0C`  
+Console Color 'Black', ANSI Black (\e[0;30m)  
 ### CustomPalette10Green
-Type: `string`, Default Value: `#00FF00`  
-The green color value.  
+Type: `string`, Default Value: `#16C60C`  
+Console Color 'Green', ANSI 'Bright Green' (\e[0;92m)  
 ### CustomPalette11Cyan
-Type: `string`, Default Value: `#00FFFF`  
-The cyan color value.  
+Type: `string`, Default Value: `#61D6D6`  
+Console Color 'Cyan', ANSI 'Bright Cyan' (\e[0;96m)  
 ### CustomPalette12Red
-Type: `string`, Default Value: `#FF0000`  
-The red color value.  
+Type: `string`, Default Value: `#E74856`  
+Console Color 'Red', ANSI 'Bright Red' (\e[0;91m)  
 ### CustomPalette13Magenta
-Type: `string`, Default Value: `#FF00FF`  
-The magenta color value.  
+Type: `string`, Default Value: `#B4009E`  
+Console Color 'Magenta', ANSI 'Bright Magenta' (\e[0;95m)  
 ### CustomPalette14Yellow
-Type: `string`, Default Value: `#FFFF00`  
-The yellow color value.  
+Type: `string`, Default Value: `#F9F1A5`  
+Console Color 'Yellow', ANSI 'Bright Yellow' (\e[0;93m)  
 ### CustomPalette15White
-Type: `string`, Default Value: `#FFFFFF`  
-The white color value.  
+Type: `string`, Default Value: `#F2F2F2`  
+Console Color 'White', ANSI 'Bright White' (\e[0;97m)  
 ### CustomPalette1DarkBlue
-Type: `string`, Default Value: `#000080`  
-The dark blue color value.  
+Type: `string`, Default Value: `#0037DA`  
+Console Color 'Dark Blue', ANSI 'Blue' (\e[0;34m)  
 ### CustomPalette2DarkGreen
-Type: `string`, Default Value: `#008000`  
-The dark green color value.  
+Type: `string`, Default Value: `#13A10E`  
+Console Color 'Dark Green', ANSI 'Green' (\e[0;32m)  
 ### CustomPalette3DarkCyan
-Type: `string`, Default Value: `#008080`  
-The dark cyan color value.  
+Type: `string`, Default Value: `#3A96DD`  
+Console Color 'Dark Cyan', ANSI 'Cyan' (\e[0;36m)  
 ### CustomPalette4DarkRed
-Type: `string`, Default Value: `#800000`  
-The dark red color value.  
+Type: `string`, Default Value: `#C50F1F`  
+Console Color 'Dark Red', ANSI 'Red' (\e[0;31m)  
 ### CustomPalette5DarkMagenta
-Type: `string`, Default Value: `#012456`  
-The dark magenta color value.  
+Type: `string`, Default Value: `#881798`  
+Console Color 'Dark Magenta', ANSI 'Magenta' (\e[0;35m)  
 ### CustomPalette6DarkYellow
-Type: `string`, Default Value: `#EEEDF0`  
-The dark yellow color value.  
+Type: `string`, Default Value: `#C19C00`  
+Console Color 'Dark Yellow', ANSI 'Yellow' (\e[0;33m)  
 ### CustomPalette7Gray
-Type: `string`, Default Value: `#C0C0C0`  
-The gray color value.  
+Type: `string`, Default Value: `#CCCCCC`  
+Console Color 'Gray', ANSI 'White' (\e[0;37m)  
 ### CustomPalette8DarkGray
-Type: `string`, Default Value: `#808080`  
-The dark gray color value.  
+Type: `string`, Default Value: `#767676`  
+Console Color 'Dark Gray', ANSI 'Bright Black' (\e[0;90m)  
 ### CustomPalette9Blue
-Type: `string`, Default Value: `#0000FF`  
-The blue color value.  
+Type: `string`, Default Value: `#3B78FF`  
+Console Color 'Blue', ANSI 'Bright Blue' (\e[0;94m)  
 ### TextColor
-Type: `int`, Default Value: `6`  
+Type: `int`, Default Value: `7`  
 Specifies the text color in the output stream.  
 ## Credentials
 ### CredentialAutologon
@@ -331,6 +331,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ### DashboardAutoShowData
 Type: `bool`, Default Value: `false`  
 If set to true, the dashboard will load the data.  

@@ -192,11 +192,14 @@ Disables same-origin policy enforcement.
 ### DisableXSSAuditor
 Type: `bool`, Default Value: `false`  
 Disables same-origin policy enforcement.  
+### EngineId
+Type: `string`, Default Value: `Empty String`  
+If empty (default), the GUID of the connection is the engine id. Custom engine identifiers can be used to share the cache and session across multiple connections.  
 ### ExtraCommandLineArgs
 Type: `string`, Default Value: ``  
 Extra command line args separated with space, eg: '--disable-databases --disable-local-storage'. Note that only switches affecting Chromium are supported. Switches for the Chrome browser, like '--enable-cloud-devices' have no effect.  
 ### Language
-Type: `string`, Default Value: ``  
+Type: `string`, Default Value: `Empty String`  
 The Chromium UI language in ISO format (en or en-US).  
 ### LoadImages
 Type: `bool`, Default Value: `true`  
@@ -377,6 +380,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ### DashboardShowPage
 Type: `bool`, Default Value: `true`  
 If set to true, the dashboard will load the web page of the configured URL.  

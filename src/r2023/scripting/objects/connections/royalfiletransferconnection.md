@@ -259,6 +259,12 @@ A list containing all MAC algorithms in the order they should be negotiated if e
 ### PreferKeyboardInteractiveOverPasswordAuthentication
 Type: `bool`, Default Value: `false`  
 If set to true, keyboard interactive authentication is preferred over password authentication.  
+### SSHAuthAgent
+Type: `int`, Default Value: `0`  
+SSH Authentication Agent: 0 = None   
+ 1 = OpenSSH Agent   
+ 2 = Pageant   
+ 3 = Legacy Pageant  
 ## Private Key
 ### PrivateKeyPath
 Type: `string`, Default Value: `Empty String`  
@@ -358,6 +364,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ## Royal Server
 ### ManagementEndpointFromParent
 Type: `bool`, Default Value: `false`  

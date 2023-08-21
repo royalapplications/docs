@@ -39,9 +39,6 @@ The service port is used for service connections to the VMware host.
 ### IgnoreCertificateErrors
 Type: `bool`, Default Value: `true`  
 Ignore Certificate Errors  
-### SSHPort
-Type: `int`, Default Value: `22`  
-The SSH port is used for ad hoc Terminal connections to the VMware host.  
 ### IsConnectionTemplate
 Type: `bool`, Default Value: `false`  
 If set to true, the connection object is a template.  
@@ -61,6 +58,9 @@ The number of seconds the view will be reloaded. Requires the AutoRefresh proper
 ### MaxColumnWidth
 Type: `bool`, Default Value: `false`  
 If set to true, the whole client area is used for the column widths  
+### MoRef
+Type: `string`, Default Value: `Empty String`  
+If specified, a connect will directly start a vmware Console session for the specified instance.  
 ### ShowDetailsPanel
 Type: `bool`, Default Value: `true`  
 If set to true, the detail panel is shown (where available).  
@@ -70,6 +70,9 @@ If set to true, horizontal lines are shown.
 ### ShowVerticalLines
 Type: `bool`, Default Value: `false`  
 If set to true, vertical lines are shown.  
+### SSHPort
+Type: `int`, Default Value: `22`  
+The SSH port is used for ad hoc Terminal connections to the VMware host.  
 ## Credentials
 ### CredentialAutologon
 Type: `bool`, Default Value: `true`  
@@ -245,6 +248,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ### DashboardAutoShowData
 Type: `bool`, Default Value: `false`  
 If set to true, the dashboard will load the data.  

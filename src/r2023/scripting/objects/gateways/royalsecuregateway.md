@@ -71,6 +71,19 @@ If set to true, keyboard interactive authentication is preferred over password a
 ### SecureGatewayUsername
 Type: `string`, Default Value: `Empty String`  
 The username for the Gateway server.  
+## Security
+### SecureGatewayEncryptionKeyAlgorithms
+Type: `string[]`, Default Value: `new string[] { }`  
+A list containing all encryption key algorithms in the order they should be negotiated if enabled.  
+### SecureGatewayHostKeyAlgorithms
+Type: `string[]`, Default Value: `new string[] { }`  
+A list containing all host key algorithms in the order they should be negotiated if enabled.  
+### SecureGatewayKeyExchangeAlgorithms
+Type: `string[]`, Default Value: `new string[] { }`  
+A list containing all key exchange algorithms in the order they should be negotiated if enabled.  
+### SecureGatewayMacAlgorithms
+Type: `string[]`, Default Value: `new string[] { }`  
+A list containing all MAC algorithms in the order they should be negotiated if enabled.  
 ## Custom Fields
 ### CustomField1FromParent
 Type: `bool`, Default Value: `false`  

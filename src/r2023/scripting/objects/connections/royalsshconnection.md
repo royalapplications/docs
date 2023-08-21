@@ -422,6 +422,12 @@ Assign a password to the object.
 ### CredentialUsername
 Type: `string`, Default Value: `Empty String`  
 Assign a username to the object.  
+### SSHAuthPlugin
+Type: `string`, Default Value: `Empty String`  
+Plugin command to run.  
+### SSHDetachedCertificate
+Type: `string`, Default Value: `Empty String`  
+Certificate to use with the private key.  
 ## Display Options
 ### AutoAdjustTerminalSize
 Type: `bool`, Default Value: `true`  
@@ -792,6 +798,9 @@ Type: `int`, Default Value: `0`
 Type: `string`, Default Value: `Empty String`  
 Assign a key sequence task object to this object by specifying the key sequence task object's name.  
 ## Logging
+### CreateTextFileFromRecording
+Type: `bool`, Default Value: `false`  
+Creates a text file from the ANSI recording after the connection has been disconnected  
 ### EnableLoggingOSX
 Type: `bool`, Default Value: `false`  
 If set to true, logging is enabled on macOS.  
@@ -911,6 +920,9 @@ Proxy telnet or local proxy command.
 Type: `string`, Default Value: `Empty String`  
 The username for the proxy server.  
 ## Security
+### AutoSendPasswordPrompt
+Type: `bool`, Default Value: `false`  
+Enable to automatically send configured password upon server authentication requests.  
 ### EncryptionKeyAlgorithms
 Type: `string[]`, Default Value: `new string[] { }`  
 A list containing all encryption key algorithms in the order they should be negotiated if enabled.  
@@ -929,6 +941,12 @@ A list containing all key exchange algorithms in the order they should be negoti
 ### MacAlgorithms
 Type: `string[]`, Default Value: `new string[] { }`  
 A list containing all MAC algorithms in the order they should be negotiated if enabled.  
+### SSHAuthAgent
+Type: `int`, Default Value: `0`  
+SSH Authentication Agent: 0 = None   
+ 1 = OpenSSH Agent   
+ 2 = Pageant   
+ 3 = Legacy Pageant  
 ### SSHAuthMethod
 Type: `int`, Default Value: `-1`  
 SSH Authentication Method:   
@@ -1242,6 +1260,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ### DashboardAutoShowFiles
 Type: `bool`, Default Value: `true`  
 If set to true, the dashboard will automatically show recordings and log files.  

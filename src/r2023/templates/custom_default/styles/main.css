@@ -96,6 +96,10 @@
   }
 }
 
+code {
+  word-wrap: break-word;
+}
+
 h1 {
   font-size: 34px;
   font-weight: normal;

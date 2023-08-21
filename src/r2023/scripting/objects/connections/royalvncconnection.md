@@ -49,6 +49,11 @@ The external unique object identifier (GUID) of the object.
 ### AdditionalArguments
 Type: `string`, Default Value: `Empty String`  
 Additional arguments to pass to the vnc viewer application.  
+### ColorDepth
+Type: `int`, Default Value: `24`  
+8 = 8bpp (256 colors)   
+ 16 = 16bpp (High color)   
+ 24 = 24bpp (True color)  
 ### Compression
 Type: `int`, Default Value: `-1`  
 The compression level for zip/tight encodings:   
@@ -337,6 +342,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ## Royal Server
 ### ManagementEndpointFromParent
 Type: `bool`, Default Value: `false`  

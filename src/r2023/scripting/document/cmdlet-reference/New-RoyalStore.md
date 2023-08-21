@@ -16,7 +16,7 @@ Creates a new RoyalStore container to open one or more Royal TS/X documents.
 ## SYNTAX
 
 ```
-New-RoyalStore -UserName1 <String> [-AppDocPath <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-RoyalStore -UserName <String> [-AppDocPath <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserName1
-{{ Fill UserName1 Description }}
+### -UserName
+{{ Fill UserName Description }}
 
 ```yaml
 Type: String

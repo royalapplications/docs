@@ -30,6 +30,9 @@ Assign a color from a color palette to the object. If both, a color name and a c
 ### ShowInFavoriteTasks
 Type: `bool`, Default Value: `false`  
 If set to true, the task will appear in the favorite task menu.  
+### DoNotSendScanCodes
+Type: `bool`, Default Value: `false`  
+If checked, keyboard input simulation does not send scan codes. Can be used in case of keyboard layout issues.  
 ### NoConfirmationRequired
 Type: `bool`, Default Value: `false`  
 If set to true, the user does not need to confirm the task execution when executed from the favorite task menu.  

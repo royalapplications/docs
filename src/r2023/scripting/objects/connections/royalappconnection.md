@@ -42,6 +42,10 @@ The working directory the command will be started from.
 ### Port
 Type: `int`, Default Value: `0`  
 A port can be specified and used by a replacement token in the arguments.  
+### EmbedMethod
+Type: `int`, Default Value: `0`  
+0 = Window   
+ 1 = Client Area  
 ### DoNotStart
 Type: `bool`, Default Value: `false`  
 If set to true, Royal TS will not start the process and assumes that it's already running.  
@@ -265,6 +269,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ### DashboardAutoShowWindows
 Type: `bool`, Default Value: `true`  
 If set to true, the dashboard will show processes and windows automatically.  

@@ -46,6 +46,9 @@ The external unique object identifier (GUID) of the object.
 ### RDPPort
 Type: `int`, Default Value: `3389`  
 The target RDP port for this connection. The default value is 3389.  
+### AdditionalArguments
+Type: `string`, Default Value: `Empty String`  
+Additional arguments to be used with wfreerdp.exe.  
 ### AllowBackgroundInput
 Type: `bool`, Default Value: `false`  
 If set to true, background input mode is enabled. When background input is enabled the client can accept input when the client does not have focus.  
@@ -63,6 +66,9 @@ If set to true, compression is used.
 ### ConnectToAdministerOrConsole
 Type: `bool`, Default Value: `false`  
 If set to true, the session is used for administrative purposes on a Windows Server 2008-based server, or to the console session on a Windows Server 2003-based server.  
+### DisableUdpTransport
+Type: `bool`, Default Value: `false`  
+If set to true, UDP transport will be disabled.  
 ### EnableAutoReconnect
 Type: `bool`, Default Value: `true`  
 If set to true, the client control automatically reconnects to a session in the event of a network disconnection.  
@@ -159,7 +165,7 @@ Assign a username to the object.
 Type: `bool`, Default Value: `true`  
 If set to true, automatically calculates the remote screen's scale factor based on the local display. Applies only to Royal TSX on macOS.  
 ### ColorDepth
-Type: `int`, Default Value: `24`  
+Type: `int`, Default Value: `32`  
 8 = 8bpp (256 colors)   
  15 = 15bpp (High color)    
  16 = 16bpp (High color)   
@@ -521,6 +527,12 @@ Specifies whether or not the control or form should be expanded automatically to
 ### DashboardUseAppSettings
 Type: `bool`, Default Value: `true`  
 If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
 ### DashboardAutoHyperVInfo
 Type: `bool`, Default Value: `true`  
 If set to true, the dashboard will automatically show hyper-v instances.  
