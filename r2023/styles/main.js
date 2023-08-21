@@ -120,9 +120,24 @@ $(function () {
       targetVersion,
     };
   }
+  
+  function switchVersion(version) {
+    const targetHref = calculateTargetVersionInfo(version).targetHref;
+    // switch to existing page if exists
+    $.ajax({
+      type: "HEAD",
+      url: targetHref,
+      success: function () {
+        document.location.href = targetHref;
+      },
+      error: function () {
+        document.location.href = `/${version}/index.html`;
+      },
+    });
+  }
 
   function setupVersionSelector() {
-    $versionSelect = $("#version-select");
+    const $versionSelect = $("#version-select");
     if (!$versionSelect.length) {
       return;
     }
@@ -130,24 +145,24 @@ $(function () {
     $versionSelect.val(calculateTargetVersionInfo().targetVersion);
 
     $versionSelect.on("change", function (e) {
-      const targetVersion = this.value;
-      const targetHref = calculateTargetVersionInfo(targetVersion).targetHref;
-
-      $.ajax({
-        type: "HEAD",
-        url: targetHref,
-        success: function () {
-          document.location.href = targetHref;
-        },
-        error: function () {
-          document.location.href = `/${targetVersion}/index.html`;
-        },
-      });
+      switchVersion(this.value); 
     });
+  }
+
+  function setupVersionReset() {
+    const $currentVersion = $("#version-select option:first");
+    if (!$currentVersion.length) {
+      return;
+    }
+
+    $(".version-reset-link").on('click', function() {
+      switchVersion($currentVersion.val()); 
+    }); 
   }
 
   setupAnchorJs(anchors);
   setupHighlightJs(hljs);
   setupVersionSelector();
+  setupVersionReset();
   expandToc();
 });
