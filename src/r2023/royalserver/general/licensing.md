@@ -29,7 +29,7 @@ In The Royal Server Configuration Tool Navigation Bar, click on the General grou
 
 - The panel lists all installed licenses
 - Use the Add License button to add another license
-- Use the Remove Remove LIcense button to remove the selected license
+- Uninstall a License by clicking on the trashcan icon
 
 > [!NOTE]
-> The column "File Name" shows the file name of the license. Installed licenses can be found at `%ProgramData%\RoyalServer\Licenses\`.
+> Installed licenses can be found at `%ProgramData%\RoyalServer\Licenses\`.
