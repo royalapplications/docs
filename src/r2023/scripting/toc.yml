@@ -1,7 +1,10 @@
 - order: 15000
   href: intro.md
   name: Introduction
-- items:
+- order: 11000
+  href: rjson\index.md
+  name: RoyalJSON
+  items:
   - order: 9990
     href: rjson\introduction.md
     name: Introduction
@@ -26,7 +29,10 @@
   - order: 9930
     href: rjson\advanced-scenarios.md
     name: Advanced scenarios
-  - items:
+  - order: 9920
+    href: rjson\available-properties\index.md
+    name: Available Properties
+    items:
     - order: 9990
       href: rjson\available-properties\royaljsondocument.md
       name: RoyalJSONDocument
@@ -42,17 +48,17 @@
     - order: 9950
       href: rjson\available-properties\royaljsondynamiccredential.md
       name: RoyalJSONDynamicCredential
-    order: 9920
-    href: rjson\available-properties\index.md
-    name: Available Properties
   - order: 9910
     href: rjson\json-schema.md
     name: JSON Schema
-  order: 11000
-  href: rjson\index.md
-  name: RoyalJSON
-- items:
-  - items:
+- order: 10100
+  href: objects\index.md
+  name: Object Properties
+  items:
+  - order: 10000
+    href: objects\organization\index.md
+    name: Organization
+    items:
     - order: 9900
       href: objects\organization\royaldocument.md
       name: RoyalDocument
@@ -74,10 +80,10 @@
     - order: 9300
       href: objects\organization\royaltodo.md
       name: RoyalToDo
-    order: 10000
-    href: objects\organization\index.md
-    name: Organization
-  - items:
+  - order: 9200
+    href: objects\connections\index.md
+    name: Connections
+    items:
     - order: 9100
       href: objects\connections\royalrdsconnection.md
       name: RoyalRDSConnection
@@ -123,10 +129,10 @@
     - order: 7700
       href: objects\connections\royalvmwareconnection.md
       name: RoyalVMwareConnection
-    order: 9200
-    href: objects\connections\index.md
-    name: Connections
-  - items:
+  - order: 7600
+    href: objects\gateways\index.md
+    name: Gateways
+    items:
     - order: 7500
       href: objects\gateways\royalmanagementendpoint.md
       name: RoyalManagementEndpoint
@@ -136,31 +142,31 @@
     - order: 7300
       href: objects\gateways\royalrdsgateway.md
       name: RoyalRDSGateway
-    order: 7600
-    href: objects\gateways\index.md
-    name: Gateways
-  - items:
+  - order: 7200
+    href: objects\tasks\index.md
+    name: Tasks
+    items:
     - order: 7100
       href: objects\tasks\royalcommandtask.md
       name: RoyalCommandTask
     - order: 7000
       href: objects\tasks\royalkeysequencetask.md
       name: RoyalKeySequenceTask
-    order: 7200
-    href: objects\tasks\index.md
-    name: Tasks
-  - items:
+  - order: 6900
+    href: objects\options\index.md
+    name: Options
+    items:
     - order: 6800
       href: objects\options\royalapplicationsetting.md
       name: RoyalApplicationSetting
-    order: 6900
-    href: objects\options\index.md
-    name: Options
-  order: 10100
-  href: objects\index.md
-  name: Object Properties
-- items:
-  - items:
+- order: 10000
+  href: document\index.md
+  name: RoyalDocument.PowerShell
+  items:
+  - order: 10000
+    href: document\cmdlet-reference\index.md
+    name: CmdLet Reference
+    items:
     - order: 10000
       href: document\cmdlet-reference\New-RoyalStore.md
       name: New-RoyalStore
@@ -239,10 +245,10 @@
     - order: 9750
       href: document\cmdlet-reference\Get-RoyalPropertyHelp.md
       name: Get-RoyalPropertyHelp
-    order: 10000
-    href: document\cmdlet-reference\index.md
-    name: CmdLet Reference
-  - items:
+  - order: 9000
+    href: document\samples\index.md
+    name: Sample Scripts
+    items:
     - order: 10000
       href: document\samples\install-module.md
       name: Install Module
@@ -261,13 +267,10 @@
     - order: 8960
       href: document\samples\create-royal-management-endpoint.md
       name: Create Royal Management Endpoint
-    order: 9000
-    href: document\samples\index.md
-    name: Sample Scripts
-  order: 10000
-  href: document\index.md
-  name: RoyalDocument.PowerShell
-- items:
+- order: 9990
+  href: server\index.md
+  name: RoyalServer.PowerShell
+  items:
   - order: 9990
     href: server\New-RoyalServerConfig.md
     name: New-RoyalServerConfig
@@ -292,9 +295,6 @@
   - order: 9920
     href: server\Uninstall-RoyalServerLicense.md
     name: Uninstall-RoyalServerLicense
-  order: 9990
-  href: server\index.md
-  name: RoyalServer.PowerShell
 - order: 8000
   href: https://www.royalapps.com/go/kb-ts-mac-applescript-samples
   name: AppleScript
