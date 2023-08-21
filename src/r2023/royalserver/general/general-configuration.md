@@ -34,18 +34,17 @@ This function resets the Royal Server configuration to the default settings afte
 >
 > If you want to remove all side effects of a Royal Server installation, please use the [cleanup script](../advanced/management-scripts/uninstall.md).
 
-**Copy Configuration**
+**Copy Troubleshooting Information**
 
-This function copies Royal Server configuration and troubleshooting information that may be included in a ticket to the clipboard.
-You can include the following information:
+This function copies Royal Server troubleshooting information that may be included in a ticket to the clipboard.
+The following information can be included:
+- Installed Licenses
+- Configuration Information
+- Log Information (since the last restart)
+- Document Store Information (Royal Server needs to run for this information to be included)
 
-- the current configuration
-- the Royal Server logs (since the last restart)
-- installed licenses
-- the Document Store configuration (the server needs to run for this information)
-
-This information is very helpful for troubleshooting a support ticket. A ticket can be opened via our [support portal](https://support.royalapps.com/support/home)
+This information might be helpful for troubleshooting a support ticket. A ticket can be opened via our [support portal](https://support.royalapps.com/support/home)
 
 **Localhost Aliases**
 
-This setting allows to specify which host names should be considered as localhost. This information is used when determining, if a query should be executed against the server where Royal Server is installed.
+This setting allows to specify which host names should be considered as localhost. This information is used when determining if a query should be executed against the server where Royal Server is installed.

@@ -1,6 +1,6 @@
 ---
 uid: royalserver_general_certificate-store
-name: Manage Certificates
+name: Certificate Store
 order: 9060
 ---
 
@@ -8,10 +8,10 @@ order: 9060
 
 # Certificate Store
 
-Create, remove or export certificates.
+Create, remove or export certificates that will be used for Royal Server and the Secure Gateway.
 
 > [!NOTE]
-> The shown certificates are the ones that are installed in the Personal Store of your local machine.
+> The shown certificates are certificates that are installed in the Personal Store of your local machine.
 
 **Add a certificate**
 
@@ -19,4 +19,10 @@ This allows you to create a new certificate by specifying a subject, an optional
 
 **Export a Certificate**
 
-Allows you to export the selected certificate to a \*.pfx file by specifying a password. The exported certificate can later be used on other Royal Server installations to create a highly available multi-server Royal Server setup.
+Clicking on the Save icon allows you to export the selected certificate to a \*.pfx file by specifying a password. The exported certificate can later be used on another Royal Server installations to create a highly available multi-server Royal Server setup.
+
+**Deleting a Certificate**
+Clicking on the trashcan icon allows you to delete the selected certificate. 
+
+> [!NOTE]
+> This will remove the certificate from the Personal Store on your local machine!
