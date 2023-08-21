@@ -102,9 +102,6 @@ The service port is used for service connections to the VMware host.</p>
 <h3 id="ignorecertificateerrors">IgnoreCertificateErrors</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 Ignore Certificate Errors</p>
-<h3 id="sshport">SSHPort</h3>
-<p>Type: <code>int</code>, Default Value: <code>22</code><br>
-The SSH port is used for ad hoc Terminal connections to the VMware host.</p>
 <h3 id="isconnectiontemplate">IsConnectionTemplate</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the connection object is a template.</p>
@@ -124,6 +121,9 @@ The number of seconds the view will be reloaded. Requires the AutoRefresh proper
 <h3 id="maxcolumnwidth">MaxColumnWidth</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the whole client area is used for the column widths</p>
+<h3 id="moref">MoRef</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+If specified, a connect will directly start a vmware Console session for the specified instance.</p>
 <h3 id="showdetailspanel">ShowDetailsPanel</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the detail panel is shown (where available).</p>
@@ -133,6 +133,9 @@ If set to true, horizontal lines are shown.</p>
 <h3 id="showverticallines">ShowVerticalLines</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, vertical lines are shown.</p>
+<h3 id="sshport">SSHPort</h3>
+<p>Type: <code>int</code>, Default Value: <code>22</code><br>
+The SSH port is used for ad hoc Terminal connections to the VMware host.</p>
 <h2 id="credentials">Credentials</h2>
 <h3 id="credentialautologon">CredentialAutologon</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
@@ -308,6 +311,12 @@ Specifies whether or not the control or form should be expanded automatically to
 <h3 id="dashboarduseappsettings">DashboardUseAppSettings</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the plugin default settings for the dashboard are used.</p>
+<h3 id="dashboardusewebpagetemplate">DashboardUseWebPageTemplate</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a web page template is used to show a web page in the dashboard.</p>
+<h3 id="dashboardwebpagetemplate">DashboardWebPageTemplate</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.</p>
 <h3 id="dashboardautoshowdata">DashboardAutoShowData</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the dashboard will load the data.</p>

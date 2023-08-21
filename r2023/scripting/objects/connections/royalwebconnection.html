@@ -255,11 +255,14 @@ Disables same-origin policy enforcement.</p>
 <h3 id="disablexssauditor">DisableXSSAuditor</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 Disables same-origin policy enforcement.</p>
+<h3 id="engineid">EngineId</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+If empty (default), the GUID of the connection is the engine id. Custom engine identifiers can be used to share the cache and session across multiple connections.</p>
 <h3 id="extracommandlineargs">ExtraCommandLineArgs</h3>
 <p>Type: <code>string</code>, Default Value: ``<br>
 Extra command line args separated with space, eg: '--disable-databases --disable-local-storage'. Note that only switches affecting Chromium are supported. Switches for the Chrome browser, like '--enable-cloud-devices' have no effect.</p>
 <h3 id="language">Language</h3>
-<p>Type: <code>string</code>, Default Value: ``<br>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The Chromium UI language in ISO format (en or en-US).</p>
 <h3 id="loadimages">LoadImages</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
@@ -440,6 +443,12 @@ Specifies whether or not the control or form should be expanded automatically to
 <h3 id="dashboarduseappsettings">DashboardUseAppSettings</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the plugin default settings for the dashboard are used.</p>
+<h3 id="dashboardusewebpagetemplate">DashboardUseWebPageTemplate</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a web page template is used to show a web page in the dashboard.</p>
+<h3 id="dashboardwebpagetemplate">DashboardWebPageTemplate</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.</p>
 <h3 id="dashboardshowpage">DashboardShowPage</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the dashboard will load the web page of the configured URL.</p>

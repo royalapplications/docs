@@ -109,6 +109,9 @@ The external unique object identifier (GUID) of the object.</p>
 <h3 id="rdpport">RDPPort</h3>
 <p>Type: <code>int</code>, Default Value: <code>3389</code><br>
 The target RDP port for this connection. The default value is 3389.</p>
+<h3 id="additionalarguments">AdditionalArguments</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional arguments to be used with wfreerdp.exe.</p>
 <h3 id="allowbackgroundinput">AllowBackgroundInput</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, background input mode is enabled. When background input is enabled the client can accept input when the client does not have focus.</p>
@@ -126,6 +129,9 @@ If set to true, compression is used.</p>
 <h3 id="connecttoadministerorconsole">ConnectToAdministerOrConsole</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the session is used for administrative purposes on a Windows Server 2008-based server, or to the console session on a Windows Server 2003-based server.</p>
+<h3 id="disableudptransport">DisableUdpTransport</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, UDP transport will be disabled.</p>
 <h3 id="enableautoreconnect">EnableAutoReconnect</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the client control automatically reconnects to a session in the event of a network disconnection.</p>
@@ -222,7 +228,7 @@ Assign a username to the object.</p>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, automatically calculates the remote screen's scale factor based on the local display. Applies only to Royal TSX on macOS.</p>
 <h3 id="colordepth">ColorDepth</h3>
-<p>Type: <code>int</code>, Default Value: <code>24</code><br>
+<p>Type: <code>int</code>, Default Value: <code>32</code><br>
 8 = 8bpp (256 colors)<br>
 15 = 15bpp (High color)<br>
 16 = 16bpp (High color)<br>
@@ -584,6 +590,12 @@ Specifies whether or not the control or form should be expanded automatically to
 <h3 id="dashboarduseappsettings">DashboardUseAppSettings</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the plugin default settings for the dashboard are used.</p>
+<h3 id="dashboardusewebpagetemplate">DashboardUseWebPageTemplate</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a web page template is used to show a web page in the dashboard.</p>
+<h3 id="dashboardwebpagetemplate">DashboardWebPageTemplate</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.</p>
 <h3 id="dashboardautohypervinfo">DashboardAutoHyperVInfo</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the dashboard will automatically show hyper-v instances.</p>

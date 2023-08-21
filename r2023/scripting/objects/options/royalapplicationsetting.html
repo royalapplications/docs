@@ -97,7 +97,7 @@ A list of files Royal TS will open when it starts</p>
 2 = Never Reconnect</p>
 <h3 id="donotshowgettingstartedpageonstartup">DoNotShowGettingStartedPageOnStartup</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
-Don't show the getting started page on launch (macOS only)</p>
+Don't show the getting started page on launch. When setting the value to true, make sure the AutoStartDocumentMode property is not set to 3.</p>
 <h3 id="favorite">Favorite</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 Whether or not the object is a favorite.</p>
@@ -230,6 +230,10 @@ Show Toolbar (macOS)</p>
 <h3 id="showribbon">ShowRibbon</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 Shows the ribbon if true. Ribbon is collapsed if false</p>
+<h3 id="ribboncommandlayout">RibbonCommandLayout</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Classic<br>
+1 = Simplified</p>
 <h3 id="useextendedfullscreen">UseExtendedFullScreen</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 Whether to maximize screen real estate when entering full screen or not (macOS only)</p>
@@ -264,20 +268,26 @@ Keep remotely disconnected tabs open</p>
 External Window: Select Dashboard</p>
 <h3 id="monitorconnectionstateofdisconnectedtabs">MonitorConnectionStateOfDisconnectedTabs</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
-Monitor the connection state of disconnected tabs (requires DontCloseTabOnRemoteDisconnect to be enabled)</p>
+Monitor the connection state of disconnected tabs</p>
+<h3 id="monitorconnectionstateofnavigationpanelitems">MonitorConnectionStateOfNavigationPanelItems</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Monitor the connection state of navigation panel connection items</p>
 <h3 id="mousedoubleclickmodeactive">MouseDoubleClickModeActive</h3>
 <p>Type: <code>int</code>, Default Value: <code>2</code><br>
 0 = Do nothing<br>
 1 = Edit Properties<br>
 2 = Disconnect<br>
-3 = Reconnect</p>
+3 = Reconnect<br>
+4 = Connect Ad Hoc<br>
+5 = Focus</p>
 <h3 id="mousedoubleclickmodeconnectiontabs">MouseDoubleClickModeConnectionTabs</h3>
 <p>Type: <code>int</code>, Default Value: <code>4</code><br>
 0 = Do nothing<br>
 1 = Edit Properties<br>
 2 = Disconnect<br>
 3 = Reconnect<br>
-4 = External</p>
+4 = External<br>
+5 = Connect Ad Hoc</p>
 <h3 id="mousedoubleclickmodecredentials">MouseDoubleClickModeCredentials</h3>
 <p>Type: <code>int</code>, Default Value: <code>1</code><br>
 0 = Do nothing<br>
@@ -328,6 +338,9 @@ Enable Browser Extensions</p>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 Enable Browser Extensions Browser Signature Verification</p>
 <h2 id="dynamic-folder">Dynamic Folder</h2>
+<h3 id="dynamicfolderenabledebuglogging">DynamicFolderEnableDebugLogging</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+When executing dynamic folder scripts, additional debug log entries will be generated when scripts are executed. Enable this setting to diagnose programming issues.</p>
 <h3 id="dynamicfolderevaluateshellpersonalizationfile">DynamicFolderEvaluateShellPersonalizationFile</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 When executing dynamic folder scripts, by default the shell personalization file will be evaluated. Disable this setting to disable evaluating the shell personalization file.</p>
@@ -475,21 +488,108 @@ Enable Internal Logging</p>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 Enable Logging to the Windows Event Log</p>
 <h2 id="messages">Messages</h2>
+<h3 id="dontshowactivateforscreenshotwarning">DontShowActivateForScreenshotWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown for hidden connections when a screenshot cannot be made</p>
+<h3 id="dontshowactivatefortypingclipboardwarning">DontShowActivateForTypingClipboardWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown for hidden connections when clipboard text cannot be typed</p>
+<h3 id="dontshowactivetunnelshint">DontShowActiveTunnelsHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the active tunnels view (info bar)</p>
+<h3 id="dontshowclearlogwarning">DontShowClearLogWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown when the user wants to clear the log</p>
+<h3 id="dontshowclipboardtokenwarning">DontShowClipboardTokenWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Warning before the clipboard is accessed for token replacement.</p>
+<h3 id="dontshowcolorsettinginfo">DontShowColorSettingInfo</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+An information popup is shown when a user configures a color assignment and colors aren't rendered.</p>
+<h3 id="dontshowcredentialassignmenthint">DontShowCredentialAssignmentHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the credential assignment (info bar)</p>
+<h3 id="dontshowdashboardintroduction">DontShowDashboardIntroduction</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A popup showing a quick introduction to the Dashboard feature.</p>
 <h3 id="dontshowdocumentmodifiednotification">DontShowDocumentModifiedNotification</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 A notification is shown when a document is modified on disk</p>
+<h3 id="dontshowduplicatenamewarning">DontShowDuplicateNameWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+warning when the name already exists</p>
+<h3 id="dontshowencryptioninfo">DontShowEncryptionInfo</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+An information popup is shown when a user inserts a credential to a document with no encryption.</p>
 <h3 id="dontshowextendedfullscreenintroduction">DontShowExtendedFullScreenIntroduction</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 A popup showing a quick introduction to the extended full screen feature</p>
+<h3 id="dontshowfileconversionmessage">DontShowFileConversionMessage</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A popup asking the user to convert the file to the new format</p>
+<h3 id="dontshowfolderactionwarning">DontShowFolderActionWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+warning on connect/disconnect for all in folder</p>
+<h3 id="dontshowkeepassmessage">DontShowKeepassMessage</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A popup showing the keypass path message.</p>
 <h3 id="dontshowmaintenanceextensionnotification">DontShowMaintenanceExtensionNotification</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 A dialog is shown when maintenance can be extended</p>
 <h3 id="dontshowmajorupgradenotification">DontShowMajorUpgradeNotification</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 A dialog is shown when a new major version is available</p>
+<h3 id="dontshowmanagementendpointassignmenthint">DontShowManagementEndpointAssignmentHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the Royal Server assignment (info bar)</p>
+<h3 id="dontshowmixedtypebulkeditwarning">DontShowMixedTypeBulkEditWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown when the users hits properties for mixed types</p>
+<h3 id="dontshowmoveobjectwarning">DontShowMoveObjectWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+An information popup is shown when a user moves objects from one document to another.</p>
+<h3 id="dontshowoverviewdownloadinfo">DontShowOverviewDownloadInfo</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Download info in the overview page.</p>
+<h3 id="dontshowoverviewinfo">DontShowOverviewInfo</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Information about the new feature overview.</p>
+<h3 id="dontshowpropertiespalettehint">DontShowPropertiesPaletteHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the properties palette view (info bar)</p>
+<h3 id="dontshowpropertyeditortabcloseprompt">DontShowPropertyEditorTabClosePrompt</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Prompt when closing a property editor tab using the close button on the tab.</p>
+<h3 id="dontshowrdpconnectionfailmessage">DontShowRDPConnectionFailMessage</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown when the RDP connection failed</p>
+<h3 id="dontshowremotedesktopgatewayassignmenthint">DontShowRemoteDesktopGatewayAssignmentHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the remote desktop gateway assignment (info bar)</p>
 <h3 id="dontshowrestoreconnectionsdialog">DontShowRestoreConnectionsDialog</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 A dialog is shown that allows to reconnect to previously disconnected sessions</p>
+<h3 id="dontshowsecuregatewayassignmenthint">DontShowSecureGatewayAssignmentHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the secure gateway assignment (info bar)</p>
+<h3 id="dontshowshareddocumentcredentialwarning">DontShowSharedDocumentCredentialWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Warns user when a credential is created in a shared document.</p>
+<h3 id="dontshowshowonlyconnectedwarning">DontShowShowOnlyConnectedWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown when enabling show only connected</p>
+<h3 id="dontshowshowonlyfavoriteswarning">DontShowShowOnlyFavoritesWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown when enabling show only favorites</p>
+<h3 id="dontshowtaskassignmenthint">DontShowTaskAssignmentHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the task assignment (info bar)</p>
+<h3 id="dontshowtaskcontexthint">DontShowTaskContextHint</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Hint in the task context (info bar)</p>
+<h3 id="dontshowtypingclipboardtextverylongwarning">DontShowTypingClipboardTextVeryLongWarning</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+A warning is shown when the clipboard text to be typed is very long</p>
 <h2 id="notifications">Notifications</h2>
 <h3 id="notifyconnection">NotifyConnection</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
@@ -520,6 +620,13 @@ Password Generator Length</p>
 <h3 id="passwordpwnedcheck">PasswordPwnedCheck</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If enabled, passwords will be securely verified and ensured it hasn't been pwned.</p>
+<h2 id="plugins">Plugins</h2>
+<h3 id="disabledplugins">DisabledPlugins</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+List of disabled plugins (GUIDs).</p>
+<h3 id="disabledpluginslocked">DisabledPluginsLocked</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Whether or not to lock the UI to enable/disable plugins</p>
 <h2 id="policy">Policy</h2>
 <h3 id="policydonotallowapplicationdocumentwithoutpassword">PolicyDoNotAllowApplicationDocumentWithoutPassword</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
@@ -626,6 +733,12 @@ Show colorized title bar</p>
 <h3 id="colorizetree">ColorizeTree</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 Use colors in the Navigation tree</p>
+<h3 id="colorschememode">ColorSchemeMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Default<br>
+1 = Light<br>
+2 = Dark<br>
+3 = Follow System</p>
 <h3 id="connectionborderpadding">ConnectionBorderPadding</h3>
 <p>Type: <code>int</code>, Default Value: <code>2</code><br>
 Border Size</p>
@@ -637,7 +750,7 @@ If false (default), the OS will scale Royal TS on high DPI displays which may re
 0 = left<br>
 1 = right</p>
 <h3 id="dpiawareness">DpiAwareness</h3>
-<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
 0 = Off (best compatibility but blurry on high DPI screens)<br>
 1 = System (scaling based on primary screen)<br>
 2 = Per Monitor</p>

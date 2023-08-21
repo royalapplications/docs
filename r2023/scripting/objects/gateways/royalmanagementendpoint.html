@@ -130,6 +130,19 @@ If set to true, keyboard interactive authentication is preferred over password a
 <h3 id="securegatewayusername">SecureGatewayUsername</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The username for the Gateway server.</p>
+<h2 id="security">Security</h2>
+<h3 id="securegatewayencryptionkeyalgorithms">SecureGatewayEncryptionKeyAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all encryption key algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="securegatewayhostkeyalgorithms">SecureGatewayHostKeyAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all host key algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="securegatewaykeyexchangealgorithms">SecureGatewayKeyExchangeAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all key exchange algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="securegatewaymacalgorithms">SecureGatewayMacAlgorithms</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+A list containing all MAC algorithms in the order they should be negotiated if enabled.</p>
 <h2 id="royal-server">Royal Server</h2>
 <h3 id="royalserverfingerprint">RoyalServerFingerprint</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>

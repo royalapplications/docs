@@ -112,6 +112,11 @@ The external unique object identifier (GUID) of the object.</p>
 <h3 id="additionalarguments">AdditionalArguments</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Additional arguments to pass to the vnc viewer application.</p>
+<h3 id="colordepth">ColorDepth</h3>
+<p>Type: <code>int</code>, Default Value: <code>24</code><br>
+8 = 8bpp (256 colors)<br>
+16 = 16bpp (High color)<br>
+24 = 24bpp (True color)</p>
 <h3 id="compression">Compression</h3>
 <p>Type: <code>int</code>, Default Value: <code>-1</code><br>
 The compression level for zip/tight encodings:<br>
@@ -400,6 +405,12 @@ Specifies whether or not the control or form should be expanded automatically to
 <h3 id="dashboarduseappsettings">DashboardUseAppSettings</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the plugin default settings for the dashboard are used.</p>
+<h3 id="dashboardusewebpagetemplate">DashboardUseWebPageTemplate</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a web page template is used to show a web page in the dashboard.</p>
+<h3 id="dashboardwebpagetemplate">DashboardWebPageTemplate</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.</p>
 <h2 id="royal-server">Royal Server</h2>
 <h3 id="managementendpointfromparent">ManagementEndpointFromParent</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>

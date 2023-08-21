@@ -485,6 +485,12 @@ Assign a password to the object.</p>
 <h3 id="credentialusername">CredentialUsername</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Assign a username to the object.</p>
+<h3 id="sshauthplugin">SSHAuthPlugin</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Plugin command to run.</p>
+<h3 id="sshdetachedcertificate">SSHDetachedCertificate</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Certificate to use with the private key.</p>
 <h2 id="display-options">Display Options</h2>
 <h3 id="autoadjustterminalsize">AutoAdjustTerminalSize</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
@@ -855,6 +861,9 @@ Assign a key sequence task object to this connection by specifying the task obje
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Assign a key sequence task object to this object by specifying the key sequence task object's name.</p>
 <h2 id="logging">Logging</h2>
+<h3 id="createtextfilefromrecording">CreateTextFileFromRecording</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Creates a text file from the ANSI recording after the connection has been disconnected</p>
 <h3 id="enableloggingosx">EnableLoggingOSX</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, logging is enabled on macOS.</p>
@@ -974,6 +983,9 @@ Proxy telnet or local proxy command.</p>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The username for the proxy server.</p>
 <h2 id="security">Security</h2>
+<h3 id="autosendpasswordprompt">AutoSendPasswordPrompt</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Enable to automatically send configured password upon server authentication requests.</p>
 <h3 id="encryptionkeyalgorithms">EncryptionKeyAlgorithms</h3>
 <p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
 A list containing all encryption key algorithms in the order they should be negotiated if enabled.</p>
@@ -992,6 +1004,12 @@ A list containing all key exchange algorithms in the order they should be negoti
 <h3 id="macalgorithms">MacAlgorithms</h3>
 <p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
 A list containing all MAC algorithms in the order they should be negotiated if enabled.</p>
+<h3 id="sshauthagent">SSHAuthAgent</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+SSH Authentication Agent: 0 = None<br>
+1 = OpenSSH Agent<br>
+2 = Pageant<br>
+3 = Legacy Pageant</p>
 <h3 id="sshauthmethod">SSHAuthMethod</h3>
 <p>Type: <code>int</code>, Default Value: <code>-1</code><br>
 SSH Authentication Method:<br>
@@ -1305,6 +1323,12 @@ Specifies whether or not the control or form should be expanded automatically to
 <h3 id="dashboarduseappsettings">DashboardUseAppSettings</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the plugin default settings for the dashboard are used.</p>
+<h3 id="dashboardusewebpagetemplate">DashboardUseWebPageTemplate</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+If set to true, a web page template is used to show a web page in the dashboard.</p>
+<h3 id="dashboardwebpagetemplate">DashboardWebPageTemplate</h3>
+<p>Type: <code>Guid</code>, Default Value: <code>Guid.Empty</code><br>
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.</p>
 <h3 id="dashboardautoshowfiles">DashboardAutoShowFiles</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the dashboard will automatically show recordings and log files.</p>
