@@ -23,7 +23,7 @@ The Installed Licenses panel displays the installed licenses.
 
 ## Show or Activate the Installed Licenses Pane
 
-In The Royal Server Configuration Tool Navigation Bar, click on the License group and then on the Installed Licenses entry. You can install multiple licenses.
+In The Royal Server Configuration Tool Navigation Bar, click on the General group and then on the Licenses entry. You can install multiple licenses.
 
 ## Features
 
