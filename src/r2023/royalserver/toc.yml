@@ -1,6 +1,4 @@
 - name: Introduction
-  order: 10000
-  href: introduction\index.md
   items:
   - name: What is Royal Server?
     order: 10099
@@ -26,9 +24,9 @@
   - name: Release Notes
     order: 10030
     href: introduction\release-notes.md
+  order: 10000
+  href: introduction\index.md
 - name: Royal Server Configuration
-  order: 9000
-  href: general\index.md
   items:
   - name: Health
     order: 9080
@@ -57,9 +55,9 @@
   - name: Licensing
     order: 9005
     href: general\licensing.md
+  order: 9000
+  href: general\index.md
 - name: Royal Server Modules
-  order: 8000
-  href: modules\index.md
   items:
   - name: Document Store Module
     order: 8090
@@ -88,13 +86,11 @@
   - name: Windows Services Module
     order: 8010
     href: modules\windows-services-module.md
+  order: 8000
+  href: modules\index.md
 - name: Royal Server Components
-  order: 7000
-  href: components\index.md
   items:
   - name: Management Endpoint
-    order: 7300
-    href: components\management\index.md
     items:
     - name: Service Configuration
       order: 7340
@@ -108,9 +104,9 @@
     - name: Modules
       order: 7310
       href: components\management\modules.md
+    order: 7300
+    href: components\management\index.md
   - name: Secure Gateway
-    order: 7200
-    href: components\secure-gateway\index.md
     items:
     - name: Secure Gateway Configuration
       order: 7240
@@ -124,9 +120,9 @@
     - name: Gateway Connections
       order: 7210
       href: components\secure-gateway\gateway-connections.md
+    order: 7200
+    href: components\secure-gateway\index.md
   - name: Document Store
-    order: 7100
-    href: components\document-store\index.md
     items:
     - name: Configuration
       order: 7120
@@ -134,9 +130,11 @@
     - name: Documents
       order: 7110
       href: components\document-store\documents.md
+    order: 7100
+    href: components\document-store\index.md
+  order: 7000
+  href: components\index.md
 - name: Advanced Topics
-  order: 5000
-  href: advanced\index.md
   items:
   - name: Application Settings
     order: 5090
@@ -145,8 +143,6 @@
     order: 5080
     href: advanced\backup.md
   - name: Management Scripts
-    order: 5065
-    href: advanced\management-scripts\index.md
     items:
     - name: Prepare a Managed Server
       order: 5120
@@ -154,6 +150,8 @@
     - name: Cleanup an Installation
       order: 5110
       href: advanced\management-scripts\uninstall.md
+    order: 5065
+    href: advanced\management-scripts\index.md
   - name: Performance Counter
     order: 5060
     href: advanced\performance-counters.md
@@ -166,20 +164,18 @@
   - name: Restoring Document Versions
     order: 5040
     href: advanced\restoring-previous-version-document.md
+  order: 5000
+  href: advanced\index.md
 - name: Scripting
-  order: 4000
-  href: scripting\index.md
   items:
   - name: Advanced Scripting Examples
-    order: 4300
-    href: scripting\examples\index.md
     items:
     - name: Loading and Saving a Document from Royal Server
       order: 7000
       href: scripting\examples\Load-and-Save-Document.md
-  - name: PowerShell Commandlets
     order: 4300
-    href: scripting\powershell-commandlets\index.md
+    href: scripting\examples\index.md
+  - name: PowerShell Commandlets
     items:
     - name: Get-RoyalServerModule
       order: 4000
@@ -196,9 +192,9 @@
     - name: New-RoyalServerConfig
       order: 4000
       href: scripting\powershell-commandlets\new-royalserverconfig.md
+    order: 4300
+    href: scripting\powershell-commandlets\index.md
   - name: Module References
-    order: 4200
-    href: scripting\module-reference\index.md
     items:
     - name: Module Document Store
       order: 4000
@@ -215,9 +211,13 @@
     - name: Module Windows Processes
       order: 4000
       href: scripting\module-reference\module-windows-processes.md
+    order: 4200
+    href: scripting\module-reference\index.md
   - name: Getting Started
     order: 4010
     href: scripting\getting-started.md
+  order: 4000
+  href: scripting\index.md
 - name: Royal Server Homepage
   order: 1040
   href: https://royalapps.com/server/main/features
