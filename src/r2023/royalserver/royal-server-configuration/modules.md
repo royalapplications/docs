@@ -24,7 +24,7 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Royal Serv
 
 The following modules are distributed with Royal Server
 
-[!include[module-protocols.md](../../_shared/module-list.md)]
+[!include[module-protocols.md](../_shared/module-list.md)]
 
 > [!NOTE]
 > If you want to completely disable a functionality, e.g. you don't want any user to be able to list/kill processes, you can delete the module dll file in <RoyalServerInstallationDir>\RoyalServer.ManagementEndpoint.Module\ and restart Royal Server.

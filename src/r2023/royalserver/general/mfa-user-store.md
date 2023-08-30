@@ -16,21 +16,22 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **General** 
 
 The data grid shows the configured users for multi-factor authentication.
 
-## Adding a User for Multi-Factor Authentication
-
 The following functionalities in Royal Server support Multi-Factor Authentication:
-
 - Document Store (triggered when loading or saving a document hosted by Royal Server) or
-- Secure Gateway Connections.
+- Secure Gateway Connections (triggered when connecting using e.g. RDP connections)
+
+## Adding a User for Multi-Factor Authentication
 - Click on **Add...**.
 - Enter a user or click on the **Select User...** icon.
 - Specify an optional comment.
-- Select for which feature this user is required to present a second factor (Document Store and/or Secure Gateway)
+- Select for which functionality this user is required to present a second factor (Document Store and/or Secure Gateway)
 - Specify the caching time. Each successful authentication is then cached for the specified minutes.
 - Select an MFA provider. Currently, "Generic TOTP", "Duo" and "YubiKey" are supported. Depending on your selection, different additional information will be required.
 
 > [!NOTE]
 > A Caching Time of 0 minutes means no caching and the user has to provide a second factor for every operation.
+
+Specify which MFA provider should be used for the specified user:
 
 ### Configuring Generic TOTP
 

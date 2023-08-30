@@ -1,34 +1,66 @@
-- order: 10000
+- order: 10900
   href: introduction\index.md
   name: Introduction
   items:
-  - order: 10099
+  - order: 10058
     href: introduction\what-is-royal-server.md
     name: What is Royal Server?
-  - order: 10098
+  - order: 10057
     href: introduction\what-is-royal-ts.md
     name: What is Royal TS?
-  - order: 10081
-    href: introduction\what-are-royal-server-components.md
-    name: Royal Server Components
-  - order: 10080
+  - order: 10056
     href: introduction\how-is-royal-server-working.md
     name: How is Royal Server Working?
-  - order: 10070
+  - order: 10056
+    href: introduction\what-are-royal-server-components.md
+    name: Royal Server Components
+  - order: 10055
     href: introduction\installation.md
     name: Installation
-  - order: 10060
+  - order: 10054
     href: introduction\configuration.md
     name: Configuration
-  - order: 10040
+  - order: 10053
     href: introduction\royal-tsx-management-connection.md
     name: Royal TS/X Management Connection
-  - order: 10030
+  - order: 10052
     href: introduction\release-notes.md
     name: Release Notes
+- order: 10800
+  href: getting-started\index.md
+  name: Getting Started
+  items:
+  - order: 10106
+    href: getting-started\navigating-the-ui.md
+    name: Navigating the User Interface
+  - order: 10105
+    href: getting-started\setting-the-worker-account.md
+    name: Setting the Worker Account
+  - order: 10104
+    href: getting-started\adding-a-license.md
+    name: Adding a license
+  - order: 10103
+    href: getting-started\setting-up-royal-server-users.md
+    name: Setting up Royal Server Users
+  - order: 10102
+    href: getting-started\using-the-logviewer.md
+    name: Using the Log Viewer
+- order: 10700
+  href: tutorials\index.md
+  name: Tutorials
+  items:
+  - order: 11005
+    href: tutorials\querying-processes.md
+    name: Query Windows Processes
+  - order: 10701
+    href: tutorials\using-credentials-with-royal-server.md
+    name: Using Credentials with Royal Server
+  - order: 1
+    href: tutorials\creating-an-rdp-connection-using-royal-server.md
+    name: Creating an RDP Connection
 - order: 9000
   href: general\index.md
-  name: Royal Server Configuration
+  name: General
   items:
   - order: 9080
     href: general\health.md
@@ -38,7 +70,7 @@
     name: General Configuration
   - order: 9060
     href: general\certificate-store.md
-    name: Manage Certificates
+    name: Certificate Store
   - order: 9050
     href: general\mfa.md
     name: Multi Factor Authentication
@@ -57,83 +89,79 @@
   - order: 9005
     href: general\licensing.md
     name: Licensing
-- order: 8000
-  href: modules\index.md
-  name: Royal Server Modules
+- order: 7300
+  href: royal-server-configuration\index.md
+  name: Management Endpoint
   items:
-  - order: 8090
-    href: modules\document-store.md
-    name: Document Store Module
-  - order: 8080
-    href: modules\hyper-v-module.md
-    name: Hyper-V Module
-  - order: 8070
-    href: modules\royal-server-management.md
-    name: Royal Server Management Module
-  - order: 8060
-    href: modules\script-module.md
-    name: Script Module
-  - order: 8050
-    href: modules\terminal-services-module.md
-    name: Terminal Services Module
-  - order: 8040
-    href: modules\vmware-module.md
-    name: VMware Module
-  - order: 8030
-    href: modules\windows-events-module.md
-    name: Windows Events Module
-  - order: 8020
-    href: modules\windows-processes-module.md
-    name: Windows Processes Module
-  - order: 8010
-    href: modules\windows-services-module.md
-    name: Windows Services Module
-- order: 7000
-  href: components\index.md
-  name: Royal Server Components
+  - order: 8000
+    href: royal-server-configuration\modules\index.md
+    name: Royal Server Modules
+    items:
+    - order: 8090
+      href: royal-server-configuration\modules\document-store.md
+      name: Document Store Module
+    - order: 8080
+      href: royal-server-configuration\modules\hyper-v-module.md
+      name: Hyper-V Module
+    - order: 8070
+      href: royal-server-configuration\modules\royal-server-management.md
+      name: Royal Server Management Module
+    - order: 8060
+      href: royal-server-configuration\modules\script-module.md
+      name: Script Module
+    - order: 8050
+      href: royal-server-configuration\modules\terminal-services-module.md
+      name: Terminal Services Module
+    - order: 8040
+      href: royal-server-configuration\modules\vmware-module.md
+      name: VMware Module
+    - order: 8030
+      href: royal-server-configuration\modules\windows-events-module.md
+      name: Windows Events Module
+    - order: 8020
+      href: royal-server-configuration\modules\windows-processes-module.md
+      name: Windows Processes Module
+    - order: 8010
+      href: royal-server-configuration\modules\windows-services-module.md
+      name: Windows Services Module
+  - order: 7340
+    href: royal-server-configuration\service-configuration.md
+    name: Service Configuration
+  - order: 7330
+    href: royal-server-configuration\security-configuration.md
+    name: Security Configuration
+  - order: 7320
+    href: royal-server-configuration\dynamic-folder.md
+    name: Dynamic Folder
+  - order: 7310
+    href: royal-server-configuration\modules.md
+    name: Modules
+- order: 7200
+  href: secure-gateway-configuration\index.md
+  name: Secure Gateway
   items:
-  - order: 7300
-    href: components\management\index.md
-    name: Management Endpoint
-    items:
-    - order: 7340
-      href: components\management\service-configuration.md
-      name: Service Configuration
-    - order: 7330
-      href: components\management\security-configuration.md
-      name: Security Configuration
-    - order: 7320
-      href: components\management\dynamic-folder.md
-      name: Dynamic Folder
-    - order: 7310
-      href: components\management\modules.md
-      name: Modules
-  - order: 7200
-    href: components\secure-gateway\index.md
-    name: Secure Gateway
-    items:
-    - order: 7240
-      href: components\secure-gateway\gateway-configuration.md
-      name: Secure Gateway Configuration
-    - order: 7230
-      href: components\secure-gateway\gateway-security-configuration.md
-      name: Gateway Security Configuration
-    - order: 7220
-      href: components\secure-gateway\gateway-ciphers.md
-      name: Gateway Cipher Configuration
-    - order: 7210
-      href: components\secure-gateway\gateway-connections.md
-      name: Gateway Connections
-  - order: 7100
-    href: components\document-store\index.md
-    name: Document Store
-    items:
-    - order: 7120
-      href: components\document-store\configuration.md
-      name: Configuration
-    - order: 7110
-      href: components\document-store\documents.md
-      name: Documents
+  - order: 7240
+    href: secure-gateway-configuration\gateway-configuration.md
+    name: Secure Gateway Configuration
+  - order: 7230
+    href: secure-gateway-configuration\gateway-security-configuration.md
+    name: Gateway Security Configuration
+  - order: 7220
+    href: secure-gateway-configuration\gateway-ciphers.md
+    name: Gateway Cipher Configuration
+  - order: 7210
+    href: secure-gateway-configuration\gateway-connections.md
+    name: Gateway Connections
+- order: 7100
+  href: document-store-configuration\index.md
+  name: Document Store
+  items:
+  - order: 7120
+    href: document-store-configuration\configuration.md
+    name: Configuration
+  - order: 7110
+    href: document-store-configuration\documents.md
+    name: Documents
 - order: 5000
   href: advanced\index.md
   name: Advanced Topics

@@ -33,7 +33,7 @@ Enter a username and click **Show** button. The Configuration Tool will list
 > Authorization group memberships are cached. Click on `Refresh without using the cache` to list group memberships bypassing the cache.
 
 > [!NOTE]
-> The read and modify access rules for Documents hosted by Royal Server can be configured [here](../components/document-store/documents.md).
+> The read and modify access rules for Documents hosted by Royal Server can be configured [here](../document-store-configuration/documents.md).
 
 ### Group Membership
 

@@ -1,0 +1,27 @@
+---
+uid: royalserver_getting-started_using-the-log-viewer
+name: Using the Log Viewer
+order: 10102
+---
+
+# Getting Started
+
+## Using the Log Viewer
+
+Click on **Open Log** to open the Log Viewer.
+
+The Log Viewer shows all log entries Royal Server produced on the current day. 
+
+> [!NOTE]
+> See for [more details on how to configure logging](xref:royalserver_general_logging).
+
+- Click **Live Updates** to see changes to the log file immediately
+- Click **Royal Server Log** or **Configuration Tool Log** to switch between the logs
+- Click **Show Details** to show all details of the log entry
+
+> [!TIP]
+> You can navigate with the cursor keys to switch between log entries and see their details
+
+- Click on **Clear** to clear the Log Viewer. This does not clear the log file itself.
+- Click on **Open...** to open the log file in Notepad.  
+

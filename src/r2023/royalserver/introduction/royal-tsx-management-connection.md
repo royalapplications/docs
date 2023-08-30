@@ -1,6 +1,6 @@
 ---
 name: Royal TS/X Management Connection
-order: 10040
+order: 10053
 ---
 
 # Royal TS/X Management Connection

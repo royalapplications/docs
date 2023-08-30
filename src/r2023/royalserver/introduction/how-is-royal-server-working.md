@@ -1,7 +1,7 @@
 ---
 uid: royalserver_introduction_how-is-royal-server-working
 name: How is Royal Server Working?
-order: 10080
+order: 10056
 ---
 
 # How is Royal Server Working?

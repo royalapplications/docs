@@ -1,7 +1,7 @@
 ---
 uid: royalserver_what-is-royalts
 name: What is Royal TS?
-order: 10098
+order: 10057
 ---
 
 # What is Royal TS?

@@ -10,6 +10,6 @@ order: 8000
 
 The following modules are distributed with Royal Server
 
-[!include[module-protocols.md](../_shared/module-list.md)]
+[!include[module-protocols.md](../../_shared/module-list.md)]
 
 See also [Royal Server Modules](xref:royalserver_management_modules)

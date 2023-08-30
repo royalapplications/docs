@@ -1,6 +1,6 @@
 ---
 name: Installation
-order: 10070
+order: 10055
 ---
 
 # Installing and Uninstalling Royal Server

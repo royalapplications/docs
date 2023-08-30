@@ -1,7 +1,7 @@
 ---
 uid: royalserver_what-is-royal-server
 name: What is Royal Server?
-order: 10099
+order: 10058
 ---
 
 # What is Royal Server?

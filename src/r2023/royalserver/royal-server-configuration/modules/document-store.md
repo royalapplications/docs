@@ -18,4 +18,4 @@ The Document Store Module implements the functionality for working with document
 - Delete Document (used by Royal Server Configuration UI)
 - Get Document properties (used by Royal Server Configuration UI)
 
-Details on how to work with the Document Store can be found [here](../components/document-store/configuration.md).
+Details on how to work with the Document Store can be found [here](../../document-store-configuration/configuration.md).

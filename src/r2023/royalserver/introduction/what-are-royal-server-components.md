@@ -1,7 +1,7 @@
 ---
 uid: royalserver_what-are-royal-server-components
 name: Royal Server Components
-order: 10081
+order: 10056
 ---
 
 # Royal Server Components
