@@ -84,6 +84,10 @@ The drop down list will show all available PuTTY sessions.
 
 Specify the TCP port for the connection.
 
+#### Close on Exit
+
+If PuTTY is not closed, the connection can be re-established using the **System Menu** on the **Actions** tab.
+
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
 
