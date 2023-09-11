@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: advanced-restoring-a-previous-version-of-a-document
+  name: Restoring a previous version of a Royal Document
+  href: royalserver/advanced/restoring-previous-version-document.html
 - uid: Close-RoyalDocument
   name: Close-RoyalDocument
   href: scripting/document/cmdlet-reference/Close-RoyalDocument.html
@@ -82,30 +85,6 @@ references:
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
   href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
-- uid: Set-RoyalDocumentPassword
-  name: Set-RoyalDocumentPassword
-  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
-- uid: Set-RoyalDocumentType
-  name: Set-RoyalDocumentType
-  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
-- uid: Set-RoyalObjectCustomProperty
-  name: Set-RoyalObjectCustomProperty
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
-- uid: Set-RoyalObjectCustomPropertyPosition
-  name: Set-RoyalObjectCustomPropertyPosition
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
-- uid: Set-RoyalObjectValue
-  name: Set-RoyalObjectValue
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
-- uid: Set-RoyalSortOrder
-  name: Set-RoyalSortOrder
-  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
-- uid: Uninstall-RoyalServerLicense
-  name: Uninstall-RoyalServerLicense
-  href: scripting/server/Uninstall-RoyalServerLicense.html
-- uid: advanced-restoring-a-previous-version-of-a-document
-  name: Restoring a previous version of a Royal Document
-  href: royalserver/advanced/restoring-previous-version-document.html
 - uid: royalserver_advanced_kestrel
   name: Server Limits
   href: royalserver/advanced/server-limits.html
@@ -120,34 +99,31 @@ references:
   href: royalserver/advanced/trace-flags.html
 - uid: royalserver_components_document-store
   name: Document Store
-  href: royalserver/components/document-store/index.html
-- uid: royalserver_components_document-store-configuration
-  name: Configuration
-  href: royalserver/components/document-store/configuration.html
+  href: royalserver/document-store-configuration/index.html
 - uid: royalserver_components_document-store_documents
   name: Documents
-  href: royalserver/components/document-store/documents.html
+  href: royalserver/document-store-configuration/documents.html
+- uid: royalserver_components_document-store-configuration
+  name: Configuration
+  href: royalserver/document-store-configuration/configuration.html
 - uid: royalserver_components_management
   name: Royal Server Management Endpoint
-  href: royalserver/components/management/index.html
+  href: royalserver/royal-server-configuration/index.html
 - uid: royalserver_components_secure-gateway
   name: Secure Gateway
-  href: royalserver/components/secure-gateway/index.html
+  href: royalserver/secure-gateway-configuration/index.html
 - uid: royalserver_components_secure-gateway_gateway-cipher-configuration
   name: Gateway Security Configuration
-  href: royalserver/components/secure-gateway/gateway-ciphers.html
+  href: royalserver/secure-gateway-configuration/gateway-ciphers.html
 - uid: royalserver_components_secure-gateway_gateway-configuration
   name: Gateway Configuration
-  href: royalserver/components/secure-gateway/gateway-configuration.html
+  href: royalserver/secure-gateway-configuration/gateway-configuration.html
 - uid: royalserver_components_secure-gateway_gateway-connections
   name: Gateway Connections
-  href: royalserver/components/secure-gateway/gateway-connections.html
+  href: royalserver/secure-gateway-configuration/gateway-connections.html
 - uid: royalserver_components_secure-gateway_gateway-security-configuration
   name: Gateway Security Configuration
-  href: royalserver/components/secure-gateway/gateway-security-configuration.html
-- uid: royalserver_general
-  name: Royal Server Configuration
-  href: royalserver/general/index.html
+  href: royalserver/secure-gateway-configuration/gateway-security-configuration.html
 - uid: royalserver_general_certificate-store
   name: Certificate Store
   href: royalserver/general/certificate-store.html
@@ -175,6 +151,24 @@ references:
 - uid: royalserver_general_updatesettings
   name: Update Checks
   href: royalserver/general/update-settings.html
+- uid: royalserver_general-configuration
+  name: General Configuration
+  href: royalserver/general/index.html
+- uid: royalserver_getting-started_adding-a-license
+  name: Getting Started
+  href: royalserver/getting-started/adding-a-license.html
+- uid: royalserver_getting-started_navigating-the-ui
+  name: Getting Started
+  href: royalserver/getting-started/navigating-the-ui.html
+- uid: royalserver_getting-started_setting-the-worker-account
+  name: Getting Started
+  href: royalserver/getting-started/setting-the-worker-account.html
+- uid: royalserver_getting-started_setting-up-royal-server-users
+  name: Getting Started
+  href: royalserver/getting-started/setting-up-royal-server-users.html
+- uid: royalserver_getting-started_using-the-log-viewer
+  name: Getting Started
+  href: royalserver/getting-started/using-the-logviewer.html
 - uid: royalserver_introduction
   name: What is Royal Server?
   href: royalserver/introduction/index.html
@@ -186,46 +180,46 @@ references:
   href: royalserver/introduction/how-is-royal-server-working.html
 - uid: royalserver_management_dynamic-folder
   name: Dynamic Folder
-  href: royalserver/components/management/dynamic-folder.html
+  href: royalserver/royal-server-configuration/dynamic-folder.html
 - uid: royalserver_management_modules
   name: Modules
-  href: royalserver/components/management/modules.html
+  href: royalserver/royal-server-configuration/modules.html
 - uid: royalserver_management_security-configuration
   name: Security Configuration
-  href: royalserver/components/management/security-configuration.html
+  href: royalserver/royal-server-configuration/security-configuration.html
 - uid: royalserver_management_service-configuration
   name: Service Configuration
-  href: royalserver/components/management/service-configuration.html
+  href: royalserver/royal-server-configuration/service-configuration.html
 - uid: royalserver_modules
   name: Royal Server Modules
-  href: royalserver/modules/index.html
+  href: royalserver/royal-server-configuration/modules/index.html
 - uid: royalserver_modules_document-store
   name: Document Store
-  href: royalserver/modules/document-store.html
+  href: royalserver/royal-server-configuration/modules/document-store.html
 - uid: royalserver_modules_hyperv
   name: Hyper-V Module
-  href: royalserver/modules/hyper-v-module.html
+  href: royalserver/royal-server-configuration/modules/hyper-v-module.html
 - uid: royalserver_modules_management
   name: Royal Server Management Module
-  href: royalserver/modules/royal-server-management.html
+  href: royalserver/royal-server-configuration/modules/royal-server-management.html
 - uid: royalserver_modules_script
   name: Script Module
-  href: royalserver/modules/script-module.html
+  href: royalserver/royal-server-configuration/modules/script-module.html
 - uid: royalserver_modules_terminal-services
   name: Terminal Services Module
-  href: royalserver/modules/terminal-services-module.html
+  href: royalserver/royal-server-configuration/modules/terminal-services-module.html
 - uid: royalserver_modules_vmware
   name: VMware Module
-  href: royalserver/modules/vmware-module.html
+  href: royalserver/royal-server-configuration/modules/vmware-module.html
 - uid: royalserver_modules_windows-events
   name: Windows Events Module
-  href: royalserver/modules/windows-events-module.html
+  href: royalserver/royal-server-configuration/modules/windows-events-module.html
 - uid: royalserver_modules_windows-processes
   name: Windows Processes Module
-  href: royalserver/modules/windows-processes-module.html
+  href: royalserver/royal-server-configuration/modules/windows-processes-module.html
 - uid: royalserver_modules_windows-services
   name: Windows Services Module
-  href: royalserver/modules/windows-services-module.html
+  href: royalserver/royal-server-configuration/modules/windows-services-module.html
 - uid: royalserver_scripting_examples_advanced-scripting-examples
   name: Examples using RoyalServer.PowerShell and RoyalDocument.PowerShell
   href: royalserver/scripting/examples/index.html
@@ -235,6 +229,18 @@ references:
 - uid: royalserver_scripting_module-reference
   name: Module References
   href: royalserver/scripting/module-reference/index.html
+- uid: royalserver_tutorials
+  name: Tutorials
+  href: royalserver/tutorials/index.html
+- uid: royalserver_tutorials_creating-an-rdp-connection-using-royal-server
+  name: 'Example: Creating an RDP connection that is using Royal Server'
+  href: royalserver/tutorials/creating-an-rdp-connection-using-royal-server.html
+- uid: royalserver_tutorials_querying-processes
+  name: 'Example: Query Windows Processes'
+  href: royalserver/tutorials/querying-processes.html
+- uid: royalserver_tutorials_using-credentials
+  name: Types of credentials used with Royal Server
+  href: royalserver/tutorials/using-credentials-with-royal-server.html
 - uid: royalserver_what-are-royal-server-components
   name: Royal Server Components
   href: royalserver/introduction/what-are-royal-server-components.html
@@ -601,3 +607,24 @@ references:
 - uid: scripting_serverps
   name: RoyalServer Powershell
   href: scripting/server/index.html
+- uid: Set-RoyalDocumentPassword
+  name: Set-RoyalDocumentPassword
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
+- uid: Set-RoyalDocumentType
+  name: Set-RoyalDocumentType
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
+- uid: Set-RoyalObjectCustomProperty
+  name: Set-RoyalObjectCustomProperty
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
+- uid: Set-RoyalObjectCustomPropertyPosition
+  name: Set-RoyalObjectCustomPropertyPosition
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
+- uid: Set-RoyalObjectValue
+  name: Set-RoyalObjectValue
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
+- uid: Set-RoyalSortOrder
+  name: Set-RoyalSortOrder
+  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
+- uid: Uninstall-RoyalServerLicense
+  name: Uninstall-RoyalServerLicense
+  href: scripting/server/Uninstall-RoyalServerLicense.html
