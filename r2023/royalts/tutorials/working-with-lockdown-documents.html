@@ -1,21 +1,20 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Working with Lockdown Documents </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Working with Lockdown Documents ">
-    <meta name="generator" content="docfx 2.59.4.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Working with Lockdown Documents </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Working with Lockdown Documents ">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -23,7 +22,7 @@
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper" class="ra-royalts">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
@@ -47,7 +46,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,7 +56,7 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -121,26 +120,26 @@
 <p><strong>Restrictions when using Lockdown Documents</strong><br>
 To ensure that passwords cannot be easily obtained, some restrictions apply to Locked documents, especially when revealing the password is prohibited:</p>
 <ul>
-<li><strong>Replacement Tokens</strong>: Secure properties (such as $EffectivePassword$ or $CredentialPassword$) are not resolved in command tasks, key sequence tasks, connections or templates.</li>
+<li><strong>Replacement Tokens</strong>: Secure properties (such as <span class="math">\(EffectivePassword\)</span> or <span class="math">\(CredentialPassword\)</span>) are not resolved in command tasks, key sequence tasks, connections or templates.</li>
 <li><strong>Ad Hoc Connections</strong>: Ad hoc connections are basically duplicates of the original connection which are placed in the Application document's Ad Hoc folder. During this process, none of the secure properties are copied over to the ad hoc connection. Connections configured to use username and password will fail to logon. Connections using assigned credentials will logon successfully because there is no secure property transferred to the ad hoc connection, only the reference to an existing credential.</li>
 <li><strong>Copy/Move of Connections to other Documents</strong>: all copy or move operations from a Locked document to another document are prohibited.</li>
 <li><strong>Terminal Connection based on the PuTTY plugin</strong>: since PuTTY needs the password passed on through the command-line, we will only support auto logon for Terminal connections using the Rebex plugin.</li>
 <li><strong>VNC based on UltraVNC and TightVNC</strong>: like the PuTTY based plugin, the UltraVNC and TightVNC connections are established by passing on the password through the command-line. Auto logon for VNC connection is therefore not supported for locked down documents which do not allow to reveal passwords.</li>
-<li><strong>Web Page Connections with Auto Fill</strong>: Using secure properties (such as $EffectivePassword$ or $CredentialPassword$ in web page auto fill will not be supported when a document is locked down. If the lockdown policy Allow passwords in web page connections is enabled, secure properties will be passed on for auto fill purposes.</li>
+<li><strong>Web Page Connections with Auto Fill</strong>: Using secure properties (such as $EffectivePassword$ or <span class="math">\(CredentialPassword\)</span> in web page auto fill will not be supported when a document is locked down. If the lockdown policy Allow passwords in web page connections is enabled, secure properties will be passed on for auto fill purposes.</li>
 <li><strong>Scripting</strong>: Access to secure properties of locked down documents using script is also not supported.</li>
 </ul>
 </div>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="form p-e2">
                 <div class="form-group">
                   <label for="version-select">Version</label>
                   <select id="version-select" class="form-control">
-                    <option value="r2023">Royal TS V7 / Royal Server V5
-                    <option value="r2021">Royal TS V6 / Royal Server V4
+                    <option value="r2023">Royal TS V7 / Royal Server V5</option>
+                    <option value="r2021">Royal TS V6 / Royal Server V4</option>
                   </select>
                 </div>
               </div>    
@@ -156,11 +155,11 @@ To ensure that passwords cannot be easily obtained, some restrictions apply to L
                 <div></div>
               </nav>    
             </div>
-            
+  
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -169,13 +168,13 @@ To ensure that passwords cannot be easily obtained, some restrictions apply to L
               <a href="#top">Back to top</a>
             </span>
             <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
-            
-            <span>Copyright © <strong>Royal Apps</strong></span>
+      
+      <span>Copyright © <strong>Royal Apps</strong></span>
           </div>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/ra.vendor.js"></script>

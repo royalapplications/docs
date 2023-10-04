@@ -73,15 +73,17 @@
 <h2 id="show-or-activate-the-multi-factor-users-store-panel">Show or Activate the Multi Factor Users Store Panel</h2>
 <p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>General</strong> group and then on the <strong>Multi Factor Users Store</strong> entry.</p>
 <p>The data grid shows the configured users for multi-factor authentication.</p>
-<h2 id="adding-a-user-for-multi-factor-authentication">Adding a User for Multi-Factor Authentication</h2>
 <p>The following functionalities in Royal Server support Multi-Factor Authentication:</p>
 <ul>
 <li>Document Store (triggered when loading or saving a document hosted by Royal Server) or</li>
-<li>Secure Gateway Connections.</li>
+<li>Secure Gateway Connections (triggered when connecting using e.g. RDP connections)</li>
+</ul>
+<h2 id="adding-a-user-for-multi-factor-authentication">Adding a User for Multi-Factor Authentication</h2>
+<ul>
 <li>Click on <strong>Add...</strong>.</li>
 <li>Enter a user or click on the <strong>Select User...</strong> icon.</li>
 <li>Specify an optional comment.</li>
-<li>Select for which feature this user is required to present a second factor (Document Store and/or Secure Gateway)</li>
+<li>Select for which functionality this user is required to present a second factor (Document Store and/or Secure Gateway)</li>
 <li>Specify the caching time. Each successful authentication is then cached for the specified minutes.</li>
 <li>Select an MFA provider. Currently, &quot;Generic TOTP&quot;, &quot;Duo&quot; and &quot;YubiKey&quot; are supported. Depending on your selection, different additional information will be required.</li>
 </ul>
@@ -89,6 +91,7 @@
 <h5>Note</h5>
 <p>A Caching Time of 0 minutes means no caching and the user has to provide a second factor for every operation.</p>
 </div>
+<p>Specify which MFA provider should be used for the specified user:</p>
 <h3 id="configuring-generic-totp">Configuring Generic TOTP</h3>
 <p>Provide meaningful values for Issuer and Label (these are displayed in the Authenticator Apps on your phone).
 After completion, a secret will be generated and represented as a QR code for each user. This secret or QR code is needed by the user to create a new entry in the Authenticator app on the mobile phone. This secret and/or QR code need to be sent in a secure way to the user.</p>

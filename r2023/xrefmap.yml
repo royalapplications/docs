@@ -1,9 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: advanced-restoring-a-previous-version-of-a-document
-  name: Restoring a previous version of a Royal Document
-  href: royalserver/advanced/restoring-previous-version-document.html
 - uid: Close-RoyalDocument
   name: Close-RoyalDocument
   href: scripting/document/cmdlet-reference/Close-RoyalDocument.html
@@ -85,6 +82,30 @@ references:
 - uid: Remove-RoyalObjectCustomProperty
   name: Remove-RoyalObjectCustomProperty
   href: scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.html
+- uid: Set-RoyalDocumentPassword
+  name: Set-RoyalDocumentPassword
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
+- uid: Set-RoyalDocumentType
+  name: Set-RoyalDocumentType
+  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
+- uid: Set-RoyalObjectCustomProperty
+  name: Set-RoyalObjectCustomProperty
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
+- uid: Set-RoyalObjectCustomPropertyPosition
+  name: Set-RoyalObjectCustomPropertyPosition
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
+- uid: Set-RoyalObjectValue
+  name: Set-RoyalObjectValue
+  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
+- uid: Set-RoyalSortOrder
+  name: Set-RoyalSortOrder
+  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
+- uid: Uninstall-RoyalServerLicense
+  name: Uninstall-RoyalServerLicense
+  href: scripting/server/Uninstall-RoyalServerLicense.html
+- uid: advanced-restoring-a-previous-version-of-a-document
+  name: Restoring a previous version of a Royal Document
+  href: royalserver/advanced/restoring-previous-version-document.html
 - uid: royalserver_advanced_kestrel
   name: Server Limits
   href: royalserver/advanced/server-limits.html
@@ -100,12 +121,12 @@ references:
 - uid: royalserver_components_document-store
   name: Document Store
   href: royalserver/document-store-configuration/index.html
-- uid: royalserver_components_document-store_documents
-  name: Documents
-  href: royalserver/document-store-configuration/documents.html
 - uid: royalserver_components_document-store-configuration
   name: Configuration
   href: royalserver/document-store-configuration/configuration.html
+- uid: royalserver_components_document-store_documents
+  name: Documents
+  href: royalserver/document-store-configuration/documents.html
 - uid: royalserver_components_management
   name: Royal Server Management Endpoint
   href: royalserver/royal-server-configuration/index.html
@@ -124,6 +145,9 @@ references:
 - uid: royalserver_components_secure-gateway_gateway-security-configuration
   name: Gateway Security Configuration
   href: royalserver/secure-gateway-configuration/gateway-security-configuration.html
+- uid: royalserver_general-configuration
+  name: General Configuration
+  href: royalserver/general/index.html
 - uid: royalserver_general_certificate-store
   name: Certificate Store
   href: royalserver/general/certificate-store.html
@@ -151,9 +175,6 @@ references:
 - uid: royalserver_general_updatesettings
   name: Update Checks
   href: royalserver/general/update-settings.html
-- uid: royalserver_general-configuration
-  name: General Configuration
-  href: royalserver/general/index.html
 - uid: royalserver_getting-started_adding-a-license
   name: Getting Started
   href: royalserver/getting-started/adding-a-license.html
@@ -607,24 +628,3 @@ references:
 - uid: scripting_serverps
   name: RoyalServer Powershell
   href: scripting/server/index.html
-- uid: Set-RoyalDocumentPassword
-  name: Set-RoyalDocumentPassword
-  href: scripting/document/cmdlet-reference/Set-RoyalDocumentPassword.html
-- uid: Set-RoyalDocumentType
-  name: Set-RoyalDocumentType
-  href: scripting/document/cmdlet-reference/Set-RoyalDocumentType.html
-- uid: Set-RoyalObjectCustomProperty
-  name: Set-RoyalObjectCustomProperty
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomProperty.html
-- uid: Set-RoyalObjectCustomPropertyPosition
-  name: Set-RoyalObjectCustomPropertyPosition
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectCustomPropertyPosition.html
-- uid: Set-RoyalObjectValue
-  name: Set-RoyalObjectValue
-  href: scripting/document/cmdlet-reference/Set-RoyalObjectValue.html
-- uid: Set-RoyalSortOrder
-  name: Set-RoyalSortOrder
-  href: scripting/document/cmdlet-reference/Set-RoyalSortOrder.html
-- uid: Uninstall-RoyalServerLicense
-  name: Uninstall-RoyalServerLicense
-  href: scripting/server/Uninstall-RoyalServerLicense.html
