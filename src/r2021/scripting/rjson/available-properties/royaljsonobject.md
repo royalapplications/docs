@@ -122,7 +122,7 @@ name: RoyalJSONObject
 - **Supported Values**:
     - A folder path either in \*NIX (`This/Is/A/Test`) or in Windows (`This\Is\A\Test`) format
 - **Example**: `"Path": "Path/To/Object"`
-- **Example 2**: `"Path": "Path\To\Object"`
+- **Example 2**: `"Path": "Path\\To\\Object"`
 
 ## CustomField1
 - **Data Type**: String
