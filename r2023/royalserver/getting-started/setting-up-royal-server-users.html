@@ -71,12 +71,12 @@
 <h2 id="setting-up-royal-server-users">Setting up Royal Server Users</h2>
 <p>Royal Server itself does not have a user database. It completely relies on Windows users and group memberships.</p>
 <p>The following Windows Groups are created by Royal Server on startup:</p>
-<p><strong>Royal Server Users</strong>
-All users in this group and child groups are allowed to use the Management Endpoint and Document Store Modules.</p>
-<p><strong>Royal Server Gateway Users</strong>
-All users in this group and child groups are allowed to use the Management Endpoint and Document Store Modules.</p>
-<p><strong>Royal Server Gateway Users</strong>
-All users in this group and child groups are allowed to use the Management Endpoint and Document Store Modules.</p>
+<p><strong>Royal Server Administrators</strong></p>
+<p>All users in this group and child groups are allowed to administrate Royal Server settings.</p>
+<p><strong>Royal Server Users</strong></p>
+<p>All users in this group and child groups are allowed to use the Management Endpoint and Document Store Modules.</p>
+<p><strong>Royal Server Gateway Users</strong></p>
+<p>All users in this group and child groups are allowed to use the Royal Server Secure Gateway.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>In domain joined environments we recommend to not add domain users directly to these groups but first create corresponding domain groups, add the users there and add these domain groups to the local groups.</p>

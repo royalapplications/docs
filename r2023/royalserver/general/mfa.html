@@ -139,10 +139,11 @@ After the creation of a user (or when you editing it), take a close look at the 
 <p>In the Royal Server Configuration Tool ensure that the <em>&quot;DUO&quot;</em> provider is enabled.</p>
 <p>Expand the details panel and enter the <code>Integration Key</code>, the <code>Secret Key</code> and the <code>Host</code> (=API Hostname) from the DUO Application created in the DUO web console backend <a href="#duo-app-configuration">previously</a>.</p>
 <h3 id="yubikey">YubiKey Provider Configuration</h3>
-<p><a href="https://www.yubico.com/">YubiKey</a> provides security solutions for companies and can be integrated into Royal Server.</p>
+<p><a href="https://www.yubico.com/">YubiKey</a> provides security solutions for companies using hardware authentication and can be integrated with Royal Server.</p>
 <h4 id="configuring-a-yubikey-api-key">Configuring a YubiKey API Key</h4>
-<p>First, you need to configure a YubiKey API key for Royal Server. This can be done at <a href="">https://upgrade.yubico.com/getapikey/</a>.</p>
+<p>First, you need to configure a YubiKey API key for Royal Server. This can be done at <a href="https://upgrade.yubico.com/getapikey/">https://upgrade.yubico.com/getapikey/</a>.</p>
 <p>Enter an email address, insert a YubiKey, then press the Yubikey button while the input focus is on YubiKey OTP. As a result, you get the <code>Client ID</code> and a <code>Secret Key</code>. Remember these as you need them later for configuring the Royal Server YubiKey integration.</p>
+<p>Alternatively, you can use the <a href="https://www.yubico.com/support/download/yubikey-manager/">YubiKey Manager</a> tool to configure <code>Client ID</code> and <code>Secret Key</code>.</p>
 <h4 id="configuring-the-yubikey-provider">Configuring the YubiKey Provider</h4>
 <p>In the Royal Server Configuration Tool ensure that the <em>&quot;YubiKey&quot;</em> provider is enabled.</p>
 <p>Expand the details panel under YubiKey and enter the <code>Client ID</code>, the <code>Secret Key</code> that you previously generated while getting a YubiKey API Key.</p>
