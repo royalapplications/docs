@@ -72,7 +72,7 @@
 <p>Some connection types support connecting through a Azure Bastion Gatewway.</p>
 <h2 id="usage-of-azure-bastion">Usage of Azure Bastion</h2>
 <p>The Azure Bastion Gateway can be used to access Azure computers with private IP addresses through a tunnel (port forwarding). Azure CLI tools including the Bastion extension is required to be installed on the system.</p>
-<p>Once you created and set up an Azure Bastion Gateway, you can assign it on the <strong>Secure Gateway</strong> page of an Terminal (SSH) connection or Remote Desktop connection.</p>
+<p>Once you created and set up an Azure Bastion Gateway, you can assign it on the <strong>Secure Gateway</strong> page of a Terminal (SSH) connection or Remote Desktop connection. Simply specify the resource ID in the <strong>Computer Name</strong> field or the private IP address if your Azure Bastion is configured to allow <strong>IP-based connections</strong>.</p>
 <h2 id="requirements">Requirements</h2>
 <h3 id="azure-bastion">Azure Bastion</h3>
 <p>An Azure Bastion must be deployed with the following configuration:</p>
@@ -82,9 +82,9 @@
 </ul>
 <h3 id="local-machine">Local Machine</h3>
 <ul>
-<li>The Azure CLI tools must be installed (<code>az</code> commands)</li>
-<li>The <code>bastion</code> extenstion for the Azure CLI must be installed</li>
-<li><code>az login</code> may be required to be called to authenticate your Azure account before you can use the Azure Bastion integration</li>
+<li>The <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli">Azure CLI tools</a> must be installed (<code>az</code> commands).</li>
+<li>The <code>bastion</code> <a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-list">extenstion</a> for the Azure CLI must be <a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-overview#how-to-install-extensions">installed</a>.</li>
+<li><code>az login</code> may be required to be called to authenticate your Azure account before you can use the Azure Bastion integration.</li>
 </ul>
 <p>At the core, Royal TS will use the installed Azure CLI to open a web socket with local portforwarding by calling the <code>az network bastion tunnel</code> command.</p>
 <div class="NOTE">
