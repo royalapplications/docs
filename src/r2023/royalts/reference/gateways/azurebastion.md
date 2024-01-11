@@ -26,6 +26,9 @@ An Azure Bastion must be deployed with the following configuration:
 - The `bastion` [extenstion](https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-list) for the Azure CLI must be [installed](https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-overview#how-to-install-extensions).
 - `az login` may be required to be called to authenticate your Azure account before you can use the Azure Bastion integration.
 
+> [!Important]
+> After installing the Azure CLI tools and the bastion extension, make sure you close and restart Royal TS.
+
 At the core, Royal TS will use the installed Azure CLI to open a web socket with local portforwarding by calling the `az network bastion tunnel` command.
 
 > [!Note]
