@@ -12,7 +12,7 @@ Some connection types support connecting through a Azure Bastion Gatewway.
 
 The Azure Bastion Gateway can be used to access Azure computers with private IP addresses through a tunnel (port forwarding). Azure CLI tools including the Bastion extension is required to be installed on the system.
 
-Once you created and set up an Azure Bastion Gateway, you can assign it on the **Secure Gateway** page of an Terminal (SSH) connection or Remote Desktop connection.
+Once you created and set up an Azure Bastion Gateway, you can assign it on the **Secure Gateway** page of a Terminal (SSH) connection or Remote Desktop connection. Simply specify the resource ID in the **Computer Name** field or the private IP address if your Azure Bastion is configured to allow **IP-based connections**. 
 
 ## Requirements
 
@@ -22,9 +22,9 @@ An Azure Bastion must be deployed with the following configuration:
 - **Native client support** must be enabled
 
 ### Local Machine
-- The Azure CLI tools must be installed (`az` commands)
-- The `bastion` extenstion for the Azure CLI must be installed
-- `az login` may be required to be called to authenticate your Azure account before you can use the Azure Bastion integration
+- The [Azure CLI tools](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) must be installed (`az` commands).
+- The `bastion` [extenstion](https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-list) for the Azure CLI must be [installed](https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-overview#how-to-install-extensions).
+- `az login` may be required to be called to authenticate your Azure account before you can use the Azure Bastion integration.
 
 At the core, Royal TS will use the installed Azure CLI to open a web socket with local portforwarding by calling the `az network bastion tunnel` command.
 
