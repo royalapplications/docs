@@ -2,6 +2,11 @@
 
 The **Secure Gateway** page allows you to configure a Secure Gateway object for supported connections or choose to use a Secure Gateway configuration from the parent folder.
 
+The following object types can be assigned:
+- Secure Gateway
+- Royal Server
+- Azure Bastion Gateway
+
 #### Use Secure Gateway from the parent folder
 
 If checked, Royal TS will look for a configured Secure Gateway in the parent folder. This option is not available on the document level.

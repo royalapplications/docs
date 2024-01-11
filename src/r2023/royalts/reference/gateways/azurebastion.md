@@ -12,6 +12,8 @@ Some connection types support connecting through a Azure Bastion Gatewway.
 
 The Azure Bastion Gateway can be used to access Azure computers with private IP addresses through a tunnel (port forwarding). Azure CLI tools including the Bastion extension is required to be installed on the system.
 
+Once you created and set up an Azure Bastion Gateway, you can assign it on the **Secure Gateway** page of an Terminal (SSH) connection or Remote Desktop connection.
+
 ## Requirements
 
 ### Azure Bastion

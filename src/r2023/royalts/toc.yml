@@ -1,248 +1,248 @@
-- name: Introduction
-  items:
+- items:
   - name: What is Royal TS
+    order: 10000
     href: introduction\what-is-royal-ts.md
-    order: 10000
   - name: Introducing Royal Server
+    order: 9990
     href: introduction\introducing-royal-server.md
-    order: 9990
   - name: System Requirements
+    order: 9980
     href: https://www.royalapps.com/go/kb-ts-win-systemrequirements
-    order: 9980
   - name: License Agreement
+    order: 9970
     href: https://www.royalapps.com/go/kb-all-licenseagreement
-    order: 9970
   - name: FAQs
+    order: 9960
     href: https://www.royalapps.com/go/kb-ts-win
-    order: 9960
-  href: introduction\index.md
+  name: Introduction
   order: 10000
-- name: Getting Started
-  items:
+  href: introduction\index.md
+- items:
   - name: Your First Connection
+    order: 10000
     href: getting-started\your-first-connection.md
-    order: 10000
   - name: Ribbon and Backstage
+    order: 9990
     href: getting-started\ribbon-and-backstage.md
-    order: 9990
   - name: Panels and Tabs
+    order: 9980
     href: getting-started\panels-and-tabs.md
-    order: 9980
   - name: Documents and Files
+    order: 9970
     href: getting-started\documents-and-files.md
-    order: 9970
   - name: Connections
+    order: 9960
     href: getting-started\connections.md
-    order: 9960
   - name: Dashboards
+    order: 9950
     href: getting-started\dashboards.md
-    order: 9950
   - name: Plugins
+    order: 9940
     href: getting-started\plugins.md
-    order: 9940
   - name: Security
+    order: 9930
     href: getting-started\security.md
-    order: 9930
-  href: getting-started\index.md
+  name: Getting Started
   order: 9990
-- name: Tutorials
-  items:
+  href: getting-started\index.md
+- items:
   - name: Working with Documents
+    order: 10000
     href: tutorials\working-with-documents.md
-    order: 10000
   - name: Working with Lockdown Documents
+    order: 9990
     href: tutorials\working-with-lockdown-documents.md
-    order: 9990
   - name: Working with Connections
+    order: 9980
     href: tutorials\working-with-connections.md
-    order: 9980
   - name: Working with Overrides
+    order: 9970
     href: tutorials\working-with-overrides.md
-    order: 9970
   - name: Working with Templates
-    href: tutorials\working-with-templates.md
     order: 9960
+    href: tutorials\working-with-templates.md
   - name: Working with Credentials
-    href: tutorials\working-with-credentials.md
     order: 9950
+    href: tutorials\working-with-credentials.md
   - name: Working with Tasks
-    href: tutorials\working-with-tasks.md
     order: 9940
+    href: tutorials\working-with-tasks.md
   - name: Working with To-Do Items
-    href: tutorials\working-with-todo.md
     order: 9930
+    href: tutorials\working-with-todo.md
   - name: Working with Ad Hoc Connections
-    href: tutorials\working-with-adhoc.md
     order: 9920
+    href: tutorials\working-with-adhoc.md
   - name: Bulk Operations
-    href: tutorials\bulk-operations.md
     order: 9910
+    href: tutorials\bulk-operations.md
   - name: More Tutorials
-    href: https://www.royalapps.com/go/kb-ts-win-tutorials
     order: 9900
-  href: tutorials\index.md
+    href: https://www.royalapps.com/go/kb-ts-win-tutorials
+  name: Tutorials
   order: 9980
-- name: User Interface
-  items:
+  href: tutorials\index.md
+- items:
   - name: Panels
+    order: 10000
     href: user-interface\panels.md
-    order: 10000
   - name: Dashboards
-    href: user-interface\dashboards.md
     order: 9990
+    href: user-interface\dashboards.md
   - name: Commands
+    order: 9980
     href: user-interface\commands.md
-    order: 9980
   - name: Color Palettes
-    href: user-interface\color-palettes.md
     order: 9970
-  href: user-interface\index.md
+    href: user-interface\color-palettes.md
+  name: User Interface
   order: 9970
-- name: Reference
-  items:
-  - name: Organization
-    items:
+  href: user-interface\index.md
+- items:
+  - items:
     - name: Document
+      order: 10000
       href: reference\organization\document.md
-      order: 10000
     - name: Folder
+      order: 9990
       href: reference\organization\folder.md
-      order: 9990
     - name: Dynamic Folder
+      order: 9980
       href: reference\organization\dynamic-folder.md
-      order: 9980
     - name: Credential
+      order: 9970
       href: reference\organization\credential.md
-      order: 9970
     - name: Information
+      order: 9960
       href: reference\organization\information.md
-      order: 9960
     - name: To-Do Item
+      order: 9950
       href: reference\organization\todo-item.md
-      order: 9950
-    href: reference\organization\index.md
+    name: Organization
     order: 11000
-  - name: Connections
-    items:
+    href: reference\organization\index.md
+  - items:
     - name: Remote Desktop (ActiveX)
+      order: 10000
       href: reference\connections\rdp.md
-      order: 10000
     - name: Remote Desktop (FreeRDP)
-      href: reference\connections\freerdp.md
       order: 9995
+      href: reference\connections\freerdp.md
     - name: VNC (Integrated)
+      order: 9990
       href: reference\connections\vnc.md
-      order: 9990
     - name: VNC (Tight)
+      order: 9980
       href: reference\connections\vnc-tight.md
-      order: 9980
     - name: VNC (Ultra)
+      order: 9970
       href: reference\connections\vnc-ultra.md
-      order: 9970
     - name: Terminal (Rebex)
-      href: reference\connections\terminal-rebex.md
       order: 9960
+      href: reference\connections\terminal-rebex.md
     - name: Terminal (PuTTY)
-      href: reference\connections\terminal-putty.md
       order: 9950
+      href: reference\connections\terminal-putty.md
     - name: File Transfer
-      href: reference\connections\filetransfer.md
       order: 9940
+      href: reference\connections\filetransfer.md
     - name: Web Page (IE)
-      href: reference\connections\web-page-ie.md
       order: 9930
+      href: reference\connections\web-page-ie.md
     - name: Web Page (Chrome)
-      href: reference\connections\web-page-chrome.md
       order: 9920
+      href: reference\connections\web-page-chrome.md
     - name: TeamViewer
-      href: reference\connections\teamviewer.md
       order: 9910
+      href: reference\connections\teamviewer.md
     - name: External Application
-      href: reference\connections\external-app.md
       order: 9900
+      href: reference\connections\external-app.md
     - name: Performance View
-      href: reference\connections\perf-view.md
       order: 9890
+      href: reference\connections\perf-view.md
     - name: PowerShell Connection
-      href: reference\connections\powershell.md
       order: 9880
+      href: reference\connections\powershell.md
     - name: Windows Events View
-      href: reference\connections\windows-events.md
       order: 9870
+      href: reference\connections\windows-events.md
     - name: Windows Processes
-      href: reference\connections\windows-processes.md
       order: 9860
+      href: reference\connections\windows-processes.md
     - name: Windows Services
-      href: reference\connections\windows-services.md
       order: 9850
+      href: reference\connections\windows-services.md
     - name: Terminal Services
-      href: reference\connections\terminal-services.md
       order: 9840
+      href: reference\connections\terminal-services.md
     - name: Hyper-V
-      href: reference\connections\hyper-v.md
       order: 9830
+      href: reference\connections\hyper-v.md
     - name: VMware
-      href: reference\connections\vmware.md
       order: 9820
+      href: reference\connections\vmware.md
+    name: Connections
+    order: 10000
     href: reference\connections\index.md
-    order: 10000
-  - name: Gateways
-    items:
+  - items:
     - name: Royal Server
+      order: 9990
       href: reference\gateways\royalserver.md
-      order: 9990
     - name: Secure Gateway
+      order: 9980
       href: reference\gateways\securegateway.md
-      order: 9980
     - name: Azure Bastion
-      href: reference\gateways\azurebastion.md
       order: 9975
+      href: reference\gateways\azurebastion.md
     - name: Remote Desktop Gateway
-      href: reference\gateways\rdpgateway.md
       order: 9970
-    href: reference\gateways\index.md
+      href: reference\gateways\rdpgateway.md
+    name: Gateways
     order: 10000
-  - name: Tasks
-    items:
+    href: reference\gateways\index.md
+  - items:
     - name: Command Task
-      href: reference\tasks\command.md
       order: 10000
+      href: reference\tasks\command.md
     - name: Key Sequence Task
-      href: reference\tasks\key-sequence.md
       order: 9990
+      href: reference\tasks\key-sequence.md
     - name: Ad Hoc Key Sequence
-      href: reference\tasks\adhoc-key-sequence.md
       order: 9980
-    href: reference\tasks\index.md
+      href: reference\tasks\adhoc-key-sequence.md
+    name: Tasks
     order: 9980
+    href: reference\tasks\index.md
   - name: Options
-    href: reference\options.md
     order: 1000
-  href: reference\index.md
+    href: reference\options.md
+  name: Reference
   order: 9960
-- name: Advanced
-  items:
+  href: reference\index.md
+- items:
   - name: Import Data
-    href: advanced\import.md
     order: 10600
+    href: advanced\import.md
   - name: Export Data
-    href: advanced\export.md
     order: 10500
+    href: advanced\export.md
   - name: Replacement Tokens
-    href: advanced\tokens.md
     order: 10450
+    href: advanced\tokens.md
   - name: Application Settings
-    href: advanced\appsettings.md
     order: 10400
+    href: advanced\appsettings.md
   - name: Default Settings
-    href: advanced\default-settings.md
     order: 10300
+    href: advanced\default-settings.md
   - name: Command Line
-    href: advanced\cli.md
     order: 10200
+    href: advanced\cli.md
   - name: URI Scheme
-    href: advanced\uri.md
     order: 10100
-  href: advanced\index.md
+    href: advanced\uri.md
+  name: Advanced
   order: 9950
+  href: advanced\index.md
 
