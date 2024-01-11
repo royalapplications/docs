@@ -86,6 +86,10 @@
 <li>The <code>bastion</code> <a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-list">extenstion</a> for the Azure CLI must be <a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-overview#how-to-install-extensions">installed</a>.</li>
 <li><code>az login</code> may be required to be called to authenticate your Azure account before you can use the Azure Bastion integration.</li>
 </ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>After installing the Azure CLI tools and the bastion extension, make sure you close and restart Royal TS.</p>
+</div>
 <p>At the core, Royal TS will use the installed Azure CLI to open a web socket with local portforwarding by calling the <code>az network bastion tunnel</code> command.</p>
 <div class="NOTE">
 <h5>Note</h5>

@@ -3191,7 +3191,7 @@
           "hash": "G3Aq/0vhlKuvsq24Z+j4xP7OCcucz7hDRLupAdOcZyk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -3203,7 +3203,7 @@
           "hash": "g9N4lilG5bsWFYyqx3/qb0CgzO6ZlP1TJmMUSWmNqf0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5120,7 +5120,7 @@
       "output": {
         ".html": {
           "relative_path": "royalts/reference/gateways/azurebastion.html",
-          "hash": "csc3Zn6d6oO2caXpaBdP4bn0/UVT0EeN6hO7yYSnZJk="
+          "hash": "newEClH3BT4Ol8/8WIZ46OfibHDMkJ1UfNmcCysD6NE="
         }
       },
       "is_incremental": false,
@@ -6786,19 +6786,17 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build didn't contain group .",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableGroupCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 296,
-          "skipped_file_count": 0
+          "skipped_file_count": 295
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
