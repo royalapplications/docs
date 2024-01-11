@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Azure Bastion </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" Azure Bastion ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalts">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="royalts_reference_azurebastion">
+<h2 id="-azure-bastion"><img src="/r2023/images/RoyalTS/Application/SVG_PageAzureBastionGateway_32.svg#img_header" alt=""> Azure Bastion</h2>
+
+<p>Some connection types support connecting through a Azure Bastion Gatewway.</p>
+<h2 id="usage-of-azure-bastion">Usage of Azure Bastion</h2>
+<p>The Azure Bastion Gateway can be used to access Azure computers with private IP addresses through a tunnel (port forwarding). Azure CLI tools including the Bastion extension is required to be installed on the system.</p>
+<p>Once you created and set up an Azure Bastion Gateway, you can assign it on the <strong>Secure Gateway</strong> page of an Terminal (SSH) connection or Remote Desktop connection.</p>
+<h2 id="requirements">Requirements</h2>
+<h3 id="azure-bastion">Azure Bastion</h3>
+<p>An Azure Bastion must be deployed with the following configuration:</p>
+<ul>
+<li>The SKU / Tier must be <strong>Standard</strong></li>
+<li><strong>Native client support</strong> must be enabled</li>
+</ul>
+<h3 id="local-machine">Local Machine</h3>
+<ul>
+<li>The Azure CLI tools must be installed (<code>az</code> commands)</li>
+<li>The <code>bastion</code> extenstion for the Azure CLI must be installed</li>
+<li><code>az login</code> may be required to be called to authenticate your Azure account before you can use the Azure Bastion integration</li>
+</ul>
+<p>At the core, Royal TS will use the installed Azure CLI to open a web socket with local portforwarding by calling the <code>az network bastion tunnel</code> command.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Be aware that using the Azure Bastion and switching the SKU to <strong>Standard</strong> comes with higher monthly costs in addition to bandwidh costs from the Azure side. Make sure you check the Azure pricing page for more information. Deploying a <a class="xref" href="../../introduction/introducing-royal-server.html">Royal Server</a> or an SSH server (Secure Gateway) may be more cost effective.</p>
+</div>
+<h2 id="object-properties">Object Properties</h2>
+<p>The Azure Bastion Properties dialog is shown:</p>
+<ul>
+<li>for a new Azure Bastion object by clicking the <strong>Azure Bastion</strong> command in the <strong>Add</strong> group on the <strong>Edit</strong> ribbon tab.</li>
+<li>for an existing Azure Bastion objects by selecting an Azure Bastion object and clicking on the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab.</li>
+<li>as a bulk-edit dialog when multiple Azure Bastion objects were selected in the Folder / Document Dashboard and the <strong>Properties</strong> command in the <strong>Edit</strong> group on the <strong>Home</strong> ribbon tab is clicked. See also: <a class="xref" href="../../tutorials/bulk-operations.html">Bulk Operations</a></li>
+</ul>
+<h2 id="azure-bastion-properties">Azure Bastion Properties</h2>
+<p>The <strong>Azure Bastion</strong> page allows you to configure the name, subscription and resource group of the Azure Bastion Resource.</p>
+<h4 id="display-name-required">Display Name <em>(required)</em></h4>
+<p>Enter a display name for object.</p>
+<h4 id="color">Color</h4>
+<p>Click the color picker button in the display name text box to select a color. In the <a class="xref" href="../options.html#-user-interface">User Interface</a> settings you can configure to show the color in the navigation tree, the connection tab or as connection border.</p>
+<h4 id="icon">Icon</h4>
+<p>Click the icon picker button next in the display name text box to select and assign a custom icon to the object.</p>
+<h4 id="bastion-name">Bastion Name</h4>
+<p>Enter the name of the Azure Bastion resource.</p>
+<h4 id="subscription">Subscription</h4>
+<p>Optionally specify the name or ID of your Azure subscription.</p>
+<h4 id="resource-group">Resource Group</h4>
+<p>Optionally specify the resource group.</p>
+<h4 id="description">Description</h4>
+<p>Enter a description for the object.</p>
+<h2 id="-notes"><img src="/r2023/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
+<p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
+<h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
+<p>When selected, Royal TS will display the notes from the parent folder in the notes panel. This option is not available on the document level.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To embed images, drag them into the editor using drag &amp; drop.</p>
+</div>
+<h2 id="-custom-properties"><img src="/r2023/images/RoyalTS/Application/SVG_NotesToolbarListBulleted_32.svg#img_header" alt=""> Custom Properties</h2>
+<p>The <strong>Custom Properties</strong> page allows you to enter and store additional information for the object. Various data formats are available, including protected fields. You can also group properties by using Header.</p>
+<h4 id="inherit-from-parent">Inherit from Parent</h4>
+<p>When checked, the properties configured on the parent folder are shown but are read-only.</p>
+<h4 id="custom-properties">Custom Properties</h4>
+<p>Use the '+' icon to add a header or a Field or multiple fields based on a template. Click on the label to name the field and enter a value. Click the 'Gear' icon to remove a field or header. The 'Gear' icon also shows additional options, like moving a field up or down.</p>
+<h2 id="-custom-fields"><img src="/r2023/images/RoyalTS/Application/SVG_PageCustomFields_32.svg#img_header" alt=""> Custom Fields</h2>
+<p>The <strong>Custom Fields</strong> page allows you to enter and store additional information for the object. Custom fields can be used in tasks and templates to inject values from the context connection.</p>
+<p>Standard custom fields are also shown in the folder dashboard views and in the properties panel. Protected custom fields can be used to store confidential data (for example when you need an additional password in a task). If you make use of protected custom fields, make sure you encrypt and password protect your document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Custom fields can be used in Tasks and in the Properties Panel. You can put web page URLs (like an iLO management address) or command lines (such as programs or batch files) in the custom fields and execute them using tasks or directly from the properties panel. Each individual custom field can also be configured to be inherited from the parent folder.</p>
+</div>
+<h2 id="-parent-folder"><img src="/r2023/images/RoyalTS/Application/SVG_FolderClosed_32.svg#img_header" alt=""> Parent Folder</h2>
+<p>The <strong>Parent Folder</strong> page allows you to view or change the parent folder of the selected object. To move multiple objects to another folder use the parent folder page in bulk-edit mode or use the move to command from the <strong>Edit</strong> tab (see <a class="xref" href="../../tutorials/working-with-connections.html">Working with Connections</a>).</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot create connections in the <strong>Application</strong> document. Moving a folder containing connections to a folder in the <strong>Application</strong> document will fail.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">Royal TS V7 / Royal Server V5
+                    <option value="r2021">Royal TS V6 / Royal Server V4
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalts/reference/gateways/azurebastion.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+            
+            <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
