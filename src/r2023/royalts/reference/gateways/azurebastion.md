@@ -63,6 +63,17 @@ Optionally specify the resource group.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
+## ![](/r2023/images/RoyalTS/Application/SVG_PageAdvanced_32.svg#img_header) Advanced
+
+You can use this page to change advanced settings for the Azure Bastion Gateway.
+
+### Azure Configuration Directory
+
+The Azure configuration directory (AZURE_CONFIG_DIR environment variable) to use for this Bastion Gateway. If not specify (empty), Royal TS will use the default directory: %USERPROFILE%\\.azure
+
+> [!Note]
+> Environment variables and replacement tokens are supported.
+
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
 [!include[customfields.md](~/royalts/_shared/customfields.md)]
