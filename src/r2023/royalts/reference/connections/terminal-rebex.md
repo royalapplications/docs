@@ -314,6 +314,11 @@ If checked, the following keyboard shortcuts are supported for scrolling:
 
 Specify the initial mouse paste mode. You can easily switch on or off mouse paste from the Actions tab while connected.
 
+#### Paste Clipboard Preview
+- **Never:** Paste operations are immediately applied
+- **Clipboard contains line breaks:** Shows a warning with the clipboard contents when line breaks are present
+- **Always:** Always shows a warning with the clipboard contents
+
 #### Selection Mode
 
 Specify the initial selection mode. You can easily switch on or off mouse paste from the Actions tab while connected.
