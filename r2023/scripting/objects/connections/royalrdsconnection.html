@@ -121,6 +121,11 @@ If set to true, background input mode is enabled. When background input is enabl
 0 = Connect And Do Not Warn Me<br>
 1 = Do Not Connect<br>
 2 = Warn Me</p>
+<h3 id="authenticationpackage">AuthenticationPackage</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Negotiate<br>
+1 = NTLM<br>
+2 = Kerberos</p>
 <h3 id="bitmappersistence">BitmapPersistence</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, bitmap caching is used. This can improve performance but requires additional disk space.</p>
@@ -139,6 +144,9 @@ If set to true, the client control automatically reconnects to a session in the 
 <h3 id="enableglyphcache">EnableGlyphCache</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, glyph caching is enabled.</p>
+<h3 id="enablerdsaadauth">EnableRdsAadAuth</h3>
+<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
+Determines whether the client will use Microsoft Entra ID to authenticate to the remote PC. In Azure Virtual Desktop, this provides a single sign-on experience.</p>
 <h3 id="grabfocusonconnect">GrabFocusOnConnect</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the client control will grab the focus upon connect.</p>

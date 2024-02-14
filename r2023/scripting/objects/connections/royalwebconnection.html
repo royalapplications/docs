@@ -110,6 +110,10 @@ Specify the delay in milliseconds before the auto fill is executed.</p>
 <h3 id="autofillmapping">AutoFillMapping</h3>
 <p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
 Mapping configuration to automatically fill forms when connected (DEPRECATED - use AutoFillMappingX instead)</p>
+<h3 id="autofillscriptinjectiontime">AutoFillScriptInjectionTime</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = At Document Start<br>
+1 = At Document End</p>
 <h3 id="autorefresh">AutoRefresh</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the web page will be refreshed automatically. Requires the AutoRefreshIntervalInSeconds to be set.</p>
@@ -147,6 +151,9 @@ If set to true, auto fill is executed for each request until it was successful.<
 <h3 id="scripterrorssuppressed">ScriptErrorsSuppressed</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, web browser dialog boxes (such as script error messages) are not displayed.</p>
+<h3 id="showstatusbar">ShowStatusBar</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, the web browser status bar is shown.</p>
 <h3 id="showtoolbar">ShowToolbar</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the web browser toolbar is shown.</p>

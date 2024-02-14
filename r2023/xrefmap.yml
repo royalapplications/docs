@@ -511,6 +511,9 @@ references:
 - uid: scripting_object_royalapplicationsetting
   name: RoyalApplicationSetting
   href: scripting/objects/options/royalapplicationsetting.html
+- uid: scripting_object_royalazurebastiongateway
+  name: RoyalAzureBastionGateway
+  href: scripting/objects/gateways/royalazurebastiongateway.html
 - uid: scripting_object_royalcommandtask
   name: RoyalCommandTask
   href: scripting/objects/tasks/royalcommandtask.html

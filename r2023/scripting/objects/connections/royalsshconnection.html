@@ -242,6 +242,11 @@ The number of bells for the bell overload setting.</p>
 <h3 id="printer">Printer</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Printer (empty for none)</p>
+<h3 id="puttycloseonexit">PuttyCloseOnExit</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Never<br>
+1 = Only on clean Exit (Default)<br>
+2 = Always</p>
 <h3 id="puttylocalecho">PuttyLocalEcho</h3>
 <p>Type: <code>int</code>, Default Value: <code>2</code><br>
 Putty Local Echo:<br>
@@ -492,6 +497,9 @@ Plugin command to run.</p>
 <h3 id="sshdetachedcertificate">SSHDetachedCertificate</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Certificate to use with the private key.</p>
+<h3 id="sshdetachedcertificatemac">SSHDetachedCertificateMac</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Certificate to use with the private key on macOS.</p>
 <h2 id="display-options">Display Options</h2>
 <h3 id="autoadjustterminalsize">AutoAdjustTerminalSize</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
@@ -817,6 +825,12 @@ Specifies the function key mode:<br>
 <h3 id="shiftoverridesapplicationsuseofmouse">ShiftOverridesApplicationsUseOfMouse</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the Shift key overrides the application's use of mouse.</p>
+<h3 id="showclipboardpreviewonpaste">ShowClipboardPreviewOnPaste</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Shows clipboard preview on paste:<br>
+0 = Never<br>
+1 = Clipboard contains Linebreaks<br>
+2 = Always</p>
 <h3 id="showhistoryafterdisconnect">ShowHistoryAfterDisconnect</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the history is shown after disconnect.</p>
