@@ -1,10 +1,10 @@
 ---
-uid: scripting_object_royalcommandtask
-name: RoyalCommandTask
-order: 7000
+uid: scripting_object_royalazurebastiongateway
+name: RoyalAzureBastionGateway
+order: 7300
 ---
 
-# RoyalCommandTask
+# RoyalAzureBastionGateway
 ## General
 ### CustomImageName
 Type: `string`, Default Value: `Empty String`  
@@ -12,6 +12,12 @@ A custom image name from a pre-defined set of images
 ### Name
 Type: `string`, Default Value: `Empty String`  
 The display name of the object.  
+### Subscription
+Type: `string`, Default Value: `Empty String`  
+The name or id of the Azure subscription.  
+### ResourceGroup
+Type: `string`, Default Value: `Empty String`  
+The name of the resource group.  
 ### Description
 Type: `string`, Default Value: `Empty String`  
 The description text of the object.  
@@ -27,77 +33,14 @@ Assign a custom color as hex string to the object (#FF0000 for red). Empty strin
 ### ColorName
 Type: `string`, Default Value: `Empty String`  
 Assign a color from a color palette to the object. If both, a color name and a custom color (hex string) are provided, the color name is preferred.  
-### ShowInFavoriteTasks
-Type: `bool`, Default Value: `false`  
-If set to true, the task will appear in the favorite task menu.  
-### DoNotSendScanCodes
-Type: `bool`, Default Value: `false`  
-If checked, keyboard input simulation does not send scan codes. Can be used in case of keyboard layout issues.  
-### NoConfirmationRequired
-Type: `bool`, Default Value: `false`  
-If set to true, the user does not need to confirm the task execution when executed from the favorite task menu.  
 ### ID
 Type: `Guid`, Default Value: `Guid.Empty`  
 The unique object identifier (GUID) of the object.  
 ### ExternalID
 Type: `string`, Default Value: `Empty String`  
 The external unique object identifier (GUID) of the object.  
-## Command on macOS
-### ArgumentsOSX
-Type: `string`, Default Value: `Empty String`  
-The arguments for the command line on macOS.  
-### CommandLineOSX
-Type: `string`, Default Value: `Empty String`  
-The command to execute for the task on macOS.  
-### ExecuteInTerminalOSX
-Type: `bool`, Default Value: `true`  
-If set to true, the task will be executed in a terminal window. If set to false, no terminal window is created.  
-### WorkingDirectoryOSX
-Type: `string`, Default Value: `Empty String`  
-The working directory for the command line macOS.  
-## Command on Windows
-### Arguments
-Type: `string`, Default Value: `Empty String`  
-The arguments for the command line.  
-### CommandLine
-Type: `string`, Default Value: `Empty String`  
-The command to execute for the task.  
-### WorkingDirectory
-Type: `string`, Default Value: `Empty String`  
-The working directory for the command line.  
-## Credentials
-### CredentialId
-Type: `Guid`, Default Value: `Guid.Empty`  
-Assign a credential object to this task by specifying the credential object's GUID.  
-### CredentialMode
-Type: `int`, Default Value: `0`  
-For Command Tasks:   
- 0 = Run this task with logged on user   
- 1 = Using the context credentials   
- 2 = Specify username and password   
- 3 = Use an existing credential   
- 4 = Specify a credential name   
-    
- For Key Sequence Tasks:   
- 0 = Do not use any credentials   
- 1 = Specify username and password   
- 2 = Use an existing credential   
- 3 = Specify a credential name  
-### CredentialName
-Type: `string`, Default Value: `Empty String`  
-Assign a credential object to this task by specifying the credential object's name.  
-### CredentialPassword
-Type: `string`, Default Value: `Empty String`  
-Specify the password for the credential.  
-### CredentialUsername
-Type: `string`, Default Value: `Empty String`  
-Specify the username for the task.  
-### LoadUserProfile
-Type: `bool`, Default Value: `false`  
-Whether or not to load the user profile.  
-### RunAsCredential
-Type: `bool`, Default Value: `true`  
-If set to true, the task will be executed in the user context of the configured credential.  
+## Gateway
+## Security
 ## Custom Fields
 ### CustomField1FromParent
 Type: `bool`, Default Value: `false`  

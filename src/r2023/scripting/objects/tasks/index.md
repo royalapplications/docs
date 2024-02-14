@@ -1,7 +1,7 @@
 ---
 uid: scripting_object_tasks
 name: Tasks
-order: 7200
+order: 7100
 ---
 
 # Tasks

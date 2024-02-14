@@ -178,6 +178,11 @@ The number of bells for the bell overload setting.
 ### Printer
 Type: `string`, Default Value: `Empty String`  
 Printer (empty for none)  
+### PuttyCloseOnExit
+Type: `int`, Default Value: `1`  
+0 = Never   
+ 1 = Only on clean Exit (Default)   
+ 2 = Always  
 ### PuttyLocalEcho
 Type: `int`, Default Value: `2`  
 Putty Local Echo:   
@@ -428,6 +433,9 @@ Plugin command to run.
 ### SSHDetachedCertificate
 Type: `string`, Default Value: `Empty String`  
 Certificate to use with the private key.  
+### SSHDetachedCertificateMac
+Type: `string`, Default Value: `Empty String`  
+Certificate to use with the private key on macOS.  
 ## Display Options
 ### AutoAdjustTerminalSize
 Type: `bool`, Default Value: `true`  
@@ -753,6 +761,12 @@ Specifies the function key mode:
 ### ShiftOverridesApplicationsUseOfMouse
 Type: `bool`, Default Value: `true`  
 If set to true, the Shift key overrides the application's use of mouse.  
+### ShowClipboardPreviewOnPaste
+Type: `int`, Default Value: `0`  
+Shows clipboard preview on paste:   
+ 0 = Never   
+ 1 = Clipboard contains Linebreaks   
+ 2 = Always  
 ### ShowHistoryAfterDisconnect
 Type: `bool`, Default Value: `false`  
 If set to true, the history is shown after disconnect.  

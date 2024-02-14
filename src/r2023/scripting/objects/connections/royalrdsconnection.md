@@ -57,6 +57,11 @@ Type: `int`, Default Value: `0`
 0 = Connect And Do Not Warn Me   
  1 = Do Not Connect   
  2 = Warn Me  
+### AuthenticationPackage
+Type: `int`, Default Value: `0`  
+0 = Negotiate   
+ 1 = NTLM   
+ 2 = Kerberos  
 ### BitmapPersistence
 Type: `bool`, Default Value: `true`  
 If set to true, bitmap caching is used. This can improve performance but requires additional disk space.  
@@ -75,6 +80,9 @@ If set to true, the client control automatically reconnects to a session in the 
 ### EnableGlyphCache
 Type: `bool`, Default Value: `false`  
 If set to true, glyph caching is enabled.  
+### EnableRdsAadAuth
+Type: `bool`, Default Value: `false`  
+Determines whether the client will use Microsoft Entra ID to authenticate to the remote PC. In Azure Virtual Desktop, this provides a single sign-on experience.  
 ### GrabFocusOnConnect
 Type: `bool`, Default Value: `false`  
 If set to true, the client control will grab the focus upon connect.  

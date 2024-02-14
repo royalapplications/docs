@@ -32,6 +32,7 @@ order: 10100
 ## [Gateways](gateways/index.md)
 - [RoyalManagementEndpoint](gateways/royalmanagementendpoint.md)
 - [RoyalSecureGateway](gateways/royalsecuregateway.md)
+- [RoyalAzureBastionGateway](gateways/royalazurebastiongateway.md)
 - [RoyalRDSGateway](gateways/royalrdsgateway.md)
 ## [Tasks](tasks/index.md)
 - [RoyalCommandTask](tasks/royalcommandtask.md)

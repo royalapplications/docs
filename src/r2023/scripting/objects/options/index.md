@@ -1,7 +1,7 @@
 ---
 uid: scripting_object_options
 name: Options
-order: 6900
+order: 6800
 ---
 
 # Options

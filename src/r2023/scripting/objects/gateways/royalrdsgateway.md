@@ -1,7 +1,7 @@
 ---
 uid: scripting_object_royalrdsgateway
 name: RoyalRDSGateway
-order: 7300
+order: 7200
 ---
 
 # RoyalRDSGateway

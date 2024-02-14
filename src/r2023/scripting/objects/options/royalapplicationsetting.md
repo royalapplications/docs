@@ -1,7 +1,7 @@
 ---
 uid: scripting_object_royalapplicationsetting
 name: RoyalApplicationSetting
-order: 6800
+order: 6700
 ---
 
 # RoyalApplicationSetting
@@ -207,7 +207,7 @@ External Window: Select Dashboard
 Type: `bool`, Default Value: `true`  
 Monitor the connection state of disconnected tabs  
 ### MonitorConnectionStateOfNavigationPanelItems
-Type: `bool`, Default Value: `true`  
+Type: `bool`, Default Value: `false`  
 Monitor the connection state of navigation panel connection items  
 ### MouseDoubleClickModeActive
 Type: `int`, Default Value: `2`  
@@ -679,6 +679,9 @@ Type: `int`, Default Value: `0`
 ### ConnectionBorderPadding
 Type: `int`, Default Value: `2`  
 Border Size  
+### CustomFont
+Type: `bool`, Default Value: `false`  
+If enabled, a custom font, size and spacing can be configured for the navigation tree and lists.  
 ### DisableDisplayScalingOnHighDpiSettings
 Type: `bool`, Default Value: `false`  
 If false (default), the OS will scale Royal TS on high DPI displays which may result in lower quality graphics and icons. If true, Royal TS will act as a dpi aware application which provides high quality graphics and icons but may have side effects on remote connections.  
@@ -697,9 +700,15 @@ Enables hardware accelerated DirectX rendering where possible
 ### EnablePixelScrolling
 Type: `bool`, Default Value: `false`  
 Enable Pixel-Scrolling in Navigation  
+### Font
+Type: `string`, Default Value: `Empty String`  
+The font to use in navigation tree and lists.  
 ### FontSize
 Type: `double`, Default Value: `9.00`  
 Font size in navigation tree and lists.  
+### FontSpacing
+Type: `int`, Default Value: `10`  
+Vertical spacing between items in navigation tree and lists.  
 ### ForceTreeLines
 Type: `bool`, Default Value: `false`  
 Always show lines in the Navigation tree  

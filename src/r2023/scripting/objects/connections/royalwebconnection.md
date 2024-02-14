@@ -46,6 +46,10 @@ Specify the delay in milliseconds before the auto fill is executed.
 ### AutoFillMapping
 Type: `string[]`, Default Value: `new string[] { }`  
 Mapping configuration to automatically fill forms when connected (DEPRECATED - use AutoFillMappingX instead)  
+### AutoFillScriptInjectionTime
+Type: `int`, Default Value: `1`  
+0 = At Document Start   
+ 1 = At Document End  
 ### AutoRefresh
 Type: `bool`, Default Value: `false`  
 If set to true, the web page will be refreshed automatically. Requires the AutoRefreshIntervalInSeconds to be set.  
@@ -83,6 +87,9 @@ If set to true, auto fill is executed for each request until it was successful.
 ### ScriptErrorsSuppressed
 Type: `bool`, Default Value: `false`  
 If set to true, web browser dialog boxes (such as script error messages) are not displayed.  
+### ShowStatusBar
+Type: `bool`, Default Value: `true`  
+If set to true, the web browser status bar is shown.  
 ### ShowToolbar
 Type: `bool`, Default Value: `false`  
 If set to true, the web browser toolbar is shown.  

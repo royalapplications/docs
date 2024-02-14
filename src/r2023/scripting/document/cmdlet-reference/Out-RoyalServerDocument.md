@@ -70,7 +70,7 @@ Type: DocStoreEntry
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: 2
 Default value: None
 Accept pipeline input: False

@@ -1,7 +1,7 @@
 ---
 uid: scripting_object_royalkeysequencetask
 name: RoyalKeySequenceTask
-order: 7000
+order: 6900
 ---
 
 # RoyalKeySequenceTask
