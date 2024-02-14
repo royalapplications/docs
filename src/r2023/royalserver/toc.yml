@@ -1,255 +1,255 @@
-- name: Introduction
-  items:
-  - name: What is Royal Server?
+- items:
+  - order: 10058
     href: introduction\what-is-royal-server.md
-    order: 10058
-  - name: What is Royal TS?
+    name: What is Royal Server?
+  - order: 10057
     href: introduction\what-is-royal-ts.md
-    order: 10057
-  - name: How is Royal Server Working?
+    name: What is Royal TS?
+  - order: 10056
     href: introduction\how-is-royal-server-working.md
-    order: 10056
-  - name: Royal Server Components
+    name: How is Royal Server Working?
+  - order: 10056
     href: introduction\what-are-royal-server-components.md
-    order: 10056
-  - name: Installation
+    name: Royal Server Components
+  - order: 10055
     href: introduction\installation.md
-    order: 10055
-  - name: Configuration
+    name: Installation
+  - order: 10054
     href: introduction\configuration.md
-    order: 10054
-  - name: Royal TS/X Management Connection
+    name: Configuration
+  - order: 10053
     href: introduction\royal-tsx-management-connection.md
-    order: 10053
-  - name: Release Notes
+    name: Royal TS/X Management Connection
+  - order: 10052
     href: introduction\release-notes.md
-    order: 10052
-  href: introduction\index.md
+    name: Release Notes
   order: 10900
-- name: Getting Started
-  items:
-  - name: Navigating the User Interface
+  href: introduction\index.md
+  name: Introduction
+- items:
+  - order: 10106
     href: getting-started\navigating-the-ui.md
-    order: 10106
-  - name: Setting the Worker Account
+    name: Navigating the User Interface
+  - order: 10105
     href: getting-started\setting-the-worker-account.md
-    order: 10105
-  - name: Adding a license
+    name: Setting the Worker Account
+  - order: 10104
     href: getting-started\adding-a-license.md
-    order: 10104
-  - name: Setting up Royal Server Users
+    name: Adding a license
+  - order: 10103
     href: getting-started\setting-up-royal-server-users.md
-    order: 10103
-  - name: Using the Log Viewer
+    name: Setting up Royal Server Users
+  - order: 10102
     href: getting-started\using-the-logviewer.md
-    order: 10102
-  href: getting-started\index.md
+    name: Using the Log Viewer
   order: 10800
-- name: Tutorials
-  items:
-  - name: Query Windows Processes
+  href: getting-started\index.md
+  name: Getting Started
+- items:
+  - order: 11005
     href: tutorials\querying-processes.md
-    order: 11005
-  - name: Using Credentials with Royal Server
+    name: Query Windows Processes
+  - order: 10701
     href: tutorials\using-credentials-with-royal-server.md
-    order: 10701
-  - name: Creating an RDP Connection
+    name: Using Credentials with Royal Server
+  - order: 1
     href: tutorials\creating-an-rdp-connection-using-royal-server.md
-    order: 1
-  href: tutorials\index.md
+    name: Creating an RDP Connection
   order: 10700
-- name: General
-  items:
-  - name: Health
+  href: tutorials\index.md
+  name: Tutorials
+- items:
+  - order: 9080
     href: general\health.md
-    order: 9080
-  - name: General Configuration
+    name: Health
+  - order: 9070
     href: general\general-configuration.md
-    order: 9070
-  - name: Certificate Store
+    name: General Configuration
+  - order: 9060
     href: general\certificate-store.md
-    order: 9060
-  - name: Multi Factor Authentication
+    name: Certificate Store
+  - order: 9050
     href: general\mfa.md
-    order: 9050
-  - name: Multi Factor User Store
+    name: Multi Factor Authentication
+  - order: 9040
     href: general\mfa-user-store.md
-    order: 9040
-  - name: Permissions
+    name: Multi Factor User Store
+  - order: 9030
     href: general\permissions.md
-    order: 9030
-  - name: Logging
+    name: Permissions
+  - order: 9020
     href: general\logging.md
-    order: 9020
-  - name: Update Settings
+    name: Logging
+  - order: 9010
     href: general\update-settings.md
-    order: 9010
-  - name: Licensing
+    name: Update Settings
+  - order: 9005
     href: general\licensing.md
-    order: 9005
-  href: general\index.md
+    name: Licensing
   order: 9000
-- name: Management Endpoint
-  items:
-  - name: Royal Server Modules
-    items:
-    - name: Document Store Module
+  href: general\index.md
+  name: General
+- items:
+  - items:
+    - order: 8090
       href: royal-server-configuration\modules\document-store.md
-      order: 8090
-    - name: Hyper-V Module
+      name: Document Store Module
+    - order: 8080
       href: royal-server-configuration\modules\hyper-v-module.md
-      order: 8080
-    - name: Royal Server Management Module
+      name: Hyper-V Module
+    - order: 8070
       href: royal-server-configuration\modules\royal-server-management.md
-      order: 8070
-    - name: Script Module
+      name: Royal Server Management Module
+    - order: 8060
       href: royal-server-configuration\modules\script-module.md
-      order: 8060
-    - name: Terminal Services Module
+      name: Script Module
+    - order: 8050
       href: royal-server-configuration\modules\terminal-services-module.md
-      order: 8050
-    - name: VMware Module
+      name: Terminal Services Module
+    - order: 8040
       href: royal-server-configuration\modules\vmware-module.md
-      order: 8040
-    - name: Windows Events Module
+      name: VMware Module
+    - order: 8030
       href: royal-server-configuration\modules\windows-events-module.md
-      order: 8030
-    - name: Windows Processes Module
+      name: Windows Events Module
+    - order: 8020
       href: royal-server-configuration\modules\windows-processes-module.md
-      order: 8020
-    - name: Windows Services Module
+      name: Windows Processes Module
+    - order: 8010
       href: royal-server-configuration\modules\windows-services-module.md
-      order: 8010
-    href: royal-server-configuration\modules\index.md
+      name: Windows Services Module
     order: 8000
-  - name: Service Configuration
+    href: royal-server-configuration\modules\index.md
+    name: Royal Server Modules
+  - order: 7340
     href: royal-server-configuration\service-configuration.md
-    order: 7340
-  - name: Security Configuration
+    name: Service Configuration
+  - order: 7330
     href: royal-server-configuration\security-configuration.md
-    order: 7330
-  - name: Dynamic Folder
+    name: Security Configuration
+  - order: 7320
     href: royal-server-configuration\dynamic-folder.md
-    order: 7320
-  - name: Modules
+    name: Dynamic Folder
+  - order: 7310
     href: royal-server-configuration\modules.md
-    order: 7310
-  href: royal-server-configuration\index.md
+    name: Modules
   order: 7300
-- name: Secure Gateway
-  items:
-  - name: Secure Gateway Configuration
+  href: royal-server-configuration\index.md
+  name: Management Endpoint
+- items:
+  - order: 7240
     href: secure-gateway-configuration\gateway-configuration.md
-    order: 7240
-  - name: Gateway Security Configuration
+    name: Secure Gateway Configuration
+  - order: 7230
     href: secure-gateway-configuration\gateway-security-configuration.md
-    order: 7230
-  - name: Gateway Cipher Configuration
+    name: Gateway Security Configuration
+  - order: 7220
     href: secure-gateway-configuration\gateway-ciphers.md
-    order: 7220
-  - name: Gateway Connections
+    name: Gateway Cipher Configuration
+  - order: 7210
     href: secure-gateway-configuration\gateway-connections.md
-    order: 7210
-  href: secure-gateway-configuration\index.md
+    name: Gateway Connections
   order: 7200
-- name: Document Store
-  items:
-  - name: Configuration
+  href: secure-gateway-configuration\index.md
+  name: Secure Gateway
+- items:
+  - order: 7120
     href: document-store-configuration\configuration.md
-    order: 7120
-  - name: Documents
+    name: Configuration
+  - order: 7110
     href: document-store-configuration\documents.md
-    order: 7110
-  href: document-store-configuration\index.md
+    name: Documents
   order: 7100
-- name: Advanced Topics
-  items:
-  - name: Application Settings
+  href: document-store-configuration\index.md
+  name: Document Store
+- items:
+  - order: 5090
     href: advanced\application-settings.md
-    order: 5090
-  - name: Backup
+    name: Application Settings
+  - order: 5080
     href: advanced\backup.md
-    order: 5080
-  - name: Management Scripts
-    items:
-    - name: Prepare a Managed Server
+    name: Backup
+  - items:
+    - order: 5120
       href: advanced\management-scripts\prepare-managed-server.md
-      order: 5120
-    - name: Cleanup an Installation
+      name: Prepare a Managed Server
+    - order: 5110
       href: advanced\management-scripts\uninstall.md
-      order: 5110
-    href: advanced\management-scripts\index.md
+      name: Cleanup an Installation
     order: 5065
-  - name: Performance Counter
+    href: advanced\management-scripts\index.md
+    name: Management Scripts
+  - order: 5060
     href: advanced\performance-counters.md
-    order: 5060
-  - name: Server Limits
+    name: Performance Counter
+  - order: 5055
     href: advanced\server-limits.md
-    order: 5055
-  - name: Trace Flags
+    name: Server Limits
+  - order: 5050
     href: advanced\trace-flags.md
-    order: 5050
-  - name: Restoring Document Versions
+    name: Trace Flags
+  - order: 5040
     href: advanced\restoring-previous-version-document.md
-    order: 5040
-  href: advanced\index.md
+    name: Restoring Document Versions
   order: 5000
-- name: Scripting
-  items:
-  - name: Advanced Scripting Examples
-    items:
-    - name: Loading and Saving a Document from Royal Server
+  href: advanced\index.md
+  name: Advanced Topics
+- items:
+  - items:
+    - order: 7000
       href: scripting\examples\Load-and-Save-Document.md
-      order: 7000
+      name: Loading and Saving a Document from Royal Server
+    order: 4300
     href: scripting\examples\index.md
-    order: 4300
-  - name: PowerShell Commandlets
-    items:
-    - name: Get-RoyalServerModule
+    name: Advanced Scripting Examples
+  - items:
+    - order: 4000
       href: scripting\powershell-commandlets\get-royalservermodule.md
-      order: 4000
-    - name: Get-RoyalServerModuleCommand
+      name: Get-RoyalServerModule
+    - order: 4000
       href: scripting\powershell-commandlets\get-royalservermodulecommand.md
-      order: 4000
-    - name: Get-RoyalServerModuleCommandParameter
+      name: Get-RoyalServerModuleCommand
+    - order: 4000
       href: scripting\powershell-commandlets\get-royalservermodulecommandparameter.md
-      order: 4000
-    - name: Invoke-RoyalServerCommand
+      name: Get-RoyalServerModuleCommandParameter
+    - order: 4000
       href: scripting\powershell-commandlets\invoke-royalservercommand.md
-      order: 4000
-    - name: New-RoyalServerConfig
+      name: Invoke-RoyalServerCommand
+    - order: 4000
       href: scripting\powershell-commandlets\new-royalserverconfig.md
-      order: 4000
-    href: scripting\powershell-commandlets\index.md
+      name: New-RoyalServerConfig
     order: 4300
-  - name: Module References
-    items:
-    - name: Module Document Store
+    href: scripting\powershell-commandlets\index.md
+    name: PowerShell Commandlets
+  - items:
+    - order: 4000
       href: scripting\module-reference\module-document-store.md
-      order: 4000
-    - name: Module Hyper-V
+      name: Module Document Store
+    - order: 4000
       href: scripting\module-reference\module-hyper-v.md
-      order: 4000
-    - name: Module Script
+      name: Module Hyper-V
+    - order: 4000
       href: scripting\module-reference\module-script.md
-      order: 4000
-    - name: Module Windows Events (EventLog)
+      name: Module Script
+    - order: 4000
       href: scripting\module-reference\module-windows-events.md
-      order: 4000
-    - name: Module Windows Processes
+      name: Module Windows Events (EventLog)
+    - order: 4000
       href: scripting\module-reference\module-windows-processes.md
-      order: 4000
-    href: scripting\module-reference\index.md
+      name: Module Windows Processes
     order: 4200
-  - name: Getting Started
+    href: scripting\module-reference\index.md
+    name: Module References
+  - order: 4010
     href: scripting\getting-started.md
-    order: 4010
-  href: scripting\index.md
+    name: Getting Started
   order: 4000
-- name: Royal Server Homepage
+  href: scripting\index.md
+  name: Scripting
+- order: 1040
   href: https://royalapps.com/server/main/features
-  order: 1040
-- name: System Requirements
+  name: Royal Server Homepage
+- order: 1030
   href: https://www.royalapps.com/go/kb-server-main-systemrequirements
-  order: 1030
+  name: System Requirements
 
