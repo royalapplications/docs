@@ -34,6 +34,11 @@ At the core, Royal TS will use the installed Azure CLI to open a web socket with
 > [!Note]
 > Be aware that using the Azure Bastion and switching the SKU to **Standard** comes with higher monthly costs in addition to bandwidh costs from the Azure side. Make sure you check the Azure pricing page for more information. Deploying a [Royal Server](xref:royalts_intro_royalserver) or an SSH server (Secure Gateway) may be more cost effective.
 
+### Azure CLI Configuration
+Since Azure CLI Version **2.61.0**, Microsoft changed a couple of things related to `az login` command. Make sure you read the [following](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli-interactively) and configure the CLI to avoid additional interaction in the CLI:
+- Disable [**Subscription selector**](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli-interactively) by executing `az config set core.login_experience_v2=off`
+- (Optional) Disable [**Sign in with Web Account Manager (WAM) on Windows**](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli-interactively#sign-in-with-web-account-manager-wam-on-windows) to always use your default web browser to sign in by executing `az config set core.enable_broker_on_windows=false`
+
 ## Object Properties
 
 The Azure Bastion Properties dialog is shown:
