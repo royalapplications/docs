@@ -76,17 +76,29 @@ If checked, hidden files will be shown in the local and remote file browser.
 
 ### Connection
 
-#### Keep-Alive Interval
-
-Specify the keep-alive interval in seconds. Set to 0 to disable keep-alive.
-
 #### Encoding
 
 Specifies the encoding.
 
-##### Use large buffers for file transfers
+#### Keep-Alive Interval
+
+Specify the keep-alive interval in seconds. Set to 0 to disable keep-alive.
+
+#### Use large buffers for file transfers
 
 Enabling large buffers can improve file transfer performance.
+
+#### Bandwidth
+
+Specify bandwidth constraints in kilobytes per second. Set to zero (0) to remove bandwidth constraints. Upload and download speed is only supported for FTP and SFTP connections.
+
+#### Max. Download Speed
+
+The maximum allowed download speed, in kilobytes per second. For unlimited speed set this to zero.
+
+#### Max. Upload Speed
+
+The maximum allowed upload speed, in kilobytes per second. For unlimited speed set this to zero.
 
 ### Timestamps
 
