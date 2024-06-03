@@ -1,21 +1,21 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Object references and inheritance </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Object references and inheritance ">
-    <meta name="generator" content="docfx 2.59.4.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Object references and inheritance </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Object references and inheritance ">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -23,7 +23,7 @@
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper" class="ra-scripting">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
                 <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
@@ -47,7 +47,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,7 +57,7 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -161,37 +161,38 @@ Now that we have our credential assigned to the &quot;Connections&quot; folder, 
 <p>For the &quot;MailServer 01&quot; SSH connection we want to use a different set of credentials and since no other object uses the same credentials, we directly specify the username and password of this connection in lines 60 and 61 using the <code>Username</code> and <code>Password</code> properties.</p>
 <p>That's it for credential assignment. Because we need a Secure Gateway to connect to each of our remote machines, we also assign the Secure Gateway object (ID &quot;00002&quot;) to the &quot;Connections&quot; folder and let the connections inherit it from their parent folder. In line 32 we specify <code>&quot;SecureGatewayID&quot;: &quot;00002&quot;</code> on our &quot;Connections&quot; folder. Then, for each of our connections we set <code>&quot;SecureGatewayFromParent&quot;: true</code> to let them inherit the Secure Gateway configuration from their parent folder.</p>
 <p>That's it for Secure Gateway assignment. Last but not least, we defined a key sequence task which lists the contents of the root directory. The definition of the object starts at line 21. For demo purposes we chose a different approach to assign this task to the SSH connection. Instead of referring to it by its ID, we use its name &quot;List Root Directory&quot;. So in line 63 we have this: <code>&quot;KeySequenceName&quot;: &quot;List Root Directory&quot;</code>. This means, when the connection is established, launch the key sequence task with the name &quot;List Root Directory&quot;.</p>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="form p-e2">
                 <div class="form-group">
                   <label for="version-select">Version</label>
                   <select id="version-select" class="form-control">
-                    <option value="r2023">Royal TS V7 / Royal Server V5
-                    <option value="r2021">Royal TS V6 / Royal Server V4
+                    <option value="r2023">Royal TS V7 / Royal Server V5</option>
+                    <option value="r2021">Royal TS V6 / Royal Server V4</option>
                   </select>
                 </div>
               </div>    
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/rjson/object-references-and-inheritance.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/rjson/object-references-and-inheritance.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>
-            
+  
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -200,13 +201,13 @@ Now that we have our credential assigned to the &quot;Connections&quot; folder, 
               <a href="#top">Back to top</a>
             </span>
             <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
-            
-            <span>Copyright © <strong>Royal Apps</strong></span>
+      
+      <span>Copyright © <strong>Royal Apps</strong></span>
           </div>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
