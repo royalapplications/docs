@@ -269,6 +269,7 @@ name: RoyalJSONObject
 - **Applies To**: All object types
 - **Description**: Can be used to specify properties of the object that aren't exposed in the RoyalJSON object model. To be able to use this, knowledge of the RoyalDocument data model is required. Documentation is [available here](~/scripting/objects/index.md).
 - **Example**: `"Properties": { "IsExpanded": "True" }`
+- **Example 2**: `"HostKeyAlgorithms": "{ssh-ed25519};{ssh-rsa}"`
 
 ## CustomProperties
 - **Data Type**: Key/Value pairs
