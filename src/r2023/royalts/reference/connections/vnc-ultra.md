@@ -8,6 +8,9 @@ order: 9970
 
 The **VNC** connection, based on UltraVNC, can be used to connect to remote computers using [UltraVNC](http://www.uvnc.com/).
 
+> [!Note]
+> In order to drag tabs of a connection based on external applications (such as PuTTY or VNC), you need to hold the **SHIFT** key. 
+
 ## Dashboard
 
 The dashboard included in this plugin allows you to:

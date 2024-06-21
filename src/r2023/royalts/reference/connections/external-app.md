@@ -9,7 +9,7 @@ order: 9900
 The **External Application** connection can be used to integrate external applications (executables) into Royal TS.
 
 > [!Note]
-> In order to drag and drop Terminal connections based on the PuTTY plugin, please hold the **SHIFT** key while dragging the panel to your desired location.
+> In order to drag tabs of a connection based on external applications (such as PuTTY or VNC), you need to hold the **SHIFT** key. 
 
 ## Dashboard
 

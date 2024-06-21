@@ -8,6 +8,9 @@ order: 9980
 
 The **VNC** connection, based on TightVNC, can be used to connect to remote computers using [TightVNC](http://www.tightvnc.com/). Connections based on this plugin require the TightVNC client application to be installed.
 
+> [!Note]
+> In order to drag tabs of a connection based on external applications (such as PuTTY or VNC), you need to hold the **SHIFT** key. 
+
 ## Dashboard
 
 The dashboard included in this plugin allows you to:
