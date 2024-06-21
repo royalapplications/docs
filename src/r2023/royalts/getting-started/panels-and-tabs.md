@@ -21,6 +21,9 @@ Any panel or tab can be un-docked and moved anywhere on the desktop.
 
 By default, the [Navigation panel](xref:royalts_ui_panels#-navigation) is docked to the left edge of the main window and the Dashboard panel is tabbed to the tab bar. Other panels are available through the ribbon, on the **View** tab. Panels can be docked to one side of the main window. A docking guide appears when you drag a panel to another location. This guide helps you to re-dock the panel on one of the four sides of the main window.
 
+> [!Note]
+> In order to dock Terminal connections based on the PuTTY plugin, please hold the **SHIFT** key while dragging the panel to your desired location.
+
 ![](~/images/RoyalTS/GettingStarted/PanelsAndTabs_01.png)
 
 ### Auto Hide
@@ -54,6 +57,9 @@ All dock-able panels can be hidden automatically (Auto Hide). Panels set to auto
 
 By default, the [Dashboard panel](xref:royalts_ui_panels#-dashboard) is tabbed to the tab bar. Each connected session is represented by a tab in the tab bar. Connection tabs cannot be docked like dock panels. You can drag connection tabs to rearrange them in the tab bar and can also be dragged out to create floating windows from connection tabs.
 
+> [!Note]
+> In order to drag and drop Terminal connections based on the PuTTY plugin, please hold the **SHIFT** key while dragging the panel to your desired location.
+
 ### Tab Groups
 
 If you want to view more than one connection at a time, you can split tabs into tab groups:
@@ -78,6 +84,9 @@ Royal TS supports two different modes for external windows:
 #### External Tab Hosting Window
 
 Click and drag the tab out of the tab bar to create an external tab hosting window. The external tab hosting window can also receive other tabs from other windows and allows you to group multiple tabs in one external window.
+
+> [!Note]
+> In order to drag and drop Terminal connections based on the PuTTY plugin, please hold the **SHIFT** key while dragging the panel to your desired location.
 
 ![](~/images/RoyalTS/GettingStarted/PanelsAndTabs_04.png)
 

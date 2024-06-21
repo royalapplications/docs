@@ -8,6 +8,9 @@ order: 9900
 
 The **External Application** connection can be used to integrate external applications (executables) into Royal TS.
 
+> [!Note]
+> In order to drag and drop Terminal connections based on the PuTTY plugin, please hold the **SHIFT** key while dragging the panel to your desired location.
+
 ## Dashboard
 
 The **External Application Dashboard** is shown in the **Dashboard** panel when you select an External Application connection in the **Navigation** panel. It can be configured to show windows of currently running processes. Use the **Connect (Ad Hoc)** button in the toolbar to create a new ad hoc external application connection based on the selection. You can move the resulting connection to your document by using drag & drop.

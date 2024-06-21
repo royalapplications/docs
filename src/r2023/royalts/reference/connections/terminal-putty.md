@@ -8,6 +8,9 @@ order: 9950
 
 The **Terminal** connection based on PuTTY can be used to connect to remote computers using Telnet, Secure Shell (SSH) (incl. Tunneling support), RAW or rlogin. It can also be used to connect to devices using the Serial Port.
 
+> [!Note]
+> In order to drag and drop Terminal connections based on the PuTTY plugin, please hold the **SHIFT** key while dragging the panel to your desired location.
+
 ## Dashboard
 
 The **Terminal Dashboard** is shown in the **Dashboard** panel when you select a Terminal connection based on the PuTTY plugin in the **Navigation** panel. The dashboard will show files with the extension .log. Logging and recording configuration can be found in [Logging](#-logging).
