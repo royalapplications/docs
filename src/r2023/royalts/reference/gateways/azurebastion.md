@@ -79,6 +79,10 @@ The Azure configuration directory (AZURE_CONFIG_DIR environment variable) to use
 > [!Note]
 > Environment variables and replacement tokens are supported.
 
+### Additional Tunnel Arguments
+
+Additional arguments to be passed on to the az CLI when the tunnel is created.
+
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
 [!include[customfields.md](~/royalts/_shared/customfields.md)]
