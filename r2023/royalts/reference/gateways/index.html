@@ -176,6 +176,18 @@ If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal
 <h2 id="-security"><img src="/r2023/images/RoyalTS/Application/SVG_PageSecurity_32.svg#img_header" alt=""> Security</h2>
 <p>The <strong>Security</strong> page allows you to adjust security settings and allowed algorithms.</p>
 <h3 id="general">General</h3>
+<h4 id="authentication-agent">Authentication Agent</h4>
+<p>Select the SSH authentication agent to use:</p>
+<ul>
+<li>None</li>
+<li>OpenSSH Agent</li>
+<li>Pageant</li>
+<li>Legacy Pageant</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Agent forwarding is currently not supported.</p>
+</div>
 <h4 id="fingerprint-1">Fingerprint</h4>
 <p>Shows the fingerprint of the server.</p>
 <h4 id="prefer-keyboard-interactive-authentication">Prefer Keyboard-Interactive Authentication</h4>
@@ -184,6 +196,8 @@ If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal
 <h5>Note</h5>
 <p>You may need to enable this option when your servers requires multi-factor authentication (MFA).</p>
 </div>
+<h4 id="use-strict-key-exchange">Use Strict Key Exchange</h4>
+<p>Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).</p>
 <h4 id="ciphers">Ciphers</h4>
 <p>Use drag and drop, ALT + UP and ALT + DOWN keys or use the up and down buttons in the cipher header bar to reorder the list of algorithm. Checking/unchecking an algorithm will enable/disable it.</p>
 <p>You can configure the following ciphers:</p>
