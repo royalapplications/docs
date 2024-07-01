@@ -254,6 +254,17 @@ Select the authentication method to use.
 > [!Note]
 > You may need to switch to `Keyboard Interactive` authentication when your servers requires multi-factor authentication (MFA).
 
+#### Authentication Agent
+
+Select the SSH authentication agent to use:
+- None
+- OpenSSH Agent
+- Pageant
+- Legacy Pageant
+
+> [!Note]
+> Agent forwarding is currently not supported.
+
 #### Fingerprint
 
 Contains the stored fingerprint of the remote SSH host. Click on the button with the check mark to verify the fingerprint.
@@ -261,6 +272,10 @@ Contains the stored fingerprint of the remote SSH host. Click on the button with
 #### Fingerprint Mismatch Warning
 
 If checked, Royal TS will display a warning if the fingerprint doesn't match.
+
+#### Use Strict Key Exchange
+
+Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).
 
 [!include[rebexciphers.md](~/royalts/_shared/rebexciphers.md)]
 
