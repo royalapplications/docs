@@ -10,7 +10,7 @@ With a licensed version of Royal TS you can create, open and use multiple docume
 -   As a consultant, you could create one document for each customer.
 -   Working in a team, you could work with one shared document for you and your team members and still open your personal documents at the same time.
 
-See also: [Documents and Files](xref:royalts_intro_documents), [About shared documents](http://support.royalapplications.com/knowledgebase/articles/341144)
+See also: [Documents and Files](xref:royalts_intro_documents), [About shared documents](https://www.royalapps.com/go/kb-all-teamsharing)
 
 ## Open multiple Documents
 1.  On the **Home** tab, in the **File** group, click on **Open**.
