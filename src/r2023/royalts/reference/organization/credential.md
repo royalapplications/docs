@@ -13,6 +13,7 @@ order: 9970
 - Assign credentials to connections by name instead of configuring connections to use username and password. This allows easy and secure file sharing in teams as no credentials are stored with the connections.
 - Simply store username and password in credential objects to quickly and easily access them using the Navigation or Credentials panel.
 - Use credentials in our Web Browser Extensions to automatically log on to web sites.
+- Configure TOTP MFA code generation. The dashboard shows the current MFA code for quick access. The $MfaCode$ replacement token can be used in Auto Fill configuration and Key Sequence tasks.
 
 > [!Tip]
 > You can create credentials in any documents, including the Application document. It's strongly recommended to encrypt and password protect your document as soon as you create a credential with a password in it.
@@ -62,20 +63,56 @@ The passphrase used for the private key file.
 
 ## ![](/r2023/images/RoyalTS/Application/SVG_MFA_32.svg#img_header) MFA
 
-In case your connection requires a multi-factor-authentication (MFA) code included in your username or password, you can configure where the MFA code should be added here. A MFA code prompt will appear before the connection is established.
+This page allows you to configure MFA-related settings if your connection requires an MFA code. **TOTP** based MFA codes can also be created on demand. Royal TS can submit MFA codes automatically or use the **$MfaCode$** replacement token in some scenarios.
 
 #### MFA Mode
 
-- Disabled: no MFA code is required.
-- Prompt: an MFA code is required. Royal TS will prompt for the code upon connect.
+- **Disabled:** no MFA code is required.
+- **Prompt:** an MFA code is required. Royal TS will prompt for the code upon connect.
+- **Generate:** a TOTP based MFA code is generated.
+
+### Remote Desktop Credential Usage
+
+To use MFA codes in Remote Desktop connections, the code needs to be part of the username or password, depending on the product you are using. Configure how Royal TS should handle MFA codes when prompted or generated below:
 
 #### Property
 
-Select whicht property should be used to add the MFA code (_Effective Username_ or _Effective Password_).
+Select which property should be used to add the MFA code (_Effective Username_ or _Effective Password_).
 
 #### Template
 
 Use the **{Value}** token to insert the property value (_username_ or _password_). Use the **{MfaCode}** token to insert the _MFA code_.
+
+### Remote Desktop Credential Usage
+
+The following settings allow you to generate TOTP-based MFA codes on demand in the user interface. By using the **$MfaCode$** replacement token, you can use the current MFA code everywhere where replacement tokens are supported (Web Page, External Application, Key Sequence Tasks, etc.).
+
+#### Secret
+
+The secret to generate the TOTP code.
+
+#### Label
+
+The label for the generated TOTP code.
+
+#### Issuer
+
+The issuer for the generated TOTP code.
+
+#### Algorithm
+
+Select which algorithm should be used to to generate the TOTP code.
+
+#### Code Length
+
+Select the TOTP code length.
+
+#### Valid Period
+
+Valid period in seconds.
+
+> [!Tip]
+> The standard **Google Authenticator** app, requires to specify a secret, label, SHA1, 6 digits and 30 seconds valid period. Other authenticator apps (such as Yubico's Yubikey) may require different settings.
 
 [!include[autofill.md](~/royalts/_shared/autofill.md)]
 [!include[notes.md](~/royalts/_shared/notes.md)]
