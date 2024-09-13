@@ -72,8 +72,49 @@ If checked, Royal TS will automatically reload the folder contents when the docu
 
 If checked, Royal TS will save (cache) the contents of this dynamic folder within the document.
 
+If checked, Royal TS will save (cache) the contents of this dynamic folder within the document.
+
 > [!Note]
 > This option is only available for personal (not shared) documents.
+
+#### Dynamic Folder Script
+
+##### Token Handling
+
+Configure, how replacement tokens are passed on to the script.
+- Replace Inline
+- Environment Variables
+
+##### Tokens
+
+All listed tokens will be available as environment variables.
+
+##### Prefix
+
+A common prefix for all environment variables to avoid conflicts with existing variables.
+
+#### Dynamic Credential Script
+
+##### Token Handling
+
+Configure, how replacement tokens are passed on to the script.
+- Replace Inline
+- Environment Variables
+
+##### Tokens
+
+All listed tokens will be available as environment variables.
+
+##### Prefix
+
+A common prefix for all environment variables to avoid conflicts with existing variables.
+
+> [!Note]
+> Environments variable will be created for the script in the following way (assuming the prefix is `DynFolder_`):  
+> The replacement token `$EffectiveUsername$` will be available in the environment variable `DynFolder_EffectiveUsername`.  
+> Dots (`.`) in replacement tokens will be substituted with the underscore (`_`) character:  
+> `$this.EffectiveUsername$` = `DynFolder_this_EffectiveUsername`  
+> `$CustomProperty.AccountPassword` = `DynFolder_CustomProperty_AccountPassword`
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
