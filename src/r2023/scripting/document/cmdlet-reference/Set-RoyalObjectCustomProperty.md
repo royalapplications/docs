@@ -18,13 +18,13 @@ Sets a custom property value on an object.
 ### ObjectAndId (Default)
 ```
 Set-RoyalObjectCustomProperty [-Object] <RoyalBase> [-Id] <Guid> [-Label <String>] [-Value <Object>]
- [-PassThru] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### CustomProperty
 ```
 Set-RoyalObjectCustomProperty [-CustomProperty] <CustomProperty> [-Label <String>] [-Value <Object>]
- [-PassThru] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -135,6 +135,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

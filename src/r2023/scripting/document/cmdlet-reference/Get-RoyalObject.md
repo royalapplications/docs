@@ -18,13 +18,13 @@ Gets one or more objects from a document or folder by various search parameters.
 ### TypeOrName (Default)
 ```
 Get-RoyalObject [[-Folder] <RoyalFolder>] [[-Type] <RoyalObjectType>] [[-Name] <String>]
- [[-Store] <RoyalStore>] [-IncludeTrashcan] [<CommonParameters>]
+ [[-Store] <RoyalStore>] [-IncludeTrashcan] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### ID
 ```
 Get-RoyalObject [[-Folder] <RoyalFolder>] [[-Store] <RoyalStore>] [-IncludeTrashcan] [[-Id] <String>]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -131,6 +131,21 @@ Aliases:
 
 Required: False
 Position: 5
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

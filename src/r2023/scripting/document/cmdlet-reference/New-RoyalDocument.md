@@ -17,8 +17,8 @@ Creates a new Royal TS/X document (.rtsz file).
 
 ```
 New-RoyalDocument [-Store] <RoyalStore> [-Name] <String> [-FileName] <String> [[-Password] <SecureString>]
- [[-LockdownPassword] <SecureString>] [[-LockdownPolicy] <LockdownPolicy>] [-Interactive] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [[-LockdownPassword] <SecureString>] [[-LockdownPolicy] <LockdownPolicy>] [-Interactive]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -199,6 +199,21 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named

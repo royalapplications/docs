@@ -39,8 +39,24 @@ The unique object identifier (GUID) of the object.
 ### ExternalID
 Type: `string`, Default Value: `Empty String`  
 The external unique object identifier (GUID) of the object.  
+## Advanced
+### AdditionalTunnelArgs
+Type: `string`, Default Value: `Empty String`  
+Additional arguments to be passed on to the az CLI when the tunnel is created.  
+### AzureConfigDir
+Type: `string`, Default Value: `Empty String`  
+The Azure configuration directory to use for this Bastion Gateway.  
 ## Gateway
 ## Security
+### SSHAuthAgent
+Type: `int`, Default Value: `0`  
+SSH Authentication Agent: 0 = None   
+ 1 = OpenSSH Agent   
+ 2 = Pageant   
+ 3 = Legacy Pageant  
+### UseStrictKeyExchange
+Type: `bool`, Default Value: `true`  
+Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).  
 ## Custom Fields
 ### CustomField1FromParent
 Type: `bool`, Default Value: `false`  

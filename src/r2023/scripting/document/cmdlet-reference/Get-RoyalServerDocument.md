@@ -17,7 +17,7 @@ Gets a list of all available Royal TS/X documents stored on a Royal Server.
 
 ```
 Get-RoyalServerDocument [-RoyalServer] <RoyalManagementEndpoint> [-IgnoreCertificateWarning]
- [<CommonParameters>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,6 +58,21 @@ Aliases:
 Required: False
 Position: 1
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

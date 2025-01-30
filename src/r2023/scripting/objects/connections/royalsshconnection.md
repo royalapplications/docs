@@ -970,6 +970,9 @@ SSH Authentication Method:
  2 = Keyboard interactive   
  3 = Public key   
  4 = gssapiwithmic  
+### UseStrictKeyExchange
+Type: `bool`, Default Value: `true`  
+Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).  
 ### WarnFingerprintMismatch
 Type: `bool`, Default Value: `true`  
 If set to true, a warninig is shown when the fingerprint has changed.  

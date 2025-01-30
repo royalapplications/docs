@@ -84,6 +84,15 @@ A list containing all key exchange algorithms in the order they should be negoti
 ### SecureGatewayMacAlgorithms
 Type: `string[]`, Default Value: `new string[] { }`  
 A list containing all MAC algorithms in the order they should be negotiated if enabled.  
+### SSHAuthAgent
+Type: `int`, Default Value: `0`  
+SSH Authentication Agent: 0 = None   
+ 1 = OpenSSH Agent   
+ 2 = Pageant   
+ 3 = Legacy Pageant  
+### UseStrictKeyExchange
+Type: `bool`, Default Value: `true`  
+Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).  
 ## Custom Fields
 ### CustomField1FromParent
 Type: `bool`, Default Value: `false`  

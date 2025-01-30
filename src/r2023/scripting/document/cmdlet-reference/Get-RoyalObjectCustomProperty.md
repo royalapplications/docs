@@ -16,7 +16,8 @@ Gets one or more custom properties from an object.
 ## SYNTAX
 
 ```
-Get-RoyalObjectCustomProperty [-Object] <RoyalBase> [[-Id] <Guid>] [<CommonParameters>]
+Get-RoyalObjectCustomProperty [-Object] <RoyalBase> [[-Id] <Guid>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -66,6 +67,21 @@ Aliases:
 Required: False
 Position: 1
 Default value: 00000000-0000-0000-0000-000000000000
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

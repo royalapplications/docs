@@ -17,7 +17,9 @@ Sets the password of a Royal TS/X document.
 
 ```
 Set-RoyalDocumentPassword [-Document] <RoyalDocument> [[-NewPassword] <SecureString>]
- [[-OldPassword] <SecureString>] [-Interactive] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [[-OldPassword] <SecureString>] [-Interactive] [-NewLockdownPassword <SecureString>]
+ [-OldLockdownPassword <SecureString>] [-LockdownPolicy <LockdownPolicy>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -119,6 +121,66 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LockdownPolicy
+{{ Fill LockdownPolicy Description }}
+
+```yaml
+Type: LockdownPolicy
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NewLockdownPassword
+{{ Fill NewLockdownPassword Description }}
+
+```yaml
+Type: SecureString
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OldLockdownPassword
+{{ Fill OldLockdownPassword Description }}
+
+```yaml
+Type: SecureString
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named

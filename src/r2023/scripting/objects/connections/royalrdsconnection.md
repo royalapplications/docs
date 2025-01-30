@@ -52,6 +52,9 @@ Additional arguments to be used with wfreerdp.exe.
 ### AllowBackgroundInput
 Type: `bool`, Default Value: `false`  
 If set to true, background input mode is enabled. When background input is enabled the client can accept input when the client does not have focus.  
+### AuthenticateWithSmartCard
+Type: `bool`, Default Value: `false`  
+If enabled, authentication through NLA/Kerberos is performed using a Smart Card.  
 ### AuthenticationLevel
 Type: `int`, Default Value: `0`  
 0 = Connect And Do Not Warn Me   
@@ -115,7 +118,10 @@ Type: `bool`, Default Value: `false`
 When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.  
 ### TCPACKTimeout
 Type: `int`, Default Value: `9`  
-The connection timeout in seconds. Advanced setting for high latency links. Use if you encounter timeout failures with your connection.  
+The connection's TCP ACK timeout in seconds. Advanced setting for high latency links. Use if you encounter timeout failures with your connection.  
+### TCPConnectTimeout
+Type: `int`, Default Value: `15`  
+The connection's TCP Connect timeout in seconds. Advanced setting for high latency links. Use if you encounter timeout failures with your connection.  
 ### TLSEncryption
 Type: `bool`, Default Value: `false`  
 If set to true transport layer security (TLS) is enabled.  

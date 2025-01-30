@@ -16,7 +16,8 @@ Gets help information on a property of a RoyalObject.
 ## SYNTAX
 
 ```
-Get-RoyalPropertyHelp [-PropertyName <String>] [-Category <String>] [-ClassName <String>] [<CommonParameters>]
+Get-RoyalPropertyHelp [-PropertyName <String>] [-Category <String>] [-ClassName <String>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -72,6 +73,21 @@ RoyalSSHConnection or RoyalRDSConnection).
 Type: String
 Parameter Sets: (All)
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named

@@ -16,7 +16,8 @@ Copies an object to a destination folder.
 ## SYNTAX
 
 ```
-Copy-RoyalObject [-Object] <RoyalBase> [-TargetFolder] <RoyalFolder> [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-RoyalObject [-Object] <RoyalBase> [-TargetFolder] <RoyalFolder> [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -86,6 +87,21 @@ The cmdlet is not run.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named

@@ -17,12 +17,14 @@ Removes a custom property from an object.
 
 ### CustomProperty (Default)
 ```
-Remove-RoyalObjectCustomProperty [-CustomProperty] <CustomProperty> [<CommonParameters>]
+Remove-RoyalObjectCustomProperty [-CustomProperty] <CustomProperty> [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### ObjectAndId
 ```
-Remove-RoyalObjectCustomProperty [-Object] <RoyalBase> [-Id] <Guid> [<CommonParameters>]
+Remove-RoyalObjectCustomProperty [-Object] <RoyalBase> [-Id] <Guid> [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -88,6 +90,21 @@ Required: True
 Position: 0
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

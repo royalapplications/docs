@@ -108,6 +108,12 @@ The SSH Fingerprint Algorithm of this connection
 ### KeepAliveInterval
 Type: `int`, Default Value: `0`  
 Keep Alive Interval in Seconds  
+### MaxDownloadSpeed
+Type: `int`, Default Value: `0`  
+The maximum allowed download speed, in kilobytes per second. For unlimited speed, set this to zero.  
+### MaxUploadSpeed
+Type: `int`, Default Value: `0`  
+The maximum allowed upload speed, in kilobytes per second. For unlimited speed, set this to zero.  
 ### RestoreCreationTime
 Type: `bool`, Default Value: `false`  
 Specifies whether or not to restore the creation timestamp after a file transfer.  
@@ -265,6 +271,9 @@ SSH Authentication Agent: 0 = None
  1 = OpenSSH Agent   
  2 = Pageant   
  3 = Legacy Pageant  
+### UseStrictKeyExchange
+Type: `bool`, Default Value: `true`  
+Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).  
 ## Private Key
 ### PrivateKeyPath
 Type: `string`, Default Value: `Empty String`  
