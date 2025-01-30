@@ -128,10 +128,13 @@ $(function () {
       return;
     }
     try {
-      if(!window.Worker){
-        return;
+      var worker = new Worker(relHref + 'styles/search-worker.min.js');
+      if (!worker && !window.worker) {
+        localSearch();
+      } else {
+        webWorkerSearch();
       }
-      webWorkerSearch();
+
       renderSearchBox();
       highlightKeywords();
       addSearchEvent();
@@ -161,13 +164,49 @@ $(function () {
       }
     }
 
-    function webWorkerSearch() {
-      var indexReady = $.Deferred();
+    // Search factory
+    function localSearch() {
+      console.log("using local search");
+      var lunrIndex = lunr(function () {
+        this.ref('href');
+        this.field('title', { boost: 50 });
+        this.field('keywords', { boost: 20 });
+      });
+      lunr.tokenizer.seperator = /[\s\-\.]+/;
+      var searchData = {};
+      var searchDataRequest = new XMLHttpRequest();
 
-      var worker = new Worker(relHref + 'styles/search-worker.min.js');
-      worker.onerror = function (oEvent) {
-        console.error('Error occurred at search-worker. message: ' + oEvent.message);
+      var indexPath = relHref + "index.json";
+      if (indexPath) {
+        searchDataRequest.open('GET', indexPath);
+        searchDataRequest.onload = function () {
+          if (this.status != 200) {
+            return;
+          }
+          searchData = JSON.parse(this.responseText);
+          for (var prop in searchData) {
+            if (searchData.hasOwnProperty(prop)) {
+              lunrIndex.add(searchData[prop]);
+            }
+          }
+        }
+        searchDataRequest.send();
       }
+
+      $("body").bind("queryReady", function () {
+        var hits = lunrIndex.search(query);
+        var results = [];
+        hits.forEach(function (hit) {
+          var item = searchData[hit.ref];
+          results.push({ 'href': item.href, 'title': item.title, 'keywords': item.keywords });
+        });
+        handleSearchResults(results);
+      });
+    }
+
+    function webWorkerSearch() {
+      console.log("using Web Worker");
+      var indexReady = $.Deferred();
 
       worker.onmessage = function (oEvent) {
         switch (oEvent.data.e) {
@@ -213,7 +252,7 @@ $(function () {
 
         $('#search-query').keyup(function () {
           query = $(this).val();
-          if (query === '') {
+          if (query.length < 3) {
             flipContents("show");
           } else {
             flipContents("hide");
@@ -268,7 +307,7 @@ $(function () {
       pagination.removeData("twbs-pagination");
       if (hits.length === 0) {
         $('#search-results>.sr-items').html('<p>No results found</p>');
-      } else {
+      } else {        
         pagination.twbsPagination({
           first: pagination.data('first'),
           prev: pagination.data('prev'),
@@ -316,7 +355,7 @@ $(function () {
       renderBreadcrumb();
       showSearch();
     }
-
+    
     function showSearch() {
       if ($('#search-results').length !== 0) {
           $('#search').show();
@@ -405,7 +444,7 @@ $(function () {
     function registerTocEvents() {
       var tocFilterInput = $('#toc_filter_input');
       var tocFilterClearButton = $('#toc_filter_clear');
-
+        
       $('.toc .nav > li > .expand-stub').click(function (e) {
         $(e.target).parent().toggleClass(expanded);
       });
@@ -439,7 +478,7 @@ $(function () {
           parent.removeClass(show);
           parent.removeClass(filtered);
         })
-
+        
         // Get leaf nodes
         $('#toc li>a').filter(function (i, e) {
           return $(e).siblings().length === 0
@@ -480,7 +519,7 @@ $(function () {
           return false;
         }
       });
-
+      
       // toc filter clear button
       tocFilterClearButton.hide();
       tocFilterClearButton.on("click", function(e){

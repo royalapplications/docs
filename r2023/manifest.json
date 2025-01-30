@@ -1,5 +1,6 @@
 {
-  "source_base_path": "D:/src/RoyalApps/docs/src/r2023",
+  "homepages": [],
+  "source_base_path": "/Users/hdocsek/Projects/royal-docs/src/r2023",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -3758,9 +3759,6 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/toc.html"
-        },
-        ".json": {
-          "relative_path": "royalserver/toc.json"
         }
       },
       "version": ""
@@ -4691,9 +4689,6 @@
       "output": {
         ".html": {
           "relative_path": "royalts/toc.html"
-        },
-        ".json": {
-          "relative_path": "royalts/toc.json"
         }
       },
       "version": ""
@@ -5894,9 +5889,6 @@
       "output": {
         ".html": {
           "relative_path": "scripting/toc.html"
-        },
-        ".json": {
-          "relative_path": "scripting/toc.json"
         }
       },
       "version": ""
@@ -5907,14 +5899,12 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
-        },
-        ".json": {
-          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
+  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

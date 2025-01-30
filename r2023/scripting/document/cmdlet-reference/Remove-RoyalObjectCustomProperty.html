@@ -9,7 +9,6 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Remove-RoyalObjectCustomProperty ">
     
-    
       <link rel="shortcut icon" href="../../../favicon.ico">
       <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../../../styles/docfx.css">
@@ -73,10 +72,12 @@
 <p>Removes a custom property from an object.</p>
 <h2 id="syntax">SYNTAX</h2>
 <h3 id="customproperty-default">CustomProperty (Default)</h3>
-<pre><code>Remove-RoyalObjectCustomProperty [-CustomProperty] &lt;CustomProperty&gt; [&lt;CommonParameters&gt;]
+<pre><code>Remove-RoyalObjectCustomProperty [-CustomProperty] &lt;CustomProperty&gt; [-ProgressAction &lt;ActionPreference&gt;]
+ [&lt;CommonParameters&gt;]
 </code></pre>
 <h3 id="objectandid">ObjectAndId</h3>
-<pre><code>Remove-RoyalObjectCustomProperty [-Object] &lt;RoyalBase&gt; [-Id] &lt;Guid&gt; [&lt;CommonParameters&gt;]
+<pre><code>Remove-RoyalObjectCustomProperty [-Object] &lt;RoyalBase&gt; [-Id] &lt;Guid&gt; [-ProgressAction &lt;ActionPreference&gt;]
+ [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
 <p>This cmdlet removes a custom property from a given object.</p>
@@ -126,6 +127,18 @@ Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 </code></pre>
+<h3 id="-progressaction">-ProgressAction</h3>
+<p>{{ Fill ProgressAction Description }}</p>
+<pre><code class="lang-yaml">Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
 <h3 id="commonparameters">CommonParameters</h3>
 <p>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkID=113216">about_CommonParameters</a>.</p>
 <h2 id="inputs">INPUTS</h2>
@@ -138,7 +151,6 @@ Accept wildcard characters: False
 <p><a href="">Get-RoyalObjectCustomProperty</a></p>
 <p><a href="">Set-RoyalObjectCustomProperty</a></p>
 <p><a href="">Set-RoyalObjectCustomPropertyPosition</a></p>
-
 </article>
           </div>
 
@@ -156,12 +168,12 @@ Accept wildcard characters: False
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/document/cmdlet-reference/Remove-RoyalObjectCustomProperty.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
+                <h5>In This Article</h5>
                 <div></div>
               </nav>    
             </div>

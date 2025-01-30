@@ -9,7 +9,6 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="RoyalAzureBastionGateway ">
     
-    
       <link rel="shortcut icon" href="../../../favicon.ico">
       <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../../../styles/docfx.css">
@@ -103,8 +102,24 @@ The unique object identifier (GUID) of the object.</p>
 <h3 id="externalid">ExternalID</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The external unique object identifier (GUID) of the object.</p>
+<h2 id="advanced">Advanced</h2>
+<h3 id="additionaltunnelargs">AdditionalTunnelArgs</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+Additional arguments to be passed on to the az CLI when the tunnel is created.</p>
+<h3 id="azureconfigdir">AzureConfigDir</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The Azure configuration directory to use for this Bastion Gateway.</p>
 <h2 id="gateway">Gateway</h2>
 <h2 id="security">Security</h2>
+<h3 id="sshauthagent">SSHAuthAgent</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+SSH Authentication Agent: 0 = None<br>
+1 = OpenSSH Agent<br>
+2 = Pageant<br>
+3 = Legacy Pageant</p>
+<h3 id="usestrictkeyexchange">UseStrictKeyExchange</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).</p>
 <h2 id="custom-fields">Custom Fields</h2>
 <h3 id="customfield1fromparent">CustomField1FromParent</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
@@ -253,7 +268,6 @@ The last date and time the object was modified.</p>
 <h3 id="modifiedby">ModifiedBy</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The user who last modified the object.</p>
-
 </article>
           </div>
 
@@ -271,12 +285,12 @@ The user who last modified the object.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/objects/gateways/royalazurebastiongateway.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/objects/gateways/royalazurebastiongateway.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
+                <h5>In This Article</h5>
                 <div></div>
               </nav>    
             </div>

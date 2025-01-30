@@ -242,10 +242,10 @@ references:
   name: Windows Services Module
   href: royalserver/royal-server-configuration/modules/windows-services-module.html
 - uid: royalserver_scripting_examples_advanced-scripting-examples
-  name: royalserver_scripting_examples_advanced-scripting-examples
+  name: Examples using RoyalServer.PowerShell and RoyalDocument.PowerShell
   href: royalserver/scripting/examples/index.html
 - uid: royalserver_scripting_examples_load-and-save-documents
-  name: royalserver_scripting_examples_load-and-save-documents
+  name: Loading and Saving a Document from Royal Server
   href: royalserver/scripting/examples/Load-and-Save-Document.html
 - uid: royalserver_scripting_module-reference
   name: Module References
@@ -329,7 +329,7 @@ references:
   name: " Document"
   href: royalts/reference/index.html
 - uid: royalts_reference_azurebastion
-  name: royalts_reference_azurebastion
+  name: " Azure Bastion"
   href: royalts/reference/gateways/azurebastion.html
 - uid: royalts_reference_connections
   name: Connections
@@ -422,13 +422,13 @@ references:
   name: " To-Do Item"
   href: royalts/reference/organization/todo-item.html
 - uid: royalts_reference_rdpgateway
-  name: royalts_reference_rdpgateway
+  name: " Remote Desktop Gateway"
   href: royalts/reference/gateways/rdpgateway.html
 - uid: royalts_reference_royalserver
   name: " Royal Server"
   href: royalts/reference/gateways/royalserver.html
 - uid: royalts_reference_securegateway
-  name: royalts_reference_securegateway
+  name: " Secure Gateway"
   href: royalts/reference/gateways/securegateway.html
 - uid: royalts_reference_tasks
   name: " Command Task"

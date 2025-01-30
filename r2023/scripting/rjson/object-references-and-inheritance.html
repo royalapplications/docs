@@ -9,7 +9,6 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Object references and inheritance ">
     
-    
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../../styles/docfx.css">
@@ -161,7 +160,6 @@ Now that we have our credential assigned to the &quot;Connections&quot; folder, 
 <p>For the &quot;MailServer 01&quot; SSH connection we want to use a different set of credentials and since no other object uses the same credentials, we directly specify the username and password of this connection in lines 60 and 61 using the <code>Username</code> and <code>Password</code> properties.</p>
 <p>That's it for credential assignment. Because we need a Secure Gateway to connect to each of our remote machines, we also assign the Secure Gateway object (ID &quot;00002&quot;) to the &quot;Connections&quot; folder and let the connections inherit it from their parent folder. In line 32 we specify <code>&quot;SecureGatewayID&quot;: &quot;00002&quot;</code> on our &quot;Connections&quot; folder. Then, for each of our connections we set <code>&quot;SecureGatewayFromParent&quot;: true</code> to let them inherit the Secure Gateway configuration from their parent folder.</p>
 <p>That's it for Secure Gateway assignment. Last but not least, we defined a key sequence task which lists the contents of the root directory. The definition of the object starts at line 21. For demo purposes we chose a different approach to assign this task to the SSH connection. Instead of referring to it by its ID, we use its name &quot;List Root Directory&quot;. So in line 63 we have this: <code>&quot;KeySequenceName&quot;: &quot;List Root Directory&quot;</code>. This means, when the connection is established, launch the key sequence task with the name &quot;List Root Directory&quot;.</p>
-
 </article>
           </div>
 
@@ -179,12 +177,12 @@ Now that we have our credential assigned to the &quot;Connections&quot; folder, 
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/rjson/object-references-and-inheritance.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/scripting/rjson/object-references-and-inheritance.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
+                <h5>In This Article</h5>
                 <div></div>
               </nav>    
             </div>
