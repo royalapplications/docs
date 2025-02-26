@@ -22,15 +22,15 @@ Use the `Test` button to check connectivity.
 > [!NOTE]
 > The configured user needs to be in the "Royal Server Users" group on Royal Server to get access.
 
-Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the "Royal Server" category of the Windows Events connection. If you forget to do this, Royal TS/X will try to connect to this machine directly without Royal Server.
+Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the "Royal Server" category of the Windows Events connection. If you do not specify a Royal Server object, Royal TS/X will connect to this machine directly without using Royal Server (which requires direct network connectivity).
 
 > [!NOTE]
-> The credential configured on the management connection (that is not the credential on the Royal Server object) must have sufficient rights to read information (e.g. read the Windows Event Log) on the target host. In most scenarios a user account that is a member of the Local Administrators group is sufficient. For low privilege environments, depending on the plugin, a number of steps are required to grant non-administrative users the required rights.
+> The credential configured on the management connection (which might be differentfrom the credential on the Royal Server object) must have sufficient rights to read information (e.g. read the Windows Event Log) on the target host. In most scenarios a user account that is a member of the Local Administrators group is working. For low privilege environments, depending on the plugin, a number of steps are required to grant non-administrative users the required rights.
 
 To access Royal Server, please install the latest version of Royal TS/X:
 
 - [Get the latest version of Royal TS (for Windows)](https://www.royalapps.com/ts/win/download)
-- [Get the latest version of Royal TSX (for OS X)](https://www.royalapps.com/ts/mac/download)
+- [Get the latest version of Royal TSX (for macOS)](https://www.royalapps.com/ts/mac/download)
 
 Alternativly, you can use the Royal Server PowerShell API to query Royal Server from the command line.
 

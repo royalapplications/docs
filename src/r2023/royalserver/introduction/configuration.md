@@ -14,14 +14,14 @@ The most common way is to use the `Royal Server Configuration Tool`, which provi
 
 ## Configuration File
 
-Royal Server V4 stores the configuration settings in a file that can be found here: `%ProgramData%\RoyalServer\appsettings.json`.
+Royal Server V4 and newer stores the configuration settings in a file that can be found here: `%ProgramData%\RoyalServer\appsettings.json`.
 
 If not present at startup, `appsettings.json` will be created automatically.
 
 > [!NOTE]
 > Settings from a previous Royal Server V3 installation are automatically imported.
 
-You can edit this file using any text editor. After each change, Royal Server must be restarted.
+You can edit this file using the `Royal Server Configuration Tool` or any text editor. After each change, Royal Server must be restarted.
 This can be done either using the configuration tool or from the command line:
 
 ```
@@ -42,7 +42,8 @@ net stop RoyalServer && net start RoyalServer
 From Royal Server V4 you can optionally pass configuration values using environment variables.
 
 Environment variables must be prefixed with `RS_` followed by the corresponding key name in `appsettings.json`.
-As with hierarchical keys, the separator is a double underscore (`__`).
+As with hierarchical keys, the separator is a double underscore (`__`). Environment variables need to be available for the user that is configured for 
+the Royal Server Windows Service - by default this is LocalSystem. 
 
 _Examples:_
 
@@ -53,7 +54,7 @@ set RS_SecureGateway__GatewayEnabled=false
 ```
 
 > [!NOTE]
-> Be aware that these overwrites are neither shown in the Configuration Tool.
+> Be aware that these overwrites are not shown in the Configuration Tool but will be reflected in the log.
 
 ## Configuration of Managed Servers
 

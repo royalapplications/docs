@@ -10,7 +10,7 @@ order: 10104
 To install a Royal Server license, click on **General** and **Licenses** and **Add License...**.
 
 > [!TIP]
-> In the email that includes the license information, both lines with "Licensed to:" and "License Key", go back to the Royal Server Configuration Tool with the License dialog open and just press CTRL-V to enter the license information.
+> In the email that includes the license information, copy both lines with "Licensed to:" and "License Key" to the clipboard by using CTRL-C, go back to the Royal Server Configuration Tool with the License dialog open and just press CTRL-V to enter the license information.
 
 If you want to try out Royal Server with all features in your environment: Please get your free 30-day trial license under [https://www.royalapps.com/trial/](https://www.royalapps.com/trial/).
 

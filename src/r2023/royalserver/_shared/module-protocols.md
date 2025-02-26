@@ -8,7 +8,7 @@ order: 5123
 | Eventlog              | WMI/CIM  | User needs to have the rights to read the Windows Event Log |
 | Hyper-V               | WMI/CIM  |                                                             |
 | Processes             | WMI/CIM  |                                                             |
-| RoyalDocumentStore    | -        | Internal module used by Royal Server                        |
+| RoyalDocumentStore    | -        | Module used by Royal Server for hosting documents           |
 | RoyalServerManagement | -        | Internal module used by Royal Server                        |
 | Script                | WMI/CIM  | PowerShell Remoting for PS                                  |
 | Terminal Services     | WTS API  | Proprietary protocol by Microsoft                           |

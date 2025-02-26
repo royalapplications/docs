@@ -75,7 +75,7 @@ Specify the working directory for the command.
 > Tasks are always executed locally (on the machine where Royal TS is running) but in context of a selection of connections. Using replacement tokens you can inject values from the selected connection(s) (such as custom fields or the URI, even username and password). Executing a task against multiple connections will start one command for each connection.  
 > To execute tasks on the remote machine, you can make use of tools like psexec (from Microsoft).
 
-#### About the OS X tab
+#### About the macOS tab
 
 Since Royal TSX for macOS can also be used to work with your Royal TS documents, you can specify a different command configuration for macOS. Some commands may have a slightly different syntax but basically do the same. To prevent users from creating multiple tasks with the same function for each platform, you can specify a different command configuration for macOS.
 

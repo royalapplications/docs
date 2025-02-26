@@ -20,7 +20,7 @@ In The Royal Server Configuration Navigation Bar, click on the Secure Gateway gr
 
 **Only allow Royal TS/X as clients**
 
-This setting only allows Royal TS (for Windows) and Royal TSX (for OS X) as clients of the Secure Gateway.
+This setting only allows Royal TS (for Windows) and Royal TSX (for macOS) as clients of the Secure Gateway.
 
 > [!NOTE]
 > This settings helps strengthen the Royal Server configuration against SSH brute force attacks if you have Royal Server reachable from the Internet.
