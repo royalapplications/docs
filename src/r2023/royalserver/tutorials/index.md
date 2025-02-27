@@ -7,7 +7,7 @@ order: 10700
 
 ## Royal Server and Royal TS/X
 
-Royal Server is in its very nature a server and needs clients that talk to it. We support a variety of clients that can work with Royal Server:
+Royal Server is in its very nature a Web Server and needs clients that talk to it. We support a variety of clients that can work with Royal Server:
 1. [Royal TS (for Windows)](https://www.royalapps.com/ts/win/features)
 2. [Royal TS (for macOS)](https://www.royalapps.com/ts/mac/features)
 3. [Royal TS (for IOS)](https://www.royalapps.com/ts/ios/features)
@@ -22,9 +22,7 @@ A managed server is a machine, that is queried or manipulated by Royal Server Mo
 > [!NOTE]
 > No deployment of software is needed to manage a server, though some [networking connectivity is required](xref:royalserver_advanced_management_scripts_prepare)
 
-**
-
-Basic usecases for working with Royal Server and Royal TS/X are:
+Basic usecase examples for working with Royal Server and Royal TS/X are:
 1. [Querying the processes of a machine](xref:royalserver_tutorials_querying-processes)
 2. [Creating an RDP connection using Royal Server](xref:royalserver_tutorials_creating-an-rdp-connection-using-royal-server)
 3. [Using Credentials with Royal Server](xref:royalserver_tutorials_using-credentials)

@@ -3,8 +3,7 @@ uid: royalserver_general_logging
 name: Logging
 order: 9020
 ---
-
-<img src="/images/RoyalServer/Svg/SVG_Logging_32.svg" class="icon-left icon-lg" alt="" />
+<img src="/r2023/images/RoyalServer/Svg/SVG_Logging_32.svg" class="icon-left icon-lg" alt="" />
 
 # Logging
 
