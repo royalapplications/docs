@@ -11,18 +11,18 @@ order: 9060
 Create, remove or export certificates that will be used for Royal Server and the Secure Gateway.
 
 > [!NOTE]
-> The shown certificates are certificates that are installed in the Personal Store of your local machine.
+> The shown certificates are certificates that are installed in the Personal Store of your local machine. You can also use standard Windows tools to manage these certificates.
 
 **Add a certificate**
 
-This allows you to create a new certificate by specifying a subject, an optional friendly name and a key length. The resulting certificate will be installed in the Personal Store on your local machine.
+This allows you to create a new certificate by specifying a subject, an optional friendly name and a key length. The resulting certificate will be installed in the Personal Store of your local machine.
 
 **Export a Certificate**
 
-Clicking on the Save icon allows you to export the selected certificate to a \*.pfx file by specifying a password. The exported certificate can later be used on another Royal Server installations to create a highly available multi-server Royal Server setup.
+Clicking the **Save** icon lets you export the selected certificate as a .pfx file by setting a password. This exported certificate can then be used on other Royal Server installations, enabling you to establish a server farm where all servers share the same certificate. This setup ensures a highly available, multi-server Royal Server environment with consistent security and authentication.
 
 **Deleting a Certificate**
-Clicking on the trashcan icon allows you to delete the selected certificate. 
+Clicking the trashcan icon deletes the selected certificate.
 
-> [!NOTE]
+> [!WARNING]
 > This will remove the certificate from the Personal Store on your local machine!

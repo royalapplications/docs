@@ -16,7 +16,7 @@ In the Royal Server Configuration Tool Navigation Bar, click on the **General** 
 
 **Language**
 
-This setting allows you to change the user interface language of the Royal Server Configuration Tool (requires a restart of the Configuration Tool). Currently English, German and French are supported.
+This setting allows you to change the user interface language of the Royal Server Configuration Tool (this requires a restart of the Configuration Tool). Currently English, German and French are supported. The language in which Royal Server is logging is fixed to English at the moment.
 
 ## Manage Configuration
 
@@ -27,7 +27,7 @@ This function resets the Royal Server configuration to the default settings afte
 > [!NOTE]
 > This will NOT change the following configurations:
 >
-> - Windows group memberships for authentication
+> - Windows Group memberships for Authorization
 > - Document Store Access Control Lists
 > - MFA User Configuration
 > - Installed Licenses
@@ -36,9 +36,13 @@ This function resets the Royal Server configuration to the default settings afte
 
 **Copy Troubleshooting Information**
 
-This function copies Royal Server troubleshooting information that may be included in a ticket to the clipboard.
+This function copies Royal Server troubleshooting information that can be included in a support ticket to the clipboard.
+
+> [!NOTE]
+> You might need to expand this section.
+
 The following information can be included:
-- Installed Licenses
+- Installed Licenses (the license key is truncated)
 - Configuration Information
 - Log Information (since the last restart)
 - Document Store Information (Royal Server needs to run for this information to be included)

@@ -5,11 +5,11 @@ order: 9000
 ---
 # General Configuration
 
-The Royal Server Configuration Tool (`RoyalServer.ConfigurationTool.exe`) is used to configure Royal Server.
+The Royal Server Configuration Tool (`RoyalServer.ConfigurationTool.exe`) is used to configure and manage Royal Server.
 
 Under the section **General** you will find all configuration options that apply to Royal Server and all of its components:
 
-- [Health Metrics](./health.md)
+- [Health Metrics](./health-metrics.md)
 - [General Configuration](./general-configuration.md)
 - [Manage Certificates](./certificate-store.md)
 - [Multi Factor Authentication](./mfa.md)

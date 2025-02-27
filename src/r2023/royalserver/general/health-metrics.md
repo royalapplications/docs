@@ -1,6 +1,6 @@
 ---
 uid: royalserver_general_health
-name: Health
+name: Health Metrics
 order: 9080
 ---
 
@@ -8,7 +8,7 @@ order: 9080
 
 # Health
 
-The Health panel displays the current performance data of Royal Server with an update refresh rate of 2 seconds.
+The Health panel displays current performance metrics of Royal Server with an update refresh rate of 2 seconds.
 
 ## Show or Activate the Health Panel
 
@@ -25,4 +25,4 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **General** 
 - Displays the Threads used (of the Royal Server process)
 
 > [!NOTE]
-> CPU usage, Memory Consumption and Number of Threads can also be read by using the standard Windows Performance Counters (values are read from the process `royalserver.exe`)
+> CPU usage, Memory Consumption and Number of Threads can also be monitored by using the standard Windows Performance Counters (values are read from the process `royalserver.exe`)
