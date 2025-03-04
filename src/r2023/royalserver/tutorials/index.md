@@ -17,7 +17,7 @@ Royal Server is in its very nature a Web Server and needs clients that talk to i
 A set of basic terms need to be established before we describe some use cases for Royal Server and Royal TS/X:
 
 **Managed Server**
-A managed server is a machine, that is queried or manipulated by Royal Server Modules. You can, e.g. list all running processes or stop a Windows Service on a managed server. 
+A managed server is a machine, that is queried or managed by Royal Server Modules. You can, e.g. list all running processes or stop a Windows Service on a managed server. 
 
 > [!NOTE]
 > No deployment of software is needed to manage a server, though some [networking connectivity is required](xref:royalserver_advanced_management_scripts_prepare)
@@ -25,4 +25,3 @@ A managed server is a machine, that is queried or manipulated by Royal Server Mo
 Basic usecase examples for working with Royal Server and Royal TS/X are:
 1. [Querying the processes of a machine](xref:royalserver_tutorials_querying-processes)
 2. [Creating an RDP connection using Royal Server](xref:royalserver_tutorials_creating-an-rdp-connection-using-royal-server)
-3. [Using Credentials with Royal Server](xref:royalserver_tutorials_using-credentials)
