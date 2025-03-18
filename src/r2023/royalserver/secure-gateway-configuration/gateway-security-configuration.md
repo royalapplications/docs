@@ -8,7 +8,7 @@ order: 7230
 
 # Gateway Security Configuration
 
-The Gateway Security Configuration panel displays and changes the security configuration of the Secure Gateway component of Royal Server.
+The Gateway Security Configuration panel displays and allows modifications to the security settings of the Secure Gateway component in Royal Server. This helps strengthen security, especially when Royal Server is accessible over the internet.
 
 ## Show or Activate the Gateway Security Configuration Panel
 
@@ -23,30 +23,12 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **Secure Gat
 
 This setting only allows Royal TS (for Windows) and Royal TSX (for OS X) as clients of the Secure Gateway.
 
-> [!NOTE]
-> This settings helps strengthen the Royal Server configuration against SSH brute force attacks if you have Royal Server reachable from the Internet.
-
 **Block IPs after unsuccessful login attempts**
 
-SSH brute force attacks try to log on with the same user many times to guess the password and trying to log on a user is performance intensive. This setting helps to kill such attempts early in the call by blocking the IP after a configured number of failed attempts.
+SSH brute-force attacks repeatedly attempt to log in with the same user to guess the password, which can be resource-intensive. This setting helps mitigate such attacks by blocking the IP after a configured number of failed login attempts, preventing excessive load on the server.
 
 | Option                     | Description                                                                                                     |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Blocking time (in minutes) | Specifies the time an IP is blocked after it tries to log on too many times unsuccessfully.                     |
-| Number of attempts         | Specifies the number of failed attempts t log in after which an IP is blocked for the specified amount of time. |
-| Time frame (in minutes)    | Only failed login attempts within the last minutes in this time frame are relevant.                             |
-
-## Ciphers
-
-The Secure Gateway component is based on SSH and uses many encryption related algorithms under the hood. In some environments it is required to only allow specific
-algorithms. You can specify algorithms in the following categories:
-
-- Encryption Key Algorithms
-- Host Key Algorithms
-- Key Exchange Algorithms
-- Mac Algorithms
-
-Additionally to enable or disable specific algorithms, you can sort them.
-
-> [!NOTE]
-> Any change in this panel requires a restart of Royal Server.
+| Blocking time (in minutes) | Defines the duration for which an IP is blocked after exceeding the allowed number of failed login attempts..                     |
+| Number of attempts         | Specifies the number of failed login attempts that trigger an IP block for the configured duration.. |
+| Time frame (in minutes)    | Failed login attempts within the specified time frame are considered relevant.                             |

@@ -8,7 +8,19 @@ order: 7200
 
 # Secure Gateway
 
-The Secure Gateway is a component in Royal Server that enables the user to securely tunnel the traffic through Royal Server. This is done by using an encrypted SSH tunnel (also known as port forwarding).
+The Secure Gateway is a component in Royal Server that enables users to securely tunnel the traffic through Royal Server. This is done by using an encrypted SSH tunnel (also known as port forwarding).
+
+The following connection types of Royal TS/X support tunneling through a Secure Gateway connection:
+
+- [Remote Desktop Protocol Connection based on Microsoft RDP ActiveX](../../royalts/reference/connections/rdp.md)
+- [Remote Desktop Protocol Connection based on FreeRDP](../../royalts/reference/connections/freerdp.md)
+- [Terminal based on Putty](../../royalts/reference/connections/terminal-putty.md)
+- [Terminal based on Rebex](../../royalts/reference/connections/terminal-rebex.md)
+- [VNC based on integrated TightVNC](../../royalts/reference/connections/vnc.md)
+- [VNC based on TightVNC](../../royalts/reference/connections/vnc-tight.md)
+- [VNC based on UltraVNC](../../royalts/reference/connections/vnc-ultra.md)
+- [File Transfer Connection](../../royalts/reference/connections/filetransfer.md)
+- [Web Page Connection based on Chrome/Essential Objects](../../royalts/reference/connections/web-page-chrome.md)
 
 ### Accessing the Secure Gateway component
 

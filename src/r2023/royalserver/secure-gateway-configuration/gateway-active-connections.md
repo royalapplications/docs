@@ -1,6 +1,6 @@
 ---
-uid: royalserver_components_secure-gateway_gateway-connections
-name: Gateway Connections
+uid: royalserver_components_secure-gateway_active-gateway-connections
+name: Active Connections
 order: 7210
 ---
 

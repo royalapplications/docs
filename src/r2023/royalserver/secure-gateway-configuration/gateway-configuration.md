@@ -27,15 +27,14 @@ If checked, the Secure Gateway Component is active.
 
 Specify that the Secure Gateway supports compression of network traffic.
 
-**Timeout**
+**Timeout (in sec)**
 
 Specify the timeout of a Secure Gateway connection in seconds when the connection is idle.
-Setting the value to 0 disables closing idle sessions.
-The minimum allowed duration is 30 seconds.
+Setting the value to 0 disables closing idle sessions. The minimum allowed duration is 30 seconds.
 
 **Max. Connections**
 
-Specify the maximum number of concurrent connections the Secure Gateway is accepting.
+Specify the maximum number of concurrent open connections the Secure Gateway is accepting.
 
 **Certificate**
 
