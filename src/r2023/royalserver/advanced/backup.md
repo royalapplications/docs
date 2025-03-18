@@ -69,7 +69,7 @@ Most of the Royal Server settings are stored in the Windows Registry under the k
 
 ### 2. Documents V3
 
-see [Royal Server V4](#2-documents)
+see backing up Royal Server V4 Documents above.
 
 ### 3. Access Rules for the Document Store files V3
 
