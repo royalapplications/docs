@@ -11,3 +11,4 @@ order: 5000
 - [Performance Counter](./performance-counters.md)
 - [Server-Limits](./server-limits.md)
 - [Trace Flags](./trace-flags.md)
+- [Restoring Document Versions](./restoring-previous-version-document.md)
