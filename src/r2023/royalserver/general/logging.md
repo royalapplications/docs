@@ -19,8 +19,8 @@ For the File and Windows Event Log you can specify the Log Level and Separator.
 The following Log Levels are supported:
 
 - No Logging (logging is disabled)
-- Debug (this setting is intended for trouble shooting only since it generates a significant amount of data)
-- Information (a lot of information is logged, including the meta data of all requests and responses Royal Server is executing. If you need to see the full data of the request or response, check Request/Response Logging)
+- Debug (this setting is **intended for trouble shooting** only since **it generates a significant amount of data**)
+- Information (a lot of information is logged, including the meta data of all requests and responses Royal Server is executing. If you need to see the full data of the requests or responses, check Request/Response Logging)
 - Warning
 - Error
 - Fatal
@@ -33,16 +33,17 @@ Specifies a separation character in the Log File. Possible values are ` ` (space
 If enabled, Royal Server logs to the Windows Event Log "Royal Server" with the specified Log Level and Separator.
 
 > [!NOTE]
-> In rare cases where Royal Server cannot start properly catastrophic errors are logged in the `Application` log of the Windows Event Log.
+> In rare cases where Royal Server cannot start properly fatal errors are logged in the `Application` log of the Windows Event Log.
 
 > [!NOTE]
 > Any change in this panel requires a restart of Royal Server.
 
 ## File Log
 
-If enabled, Royal Server logs to a file. Additionally, the content of this file is shown by the Configuration Tool.
+If enabled, Royal Server logs to a file. Additionally, the content of the current log file is shown by the Configuration Tool.
 
-A default setting of Warning or Error is recommended.
+> [!NOTE]
+> The default set to Warning or Error is recommended.
 
 **Log Directory**
 Specifies the directory where the log files should be written to (if Type _File_ is selected), by default this is `%ProgramData%\RoyalServer\Logs`. You can also use variables like `%TEMP%`.
@@ -77,7 +78,7 @@ Allowed values:
 If checked, all requests and responses from the Management Endpoint and the Document Store will be logged **completely** in two separate files. The destination directory can be specified. This type of logging is only supported to files.
 
 > [!WARNING]
-> Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.
+> Passwords and other known sensitive strings are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.
 
 > [!WARNING]
 > Enabling Request/Response Logging can have a huge impact on the Royal Server performance as well as the amount of data written to disc. It is strongly recommended to use this only for debugging purposes.
