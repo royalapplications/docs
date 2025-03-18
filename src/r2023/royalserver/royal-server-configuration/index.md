@@ -8,10 +8,19 @@ order: 7300
 
 # Royal Server Management Endpoint
 
-The Management Endpoint component helps you to remotely manage your servers. It allows you to manage Windows Services, Windows Events, Windows Processes, Hyper-V machines, Terminal Services, execute Powershell Scripts and manage VMware's Virtual Machines through Royal Server.
+The Management Endpoint component helps you to remotely manage your servers. It allows you to manage 
+- [Windows Services](./modules/windows-services-module.md)
+- [Windows Events](./modules/windows-events-module.md)
+- [Windows Processes](./modules/windows-processes-module.md)
+- [Hyper-V machines](./modules/hyper-v-module.md)
+- [Terminal Services](./modules/terminal-services-module.md)
+- [Execute Powershell Scripts](./modules/script-module.md) and 
+- [Manage VMware's Virtual Machines](./modules/vmware-module.md) 
+
+through Royal Server.
 
 ## Accessing the Management Endpoint Component
 
-By default, the Management Endpoint is only accepting authenticated requests and the Royal Server configuration in Royal TS/X needs to be configured with a Credential. It only accepts user accounts that are in the local Windows group `Royal Server Users`. If the specified Credential is not member of this group, the Management Endpoint component will return an authentication error.
+By default, the Management Endpoint is [only accepting authenticated requests](./security-configuration.md) and the Royal Server configuration in Royal TS/X needs to be configured with a Credential. It only accepts user accounts that are member of the local Windows group `Royal Server Users`. If the specified Credential is not member of this group, the Management Endpoint component will return an authentication error.
 
 See details on [Permissions](xref:royalserver_general_permissions).
