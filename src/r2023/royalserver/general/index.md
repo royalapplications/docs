@@ -9,6 +9,7 @@ The Royal Server Configuration Tool (`RoyalServer.ConfigurationTool.exe`) is use
 
 Under the section **General** you will find all configuration options that apply to Royal Server and all of its components:
 
+- [Ribbon Features](ribbon-features.md)
 - [Health Metrics](./health-metrics.md)
 - [General Configuration](./general-configuration.md)
 - [Manage Certificates](./certificate-store.md)
