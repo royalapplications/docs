@@ -6,7 +6,7 @@ order: 8090
 
 # Document Store
 
-The Document Store Module implements the functionality for working with documents hosted in Royal Server.
+The Document Store Module provides functionality for managing documents hosted in Royal Server.
 
 ## Features
 
@@ -19,3 +19,6 @@ The Document Store Module implements the functionality for working with document
 - Get Document properties (used by Royal Server Configuration UI)
 
 Details on how to work with the Document Store can be found [here](../../document-store-configuration/configuration.md).
+
+> [!NOTE]
+> The Document Store component can also be accessed via [PowerShell scripts](../../scripting/index.md).
