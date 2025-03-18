@@ -8,7 +8,7 @@ order: 10058
 
  <img src="/r2023/images/RoyalServer/Svg/SVG_RoyalServer_32.svg" style="float: right;width: 50%;height: 50%;max-width:128px">
 
-1 Sending screen, mouse and keyboard data just to read Windows events or restart a service? Seems like overkill! Royal Server provides common remote management tasks to the cross-platform Royal TS/X clients for Windows, macOS, iOS and Android - using their native user interface. The combination of Royal Server and the award-winning Royal TS/X remote management clients takes remote systems management to a whole new level.
+Sending screen, mouse and keyboard data just to read Windows events or restart a service? Seems like overkill! Royal Server provides common remote management tasks to the cross-platform Royal TS/X clients for Windows, macOS, iOS and Android - using their native user interface. The combination of Royal Server and the award-winning Royal TS/X remote management clients takes remote systems management to a whole new level.
 
 ## The Problem
 
