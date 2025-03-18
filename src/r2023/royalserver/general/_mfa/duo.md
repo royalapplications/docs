@@ -7,17 +7,17 @@ order: 9052
 
 [DUO](https://duo.com) provides security solutions for companies and can be integrated into Royal Server.
 
-In order to configure a DUO application and DUO secured users first. Therefore you need to log in to the DUO Admin Panel at [https://duo.com/](https://duo.com/).
+In order to create a DUO application and configure DUO secured users first. Therefore you need to log in to the DUO Admin Panel at [https://duo.com/](https://duo.com/).
 
 #### <a name="duo-app-configuration"></a>Configuring an Application in DUO
 
 With the DUO Admin Panel, you need to configure an _Application_ that is being secured by DUO - in our case, you want to secure Royal Server operations by DUO.
 
-Navigate to **Applications** and **Protect an Application**. Look for **Partner Auth API** and click **Protect this Application**. You will be presented with a number of details, most notable the `Integration Key`, the `Secret Key` and the `API Hostname`. Remember these as you need them later for configuring the Royal Server DUO integration.
+In the DUO Admin Panel, navigate to **Applications** and **Protect an Application**. Look for **Partner Auth API** and click **Protect this Application**. You will be presented with a number of details, most notable the `Integration Key`, the `Secret Key` and the `API Hostname`. Remember these as you need them later for configuring the Royal Server DUO integration.
 
 #### Creating Users in DUO
 
-With the DUO Admin Panel, add users to your DUO configuration by clicking on **Users** and then on **Add User**.
+If not already done, add users to your DUO Admin Panel by clicking on **Users** and then on **Add User**.
 
 > **Important**  
 > After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end of it, you see a long sequence of letters and numbers - this is the DUO user id and you need it to configure it in the Royal Server Configuration Tool.

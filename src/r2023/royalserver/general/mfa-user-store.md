@@ -8,7 +8,7 @@ order: 9040
 
 # Multi Factor User Store
 
-The **Multi Factor User Store** panel displays the users configured for Multi Factor authentication.
+The **Multi Factor User Store** panel displays the users configured for Multi Factor authentication and allows  new users to be configured for MFA.
 
 ## Show or Activate the Multi Factor Users Store Panel
 
@@ -16,9 +16,17 @@ In The Royal Server Configuration Tool Navigation Bar, click on the **General** 
 
 The data grid shows the configured users for multi-factor authentication.
 
-The following functionalities in Royal Server support Multi-Factor Authentication:
-- Document Store (triggered when loading or saving a document hosted by Royal Server) or
-- Secure Gateway Connections (triggered when connecting using e.g. RDP connections)
+For each users the following information is displayed:
+- The User name
+- The configured Provider (Generic TOTP, DUO or YubiKey)
+- If the specific user has to present his second factor for the Document Store (triggered when loading or saving a document hosted by Royal Server)
+- If the specific user has to present his second factor for the Secure Gateway(triggered when connecting using e.g. RDP connections)
+- A Comment
+- An icon for editing the user configuration
+- An icon for deleting the user configuration
+
+> [!NOTE]
+> Any changes in the Multi Factor User Store does not require a restart of Royal Server.
 
 ## Adding a User for Multi-Factor Authentication
 - Click on **Add...**.
@@ -49,7 +57,7 @@ After completion, a secret will be generated and represented as a QR code for ea
 
 Alternatively, the user can be allowed to use a web based self-service workflow by checking the **Allowed** under **Self Service**.
 
-If self-service is allowed, the user needs to login to the Royal Server Website (https://[IpAddress]:[Port]) using the user provisioned for TOTP and then navigate to "TOTP Self Service". He will be presented with his secret/QR code to configure his authenticator app. As soon as he has configured the app, he needs to enter a second factor for verification. Once verified, the workflow will be closed and cannot be accessed anymore.
+If self-service is allowed, the user needs to **login to the Royal Server TOTP Self Service Website** (https://[RoyalServerIpAddress]:[Port]) using the username provisioned for TOTP and then navigate to "TOTP Self Service". He will be presented with his secret/QR code to configure his authenticator app. As soon as he has configured the app, he needs to enter a second factor for verification. Once verified, this self-service workflow will be closed and cannot be accessed anymore.
 
 After refreshing the grid in the Royal Server Configuration Tool and opening "Edit"-dialog for the user, he will be flagged as **Verified** under **Self Service**. In order to reset the workflow, so that the user can access it again, just uncheck **Verified**.
 

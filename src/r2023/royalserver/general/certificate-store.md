@@ -19,10 +19,10 @@ This allows you to create a new certificate by specifying a subject, an optional
 
 **Export a Certificate**
 
-Clicking the **Save** icon lets you export the selected certificate as a .pfx file by setting a password. This exported certificate can then be used on other Royal Server installations, enabling you to establish a server farm where all servers share the same certificate. This setup ensures a highly available, multi-server Royal Server environment with consistent security and authentication.
+Clicking the **Save** icon lets you export the selected certificate as a .pfx file by setting a password. This exported certificate can then be used on other Royal Server installations, enabling you to establish a server farm where all servers use the same certificate. This setup enables a highly available, multi-server Royal Server setup with consistent security and authentication.
 
 **Deleting a Certificate**
 Clicking the trashcan icon deletes the selected certificate.
 
 > [!WARNING]
-> This will remove the certificate from the Personal Store on your local machine!
+> Deleting the certificate remove it from the Personal Store on your local machine!
