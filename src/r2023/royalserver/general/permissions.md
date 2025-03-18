@@ -14,20 +14,23 @@ The **Permissions** panel allows you to check effective permissions for users an
 
 In The Royal Server Configuration Tool Navigation Bar, click on the **General** group and then on the **Permissions** entry.
 
+
+The following groups are used to grant access to Royal Server:
+
+- **"Royal Server Users"**: Users that want to use Royal Server Management modules (e.g. Windows Events, Hyper-V etc) and the Document Store need to be in this group - either directly or via containing groups.
+- **"Royal Server Gateway Users"**: Users that want to use the Secure Gateway component need to be a member of this group - either directly or via containing groups.
+- **"Royal Server Administrators"**: Users that want to administer Royal Server need to be a member of this group - either directly or via containing groups.
+
 > [!NOTE]
-> The following groups are generated on startup by Royal Server:
->
-> - **"Royal Server Users"**: Users that want to use Royal Server Management modules (e.g. Windows Events, Hyper-V etc) and the Document Store need to be in this group - either directly or via containing groups.
-> - **"Royal Server Gateway Users"**: Users that want to use the Secure Gateway component need to be a member of this group - either directly or via containing groups.
-> - **"Royal Server Administrators"**: Users that want to administer Royal Server need to be a member of this group - either directly or via containing groups.
+> The previously mentioned groups are generated on startup by Royal Server by default.
 
 ### Effective Permissions
 
-The Effective Permissions lets you check all relevant permissions for the specified user.
+The Effective Permissions lets you check all relevant permissions for a specific user.
 Enter a username and click **Show** button. The Configuration Tool will list
 
-- **Authorization groups**: the group memberships of the Royal Server groups and
-- **Documents**: the read and modify rights for each Document hosted by Royal Server.
+- **Authorization groups**: the group memberships for this users of the Royal Server groups and
+- **Documents**: the read and modify rights for this user for each Document hosted by Royal Server.
 
 > [!NOTE]
 > Authorization group memberships are cached. Click on `Refresh without using the cache` to list group memberships bypassing the cache.
