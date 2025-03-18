@@ -7,6 +7,9 @@ order: 5090
 
 As of Royal Server V4 advanced settings can be configured in `%ProgramData%\RoyalServer\appsettings.json`.
 
+> [!NOTE]
+> Whenever you make changes in the places mentioned below, it's best to stop Royal Server and start it again.
+
 ## Supported Settings
 
 **Royal Server Database**

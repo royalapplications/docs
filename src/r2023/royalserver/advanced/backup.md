@@ -6,12 +6,14 @@ order: 5080
 # Backing Up Royal Server
 
 > [!NOTE]
-> Whenever you make changes in the places mentioned below, it's best to stop Royal Server and start it again after the changes have been applied.
+> Whenever you make changes in the places mentioned below, it's best to stop Royal Server and start it again.
 
-## Royal Server V4
+# Royal Server V4/V5
 
 After installation, a fully configured and running Royal Server stores its data and configuration by default in `%ProgramData%\RoyalServer\`.
 A number of more volatile settings are stored in a configuration database (see below)
+
+The following artefacts can be backed up:
 
 ### 1. Configuration Settings
 
@@ -22,7 +24,7 @@ If the `appsettings.json` file is not present on start-up, it will automatically
 > [!NOTE]
 > Your settings from a previous Royal Server V3 installation will be imported. If no previous Royal Server V3 installation can be detected, default values will apply.
 
-### 2. Documents
+### 2. Document Store Documents
 
 Royal Server stores the Document Store files in the directory configured in the Configuration Tool. By default the documents are located at `%ProgramData%\RoyalServer\DocumentStore\`.
 There are two subdirectories:
@@ -45,17 +47,19 @@ Royal Server is directly working with this directory for the Document Store. If 
 
 ### 3. Configuration Database
 
-Royal Servr uses a small database for more volatile configurations that can be found here: `%ProgramData%\RoyalServer\royalserverV4.db`.
+Royal Server uses a database for volatile configurations that can be found here: `%ProgramData%\RoyalServer\royalserverV4.db`.
 The following information is stored in this database:
 
-- All Access Control entires configured for securing Documents in the Document Store component (ACLs)
-- All user configurations for Multi-Factor Authentication for the Document Store as well as the Secure Gateway.
+- Access Control Entries configured for securing Documents in the Document Store component (ACLs)
+- User configurations for Multi-Factor Authentication for the Document Store as well as the Secure Gateway.
 
 ### 4. License Information
 
 License Information is stored encrypted the following folder `%ProgramData%\RoyalServer\Licenses\`.
 
-## Royal Server V3
+
+
+# Royal Server V3
 
 After installation, a fully configured and running Royal Server stores its configuration in the following places:
 
