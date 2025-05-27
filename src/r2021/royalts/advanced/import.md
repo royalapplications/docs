@@ -90,13 +90,15 @@ During setup, you can choose to create a file association for .rdp files. Double
 3. Pick a mRemote file to import.
 4. Click on **Open** to start the import.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/MsRdcm/SVG_FileIconRdcm_32.svg#img_header)Import RDG File
+## ![](/r2021/images/RoyalTS/Plugins/Import/MsRdcm/SVG_FileIconRDCM_32.svg#img_header)Import RDG File
+
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the **Import** group, click on **More -> Remote Desktop Connection Manager File (.rdg)**.
 3. Pick a .rdg file to import.
 4. Click on **Open** to start the import.
 
-## ![](/r2021/images/RoyalTS/Plugins/Import/RemoteDesktopManager/SVG_FileIconRdm_32.svg#img_header)Import RDM File
+## ![](/r2021/images/RoyalTS/Plugins/Import/RemoteDesktopManager/SVG_FileIconRDM_32.svg#img_header)Import RDM File
+
 1. In the **Navigation** panel, select a document or folder.
 2. On the **Data** tab, in the **Import** group, click on **More -> Remote Desktop Manager File (.rdm)**.
 3. Pick a .rdm file to import.
