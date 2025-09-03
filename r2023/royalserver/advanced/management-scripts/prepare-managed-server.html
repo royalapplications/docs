@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Prepare a Managed Server </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Prepare a Managed Server ">
+    
     
       <link rel="shortcut icon" href="../../../favicon.ico">
       <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
@@ -70,12 +71,14 @@
 
 <p>In the topic <a class="xref" href="../../introduction/configuration.html">Configuration of Managed Servers</a> we have listed the required changes to set up a managed server.</p>
 <p>You can do this manually or use our script. You can find it in
-<code>&lt;royal-server-installation-directory&gt;\scripts\prepare_server.ps1</code>. For each step, the script is asking for permission to do the necessary changes.</p>
+<code>&lt;royal-server-installation-directory&gt;\scripts\prepare_server.ps1</code>. For each step, the script is asking for permission to do the necessary changes.
+Just copy the script over to the machine you want to manage via Royal Server and execute it in an elevanted PowerShell prompt.</p>
 <p>The script is doing the following steps:</p>
 <ul>
 <li>it creates two Windows Firewall rules for Windows Management Instrumentation (both DCOM and WMI) and</li>
 <li>it enables ps-remoting for PowerShell Remoting.</li>
 </ul>
+
 </article>
           </div>
 
@@ -93,12 +96,12 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/advanced/management-scripts/prepare-managed-server.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/advanced/management-scripts/prepare-managed-server.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

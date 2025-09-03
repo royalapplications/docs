@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>General Configuration </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="General Configuration ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -73,7 +74,7 @@
 <p>In the Royal Server Configuration Tool Navigation Bar, click on the <strong>General</strong> group and then on the <strong>General Configuration</strong> entry.</p>
 <h2 id="features">Features</h2>
 <p><strong>Language</strong></p>
-<p>This setting allows you to change the user interface language of the Royal Server Configuration Tool (requires a restart of the Configuration Tool). Currently English, German and French are supported.</p>
+<p>This setting allows you to change the user interface language of the Royal Server Configuration Tool (this requires a restart of the Configuration Tool). Currently English, German and French are supported. The language in which Royal Server is logging is fixed to English at the moment.</p>
 <h2 id="manage-configuration">Manage Configuration</h2>
 <p><strong>Reset Configuration</strong></p>
 <p>This function resets the Royal Server configuration to the default settings after installation.</p>
@@ -81,7 +82,7 @@
 <h5>Note</h5>
 <p>This will NOT change the following configurations:</p>
 <ul>
-<li>Windows group memberships for authentication</li>
+<li>Windows Group memberships for Authorization</li>
 <li>Document Store Access Control Lists</li>
 <li>MFA User Configuration</li>
 <li>Installed Licenses</li>
@@ -89,10 +90,14 @@
 <p>If you want to remove all side effects of a Royal Server installation, please use the <a href="../advanced/management-scripts/uninstall.html">cleanup script</a>.</p>
 </div>
 <p><strong>Copy Troubleshooting Information</strong></p>
-<p>This function copies Royal Server troubleshooting information that may be included in a ticket to the clipboard.
-The following information can be included:</p>
+<p>This function copies Royal Server troubleshooting information that can be included in a support ticket to the clipboard.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You might need to expand this section.</p>
+</div>
+<p>The following information can be included:</p>
 <ul>
-<li>Installed Licenses</li>
+<li>Installed Licenses (the license key is truncated)</li>
 <li>Configuration Information</li>
 <li>Log Information (since the last restart)</li>
 <li>Document Store Information (Royal Server needs to run for this information to be included)</li>
@@ -100,6 +105,7 @@ The following information can be included:</p>
 <p>This information might be helpful for troubleshooting a support ticket. A ticket can be opened via our <a href="https://support.royalapps.com/support/home">support portal</a></p>
 <p><strong>Localhost Aliases</strong></p>
 <p>This setting allows to specify which host names should be considered as localhost. This information is used when determining if a query should be executed against the server where Royal Server is installed.</p>
+
 </article>
           </div>
 
@@ -117,12 +123,12 @@ The following information can be included:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/general-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/general-configuration.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

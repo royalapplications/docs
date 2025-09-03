@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Logging </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Logging ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -77,8 +78,8 @@
 The following Log Levels are supported:</p>
 <ul>
 <li>No Logging (logging is disabled)</li>
-<li>Debug (this setting is intended for trouble shooting only since it generates a significant amount of data)</li>
-<li>Information (a lot of information is logged, including the meta data of all requests and responses Royal Server is executing. If you need to see the full data of the request or response, check Request/Response Logging)</li>
+<li>Debug (this setting is <strong>intended for trouble shooting</strong> only since <strong>it generates a significant amount of data</strong>)</li>
+<li>Information (a lot of information is logged, including the meta data of all requests and responses Royal Server is executing. If you need to see the full data of the requests or responses, check Request/Response Logging)</li>
 <li>Warning</li>
 <li>Error</li>
 <li>Fatal</li>
@@ -89,15 +90,18 @@ Specifies a separation character in the Log File. Possible values are <code> </c
 <p>If enabled, Royal Server logs to the Windows Event Log &quot;Royal Server&quot; with the specified Log Level and Separator.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>In rare cases where Royal Server cannot start properly catastrophic errors are logged in the <code>Application</code> log of the Windows Event Log.</p>
+<p>In rare cases where Royal Server cannot start properly fatal errors are logged in the <code>Application</code> log of the Windows Event Log.</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Any change in this panel requires a restart of Royal Server.</p>
 </div>
 <h2 id="file-log">File Log</h2>
-<p>If enabled, Royal Server logs to a file. Additionally, the content of this file is shown by the Configuration Tool.</p>
-<p>A default setting of Warning or Error is recommended.</p>
+<p>If enabled, Royal Server logs to a file. Additionally, the content of the current log file is shown by the Configuration Tool.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The default set to Warning or Error is recommended.</p>
+</div>
 <p><strong>Log Directory</strong>
 Specifies the directory where the log files should be written to (if Type <em>File</em> is selected), by default this is <code>%ProgramData%\RoyalServer\Logs</code>. You can also use variables like <code>%TEMP%</code>.</p>
 <p><strong>File Name</strong>
@@ -159,7 +163,7 @@ If you want to configure a different interval, change the value for <code>FileLo
 <p>If checked, all requests and responses from the Management Endpoint and the Document Store will be logged <strong>completely</strong> in two separate files. The destination directory can be specified. This type of logging is only supported to files.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>Passwords are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.</p>
+<p>Passwords and other known sensitive strings are not logged into the log files though other sensitive information (e.g. when executing a Script that contains passwords) will be logged.</p>
 </div>
 <div class="WARNING">
 <h5>Warning</h5>
@@ -218,6 +222,7 @@ If you want to configure a different interval, change the value for <code>FileLo
 </li>
 <li><em>SysLogIgnoreCertificateErrors</em>: If set to <code>true</code>, all certificate errors will be ignored when using protocol <code>Tcp</code>.</li>
 </ul>
+
 </article>
           </div>
 
@@ -235,12 +240,12 @@ If you want to configure a different interval, change the value for <code>FileLo
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/logging.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/logging.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

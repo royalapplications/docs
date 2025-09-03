@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Secure Gateway </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Secure Gateway ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,10 +70,23 @@
 
 <img src="/r2023/images/RoyalServer/Svg/SVG_SecureGateway_32.svg" class="icon-left icon-lg" alt="">
 <h1 id="secure-gateway">Secure Gateway</h1>
-<p>The Secure Gateway is a component in Royal Server that enables the user to securely tunnel the traffic through Royal Server. This is done by using an encrypted SSH tunnel (also known as port forwarding).</p>
+<p>The Secure Gateway is a component in Royal Server that enables users to securely tunnel the traffic through Royal Server. This is done by using an encrypted SSH tunnel (also known as port forwarding).</p>
+<p>The following connection types of Royal TS/X support tunneling through a Secure Gateway connection:</p>
+<ul>
+<li><a href="../../royalts/reference/connections/rdp.html">Remote Desktop Protocol Connection based on Microsoft RDP ActiveX</a></li>
+<li><a href="../../royalts/reference/connections/freerdp.html">Remote Desktop Protocol Connection based on FreeRDP</a></li>
+<li><a href="../../royalts/reference/connections/terminal-putty.html">Terminal based on Putty</a></li>
+<li><a href="../../royalts/reference/connections/terminal-rebex.html">Terminal based on Rebex</a></li>
+<li><a href="../../royalts/reference/connections/vnc.html">VNC based on integrated TightVNC</a></li>
+<li><a href="../../royalts/reference/connections/vnc-tight.html">VNC based on TightVNC</a></li>
+<li><a href="../../royalts/reference/connections/vnc-ultra.html">VNC based on UltraVNC</a></li>
+<li><a href="../../royalts/reference/connections/filetransfer.html">File Transfer Connection</a></li>
+<li><a href="../../royalts/reference/connections/web-page-chrome.html">Web Page Connection based on Chrome/Essential Objects</a></li>
+</ul>
 <h3 id="accessing-the-secure-gateway-component">Accessing the Secure Gateway component</h3>
 <p>The Secure Gateway is only accepting authenticated requests and the Secure Gateway configuration in Royal TS/X needs to be configured with a Credential. The Secure Gateway only accepts user accounts that are in the local Windows group <code>Royal Server Gateway Users</code>. If the specified Credential is not member of this group, the Secure Gateway component will return an authentication error.</p>
 <p>See details on <a class="xref" href="../general/permissions.html">Permissions</a>.</p>
+
 </article>
           </div>
 
@@ -90,12 +104,12 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/secure-gateway-configuration/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/secure-gateway-configuration/index.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

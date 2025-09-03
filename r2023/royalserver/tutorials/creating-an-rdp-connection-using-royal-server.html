@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Example: Creating an RDP connection that is using Royal Server </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Example: Creating an RDP connection that is using Royal Server ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,7 +70,7 @@
 <h1 id="example-creating-an-rdp-connection-that-is-using-royal-server">Example: Creating an RDP connection that is using Royal Server</h1>
 
 <h2 id="setup-of-royal-server">Setup of Royal Server</h2>
-<p>Royal Server needs to be running, make note of the Primary Server Binding (the IP and Port Royal Server is using), we will use this later on.</p>
+<p>Royal Server needs to be running, make note of the <a class="xref" href="../royal-server-configuration/service-configuration.html">Primary Server Binding (the IP and Port Royal Server is using)</a>, we will use this later on.</p>
 <h2 id="setup-of-royal-ts">Setup of Royal TS</h2>
 <p>In order to use Royal Server from Royal TS/X, first you need to createa a new document.</p>
 <div class="NOTE">
@@ -84,31 +85,45 @@
 </div>
 <p>Specify a name and save the document.</p>
 <p><img src="../../images/RoyalServer/Tutorials/Creating_Document_2.png" alt=""></p>
+<p>Then, click <strong>Add</strong> and <strong>Royal Server</strong></p>
+<p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_3.png" alt=""></p>
+<p>Specify a Display Name and a Computer Name (which is the DNS name or IP of Royal Server)</p>
+<p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_4.png" alt=""></p>
+<p><strong>Using credentials for Royal Server</strong>
+The Royal Server object supports both HTTPs (specify &quot;Royal Server Credentials&quot;) and SSH tunnel access (specify &quot;Secure Gateway Credentials&quot;) of Royal Server.</p>
+<p>For this tutorial, are going to specify Royal Server Credentials:</p>
+<p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_5.png" alt=""></p>
+<p>These credentials are used to authenticate against Royal Server and the account needs to be a member of the &quot;Royal Server Users&quot; group for management connections and in he &quot;Royal Server Gateway Users&quot; group for Secure Gateway connections to get access.</p>
 
 <p>Continue by adding a Remote Desktop Connection by clicking <strong>Add</strong> and <strong>Remote Desktip Connection</strong>.</p>
 <p><img src="../../images/RoyalServer/Tutorials/Creating_RDP_1.png" alt=""></p>
 <p>Specify a Display Name and a Computer Name (which is the DNS name or IP of the server you want to connect to):</p>
 <p><img src="../../images/RoyalServer/Tutorials/Creating_RDP_2.png" alt=""></p>
-<p>Specify a credential that can be used to connect to the server. These credentials are used to logon to the Windows machine you want to remotely connect to.</p>
+<p>Specify a credential that can be used to connect to the server via RDP. These credentials are used to logon to the Windows machine you want to remotely connect to.</p>
 <p><img src="../../images/RoyalServer/Tutorials/Creating_RDP_3.png" alt=""></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>You don't need to specify passwords directly. There are <a class="xref" href="../../royalts/tutorials/working-with-credentials.html">more flexible ways to specify a credential</a>.</p>
 </div>
-<p>Now, in order to use Royal Server for the connection, specify a <strong>Secure Gateway</strong> object. This makes sure that Royal TS is not connecting directly to the server but through an SSH tunnel by Royal Server.</p>
+<p>Now, in order to use Royal Server for the connection, specify a <strong>Secure Gateway</strong> object. This makes sure that Royal TS is not connecting directly to the server but through an SSH tunnel via Royal Server.</p>
 <p><img src="../../images/RoyalServer/Tutorials/Creating_RDP_5.png" alt=""></p>
 <p>Note that you have to set the <strong>Gateway Usage</strong> to <strong>Always</strong> and select the previously created Royal Server object.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>You might have noticed a configuration option called &quot;Royal Server&quot; on the RDP connection. This is not used for opening the connection but to show the currently open Terminal sessions open in the Dashboard tab (if open). <img src="../../images/RoyalServer/Tutorials/Creating_RDP_4.png" alt="">. You can leave this blank if you are not interested in the open Terminal Sessions on this server.</p>
+<p>You might have noticed a configuration category called &quot;Royal Server&quot; on the RDP connection. This is not used for actually connecting via RDP but to show the currently open Terminal sessions open in the Dashboard tab (if open). You can leave this blank if you are not interested in the open Terminal Sessions on this server.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>There is also a <strong>Secure Gateway</strong> object that can be used for connections to Royal Server. This type is only supported by connections that can use the Secure Gateway.</p>
 </div>
 <p>Right-click on the RDP connection and click <strong>Connect</strong>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When connecting for the first time, Royal TS is asking to validate thumbprint of the certificate. This helps to prevent man-in-the-middle attacks. <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>. <img src="../../images/RoyalServer/Tutorials/Querying_Processes_13.png" alt=""> The correct thumbprint is shown under in the Royal Server Configuration Tool under <strong>Royal Server</strong> -&gt; <strong>Service Configuration</strong> -&gt; <strong>Primary Server Binding - Certificate</strong>.</p>
+<p>When connecting using a specifc Royal Server object (or a Secure Gateway object) for the first time, Royal TS is asking to validate thumbprint of the server certificate. This helps to prevent man-in-the-middle attacks. <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>. <img src="../../images/RoyalServer/Tutorials/Querying_Processes_13.png" alt=""> The correct thumbprint is shown under in the Royal Server Configuration Tool under <strong>Royal Server</strong> -&gt; <strong>Service Configuration</strong> -&gt; <strong>Primary Server Binding - Certificate</strong>.</p>
 </div>
 <p>The open Secure Gateway connection can be seen on the Royal Server Configuration Tool <strong>General</strong> -&gt; <strong>Health</strong> view:</p>
 <p><img src="../../images/RoyalServer/Tutorials/Creating_RDP_7.png" alt=""></p>
+
 </article>
           </div>
 
@@ -126,12 +141,12 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/tutorials/creating-an-rdp-connection-using-royal-server.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/tutorials/creating-an-rdp-connection-using-royal-server.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

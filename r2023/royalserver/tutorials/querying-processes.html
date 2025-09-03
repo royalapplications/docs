@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Example: Query Windows Processes </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Example: Query Windows Processes ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,7 +70,7 @@
 <h1 id="example-query-windows-processes">Example: Query Windows Processes</h1>
 
 <h2 id="setup-of-royal-server">Setup of Royal Server</h2>
-<p>Royal Server needs to be running, make note of the Primary Server Binding (the IP and Port Royal Server is using), we will use this later on.</p>
+<p>Royal Server needs to be running, make note of the <a class="xref" href="../royal-server-configuration/service-configuration.html">Primary Server Binding (the IP and Port Royal Server is using)</a>, we will use this later on.</p>
 <h2 id="setup-of-royal-ts">Setup of Royal TS</h2>
 <p>In order to use Royal Server from Royal TS/X, first you need to createa a new document.</p>
 <div class="NOTE">
@@ -84,22 +85,16 @@
 </div>
 <p>Specify a name and save the document.</p>
 <p><img src="../../images/RoyalServer/Tutorials/Creating_Document_2.png" alt=""></p>
-
 <p>Then, click <strong>Add</strong> and <strong>Royal Server</strong></p>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_3.png" alt=""></p>
-<p>Specify a Name and a Computer Name (which is the DNS name or IP of Royal Server)</p>
+<p>Specify a Display Name and a Computer Name (which is the DNS name or IP of Royal Server)</p>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_4.png" alt=""></p>
 <p><strong>Using credentials for Royal Server</strong>
-Royal Server offers three components.</p>
-<ul>
-<li>The Management Endpoint (used for managing servers by e.g. viewing Windows Events or listing Windows Processes) is based on HTTPs.</li>
-<li>The Document Store is used for working with Documents hosted by Royal Server and based on HTTPs.</li>
-<li>The Secure Gatway is an SSH tunnel and can be used for connection types like Remote Desktop Connections or Terminal Connections.</li>
-</ul>
-<p>The Royal Server object supports both HTTPs (specify &quot;Royal Server Credentials&quot;) and SSH tunnel access (specify &quot;Secure Gateway Credentials&quot;) of Royal Server.</p>
-<p>For this tutorial, we need to specify Royal Server Credentials:</p>
+The Royal Server object supports both HTTPs (specify &quot;Royal Server Credentials&quot;) and SSH tunnel access (specify &quot;Secure Gateway Credentials&quot;) of Royal Server.</p>
+<p>For this tutorial, are going to specify Royal Server Credentials:</p>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_5.png" alt=""></p>
-<p>These credentials are used to authenticate against Royal Server and the account needs to be a member of the &quot;Royal Server Users&quot; group to get access.</p>
+<p>These credentials are used to authenticate against Royal Server and the account needs to be a member of the &quot;Royal Server Users&quot; group for management connections and in he &quot;Royal Server Gateway Users&quot; group for Secure Gateway connections to get access.</p>
+
 <p>Now we have a way to use Royal Server for managing Windows Processes.
 Next, we create a <strong>Windows Processes</strong> connection:</p>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_8.png" alt=""></p>
@@ -115,24 +110,25 @@ Next, we create a <strong>Windows Processes</strong> connection:</p>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_11.png" alt=""></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you do not specify a credential, Royal TS is trying to query the processes directly without Royal Server. Depending on your network configuration this might not work, e.g. when the managed server has an internal IP which is not accessible from Royal TS.</p>
+<p>By specifying a Royal Server object, the actual processes are queried in the following way: Royal TS is making an HTTPS call to Royal Server which itself is using WMI/CIM to query the list of processes from the destination host. If you do not specify a Royal Server object, Royal TS is querying the list of processes directly without using Royal Server. Depending on your network configuration this might not work, e.g. when the managed server has an internal IP which is not accessible from Royal TS.</p>
 </div>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_11.png" alt=""></p>
 <p>Right-click on the Windows Processes connection and click <strong>Connect</strong>.</p>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_12.png" alt=""></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When connecting for the first time, Royal TS is asking to validate thumbprint of the certificate. This helps to prevent man-in-the-middle attacks. <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>. <img src="../../images/RoyalServer/Tutorials/Querying_Processes_13.png" alt=""> The correct thumbprint is shown under in the Royal Server Configuration Tool under <strong>Royal Server</strong> -&gt; <strong>Service Configuration</strong> -&gt; <strong>Primary Server Binding - Certificate</strong>.</p>
+<p>When connecting a connection using a Royal Server object for the first time, Royal TS is asking you to validate thumbprint of the server certificate. This helps to prevent man-in-the-middle attacks. <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>. <img src="../../images/RoyalServer/Tutorials/Querying_Processes_13.png" alt=""> The correct thumbprint is shown under in the Royal Server Configuration Tool under <strong>Royal Server</strong> -&gt; <strong>Service Configuration</strong> -&gt; <strong>Primary Server Binding - Certificate</strong>.</p>
 </div>
 <p>When connecting, the following steps are executed:</p>
 <ol>
-<li>Royal TS connects via HTTPs to Royal Server and presentw the configured Royal Server credential</li>
+<li>Royal TS connects via HTTPs to Royal Server and presents the configured Royal Server credential</li>
 <li>Royal Server checks the username and password and if the specified User is in the &quot;Royal Server Users&quot; group</li>
 <li>Royal Server then executes the requested module (in this case the Windows Processes) and passes the host name and credential to it.</li>
 <li>The Windows Processes module queries the processes remotely and returns the data to Royal Server</li>
-<li>Royal Server returns the module data to Royal TS</li>
+<li>Royal Server returns the module data back to Royal TS</li>
 </ol>
 <p><img src="../../images/RoyalServer/Tutorials/Querying_Processes_14.png" alt=""></p>
+
 </article>
           </div>
 
@@ -150,12 +146,12 @@ Next, we create a <strong>Windows Processes</strong> connection:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/tutorials/querying-processes.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/tutorials/querying-processes.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

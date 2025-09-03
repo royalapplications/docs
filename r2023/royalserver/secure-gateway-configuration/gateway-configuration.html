@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Gateway Configuration </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Gateway Configuration ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -81,12 +82,11 @@
 <p>If checked, the Secure Gateway Component is active.</p>
 <p><strong>Use Compression</strong></p>
 <p>Specify that the Secure Gateway supports compression of network traffic.</p>
-<p><strong>Timeout</strong></p>
+<p><strong>Timeout (in sec)</strong></p>
 <p>Specify the timeout of a Secure Gateway connection in seconds when the connection is idle.
-Setting the value to 0 disables closing idle sessions.
-The minimum allowed duration is 30 seconds.</p>
+Setting the value to 0 disables closing idle sessions. The minimum allowed duration is 30 seconds.</p>
 <p><strong>Max. Connections</strong></p>
-<p>Specify the maximum number of concurrent connections the Secure Gateway is accepting.</p>
+<p>Specify the maximum number of concurrent open connections the Secure Gateway is accepting.</p>
 <p><strong>Certificate</strong></p>
 <p>The Secure Gateway is based on SSH and needs a certificate to work. During the installation of Royal Server a self-signed certificate with the name &quot;RoyalServer-SecureGateway&quot; is automatically installed. Alternatively, you can configure your own certificate, issue a new one or export a certificate.</p>
 <div class="NOTE">
@@ -114,6 +114,7 @@ If your Royal Server is reachable over the internet and you see a lot of SSH bru
 <li><em>SendBuffer</em>: Optionally, set a value (in bytes) that specifies the size of the buffer for outgoing data. Default value is null.</li>
 <li><em>UseLargeBuffers</em>: If true, large buffers will be applied for send and receive, if not explicitly configured otherwise. Default value is false.</li>
 </ul>
+
 </article>
           </div>
 
@@ -131,12 +132,12 @@ If your Royal Server is reachable over the internet and you see a lot of SSH bru
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/secure-gateway-configuration/gateway-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/secure-gateway-configuration/gateway-configuration.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

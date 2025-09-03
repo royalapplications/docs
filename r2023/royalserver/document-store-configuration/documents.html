@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Documents </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Documents ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,28 +70,34 @@
 
 <img src="/r2023/images/RoyalServer/Svg/SVG_Document_32.svg" class="icon-left icon-lg" alt="">
 <h1 id="documents">Documents</h1>
-<p>The  Documents panel displays the documents hosted by the Document Store component of Royal Server and lets the Royal Server administrator change the Access Rules for each document.</p>
+<p>The Document Store panel displays</p>
+<ul>
+<li>the documents hosted by the Royal Server</li>
+<li>lets the Administrator add new Documents</li>
+<li>lets the Administrator import existing Documents</li>
+<li>lets the Administrator change the Access Rules for each document.</li>
+</ul>
 <h2 id="show-or-activate-the-document-store-configuration-panel">Show or Activate the Document Store Configuration Panel</h2>
 <p>In the Royal Server Configuration Navigation Bar, click on the <strong>Document Store</strong> group and then on the <strong>Documents</strong> entry.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li>The panel lists all documents that are hosted by Royal Server.</li>
-<li>Use the <strong>i</strong> icon to view the properties of the document.</li>
-<li>Use the <strong>Access Rules</strong> icon to configure Access Rules for the selected document</li>
+<li>The panel lists all Documents that are hosted by Royal Server.</li>
+<li>Use the <strong>i</strong> icon to view the properties of the Document.</li>
+<li>Use the <strong>Access Rules</strong> icon to configure Access Rules for the selected Document</li>
 </ul>
 <h3 id="add-a-new-document">Add a New Document</h3>
-<p>Choose the option &quot;New...&quot; from the &quot;Add...&quot; dropdown to open a dialog to add a new document.</p>
-<p>When adding a new document, you can specify the following:</p>
+<p>Choose the option <strong>&quot;New...&quot;</strong> item from the <strong>&quot;Add...&quot;</strong> dropdown to open a dialog to add a new Document.</p>
+<p>When adding a new Document, you can specify the following:</p>
 <ul>
 <li>Document Name</li>
 <li>Document Comment</li>
-<li>Choose whether the document can only be opened via Royal Server or not. This adds an additional layer of security so that the file (even if copied) cannot be opened by Royal TS/X directly.</li>
-<li>Specify if the document should be encrypted. In this mode the encryption password is required when opening it in our clients.</li>
-<li>Specify if the document should be locked down. In this mode the document is opened read-only unless you unlock it using the lockdown password.<br>
-On top of this, these additional policies can be selected:
+<li>Choose whether the <strong>Document can only be opened via Royal Server</strong> or not. This adds an additional layer of security so that the file (even if copied) cannot be opened by Royal TS/X directly.</li>
+<li>Specify if the Document should be <strong>encrypted</strong>. In this mode the encryption password is required when opening it in Royal TS/X clients. <a href="../../royalts/tutorials/working-with-documents.html">Working with Documents</a></li>
+<li>Specify if the Document should be <strong>locked down</strong>. In this mode the Document is opened read-only unless you unlock it using the lockdown password. <a href="../../royalts/tutorials/working-with-lockdown-documents.html">Working with Lockdown Documents</a><br>
+On top of this, these additional policies can be specified:
 <ul>
-<li>Do not allow to reveal passwords in this document</li>
-<li>Do not allow to edit or modify this document</li>
+<li>Do not allow to reveal passwords in this Document</li>
+<li>Do not allow to edit or modify this Document</li>
 <li>Allow passwords in web page connections</li>
 </ul>
 </li>
@@ -100,31 +107,31 @@ On top of this, these additional policies can be selected:
 <p>Detailed information on working with Lockdown Documents can be found at the <a href="https://docs.royalapps.com/r2023/royalts/tutorials/working-with-lockdown-documents.html">Royal TS Documentation</a>.</p>
 </div>
 <h3 id="add-an-existing-document">Add an Existing Document</h3>
-<p>Choose the option &quot;Existing...&quot; from the &quot;Add...&quot; dropdown to open a dialog to import an existing document.</p>
-<p>When importing an existing document, you need to specify the following:</p>
+<p>Choose the option <strong>&quot;Existing...&quot;</strong> from the <strong>&quot;Add...</strong>&quot; dropdown to open a dialog to import an existing Document.</p>
+<p>When importing an existing Document, you need to specify the following:</p>
 <ul>
-<li>File to import</li>
+<li>Document to import</li>
 <li>Document Name</li>
 <li>Document Comment</li>
-<li>Specify the document's password, if required.</li>
-<li>Choose whether the document can only be opened via Royal Server or not. This adds an additional layer of security so that the file (even if copied) cannot be opened by Royal TS/X directly.</li>
+<li>Specify the Document's password, if required.</li>
+<li>Choose whether the Document can only be opened via Royal Server or not. This adds an additional layer of security so that the file (even if copied) cannot be opened by Royal TS/X directly.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The internal data structure of Royal Documents contains an ID. If you import an existing document, please make sure that this document is not loaded in Royal TS from the file system at the same time as the IDs will be the same.</p>
+<p>The internal data structure of Royal Documents contains an GUID for each Document. Royal TS/X can load a Document with a specific GUID only once. If you import an existing Document, please make sure that this Document is not loaded in Royal TS/X from the file system at the same time as the IDs will be the same.</p>
 </div>
 <h3 id="refresh-the-document-list">Refresh the Document List</h3>
-<p>Click the &quot;Refresh&quot; button to refresh the list of documents in the user interface.</p>
+<p>Click the <strong>&quot;Refresh&quot;</strong> button to refresh the list of Documents in the user interface.</p>
 <h3 id="remove-a-document">Remove a Document</h3>
-<p>In the document grid click on the &quot;Delete&quot;-icon (<img src="/r2023/images/RoyalServer/Svg/SVG_ContextDelete_32.svg" class="icon-sm" alt="">) on the document you want to remove.</p>
-<p>When removing a document, the document is removed from the list of documents but the file is moved in the <em>Deleted Documents</em> subfolder of the Document Store root folder you have configured.</p>
+<p>In the Document grid click on the <strong>&quot;Delete&quot;</strong>-icon (<img src="/r2023/images/RoyalServer/Svg/SVG_ContextDelete_32.svg" class="icon-sm" alt="">) on the Document you want to remove.</p>
+<p>When removing a Document, the Document is removed from the list of hosted Documents and it is moved in the <em>Deleted Documents</em> subfolder of the Document Store root folder you have configured.</p>
 <h3 id="view-settings-of-a-document">View Settings of a Document</h3>
-<p>In the document grid click on the &quot;Information&quot;-icon (<img src="/r2023/images/RoyalServer/Svg/SVG_ContextInfo_32.svg" class="icon-sm" alt="">) on the document you want to view.</p>
-<p>This will open a dialog which displays the settings of the document.</p>
+<p>In the Document grid click on the <strong>&quot;Information&quot;</strong>-icon (<img src="/r2023/images/RoyalServer/Svg/SVG_ContextInfo_32.svg" class="icon-sm" alt="">) on the Document you want to view.</p>
+<p>This will open a dialog which displays the settings of the Document.</p>
 <h3 id="edit-access-rules">Edit Access Rules</h3>
-<p>In the document grid click on the &quot;Access Rules&quot;-icon (<img src="/r2023/images/RoyalServer/Svg/SVG_ContextAcl_32.svg" class="icon-sm" alt="">) on the document you want to view.</p>
-<p>This will open an additional grid which allows you to manage the access rules for the document.</p>
-<p>If Access Rules are enabled, clients will get access to documents hosted by Royal Server only if a read and/or write rule is configured. Specify for each rule the following:</p>
+<p>In the Document grid click on the <strong>&quot;Access Rules</strong>&quot;-icon (<img src="/r2023/images/RoyalServer/Svg/SVG_ContextAcl_32.svg" class="icon-sm" alt="">) on the Document you want to view.</p>
+<p>This will open an additional grid which allows you to manage the access rules for the Document.</p>
+<p>If Access Rules are enabled, clients will get access to Documents hosted by Royal Server only if a read and/or write rule is configured. Specify for each rule the following:</p>
 <ul>
 <li>Operation (Read or Modify)</li>
 <li>Permission Type (Grant or Deny)</li>
@@ -132,9 +139,13 @@ On top of this, these additional policies can be selected:
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If both, a grant and a deny rule is specified on a document, the deny rule is stronger and access is denied.
-(<code>Modify</code> is not enough to work with a document, <code>Read</code> also has to be specified to load it from Royal Server)</p>
+<p>If both, a grant and a deny rule is specified on a Document, the deny rule is stronger and access is denied.</p>
 </div>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>Modify</code> is not enough to work with a Document, <code>Read</code> also has to be specified to load it from Royal Server</p>
+</div>
+
 </article>
           </div>
 
@@ -152,12 +163,12 @@ On top of this, these additional policies can be selected:
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/document-store-configuration/documents.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/document-store-configuration/documents.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

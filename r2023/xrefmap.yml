@@ -133,15 +133,15 @@ references:
 - uid: royalserver_components_secure-gateway
   name: Secure Gateway
   href: royalserver/secure-gateway-configuration/index.html
+- uid: royalserver_components_secure-gateway_active-gateway-connections
+  name: Gateway Connections
+  href: royalserver/secure-gateway-configuration/gateway-active-connections.html
 - uid: royalserver_components_secure-gateway_gateway-cipher-configuration
   name: Gateway Security Configuration
   href: royalserver/secure-gateway-configuration/gateway-ciphers.html
 - uid: royalserver_components_secure-gateway_gateway-configuration
   name: Gateway Configuration
   href: royalserver/secure-gateway-configuration/gateway-configuration.html
-- uid: royalserver_components_secure-gateway_gateway-connections
-  name: Gateway Connections
-  href: royalserver/secure-gateway-configuration/gateway-connections.html
 - uid: royalserver_components_secure-gateway_gateway-security-configuration
   name: Gateway Security Configuration
   href: royalserver/secure-gateway-configuration/gateway-security-configuration.html
@@ -156,7 +156,7 @@ references:
   href: royalserver/general/general-configuration.html
 - uid: royalserver_general_health
   name: Health
-  href: royalserver/general/health.html
+  href: royalserver/general/health-metrics.html
 - uid: royalserver_general_licensing
   name: Licensing
   href: royalserver/general/licensing.html
@@ -172,8 +172,11 @@ references:
 - uid: royalserver_general_permissions
   name: Permissions
   href: royalserver/general/permissions.html
+- uid: royalserver_general_ribbon_features
+  name: Ribbon Features
+  href: royalserver/general/ribbon-features.html
 - uid: royalserver_general_updatesettings
-  name: Update Checks
+  name: Update Settings
   href: royalserver/general/update-settings.html
 - uid: royalserver_getting-started_adding-a-license
   name: Getting Started
@@ -242,10 +245,10 @@ references:
   name: Windows Services Module
   href: royalserver/royal-server-configuration/modules/windows-services-module.html
 - uid: royalserver_scripting_examples_advanced-scripting-examples
-  name: Examples using RoyalServer.PowerShell and RoyalDocument.PowerShell
+  name: royalserver_scripting_examples_advanced-scripting-examples
   href: royalserver/scripting/examples/index.html
 - uid: royalserver_scripting_examples_load-and-save-documents
-  name: Loading and Saving a Document from Royal Server
+  name: royalserver_scripting_examples_load-and-save-documents
   href: royalserver/scripting/examples/Load-and-Save-Document.html
 - uid: royalserver_scripting_module-reference
   name: Module References
@@ -259,9 +262,9 @@ references:
 - uid: royalserver_tutorials_querying-processes
   name: 'Example: Query Windows Processes'
   href: royalserver/tutorials/querying-processes.html
-- uid: royalserver_tutorials_using-credentials
-  name: Types of credentials used with Royal Server
-  href: royalserver/tutorials/using-credentials-with-royal-server.html
+- uid: royalserver_tutorials_secure-gateway
+  name: 'Example: Using The Secure Gateway for a Terminal Connection'
+  href: royalserver/tutorials/using-the-secure-gateway.html
 - uid: royalserver_what-are-royal-server-components
   name: Royal Server Components
   href: royalserver/introduction/what-are-royal-server-components.html
@@ -329,7 +332,7 @@ references:
   name: " Document"
   href: royalts/reference/index.html
 - uid: royalts_reference_azurebastion
-  name: " Azure Bastion"
+  name: royalts_reference_azurebastion
   href: royalts/reference/gateways/azurebastion.html
 - uid: royalts_reference_connections
   name: Connections
@@ -422,13 +425,13 @@ references:
   name: " To-Do Item"
   href: royalts/reference/organization/todo-item.html
 - uid: royalts_reference_rdpgateway
-  name: " Remote Desktop Gateway"
+  name: royalts_reference_rdpgateway
   href: royalts/reference/gateways/rdpgateway.html
 - uid: royalts_reference_royalserver
   name: " Royal Server"
   href: royalts/reference/gateways/royalserver.html
 - uid: royalts_reference_securegateway
-  name: " Secure Gateway"
+  name: royalts_reference_securegateway
   href: royalts/reference/gateways/securegateway.html
 - uid: royalts_reference_tasks
   name: " Command Task"

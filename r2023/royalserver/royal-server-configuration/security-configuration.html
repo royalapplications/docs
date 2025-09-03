@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Security Configuration </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Security Configuration ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -79,22 +80,20 @@
 <h2 id="features">Features</h2>
 <p><strong>Require Authentication</strong></p>
 <p>If checked, Royal Server is only accepting authenticated requests. Using this setting, Royal Server objects in Royal TS need to be configured with a Credential. Royal Server only accepts user accounts that are in the local Windows group 'Royal Server Users' (these can also be accounts or groups from the Windows domain the server belongs to). If the specified credential is not member of this group, Royal Server will return an authentication error.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Additionally, Royal Server accepts requests from members of the 'Royal Server Administrators' and 'Administrators' group as well as requests that use the Worker Account.</p>
-</div>
 <p><strong>Block IPs After Unsuccessful Login Attempts</strong></p>
-<p>In order to prevent brute force attacks on Royal Server, this setting blocks IPs that issue unsuccessful authentication requests. For example, block an IP for 5 minutes if it issues 4 unsuccessful requests within 3 minutes.</p>
-<p><em>Blocking time (in minutes)</em></p>
-<p>Specifies the time an IP is blocked after it tries to log on too many times unsuccessfully.</p>
-<p><em>Number of attempts</em></p>
-<p>Specifies the number of failed attempts after which an IP is blocked for the specified amount of time.</p>
-<p><em>Time frame (in minutes)</em></p>
-<p>Only failed login attempts within this time frame are relevant for the IP blocking.</p>
+<p>In order to prevent brute force attacks on Royal Server, this setting blocks IPs that issue unsuccessful authentication requests.</p>
+<p>For example, block an IP for 5 minutes if it issues 4 unsuccessful requests within 3 minutes.</p>
+<p>Available settings:</p>
+<ul>
+<li><em>Blocking time (in minutes)</em> (Specifies the time an IP is blocked after it tries to log on too many)times unsuccessfully.</li>
+<li><em>Number of attempts</em> (Specifies the number of failed attempts after which an IP is blocked for the specified amount of time)</li>
+<li><em>Time frame (in minutes)</em> (Only failed login attempts within this time frame are relevant for the IP blocking)</li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The blocked requests will be logged.</p>
+<p>Blocked requests will be logged.</p>
 </div>
+
 </article>
           </div>
 
@@ -112,12 +111,12 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/royal-server-configuration/security-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/royal-server-configuration/security-configuration.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

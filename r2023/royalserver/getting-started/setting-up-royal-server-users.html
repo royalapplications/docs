@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Getting Started </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Getting Started ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,18 +70,20 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <h2 id="setting-up-royal-server-users">Setting up Royal Server Users</h2>
-<p>Royal Server itself does not have a user database. It completely relies on Windows users and group memberships.</p>
-<p>The following Windows Groups are created by Royal Server on startup:</p>
-<p><strong>Royal Server Administrators</strong></p>
-<p>All users in this group and child groups are allowed to administrate Royal Server settings.</p>
+<p>By default, Royal Server requires users to be authenticated in order to accept any connections. Royal Server itself does not have its own user database. For authentication, it completely relies on Windows users.
+For authorization Royal Server uses local groups and their members. For a Windows user to be able to use Royal Server, they must be a member of specific Windows groups.</p>
+<p>The following Windows Groups are created by Royal Server on startup by default:</p>
 <p><strong>Royal Server Users</strong></p>
-<p>All users in this group and child groups are allowed to use the Management Endpoint and Document Store Modules.</p>
+<p>All users in this group are allowed to use the Management Endpoint and Document Store Modules.</p>
 <p><strong>Royal Server Gateway Users</strong></p>
-<p>All users in this group and child groups are allowed to use the Royal Server Secure Gateway.</p>
+<p>All users in this group are allowed to use the Royal Server Secure Gateway.</p>
+<p><strong>Royal Server Administrators</strong></p>
+<p>All users in this group are allowed to administrate Royal Server settings. This group is important if you plan to administrate Royal Server via PowerShell Commandlets.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>In domain joined environments we recommend to not add domain users directly to these groups but first create corresponding domain groups, add the users there and add these domain groups to the local groups.</p>
+<p>In domain joined environments we recommend to not add domain users directly to these local groups but first create corresponding domain groups, add the users there and then just add these domain groups to the local groups.</p>
 </div>
+
 </article>
           </div>
 
@@ -98,12 +101,12 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/getting-started/setting-up-royal-server-users.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/getting-started/setting-up-royal-server-users.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

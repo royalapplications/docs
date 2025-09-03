@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Document Store </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Document Store ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,29 +70,34 @@
 
 <img src="/r2023/images/RoyalServer/Svg/SVG_DocumentStore_32.svg" class="icon-left icon-lg" alt="">
 <h1 id="document-store">Document Store</h1>
-<p>The Document Store is a component in Royal Server that enables the user to securely load and save Royal Documents directly from Royal Server - no more shared files needed. To work with Documents hosted by Royal Server, you need to use Royal TS/X.</p>
+<p>The Document Store is a component in Royal Server that enables sers to securely load and save Royal Documents directly from/to Royal Server - no more shared files needed. To work with Documents hosted by Royal Server, you need to use Royal TS/X.</p>
 <h2 id="settings">Settings</h2>
 <p>If enabled, Royal Server hosts Documents for Royal TS/X clients. You can</p>
 <ul>
-<li>Specify the Documents Folder (this is where the Documents and backups will be stored),</li>
-<li>Specify the number of backups (each change in the file triggers a backup) and</li>
-<li>Specify if Access Rules are enabled</li>
+<li>Specify the Documents Folder (this is where the Documents and Document backups will be stored),</li>
+<li>Specify the number of backups (each saved change triggers a document backup) and</li>
+<li>Specify if Access Rules are enabled (see below)</li>
 </ul>
 <p><strong>Access Rules</strong></p>
-<p>Additionally to the restricted access via the permissions, hosted documents can have Access Rules defined. For a give group or user you can specify Read or Modify rights for each document separately.</p>
+<p>In addition to restricted access via Windows group permissions, hosted documents can have custom Access Rules. Each document can be assigned a list of Windows groups or users with Read or Modify permissions.</p>
 <p>More information about the Access Rules and how they can be configured can be found <a class="xref" href="documents.html">here</a>.</p>
 <h2 id="accessing-documents-from-the-document-store">Accessing Documents from the Document Store</h2>
 <p>In order to access documents, you first need to complete the following <strong>steps in Royal TS/X</strong>:</p>
 <ol>
-<li><a class="xref" href="documents.html">Add documents to Royal Server</a> that should be hosted.</li>
-<li>Configure a Royal Server object in any open document in Royal TS/X. Specify the IP/Name, port and credentials. Save the document.</li>
-<li>Click on <strong>File</strong> in the Ribbon and then <strong>Open</strong>, Select the Royal Server you want to connect to. You will be presented with a list of Documents of Royal Server</li>
+<li><a class="xref" href="documents.html">Add documents to Royal Server</a></li>
+<li>Configure a Royal Server object in Royal TS/X. Specify the IP/Name, port and credentials. Save the document.</li>
+<li>For Royal TS for Windows: Click on <strong>File</strong> in the Ribbon and then <strong>Open</strong>, Select the Royal Server you want to connect to. You will be presented with a list of Documents of Royal Server</li>
+<li>For Royal TSX for macOS: Click on <strong>Open Royal Server Document</strong>, select the configured Royal Server and select the document in the dropdown.</li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Any user that wants to load or save with the Document Store needs to be a member of the <code>Royal Server Users</code> group.
-Create, import or delete a document requires the user to be member of the <code>Royal Server Administrators</code> group. If done via the Configuration Tool, the Worker Account is used for these operations.</p>
+<p>Any user who wants to load or save Documents needs to be a member of the <code>Royal Server Users</code> group.</p>
 </div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Create, import or delete a document requires the user to be member of the <code>Royal Server Administrators</code> group. If done via the Configuration Tool, the Worker Account is used for these operations. If done via PowerShell scripts, make sure you use a credential that is member of this group.</p>
+</div>
+
 </article>
           </div>
 
@@ -109,12 +115,12 @@ Create, import or delete a document requires the user to be member of the <code>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/document-store-configuration/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/document-store-configuration/index.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Multi Factor Authentication </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Multi Factor Authentication ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -70,18 +71,18 @@
 <img src="/r2023/images/RoyalServer/Svg/SVG_MFA_32.svg" class="icon-left icon-lg" alt="">
 <h1 id="multi-factor-authentication">Multi Factor Authentication</h1>
 <p>The <strong>Multi Factor Authentication</strong> panel enables the configuration of different Multi-Factor Authentication provider for Royal Server.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For information on configuring users please see <a href="mfa-user-store.html">Multi-Factor User Store configuration</a></p>
+</div>
 <h2 id="show-or-activate-the-multi-factor-authentication-panel">Show or Activate the Multi Factor Authentication Panel</h2>
-<p>In the Royal Server Configuration Tool Navigation Bar, click on the <strong>General</strong> group and then on the <strong>Multi Factor Authentication</strong> entry.</p>
+<p>In the Royal Server Configuration Tool Navigation Bar, click on the <strong>General</strong> group and then on the <strong>Multi Factor Authentication</strong>.</p>
 <p>Multi-factor authentication for users requires the following settings:</p>
 <ol>
 <li>Multi-factor authentication must be enabled (see below)</li>
 <li>The required multi-factor authentication provider (Generic TOTP, DUO or YubiKey) must be enabled and configured (see below), and</li>
 <li>Users must be configured for the multi-factor authentication authentication provider.</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>For information on configuring users please see <a href="mfa-user-store.html">Multi-Factor User Store configuration</a></p>
-</div>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Changes to the the multi-factor authentication configuration require a restart of Royal Server.</p>
@@ -93,9 +94,8 @@
 <p>Disabling this setting will leave all multi-factor provider and user configurations untouched, but will render them inactive.</p>
 </div>
 <p><strong>Reject Unknown Users</strong></p>
-<p>If the multi-factor authentication is enabled, any not configured user who attempts an action which secured without a second factor (e.g. load/save a document, open a Secure Gateway connection), will be rejected by Royal Server.
-This means that all users must be configured to gain access.</p>
-<p>If disabled, the second factor is only required for users who have a configuration. Other users may pass.</p>
+<p>If the multi-factor authentication is enabled, any not configured user who attempts an action which secured without a second factor (e.g. load/save a document, open a Secure Gateway connection), will be rejected by Royal Server. It basically means that all users must be configured in order to gain access.</p>
+<p>If disabled, the second factor is only required for users who have a <a href="mfa-user-store.html">user configuration</a>. Other users are allowed to proceed without MFA.</p>
 <h2 id="mfa-providers">MFA Providers</h2>
 <p>Royal Server supports the following MFA providers:</p>
 <ul>
@@ -104,24 +104,26 @@ This means that all users must be configured to gain access.</p>
 <li><a href="#yubikey">YubiKey</a></li>
 </ul>
 <h3 id="totp">TOTP Provider Configuration</h3>
-<p>TOTP is a generic algorithm for time-based one-time-passwords that is implemented by a many services and apps. Since it is a generic algorithm, any app that supports it can be used as a second factor for this provider. There are, for example, apps from Microsoft, Google and many others.</p>
+<p>TOTP is a generic algorithm for time-based one-time-passwords that is implemented by many services and apps. Since it is a generic algorithm, any app that supports it can be used as a second factor for this provider. There are, for example, apps from Microsoft, Google and many others.</p>
 <h4 id="configuring-the-totp-provider">Configuring the TOTP Provider</h4>
 <p>In the Royal Server Configuration Tool ensure that the &quot;Generic TOTP Authenticator (Google, Microsoft, etc)&quot; provider is enabled.</p>
-<h4 id="configuring-self-service">Configuring Self-Service</h4>
-<p>Optionally, users can be allowed to configure TOTP authentication via self-service pages which might be useful in scenarios where users are added programmatically e.g. via a Powershell script.</p>
-<p>This feature can be (de-/)activated on the Create/Edit dialog for TOTP MFA Users.</p>
+<h4 id="configuring-user-totp-self-service">Configuring User TOTP Self-Service</h4>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Optionally, users can be allowed to configure their own TOTP authentication via self-service pages which might be useful in scenarios where users are added programmatically e.g. via a Powershell script. This feature can be activated and deactivated on the Create/Edit dialog for TOTP MFA Users.</p>
 <ul>
 <li><em>Allowed</em>: Indicates whether a user is allowed to access and verify the QR code under https://[IPAddress]:[Port]/mfa/totp.</li>
 <li><em>Verified</em>: Indicates whether the self service user is already verified. Once verified, the user will not be allowed to use the self service page again.</li>
 </ul>
+</div>
 <h3 id="duo">DUO Provider Configuration</h3>
 <p><a href="https://duo.com">DUO</a> provides security solutions for companies and can be integrated into Royal Server.</p>
-<p>In order to configure a DUO application and DUO secured users first. Therefore you need to log in to the DUO Admin Panel at <a href="https://duo.com/">https://duo.com/</a>.</p>
+<p>In order to create a DUO application and configure DUO secured users first. Therefore you need to log in to the DUO Admin Panel at <a href="https://duo.com/">https://duo.com/</a>.</p>
 <h4 id="duo-app-configuration">Configuring an Application in DUO</h4>
 <p>With the DUO Admin Panel, you need to configure an <em>Application</em> that is being secured by DUO - in our case, you want to secure Royal Server operations by DUO.</p>
-<p>Navigate to <strong>Applications</strong> and <strong>Protect an Application</strong>. Look for <strong>Partner Auth API</strong> and click <strong>Protect this Application</strong>. You will be presented with a number of details, most notable the <code>Integration Key</code>, the <code>Secret Key</code> and the <code>API Hostname</code>. Remember these as you need them later for configuring the Royal Server DUO integration.</p>
+<p>In the DUO Admin Panel, navigate to <strong>Applications</strong> and <strong>Protect an Application</strong>. Look for <strong>Partner Auth API</strong> and click <strong>Protect this Application</strong>. You will be presented with a number of details, most notable the <code>Integration Key</code>, the <code>Secret Key</code> and the <code>API Hostname</code>. Remember these as you need them later for configuring the Royal Server DUO integration.</p>
 <h4 id="creating-users-in-duo">Creating Users in DUO</h4>
-<p>With the DUO Admin Panel, add users to your DUO configuration by clicking on <strong>Users</strong> and then on <strong>Add User</strong>.</p>
+<p>If not already done, add users to your DUO Admin Panel by clicking on <strong>Users</strong> and then on <strong>Add User</strong>.</p>
 <blockquote>
 <p><strong>Important</strong><br>
 After the creation of a user (or when you editing it), take a close look at the URL in your browser. At the end of it, you see a long sequence of letters and numbers - this is the DUO user id and you need it to configure it in the Royal Server Configuration Tool.</p>
@@ -142,11 +144,12 @@ After the creation of a user (or when you editing it), take a close look at the 
 <p><a href="https://www.yubico.com/">YubiKey</a> provides security solutions for companies using hardware authentication and can be integrated with Royal Server.</p>
 <h4 id="configuring-a-yubikey-api-key">Configuring a YubiKey API Key</h4>
 <p>First, you need to configure a YubiKey API key for Royal Server. This can be done at <a href="https://upgrade.yubico.com/getapikey/">https://upgrade.yubico.com/getapikey/</a>.</p>
-<p>Enter an email address, insert a YubiKey, then press the Yubikey button while the input focus is on YubiKey OTP. As a result, you get the <code>Client ID</code> and a <code>Secret Key</code>. Remember these as you need them later for configuring the Royal Server YubiKey integration.</p>
+<p>Enter an email address, insert a YubiKey into the computer, press the Yubikey button while the input focus is on YubiKey OTP. As a result, you get the <code>Client ID</code> and a <code>Secret Key</code>. Remember these as you need them later for configuring the Royal Server YubiKey integration.</p>
 <p>Alternatively, you can use the <a href="https://www.yubico.com/support/download/yubikey-manager/">YubiKey Manager</a> tool to configure <code>Client ID</code> and <code>Secret Key</code>.</p>
 <h4 id="configuring-the-yubikey-provider">Configuring the YubiKey Provider</h4>
 <p>In the Royal Server Configuration Tool ensure that the <em>&quot;YubiKey&quot;</em> provider is enabled.</p>
 <p>Expand the details panel under YubiKey and enter the <code>Client ID</code>, the <code>Secret Key</code> that you previously generated while getting a YubiKey API Key.</p>
+
 </article>
           </div>
 
@@ -164,12 +167,12 @@ After the creation of a user (or when you editing it), take a close look at the 
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/mfa.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/mfa.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

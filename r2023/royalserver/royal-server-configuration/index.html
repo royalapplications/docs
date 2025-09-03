@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Royal Server Management Endpoint </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Royal Server Management Endpoint ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,10 +70,21 @@
 
 <img src="/r2023/images/RoyalServer/Svg/SVG_RoyalServer_32.svg" class="icon-left icon-lg">
 <h1 id="royal-server-management-endpoint">Royal Server Management Endpoint</h1>
-<p>The Management Endpoint component helps you to remotely manage your servers. It allows you to manage Windows Services, Windows Events, Windows Processes, Hyper-V machines, Terminal Services, execute Powershell Scripts and manage VMware's Virtual Machines through Royal Server.</p>
+<p>The Management Endpoint component helps you to remotely manage your servers. It allows you to manage</p>
+<ul>
+<li><a href="modules/windows-services-module.html">Windows Services</a></li>
+<li><a href="modules/windows-events-module.html">Windows Events</a></li>
+<li><a href="modules/windows-processes-module.html">Windows Processes</a></li>
+<li><a href="modules/hyper-v-module.html">Hyper-V machines</a></li>
+<li><a href="modules/terminal-services-module.html">Terminal Services</a></li>
+<li><a href="modules/script-module.html">Execute Powershell Scripts</a> and</li>
+<li><a href="modules/vmware-module.html">Manage VMware's Virtual Machines</a></li>
+</ul>
+<p>through Royal Server.</p>
 <h2 id="accessing-the-management-endpoint-component">Accessing the Management Endpoint Component</h2>
-<p>By default, the Management Endpoint is only accepting authenticated requests and the Royal Server configuration in Royal TS/X needs to be configured with a Credential. It only accepts user accounts that are in the local Windows group <code>Royal Server Users</code>. If the specified Credential is not member of this group, the Management Endpoint component will return an authentication error.</p>
+<p>By default, the Management Endpoint is <a href="security-configuration.html">only accepting authenticated requests</a> and the Royal Server configuration in Royal TS/X needs to be configured with a Credential. It only accepts user accounts that are member of the local Windows group <code>Royal Server Users</code>. If the specified Credential is not member of this group, the Management Endpoint component will return an authentication error.</p>
 <p>See details on <a class="xref" href="../general/permissions.html">Permissions</a>.</p>
+
 </article>
           </div>
 
@@ -90,12 +102,12 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/royal-server-configuration/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/royal-server-configuration/index.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

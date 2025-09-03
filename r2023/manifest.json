@@ -1,6 +1,5 @@
 {
-  "homepages": [],
-  "source_base_path": "/Users/hdocsek/Projects/royal-docs/src/r2023",
+  "source_base_path": "/Users/christoph/dev/royalapps/docs/src/r2023",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -49,6 +48,16 @@
       "output": {
         "resource": {
           "relative_path": "images/RoyalServer/DynamicFolder_48x48.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/General/ribbon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/General/ribbon.png"
         }
       },
       "version": ""
@@ -495,6 +504,96 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Add_Terminal_Connection_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/RoyalServer/Tutorials/Creating_Document_1.png",
       "output": {
         "resource": {
@@ -579,6 +678,16 @@
       "output": {
         "resource": {
           "relative_path": "images/RoyalServer/Tutorials/Creating_RDP_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RoyalServer/Tutorials/Creating_RDP_7_old.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RoyalServer/Tutorials/Creating_RDP_7_old.png"
         }
       },
       "version": ""
@@ -2945,6 +3054,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "royalserver/_shared/tutorials-setup-royalserverobject.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/_shared/tutorials-setup-royalserverobject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "royalserver/_shared/tutorials-setup.md",
       "output": {
         ".html": {
@@ -3135,10 +3254,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "royalserver/general/health.md",
+      "source_relative_path": "royalserver/general/health-metrics.md",
       "output": {
         ".html": {
-          "relative_path": "royalserver/general/health.html"
+          "relative_path": "royalserver/general/health-metrics.html"
         }
       },
       "version": ""
@@ -3199,6 +3318,16 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/general/permissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "royalserver/general/ribbon-features.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/general/ribbon-features.html"
         }
       },
       "version": ""
@@ -3705,6 +3834,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "royalserver/secure-gateway-configuration/gateway-active-connections.md",
+      "output": {
+        ".html": {
+          "relative_path": "royalserver/secure-gateway-configuration/gateway-active-connections.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "royalserver/secure-gateway-configuration/gateway-ciphers.md",
       "output": {
         ".html": {
@@ -3719,16 +3858,6 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/secure-gateway-configuration/gateway-configuration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "royalserver/secure-gateway-configuration/gateway-connections.md",
-      "output": {
-        ".html": {
-          "relative_path": "royalserver/secure-gateway-configuration/gateway-connections.html"
         }
       },
       "version": ""
@@ -3759,6 +3888,9 @@
       "output": {
         ".html": {
           "relative_path": "royalserver/toc.html"
+        },
+        ".json": {
+          "relative_path": "royalserver/toc.json"
         }
       },
       "version": ""
@@ -3795,10 +3927,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "royalserver/tutorials/using-credentials-with-royal-server.md",
+      "source_relative_path": "royalserver/tutorials/using-the-secure-gateway.md",
       "output": {
         ".html": {
-          "relative_path": "royalserver/tutorials/using-credentials-with-royal-server.html"
+          "relative_path": "royalserver/tutorials/using-the-secure-gateway.html"
         }
       },
       "version": ""
@@ -4689,6 +4821,9 @@
       "output": {
         ".html": {
           "relative_path": "royalts/toc.html"
+        },
+        ".json": {
+          "relative_path": "royalts/toc.json"
         }
       },
       "version": ""
@@ -5889,6 +6024,9 @@
       "output": {
         ".html": {
           "relative_path": "scripting/toc.html"
+        },
+        ".json": {
+          "relative_path": "scripting/toc.json"
         }
       },
       "version": ""
@@ -5899,12 +6037,14 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

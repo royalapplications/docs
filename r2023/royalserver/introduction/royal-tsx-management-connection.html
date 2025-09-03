@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Royal TS/X Management Connection </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Royal TS/X Management Connection ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -85,18 +86,19 @@ Use the <code>Test</code> button to check connectivity.</p>
 <h5>Note</h5>
 <p>The configured user needs to be in the &quot;Royal Server Users&quot; group on Royal Server to get access.</p>
 </div>
-<p>Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the &quot;Royal Server&quot; category of the Windows Events connection. If you forget to do this, Royal TS/X will try to connect to this machine directly without Royal Server.</p>
+<p>Then create e.g. a Windows Events connection and specify the Royal Server object you just created in the &quot;Royal Server&quot; category of the Windows Events connection. If you do not specify a Royal Server object, Royal TS/X will connect to this machine directly without using Royal Server (which requires direct network connectivity).</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The credential configured on the management connection (that is not the credential on the Royal Server object) must have sufficient rights to read information (e.g. read the Windows Event Log) on the target host. In most scenarios a user account that is a member of the Local Administrators group is sufficient. For low privilege environments, depending on the plugin, a number of steps are required to grant non-administrative users the required rights.</p>
+<p>The credential configured on the management connection (which might be differentfrom the credential on the Royal Server object) must have sufficient rights to read information (e.g. read the Windows Event Log) on the target host. In most scenarios a user account that is a member of the Local Administrators group is working. For low privilege environments, depending on the plugin, a number of steps are required to grant non-administrative users the required rights.</p>
 </div>
 <p>To access Royal Server, please install the latest version of Royal TS/X:</p>
 <ul>
 <li><a href="https://www.royalapps.com/ts/win/download">Get the latest version of Royal TS (for Windows)</a></li>
-<li><a href="https://www.royalapps.com/ts/mac/download">Get the latest version of Royal TSX (for OS X)</a></li>
+<li><a href="https://www.royalapps.com/ts/mac/download">Get the latest version of Royal TSX (for macOS)</a></li>
 </ul>
 <p>Alternativly, you can use the Royal Server PowerShell API to query Royal Server from the command line.</p>
 <p>See <a href="../scripting/index.html">Using Royal Server via PowerShell</a></p>
+
 </article>
           </div>
 
@@ -114,12 +116,12 @@ Use the <code>Test</code> button to check connectivity.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/introduction/royal-tsx-management-connection.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/introduction/royal-tsx-management-connection.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

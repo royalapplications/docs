@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Permissions </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Permissions ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -72,21 +73,22 @@
 <p>The <strong>Permissions</strong> panel allows you to check effective permissions for users and list group memberships.</p>
 <h2 id="show-or-activate-the-permissions-pane">Show or Activate the Permissions Pane</h2>
 <p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>General</strong> group and then on the <strong>Permissions</strong> entry.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The following groups are generated on startup by Royal Server:</p>
+<p>The following groups are used to grant access to Royal Server:</p>
 <ul>
 <li><strong>&quot;Royal Server Users&quot;</strong>: Users that want to use Royal Server Management modules (e.g. Windows Events, Hyper-V etc) and the Document Store need to be in this group - either directly or via containing groups.</li>
 <li><strong>&quot;Royal Server Gateway Users&quot;</strong>: Users that want to use the Secure Gateway component need to be a member of this group - either directly or via containing groups.</li>
 <li><strong>&quot;Royal Server Administrators&quot;</strong>: Users that want to administer Royal Server need to be a member of this group - either directly or via containing groups.</li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The previously mentioned groups are generated on startup by Royal Server by default.</p>
 </div>
 <h3 id="effective-permissions">Effective Permissions</h3>
-<p>The Effective Permissions lets you check all relevant permissions for the specified user.
+<p>The Effective Permissions lets you check all relevant permissions for a specific user.
 Enter a username and click <strong>Show</strong> button. The Configuration Tool will list</p>
 <ul>
-<li><strong>Authorization groups</strong>: the group memberships of the Royal Server groups and</li>
-<li><strong>Documents</strong>: the read and modify rights for each Document hosted by Royal Server.</li>
+<li><strong>Authorization groups</strong>: the group memberships for this users of the Royal Server groups and</li>
+<li><strong>Documents</strong>: the read and modify rights for this user for each Document hosted by Royal Server.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
@@ -98,6 +100,7 @@ Enter a username and click <strong>Show</strong> button. The Configuration Tool 
 </div>
 <h3 id="group-membership">Group Membership</h3>
 <p>Select a Royal Server Group and show the members of this group. This list helps when users trying to access Royal Server get <code>Access Denied</code>.</p>
+
 </article>
           </div>
 
@@ -115,12 +118,12 @@ Enter a username and click <strong>Show</strong> button. The Configuration Tool 
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/permissions.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/permissions.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

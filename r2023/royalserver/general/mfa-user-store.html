@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Multi Factor User Store </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Multi Factor User Store ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -69,15 +70,24 @@
 
 <img src="/r2023/images/RoyalServer/Svg/SVG_Permissions_32.svg" class="icon-left icon-lg" alt="">
 <h1 id="multi-factor-user-store">Multi Factor User Store</h1>
-<p>The <strong>Multi Factor User Store</strong> panel displays the users configured for Multi Factor authentication.</p>
+<p>The <strong>Multi Factor User Store</strong> panel displays the users configured for Multi Factor authentication and allows  new users to be configured for MFA.</p>
 <h2 id="show-or-activate-the-multi-factor-users-store-panel">Show or Activate the Multi Factor Users Store Panel</h2>
 <p>In The Royal Server Configuration Tool Navigation Bar, click on the <strong>General</strong> group and then on the <strong>Multi Factor Users Store</strong> entry.</p>
 <p>The data grid shows the configured users for multi-factor authentication.</p>
-<p>The following functionalities in Royal Server support Multi-Factor Authentication:</p>
+<p>For each users the following information is displayed:</p>
 <ul>
-<li>Document Store (triggered when loading or saving a document hosted by Royal Server) or</li>
-<li>Secure Gateway Connections (triggered when connecting using e.g. RDP connections)</li>
+<li>The User name</li>
+<li>The configured Provider (Generic TOTP, DUO or YubiKey)</li>
+<li>If the specific user has to present his second factor for the Document Store (triggered when loading or saving a document hosted by Royal Server)</li>
+<li>If the specific user has to present his second factor for the Secure Gateway(triggered when connecting using e.g. RDP connections)</li>
+<li>A Comment</li>
+<li>An icon for editing the user configuration</li>
+<li>An icon for deleting the user configuration</li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any changes in the Multi Factor User Store does not require a restart of Royal Server.</p>
+</div>
 <h2 id="adding-a-user-for-multi-factor-authentication">Adding a User for Multi-Factor Authentication</h2>
 <ul>
 <li>Click on <strong>Add...</strong>.</li>
@@ -106,7 +116,7 @@ The machine where Royal Server is installed and the device where the TOTP Authen
 </div>
 <p><strong>TOTP Self-Service</strong></p>
 <p>Alternatively, the user can be allowed to use a web based self-service workflow by checking the <strong>Allowed</strong> under <strong>Self Service</strong>.</p>
-<p>If self-service is allowed, the user needs to login to the Royal Server Website (https://[IpAddress]:[Port]) using the user provisioned for TOTP and then navigate to &quot;TOTP Self Service&quot;. He will be presented with his secret/QR code to configure his authenticator app. As soon as he has configured the app, he needs to enter a second factor for verification. Once verified, the workflow will be closed and cannot be accessed anymore.</p>
+<p>If self-service is allowed, the user needs to <strong>login to the Royal Server TOTP Self Service Website</strong> (https://[RoyalServerIpAddress]:[Port]) using the username provisioned for TOTP and then navigate to &quot;TOTP Self Service&quot;. He will be presented with his secret/QR code to configure his authenticator app. As soon as he has configured the app, he needs to enter a second factor for verification. Once verified, this self-service workflow will be closed and cannot be accessed anymore.</p>
 <p>After refreshing the grid in the Royal Server Configuration Tool and opening &quot;Edit&quot;-dialog for the user, he will be flagged as <strong>Verified</strong> under <strong>Self Service</strong>. In order to reset the workflow, so that the user can access it again, just uncheck <strong>Verified</strong>.</p>
 <h3 id="configuring-duo">Configuring DUO</h3>
 <p>Provide the DUO user Id that corresponds with the user you are configuring for Multi-Factor Authentication.</p>
@@ -120,6 +130,7 @@ The machine where Royal Server is installed and the device where the TOTP Authen
 <h5>Note</h5>
 <p>Check the <a href="mfa.html#yubikey">configuration of the YubiKey provider</a></p>
 </div>
+
 </article>
           </div>
 
@@ -137,12 +148,12 @@ The machine where Royal Server is installed and the device where the TOTP Authen
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/mfa-user-store.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/general/mfa-user-store.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

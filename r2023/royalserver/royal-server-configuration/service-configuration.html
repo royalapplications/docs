@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Service Configuration </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Service Configuration ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -79,24 +80,44 @@
 <h2 id="features">Features</h2>
 <p><strong>Worker Account</strong></p>
 <p>Royal Server is running as a Windows Service. By default it is installed using the <code>LOCAL SYSTEM</code> account.</p>
-<p>For managing remote servers (e.g. querying the list of Windows Services from a managed server), Royal Server is using a Worker Account. This account has to have network access.</p>
+<p>For managing remote servers (e.g. querying the list of Windows Services from a managed server) and for internal housekeeping work (e.g. populating the cache for the group memberships for Royal Server Windows groups), Royal Server is using a Worker Account. This account has to have network access.</p>
 <p>The Worker Account should be <code>Local Administrator</code> and in domain-joined scenarios a member of the <code>Domain Users</code> group on the Domain Controller.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The Windows service account can be changed, but it is required that the chosen account has administrative rights. If you plan to work with domain accounts, an account needs to be specified that has proper rights to enumerate users on the domain.</p>
+<p>The Windows service account can be changed, but it is required that the chosen account has administrative rights. If you plan to work with domain accounts, an account needs to be specified that has proper rights <strong>to enumerate users on the domain</strong>.</p>
 </div>
-<p><strong>IP Address</strong></p>
-<p>Specify the IP Address Royal Server is using for accepting requests. By default, the unspecified address (0.0.0.0) is assigned .i.e it listens on all available IP4 addresses.</p>
-<p><strong>Port</strong></p>
-<p>Specify the port, Royal Server is using for accepting requests.</p>
-<p><strong>Use Compression</strong></p>
-<p>This setting enables (HTTP) compression on Royal Server for <a class="xref" href="modules/index.html">Management Endpoint Component</a>. Enabling this is recommended if you have enough CPU on the client and the servers side and want reduce the network load.</p>
-<p><strong>HTTPS/SSL</strong></p>
+<p><strong>Primary Server Binding</strong></p>
+<p>The Primary Server Binding is containing the main configuration for Royal Server and consists of</p>
+<ul>
+<li>the IP Address</li>
+<li>the Port and</li>
+<li>the Certificate that is used for HTTPS</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>By default, the unspecified address (0.0.0.0) is assigned, meaning it listens on all available IPv4 addresses.</p>
+</div>
 <p>Royal Server uses communication via HTTPs/SSL to encrypt communication. This is achieved by creating a self-signed SSL certificate during the installation process. This certificate is named &quot;RoyalServer&quot;. It can be changed to your own certificate if needed. The selected certificate can be deleted and exported (to be used on a second Royal Server installation in a load balanced scenario).</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Until Royal Server V3 and below it was possible to deactivate HTTPS/SSL encryption, as of Royal Server V4 this is not possible anymore, only secure connections are supported.</p>
 </div>
+<p><strong>Use Compression</strong></p>
+<p>This setting enables (HTTP) compression on Royal Server for <a class="xref" href="modules/index.html">Management Endpoint Component</a>. Enabling this is recommended if you have enough CPU on the client and the servers side and want reduce the network load.</p>
+<p><strong>Additional Bindings</strong></p>
+<p>In addition to the Primary Server Binding you can add one or more additional bindings.</p>
+<p>Each Additional Binding consists of</p>
+<ul>
+<li>the IP Address</li>
+<li>the Port and</li>
+<li>the Certificate that is used for HTTPS</li>
+</ul>
+<p>and can be enabled and disabled separately.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Note that additional bindings are only used when there is no binding to '0.0.0.0' or '::'</p>
+</div>
+
 </article>
           </div>
 
@@ -114,12 +135,12 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/royal-server-configuration/service-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/royal-server-configuration/service-configuration.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -8,6 +8,7 @@
       <title>Royal Server Configuration </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Royal Server Configuration ">
+    
     
       <link rel="shortcut icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
@@ -72,13 +73,13 @@
 <h2 id="royal-server-configuration-tool">Royal Server Configuration Tool</h2>
 <p>The most common way is to use the <code>Royal Server Configuration Tool</code>, which provides a modern graphical user interface for changing the configuration and the ability to stop and (re)start the server. You can use it to manage the different components of Royal Server, install license(s), set up certificates, grant permissions, etc. It also includes a health monitor to easily monitor resource usage.</p>
 <h2 id="configuration-file">Configuration File</h2>
-<p>Royal Server V4 stores the configuration settings in a file that can be found here: <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
+<p>Royal Server V4 and newer stores the configuration settings in a file that can be found here: <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
 <p>If not present at startup, <code>appsettings.json</code> will be created automatically.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Settings from a previous Royal Server V3 installation are automatically imported.</p>
 </div>
-<p>You can edit this file using any text editor. After each change, Royal Server must be restarted.
+<p>You can edit this file using the <code>Royal Server Configuration Tool</code> or any text editor. After each change, Royal Server must be restarted.
 This can be done either using the configuration tool or from the command line:</p>
 <pre><code>net stop RoyalServer &amp;&amp; net start RoyalServer
 </code></pre>
@@ -96,7 +97,8 @@ This can be done either using the configuration tool or from the command line:</
 <h2 id="environment-variables">Environment Variables</h2>
 <p>From Royal Server V4 you can optionally pass configuration values using environment variables.</p>
 <p>Environment variables must be prefixed with <code>RS_</code> followed by the corresponding key name in <code>appsettings.json</code>.
-As with hierarchical keys, the separator is a double underscore (<code>__</code>).</p>
+As with hierarchical keys, the separator is a double underscore (<code>__</code>). Environment variables need to be available for the user that is configured for
+the Royal Server Windows Service - by default this is LocalSystem.</p>
 <p><em>Examples:</em></p>
 <pre><code>set RS_IPAddress=&quot;127.0.0.1&quot;
 set RS_Port=8888,
@@ -104,7 +106,7 @@ set RS_SecureGateway__GatewayEnabled=false
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Be aware that these overwrites are neither shown in the Configuration Tool.</p>
+<p>Be aware that these overwrites are not shown in the Configuration Tool but will be reflected in the log.</p>
 </div>
 <h2 id="configuration-of-managed-servers">Configuration of Managed Servers</h2>
 <p>Royal Server manages remote server via different Modules. These require specific protocols to work:</p>
@@ -135,7 +137,7 @@ set RS_SecureGateway__GatewayEnabled=false
 <tr>
 <td>RoyalDocumentStore</td>
 <td>-</td>
-<td>Internal module used by Royal Server</td>
+<td>Module used by Royal Server for hosting documents</td>
 </tr>
 <tr>
 <td>RoyalServerManagement</td>
@@ -179,6 +181,7 @@ set RS_SecureGateway__GatewayEnabled=false
 <li>Windows Management Instrumentation (DCOM-In)</li>
 </ul>
 <p>For the above two steps, we have also prepared a PowerShell script (in <code>&lt;royal-server-installation-dir&gt;\scripts\prepare_server.ps1</code>). See the <a class="xref" href="../advanced/management-scripts/prepare-managed-server.html">Preparing a Managed Server</a> chapter.</p>
+
 </article>
           </div>
 
@@ -196,12 +199,12 @@ set RS_SecureGateway__GatewayEnabled=false
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/introduction/configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/introduction/configuration.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>    
             </div>
