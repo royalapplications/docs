@@ -152,7 +152,7 @@ Specify a port to use in the command line arguments. By using the $Port$ replace
 Royal TS use the specified port instead of a dynamic port for local forwarding. This can be helpful if the destination port is known but cannot be specified in the arguments.
 
 > [!Note]
-> You can use a secure gateway for port forwarding if the application allows you to specify a computer name or port to connect to. You can use the replacement tokens $URI$ and $Port$ in the arguments.
+> You can use a secure gateway for port forwarding if the application allows you to specify a computer name and port to connect to. You can use the replacement tokens `$URI$` and `$Port$` in the arguments.
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
