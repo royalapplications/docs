@@ -32,7 +32,7 @@ To create an Ad Hoc connection use one of the following methods:
 > **Port Setting**:  
 > You can also specify the port in the URI string using a colon (computer1:3388) for supported connection types (Remote Desktop and Terminal connections). The port in the URI string will override the port configuration of the connection. 
 >  
-> Read our [online KB article](http://support.royalapplications.com/knowledgebase/articles/431107) for more information. |
+> Read our [online KB article](https://www.royalapps.com/go/kb-ts-win-protocolhandlers) for more information. |
 
 ## Ad Hoc using the Dashboard
 1.  Select a connection from the **Default Settings** folder in the Application document or a Template connection in the **Navigation** panel.
