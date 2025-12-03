@@ -53,7 +53,8 @@ If set to true, auto fill is executed for each request until it was successful.
 ### MfaConfiguration
 Type: `int`, Default Value: `0`  
 0 = Disabled   
- 1 = Prompt  
+ 1 = Prompt   
+ 2 = Generate  
 ### MfaProperty
 Type: `int`, Default Value: `0`  
 0 = Effective Username   
@@ -61,6 +62,27 @@ Type: `int`, Default Value: `0`
 ### MfaTemplate
 Type: `string`, Default Value: `{Value}{MfaCode}`  
 Use the {Value} token to insert the property value (username or password). Use the {MfaCode} token to insert the MFA code.  
+### MfaTotpGeneratorAlgorithm
+Type: `int`, Default Value: `0`  
+0 = SHA1   
+ 1 = SHA256   
+ 2 = SHA512  
+### MfaTotpGeneratorCodeLength
+Type: `int`, Default Value: `0`  
+0 = 6 digits   
+ 1 = 8 digits  
+### MfaTotpGeneratorIssuer
+Type: `string`, Default Value: `Empty String`  
+The issuer for the generated TOTP code.  
+### MfaTotpGeneratorLabel
+Type: `string`, Default Value: `Empty String`  
+The label for the generated TOTP code.  
+### MfaTotpGeneratorSecondsValid
+Type: `int`, Default Value: `30`  
+Valid period in seconds.  
+### MfaTotpSecret
+Type: `string`, Default Value: `Empty String`  
+The secret to generate the TOTP code.  
 ## Private Key
 ### PrivateKeyMode
 Type: `int`, Default Value: `0`  

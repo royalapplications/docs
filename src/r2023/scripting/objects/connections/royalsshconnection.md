@@ -856,6 +856,9 @@ If set to true, the user is always prompted to specify or confirm the output pat
 ### RecordCreateSubDir
 Type: `bool`, Default Value: `false`  
 If set to true, a sub directory with the connection name is created for the recording.  
+### RecorderOutputFile
+Type: `string`, Default Value: `$DateTime.yyyyMMddHHmmss$-$Name$`  
+The file name for Rebex ANSI recording and log files.  
 ### RecorderOutputPath
 Type: `string`, Default Value: `Empty String`  
 Specifies the output path for the recorder.  
@@ -1032,6 +1035,9 @@ If set to true, Pageant is used to authenticate.
 ### SSHAttemptGSSAPIAuthentication
 Type: `bool`, Default Value: `true`  
 If set to true, GSSAPI authentication (SSH-2) is attempted.  
+### SSHAttemptGSSAPIKeyExchange
+Type: `bool`, Default Value: `true`  
+If set to true, GSSAPI key exchange (SSH-2) is attempted.  
 ### SSHAttemptKeyboardInteractiveAuthentication
 Type: `bool`, Default Value: `true`  
 If set to true, keyboard-interactive authentication (SSH-2) is attempted.  
@@ -1057,6 +1063,14 @@ Type: `int`, Default Value: `0`
 Type: `int`, Default Value: `0`  
 0 = Auto   
  1 = Off   
+ 2 = On  
+### SSHBugDropStart
+Type: `int`, Default Value: `1`  
+1 = Off   
+ 2 = On  
+### SSHBugFilterKexinit
+Type: `int`, Default Value: `1`  
+1 = Off   
  2 = On  
 ### SSHBugHandlesSSH2KeyReExchangeBadly
 Type: `int`, Default Value: `0`  

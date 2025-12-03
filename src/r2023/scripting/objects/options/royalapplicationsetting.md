@@ -528,6 +528,9 @@ Hint in the task context (info bar)
 Type: `bool`, Default Value: `false`  
 A warning is shown when the clipboard text to be typed is very long  
 ## Notifications
+### NotifyApplication
+Type: `bool`, Default Value: `true`  
+If enabled, application related information may show as Windows notification.  
 ### NotifyConnection
 Type: `bool`, Default Value: `true`  
 If enabled, connection activities may show a Windows notification.  

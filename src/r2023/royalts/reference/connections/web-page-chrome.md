@@ -193,10 +193,6 @@ Disables the GPU when the browser renders a page.
 
 Disables the browser built-in spell checker.
 
-#### Disable Web Security
-
-Disables same-origin policy enforcement.
-
 #### Cache Path
 
 Specify a custom path to cache browser files and cookies.

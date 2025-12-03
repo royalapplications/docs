@@ -65,6 +65,14 @@ The width of the browser control. If width = 0, it will occupy the whole width o
 ### ClearCache
 Type: `bool`, Default Value: `false`  
 If set to true, the web browser cache (including cookies) is cleared when the connection is closed.  
+### ClientCertificateBehavior
+Type: `int`, Default Value: `1`  
+0 = Continue without certificate   
+ 1 = Prompt for certificate   
+ 2 = Continue with certificate  
+### ClientCertificateThumbprint
+Type: `string`, Default Value: `Empty String`  
+The thumb print of the certificate to use (must be installed in certificate store).  
 ### CookieStorageMode
 Type: `int`, Default Value: `0`  
 0 = Use global cookie storage   
@@ -195,10 +203,10 @@ Type: `bool`, Default Value: `false`
 Disables the browser built-in spell checker.  
 ### DisableWebSecurity
 Type: `bool`, Default Value: `false`  
-Disables same-origin policy enforcement.  
+[Obsolete] Disables same-origin policy enforcement.  
 ### DisableXSSAuditor
 Type: `bool`, Default Value: `false`  
-Disables same-origin policy enforcement.  
+[Obsolete] Disables same-origin policy enforcement.  
 ### EngineId
 Type: `string`, Default Value: `Empty String`  
 If empty (default), the GUID of the connection is the engine id. Custom engine identifiers can be used to share the cache and session across multiple connections.  

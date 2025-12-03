@@ -114,6 +114,11 @@ The maximum allowed download speed, in kilobytes per second. For unlimited speed
 ### MaxUploadSpeed
 Type: `int`, Default Value: `0`  
 The maximum allowed upload speed, in kilobytes per second. For unlimited speed, set this to zero.  
+### MissingCreateTimeWorkaround
+Type: `int`, Default Value: `2`  
+0 = Disabled   
+ 1 = Enabled   
+ 2 = Auto-Detect   
 ### RestoreCreationTime
 Type: `bool`, Default Value: `false`  
 Specifies whether or not to restore the creation timestamp after a file transfer.  

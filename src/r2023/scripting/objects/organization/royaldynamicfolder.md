@@ -53,6 +53,26 @@ Whether or not the folder's contents is reloaded automatically when the document
 ### PersistContents
 Type: `bool`, Default Value: `false`  
 Whether or not the folder's contents are persisted to disk.  
+### DynamicCredentialScriptEnvironmentPrefix
+Type: `string`, Default Value: `DynCredential_`  
+The prefix used for the environment variables in the dynamic credential script to avoid conflicts with existing variables.  
+### DynamicCredentialScriptTokenMode
+Type: `int`, Default Value: `0`  
+0 = Replace Inline   
+ 1 = Environment Variables  
+### DynamicCredentialScriptTokens
+Type: `string[]`, Default Value: `new string[] { }`  
+List of tokens to expose to the dynamic credential script.  
+### DynamicFolderScriptEnvironmentPrefix
+Type: `string`, Default Value: `DynFolder_`  
+The prefix used for the environment variables in the dynamic folder script to avoid conflicts with existing variables.  
+### DynamicFolderScriptTokenMode
+Type: `int`, Default Value: `0`  
+0 = Replace Inline   
+ 1 = Environment Variables  
+### DynamicFolderScriptTokens
+Type: `string[]`, Default Value: `new string[] { }`  
+List of tokens to expose to the dynamic folder script.  
 ## Credentials
 ### CredentialAutologon
 Type: `bool`, Default Value: `true`  

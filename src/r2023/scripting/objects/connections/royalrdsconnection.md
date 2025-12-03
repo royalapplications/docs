@@ -177,7 +177,7 @@ Assign a username to the object.
 ## Display Options
 ### AutomaticallyCalculateScaleFactor
 Type: `bool`, Default Value: `true`  
-If set to true, automatically calculates the remote screen's scale factor based on the local display. Applies only to Royal TSX on macOS.  
+If set to true, automatically calculates the remote screen's scale factor based on the local display.  
 ### ColorDepth
 Type: `int`, Default Value: `32`  
 8 = 8bpp (256 colors)   
