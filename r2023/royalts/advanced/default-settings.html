@@ -272,12 +272,6 @@ An equivalent boolean property has been created in the <strong><a class="xref" h
 <pre><code class="lang-batchfile">PolicyDoNotAllowRevealPasswords
 </code></pre>
 <p>Set the value to <strong>true</strong> to enable this policy.</p>
-<h3 id="logging">Logging</h3>
-<p>In previous versions (V5 and earlier) all logging related policies were set in the following registry keys:</p>
-<pre><code class="lang-batchfile">HKEY_LOCAL_MACHINE\SOFTWARE\Policies\code4ward\RoyalTS\Logging\
-HKEY_CURRENT_USER\SOFTWARE\Policies\code4ward\RoyalTS\Logging\
-</code></pre>
-<p>Should you have used the ADMX file to control logging parameters, simply set the appropriate <strong>RoyalApplicationSettings</strong> properties of the <strong><a class="xref" href="../../scripting/objects/options/royalapplicationsetting.html#logging">Logging</a></strong> category.</p>
 <h3 id="examples">Examples</h3>
 <p>Example showing policy entries in the <a href="#json-file-configuration-path">default.settings.json</a> file:</p>
 <pre><code class="lang-javascript">&quot;RoyalApplicationSetting&quot; : {
@@ -294,11 +288,49 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\code4ward\RoyalTS\Logging\
 &quot;PolicyDoNotAllowDocumentsWithoutPassword&quot;=&quot;true&quot;
 &quot;PolicyDoNotAllowWeakDocumentPasswords&quot;=&quot;true&quot;
 </code></pre>
-<p>Example showing policy entries using <a href="#registry-current-user">environment variables</a> file:</p>
+<p>Example showing policy entries using <a href="#environment-variables">environment variables</a> file:</p>
 <pre><code class="lang-batchfile">RTSDefault_RoyalApplicationSetting__PolicyDoNotAllowApplicationDocumentsWithoutPassword = True
 RTSDefault_RoyalApplicationSetting__PolicyDoNotAllowCreateCredentialObjectsInDocumentsWithoutPassword = True
 RTSDefault_RoyalApplicationSetting__PolicyDoNotAllowDocumentsWithoutPassword = True
 RTSDefault_RoyalSSHConnection__PolicyDoNotAllowWeakDocumentPasswords = True
+</code></pre>
+<h3 id="logging">Logging</h3>
+<p>To configure logging using the <a href="#environment-variables">environment variables</a>, take a look the following example:</p>
+<pre><code class="lang-batchfile">REM Trace (Verbose), Debug, Information, Warning, Error
+SET RTS_RoyalTS__Logging__LogLevel=Warning
+
+SET RTS_RoyalTS__Logging__EventLog__Enabled=False
+
+SET RTS_RoyalTS__Logging__File__Enabled=True
+SET RTS_RoyalTS__Logging__File__FilePath=c:\logs
+SET RTS_RoyalTS__Logging__File__FileMaxSizeInMegaBytes=100
+SET RTS_RoyalTS__Logging__File__FileMaxCount=45
+
+SET RTS_RoyalTS__Logging__Internal__Enabled=False
+</code></pre>
+<p>To configure logging using the <a href="#registry-current-user">registry</a>, follow this example:</p>
+<pre><code class="lang-batchfile">Windows Registry Editor Version 5.00
+
+; Use HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER (lower priority)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\RoyalApps]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\RoyalApps\RoyalTS]
+
+; Trace (Verbose), Debug, Information, Warning, Error
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\RoyalApps\RoyalTS\Logging]
+&quot;LogLevel&quot;=&quot;Warning&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\RoyalApps\RoyalTS\Logging\EventLog]
+&quot;Enabled&quot;=&quot;False&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\RoyalApps\RoyalTS\Logging\File]
+&quot;Enabled&quot;=&quot;True&quot;
+&quot;FilePath&quot;=&quot;c:\\logs&quot;
+&quot;FileMaxSizeInMegaBytes&quot;=dword:00000064
+&quot;FileMaxCount&quot;=dword:0000002d
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\RoyalApps\RoyalTS\Logging\Internal]
+&quot;Enabled&quot;=&quot;False&quot;
 </code></pre>
 
 </article>
