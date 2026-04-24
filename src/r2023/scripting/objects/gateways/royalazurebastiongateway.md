@@ -40,6 +40,9 @@ The unique object identifier (GUID) of the object.
 Type: `string`, Default Value: `Empty String`  
 The external unique object identifier (GUID) of the object.  
 ## Advanced
+### AdditionalLoginArgs
+Type: `string`, Default Value: `Empty String`  
+Additional arguments to be passed on to the az login command.  
 ### AdditionalTunnelArgs
 Type: `string`, Default Value: `Empty String`  
 Additional arguments to be passed on to the az CLI when the tunnel is created.  

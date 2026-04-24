@@ -50,6 +50,11 @@ Specify the delay in milliseconds before the auto fill is executed.
 Type: `bool`, Default Value: `false`  
 If set to true, auto fill is executed for each request until it was successful.  
 ## Multi Factor Authentication
+### CredentialTotpUsage
+Type: `int`, Default Value: `1`  
+0 = Disabled   
+ 1 = Remote Desktop   
+ 100 = All Connections  
 ### MfaConfiguration
 Type: `int`, Default Value: `0`  
 0 = Disabled   
