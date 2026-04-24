@@ -70,6 +70,13 @@ Enter the web page URL for this connection. [Replacement tokens](xref:royalts_ad
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
+
+### Connection Dashboard Settings
+
+#### Show Web Page in Dashboard
+
+If checked, Royal TS loads the configured web connection in the Dashboard. This is useful for quickly checking status pages without opening the full connection.
+
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageAdvanced_32.svg#img_header) Advanced

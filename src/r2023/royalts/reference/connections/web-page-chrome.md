@@ -72,6 +72,13 @@ Enter the web page URL for this connection. [Replacement tokens](xref:royalts_ad
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
+
+### Connection Dashboard Settings
+
+#### Show Web Page in Dashboard
+
+If checked, Royal TS loads the configured web connection in the Dashboard. This is useful for quickly checking status pages without opening the full connection.
+
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
@@ -84,6 +91,10 @@ The **Advanced** page allows you to configure advanced Web Page settings.
 #### Show Toolbar
 
 If enabled, a browser toolbar with basic commands and access to the URL is shown.
+
+#### Show Status Bar
+
+If enabled, a browser status bar is shown.
 
 #### Ignore Certificate Errors
 
@@ -112,6 +123,27 @@ If enabled, you can specify a custom width or height for the web browser. This c
 #### Zoom Factor
 
 Set the initial zoom factor for the web page.
+
+### Certificate
+
+#### Client Certificate
+
+Configure how Royal TS behaves when a web site requests a client certificate.
+
+- **Continue without certificate**  
+  Continue loading the page without selecting a client certificate.
+- **Prompt for certificate**  
+  Prompt for a certificate when the web site requests one.
+- **Continue with certificate**  
+  Continue with the configured certificate.
+
+#### Select Certificate
+
+Select the certificate to use when **Continue with certificate** is configured.
+
+#### Thumbprint
+
+Shows the thumbprint of the selected client certificate.
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header) Engine
 
@@ -159,10 +191,14 @@ The following proxy modes are available:
 
 - Do not use a proxy server
 - HTTP
-- Socks4
-- Socks4A
-- Socks5
+- SOCKS 4
+- SOCKS 4A
+- SOCKS 5
 - Use Secure Gateway as proxy server
+
+#### Direct Mode
+
+If checked, direct mode is used for the proxy configuration when supported.
 
 > [!Note]
 > When you select Use Secure Gateway as proxy server you also need to configure the Secure Gateway settings of the web page connection.

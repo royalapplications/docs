@@ -143,6 +143,15 @@ The **Security** page allows you to adjust security settings and allowed algorit
 
 ### General
 
+#### Authentication Agent
+
+Select the SSH authentication agent to use:
+
+- None
+- OpenSSH Agent
+- Pageant
+- Legacy Pageant
+
 #### Ignore Certificate and Fingerprint Warnings
 
 If checked, Royal TS will not show warning messages when fingerprint does not match or when invalid certificates are used.
@@ -153,6 +162,10 @@ If checked, keyboard-interactive authentication is preferred over password authe
 
 > [!Note]
 > You may need to enable this option when your servers requires multi-factor authentication (MFA).
+
+#### Use Strict Key Exchange
+
+Gets or sets a value indicating whether to enable strict key exchange extension (compatible with OpenSSH 9.6).
 
 [!include[rebexciphers.md](~/royalts/_shared/rebexciphers.md)]
 

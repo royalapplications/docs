@@ -48,6 +48,23 @@ The dashboard data can also be gathered using a Royal Server. For more informati
 To configure the application default settings for the included dashboard, open the [Plugins Management](xref:royalts_intro_plugins) and click on Dashboard for the Remote Desktop plugin.  
 To configure individual dashboard settings for a connection, use the [Dashboard](#dashboard) property page.
 
+## Plugin Settings
+
+To configure the Remote Desktop (FreeRDP) plugin settings, open the [Plugins Management](xref:royalts_intro_plugins) and click on **Settings** for the Remote Desktop (FreeRDP) plugin:
+
+#### Executable
+
+Specify the FreeRDP executable used by the plugin.
+
+#### Close tab on log off, reboot or disconnect
+
+If checked, Royal TS will close the tab when a log off, reboot or disconnect is initiated from within the remote session.  
+This setting is only effective when **Keep tabs open when remotely disconnected** in the [User Interface](xref:royalts_reference_options#-user-interface) option is enabled.
+
+#### Set Domain to '.' for Local Accounts
+
+If checked, a dot ('.') will be used as domain for local account user names if no domain is specified.
+
 ## Connection Properties
 
 The Remote Desktop Properties dialog is shown:
@@ -85,6 +102,15 @@ The color depth (in bits per pixel) for the control's connection.
 #### Desktop Size
 
 Select one of the predefined desktop sizes or specify your own desktop width and height.
+
+#### Scale Factor
+
+Select the initial remote desktop scale factor. Older clients or servers may not support desktop scaling.
+
+- **Automatic**  
+  Automatically set scale factor.
+- **Custom percentage**  
+  Manually set scale factor.
 
 #### Resize Mode
 
@@ -157,12 +183,12 @@ Bitmap caching can improve performance but requires additional memory and disk r
 
 When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.
 
-#### Load Balance Info
+#### Additional Arguments
 
-Specifies the load balancing cookie that will be placed in the X.224 Connection Request packet.
+Specify additional FreeRDP command line arguments.
 
 > [!Tip]
-> This field is often used for Azure based connections. After importing .rdp files created by the Azure portal, you may find specific load balancing cookies in your configuration.
+> Use this setting only for arguments that are not exposed by the regular property pages.
 
 ## ![](/r2023/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
 
@@ -214,6 +240,30 @@ Specify the Logon Method for the gateway server.
 > Each user can define a credential with the same name in his own personal and protected document.
 > This makes sharing files across team members very easy while keeping credentials safe.
 > See Work with [Personal Credentials in a Shared Document](xref:royalts_tutorials_credentials#working-with-personal-credentials-and-a-shared-document) for more information.
+
+## ![](/r2023/images/RoyalTS/Application/SVG_PageProxy_32.svg#img_header) Proxy Settings
+
+The **Proxy Settings** page allows you to configure a proxy server used for the Remote Desktop connection.
+
+#### Proxy Mode
+
+The following proxy modes are available:
+
+- Do not use a proxy server
+- SOCKS 5
+- HTTP
+
+#### Proxy Server
+
+Specify the proxy server name (FQDN) or IP address to use.
+
+#### Port
+
+Specify the proxy server port to use.
+
+### Credential Mode
+
+[!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageHyperV_32.svg#img_header) Hyper-V
 
@@ -300,27 +350,9 @@ Select the audio redirection mode.
 - **Do not play**  
   Audio is disabled on the remote computer.
 
-#### Record Audio from this Computer
-
-pecifies whether the default audio input device is redirected from the client to the remote session.
-
-> [!Note]
-> Record Audio from this computer requires Windows 7/Windows 2008R2 or later.
-
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageInput_32.svg#img_header) Input
 
-The **Input** page allows you to configure keyboard behavior and keyboard layout in the remote session.
-
-#### Accelerator Passthrough
-
-If checked, keyboard accelerators will be passed to the remote session.
-
-#### Windows Keys Passthrough
-
-If checked, Microsoft Windows key combinations (like Alt-Tab) will be passed to the remote session.
-
-> [!Note]
-> If this option is enabled, windows key combinations will have no effect locally when a remote session is active and has the input focus. You can use certain keyboard shortcuts (for example Ctrl + Shift + N to focus the Navigation panel) to move the input focus back to Royal TS and allow local windows key combinations.
+The **Input** page allows you to configure the keyboard layout in the remote session.
 
 #### Keyboard Layout
 

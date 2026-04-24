@@ -389,7 +389,7 @@ TCP keepalives may be more useful for ensuring that half-open connections are te
 
 Configure how PuTTY should handle line drawing.
 
-#### Treal CJIK Ambiguous Characters as Wide
+#### Treat CJK Ambiguous Characters as Wide
 
 If checked, PUTTY will treat CJIK ambiguous characters as wide.
 

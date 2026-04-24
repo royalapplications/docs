@@ -79,6 +79,14 @@ If checked, tasks executed from the Favorite Key Sequence Tasks menu do not show
 
 The **Key Sequence** page allows you to configure a key sequence (simulating keyboard input).
 
+#### Use Direct Mode when supported
+
+If checked, Royal TS executes the key sequence in direct mode when the target connection type supports it.
+
+#### Create a Key Sequence Task
+
+If checked while sending an ad hoc key sequence, Royal TS creates a reusable Key Sequence Task from the configured sequence.
+
 #### Sequence
 
 Enter a Key Sequence.

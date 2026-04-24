@@ -83,7 +83,7 @@ Select which property should be used to add the MFA code (_Effective Username_ o
 
 Use the **{Value}** token to insert the property value (_username_ or _password_). Use the **{MfaCode}** token to insert the _MFA code_.
 
-### Remote Desktop Credential Usage
+### TOTP Configuration
 
 The following settings allow you to generate TOTP-based MFA codes on demand in the user interface. By using the **$MfaCode$** replacement token, you can use the current MFA code everywhere where replacement tokens are supported (Web Page, External Application, Key Sequence Tasks, etc.).
 
@@ -101,7 +101,7 @@ The issuer for the generated TOTP code.
 
 #### Algorithm
 
-Select which algorithm should be used to to generate the TOTP code.
+Select which algorithm should be used to generate the TOTP code.
 
 #### Code Length
 

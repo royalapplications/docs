@@ -48,6 +48,11 @@ The **Windows Events** page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[computername.md](~/royalts/_shared/computername.md)]
+
+#### Use CIM
+
+If checked, Royal TS uses CIM to access the computer.
+
 [!include[description.md](~/royalts/_shared/description.md)]
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/WindowsEvents/SVG_PageDisplayOptions_32.svg#img_header) Display Options
@@ -111,6 +116,17 @@ On the advanced tab, you can specify your own WQL-Where-Clause. The toolbar feat
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
+
+### Connection Dashboard Settings
+
+#### Automatically show data
+
+If checked, Royal TS automatically loads the Windows Events data when the connection is selected in the Dashboard.
+
+#### Show Details Panel in Dashboard
+
+If checked, the details panel is shown in the Dashboard.
+
 [!include[royalserver.md](~/royalts/_shared/royalserver.md)]
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]

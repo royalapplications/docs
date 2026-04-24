@@ -42,12 +42,17 @@ The Windows Processes Properties dialog is shown:
 - for an existing Windows Processes connection by selecting a Windows Processes connection and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Windows Processes connections were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also:[Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PluginIcon_32.svg#img_header) Windows Events Properties
+## ![](/r2023/images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PluginIcon_32.svg#img_header) Windows Processes Properties
 
 The **Windows Processes** page allows you to configure basic connection settings.
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[computername.md](~/royalts/_shared/computername.md)]
+
+#### Use CIM
+
+If checked, Royal TS uses CIM to access the computer.
+
 [!include[description.md](~/royalts/_shared/description.md)]
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/WindowsProcesses/SVG_PageDisplayOptions_32.svg#img_header) Display Options
@@ -78,6 +83,13 @@ If checked, the process owner will be shown in the grid. Enabling this setting m
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
+
+### Connection Dashboard Settings
+
+#### Automatically show data
+
+If checked, Royal TS automatically loads the Windows Processes data when the connection is selected in the Dashboard.
+
 [!include[royalserver.md](~/royalts/_shared/royalserver.md)]
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]

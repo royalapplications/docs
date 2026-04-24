@@ -56,6 +56,10 @@ To configure the Remote Desktop plugin settings, open the [Plugins Management](x
 
 Specify which RDP client version should be used. If **Automatic** (Default) is selected, the latest version available will be used.
 
+#### Use Microsoft Remote Desktop Client
+
+If checked, Royal TS will try to use the modern Microsoft Remote Desktop client from the Microsoft Store. Ensure the client is installed before enabling this setting. A restart is required.
+
 ### Disconnect and Reconnect
 
 #### Fast Smart Reconnect
@@ -78,6 +82,10 @@ If checked, the automatic reconnect feature will be enabled when the disconnecte
 #### Always Reconnect
 
 If checked, the automatic reconnect feature will always be enabled when the disconnected tab is shown, including events like signing out the remote session or rebooting the remote computer.
+
+#### Show Overview Thumbnails
+
+If checked, thumbnails are shown in the Overview tab.
 
 ### Advanced
 
@@ -249,6 +257,14 @@ When Session Takeover Warning is enabled, the client first checks for terminal s
 #### Use Redirection Server Name
 
 Gets and sets whether to use the redirection server name.
+
+#### Disable UDP Transport
+
+If checked, the RDP client will not use UDP transport for the connection.
+
+#### Keep Alive
+
+If checked, Royal TS enables RDP keep-alive behavior for the connection.
 
 #### Automatic Reconnect
 
@@ -460,7 +476,7 @@ Select the audio redirection mode.
 
 #### Record Audio from this Computer
 
-pecifies whether the default audio input device is redirected from the client to the remote session.
+Specifies whether the default audio input device is redirected from the client to the remote session.
 
 > [!Note]
 > Record Audio from this computer requires Windows 7/Windows 2008R2 or later.

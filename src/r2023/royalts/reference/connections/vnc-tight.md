@@ -117,6 +117,10 @@ The remote session is a view only session and doesn't accept any mouse or keyboa
 
 If checked, mouse button 2 and 3 are swapped in the remote session.
 
+#### Emulate Three Mouse Buttons
+
+If checked, the VNC viewer emulates a middle mouse button for servers or input devices that require three-button mouse behavior.
+
 #### Mouse Cursor
 
 Configure how the mouse cursor is handled for the VNC connection.

@@ -36,7 +36,7 @@ Specify the TCP port of the Secure Gateway (default port is 22).
 
 #### Test
 
-Click to test the Secure Gateway connectivity..
+Click to test the Secure Gateway connectivity.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
