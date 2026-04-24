@@ -355,6 +355,9 @@ The external connection window will use the sized configured in the connection. 
 <p>If selected, Royal TS will use the plugin default settings for the dashboard. You can change the plugin default settings by clicking on the <strong>Settings...</strong> button. Changes to the plugin default settings will affect all connections using the same plugin and the default settings. See also: Plugins</p>
 <h4 id="use-connection-specific-settings">Use connection specific settings</h4>
 <p>If selected, Royal TS allows you to configure the dashboard settings for the connection.</p>
+<h3 id="connection-dashboard-settings">Connection Dashboard Settings</h3>
+<h4 id="show-web-page-in-dashboard">Show Web Page in Dashboard</h4>
+<p>If checked, Royal TS loads the configured web connection in the Dashboard. This is useful for quickly checking status pages without opening the full connection.</p>
 <h2 id="-secure-gateway"><img src="/r2023/images/RoyalTS/Application/SVG_PageSecureGateway_32.svg#img_header" alt=""> Secure Gateway</h2>
 <p>The <strong>Secure Gateway</strong> page allows you to configure a Secure Gateway object for supported connections or choose to use a Secure Gateway configuration from the parent folder.</p>
 <p>The following object types can be assigned:</p>
@@ -405,6 +408,8 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <h3 id="general">General</h3>
 <h4 id="show-toolbar">Show Toolbar</h4>
 <p>If enabled, a browser toolbar with basic commands and access to the URL is shown.</p>
+<h4 id="show-status-bar">Show Status Bar</h4>
+<p>If enabled, a browser status bar is shown.</p>
 <h4 id="ignore-certificate-errors">Ignore Certificate Errors</h4>
 <p>If enabled, the certificate errors are suppressed.</p>
 <h4 id="open-links-in-default-browser">Open Links in Default Browser</h4>
@@ -419,6 +424,21 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <p>If enabled, you can specify a custom width or height for the web browser. This can be useful to test a web page at different screen resolutions.</p>
 <h4 id="zoom-factor">Zoom Factor</h4>
 <p>Set the initial zoom factor for the web page.</p>
+<h3 id="certificate">Certificate</h3>
+<h4 id="client-certificate">Client Certificate</h4>
+<p>Configure how Royal TS behaves when a web site requests a client certificate.</p>
+<ul>
+<li><strong>Continue without certificate</strong><br>
+Continue loading the page without selecting a client certificate.</li>
+<li><strong>Prompt for certificate</strong><br>
+Prompt for a certificate when the web site requests one.</li>
+<li><strong>Continue with certificate</strong><br>
+Continue with the configured certificate.</li>
+</ul>
+<h4 id="select-certificate">Select Certificate</h4>
+<p>Select the certificate to use when <strong>Continue with certificate</strong> is configured.</p>
+<h4 id="thumbprint">Thumbprint</h4>
+<p>Shows the thumbprint of the selected client certificate.</p>
 <h2 id="-engine"><img src="/r2023/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header" alt=""> Engine</h2>
 <p>The <strong>Engine</strong> settings page allows you to create a dedicated Browser Engine for isolation. You can set various options like JavaScript, Proxy or security related options.</p>
 <h4 id="use-dedicated-engine">Use Dedicated Engine</h4>
@@ -444,11 +464,13 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <ul>
 <li>Do not use a proxy server</li>
 <li>HTTP</li>
-<li>Socks4</li>
-<li>Socks4A</li>
-<li>Socks5</li>
+<li>SOCKS 4</li>
+<li>SOCKS 4A</li>
+<li>SOCKS 5</li>
 <li>Use Secure Gateway as proxy server</li>
 </ul>
+<h4 id="direct-mode">Direct Mode</h4>
+<p>If checked, direct mode is used for the proxy configuration when supported.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>When you select Use Secure Gateway as proxy server you also need to configure the Secure Gateway settings of the web page connection.</p>
@@ -490,8 +512,6 @@ If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal
 <p>Disables the GPU when the browser renders a page.</p>
 <h4 id="disable-spell-checker">Disable Spell Checker</h4>
 <p>Disables the browser built-in spell checker.</p>
-<h4 id="disable-web-security">Disable Web Security</h4>
-<p>Disables same-origin policy enforcement.</p>
 <h4 id="cache-path">Cache Path</h4>
 <p>Specify a custom path to cache browser files and cookies.</p>
 <h4 id="custom-user-agent">Custom User Agent</h4>

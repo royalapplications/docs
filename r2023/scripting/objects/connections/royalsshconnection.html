@@ -920,6 +920,9 @@ If set to true, the user is always prompted to specify or confirm the output pat
 <h3 id="recordcreatesubdir">RecordCreateSubDir</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, a sub directory with the connection name is created for the recording.</p>
+<h3 id="recorderoutputfile">RecorderOutputFile</h3>
+<p>Type: <code>string</code>, Default Value: <code>$DateTime.yyyyMMddHHmmss$-$Name$</code><br>
+The file name for Rebex ANSI recording and log files.</p>
 <h3 id="recorderoutputpath">RecorderOutputPath</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 Specifies the output path for the recorder.</p>
@@ -1096,6 +1099,9 @@ If set to true, Pageant is used to authenticate.</p>
 <h3 id="sshattemptgssapiauthentication">SSHAttemptGSSAPIAuthentication</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, GSSAPI authentication (SSH-2) is attempted.</p>
+<h3 id="sshattemptgssapikeyexchange">SSHAttemptGSSAPIKeyExchange</h3>
+<p>Type: <code>bool</code>, Default Value: <code>true</code><br>
+If set to true, GSSAPI key exchange (SSH-2) is attempted.</p>
 <h3 id="sshattemptkeyboardinteractiveauthentication">SSHAttemptKeyboardInteractiveAuthentication</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, keyboard-interactive authentication (SSH-2) is attempted.</p>
@@ -1120,6 +1126,14 @@ If set to true, TIS or CryptoCard authentication (SSH-1) is attempted.</p>
 <h3 id="sshbugchokesonssh2winadjrequests">SSHBugChokesOnSSH2WinadjRequests</h3>
 <p>Type: <code>int</code>, Default Value: <code>0</code><br>
 0 = Auto<br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugdropstart">SSHBugDropStart</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+1 = Off<br>
+2 = On</p>
+<h3 id="sshbugfilterkexinit">SSHBugFilterKexinit</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
 1 = Off<br>
 2 = On</p>
 <h3 id="sshbughandlesssh2keyreexchangebadly">SSHBugHandlesSSH2KeyReExchangeBadly</h3>

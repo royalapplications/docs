@@ -129,6 +129,14 @@ The width of the browser control. If width = 0, it will occupy the whole width o
 <h3 id="clearcache">ClearCache</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the web browser cache (including cookies) is cleared when the connection is closed.</p>
+<h3 id="clientcertificatebehavior">ClientCertificateBehavior</h3>
+<p>Type: <code>int</code>, Default Value: <code>1</code><br>
+0 = Continue without certificate<br>
+1 = Prompt for certificate<br>
+2 = Continue with certificate</p>
+<h3 id="clientcertificatethumbprint">ClientCertificateThumbprint</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The thumb print of the certificate to use (must be installed in certificate store).</p>
 <h3 id="cookiestoragemode">CookieStorageMode</h3>
 <p>Type: <code>int</code>, Default Value: <code>0</code><br>
 0 = Use global cookie storage<br>
@@ -259,10 +267,10 @@ Disables the GPU when the browser renders a page.</p>
 Disables the browser built-in spell checker.</p>
 <h3 id="disablewebsecurity">DisableWebSecurity</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
-Disables same-origin policy enforcement.</p>
+[Obsolete] Disables same-origin policy enforcement.</p>
 <h3 id="disablexssauditor">DisableXSSAuditor</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
-Disables same-origin policy enforcement.</p>
+[Obsolete] Disables same-origin policy enforcement.</p>
 <h3 id="engineid">EngineId</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 If empty (default), the GUID of the connection is the engine id. Custom engine identifiers can be used to share the cache and session across multiple connections.</p>

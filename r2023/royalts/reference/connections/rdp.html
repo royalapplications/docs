@@ -109,6 +109,8 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <p>To configure the Remote Desktop plugin settings, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on <strong>Settings</strong> for the Remote Desktop plugin:</p>
 <h4 id="client-version">Client Version</h4>
 <p>Specify which RDP client version should be used. If <strong>Automatic</strong> (Default) is selected, the latest version available will be used.</p>
+<h4 id="use-microsoft-remote-desktop-client">Use Microsoft Remote Desktop Client</h4>
+<p>If checked, Royal TS will try to use the modern Microsoft Remote Desktop client from the Microsoft Store. Ensure the client is installed before enabling this setting. A restart is required.</p>
 <h3 id="disconnect-and-reconnect">Disconnect and Reconnect</h3>
 <h4 id="fast-smart-reconnect">Fast Smart Reconnect</h4>
 <p>If checked, Royal TS will use the faster reconnect method introduced in RDP 8 whenever possible. Disable this setting in case you experience issues with smart reconnect.</p>
@@ -121,6 +123,8 @@ This setting is only effective when <strong>Keep tabs open when disconnected rem
 <p>If checked, the automatic reconnect feature will be enabled when the disconnected tab is shown.</p>
 <h4 id="always-reconnect">Always Reconnect</h4>
 <p>If checked, the automatic reconnect feature will always be enabled when the disconnected tab is shown, including events like signing out the remote session or rebooting the remote computer.</p>
+<h4 id="show-overview-thumbnails">Show Overview Thumbnails</h4>
+<p>If checked, thumbnails are shown in the Overview tab.</p>
 <h3 id="advanced">Advanced</h3>
 <h4 id="set-domain-to--for-local-accounts">Set Domain to '.' for Local Accounts:</h4>
 <p>If checked, a dot ('.') will be used as domain for local account user names if no domain is specified.</p>
@@ -487,7 +491,7 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <p>Determines whether the client will use Microsoft Entra ID to authenticate to the remote PC. In Azure Virtual Desktop, this provides a single sign-on experience.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If the connection can not be establishes try changing the username syntax to &quot;.\AzureAD\user@org.com&quot;.</p>
+<p>If the connection can not be established, try changing the username syntax to &quot;.\AzureAD\user@org.com&quot;.</p>
 </div>
 <h3 id="connection">Connection</h3>
 <h4 id="compression">Compression</h4>
@@ -502,6 +506,10 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <p>When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.</p>
 <h4 id="use-redirection-server-name">Use Redirection Server Name</h4>
 <p>Gets and sets whether to use the redirection server name.</p>
+<h4 id="disable-udp-transport">Disable UDP Transport</h4>
+<p>If checked, the RDP client will not use UDP transport for the connection.</p>
+<h4 id="keep-alive">Keep Alive</h4>
+<p>If checked, Royal TS enables RDP keep-alive behavior for the connection.</p>
 <h4 id="automatic-reconnect">Automatic Reconnect</h4>
 <p>Specifies whether to enable the client to reconnect automatically to a session in the event of a network disconnection. If checked, enter the number of times to try to reconnect during automatic reconnection.</p>
 <h4 id="load-balance-info">Load Balance Info</h4>
@@ -656,7 +664,7 @@ All audio from the remote computer is played on the remote computer.</li>
 Audio is disabled on the remote computer.</li>
 </ul>
 <h4 id="record-audio-from-this-computer">Record Audio from this Computer</h4>
-<p>pecifies whether the default audio input device is redirected from the client to the remote session.</p>
+<p>Specifies whether the default audio input device is redirected from the client to the remote session.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Record Audio from this computer requires Windows 7/Windows 2008R2 or later.</p>

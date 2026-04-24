@@ -117,6 +117,26 @@ Whether or not the folder's contents is reloaded automatically when the document
 <h3 id="persistcontents">PersistContents</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 Whether or not the folder's contents are persisted to disk.</p>
+<h3 id="dynamiccredentialscriptenvironmentprefix">DynamicCredentialScriptEnvironmentPrefix</h3>
+<p>Type: <code>string</code>, Default Value: <code>DynCredential_</code><br>
+The prefix used for the environment variables in the dynamic credential script to avoid conflicts with existing variables.</p>
+<h3 id="dynamiccredentialscripttokenmode">DynamicCredentialScriptTokenMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Replace Inline<br>
+1 = Environment Variables</p>
+<h3 id="dynamiccredentialscripttokens">DynamicCredentialScriptTokens</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+List of tokens to expose to the dynamic credential script.</p>
+<h3 id="dynamicfolderscriptenvironmentprefix">DynamicFolderScriptEnvironmentPrefix</h3>
+<p>Type: <code>string</code>, Default Value: <code>DynFolder_</code><br>
+The prefix used for the environment variables in the dynamic folder script to avoid conflicts with existing variables.</p>
+<h3 id="dynamicfolderscripttokenmode">DynamicFolderScriptTokenMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+0 = Replace Inline<br>
+1 = Environment Variables</p>
+<h3 id="dynamicfolderscripttokens">DynamicFolderScriptTokens</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>new string[] { }</code><br>
+List of tokens to expose to the dynamic folder script.</p>
 <h2 id="credentials">Credentials</h2>
 <h3 id="credentialautologon">CredentialAutologon</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>

@@ -105,6 +105,15 @@ Royal TS creates a new <strong>Remote Desktop</strong> connection configured to 
 <h2 id="dashboard-settings">Dashboard Settings</h2>
 <p>To configure the application default settings for the included dashboard, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on Dashboard for the Remote Desktop plugin.<br>
 To configure individual dashboard settings for a connection, use the <a href="#dashboard">Dashboard</a> property page.</p>
+<h2 id="plugin-settings">Plugin Settings</h2>
+<p>To configure the Remote Desktop (FreeRDP) plugin settings, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on <strong>Settings</strong> for the Remote Desktop (FreeRDP) plugin:</p>
+<h4 id="executable">Executable</h4>
+<p>Specify the FreeRDP executable used by the plugin.</p>
+<h4 id="close-tab-on-log-off-reboot-or-disconnect">Close tab on log off, reboot or disconnect</h4>
+<p>If checked, Royal TS will close the tab when a log off, reboot or disconnect is initiated from within the remote session.<br>
+This setting is only effective when <strong>Keep tabs open when remotely disconnected</strong> in the <a class="xref" href="../options.html#-user-interface">User Interface</a> option is enabled.</p>
+<h4 id="set-domain-to--for-local-accounts">Set Domain to '.' for Local Accounts</h4>
+<p>If checked, a dot ('.') will be used as domain for local account user names if no domain is specified.</p>
 <h2 id="connection-properties">Connection Properties</h2>
 <p>The Remote Desktop Properties dialog is shown:</p>
 <ul>
@@ -145,6 +154,14 @@ See also: <a class="xref" href="../../tutorials/bulk-operations.html">Bulk Opera
 </div>
 <h4 id="desktop-size">Desktop Size</h4>
 <p>Select one of the predefined desktop sizes or specify your own desktop width and height.</p>
+<h4 id="scale-factor">Scale Factor</h4>
+<p>Select the initial remote desktop scale factor. Older clients or servers may not support desktop scaling.</p>
+<ul>
+<li><strong>Automatic</strong><br>
+Automatically set scale factor.</li>
+<li><strong>Custom percentage</strong><br>
+Manually set scale factor.</li>
+</ul>
 <h4 id="resize-mode">Resize Mode</h4>
 <p>Configure how Royal TS handles session window resize events.</p>
 <ul>
@@ -443,11 +460,11 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <p>Bitmap caching can improve performance but requires additional memory and disk resources.</p>
 <h4 id="session-takeover-warning">Session Takeover Warning</h4>
 <p>When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.</p>
-<h4 id="load-balance-info">Load Balance Info</h4>
-<p>Specifies the load balancing cookie that will be placed in the X.224 Connection Request packet.</p>
+<h4 id="additional-arguments">Additional Arguments</h4>
+<p>Specify additional FreeRDP command line arguments.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>This field is often used for Azure based connections. After importing .rdp files created by the Azure portal, you may find specific load balancing cookies in your configuration.</p>
+<p>Use this setting only for arguments that are not exposed by the regular property pages.</p>
 </div>
 <h2 id="-remote-desktop-gateway"><img src="/r2023/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header" alt=""> Remote Desktop Gateway</h2>
 <p>The <strong>Remote Desktop Gateway</strong> page allows you to setup your connection to use a Remote Desktop Gateway.</p>
@@ -495,6 +512,45 @@ Each user can define a credential with the same name in his own personal and pro
 This makes sharing files across team members very easy while keeping credentials safe.
 See Work with <a class="xref" href="../../tutorials/working-with-credentials.html#working-with-personal-credentials-and-a-shared-document">Personal Credentials in a Shared Document</a> for more information.</p>
 </div>
+<h2 id="-proxy-settings"><img src="/r2023/images/RoyalTS/Application/SVG_PageProxy_32.svg#img_header" alt=""> Proxy Settings</h2>
+<p>The <strong>Proxy Settings</strong> page allows you to configure a proxy server used for the Remote Desktop connection.</p>
+<h4 id="proxy-mode">Proxy Mode</h4>
+<p>The following proxy modes are available:</p>
+<ul>
+<li>Do not use a proxy server</li>
+<li>SOCKS 5</li>
+<li>HTTP</li>
+</ul>
+<h4 id="proxy-server">Proxy Server</h4>
+<p>Specify the proxy server name (FQDN) or IP address to use.</p>
+<h4 id="port-1">Port</h4>
+<p>Specify the proxy server port to use.</p>
+<h3 id="credential-mode">Credential Mode</h3>
+<h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
+<p>When selected, no credentials are configured for the object. Connections that require credentials may prompt to enter credentials or fail to connect.</p>
+<h4 id="use-credentials-from-the-parent-folder-not-always-available">Use credentials from the parent folder <em>(not always available)</em></h4>
+<p>When selected, Royal TS will look for a configured credential in the parent folder.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Not available for Royal Server objects, Secure Gateway objects, Remote Desktop Gateway objects and Key Sequence Tasks</p>
+</div>
+<h4 id="use-from-this-connection-not-always-available">Use from this connection <em>(not always available)</em></h4>
+<p>When selected, the username and password is used from the context connection object.</p>
+<h4 id="specify-username-and-password">Specify username and password</h4>
+<p>When selected, a username and password can be provided. For domain accounts use the syntax &quot;domain\username&quot; (without the quotes).</p>
+<h4 id="use-an-existing-credential">Use an existing credential</h4>
+<p>When selected, assign an existing credential to the object using the drop-down list. Use the add button to add a new credential. Use the edit button to edit the selected credential.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The drop-down list supports sorting and filtering &quot;as you type&quot; to easily find the correct credential.</p>
+</div>
+<h4 id="specify-a-credential-name">Specify a credential name</h4>
+<p>When selected, enter or choose a credential name you want to assign to the object during connect-time.<br>
+If you enter '<strong>?</strong>' (without the quotes) as credential name, Royal TS will prompt for credentials by showing the credential picker dialog.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Assigning a credential by name is recommended when a team of users share the same configuration file. Each user can define his own credential as long as it is using the same name and saves the credential in his own personal and protected document. This makes sharing files across team members very easy while keeping credentials safe.</p>
+</div>
 <h2 id="-hyper-v"><img src="/r2023/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageHyperV_32.svg#img_header" alt=""> Hyper-V</h2>
 <p>The <strong>Hyper-V</strong> page allows you to setup your connection as a Hyper-V host to display the Hyper-V management in the Dashboard and optionally allows you to configure a target instance you want to connect to by default.</p>
 <h4 id="hyper-v-mode">Hyper-V Mode</h4>
@@ -513,7 +569,7 @@ The Sessions dashboard pane and the Hyper-V dashboard pane is shown in the Dashb
 <li><strong>This is a Hyper-V host, connect to a specific instance</strong><br>
 The Hyper-V dashboard pane is shown in the Dashboard panel for the configured instance.</li>
 </ul>
-<h4 id="port-1">Port</h4>
+<h4 id="port-2">Port</h4>
 <p>The Hyper-V proxy port. By default, Hyper-V hosts listen to port 2179.</p>
 <h4 id="instance">Instance</h4>
 <p>Enter an instance ID (GUID) or click on the browse button (...) on the right to show the Hyper-V instance picker.</p>
@@ -553,22 +609,8 @@ All audio from the remote computer is played on the remote computer.</li>
 <li><strong>Do not play</strong><br>
 Audio is disabled on the remote computer.</li>
 </ul>
-<h4 id="record-audio-from-this-computer">Record Audio from this Computer</h4>
-<p>pecifies whether the default audio input device is redirected from the client to the remote session.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Record Audio from this computer requires Windows 7/Windows 2008R2 or later.</p>
-</div>
 <h2 id="-input"><img src="/r2023/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageInput_32.svg#img_header" alt=""> Input</h2>
-<p>The <strong>Input</strong> page allows you to configure keyboard behavior and keyboard layout in the remote session.</p>
-<h4 id="accelerator-passthrough">Accelerator Passthrough</h4>
-<p>If checked, keyboard accelerators will be passed to the remote session.</p>
-<h4 id="windows-keys-passthrough">Windows Keys Passthrough</h4>
-<p>If checked, Microsoft Windows key combinations (like Alt-Tab) will be passed to the remote session.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>If this option is enabled, windows key combinations will have no effect locally when a remote session is active and has the input focus. You can use certain keyboard shortcuts (for example Ctrl + Shift + N to focus the Navigation panel) to move the input focus back to Royal TS and allow local windows key combinations.</p>
-</div>
+<p>The <strong>Input</strong> page allows you to configure the keyboard layout in the remote session.</p>
 <h4 id="keyboard-layout">Keyboard Layout</h4>
 <p>Specify a predefined or custom keyboard layout in your remote session.</p>
 <div class="NOTE">
