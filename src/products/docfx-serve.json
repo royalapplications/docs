@@ -1,0 +1,10 @@
+{
+  "build": {
+    "dest": "../../.output/gh-pages",
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": true
+  }
+}

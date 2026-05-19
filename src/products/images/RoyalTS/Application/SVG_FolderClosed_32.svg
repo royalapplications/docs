@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+  <style type="text / css">
+    .Red{fill:#CD4C32;}
+    .Green{fill:#4EA17E;}
+    .Blue{fill:#3E79B4;}
+    .Yellow{fill:#EAB765;}
+    .Black{fill:#797979;}
+    .Gray{fill:#B4B4B5;}
+    .White{fill:#FFFFFF;}
+  </style>
+  <g id="icon">
+    <path fill="#EAB765" class="Yellow" d="M2,11h27.9936c0,0,0.0064,13.4974,0.0064,16.9655c0,0.5311,-0.5462,1.0345,-1.0262,1.0345c-0.6401,0,-25.1781,0,-25.9115,0C2.5068,29,2,28.4967,2,27.8957C2,26.997,2,11,2,11z" fill-rule="evenodd" />
+    <path fill="#797979" class="Black" d="M30,10H2V5.2c0,-0.6627,0.5373,-1.2,1.2,-1.2h8.9716c0.5304,0,1.0391,0.2107,1.4142,0.5858l1.8284,1.8284C15.7893,6.7893,16.298,7,16.8284,7H28.8c0.6627,0,1.2,0.5373,1.2,1.2V10z" fill-rule="evenodd" />
+  </g>
+</svg>

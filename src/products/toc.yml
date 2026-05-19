@@ -1,0 +1,8 @@
+- name: Getting Started
+  href: index.md
+- name: Royal TS
+  href: royalts/
+- name: Royal Server
+  href: royalserver/
+- name: Scripting
+  href: scripting/
