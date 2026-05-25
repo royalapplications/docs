@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" >
+  <style type="text / css">
+    .Red{fill:#CD4C32;}
+    .Green{fill:#4EA17E;}
+    .Blue{fill:#3E79B4;}
+    .Yellow{fill:#EAB765;}
+    .Black{fill:#797979;}
+    .Gray{fill:#B4B4B5;}
+    .White{fill:#FFFFFF;}
+  </style>
+    <g id="icon">
+        <g transform="matrix(0.8,0,0,0.8,0,0)">
+            <rect fill="#FFFFFF" class="White" x="2.5" y="3.5" width="35" height="33" />
+            <path fill="#3E79B4" class="Blue" d="M37,4L37,36L3,36L3,4L37,4M38,3L2,3L2,37L38,37L38,3Z" />
+        </g>
+        <g transform="matrix(0.8,0,0,0.8,0,0)">
+            <rect fill="#3E79B4" class="Blue" x="2" y="3" width="36" height="6" />
+        </g>
+        <g transform="matrix(0.8,0,0,0.8,0,0)">
+            <rect fill="#4EA17E" class="Green" x="19" y="27" width="11" height="1" />
+        </g>
+        <g transform="matrix(0.8,0,0,0.8,0,0)">
+            <path fill="#4EA17E" class="Green" d="M17.008,22L11.061,27.222L10.401,26.47L15.492,22L10.401,17.53L11.061,16.778C13.043,18.519 15.026,20.259 17.008,22Z" />
+        </g>
+    </g>
+</svg>

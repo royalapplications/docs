@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Application Settings </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Application Settings ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="ra-royalserver">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="application-settings">Application Settings</h1>
+
+<p>As of Royal Server V4 advanced settings can be configured in <code>%ProgramData%\RoyalServer\appsettings.json</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Whenever you make changes in the places mentioned below, it's best to stop Royal Server and start it again.</p>
+</div>
+<h2 id="supported-settings">Supported Settings</h2>
+<p><strong>Royal Server Database</strong>
+For more complex settings like the Document Access Rules or Multi-Factor configurations, Royal Server is using a database. This can be configured within the Node <strong>Database</strong> with the following settins:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ConnectionType</td>
+<td>0=Direct, 1=Shared</td>
+</tr>
+<tr>
+<td>ReloadDatabaseOnChange</td>
+<td>DB Changes are reloaded periodically</td>
+</tr>
+<tr>
+<td>ReloadDatabaseOnChangeDelay</td>
+<td>Timespan, e.g. &quot;00:00:05&quot; i.e 5 seconds.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p><strong>Custom Headers</strong>
+Some environments with tight security require additional HTTP Header to be sent back by Royal Server.
+You can specify these within the node <strong>CustomHeaders</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Disabled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cache-Control</td>
+<td>private,max-age=31536000</td>
+<td>false</td>
+</tr>
+<tr>
+<td>Set-Cookie</td>
+<td>Secure;HttpOnly</td>
+<td>false</td>
+</tr>
+<tr>
+<td>X-Frame-Options</td>
+<td>SAMEORIGIN</td>
+<td>false</td>
+</tr>
+<tr>
+<td>X-Content-Type-Options</td>
+<td>nosniff</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Remark: The previous settings are possible Header values, adjust to your liking.</p>
+<br>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Value(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UserCachingInSeconds (Royal Server v3 only)</td>
+<td>Time in seconds for which group memberships for users cached in Royal Server v3.</td>
+<td>Default is 300 (5 Minutes)</td>
+</tr>
+<tr>
+<td>RefreshUserGroupsCronInterval (Royal Server v4)</td>
+<td>Cron expression for the time the group memberships for users are cached in Royal Server v4.</td>
+<td>Default is &quot;_/5 _ * * *&quot; (5 Minutes)</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedEncryptionAlgorithms</td>
+<td>Specifies a list of allowed encryption algorithms IDs and their order.</td>
+<td>&quot;aes256-gcm@openssh.com&quot;, &quot;aes128-gcm@openssh.com&quot;, &quot;aes256-ctr&quot;, &quot;aes192-ctr&quot;,<br>&quot;aes128-ctr&quot;, &quot;aes256-cbc&quot;, &quot;aes192-cbc&quot;, &quot;aes128-cbc&quot;,<br>&quot;3des-ctr&quot;, &quot;3des-cbc&quot;, &quot;twofish256-ctr&quot;,&quot;twofish192-ctr&quot;,<br>&quot;twofish128-ctr&quot;, &quot;twofish256-cbc&quot;, &quot;twofish192-cbc&quot;,<br>&quot;twofish128-cbc&quot;, &quot;twofish-cbc&quot;, &quot;blowfish-ctr&quot;,<br>&quot;blowfish-cbc&quot;, &quot;chacha20-poly1305@openssh.com&quot; &quot;arcfour256&quot;, &quot;arcfour128&quot;, &quot;arcfour&quot;</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedHostKeyAlgorithms</td>
+<td>Specifies a list of allowed host key algorithms IDs and their order.</td>
+<td>&quot;rsa-sha2-256&quot;, &quot;ssh-rsa-sha256@ssh.com&quot;, &quot;rsa-sha2-512&quot;, &quot;ssh-rsa&quot;,&quot;x509v3-rsa2048-sha256&quot;, &quot;x509v3-sign-rsa-sha256@ssh.com&quot;, &quot;x509v3-sign-rsa&quot;, &quot;x509v3-sign-dss&quot;, &quot;ssh-ed25519&quot;, &quot;ecdsa-sha2-nistp256&quot;, &quot;x509v3-ecdsa-sha2-nistp256&quot;, &quot;ecdsa-sha2-nistp384&quot;, &quot;x509v3-ecdsa-sha2-nistp384&quot;, &quot;ecdsa-sha2-nistp521&quot;, &quot;x509v3-ecdsa-sha2-nistp521&quot;, &quot;ecdsa-sha2-1.3.132.0.10&quot;</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedKeyExchangeAlgorithms</td>
+<td>Specifies a list of allowed key exchange algorithms IDs and their order.</td>
+<td>&quot;curve25519-sha256&quot;, &quot;curve25519-sha256@libssh.org&quot;, &quot;ecdh-sha2-nistp256&quot;, &quot;ecdh-sha2-nistp384&quot;, &quot;ecdh-sha2-nistp521&quot;, &quot;ecdh-sha2-1.3.132.0.10&quot;, &quot;diffie-hellman-group-exchange-sha256&quot;, &quot;diffie-hellman-group14-sha256&quot;, &quot;diffie-hellman-group15-sha512&quot;, &quot;diffie-hellman-group16-sha512&quot;, &quot;diffie-hellman-group-exchange-sha1&quot;, &quot;diffie-hellman-group14-sha1&quot;, &quot;diffie-hellman-group1-sha1&quot;</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedMacAlgorithms</td>
+<td>Specifies a list of allowed MAC algorithms IDs and their order.</td>
+<td>&quot;hmac-sha2-256-etm@openssh.com&quot;, &quot;hmac-sha2-256&quot;,&quot;hmac-sha2-512-etm@openssh.com&quot;, &quot;hmac-sha2-512&quot;, &quot;hmac-sha1&quot;, &quot;hmac-md5&quot;, &quot;hmac-sha1-96&quot;, &quot;hmac-md5-96&quot;</td>
+</tr>
+<tr>
+<td>SecureGateway:SSHVersion</td>
+<td>In order to not leak the implementation of the Secure Gateway to<br>provide hackers with additional information,<br>the reported SSH software version can be configured here.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Up to Royal Server V3, these settings are configured in the <code>RoyalServer.exe.config</code> file (located in the installation directory) under <code>configuration/appsettings</code>. The corresponding appsetings keys are:</p>
+<table>
+<thead>
+<tr>
+<th>Royal Server V4</th>
+<th>Royal Server V3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RefreshUserGroupsCronInterval</td>
+<td>UserCachingInSeconds</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedEncryptionAlgorithms</td>
+<td>sg_allowed_encryption_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedHostKeyAlgorithms</td>
+<td>sg_allowed_host_key_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedKeyExchangeAlgorithms</td>
+<td>sg_allowed_key_exchange_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:AllowedMacAlgorithms</td>
+<td>sg_allowed_message_authentication_code_algorithms</td>
+</tr>
+<tr>
+<td>SecureGateway:SSHVersion</td>
+<td>sg_ssh_software_version</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="form p-e2">
+                <div class="form-group">
+                  <label for="version-select">Version</label>
+                  <select id="version-select" class="form-control">
+                    <option value="r2023">Royal TS V7 / Royal Server V5</option>
+                    <option value="r2021">Royal TS V6 / Royal Server V4</option>
+                  </select>
+                </div>
+              </div>    
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/products/royalserver/advanced/application-settings.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>    
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <a rel="me" href="https://dotnet.social/@royalapps">&nbsp;</a>
+      
+      <span>Copyright © <strong>Royal Apps</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+  <style type="text/css">
+      .Red{fill:#CD4C32;}
+      .Green{fill:#4EA17E;}
+      .Blue{fill:#3E79B4;}
+      .Yellow{fill:#EAB765;}
+      .Black{fill:#797979;}
+      .Gray{fill:#B4B4B5;}
+      .White{fill:#FFFFFF;}
+  </style>
+  <g id="main">
+    <clipPath id="clip_mask">
+      <path d="M20,31.088V14.913c0,-1.055,0.858,-1.913,1.913,-1.913h9.175c0.33,0,0.641,0.084,0.913,0.232V0H0v32h20.232C20.084,31.729,20,31.418,20,31.088z"/>
+    </clipPath>
+    <g id="icon" clip-path="url(#clip_mask)">
+      <g id="transformed_icon" transform="translate(-1 -1)">
+        <path fill="#3E79B4" class="Blue" d="M2.7,11h27v2H2.6L2.7,11z" fill-rule="evenodd" />
+        <path fill="#3E79B4" class="Blue" d="M2.6,19h27.1v2H3L2.6,19z" fill-rule="evenodd" />
+        <path fill="#3E79B4" class="Blue" d="M19.4033,2.4964h-2.2942c0,0,2.6909,7.053,2.6909,13.3679c0,6.128,-2.6909,13.4862,-2.6909,13.4862h2.2942c0,0,2.6909,-7.2847,2.6909,-13.3741C22.0942,9.6256,19.4033,2.4964,19.4033,2.4964z" fill-rule="evenodd" />
+        <path fill="#3E79B4" class="Blue" d="M12.765,2.4964h2.1642c0,0,-2.6909,7.053,-2.6909,13.3679c0,6.128,2.6909,13.4862,2.6909,13.4862H12.765c0,0,-2.765,-7.2847,-2.765,-13.3741C10,9.6256,12.765,2.4964,12.765,2.4964z" fill-rule="evenodd" />
+        <path fill="#3E79B4" class="Blue" d="M16.007,30.9366c-8.2396,0,-14.943,-6.7035,-14.943,-14.9433S7.7674,1.05,16.007,1.05S30.95,7.7535,30.95,15.9933S24.2466,30.9366,16.007,30.9366zM16.007,3.5966c-6.8354,0,-12.3964,5.5611,-12.3964,12.3967S9.1716,28.39,16.007,28.39s12.3964,-5.5611,12.3964,-12.3967S22.8424,3.5966,16.007,3.5966z" />
+      </g>
+    </g>
+    <g id="overlay">
+      <path fill="#797979" class="Black" d="M31.088,14h-9.175c-0.504,0,-0.913,0.409,-0.913,0.913V17h11v-2.088C32,14.409,31.591,14,31.088,14zM30,16h-2v-1h2V16zM21,21h11v-3H21V21zM28,19h2v1h-2V19zM21,31.088c0,0.504,0.409,0.913,0.913,0.913h9.175c0.504,0,0.913,-0.409,0.913,-0.913V22H21V31.088zM26.5,27c0.828,0,1.5,0.672,1.5,1.5c0,0.828,-0.672,1.5,-1.5,1.5s-1.5,-0.672,-1.5,-1.5C25,27.672,25.672,27,26.5,27z" />
+      <path fill="#FFFFFF" class="White" d="M30,16h-2v-1h2V16zM30,19h-2v1h2V19zM26.5,27c-0.828,0,-1.5,0.672,-1.5,1.5s0.672,1.5,1.5,1.5s1.5,-0.672,1.5,-1.5S27.328,27,26.5,27z" />
+    </g>
+  </g>
+</svg>
