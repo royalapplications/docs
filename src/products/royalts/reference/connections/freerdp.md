@@ -4,9 +4,9 @@ name: Remote Desktop (FreeRDP)
 order: 9995
 ---
 
-# ![](/r2023/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PluginIcon_32.svg#img_header) Remote Desktop
+# Remote Desktop (FreeRDP)
 
-The **Remote Desktop** connection _(based on FreeRDP)_ can be used to connect to remote computers or Hyper-V guests using the remote desktop protocol (RDP).
+The **Remote Desktop** connection _(based on FreeRDP)_ can be used to connect to remote computers or Hyper-V guests using the remote desktop protocol (RDP). Royal TS V26 runs FreeRDP through the updated Royal TS FreeRDP integration and supports both out-of-process and in-process execution.
 
 ## Dashboard
 
@@ -51,10 +51,6 @@ To configure individual dashboard settings for a connection, use the [Dashboard]
 ## Plugin Settings
 
 To configure the Remote Desktop (FreeRDP) plugin settings, open the [Plugins Management](xref:royalts_intro_plugins) and click on **Settings** for the Remote Desktop (FreeRDP) plugin:
-
-#### Executable
-
-Specify the FreeRDP executable used by the plugin.
 
 #### Close tab on log off, reboot or disconnect
 
@@ -169,6 +165,30 @@ If the computer you want to connect to requires Network Level Authentication, yo
 > [!Note]
 > NLA is enabled by default on Vista/Windows 2008 or later.
 
+#### Authentication Package
+
+Specifies the authentication package to use for the connection.
+
+- **Negotiate**
+- **NTLM**
+- **Kerberos**
+
+#### TLS Encryption
+
+Determines whether TLS encryption is enabled for the connection.
+
+#### Restricted Admin Mode
+
+In this mode, credentials are not sent to the remote server.
+
+#### Authenticate using Smart Card
+
+Use a smart card to authenticate the remote desktop connection.
+
+#### Password contains Smart Card Pin
+
+When enabled, Royal TS will send the smart card personal identification number (PIN) using the password field.
+
 ### Connection
 
 #### Compression
@@ -183,12 +203,21 @@ Bitmap caching can improve performance but requires additional memory and disk r
 
 When Session Takeover Warning is enabled, the client first checks for terminal sessions and warns the user if a session is already active with the same username.
 
-#### Additional Arguments
+#### In-Process Execution
 
-Specify additional FreeRDP command line arguments.
+If enabled, the FreeRDP connection is executed in the Royal TS process.
 
-> [!Tip]
-> Use this setting only for arguments that are not exposed by the regular property pages.
+#### Keep Alive
+
+If checked, the session will be kept alive through periodic, non-intrusive input simulation to help prevent idle-time disconnects based on Group Policy settings.
+
+#### Automatic Reconnect
+
+Specify the number of reconnect attempts during automatic reconnection. Set the value to 0 to disable automatic reconnect.
+
+#### Load Balance Info
+
+Specifies the load balancing cookie that will be placed in the X.224 Connection Request packet.
 
 ## ![](/r2023/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
 
@@ -335,9 +364,26 @@ If checked, hardware acceleration will be used where supported. Overview thumbna
 
 The Redirection page allows you to configure device and resource redirection for use in the remote session.
 
+#### Printers
+
+If checked, redirection of printers is allowed.
+
+#### Smart Cards
+
+If checked, redirection of smart cards is allowed.
+
 #### Clipboard
 
 If checked, clipboard sharing is allowed.
+
+#### Drive Redirection
+
+- **No Drives**
+  Redirection of local disk drives is not allowed.
+- **All Drives**
+  Redirection of local disk drives is allowed for all drives.
+- **Specific Drives**
+  Redirection of local disk drives is only allowed for the selected drives.
 
 #### Audio
 
@@ -350,9 +396,21 @@ Select the audio redirection mode.
 - **Do not play**  
   Audio is disabled on the remote computer.
 
+#### Record Audio from this Computer
+
+If checked, the default audio input device is redirected from the client to the remote session.
+
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/RemoteDesktopFreeRdp/SVG_PageInput_32.svg#img_header) Input
 
-The **Input** page allows you to configure the keyboard layout in the remote session.
+The **Input** page allows you to configure keyboard behavior and keyboard layout in the remote session.
+
+#### Accelerator Passthrough
+
+If checked, keyboard accelerators will be passed to the remote session.
+
+#### Windows Keys Passthrough
+
+If checked, Microsoft Windows key combinations like Alt+Tab will be passed to the remote session.
 
 #### Keyboard Layout
 
@@ -372,6 +430,10 @@ Specifies the program to be started on the remote server upon connection. [Repla
 #### Working Directory
 
 Specifies the working directory of the start program.
+
+#### Maximize
+
+Specifies whether the program should be maximized.
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]

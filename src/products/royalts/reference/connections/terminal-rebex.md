@@ -4,9 +4,9 @@ name: Terminal (Rebex)
 order: 9960
 ---
 
-# ![](/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIcon_32.svg#img_header) Terminal (Rebex)
+# Terminal (Rebex)
 
-The **Terminal** connection based on Rebex can be used to connect to remote computers using Telnet or Secure Shell (SSH). It can also be used to connect to devices using the Serial Port.
+The **Terminal** connection based on Rebex can be used to connect to remote computers using Secure Shell (SSH) or Telnet, connect to devices using a serial port, or start a local PTY-capable executable using the **Custom Terminal** connection type. Royal TS V26 also includes the experimental **Royal Terminal** renderer for this plugin.
 
 ## Dashboard
 
@@ -63,14 +63,32 @@ The Terminal (Rebex) Properties dialog is shown:
 - for an existing Terminal connection by selecting a Terminal connection which is configured to use the Rebex based plugin and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
 - as a bulk-edit dialog when multiple Terminal connections which are configured to use the Rebex based plugin were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PluginIconConnection_32.svg#img_header) Terminal Properties
+## Terminal Properties
 
-The **Terminal Connection** page allows you to configure basic connection settings, such as host name and the connection type (Telnet, SSH or Serial Port).
+The **Terminal Connection** page allows you to configure basic connection settings, such as host name, connection type, terminal renderer, and optional custom command.
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 
 #### Connection Type
 
-Select one of the supported connection types: SSH Connection, Telnet Connection or Serial Port.
+Select one of the supported connection types:
+
+- **SSH Connection**
+- **Telnet Connection**
+- **Serial Port**
+- **Custom Terminal**
+
+Credential and private key settings are only available for SSH connections. Serial Port configuration is only available for Serial Port connections. Custom Terminal starts a local PTY-capable executable.
+
+#### Terminal
+
+Choose the terminal rendering engine for this connection.
+
+- **Rebex**
+- **Royal Terminal (Experimental)**
+
+#### Custom Command on Windows
+
+Specify the PTY-capable executable to launch for a Custom Terminal connection. If empty, `cmd.exe` is used. Replacement tokens and environment variables are supported.
 
 [!include[computername.md](~/royalts/_shared/computername.md)]
 
@@ -81,7 +99,45 @@ Specify the TCP port for the connection.
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageDisplayOptions_32.svg#img_header) Display Options
+## Royal Terminal
+
+The **Royal Terminal** page allows you to configure renderer options for connections that use the Royal Terminal renderer.
+
+> [!Note]
+> Royal Terminal options are only available when the connection is configured to use **Royal Terminal (Experimental)** on the Terminal Properties page.
+
+#### Ctrl+Wheel Zoom
+
+Allows changing the font size with Ctrl + mouse wheel.
+
+#### Ligatures
+
+Uses OpenType ligatures when text shaping is enabled.
+
+#### Sixel Graphics
+
+Renders sixel image graphics sent by terminal applications.
+
+#### Text Shaping
+
+Improves rendering for complex scripts and bidirectional text.
+
+#### Text Shaping Engine
+
+Selects the text shaping pipeline used for terminal text rendering.
+
+- **HarfBuzz**
+- **Pretext**
+
+#### Text Highlighting
+
+Controls how Terminal Settings text highlighting rules are applied.
+
+- **Static (cached)**
+- **Real time**
+- **Disabled**
+
+## Display Options
 
 The **Display Options** page allows you to configure font settings as well as tab appearance settings based on the connection status.
 
@@ -272,6 +328,10 @@ Contains the stored fingerprint of the remote SSH host. Click on the button with
 #### Fingerprint Mismatch Warning
 
 If checked, Royal TS will display a warning if the fingerprint doesn't match.
+
+#### Automatically send password when prompted
+
+If checked, Royal TS automatically sends the configured password when the SSH server prompts for a password during authentication.
 
 #### Use Strict Key Exchange
 

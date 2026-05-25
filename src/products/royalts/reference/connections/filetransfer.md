@@ -6,7 +6,7 @@ order: 9940
 
 # ![](/r2023/images/RoyalTS/Plugins/Connections/FileTransfer/SVG_PluginIcon_32.svg#img_header) File Transfer
 
-The **File Transfer** connection allows you to browse and transfer files on FTP, SFTP and SCP file servers.
+The **File Transfer** connection allows you to browse and transfer files on FTP, SFTP, SCP and S3 file servers.
 
 ## Dashboard
 
@@ -40,13 +40,22 @@ The **File Transfer** page allows you to configure basic connection settings inc
 
 #### Connection Type
 
-Choose from FTP, SFTP and SCP connection types.
+Choose from FTP, SFTP, SCP and S3 connection types.
+
+- **FTP**
+  File Transfer Protocol.
+- **SFTP (Modern SCP alternative)**
+  SSH File Transfer Protocol.
+- **SCP (Legacy)**
+  Secure Copy Protocol. SCP is available in the graphical File Transfer connection, but SCP transfers cannot be cancelled gracefully. The only way to stop the current operation is to force-disconnect from the server, which can leave incomplete files when downloading or uploading.
+- **S3**
+  Amazon S3 and S3-compatible object storage.
 
 [!include[computername.md](~/royalts/_shared/computername.md)]
 
 #### Port
 
-Specify the TCP port for the File Transfer connection. The default port for FTP is 21, for SFTP and SCP the default port is 22.
+Specify the TCP port for the File Transfer connection. The default port for FTP is 21, for SFTP and SCP it is 22, and for S3 it is 443.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
@@ -68,7 +77,7 @@ Select one of the predefined directories or specify a custom folder as initial p
 
 #### Initial Remote Path
 
-Select automatic to use the home directory provided by server or specify a custom folder.
+Select automatic to use the home directory provided by server or specify a custom folder. For S3 connections, the custom remote path is the bucket.
 
 #### Show hidden files
 
@@ -108,11 +117,11 @@ If checked, the creation time stamp is restored after the file transfer.
 
 #### Last Write Time
 
-If checked, the creation time stamp is restored after the file transfer.
+If checked, the last write time stamp is restored after the file transfer.
 
 #### Last Access Time
 
-If checked, the creation time stamp is restored after the file transfer.
+If checked, the last access time stamp is restored after the file transfer.
 
 > [!Note]
 > The remote SFTP service must support restoring timestamps.
@@ -121,7 +130,28 @@ If checked, the creation time stamp is restored after the file transfer.
 
 #### Custom Command
 
-Specify a custom command. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
+Specify a custom command to be executed after an SFTP connection has been established. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
+
+#### Missing Create Time Workaround
+
+Enables a workaround for SFTP servers that send a broken `SSH_FXP_STAT` response with a create-time flag but without the create-time field. This is known to happen with some ProFTPd `mod_sftp` versions.
+
+- **Disabled**
+- **Enabled**
+- **Auto-Detect**
+
+### S3
+
+#### Region
+
+Specify the S3 region. You can select a predefined Amazon S3 region or enter a custom region for S3-compatible providers.
+
+#### Use path-style requests
+
+If checked, S3 requests use path-style addressing instead of virtual-hosted-style addressing.
+
+> [!Note]
+> S3 file transfer currently does not support Secure Gateway or Proxy. The configured Secure Gateway and/or Proxy settings are ignored for S3 connections.
 
 ### FTP
 

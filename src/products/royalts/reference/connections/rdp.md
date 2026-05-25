@@ -1,12 +1,12 @@
 ---
 uid: royalts_reference_connections_rdp
-name: Remote Desktop (ActiveX)
+name: Remote Desktop (Microsoft)
 order: 10000
 ---
 
-# ![](/r2023/images/RoyalTS/Plugins/Connections/RemoteDesktop/SVG_PluginIcon_32.svg#img_header) Remote Desktop
+# Remote Desktop (Microsoft)
 
-The **Remote Desktop** connection _(based on Microsoft RDP ActiveX)_ can be used to connect to remote computers or Hyper-V guests using the remote desktop protocol (RDP) which is built into Windows.
+The **Remote Desktop** connection _(based on Microsoft RDP)_ can be used to connect to remote computers or Hyper-V guests using the remote desktop protocol (RDP). Royal TS V26 can use the built-in Microsoft RDP client components and can optionally use the modern Microsoft Remote Desktop client.
 
 ## Dashboard
 
@@ -165,6 +165,27 @@ Configure how Royal TS handles session window resize events.
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
 [!include[tasks.md](~/royalts/_shared/tasks.md)]
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
+
+### Remote Desktop Window Mode Settings
+
+The Microsoft Remote Desktop plugin supports additional window mode behavior for embedded and external RDP sessions.
+
+#### External Window (Full Screen)
+
+Opens the RDP session in a borderless full-screen external window.
+
+#### Use Multiple Monitors
+
+If checked, Royal TS uses all available monitors for the RDP session when the connection is opened in full-screen mode.
+
+#### Don't show the connection bar
+
+If checked, the Microsoft RDP connection bar is hidden in full-screen mode. Use **Ctrl + Alt + Home** to display the connection bar again.
+
+#### Preferred Size
+
+When the external window size is set to **Preferred Size**, Royal TS uses the configured **Desktop Size** from the **Display Options** page.
+
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
 
 ### Dashboard Settings
@@ -276,6 +297,10 @@ Specifies the load balancing cookie that will be placed in the X.224 Connection 
 
 > [!Tip]
 > This field is often used for Azure based connections. After importing .rdp files created by the Azure portal, you may find specific load balancing cookies in your configuration.
+
+#### KDC Proxy URL
+
+Specifies the KDC proxy URL used for Kerberos over HTTPS when using Microsoft RDP with MsRdpEx.
 
 ## ![](/r2023/images/RoyalTS/Application/SVG_PageRDSGateway_32.svg#img_header) Remote Desktop Gateway
 

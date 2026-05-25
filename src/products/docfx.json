@@ -19,7 +19,7 @@
         "files": ["images/**"]
       }
     ],
-    "dest": "../../.output/gh-pages/r2023",
+    "dest": "../../.output/gh-pages/products",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": ["default", "./templates/custom_default/"],

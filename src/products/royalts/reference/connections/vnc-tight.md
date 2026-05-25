@@ -26,7 +26,7 @@ This plugin does not offer any dashboard settings.
 
 ## Plugin Settings
 
-To configure the VNC (UltraVNC) plugin settings, open the Plugins Management and click on **Settings** for the VNC (based on TightVNC) plugin:
+To configure the VNC (TightVNC) plugin settings, open the Plugins Management and click on **Settings** for the VNC (based on TightVNC) plugin:
 
 #### Viewer Path
 
@@ -34,7 +34,7 @@ Browse or let Royal TS search for the TightVNC viewer application (tvnviewer.exe
 
 ## Connection Properties
 
-The VNC (TightVNC Integrated) Properties dialog is shown:
+The VNC (TightVNC) Properties dialog is shown:
 
 - for a new VNC connection by clicking the **VNC** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab when the TightVNC based plugin is set as the default plugin.
 - for a new VNC connection by clicking the **More...** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab and selecting the VNC (based on TightVNC) entry from the list of available objects.

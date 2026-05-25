@@ -1,12 +1,12 @@
 ---
 uid: royalts_reference_connections_vnc
-name: VNC (Integrated)
+name: VNC (RoyalVNC)
 order: 9990
 ---
 
-# ![](/r2023/images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PluginIcon_32.svg#img_header) VNC (Integrated)
+# VNC (RoyalVNC)
 
-The **VNC** connection, based on TightVNC, can be used to connect to remote computers using [TightVNC](http://www.tightvnc.com/). This plugin does not require you to install any viewer application.
+The **Royal VNC** connection can be used to connect to remote computers using VNC or Apple Remote Desktop. RealVNC and UltraVNC authentication methods are supported by this plugin; the separate UltraVNC plugin is no longer available in Royal TS V26.
 
 ## Dashboard
 
@@ -14,33 +14,32 @@ The dashboard included in this plugin allows you to:
 
 - Start the VNC connection.
 - Edit Properties (opens the properties dialog of the selected connection).
-- Open the TightVNC homepage
-
-## Dashboard Settings
-
-This plugin does not offer any dashboard settings.
 
 ## Plugin Settings
 
-This plugin does not offer any plugin settings.
+To configure the Royal VNC plugin settings, open the [Plugins Management](xref:royalts_intro_plugins) and click **Settings** for the Royal VNC plugin.
+
+#### Enable Debug Logging
+
+If checked, Royal TS enables verbose debug logging for Royal VNC connections. This can drastically reduce performance and should only be enabled for troubleshooting.
 
 ## Connection Properties
 
-The VNC (TightVNC Integrated) Properties dialog is shown:
+The Royal VNC Properties dialog is shown:
 
-- for a new VNC connection by clicking the **VNC** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab when the TightVNC Integrated based plugin is set as the default plugin.
-- for a new VNC connection by clicking the **More...** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab and selecting the VNC (based on integrated TightVNC) entry from the list of available objects.
-- for an existing VNC connection by selecting a VNC connection which is configured to use the TightVNC based plugin and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
-- as a bulk-edit dialog when multiple VNC connections which are configured to use the TightVNC based plugin were selected in the **Folder / Document Dashboard** and the **Properties** command in the **Edit** group on the Home ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
+- for a new VNC connection by clicking the **VNC** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab when Royal VNC is set as the default plugin.
+- for a new VNC connection by clicking the **More...** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab and selecting the Royal VNC entry from the list of available objects.
+- for an existing VNC connection by selecting a VNC connection which is configured to use the Royal VNC plugin and clicking **Properties** in the **Edit** group on the **Home** ribbon tab.
+- as a bulk-edit dialog when multiple VNC connections which are configured to use the Royal VNC plugin were selected in the **Folder / Document Dashboard** and the **Properties** command in the **Edit** group on the Home ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PluginIconConnection_32.svg#img_header) VNC Properties
+## VNC Properties
 
 [!include[displayname.md](~/royalts/_shared/displayname.md)]
 [!include[computername.md](~/royalts/_shared/computername.md)]
 
 #### Port
 
-Specify the TCP port for the VNC connection. The default VNC port is 5900.
+Specify the TCP port of the remote VNC server. The default VNC port is 5900.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
@@ -51,73 +50,50 @@ Specify the TCP port for the VNC connection. The default VNC port is 5900.
 [!include[securegateway.md](~/royalts/_shared/securegateway.md)]
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PageAdvanced_32.svg#img_header) Advanced
+## Advanced
 
-The **Advanced** page allows you to configure advanced VNC settings.
-
-#### Encoding
-
-Specify which encoding should be used for the VNC connection.
+The **Advanced** page allows you to configure scaling, clipboard transfer, session sharing, and execution options for the Royal VNC connection.
 
 #### Scaling
 
-How the remote session view should be scaled.
+Configure how the remote session view should be scaled.
 
-- Stretch (keep aspect ratio)
-- Zoom factor
+- **Stretch** scales the remote view while maintaining the aspect ratio.
+- A custom zoom factor can be selected for fixed scaling.
 
-#### Compression
+#### Scaling Mode
 
-If checked, a custom compression value can be set.
+Select whether scaling should prioritize speed or quality.
 
-#### JPEG Quality
+- **Fast**
+- **High Quality**
 
-If checked, the JPEG quality level can be set.
+#### Clipboard Transfer
 
-#### CopyRect Encoding
-
-The CopyRect encoding is efficient when something is being moved. CopyRect could also be used to efficiently transmit a repeated pattern.
+If checked, clipboard content is transferred between the local and remote host.
 
 #### Shared Session
 
 Share the server with other viewers, i.e. allow several viewers to connect simultaneously to the server.
 
-#### Clipboard Transfer
+#### In-Process Execution
 
-If checked, clipboard content is transferred.
+If enabled, the VNC connection is executed in the Royal TS process.
 
-#### Tight Security
+## Input
 
-If checked (default), Tight security is enabled. Disabling this option will also disable UTF8 clipboard transfers.
-
-> [!Note]
-> Some settings like Custom Compression or JPEG Quality are not available for all encodings.
-
-## ![](/r2023/images/RoyalTS/Plugins/Connections/VncTightIntegrated/SVG_PageInput_32.svg#img_header) Input
-
-The **Input** page allows you to configure the mouse behavior.
+The **Input** page allows you to configure how the VNC connection handles mouse and keyboard input.
 
 #### Interaction Mode
 
 Configure how input is handled.
 
-- Mouse and Keyboard
-- Mouse only
-- View only
+- **Mouse and Keyboard**
+- **View only**
 
-#### Tracking
+#### Enable Windows Key
 
-Configure how mouse movement is tracked.
-
-- Track Mouse
-- Track only Mouseclicks
-
-#### Local Cursor
-
-Configure the behavior of the local cursor.
-
-- Hide
-- Show
+Redirects the Windows key to the remote session. This enables shortcuts like ALT+TAB in the remote session.
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
