@@ -130,7 +130,7 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <li><strong>Rebex</strong></li>
 <li><strong>Royal Terminal (Experimental)</strong></li>
 </ul>
-<h4 id="custom-command-on-windows">Custom Command on Windows</h4>
+<h4 id="custom-command">Custom Command</h4>
 <p>Specify the PTY-capable executable to launch for a Custom Terminal connection. If empty, <code>cmd.exe</code> is used. Replacement tokens and environment variables are supported.</p>
 <h4 id="computer-name-required">Computer Name <em>(required)</em></h4>
 <p>Enter the computer name or the IP address.</p>
@@ -146,33 +146,6 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <p>Enter a description for the object.</p>
 <h4 id="mac-address">MAC Address</h4>
 <p>Use this optional field to record the remote computer's MAC address. You can then use this field in templates or tasks, like a wake-on-lan task, for example.</p>
-<h2 id="royal-terminal">Royal Terminal</h2>
-<p>The <strong>Royal Terminal</strong> page allows you to configure renderer options for connections that use the Royal Terminal renderer.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Royal Terminal options are only available when the connection is configured to use <strong>Royal Terminal (Experimental)</strong> on the Terminal Properties page.</p>
-</div>
-<h4 id="ctrlwheel-zoom">Ctrl+Wheel Zoom</h4>
-<p>Allows changing the font size with Ctrl + mouse wheel.</p>
-<h4 id="ligatures">Ligatures</h4>
-<p>Uses OpenType ligatures when text shaping is enabled.</p>
-<h4 id="sixel-graphics">Sixel Graphics</h4>
-<p>Renders sixel image graphics sent by terminal applications.</p>
-<h4 id="text-shaping">Text Shaping</h4>
-<p>Improves rendering for complex scripts and bidirectional text.</p>
-<h4 id="text-shaping-engine">Text Shaping Engine</h4>
-<p>Selects the text shaping pipeline used for terminal text rendering.</p>
-<ul>
-<li><strong>HarfBuzz</strong></li>
-<li><strong>Pretext</strong></li>
-</ul>
-<h4 id="text-highlighting">Text Highlighting</h4>
-<p>Controls how Terminal Settings text highlighting rules are applied.</p>
-<ul>
-<li><strong>Static (cached)</strong></li>
-<li><strong>Real time</strong></li>
-<li><strong>Disabled</strong></li>
-</ul>
 <h2 id="display-options">Display Options</h2>
 <p>The <strong>Display Options</strong> page allows you to configure font settings as well as tab appearance settings based on the connection status.</p>
 <h3 id="text">Text</h3>
@@ -223,7 +196,7 @@ The colors returned by the server are ignored but you can specify your own color
 <p>Adjust the ANSI color palette for individual colors.</p>
 <h4 id="cursor-colors">Cursor Colors</h4>
 <p>Configure the background color of the cursor and the corsor appearance. You can also enable or disable cursor blinking and configure the blinking interval of the cursor.</p>
-<h4 id="text-highlighting-1">Text Highlighting</h4>
+<h4 id="text-highlighting">Text Highlighting</h4>
 <p>Configure regular expression based highlighting rules.</p>
 <div class="NOTE">
 <h5>Note</h5>
@@ -485,6 +458,7 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <p>See also: <a class="xref" href="../../getting-started/plugins.html">Plugins</a></p>
 <h2 id="-advanced"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageAdvanced_32.svg#img_header" alt=""> Advanced</h2>
 <p>The <strong>Advanced</strong> page allows you to configure advanced Terminal settings.</p>
+<h3 id="general">General</h3>
 <h4 id="encoding">Encoding</h4>
 <p>Select one of the supported encoding settings.</p>
 <h4 id="terminal-type">Terminal Type</h4>
@@ -493,8 +467,6 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <p>Switch auto wrap on, off or to behave like in DOS.</p>
 <h4 id="backspace-wrap">Backspace Wrap</h4>
 <p>Switch backspace wrap on, off or to behave like in DOS.</p>
-<h4 id="ssh-remote-command">SSH Remote Command</h4>
-<p>In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
 <h4 id="local-echo">Local Echo</h4>
 <p>Enable or disable local echo.</p>
 <h4 id="disable-bell">Disable Bell</h4>
@@ -505,9 +477,51 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <p>If checked, Royal TS will ignore substitute characters (1A), otherwise Royal TS will replace each substitute character with a question mark.</p>
 <h4 id="implicit-cr-in-lf">Implicit CR in LF</h4>
 <p>If checked, Royal TS implies a carriage return in every received linefeed.</p>
+<h3 id="secure-shell">Secure Shell</h3>
+<h4 id="ssh-remote-command">SSH Remote Command</h4>
+<p>In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> are supported.</p>
+<h3 id="custom-terminal">Custom Terminal</h3>
+<div class="NOTE">
+<h5>Note</h5>
+<p>These settings are only available when <strong>Custom Terminal</strong> is configured on the Terminal Properties page.</p>
+</div>
+<h4 id="working-directory">Working Directory</h4>
+<p>Specify the initial working directory for a Custom Terminal connection. <a class="xref" href="../../advanced/tokens.html">Replacement tokens</a> and environment variables are supported.</p>
+<p>If the resolved working directory does not exist, Royal TS starts the Custom Terminal using the default working directory and writes a warning to the terminal log.</p>
+<h4 id="environment-variables">Environment Variables</h4>
+<p>Configure environment variable overrides for a Custom Terminal connection. Each entry consists of a <strong>Variable Name</strong> and <strong>Value</strong>.</p>
+<p>Variable names are literal and cannot contain the <code>=</code> character. Variable values support <a class="xref" href="../../advanced/tokens.html">replacement tokens</a> and environment variables, and may contain <code>=</code> characters.</p>
+<p>When a variable name is configured more than once, the last configured value replaces the previous value case-insensitively. Configured variables are merged with the inherited process environment when the Custom Terminal starts.</p>
+<h2 id="royal-terminal">Royal Terminal</h2>
+<p>The <strong>Royal Terminal</strong> page allows you to configure renderer options for connections that use the Royal Terminal renderer.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Royal Terminal options are only available when the connection is configured to use <strong>Royal Terminal (Experimental)</strong> on the Terminal Properties page.</p>
+</div>
+<h4 id="ctrlwheel-zoom">Ctrl+Wheel Zoom</h4>
+<p>Allows changing the font size with Ctrl + mouse wheel.</p>
+<h4 id="ligatures">Ligatures</h4>
+<p>Uses OpenType ligatures when text shaping is enabled.</p>
+<h4 id="sixel-graphics">Sixel Graphics</h4>
+<p>Renders sixel image graphics sent by terminal applications.</p>
+<h4 id="text-shaping">Text Shaping</h4>
+<p>Improves rendering for complex scripts and bidirectional text.</p>
+<h4 id="text-shaping-engine">Text Shaping Engine</h4>
+<p>Selects the text shaping pipeline used for terminal text rendering.</p>
+<ul>
+<li><strong>HarfBuzz</strong></li>
+<li><strong>Pretext</strong></li>
+</ul>
+<h4 id="text-highlighting-1">Text Highlighting</h4>
+<p>Controls how Terminal Settings text highlighting rules are applied.</p>
+<ul>
+<li><strong>Static (cached)</strong></li>
+<li><strong>Real time</strong></li>
+<li><strong>Disabled</strong></li>
+</ul>
 <h2 id="-security"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSecurity_32.svg#img_header" alt=""> Security</h2>
 <p>The <strong>Security</strong> page allows you to adjust security settings and allowed algorithms.</p>
-<h3 id="general">General</h3>
+<h3 id="general-1">General</h3>
 <h4 id="authentication-method">Authentication Method</h4>
 <p>Select the authentication method to use.</p>
 <div class="NOTE">

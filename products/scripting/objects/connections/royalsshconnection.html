@@ -97,6 +97,9 @@ The custom command in case of custom command connection type (for macOS).</p>
 <h3 id="customcommandwin">CustomCommandWin</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code>
 The custom command in case of custom command connection type (for Windows).</p>
+<h3 id="customterminalworkdirwin">CustomTerminalWorkDirWin</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code>
+The initial working directory for the Custom Terminal connection type (for Windows).</p>
 <h3 id="port">Port</h3>
 <p>Type: <code>int</code>, Default Value: <code>22</code>
 Specifies the target port for this connection. Default value is 22.</p>
@@ -122,6 +125,9 @@ The unique object identifier (GUID) of the object.</p>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code>
 The external unique object identifier (GUID) of the object.</p>
 <h2 id="advanced">Advanced</h2>
+<h3 id="customterminalenvwin">CustomTerminalEnvWin</h3>
+<p>Type: <code>string[]</code>, Default Value: <code>Empty Array</code>
+The environment variable overrides for the Custom Terminal connection type (for Windows). Entries are stored as <code>NAME=VALUE</code>; the first <code>=</code> character separates the variable name from the value.</p>
 <h3 id="allowinsecuresshencryptionalgorithms">AllowInsecureSshEncryptionAlgorithms</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code>
 Specifies whether or not insecure SSH encryption algorithms are allowed.</p>
