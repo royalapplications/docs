@@ -86,7 +86,7 @@ Choose the terminal rendering engine for this connection.
 - **Rebex**
 - **Royal Terminal (Experimental)**
 
-#### Custom Command on Windows
+#### Custom Command
 
 Specify the PTY-capable executable to launch for a Custom Terminal connection. If empty, `cmd.exe` is used. Replacement tokens and environment variables are supported.
 
@@ -98,44 +98,6 @@ Specify the TCP port for the connection.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 [!include[macaddress.md](~/royalts/_shared/macaddress.md)]
-
-## Royal Terminal
-
-The **Royal Terminal** page allows you to configure renderer options for connections that use the Royal Terminal renderer.
-
-> [!Note]
-> Royal Terminal options are only available when the connection is configured to use **Royal Terminal (Experimental)** on the Terminal Properties page.
-
-#### Ctrl+Wheel Zoom
-
-Allows changing the font size with Ctrl + mouse wheel.
-
-#### Ligatures
-
-Uses OpenType ligatures when text shaping is enabled.
-
-#### Sixel Graphics
-
-Renders sixel image graphics sent by terminal applications.
-
-#### Text Shaping
-
-Improves rendering for complex scripts and bidirectional text.
-
-#### Text Shaping Engine
-
-Selects the text shaping pipeline used for terminal text rendering.
-
-- **HarfBuzz**
-- **Pretext**
-
-#### Text Highlighting
-
-Controls how Terminal Settings text highlighting rules are applied.
-
-- **Static (cached)**
-- **Real time**
-- **Disabled**
 
 ## Display Options
 
@@ -257,6 +219,8 @@ Enter a passphrase.
 
 The **Advanced** page allows you to configure advanced Terminal settings.
 
+### General
+
 #### Encoding
 
 Select one of the supported encoding settings.
@@ -272,10 +236,6 @@ Switch auto wrap on, off or to behave like in DOS.
 #### Backspace Wrap
 
 Switch backspace wrap on, off or to behave like in DOS.
-
-#### SSH Remote Command
-
-In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). [Replacement tokens](xref:royalts_advanced_tokens) are supported.
 
 #### Local Echo
 
@@ -296,6 +256,69 @@ If checked, Royal TS will ignore substitute characters (1A), otherwise Royal TS 
 #### Implicit CR in LF
 
 If checked, Royal TS implies a carriage return in every received linefeed.
+
+### Secure Shell
+
+#### SSH Remote Command
+
+In SSH, you don't have to run a general shell session on the server. Instead, you can choose to run a single specific command (such as a mail user agent, for example). [Replacement tokens](xref:royalts_advanced_tokens) are supported.
+
+### Custom Terminal
+
+> [!Note]
+> These settings are only available when **Custom Terminal** is configured on the Terminal Properties page.
+
+#### Working Directory
+
+Specify the initial working directory for a Custom Terminal connection. [Replacement tokens](xref:royalts_advanced_tokens) and environment variables are supported.
+
+If the resolved working directory does not exist, Royal TS starts the Custom Terminal using the default working directory and writes a warning to the terminal log.
+
+#### Environment Variables
+
+Configure environment variable overrides for a Custom Terminal connection. Each entry consists of a **Variable Name** and **Value**.
+
+Variable names are literal and cannot contain the `=` character. Variable values support [replacement tokens](xref:royalts_advanced_tokens) and environment variables, and may contain `=` characters.
+
+When a variable name is configured more than once, the last configured value replaces the previous value case-insensitively. Configured variables are merged with the inherited process environment when the Custom Terminal starts.
+
+## Royal Terminal
+
+The **Royal Terminal** page allows you to configure renderer options for connections that use the Royal Terminal renderer.
+
+> [!Note]
+> Royal Terminal options are only available when the connection is configured to use **Royal Terminal (Experimental)** on the Terminal Properties page.
+
+#### Ctrl+Wheel Zoom
+
+Allows changing the font size with Ctrl + mouse wheel.
+
+#### Ligatures
+
+Uses OpenType ligatures when text shaping is enabled.
+
+#### Sixel Graphics
+
+Renders sixel image graphics sent by terminal applications.
+
+#### Text Shaping
+
+Improves rendering for complex scripts and bidirectional text.
+
+#### Text Shaping Engine
+
+Selects the text shaping pipeline used for terminal text rendering.
+
+- **HarfBuzz**
+- **Pretext**
+
+#### Text Highlighting
+
+Controls how Terminal Settings text highlighting rules are applied.
+
+- **Static (cached)**
+- **Real time**
+- **Disabled**
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageSecurity_32.svg#img_header) Security
 

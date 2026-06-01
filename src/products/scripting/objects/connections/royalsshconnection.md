@@ -33,6 +33,9 @@ The custom command in case of custom command connection type (for macOS).
 ### CustomCommandWin
 Type: `string`, Default Value: `Empty String`
 The custom command in case of custom command connection type (for Windows).
+### CustomTerminalWorkDirWin
+Type: `string`, Default Value: `Empty String`
+The initial working directory for the Custom Terminal connection type (for Windows).
 ### Port
 Type: `int`, Default Value: `22`
 Specifies the target port for this connection. Default value is 22.
@@ -58,6 +61,9 @@ The unique object identifier (GUID) of the object.
 Type: `string`, Default Value: `Empty String`
 The external unique object identifier (GUID) of the object.
 ## Advanced
+### CustomTerminalEnvWin
+Type: `string[]`, Default Value: `Empty Array`
+The environment variable overrides for the Custom Terminal connection type (for Windows). Entries are stored as `NAME=VALUE`; the first `=` character separates the variable name from the value.
 ### AllowInsecureSshEncryptionAlgorithms
 Type: `bool`, Default Value: `false`
 Specifies whether or not insecure SSH encryption algorithms are allowed.
