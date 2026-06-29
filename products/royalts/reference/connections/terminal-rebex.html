@@ -182,25 +182,17 @@ This rendering mode reduces the cell size and mimics the rendering to be more li
 <h4 id="indicator-for-inactivity">Indicator for Inactivity</h4>
 <p>If checked, the tab caption of the background tab is rendered <em>italic</em> when no data is received for a configured amount of seconds.</p>
 <h2 id="-colors"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg#img_header" alt=""> Colors</h2>
-<p>The <strong>Colors</strong> page allows you to modify the terminal palette and colors for different text styles.</p>
-<h4 id="color-scheme">Color Scheme</h4>
-<ul>
-<li><strong>ANSI Palette</strong><br>
-The ANSI Palette color scheme (default) allows you to adjust the ANSI palette (Normal Colors and Bright Colors). In this mode, you can also configure custom <strong>Text Highlighting</strong> using regular expressions.</li>
-<li><strong>Monochrome</strong><br>
-Selecting Monochrome will not display any color in the terminal.</li>
-<li><strong>Custom Palette and Text Colors</strong><br>
-The colors returned by the server are ignored but you can specify your own colors for different text styles.</li>
-</ul>
+<p>The <strong>Colors</strong> page allows you to modify the terminal palette and colors for different text styles. New and edited connections use the custom palette and text colors mode. Older connections that were configured for ANSI Palette or Monochrome are interpreted at connection start as closely as possible without immediately changing the saved connection data.</p>
+<p>The page is organized into expandable sections.</p>
 <h4 id="normal-and-bright-colors">Normal and Bright Colors</h4>
-<p>Adjust the ANSI color palette for individual colors.</p>
-<h4 id="cursor-colors">Cursor Colors</h4>
-<p>Configure the background color of the cursor and the corsor appearance. You can also enable or disable cursor blinking and configure the blinking interval of the cursor.</p>
+<p>Adjust the normal and bright ANSI color palette entries. The <strong>Palette</strong> drop-down button at the top of the page can import, export, or apply terminal color palettes.</p>
+<h4 id="other-colors-and-styles">Other Colors and Styles</h4>
+<p>Configure default background and text colors, text style colors, selection colors for the Royal Terminal renderer, and cursor colors. Cursor options include cursor appearance, inverted cursor color, cursor blinking, and blinking interval.</p>
 <h4 id="text-highlighting">Text Highlighting</h4>
-<p>Configure regular expression based highlighting rules.</p>
+<p>Configure regular expression based highlighting rules. These rules are available for both the Rebex renderer and the Royal Terminal renderer.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Text highlighting is only available in <strong>ANSI Palette</strong> color scheme.</p>
+<p>The Royal Terminal renderer also has a <strong>Text Highlighting</strong> mode setting on the <strong>Royal Terminal</strong> page. The Colors page configures the shared highlighting rule list.</p>
 </div>
 <h4 id="palette">Palette</h4>
 <p>The drop-down button allows you to apply built-in or custom terminal color schemes. It also allows you to export and manage terminal palettes for easy sharing.</p>
@@ -513,7 +505,7 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <li><strong>Pretext</strong></li>
 </ul>
 <h4 id="text-highlighting-1">Text Highlighting</h4>
-<p>Controls how Terminal Settings text highlighting rules are applied.</p>
+<p>Controls how text highlighting rules are applied by the Royal Terminal renderer.</p>
 <ul>
 <li><strong>Static (cached)</strong></li>
 <li><strong>Real time</strong></li>
