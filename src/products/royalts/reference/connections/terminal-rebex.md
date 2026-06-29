@@ -164,31 +164,24 @@ If checked, the tab caption of the background tab is rendered _italic_ when no d
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg#img_header) Colors
 
-The **Colors** page allows you to modify the terminal palette and colors for different text styles.
+The **Colors** page allows you to modify the terminal palette and colors for different text styles. New and edited connections use the custom palette and text colors mode. Older connections that were configured for ANSI Palette or Monochrome are interpreted at connection start as closely as possible without immediately changing the saved connection data.
 
-#### Color Scheme
-
-- **ANSI Palette**  
-  The ANSI Palette color scheme (default) allows you to adjust the ANSI palette (Normal Colors and Bright Colors). In this mode, you can also configure custom **Text Highlighting** using regular expressions.
-- **Monochrome**  
-  Selecting Monochrome will not display any color in the terminal.
-- **Custom Palette and Text Colors**  
-  The colors returned by the server are ignored but you can specify your own colors for different text styles.
+The page is organized into expandable sections.
 
 #### Normal and Bright Colors
 
-Adjust the ANSI color palette for individual colors.
+Adjust the normal and bright ANSI color palette entries. The **Palette** drop-down button at the top of the page can import, export, or apply terminal color palettes.
 
-#### Cursor Colors
+#### Other Colors and Styles
 
-Configure the background color of the cursor and the corsor appearance. You can also enable or disable cursor blinking and configure the blinking interval of the cursor.
+Configure default background and text colors, text style colors, selection colors for the Royal Terminal renderer, and cursor colors. Cursor options include cursor appearance, inverted cursor color, cursor blinking, and blinking interval.
 
 #### Text Highlighting
 
-Configure regular expression based highlighting rules.
+Configure regular expression based highlighting rules. These rules are available for both the Rebex renderer and the Royal Terminal renderer.
 
 > [!Note]
-> Text highlighting is only available in **ANSI Palette** color scheme.
+> The Royal Terminal renderer also has a **Text Highlighting** mode setting on the **Royal Terminal** page. The Colors page configures the shared highlighting rule list.
 
 [!include[terminalpalette.md](~/royalts/_shared/terminalpalette.md)]
 
@@ -314,7 +307,7 @@ Selects the text shaping pipeline used for terminal text rendering.
 
 #### Text Highlighting
 
-Controls how Terminal Settings text highlighting rules are applied.
+Controls how text highlighting rules are applied by the Royal Terminal renderer.
 
 - **Static (cached)**
 - **Real time**
