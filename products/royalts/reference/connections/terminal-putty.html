@@ -195,8 +195,30 @@ Leave empty for the default PuTTY window title match: <code>- PuTTY</code></p>
 <h4 id="full-screen-on-alt-enter">Full Screen on Alt-Enter</h4>
 <p>If checked, Alt-Enter will change the PuTTY window into Full Screen mode.</p>
 <h2 id="-colors"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageColors_32.svg#img_header" alt=""> Colors</h2>
-<p>The <strong>Colors</strong> page allows you to modify the terminal palette and colors for different text styles.</p>
-<h3 id="color-usage">Color Usage</h3>
+<p>The <strong>Colors</strong> page allows you to modify the terminal palette, ANSI colors, and colors for different text styles.</p>
+<h4 id="palette">Palette</h4>
+<p>The drop-down button allows you to apply built-in or custom terminal color schemes. It also allows you to export and manage terminal palettes for easy sharing.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can read more about this topic <a class="xref" href="../../user-interface/color-palettes.html#terminal-color-palettes">here</a></p>
+</div>
+<h3 id="normal-colors">Normal Colors</h3>
+<p>Adjust the normal ANSI color palette for black, red, green, yellow, blue, magenta, cyan, and white.</p>
+<h3 id="bright-colors">Bright Colors</h3>
+<p>Adjust the bright ANSI color palette for black, red, green, yellow, blue, magenta, cyan, and white.</p>
+<h3 id="other-colors-and-styles">Other Colors and Styles</h3>
+<h4 id="background">Background</h4>
+<p>Specify the default background color.</p>
+<h4 id="text">Text</h4>
+<p>Specify the default foreground text color.</p>
+<h4 id="bold-background">Bold Background</h4>
+<p>Specify the default bold background color.</p>
+<h4 id="bold-text">Bold Text</h4>
+<p>Specify the default bold foreground text color.</p>
+<h4 id="cursor-color">Cursor Color</h4>
+<p>Specify the cursor background color.</p>
+<h4 id="cursor-text">Cursor Text</h4>
+<p>Specify the cursor text color.</p>
 <h4 id="use-background-color-to-erase-screen">Use Background Color to Erase Screen</h4>
 <p>Not all terminals agree on what color to turn the screen when the server sends a ‘clear screen’ sequence. Background-color erase can be turned on and off by control sequences sent by the server. This configuration option controls the default state.</p>
 <h4 id="allow-terminal-to-specify-ansi-colors">Allow Terminal to Specify ANSI Colors</h4>
@@ -209,14 +231,6 @@ Leave empty for the default PuTTY window title match: <code>- PuTTY</code></p>
 <p>If you are not getting the colors you ask for on an 8-bit display, you can try enabling this option.</p>
 <h4 id="use-system-colors">Use System Colors</h4>
 <p>Enabling this option will cause PuTTY to ignore the configured colors for ‘Default Background/Foreground’ and ‘Cursor Color/Text’, instead going with the system-wide defaults.</p>
-<h4 id="normal-and-bright-colors">Normal and Bright Colors</h4>
-<p>Adjust the ANSI color palette for individual colors.</p>
-<h4 id="palette">Palette</h4>
-<p>The drop-down button allows you to apply built-in or custom terminal color schemes. It also allows you to export and manage terminal palettes for easy sharing.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>You can read more about this topic <a class="xref" href="../../user-interface/color-palettes.html#terminal-color-palettes">here</a></p>
-</div>
 <h2 id="-credentials"><img src="/r2023/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
 <p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
 <h4 id="do-not-use-any-credentials">Do not use any credentials</h4>
