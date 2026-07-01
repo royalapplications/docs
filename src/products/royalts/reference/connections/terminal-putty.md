@@ -194,9 +194,43 @@ If checked, Alt-Enter will change the PuTTY window into Full Screen mode.
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/TerminalPuTTY/SVG_PageColors_32.svg#img_header) Colors
 
-The **Colors** page allows you to modify the terminal palette and colors for different text styles.
+The **Colors** page allows you to modify the terminal palette, ANSI colors, and colors for different text styles.
 
-### Color Usage
+[!include[terminalpalette.md](~/royalts/_shared/terminalpalette.md)]
+
+### Normal Colors
+
+Adjust the normal ANSI color palette for black, red, green, yellow, blue, magenta, cyan, and white.
+
+### Bright Colors
+
+Adjust the bright ANSI color palette for black, red, green, yellow, blue, magenta, cyan, and white.
+
+### Other Colors and Styles
+
+#### Background
+
+Specify the default background color.
+
+#### Text
+
+Specify the default foreground text color.
+
+#### Bold Background
+
+Specify the default bold background color.
+
+#### Bold Text
+
+Specify the default bold foreground text color.
+
+#### Cursor Color
+
+Specify the cursor background color.
+
+#### Cursor Text
+
+Specify the cursor text color.
 
 #### Use Background Color to Erase Screen
 
@@ -221,12 +255,6 @@ If you are not getting the colors you ask for on an 8-bit display, you can try e
 #### Use System Colors
 
 Enabling this option will cause PuTTY to ignore the configured colors for ‘Default Background/Foreground’ and ‘Cursor Color/Text’, instead going with the system-wide defaults.
-
-#### Normal and Bright Colors
-
-Adjust the ANSI color palette for individual colors.
-
-[!include[terminalpalette.md](~/royalts/_shared/terminalpalette.md)]
 
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
 
