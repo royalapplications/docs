@@ -3,6 +3,7 @@ uid: royalserver_general_logging
 name: Logging
 order: 9020
 ---
+
 <img src="/r2023/images/RoyalServer/Svg/SVG_Logging_32.svg" class="icon-left icon-lg" alt="" />
 
 # Logging
@@ -88,12 +89,7 @@ If checked, all requests and responses from the Management Endpoint and the Docu
 
 ## Syslog Logging
 
-Syslog setup and configuration may vary depending on your server setup.
-
-> [!NOTE]
-> Syslog support can also be activated and configured by editing `%AppData%\RoyalServer\appsettings.json`.
-
-Available configuration keys:
+Available settings:
 
 - _SysLogEnabled_: Enable or disable the syslog logging.
 - _SysLogProtocol_: The protocol to use.
@@ -117,3 +113,8 @@ Available configuration keys:
   - Allowed values: see System.Security.Authentication.SslProtocols
   - Default value is `Tls12`.
 - _SysLogIgnoreCertificateErrors_: If set to `true`, all certificate errors will be ignored when using protocol `Tcp`.
+
+> [!NOTE]
+> Syslog configuration needs may vary depending on your Syslog server setup.
+>
+> Syslog support can also be managed by editing `%AppData%\RoyalServer\appsettings.json`.
