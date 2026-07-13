@@ -174,12 +174,7 @@ If you want to configure a different interval, change the value for <code>FileLo
 <p>Be aware that for each request, two log files will be generated. One <em><guid>_request.xml</guid></em> file and one <em><guid>_response.xml</guid></em> file.</p>
 </div>
 <h2 id="syslog-logging">Syslog Logging</h2>
-<p>Syslog support is currently only supported as an experimental feature and the setup/configuration may vary depending on your server setup.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Syslog support can only be activated by editing <code>%AppData%\RoyalServer\appsettings.json</code>.</p>
-</div>
-<p>Available configuration keys:</p>
+<p>Available settings:</p>
 <ul>
 <li><em>SysLogEnabled</em>: Enable or disable the syslog logging.</li>
 <li><em>SysLogProtocol</em>: The protocol to use.
@@ -222,6 +217,11 @@ If you want to configure a different interval, change the value for <code>FileLo
 </li>
 <li><em>SysLogIgnoreCertificateErrors</em>: If set to <code>true</code>, all certificate errors will be ignored when using protocol <code>Tcp</code>.</li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Syslog configuration needs may vary depending on your Syslog server setup.</p>
+<p>Syslog support can also be managed by editing <code>%AppData%\RoyalServer\appsettings.json</code>.</p>
+</div>
 
 </article>
           </div>
