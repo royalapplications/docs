@@ -88,10 +88,10 @@ If checked, all requests and responses from the Management Endpoint and the Docu
 
 ## Syslog Logging
 
-Syslog support is currently only supported as an experimental feature and the setup/configuration may vary depending on your server setup.
+Syslog setup and configuration may vary depending on your server setup.
 
 > [!NOTE]
-> Syslog support can only be activated by editing `%AppData%\RoyalServer\appsettings.json`.
+> Syslog support can also be activated and configured by editing `%AppData%\RoyalServer\appsettings.json`.
 
 Available configuration keys:
 
