@@ -1,56 +1,43 @@
 ---
 uid: royalts_reference_connections_web-page-ie
-name: Web Page (IE)
+name: Web Page (Edge)
 order: 9930
 ---
 
-# ![](/r2023/images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PluginIcon_32.svg#img_header) Web Page (IE)
+# ![](/products/images/RoyalTS/Plugins/Connections/WebPageEdge/SVG_PluginIcon_32.svg#img_header) Web Page (Edge)
 
-The **Web Page** connection can be used to display web pages and integrate web based administration consoles.
+The **Web Page** connection can be used to display web pages and integrate web-based administration consoles using Microsoft Edge WebView2.
 
 ## Dashboard
 
-The **Web Page Dashboard** is shown in the **Dashboard** panel when you select a Web Page connection in the **Navigation** panel. It can be configured to immediately show the web page - without actually connecting to the session.
-
-![WebPageIE_Dashboard](/r2023/images/RoyalTS/Plugins/Connections/WebPageIE/ie_dashboard.png)
+The **Web Page Dashboard** is shown in the **Dashboard** panel when you select a Web Page connection in the **Navigation** panel. It can be configured to immediately show the web page without connecting to the session.
 
 ## Dashboard Features
 
-- Basic browser functions (Home, Back, Forward, Refresh).
+- Basic browser functions (Home, Back, Forward, and Refresh).
+- Navigate to a URL and search within the page.
 - Open the configured URL in the default browser.
 
 ## Dashboard Settings
 
-To configure the application default settings for the included dashboard, open the [Plugins Management](xref:royalts_intro_plugins) and click on **Dashboard** for the Web Page plugin based on IE.  
+To configure the application default settings for the included dashboard, open [Plugins Management](xref:royalts_intro_plugins) and click **Dashboard** for the Web Page plugin based on Edge.
+
 To configure individual dashboard settings for a connection, use the [Dashboard](#dashboard) property page.
 
 ## Plugin Settings
 
-To configure the plugin settings, open the Plugins Management and click on **Settings** for the Web Page plugin:
-
-#### Browser Emulation
-
-If checked, Royal TS will apply the proper registry settings for IE to use the selected rendering engine.
-
-> [!Note]
-> To set the browser emulation, Royal TS needs access to the following registry key:  
-> `HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION`  
-> Some anti virus tools may block access to this key and cause Royal TS to hang on startup. Make sure to configure an exception to your anti virus configuration or uncheck the Allow Browser Emulation setting.
-
-#### Internet Explorer Version
-
-You can force Royal TS to use the render engines from Internet Explorer 7 to 10. Automatic will use the highest available version of the rendering engine.
+The Web Page plugin based on Edge does not offer any plugin settings.
 
 ## Connection Properties
 
-The Web Page (IE) Properties dialog is shown:
+The Web Page (Edge) Properties dialog is shown:
 
-- for a new Web Page connection by clicking the **Web Page** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab when the IE based plugin is set as the default plugin.
-- for a new Web Page connection by clicking the **More...** menu item in the **Add** drop down menu in the **Edit** group on the **Home** ribbon tab and selecting the **Web Page (based on IE)** entry from the list of available objects.
-- for an existing Web Page connection by selecting a Web Page connection which is configured to use the IE based plugin and clicking on the **Properties** command in the **Edit** group on the **Home** ribbon tab.
-- as a bulk-edit dialog when multiple Web Page connections which are configured to use the IE based plugin were selected in the Folder / Document Dashboard and the **Properties** command in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
+- for a new Web Page connection by clicking the **Web Page** menu item in the **Add** drop-down menu in the **Edit** group on the **Home** ribbon tab when the Edge-based plugin is set as the default plugin.
+- for a new Web Page connection by clicking the **More...** menu item in the **Add** drop-down menu in the **Edit** group on the **Home** ribbon tab and selecting **Web Page (based on Edge)** from the list of available objects.
+- for an existing Web Page connection by selecting a Web Page connection configured to use the Edge-based plugin and clicking **Properties** in the **Edit** group on the **Home** ribbon tab.
+- as a bulk-edit dialog when multiple Web Page connections configured to use the Edge-based plugin are selected in the Folder / Document Dashboard and **Properties** in the **Edit** group on the **Home** ribbon tab is clicked. See also: [Bulk Operations](xref:royalts_tutorials_bulk)
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PluginIconConnection_32.svg#img_header) Web Page Properties
+## ![](/products/images/RoyalTS/Plugins/Connections/WebPageEdge/SVG_PluginIcon_32.svg#img_header) Web Page Properties
 
 The **Web Page** property page allows you to configure basic connection settings.
 
@@ -59,9 +46,6 @@ The **Web Page** property page allows you to configure basic connection settings
 #### URL
 
 Enter the web page URL for this connection. [Replacement tokens](xref:royalts_advanced_tokens) are supported.
-
-> [!Note]
-> You may leave the URL field blank and configure the connection to display a specific content by providing the source for the page. This may be useful if you want to host your own ActiveX controls in a web page.
 
 [!include[description.md](~/royalts/_shared/description.md)]
 
@@ -79,52 +63,162 @@ If checked, Royal TS loads the configured web connection in the Dashboard. This 
 
 [!include[activeplugin.md](~/royalts/_shared/activeplugin.md)]
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageAdvanced_32.svg#img_header) Advanced
+## ![](/products/images/RoyalTS/Plugins/Connections/WebPageEdge/SVG_PageAdvanced_32.svg#img_header) Advanced
 
-The **Advanced** page allows you to configure advanced Web Page settings.
+The **Advanced** page allows you to configure browser behavior, automatic refresh, browser dimensions, zoom, and certificate handling.
 
-#### Use Basic Authentication
-
-If enabled, Royal TS will include the authentication header for basic authentication when requesting a web site. This setting will be ignored when no credential is set.
-
-#### Ignore Certificate Errors
-
-If checked, the certificate errors are suppressed.
-
-#### Open Links in Default Browser
-
-If enabled, each clicked link will be opened in your default browser and not in the connection tab or window.
-
-#### Open Popups in Default Browser
-
-If enabled, popup windows will be opened in the default browser and not in a window hosted by Royal TS.
-
-#### Suppress Web Browser Dialogs
-
-If checked, browser dialogs (such as missing ActiveX controls or Script Errors) are suppressed.
+### General
 
 #### Show Toolbar
 
 If enabled, a browser toolbar with basic commands and access to the URL is shown.
 
+#### Open Links in Default Browser
+
+If enabled, each clicked link is opened in your default browser instead of the connection tab or window.
+
+#### Open Popups in Default Browser
+
+If enabled, popup windows are opened in the default browser instead of a window hosted by Royal TS. Websites that require authentication may prompt for credentials again.
+
 #### Auto Refresh
 
-If enabled, the web page will be refreshed automatically. The minimum value is 5 seconds.
+If enabled, the web page is refreshed automatically. The interval can be between 5 and 86,400 seconds.
 
 #### Custom Browser Size
 
-If enabled, you can specify a custom width or height for the web browser. This can be useful to test a web page at different screen resolutions.
+If enabled, you can specify a custom width and height for the web browser. Each dimension can be between 16 and 16,000 pixels. This can be useful when testing a web page at different screen resolutions.
 
-## ![](/r2023/images/RoyalTS/Plugins/Connections/WebPageIE/SVG_PageCustomContent_32.svg#img_header) Custom Content
+#### Zoom Factor
 
-The **Custom Content** page allows you to define a custom content (HTML page) to load instead of loading an URL.
+Sets the initial zoom factor for the web page from 25% to 500%.
 
-#### Custom Content
+### Certificate
 
-If checked, paste your HTML code into the textbox.
+#### Ignore Certificate Errors
+
+If enabled, certificate errors are suppressed.
+
+#### Client Certificate
+
+Configure how Royal TS behaves when a website requests a client certificate.
+
+- **Continue without certificate:** Continue loading the page without selecting a client certificate.
+- **Prompt for certificate:** Prompt for a certificate when the website requests one.
+- **Continue with certificate:** Continue with the configured certificate.
+
+#### Select Certificate
+
+Select the certificate to use when **Continue with certificate** is configured.
+
+#### Thumbprint
+
+Shows the thumbprint of the selected client certificate.
+
+## ![](/products/images/RoyalTS/Plugins/Connections/WebPageEdge/SVG_PluginIcon_32.svg#img_header) Isolation
+
+The **Isolation** page configures a separate Microsoft Edge WebView2 session for this connection. Enable **Session Isolation** to configure language, proxy, security, storage, and browser settings. When isolation is disabled, the connection uses the shared default session and the remaining settings on this page are unavailable.
+
+#### Session Isolation
+
+Enables an isolated WebView2 session for this connection.
+
+### General
+
+#### Session ID
+
+Connections with the same Session ID share cookies, cache, and other browsing data. Simultaneously active connections sharing a Session ID must use compatible session settings. If the Session ID is empty, Royal TS creates an identifier for the connection.
+
+#### Language
+
+Specifies the WebView2 UI language using a language identifier such as `en` or `en-US`.
+
+#### Allow JavaScript
+
+If enabled, JavaScript is allowed in the browser.
+
+#### Allow Zooming
+
+If enabled, the zoom factor can be changed in the browser.
+
+#### Load Images
+
+If enabled, images are loaded automatically.
+
+#### Allow Clipboard Read Access
+
+If enabled, web content may request permission to read the system clipboard using JavaScript.
+
+#### Allow Close Window
+
+If enabled, a new browser window can be closed using JavaScript.
+
+### Proxy
+
+#### Proxy Mode
+
+The following proxy modes are available:
+
+- Do not use a proxy server
+- HTTP
+- SOCKS 4
+- SOCKS 5
+- Use Secure Gateway as proxy server
 
 > [!Note]
-> You can also use [replacement tokens](xref:royalts_advanced_tokens) like $URI$ or $CustomField1$ etc. to insert values from those fields.
+> Microsoft Edge WebView2 does not support SOCKS 4A. Proxy credentials are supported for HTTP proxies only.
+
+#### Direct Mode
+
+If enabled while **Do not use a proxy server** is selected, system proxy settings are ignored.
+
+#### Proxy Server
+
+Specifies the host name of the proxy server.
+
+#### Port
+
+Specifies the proxy port to use.
+
+#### Bypass
+
+Specifies hosts that should bypass the proxy server. Separate multiple hosts with spaces, commas, or semicolons.
+
+### Proxy Credential Configuration
+
+Proxy credential settings are available for HTTP proxies only.
+
+[!include[credentialmodes.md](~/royalts/_shared/credentialmodes.md)]
+
+### Advanced
+
+#### Disable Hardware Rendering (GPU)
+
+Disables GPU rendering for the browser.
+
+#### Disable Dark Mode
+
+If enabled, WebView2 does not automatically use dark mode based on system settings.
+
+#### Cache Path
+
+Specifies a custom parent path for browser files, cookies, and other session data. Royal TS creates a session-specific directory below this path.
+
+#### Clear Browsing Data on Close
+
+Clears browsing data for this isolated session, including cache, cookies, storage, and permissions. If multiple connections share the same Session ID, cleanup occurs after the last connection, dashboard, or popup using the session closes. Enabling this option on any active connection requests cleanup for the shared session.
+
+#### Custom User Agent
+
+Specifies a custom user agent string. Leave this field empty to use the default WebView2 user agent.
+
+#### Command Line Arguments
+
+Specifies additional Microsoft Edge WebView2 command-line switches separated by spaces. Chrome desktop command-line switches are not supported unless WebView2 supports them.
+
+#### Custom CSS
+
+Specifies one or more CSS rules to apply to loaded documents.
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]
