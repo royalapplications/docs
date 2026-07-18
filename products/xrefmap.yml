@@ -380,10 +380,10 @@ references:
   name: " VNC (Tight)"
   href: royalts/reference/connections/vnc-tight.html
 - uid: royalts_reference_connections_web-page-chrome
-  name: " Web Page (Chrome)"
+  name: " Web Page (Chromium)"
   href: royalts/reference/connections/web-page-chrome.html
 - uid: royalts_reference_connections_web-page-ie
-  name: " Web Page (IE)"
+  name: " Web Page (Edge)"
   href: royalts/reference/connections/web-page-ie.html
 - uid: royalts_reference_connections_windows-events
   name: " Windows Events View"
