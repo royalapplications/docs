@@ -96,10 +96,6 @@ If enabled, a browser toolbar with basic commands and access to the URL is shown
 
 If enabled, a browser status bar is shown.
 
-#### Ignore Certificate Errors
-
-If enabled, the certificate errors are suppressed.
-
 #### Open Links in Default Browser
 
 If enabled, each clicked link will be opened in your default browser and not in the connection tab or window.
@@ -107,10 +103,6 @@ If enabled, each clicked link will be opened in your default browser and not in 
 #### Open Popups in Default Browser
 
 If enabled, popup windows will be opened in the default browser and not in a window hosted by Royal TS.
-
-#### Clear Cache
-
-If enabled, the web browser cache (including cookies) is cleared when the connection is closed.
 
 #### Auto Refresh
 
@@ -125,6 +117,10 @@ If enabled, you can specify a custom width or height for the web browser. This c
 Set the initial zoom factor for the web page.
 
 ### Certificate
+
+#### Ignore Certificate Errors
+
+If enabled, the certificate errors are suppressed.
 
 #### Client Certificate
 
@@ -147,7 +143,7 @@ Shows the thumbprint of the selected client certificate.
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/WebPageChrome/SVG_PluginIcon_32.svg#img_header) Engine
 
-The **Engine** settings page allows you to create a dedicated Browser Engine for isolation. You can set various options like JavaScript, Proxy or security related options.
+The **Engine** settings page allows you to create a dedicated Chromium engine for isolation. Enable **Use Dedicated Engine** to configure language, proxy, security, storage, and browser settings. When it is disabled, the connection uses the shared default engine and the remaining settings on this page are unavailable.
 
 #### Use Dedicated Engine
 
@@ -155,13 +151,13 @@ If enabled, a new web browser engine will be created for isolation.
 
 ### General
 
+#### Session ID
+
+Connections with the same Session ID share a Chromium engine, cookies, cache, and other browsing data. The first active connection supplies the settings for the shared engine, so simultaneously active connections using the same Session ID should use compatible settings. If the Session ID is empty, Royal TS uses the connection ID to create an isolated session.
+
 #### Language
 
 A two lower case letter ISO 639-1 language code. For example, you can set it to "fr" to use French for all UI messages. In case a language can have multiple variations, you can use four letter culture name in the format languagecode2-country/regioncode2. For example, "en-US" for U.S. English, and "en-GB" for United Kingdom English. Not all languages are supported. In case you set an unsupported language, U.S. English will be used.
-
-#### Engine Id
-
-A custom engine identifier to share cache and session across multiple connections.
 
 #### Allow JavaScript
 
@@ -177,7 +173,7 @@ If enabled, the zoom factor can be changed in the browser.
 
 #### Allow Close Window
 
-If enabled, images are automatically loaded.
+If enabled, JavaScript can close a browser window.
 
 #### Load Images
 
@@ -231,7 +227,11 @@ Disables the browser built-in spell checker.
 
 #### Cache Path
 
-Specify a custom path to cache browser files and cookies.
+Specifies a custom parent path for browser files and cookies. Royal TS appends a directory based on the sanitized Session ID below this path.
+
+#### Clear Browsing Data on Close
+
+Clears the complete Chromium profile, including cache, cookies, history, and other browsing data. This setting applies only to dedicated engines. If multiple connections share the same Session ID, cleanup occurs after the last connection or popup using the session closes. Enabling this option on any active connection requests cleanup for the shared session.
 
 #### Custom User Agent
 
