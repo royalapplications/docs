@@ -85,7 +85,7 @@ Type: `bool`, Default Value: `false`
 If set to true, glyph caching is enabled.  
 ### EnableRdsAadAuth
 Type: `bool`, Default Value: `false`  
-Determines whether the client will use Microsoft Entra ID to authenticate to the remote PC. In Azure Virtual Desktop, this provides a single sign-on experience.  
+Determines whether the client uses Microsoft Entra ID to authenticate to the remote PC through the [native Windows web-account sign-in flow](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remotepc/remote-desktop-connection-single-sign-on). Use the Microsoft Entra account's user principal name (UPN), for example `user@domain.com`, as the username. Do not prefix it with `AzureAD\` when this property is enabled. In Azure Virtual Desktop, this provides a single sign-on experience.
 ### GrabFocusOnConnect
 Type: `bool`, Default Value: `false`  
 If set to true, the client control will grab the focus upon connect.  

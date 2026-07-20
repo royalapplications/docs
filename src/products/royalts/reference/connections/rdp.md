@@ -246,12 +246,12 @@ In this mode, credentials won't be sent to the remote server, by sending the Ker
 > [!Note]
 > This setting will be ignored when Restricted Admin Mode is enabled.
 
-#### Azure AD Authentication
+#### Entra ID Authentication
 
-Determines whether the client will use Microsoft Entra ID to authenticate to the remote PC. In Azure Virtual Desktop, this provides a single sign-on experience.
+Determines whether the client uses Microsoft Entra ID to authenticate to the remote PC through the native Windows web-account sign-in flow. This is equivalent to Remote Desktop Connection's [**Use a web account to sign in to the remote computer**](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remotepc/remote-desktop-connection-single-sign-on) option. In Azure Virtual Desktop, this provides a single sign-on experience.
 
 > [!Note]
-> If the connection can not be established, try changing the username syntax to ".\AzureAD\user@org.com".
+> Use the Microsoft Entra account's user principal name (UPN), for example `user@domain.com`, as the username. Do not prefix the username with `AzureAD\` when Entra ID Authentication is enabled. The `AzureAD\user@domain.com` format applies to traditional password-based RDP, not the web-account flow.
 
 ### Connection
 
