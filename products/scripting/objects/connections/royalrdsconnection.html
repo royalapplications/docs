@@ -149,7 +149,7 @@ If set to true, the client control automatically reconnects to a session in the 
 If set to true, glyph caching is enabled.</p>
 <h3 id="enablerdsaadauth">EnableRdsAadAuth</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code>
-Determines whether the client will use Microsoft Entra ID to authenticate to the remote PC. In Azure Virtual Desktop, this provides a single sign-on experience.</p>
+Determines whether the client uses Microsoft Entra ID to authenticate to the remote PC through the <a href="https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remotepc/remote-desktop-connection-single-sign-on">native Windows web-account sign-in flow</a>. Use the Microsoft Entra account's user principal name (UPN), for example <code>user@domain.com</code>, as the username. Do not prefix it with <code>AzureAD\</code> when this property is enabled. In Azure Virtual Desktop, this provides a single sign-on experience.</p>
 <h3 id="executionmode">ExecutionMode</h3>
 <p>Type: <code>int</code>, Default Value: <code>1</code>
 0 = In-Process

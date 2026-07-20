@@ -497,11 +497,11 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <h5>Note</h5>
 <p>This setting will be ignored when Restricted Admin Mode is enabled.</p>
 </div>
-<h4 id="azure-ad-authentication">Azure AD Authentication</h4>
-<p>Determines whether the client will use Microsoft Entra ID to authenticate to the remote PC. In Azure Virtual Desktop, this provides a single sign-on experience.</p>
+<h4 id="entra-id-authentication">Entra ID Authentication</h4>
+<p>Determines whether the client uses Microsoft Entra ID to authenticate to the remote PC through the native Windows web-account sign-in flow. This is equivalent to Remote Desktop Connection's <a href="https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remotepc/remote-desktop-connection-single-sign-on"><strong>Use a web account to sign in to the remote computer</strong></a> option. In Azure Virtual Desktop, this provides a single sign-on experience.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If the connection can not be established, try changing the username syntax to &quot;.\AzureAD\user@org.com&quot;.</p>
+<p>Use the Microsoft Entra account's user principal name (UPN), for example <code>user@domain.com</code>, as the username. Do not prefix the username with <code>AzureAD\</code> when Entra ID Authentication is enabled. The <code>AzureAD\user@domain.com</code> format applies to traditional password-based RDP, not the web-account flow.</p>
 </div>
 <h3 id="connection">Connection</h3>
 <h4 id="compression">Compression</h4>
