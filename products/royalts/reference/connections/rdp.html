@@ -483,6 +483,12 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <h5>Note</h5>
 <p>NLA is enabled by default on Vista/Windows 2008 or later.</p>
 </div>
+<h4 id="show-windows-credential-prompt">Show Windows Credential Prompt</h4>
+<p>Forces the embedded Microsoft RDP (ActiveX) client to show the native Windows credential prompt when connecting. Enable this option when authentication is handled by a custom credential provider installed on this computer.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option applies only to embedded Microsoft RDP sessions. It has no effect on FreeRDP or external RDP clients.</p>
+</div>
 <h4 id="use-credential-manager">Use Credential Manager</h4>
 <p>When checked, Royal TS will create a credential entry in the Windows Credential Manager instead of submitting the credentials to the server.</p>
 <h4 id="restricted-admin-mode">Restricted Admin Mode</h4>
