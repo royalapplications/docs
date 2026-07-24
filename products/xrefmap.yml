@@ -355,6 +355,9 @@ references:
 - uid: royalts_reference_connections_powershell
   name: " PowerShell Connection"
   href: royalts/reference/connections/powershell.html
+- uid: royalts_reference_connections_proxmox
+  name: Proxmox
+  href: royalts/reference/connections/proxmox.html
 - uid: royalts_reference_connections_rdp
   name: Remote Desktop (Microsoft)
   href: royalts/reference/connections/rdp.html
@@ -574,6 +577,9 @@ references:
 - uid: scripting_object_royalpowershellconnection
   name: RoyalPowerShellConnection
   href: scripting/objects/connections/royalpowershellconnection.html
+- uid: scripting_object_royalproxmoxconnection
+  name: RoyalProxmoxConnection
+  href: scripting/objects/connections/royalproxmoxconnection.html
 - uid: scripting_object_royalrdsconnection
   name: RoyalRDSConnection
   href: scripting/objects/connections/royalrdsconnection.html
