@@ -1,10 +1,10 @@
 ---
-uid: scripting_object_royaldocument
-name: RoyalDocument
-order: 9900
+uid: scripting_object_royalproxmoxconnection
+name: RoyalProxmoxConnection
+order: 7700
 ---
 
-# RoyalDocument
+# RoyalProxmoxConnection
 ## General
 ### CustomImageName
 Type: `string`, Default Value: `Empty String`  
@@ -27,31 +27,49 @@ Assign a custom color as hex string to the object (#FF0000 for red). Empty strin
 ### ColorName
 Type: `string`, Default Value: `Empty String`  
 Assign a color from a color palette to the object. If both, a color name and a custom color (hex string) are provided, the color name is preferred.  
-### AutoSaveOnClose
+### URI
+Type: `string`, Default Value: `Empty String`  
+The target URI for the connection object (computer name, URL, ...).  
+### UseHttps
+Type: `bool`, Default Value: `true`  
+Use HTTPS to connect to the Proxmox VE API.  
+### ApiPort
+Type: `int`, Default Value: `8006`  
+The TCP port the Proxmox VE API listens on (default 8006).  
+### IgnoreCertificateErrors
+Type: `bool`, Default Value: `true`  
+Ignore TLS certificate validation errors. Proxmox defaults to a self-signed certificate.  
+### IsConnectionTemplate
 Type: `bool`, Default Value: `false`  
-If set to true, the document is automatically saved when it's closed.  
-### AutoSaveAfterChange
-Type: `bool`, Default Value: `false`  
-If set to true, the document is automatically saved after it has been changed.  
-### SaveOption
-Type: `RoyalSaveOption`, Default Value: `0`  
-1 = Overwrite   
- 2 = Merge  
-### StoreFolderExpandStateInUserConfig
-Type: `bool`, Default Value: `false`  
-If set to true, the folder expand state will be stored in the user configuration.  
-### StoreFavoritesInUserConfig
-Type: `bool`, Default Value: `false`  
-If set to true, favorites will be stored in the user configuration.  
-### DeletedObjectRetention
-Type: `int`, Default Value: `30`  
-Deleted object retention time (in days).  
+If set to true, the connection object is a template.  
 ### ID
 Type: `Guid`, Default Value: `Guid.Empty`  
 The unique object identifier (GUID) of the object.  
 ### ExternalID
 Type: `string`, Default Value: `Empty String`  
 The external unique object identifier (GUID) of the object.  
+## Advanced
+### AutoRefresh
+Type: `bool`, Default Value: `false`  
+If set to true, the view will be refreshed automatically. Requires the AutoRefreshIntervalInSeconds to be set.  
+### AutoRefreshIntervalInSeconds
+Type: `int`, Default Value: `60`  
+The number of seconds the view will be reloaded. Requires the AutoRefresh property set to true.  
+### MaxColumnWidth
+Type: `bool`, Default Value: `false`  
+If set to true, the whole client area is used for the column widths  
+### ShowDetailsPanel
+Type: `bool`, Default Value: `true`  
+If set to true, the detail panel is shown (where available).  
+### ShowHorizontalLines
+Type: `bool`, Default Value: `false`  
+If set to true, horizontal lines are shown.  
+### ShowVerticalLines
+Type: `bool`, Default Value: `false`  
+If set to true, vertical lines are shown.  
+### SSHPort
+Type: `int`, Default Value: `22`  
+The SSH port used for ad-hoc Terminal connections to the Proxmox host.  
 ## Credentials
 ### CredentialAutologon
 Type: `bool`, Default Value: `true`  
@@ -83,6 +101,9 @@ Type: `int`, Default Value: `0`
 ### CredentialName
 Type: `string`, Default Value: `Empty String`  
 Assign a credential object to this object by specifying the credential object's name.  
+### CredentialOmitDomain
+Type: `bool`, Default Value: `false`  
+Whether or not to omit the domain portion of the username.  
 ### CredentialPassphrase
 Type: `string`, Default Value: `Empty String`  
 Assign a key file passphrase to the object.  
@@ -92,10 +113,10 @@ Assign a password to the object.
 ### CredentialUsername
 Type: `string`, Default Value: `Empty String`  
 Assign a username to the object.  
-## Folder
-### IsExpanded
-Type: `bool`, Default Value: `false`  
-Whether or not the folder is in expanded state.  
+## Filter
+### AdvancedFilterString
+Type: `string`, Default Value: `Empty String`  
+The advanced query filter string (where available).  
 ## Key Sequence
 ### KeySequence
 Type: `string`, Default Value: `Empty String`  
@@ -118,6 +139,20 @@ Type: `int`, Default Value: `0`
 ### KeySequenceName
 Type: `string`, Default Value: `Empty String`  
 Assign a key sequence task object to this object by specifying the key sequence task object's name.  
+## Plugin for macOS
+### PlugInOSX
+Type: `string`, Default Value: `Empty String`  
+The plug in ID used for this connection for macOS.  
+### UseGlobalPlugInOSX
+Type: `bool`, Default Value: `true`  
+If set to true, the connection will use the application default plug in for the connection type on macOS.  
+## Plugin for Windows
+### PlugInWin
+Type: `string`, Default Value: `Empty String`  
+The plug in ID used for this connection for Windows.  
+### UseGlobalPlugInWin
+Type: `bool`, Default Value: `true`  
+If set to true, the connection will use the application default plug in for the connection type on Windows.  
 ## Connect Task
 ### PreConnectTaskFromParent
 Type: `bool`, Default Value: `false`  
@@ -163,6 +198,65 @@ If set to true, the connection will be closed after the task finished.
 ### PostDisconnectTaskConditionLast
 Type: `bool`, Default Value: `false`  
 If set to true, the task will only be executed if it is the last active connection in a folder.  
+## Window Mode
+### DisplayMode
+Type: `int`, Default Value: `0`  
+0 = Embedded (Tabbed)   
+ 1 = External Window   
+ 2 = Full Screen (where supported).  
+### ExternalScreenMode
+Type: `int`, Default Value: `0`  
+0 = Remember Screen   
+ Any other number indicates the display number.  
+### ExternalScreen
+Type: `int`, Default Value: `0`  
+Specifies on which Screen the External Window will be shown (Windows).  
+### ExternalScreenOSX
+Type: `int`, Default Value: `0`  
+Specifies on which Screen the External Window will be shown (macOS).  
+### ExternalPositionMode
+Type: `int`, Default Value: `0`  
+0 = Remember position   
+ 1 = Custom left and right coordinates  
+### ExternalTop
+Type: `int`, Default Value: `0`  
+Specifies the last known position (top) of the external window.  
+### ExternalLeft
+Type: `int`, Default Value: `0`  
+Specifies the last known position (left) of the external window.  
+### ExternalWidth
+Type: `int`, Default Value: `0`  
+Specifies the last known width of the external window.  
+### ExternalHeight
+Type: `int`, Default Value: `0`  
+Specifies the last known height of the external window.  
+### ExternalSizeMode
+Type: `int`, Default Value: `0`  
+0 = Remember Size   
+ 1 = Custom width and height   
+ 2 = Maximize  
+### MinimizeMainWindow
+Type: `bool`, Default Value: `false`  
+If set to true, the main window will be minimized after the connection was established.  
+### FixedSize
+Type: `bool`, Default Value: `false`  
+Specifies whether or not the control or form should be expanded automatically to fill the container or maximized form  
+## Dashboard
+### DashboardUseAppSettings
+Type: `bool`, Default Value: `true`  
+If set to true, the plugin default settings for the dashboard are used.  
+### DashboardUseWebPageTemplate
+Type: `bool`, Default Value: `false`  
+If set to true, a web page template is used to show a web page in the dashboard.  
+### DashboardWebPageTemplate
+Type: `Guid`, Default Value: `Guid.Empty`  
+The Web Page template to use in the dashboard when DashboardUseWebPageTemplate is set to true.  
+### DashboardAutoShowData
+Type: `bool`, Default Value: `false`  
+If set to true, the dashboard will load the data.  
+### DashboardShowDetailsPanel
+Type: `bool`, Default Value: `false`  
+If set to true, the dashboard will show the details panel (where available).  
 ## Royal Server
 ### ManagementEndpointFromParent
 Type: `bool`, Default Value: `false`  

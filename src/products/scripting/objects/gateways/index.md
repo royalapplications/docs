@@ -1,7 +1,7 @@
 ---
 uid: scripting_object_gateways
 name: Gateways
-order: 7600
+order: 7500
 ---
 
 # Gateways

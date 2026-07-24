@@ -28,6 +28,7 @@ order: 10100
 - [RoyalWindowsServicesConnection](connections/royalwindowsservicesconnection.md)
 - [RoyalTerminalServicesConnection](connections/royalterminalservicesconnection.md)
 - [RoyalHyperVConnection](connections/royalhypervconnection.md)
+- [RoyalProxmoxConnection](connections/royalproxmoxconnection.md)
 - [RoyalVMwareConnection](connections/royalvmwareconnection.md)
 ## [Gateways](gateways/index.md)
 - [RoyalManagementEndpoint](gateways/royalmanagementendpoint.md)

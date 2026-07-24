@@ -19,4 +19,5 @@ order: 9200
 - [RoyalWindowsServicesConnection](royalwindowsservicesconnection.md)
 - [RoyalTerminalServicesConnection](royalterminalservicesconnection.md)
 - [RoyalHyperVConnection](royalhypervconnection.md)
+- [RoyalProxmoxConnection](royalproxmoxconnection.md)
 - [RoyalVMwareConnection](royalvmwareconnection.md)
