@@ -228,6 +228,13 @@ If the computer you want to connect to requires Network Level Authentication, yo
 > [!Note]
 > NLA is enabled by default on Vista/Windows 2008 or later.
 
+#### Show Windows Credential Prompt
+
+Forces the embedded Microsoft RDP (ActiveX) client to show the native Windows credential prompt when connecting. Enable this option when authentication is handled by a custom credential provider installed on this computer.
+
+> [!Note]
+> This option applies only to embedded Microsoft RDP sessions. It has no effect on FreeRDP or external RDP clients.
+
 #### Use Credential Manager
 
 When checked, Royal TS will create a credential entry in the Windows Credential Manager instead of submitting the credentials to the server.

@@ -111,6 +111,9 @@ If set to true, network level authentication (credsspsupport) is enabled and req
 ### PasswordContainsSmartCardPin
 Type: `bool`, Default Value: `false`  
 Indicates that the password contains a smart card personal identification number (PIN). Minimum requirement: RDP Version 6 or higher.  
+### PromptForCredentialsOnClient
+Type: `bool`, Default Value: `false`  
+Specifies whether the embedded Microsoft RDP ActiveX client shows the Windows credential prompt when connecting.  
 ### PublicMode
 Type: `bool`, Default Value: `false`  
 If set to true, the client control does not cache any data to the local system. Use public mode, for example, when connecting to a business server from a system in a conference center.  

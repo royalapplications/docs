@@ -405,6 +405,10 @@ If checked, the following keyboard shortcuts are supported for scrolling:
 
 Specify the initial mouse paste mode. You can easily switch on or off mouse paste from the Actions tab while connected.
 
+#### Hide Mouse Pointer when Typing
+
+When enabled for the Royal Terminal renderer, the mouse pointer is hidden after accepted text input. It is restored when you move the mouse, the terminal loses focus, or you disable the option.
+
 #### Paste Clipboard Preview
 - **Never:** Paste operations are immediately applied
 - **Clipboard contains line breaks:** Shows a warning with the clipboard contents when line breaks are present

@@ -50,6 +50,14 @@ Click to test the Royal Server configuration.
 
 Displays the certificate validation fingerprint.
 
+#### Royal Server Fingerprint Warning
+
+Controls when Royal TS warns about the Royal Server certificate fingerprint:
+
+- **Always:** Show a warning whenever a fingerprint is presented.
+- **Invalid:** Show a warning only when the fingerprint is invalid or has changed.
+- **Never:** Do not show fingerprint warnings.
+
 ## ![](/r2023/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header) Royal Server Credentials
 
 The **Credentials** page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.

@@ -93,6 +93,11 @@ Gets or sets a value indicating whether to enable strict key exchange extension 
 ### RoyalServerFingerprint
 Type: `string`, Default Value: `Empty String`  
 The fingerprint of the server to trust.  
+### RoyalServerFingerprintWarning
+Type: `int`, Default Value: `0`  
+0 = Always   
+ 1 = Invalid   
+ 2 = Never  
 ### RoyalServerHost
 Type: `string`, Default Value: `Empty String`  
 The server host name or IP address where Royal Server is installed und running.  
