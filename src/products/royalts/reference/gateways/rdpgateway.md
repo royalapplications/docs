@@ -28,6 +28,12 @@ The **Remote Desktop Gateway** page allows you to configure the computer name (I
 [!include[computername.md](~/royalts/_shared/computername-gw.md)]
 [!include[description.md](~/royalts/_shared/description.md)]
 
+#### Access Token
+
+Specifies the token passed to a Remote Desktop Gateway Pluggable Authentication and Authorization (PAA) plugin. The value is stored encrypted in the document.
+
+For CyberArk Secure Infrastructure Access (SIA), enter `secureaccess` as both the gateway username and **Access Token**.
+
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
 
 #### Smart Card

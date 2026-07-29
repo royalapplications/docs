@@ -34,6 +34,9 @@ The unique object identifier (GUID) of the object.
 Type: `string`, Default Value: `Empty String`  
 The external unique object identifier (GUID) of the object.  
 ## Gateway
+### GatewayAccessToken
+Type: `string`, Default Value: `Empty String`  
+The access token passed to a Remote Desktop Gateway Pluggable Authentication and Authorization (PAA) plugin. The value is stored encrypted in the document.  
 ### GatewayCredentialID
 Type: `Guid`, Default Value: `Guid.Empty`  
 Assign a credential object as gateway server credential by specifying the credential object's GUID.  

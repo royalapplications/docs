@@ -223,6 +223,9 @@ If set to true, the display will be scaled down to fit the client area of the co
 Type: `bool`, Default Value: `false`  
 If set to true, the full retina resolution is used, otherwise the display will be scale up. Applies only to Royal TSX on macOS.  
 ## Gateway
+### GatewayAccessToken
+Type: `string`, Default Value: `Empty String`  
+The access token passed to a Remote Desktop Gateway Pluggable Authentication and Authorization (PAA) plugin. The value is stored encrypted in the document.  
 ### GatewayCredentialID
 Type: `Guid`, Default Value: `Guid.Empty`  
 Assign a credential object as gateway server credential by specifying the credential object's GUID.  

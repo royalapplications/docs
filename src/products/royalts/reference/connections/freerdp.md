@@ -268,6 +268,12 @@ Selects the transport used to connect to a connection-specific Remote Desktop Ga
 > [!Note]
 > When an existing shared gateway is selected, its configured transport is used instead.
 
+#### Access Token
+
+Specifies the token passed to a Remote Desktop Gateway Pluggable Authentication and Authorization (PAA) plugin. The value is stored encrypted in the document.
+
+For CyberArk Secure Infrastructure Access (SIA), enter `secureaccess` as both the gateway username and **Access Token**.
+
 #### Logon Method
 
 Specify the Logon Method for the gateway server.

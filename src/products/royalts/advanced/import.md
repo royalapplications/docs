@@ -50,6 +50,8 @@ The selected Royal TS 1.x file appears in the **Navigation** panel and can be sa
 
 Azure Virtual Desktop `.rdpw` files can include ARM gateway transport, Microsoft Entra authentication, load-balance information, and RemoteApp configuration. Royal TS imports these settings and assigns the Remote Desktop (FreeRDP) plugin to ARM-based connections.
 
+CyberArk Secure Infrastructure Access (SIA) `.rdp` files can use Remote Desktop Gateway Pluggable Authentication and Authorization (PAA). Royal TS imports the `gatewayaccesstoken` property and assigns the Remote Desktop (FreeRDP) plugin when it is available. If the imported access token is empty, open the connection's **Remote Desktop Gateway** properties and enter the value required by the gateway provider. For CyberArk SIA, enter `secureaccess` as both the gateway username and **Access Token**.
+
 ### Import and immediately connect to Remote Desktop Files
 
 During setup, you can choose to create a file association for .rdp files. Double-clicking or opening an .rdp file in Windows will open and connect to the remote desktop in Royal TS.
