@@ -35,25 +35,27 @@ Royal TS allows you to import your Royal TS V1.x files into an existing Royal TS
 
 The selected Royal TS 1.x file appears in the **Navigation** panel and can be saved as a new Royal TS document to finish the conversion.
 
-## ![](/r2023/images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg#img_header)Import Remote Desktop Files (.rdp)
+## ![](/r2023/images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg#img_header)Import Remote Desktop Files (.rdp and .rdpw)
 
 1. In the **Navigation** panel, select a document or folder.
-2. On the **Data** tab, in the **Import** group, click on **Remote Desktop Files (.rdp)**.
-3. Click on the **Add** button to add .rdp files to the list for import.
+2. On the **Data** tab, in the **Import** group, click on **Remote Desktop Files (.rdp, .rdpw)**.
+3. Click on the **Add** button to add `.rdp` or `.rdpw` files to the list for import.
 
    > [!Note]
-   > The split button allows you to scan for .rdp files in directories.
+   > The split button allows you to scan directories recursively for `.rdp` and `.rdpw` files.
 
 4. Click on **Next**.
 5. Select a destination folder.
 6. To start the import, click on **OK**.
 
-### Import and immediately connect to Remote Desktop Files (.rdp Files)
+Azure Virtual Desktop `.rdpw` files can include ARM gateway transport, Microsoft Entra authentication, load-balance information, and RemoteApp configuration. Royal TS imports these settings and assigns the Remote Desktop (FreeRDP) plugin to ARM-based connections.
+
+### Import and immediately connect to Remote Desktop Files
 
 During setup, you can choose to create a file association for .rdp files. Double-clicking or opening an .rdp file in Windows will open and connect to the remote desktop in Royal TS.
 
 > [!Note]
-> You can also use Open with... in Windows Explorer to manually create a file association to .rdp files.
+> Royal TS also handles `.rdpw` files when they are opened directly. You can use **Open with...** in Windows Explorer to associate `.rdp` or `.rdpw` files with Royal TS manually.
 
 ## ![](/r2023/images/RoyalTS/Plugins/Import/Csv/SVG_PluginIcon_32.svg#img_header)Import from CSV File
 

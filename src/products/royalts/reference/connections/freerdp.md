@@ -189,6 +189,15 @@ Use a smart card to authenticate the remote desktop connection.
 
 When enabled, Royal TS will send the smart card personal identification number (PIN) using the password field.
 
+#### Entra ID Authentication (Experimental)
+
+Uses an embedded Microsoft Entra sign-in flow equivalent to the **Use a web account to sign in to the remote computer** option in Microsoft Remote Desktop Connection. Enter the account's user principal name (UPN), such as `user@domain.com`, as the username.
+
+This option is required for Azure Virtual Desktop connections that authenticate through Microsoft Entra ID. Microsoft Edge WebView2 Runtime is required for the interactive sign-in.
+
+> [!Note]
+> Microsoft Entra ID authentication requires a host name rather than a literal IP address. It cannot be used through a Royal TS Secure Gateway tunnel. Conventional RPC or HTTP Remote Desktop Gateways and proxy servers must use separate credentials instead of reusing the remote computer credential.
+
 ### Connection
 
 #### Compression
@@ -246,6 +255,18 @@ Specifies when to use a Remote Desktop Gateway server.
 #### Gateway Server
 
 Specifies the host name of the Remote Desktop Gateway server.
+
+#### Transport Type
+
+Selects the transport used to connect to a connection-specific Remote Desktop Gateway.
+
+- **Automatic** - Lets FreeRDP select the appropriate gateway transport.
+- **RPC** - Uses the RPC gateway transport.
+- **HTTP** - Uses the HTTP gateway transport.
+- **ARM** - Uses the Azure Resource Manager transport required by Azure Virtual Desktop workspace connections. ARM uses Microsoft Entra token authentication and does not use conventional Remote Desktop Gateway username and password credentials.
+
+> [!Note]
+> When an existing shared gateway is selected, its configured transport is used instead.
 
 #### Logon Method
 
@@ -434,6 +455,12 @@ Specifies the working directory of the start program.
 #### Maximize
 
 Specifies whether the program should be maximized.
+
+### Remote App Configuration
+
+#### Remote App Program
+
+Specifies the remote application identifier used by Azure Virtual Desktop. This value is distinct from **Program**, which starts a program after connecting to a full remote desktop. Azure Virtual Desktop `.rdpw` files normally provide this identifier through the `remoteapplicationprogram` property.
 
 [!include[notes.md](~/royalts/_shared/notes.md)]
 [!include[customproperties.md](~/royalts/_shared/customproperties.md)]

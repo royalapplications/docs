@@ -254,7 +254,8 @@ The password for the gateway server. Only works with XP SP3, Vista SP1, Windows 
 Type: `int`, Default Value: `0`  
 0 = Auto   
  1 = RPC   
- 2 = HTTP  
+ 2 = HTTP   
+ 3 = ARM  
 ### GatewayUsageMethod
 Type: `int`, Default Value: `0`  
 0 = Never   
@@ -385,6 +386,9 @@ If set to true, the connection will use the application default plug in for the 
 ### MaximizeShell
 Type: `bool`, Default Value: `false`  
 If set to true, the programs launched with the StartProgram property should be maximized.  
+### RemoteAppProgram
+Type: `string`, Default Value: `Empty String`  
+Specifies the remote application identifier used by Azure Virtual Desktop.  
 ### StartProgram
 Type: `string`, Default Value: `Empty String`  
 The program to be started on the remote server upon connection. Remarks: If the value of this property is not set, the session user's shell command will be run. The shell command will be read from the following registry value on the server: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WinLogon\Shell  

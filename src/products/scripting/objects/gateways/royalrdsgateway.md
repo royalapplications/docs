@@ -61,7 +61,8 @@ The password for the gateway server. Only works with XP SP3, Vista SP1, Windows 
 Type: `int`, Default Value: `0`  
 0 = Auto   
  1 = RPC   
- 2 = HTTP  
+ 2 = HTTP   
+ 3 = ARM  
 ### GatewayUserName
 Type: `string`, Default Value: `Empty String`  
 The username for the gateway server. Only works with XP SP3, Vista SP1, Windows 2008 or later.  
