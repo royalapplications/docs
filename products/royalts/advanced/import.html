@@ -102,16 +102,16 @@
 <li>If your Royal TS 1.x file is password protected, you will be asked to enter the password.</li>
 </ol>
 <p>The selected Royal TS 1.x file appears in the <strong>Navigation</strong> panel and can be saved as a new Royal TS document to finish the conversion.</p>
-<h2 id="import-remote-desktop-files-rdp"><img src="/r2023/images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg#img_header" alt="">Import Remote Desktop Files (.rdp)</h2>
+<h2 id="import-remote-desktop-files-rdp-and-rdpw"><img src="/r2023/images/RoyalTS/Plugins/Import/MsRdp/SVG_FileIconRDP_32.svg#img_header" alt="">Import Remote Desktop Files (.rdp and .rdpw)</h2>
 <ol>
 <li><p>In the <strong>Navigation</strong> panel, select a document or folder.</p>
 </li>
-<li><p>On the <strong>Data</strong> tab, in the <strong>Import</strong> group, click on <strong>Remote Desktop Files (.rdp)</strong>.</p>
+<li><p>On the <strong>Data</strong> tab, in the <strong>Import</strong> group, click on <strong>Remote Desktop Files (.rdp, .rdpw)</strong>.</p>
 </li>
-<li><p>Click on the <strong>Add</strong> button to add .rdp files to the list for import.</p>
+<li><p>Click on the <strong>Add</strong> button to add <code>.rdp</code> or <code>.rdpw</code> files to the list for import.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The split button allows you to scan for .rdp files in directories.</p>
+<p>The split button allows you to scan directories recursively for <code>.rdp</code> and <code>.rdpw</code> files.</p>
 </div>
 </li>
 <li><p>Click on <strong>Next</strong>.</p>
@@ -121,11 +121,12 @@
 <li><p>To start the import, click on <strong>OK</strong>.</p>
 </li>
 </ol>
-<h3 id="import-and-immediately-connect-to-remote-desktop-files-rdp-files">Import and immediately connect to Remote Desktop Files (.rdp Files)</h3>
+<p>Azure Virtual Desktop <code>.rdpw</code> files can include ARM gateway transport, Microsoft Entra authentication, load-balance information, and RemoteApp configuration. Royal TS imports these settings and assigns the Remote Desktop (FreeRDP) plugin to ARM-based connections.</p>
+<h3 id="import-and-immediately-connect-to-remote-desktop-files">Import and immediately connect to Remote Desktop Files</h3>
 <p>During setup, you can choose to create a file association for .rdp files. Double-clicking or opening an .rdp file in Windows will open and connect to the remote desktop in Royal TS.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>You can also use Open with... in Windows Explorer to manually create a file association to .rdp files.</p>
+<p>Royal TS also handles <code>.rdpw</code> files when they are opened directly. You can use <strong>Open with...</strong> in Windows Explorer to associate <code>.rdp</code> or <code>.rdpw</code> files with Royal TS manually.</p>
 </div>
 <h2 id="import-from-csv-file"><img src="/r2023/images/RoyalTS/Plugins/Import/Csv/SVG_PluginIcon_32.svg#img_header" alt="">Import from CSV File</h2>
 <ol>

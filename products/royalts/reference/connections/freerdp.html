@@ -466,6 +466,13 @@ Attempt authentication of the server. If authentication fails, the user will be 
 <p>Use a smart card to authenticate the remote desktop connection.</p>
 <h4 id="password-contains-smart-card-pin">Password contains Smart Card Pin</h4>
 <p>When enabled, Royal TS will send the smart card personal identification number (PIN) using the password field.</p>
+<h4 id="entra-id-authentication-experimental">Entra ID Authentication (Experimental)</h4>
+<p>Uses an embedded Microsoft Entra sign-in flow equivalent to the <strong>Use a web account to sign in to the remote computer</strong> option in Microsoft Remote Desktop Connection. Enter the account's user principal name (UPN), such as <code>user@domain.com</code>, as the username.</p>
+<p>This option is required for Azure Virtual Desktop connections that authenticate through Microsoft Entra ID. Microsoft Edge WebView2 Runtime is required for the interactive sign-in.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Microsoft Entra ID authentication requires a host name rather than a literal IP address. It cannot be used through a Royal TS Secure Gateway tunnel. Conventional RPC or HTTP Remote Desktop Gateways and proxy servers must use separate credentials instead of reusing the remote computer credential.</p>
+</div>
 <h3 id="connection">Connection</h3>
 <h4 id="compression">Compression</h4>
 <p>Specifies whether compression is enabled.</p>
@@ -504,6 +511,18 @@ Use a Remote Desktop Gateway server if a direct connection cannot be made to the
 </ul>
 <h4 id="gateway-server">Gateway Server</h4>
 <p>Specifies the host name of the Remote Desktop Gateway server.</p>
+<h4 id="transport-type">Transport Type</h4>
+<p>Selects the transport used to connect to a connection-specific Remote Desktop Gateway.</p>
+<ul>
+<li><strong>Automatic</strong> - Lets FreeRDP select the appropriate gateway transport.</li>
+<li><strong>RPC</strong> - Uses the RPC gateway transport.</li>
+<li><strong>HTTP</strong> - Uses the HTTP gateway transport.</li>
+<li><strong>ARM</strong> - Uses the Azure Resource Manager transport required by Azure Virtual Desktop workspace connections. ARM uses Microsoft Entra token authentication and does not use conventional Remote Desktop Gateway username and password credentials.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When an existing shared gateway is selected, its configured transport is used instead.</p>
+</div>
 <h4 id="logon-method">Logon Method</h4>
 <p>Specify the Logon Method for the gateway server.</p>
 <ul>
@@ -659,6 +678,9 @@ Audio is disabled on the remote computer.</li>
 <p>Specifies the working directory of the start program.</p>
 <h4 id="maximize">Maximize</h4>
 <p>Specifies whether the program should be maximized.</p>
+<h3 id="remote-app-configuration">Remote App Configuration</h3>
+<h4 id="remote-app-program">Remote App Program</h4>
+<p>Specifies the remote application identifier used by Azure Virtual Desktop. This value is distinct from <strong>Program</strong>, which starts a program after connecting to a full remote desktop. Azure Virtual Desktop <code>.rdpw</code> files normally provide this identifier through the <code>remoteapplicationprogram</code> property.</p>
 <h2 id="-notes"><img src="/r2023/images/RoyalTS/Application/SVG_PageNotes_32.svg#img_header" alt=""> Notes</h2>
 <p>The <strong>Notes</strong> page allows you to enter notes for the selected object with HTML formatting, links and embedded images. You can also configure the notes to be inherited from the parent folder.</p>
 <h4 id="use-notes-from-the-parent-folder">Use Notes from the parent folder</h4>
