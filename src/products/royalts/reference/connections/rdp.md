@@ -337,6 +337,17 @@ Specifies when to use a Remote Desktop Gateway server.
 
 Specifies the host name of the Remote Desktop Gateway server.
 
+#### Access Token
+
+Specifies the token passed to a Remote Desktop Gateway Pluggable Authentication and Authorization (PAA) plugin. The value is stored encrypted in the document and is available when **Specify Gateway settings** is selected.
+
+When **Use Gateway from parent** or **Use an existing Gateway** is selected, Royal TS uses the access token from the effective Remote Desktop Gateway configuration. The Microsoft RDP renderer passes the effective token to the embedded ActiveX client.
+
+For CyberArk Secure Infrastructure Access (SIA), enter `secureaccess` as both the gateway username and **Access Token**.
+
+> [!Note]
+> Gateway access tokens require Microsoft RDP ActiveX client version 9 or later.
+
 #### Configuration
 
 Specify the Logon Method for the gateway server.

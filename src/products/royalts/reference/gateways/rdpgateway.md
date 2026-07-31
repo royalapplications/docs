@@ -32,6 +32,8 @@ The **Remote Desktop Gateway** page allows you to configure the computer name (I
 
 Specifies the token passed to a Remote Desktop Gateway Pluggable Authentication and Authorization (PAA) plugin. The value is stored encrypted in the document.
 
+Remote Desktop connections that use this gateway pass the access token to the active Remote Desktop renderer, including Microsoft RDP and FreeRDP.
+
 For CyberArk Secure Infrastructure Access (SIA), enter `secureaccess` as both the gateway username and **Access Token**.
 
 [!include[credentials.md](~/royalts/_shared/credentials.md)]
