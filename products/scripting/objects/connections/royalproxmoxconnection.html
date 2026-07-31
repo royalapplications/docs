@@ -112,6 +112,16 @@ The unique object identifier (GUID) of the object.</p>
 <h3 id="externalid">ExternalID</h3>
 <p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
 The external unique object identifier (GUID) of the object.</p>
+<h2 id="authentication">Authentication</h2>
+<h3 id="authenticationmode">AuthenticationMode</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+Select the credential used for Proxmox VE API requests: <code>0</code> = Username and Password, <code>1</code> = API Token.</p>
+<h3 id="apitokenid">ApiTokenId</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The complete Proxmox API token identifier in <code>user@realm!tokenid</code> format.</p>
+<h3 id="apitokensecret">ApiTokenSecret</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The Proxmox API token secret. The value is stored encrypted in the document.</p>
 <h2 id="advanced">Advanced</h2>
 <h3 id="autorefresh">AutoRefresh</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>

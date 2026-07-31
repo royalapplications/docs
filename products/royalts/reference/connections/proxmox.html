@@ -103,6 +103,85 @@
 <p>If enabled, the connection will succeed even when the certificate is invalid, expired, or self-signed.</p>
 <h4 id="description">Description</h4>
 <p>Enter a description for the object.</p>
+<h3 id="authentication">Authentication</h3>
+<p>The <strong>Authentication</strong> group selects the credential Royal TS uses for Proxmox VE API requests. API-token authentication is useful when password authentication requires an interactive MFA or OTP challenge.</p>
+<h4 id="authentication-mode">Authentication Mode</h4>
+<ul>
+<li><strong>Username and Password</strong> uses the effective credential configured on the <strong>Credentials</strong> page. This is the default and preserves the behavior of existing connections.</li>
+<li><strong>API Token</strong> uses the token ID and secret configured in this group. The token is used for inventory, details, performance, power operations, notes, console-ticket requests, and all other Proxmox REST calls.</li>
+</ul>
+<h4 id="api-token-id">API Token ID</h4>
+<p>Enter the complete token identifier in <code>user@realm!tokenid</code> format, for example <code>royalts@pve!royalts</code>.</p>
+<h4 id="api-token-secret">API Token Secret</h4>
+<p>Enter the secret displayed when the API token is created. Royal TS stores the value encrypted and honors the document's <strong>Hide passwords</strong> lockdown policy.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Existing connections that store <code>user@realm!tokenid</code> as the credential username and the token secret as the credential password remain supported.</p>
+</div>
+<h4 id="api-token-behavior">API-token behavior</h4>
+<p>The credential on the <strong>Credentials</strong> page remains available when <strong>API Token</strong> is selected:</p>
+<ul>
+<li>Host SSH always uses the normal credential and never receives the API-token secret.</li>
+<li>Instance SSH uses the credential selected for that instance connection.</li>
+<li>Web UI auto-login uses the normal credential to request an interactive <code>PVEAuthCookie</code>. If no password is configured or MFA prevents ticket creation, Royal TS opens the requested Proxmox page without a seeded cookie so you can sign in interactively.</li>
+<li>Native VM/container console connections try the API token first. Proxmox VE 9.0.13 and later support token-authenticated console tickets and WebSockets. After a 401 or 403 authentication rejection on an older server, Royal TS retries once with the normal credential and a newly issued ticket. TLS, routing, timeout, and unrelated permission failures do not trigger a password retry.</li>
+</ul>
+<p>When a Royal Server management endpoint is assigned, the token ID and secret are transported through the protected destination-credential fields. They are not included in module arguments or logs. The installed Royal Server must include a Proxmox module that supports token authentication and the console <code>AuthHeader</code> response contract.</p>
+<h4 id="required-proxmox-permissions">Required Proxmox permissions</h4>
+<p>The token requires the following privileges for the corresponding Royal TS features:</p>
+<table>
+<thead>
+<tr>
+<th>Royal TS capability</th>
+<th>Privilege</th>
+<th>Suggested path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inventory, status, configuration, and performance</td>
+<td><code>VM.Audit</code></td>
+<td><code>/vms</code>, a pool, or selected guests</td>
+</tr>
+<tr>
+<td>QEMU guest-agent network and filesystem details</td>
+<td><code>VM.GuestAgent.Audit</code> on Proxmox VE 9; <code>VM.Monitor</code> on Proxmox VE 8</td>
+<td><code>/vms</code></td>
+</tr>
+<tr>
+<td>Start, stop, restart, reset, suspend, and resume</td>
+<td><code>VM.PowerMgmt</code></td>
+<td><code>/vms</code></td>
+</tr>
+<tr>
+<td>Edit guest notes</td>
+<td><code>VM.Config.Options</code></td>
+<td><code>/vms</code></td>
+</tr>
+<tr>
+<td>VM/container native console</td>
+<td><code>VM.Console</code></td>
+<td><code>/vms</code></td>
+</tr>
+<tr>
+<td>Cluster-node resolution and datacenter tag styling</td>
+<td><code>Sys.Audit</code></td>
+<td><code>/</code></td>
+</tr>
+</tbody>
+</table>
+<p>For a privilege-separated token (<code>privsep=1</code>), assign the required roles to both the backing user and the token. A token's effective permissions cannot exceed those of its backing user. A least-privilege configuration can use a <code>RoyalTSVM</code> role with the applicable VM privileges and a <code>RoyalTSClusterAudit</code> role containing <code>Sys.Audit</code>.</p>
+<p>For example, on Proxmox VE 9:</p>
+<pre><code class="lang-shell">pveum role add RoyalTSVM -privs &quot;VM.Audit VM.GuestAgent.Audit VM.PowerMgmt VM.Console VM.Config.Options&quot;
+pveum role add RoyalTSClusterAudit -privs &quot;Sys.Audit&quot;
+pveum acl modify /vms -user royalts@pve -role RoyalTSVM
+pveum acl modify / -user royalts@pve -role RoyalTSClusterAudit
+pveum user token add royalts@pve royalts -privsep 1
+pveum acl modify /vms -token 'royalts@pve!royalts' -role RoyalTSVM
+pveum acl modify / -token 'royalts@pve!royalts' -role RoyalTSClusterAudit
+</code></pre>
+<p>On Proxmox VE 8, use <code>VM.Monitor</code> instead of <code>VM.GuestAgent.Audit</code>. A broader built-in alternative is <code>PVEVMAdmin</code> on <code>/vms</code> together with <code>PVEAuditor</code> on <code>/</code>. <code>PVEVMUser</code> alone is insufficient because it does not include <code>VM.Config.Options</code> for editing notes.</p>
+<p>Proxmox displays a newly generated token secret only once. Set an appropriate expiration date and rotate or revoke the token through the normal Proxmox administration workflow.</p>
 <h2 id="-credentials"><img src="/r2023/images/RoyalTS/Application/SVG_PageCredential_32.svg#img_header" alt=""> Credentials</h2>
 <p>The <strong>Credentials</strong> page allows you to assign a credential to the object. You can specify username and password, assign a predefined credential or you specify a credential by name (ideal when you share your configuration). You can also use the credentials defined in the parent folder.</p>
 <h4 id="do-not-use-any-credentials">Do not use any credentials</h4>

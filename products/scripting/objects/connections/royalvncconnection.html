@@ -323,6 +323,12 @@ The plug in ID used for this connection for Windows.</p>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the connection will use the application default plug in for the connection type on Windows.</p>
 <h2 id="proxmox-console">Proxmox Console</h2>
+<h3 id="proxmoxapitokenid">ProxmoxApiTokenId</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The complete Proxmox API token identifier used as the primary credential for a generated Proxmox console connection. This property is normally populated by Royal TS.</p>
+<h3 id="proxmoxapitokensecret">ProxmoxApiTokenSecret</h3>
+<p>Type: <code>string</code>, Default Value: <code>Empty String</code><br>
+The Proxmox API token secret used as the primary credential for a generated Proxmox console connection. The value is stored encrypted and is normally populated by Royal TS.</p>
 <h3 id="proxmoxapiport">ProxmoxApiPort</h3>
 <p>Type: <code>int</code>, Default Value: <code>8006</code><br>
 The TCP port of the Proxmox VE API used for the console ticket and websocket (default 8006). The VNC Port property is not used in Proxmox console mode.</p>
