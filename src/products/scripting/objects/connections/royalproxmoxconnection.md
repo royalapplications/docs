@@ -48,6 +48,16 @@ The unique object identifier (GUID) of the object.
 ### ExternalID
 Type: `string`, Default Value: `Empty String`  
 The external unique object identifier (GUID) of the object.  
+## Authentication
+### AuthenticationMode
+Type: `int`, Default Value: `0`  
+Select the credential used for Proxmox VE API requests: `0` = Username and Password, `1` = API Token.  
+### ApiTokenId
+Type: `string`, Default Value: `Empty String`  
+The complete Proxmox API token identifier in `user@realm!tokenid` format.  
+### ApiTokenSecret
+Type: `string`, Default Value: `Empty String`  
+The Proxmox API token secret. The value is stored encrypted in the document.  
 ## Advanced
 ### AutoRefresh
 Type: `bool`, Default Value: `false`  

@@ -1,6 +1,5 @@
 - href: introduction\index.md
   name: Introduction
-  order: 10900
   items:
   - href: introduction\what-is-royal-server.md
     name: What is Royal Server?
@@ -26,9 +25,9 @@
   - href: introduction\release-notes.md
     name: Release Notes
     order: 10052
+  order: 10900
 - href: getting-started\index.md
   name: Getting Started
-  order: 10800
   items:
   - href: getting-started\navigating-the-ui.md
     name: Navigating the User Interface
@@ -45,9 +44,9 @@
   - href: getting-started\using-the-logviewer.md
     name: Using the Log Viewer
     order: 10102
+  order: 10800
 - href: tutorials\index.md
   name: Tutorials
-  order: 10700
   items:
   - href: tutorials\querying-processes.md
     name: Query Windows Processes
@@ -58,9 +57,9 @@
   - href: tutorials\creating-an-rdp-connection-using-royal-server.md
     name: Creating an RDP Connection
     order: 1
+  order: 10700
 - href: general\index.md
   name: General
-  order: 9000
   items:
   - href: general\ribbon-features.md
     name: Ribbon Features
@@ -92,13 +91,12 @@
   - href: general\licensing.md
     name: Licenses
     order: 9005
+  order: 9000
 - href: royal-server-configuration\index.md
   name: Management Endpoint
-  order: 7300
   items:
   - href: royal-server-configuration\modules\index.md
     name: Royal Server Modules
-    order: 8000
     items:
     - href: royal-server-configuration\modules\document-store.md
       name: Document Store Module
@@ -127,6 +125,7 @@
     - href: royal-server-configuration\modules\windows-services-module.md
       name: Windows Services Module
       order: 8010
+    order: 8000
   - href: royal-server-configuration\service-configuration.md
     name: Service Configuration
     order: 7340
@@ -139,9 +138,9 @@
   - href: royal-server-configuration\modules.md
     name: Modules
     order: 7310
+  order: 7300
 - href: secure-gateway-configuration\index.md
   name: Secure Gateway
-  order: 7200
   items:
   - href: secure-gateway-configuration\gateway-configuration.md
     name: Secure Gateway Configuration
@@ -155,9 +154,9 @@
   - href: secure-gateway-configuration\gateway-active-connections.md
     name: Active Connections
     order: 7210
+  order: 7200
 - href: document-store-configuration\index.md
   name: Document Store
-  order: 7100
   items:
   - href: document-store-configuration\configuration.md
     name: Configuration
@@ -165,9 +164,9 @@
   - href: document-store-configuration\documents.md
     name: Documents
     order: 7110
+  order: 7100
 - href: advanced\index.md
   name: Advanced Topics
-  order: 5000
   items:
   - href: advanced\application-settings.md
     name: Application Settings
@@ -177,7 +176,6 @@
     order: 5080
   - href: advanced\management-scripts\index.md
     name: Management Scripts
-    order: 5065
     items:
     - href: advanced\management-scripts\prepare-managed-server.md
       name: Prepare a Managed Server
@@ -185,6 +183,7 @@
     - href: advanced\management-scripts\uninstall.md
       name: Cleanup an Installation
       order: 5110
+    order: 5065
   - href: advanced\performance-counters.md
     name: Performance Counter
     order: 5060
@@ -197,20 +196,19 @@
   - href: advanced\restoring-previous-version-document.md
     name: Restoring Document Versions
     order: 5040
+  order: 5000
 - href: scripting\index.md
   name: Scripting
-  order: 4000
   items:
   - href: scripting\examples\index.md
     name: Advanced Scripting Examples
-    order: 4300
     items:
     - href: scripting\examples\Load-and-Save-Document.md
       name: Loading and Saving a Document from Royal Server
       order: 7000
+    order: 4300
   - href: scripting\powershell-commandlets\index.md
     name: PowerShell Commandlets
-    order: 4300
     items:
     - href: scripting\powershell-commandlets\get-royalservermodule.md
       name: Get-RoyalServerModule
@@ -227,9 +225,9 @@
     - href: scripting\powershell-commandlets\new-royalserverconfig.md
       name: New-RoyalServerConfig
       order: 4000
+    order: 4300
   - href: scripting\module-reference\index.md
     name: Module References
-    order: 4200
     items:
     - href: scripting\module-reference\module-document-store.md
       name: Module Document Store
@@ -246,9 +244,11 @@
     - href: scripting\module-reference\module-windows-processes.md
       name: Module Windows Processes
       order: 4000
+    order: 4200
   - href: scripting\getting-started.md
     name: Getting Started
     order: 4010
+  order: 4000
 - href: https://royalapps.com/server/main/features
   name: Royal Server Homepage
   order: 1040
