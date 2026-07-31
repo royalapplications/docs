@@ -108,6 +108,26 @@ Proxmox displays a newly generated token secret only once. Set an appropriate ex
 [!include[windowmode.md](~/royalts/_shared/windowmode.md)]
 [!include[dashboard.md](~/royalts/_shared/dashboard.md)]
 
+## Display Options
+
+The **Display Options** page controls automatic refresh and the appearance of the Proxmox guest grid.
+
+### Auto Refresh
+
+Enables automatic refresh and configures the refresh interval in seconds.
+
+### Max. Column Width
+
+Uses the available horizontal space for the grid columns without showing a horizontal scroll bar.
+
+### Show Horizontal Lines
+
+Shows horizontal grid lines between Proxmox guests.
+
+### Show Vertical Lines
+
+Shows vertical grid lines between grid columns.
+
 ## Advanced
 
 The **Advanced** page allows you to configure the SSH port used for ad hoc Terminal connections.
