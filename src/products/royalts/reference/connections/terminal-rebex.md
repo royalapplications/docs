@@ -164,9 +164,21 @@ If checked, the tab caption of the background tab is rendered _italic_ when no d
 
 ## ![](/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg#img_header) Colors
 
-The **Colors** page allows you to modify the terminal palette and colors for different text styles. New and edited connections use the custom palette and text colors mode. Older connections that were configured for ANSI Palette or Monochrome are interpreted at connection start as closely as possible without immediately changing the saved connection data.
+The **Colors** page allows you to modify the terminal palette, colors for different text styles, cursor appearance, and text highlighting rules. Existing connections retain their saved color scheme; no color-scheme migration is performed when a connection is opened or saved.
 
 The page is organized into expandable sections.
+
+#### Color Scheme
+
+When the **Rebex** renderer is selected, choose how Rebex interprets terminal colors:
+
+- **ANSI Palette** uses the configured normal and bright ANSI palette entries. Cursor settings and text highlighting rules are available in this mode.
+- **Monochrome** uses Rebex's monochrome rendering. Palette, style, cursor, and text highlighting settings are hidden while this mode is selected.
+- **Custom Palette and Text Colors** uses the configured ANSI palette together with the semantic background, foreground, bold, faint, italic, and underline color mappings. Cursor settings and text highlighting rules are available in this mode.
+
+Selecting or importing a palette switches a Rebex connection to **Custom Palette and Text Colors**.
+
+When the **Royal Terminal** renderer is selected, the color scheme selector is hidden. Royal Terminal continues to use its theme and custom color settings.
 
 #### Normal and Bright Colors
 
@@ -174,11 +186,13 @@ Adjust the normal and bright ANSI color palette entries. The **Palette** drop-do
 
 #### Other Colors and Styles
 
-Configure default background and text colors, text style colors, selection colors for the Royal Terminal renderer, and cursor colors. Cursor options include cursor appearance, inverted cursor color, cursor blinking, and blinking interval.
+For Rebex connections using **Custom Palette and Text Colors**, configure the semantic default background, text, bold, faint, italic, and underline colors. Cursor colors and cursor options are available in both **ANSI Palette** and **Custom Palette and Text Colors** modes. Cursor options include cursor appearance, inverted cursor color, cursor blinking, and blinking interval.
+
+For Royal Terminal connections, configure default background and text colors, selection colors, and cursor colors.
 
 #### Text Highlighting
 
-Configure regular expression based highlighting rules. These rules are available for both the Rebex renderer and the Royal Terminal renderer.
+Configure regular expression based highlighting rules. These rules are available for Rebex connections using **ANSI Palette** or **Custom Palette and Text Colors**, and for the Royal Terminal renderer. They are hidden when Rebex **Monochrome** mode is selected.
 
 > [!Note]
 > The Royal Terminal renderer also has a **Text Highlighting** mode setting on the **Royal Terminal** page. The Colors page configures the shared highlighting rule list.
