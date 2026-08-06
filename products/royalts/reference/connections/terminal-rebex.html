@@ -182,14 +182,24 @@ This rendering mode reduces the cell size and mimics the rendering to be more li
 <h4 id="indicator-for-inactivity">Indicator for Inactivity</h4>
 <p>If checked, the tab caption of the background tab is rendered <em>italic</em> when no data is received for a configured amount of seconds.</p>
 <h2 id="-colors"><img src="/r2023/images/RoyalTS/Plugins/Connections/TerminalRebex/SVG_PageColors_32.svg#img_header" alt=""> Colors</h2>
-<p>The <strong>Colors</strong> page allows you to modify the terminal palette and colors for different text styles. New and edited connections use the custom palette and text colors mode. Older connections that were configured for ANSI Palette or Monochrome are interpreted at connection start as closely as possible without immediately changing the saved connection data.</p>
+<p>The <strong>Colors</strong> page allows you to modify the terminal palette, colors for different text styles, cursor appearance, and text highlighting rules. Existing connections retain their saved color scheme; no color-scheme migration is performed when a connection is opened or saved.</p>
 <p>The page is organized into expandable sections.</p>
+<h4 id="color-scheme">Color Scheme</h4>
+<p>When the <strong>Rebex</strong> renderer is selected, choose how Rebex interprets terminal colors:</p>
+<ul>
+<li><strong>ANSI Palette</strong> uses the configured normal and bright ANSI palette entries. Cursor settings and text highlighting rules are available in this mode.</li>
+<li><strong>Monochrome</strong> uses Rebex's monochrome rendering. Palette, style, cursor, and text highlighting settings are hidden while this mode is selected.</li>
+<li><strong>Custom Palette and Text Colors</strong> uses the configured ANSI palette together with the semantic background, foreground, bold, faint, italic, and underline color mappings. Cursor settings and text highlighting rules are available in this mode.</li>
+</ul>
+<p>Selecting or importing a palette switches a Rebex connection to <strong>Custom Palette and Text Colors</strong>.</p>
+<p>When the <strong>Royal Terminal</strong> renderer is selected, the color scheme selector is hidden. Royal Terminal continues to use its theme and custom color settings.</p>
 <h4 id="normal-and-bright-colors">Normal and Bright Colors</h4>
 <p>Adjust the normal and bright ANSI color palette entries. The <strong>Palette</strong> drop-down button at the top of the page can import, export, or apply terminal color palettes.</p>
 <h4 id="other-colors-and-styles">Other Colors and Styles</h4>
-<p>Configure default background and text colors, text style colors, selection colors for the Royal Terminal renderer, and cursor colors. Cursor options include cursor appearance, inverted cursor color, cursor blinking, and blinking interval.</p>
+<p>For Rebex connections using <strong>Custom Palette and Text Colors</strong>, configure the semantic default background, text, bold, faint, italic, and underline colors. Cursor colors and cursor options are available in both <strong>ANSI Palette</strong> and <strong>Custom Palette and Text Colors</strong> modes. Cursor options include cursor appearance, inverted cursor color, cursor blinking, and blinking interval.</p>
+<p>For Royal Terminal connections, configure default background and text colors, selection colors, and cursor colors.</p>
 <h4 id="text-highlighting">Text Highlighting</h4>
-<p>Configure regular expression based highlighting rules. These rules are available for both the Rebex renderer and the Royal Terminal renderer.</p>
+<p>Configure regular expression based highlighting rules. These rules are available for Rebex connections using <strong>ANSI Palette</strong> or <strong>Custom Palette and Text Colors</strong>, and for the Royal Terminal renderer. They are hidden when Rebex <strong>Monochrome</strong> mode is selected.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The Royal Terminal renderer also has a <strong>Text Highlighting</strong> mode setting on the <strong>Royal Terminal</strong> page. The Colors page configures the shared highlighting rule list.</p>
