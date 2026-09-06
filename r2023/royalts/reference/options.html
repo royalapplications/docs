@@ -440,6 +440,10 @@ Copies the credential's password to the clipboard.</li>
 <p>The number of seconds each tab page should be shown before Royal TS will select the next one.</p>
 <h2 id="-logging"><img src="/r2023/images/RoyalTS/Application/SVG_ApplicationLog_32.svg#img_header" alt=""> Logging</h2>
 <p>The <strong>Logging</strong> page allows you to configure how Royal TS keeps records of user activity, error and debug information.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Plugin diagnostic files are configured separately in <a href="connections/rdp.html#diagnostics">Microsoft RDP Diagnostics</a> and <a href="connections/freerdp.html#diagnostics">FreeRDP Diagnostics</a>. Application-wide <strong>Trace</strong> logging implicitly enables MsRdpEx logging for Microsoft RDP, even when its plugin checkbox is off. It does <strong>not</strong> enable FreeRDP diagnostic-file capture.</p>
+</div>
 <h3 id="general-1">General</h3>
 <h4 id="log-level">Log Level:</h4>
 <p>Select which log entry severities to include in the log.</p>

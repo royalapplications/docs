@@ -107,10 +107,9 @@ Royal TS creates a new <strong>Remote Desktop</strong> connection configured to 
 To configure individual dashboard settings for a connection, use the <a href="#dashboard">Dashboard</a> property page.</p>
 <h2 id="plugin-settings">Plugin Settings</h2>
 <p>To configure the Remote Desktop plugin settings, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on <strong>Settings</strong> for the Remote Desktop plugin:</p>
+<p>The settings are organized into collapsible <strong>Disconnect and Reconnect</strong>, <strong>Advanced</strong>, and <strong>Diagnostics</strong> sections, with <strong>Client Version</strong> above these sections. Changes take effect when you save the plugin settings; cancelling the dialog leaves the settings unchanged.</p>
 <h4 id="client-version">Client Version</h4>
 <p>Specify which RDP client version should be used. If <strong>Automatic</strong> (Default) is selected, the latest version available will be used.</p>
-<h4 id="use-microsoft-remote-desktop-client">Use Microsoft Remote Desktop Client</h4>
-<p>If checked, Royal TS will try to use the modern Microsoft Remote Desktop client from the Microsoft Store. Ensure the client is installed before enabling this setting. A restart is required.</p>
 <h3 id="disconnect-and-reconnect">Disconnect and Reconnect</h3>
 <h4 id="fast-smart-reconnect">Fast Smart Reconnect</h4>
 <p>If checked, Royal TS will use the faster reconnect method introduced in RDP 8 whenever possible. Disable this setting in case you experience issues with smart reconnect.</p>
@@ -123,13 +122,30 @@ This setting is only effective when <strong>Keep tabs open when disconnected rem
 <p>If checked, the automatic reconnect feature will be enabled when the disconnected tab is shown.</p>
 <h4 id="always-reconnect">Always Reconnect</h4>
 <p>If checked, the automatic reconnect feature will always be enabled when the disconnected tab is shown, including events like signing out the remote session or rebooting the remote computer.</p>
+<h3 id="advanced">Advanced</h3>
 <h4 id="show-overview-thumbnails">Show Overview Thumbnails</h4>
 <p>If checked, thumbnails are shown in the Overview tab.</p>
-<h3 id="advanced">Advanced</h3>
 <h4 id="set-domain-to--for-local-accounts">Set Domain to '.' for Local Accounts:</h4>
 <p>If checked, a dot ('.') will be used as domain for local account user names if no domain is specified.</p>
 <h4 id="disable-click-detection">Disable Click Detection</h4>
 <p>If checked, Royal TS will not be able to detect clicks inside a remote session. This should only be used for troubleshooting.</p>
+<h3 id="diagnostics">Diagnostics</h3>
+<h4 id="enable-msrdpex-diagnostic-logging">Enable MsRdpEx diagnostic logging</h4>
+<p>Enables a separate MsRdpEx diagnostic log for all connections using the Microsoft RDP plugin, not just an individual connection. Logging is disabled by default.</p>
+<p>For security, this checkbox is automatically reset to disabled the next time Royal TS starts. The configured log level and file path are retained.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Setting the application-wide <a class="xref" href="../options.html#-logging">Log Level</a> to <strong>Trace</strong> implicitly enables MsRdpEx logging, even when this checkbox is off. Change the application log level as well if you want to disable MsRdpEx logging.</p>
+</div>
+<h4 id="log-level">Log Level</h4>
+<p>Select <code>TRACE</code>, <code>DEBUG</code>, <code>INFO</code>, <code>WARN</code>, <code>ERROR</code>, or <code>FATAL</code>. The default is <code>TRACE</code>.</p>
+<h4 id="log-file">Log File</h4>
+<p>Specify the diagnostic log-file path, or use the browse button to select a file. Environment variables such as <code>%TEMP%</code> are supported. The default is <code>%TEMP%\MsRdpEx.log</code>.</p>
+<p>The level and file controls are disabled while the diagnostic logging checkbox is off.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Log files may contain sensitive connection metadata. Review them before sharing and store them securely.</p>
+</div>
 <h2 id="connection-properties">Connection Properties</h2>
 <p>The Remote Desktop Properties dialog is shown:</p>
 <ul>

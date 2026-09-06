@@ -107,6 +107,8 @@ Royal TS creates a new <strong>Remote Desktop</strong> connection configured to 
 To configure individual dashboard settings for a connection, use the <a href="#dashboard">Dashboard</a> property page.</p>
 <h2 id="plugin-settings">Plugin Settings</h2>
 <p>To configure the Remote Desktop (FreeRDP) plugin settings, open the <a class="xref" href="../../getting-started/plugins.html">Plugins Management</a> and click on <strong>Settings</strong> for the Remote Desktop (FreeRDP) plugin:</p>
+<p>The settings are organized into collapsible <strong>General</strong> and <strong>Diagnostics</strong> sections. Changes take effect when you save the plugin settings; cancelling the dialog leaves the settings unchanged.</p>
+<h3 id="general">General</h3>
 <h4 id="executable">Executable</h4>
 <p>Specify the FreeRDP executable used by the plugin.</p>
 <h4 id="close-tab-on-log-off-reboot-or-disconnect">Close tab on log off, reboot or disconnect</h4>
@@ -114,6 +116,22 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 This setting is only effective when <strong>Keep tabs open when remotely disconnected</strong> in the <a class="xref" href="../options.html#-user-interface">User Interface</a> option is enabled.</p>
 <h4 id="set-domain-to--for-local-accounts">Set Domain to '.' for Local Accounts</h4>
 <p>If checked, a dot ('.') will be used as domain for local account user names if no domain is specified.</p>
+<h3 id="diagnostics">Diagnostics</h3>
+<h4 id="enable-freerdp-diagnostic-logging">Enable FreeRDP diagnostic logging</h4>
+<p>Enables a separate diagnostic file for all connections using the FreeRDP plugin. Logging is disabled by default and must be explicitly enabled here; application-wide <strong>Trace</strong> logging does not enable this diagnostic file.</p>
+<p>Diagnostics capture output from the FreeRDP executable used by this plugin.</p>
+<p>For security, enablement is automatically reset to disabled the next time Royal TS starts. The configured log level and file path are retained.</p>
+<p>Reconnect after enabling diagnostics or changing the log level to capture the complete connection sequence at the selected verbosity. Disabling stops accepting diagnostic records immediately, although records already queued may finish flushing.</p>
+<h4 id="log-level">Log Level</h4>
+<p>Select <code>TRACE</code>, <code>DEBUG</code>, <code>INFO</code>, <code>WARN</code>, or <code>ERROR</code>. The default is <code>DEBUG</code>.</p>
+<h4 id="log-file">Log File</h4>
+<p>Specify the diagnostic log-file path, or use the browse button to select a file. Environment variables such as <code>%TEMP%</code> are expanded when the file is opened. The default is <code>%TEMP%\RoyalTS-FreeRDP-V7.log</code>; an empty path uses this default.</p>
+<p>Saving a new file path applies immediately to active capture. Records already queued for the old file may finish flushing there. An invalid or unwritable destination stops diagnostic capture and produces a warning in the Royal TS log, but does not prevent connections. Correct the destination and enable diagnostics again to resume capture.</p>
+<p>The level and file controls are disabled while diagnostic logging is off.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Log files may contain sensitive connection data. Review them before sharing and store them securely.</p>
+</div>
 <h2 id="connection-properties">Connection Properties</h2>
 <p>The Remote Desktop Properties dialog is shown:</p>
 <ul>
