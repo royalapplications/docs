@@ -52,6 +52,10 @@ To configure individual dashboard settings for a connection, use the [Dashboard]
 
 To configure the Remote Desktop (FreeRDP) plugin settings, open the [Plugins Management](xref:royalts_intro_plugins) and click on **Settings** for the Remote Desktop (FreeRDP) plugin:
 
+The settings are organized into collapsible **General** and **Diagnostics** sections. Changes take effect when you save the plugin settings; cancelling the dialog leaves the settings unchanged.
+
+### General
+
 #### Executable
 
 Specify the FreeRDP executable used by the plugin.
@@ -64,6 +68,33 @@ This setting is only effective when **Keep tabs open when remotely disconnected*
 #### Set Domain to '.' for Local Accounts
 
 If checked, a dot ('.') will be used as domain for local account user names if no domain is specified.
+
+### Diagnostics
+
+#### Enable FreeRDP diagnostic logging
+
+Enables a separate diagnostic file for all connections using the FreeRDP plugin. Logging is disabled by default and must be explicitly enabled here; application-wide **Trace** logging does not enable this diagnostic file.
+
+Diagnostics capture output from the FreeRDP executable used by this plugin.
+
+For security, enablement is automatically reset to disabled the next time Royal TS starts. The configured log level and file path are retained.
+
+Reconnect after enabling diagnostics or changing the log level to capture the complete connection sequence at the selected verbosity. Disabling stops accepting diagnostic records immediately, although records already queued may finish flushing.
+
+#### Log Level
+
+Select `TRACE`, `DEBUG`, `INFO`, `WARN`, or `ERROR`. The default is `DEBUG`.
+
+#### Log File
+
+Specify the diagnostic log-file path, or use the browse button to select a file. Environment variables such as `%TEMP%` are expanded when the file is opened. The default is `%TEMP%\RoyalTS-FreeRDP-V7.log`; an empty path uses this default.
+
+Saving a new file path applies immediately to active capture. Records already queued for the old file may finish flushing there. An invalid or unwritable destination stops diagnostic capture and produces a warning in the Royal TS log, but does not prevent connections. Correct the destination and enable diagnostics again to resume capture.
+
+The level and file controls are disabled while diagnostic logging is off.
+
+> [!Warning]
+> Log files may contain sensitive connection data. Review them before sharing and store them securely.
 
 ## Connection Properties
 

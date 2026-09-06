@@ -52,13 +52,11 @@ To configure individual dashboard settings for a connection, use the [Dashboard]
 
 To configure the Remote Desktop plugin settings, open the [Plugins Management](xref:royalts_intro_plugins) and click on **Settings** for the Remote Desktop plugin:
 
+The settings are organized into collapsible **Disconnect and Reconnect**, **Advanced**, and **Diagnostics** sections, with **Client Version** above these sections. Changes take effect when you save the plugin settings; cancelling the dialog leaves the settings unchanged.
+
 #### Client Version
 
 Specify which RDP client version should be used. If **Automatic** (Default) is selected, the latest version available will be used.
-
-#### Use Microsoft Remote Desktop Client
-
-If checked, Royal TS will try to use the modern Microsoft Remote Desktop client from the Microsoft Store. Ensure the client is installed before enabling this setting. A restart is required.
 
 ### Disconnect and Reconnect
 
@@ -83,11 +81,11 @@ If checked, the automatic reconnect feature will be enabled when the disconnecte
 
 If checked, the automatic reconnect feature will always be enabled when the disconnected tab is shown, including events like signing out the remote session or rebooting the remote computer.
 
+### Advanced
+
 #### Show Overview Thumbnails
 
 If checked, thumbnails are shown in the Overview tab.
-
-### Advanced
 
 #### Set Domain to '.' for Local Accounts:
 
@@ -96,6 +94,30 @@ If checked, a dot ('.') will be used as domain for local account user names if n
 #### Disable Click Detection
 
 If checked, Royal TS will not be able to detect clicks inside a remote session. This should only be used for troubleshooting.
+
+### Diagnostics
+
+#### Enable MsRdpEx diagnostic logging
+
+Enables a separate MsRdpEx diagnostic log for all connections using the Microsoft RDP plugin, not just an individual connection. Logging is disabled by default.
+
+For security, this checkbox is automatically reset to disabled the next time Royal TS starts. The configured log level and file path are retained.
+
+> [!Important]
+> Setting the application-wide [Log Level](xref:royalts_reference_options#-logging) to **Trace** implicitly enables MsRdpEx logging, even when this checkbox is off. Change the application log level as well if you want to disable MsRdpEx logging.
+
+#### Log Level
+
+Select `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`, or `FATAL`. The default is `TRACE`.
+
+#### Log File
+
+Specify the diagnostic log-file path, or use the browse button to select a file. Environment variables such as `%TEMP%` are supported. The default is `%TEMP%\MsRdpEx.log`.
+
+The level and file controls are disabled while the diagnostic logging checkbox is off.
+
+> [!Warning]
+> Log files may contain sensitive connection metadata. Review them before sharing and store them securely.
 
 ## Connection Properties
 

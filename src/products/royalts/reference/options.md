@@ -587,6 +587,9 @@ The number of seconds each tab page should be shown before Royal TS will select 
 
 The **Logging** page allows you to configure how Royal TS keeps records of user activity, error and debug information.
 
+> [!Note]
+> Plugin diagnostic files are configured separately in [Microsoft RDP Diagnostics](connections/rdp.md#diagnostics) and [FreeRDP Diagnostics](connections/freerdp.md#diagnostics). Application-wide **Trace** logging implicitly enables MsRdpEx logging for Microsoft RDP, even when its plugin checkbox is off. It does **not** enable FreeRDP diagnostic-file capture.
+
 ### General
 
 #### Log Level:
