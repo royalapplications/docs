@@ -94,6 +94,108 @@ The following script interpreters are supported:</p>
 <h5>Note</h5>
 <p>All interpreters except PowerShell are not installed on Windows by default and need to be installed upfront.</p>
 </div>
+<h2 id="script-execution-context">Script Execution Context</h2>
+<p>Dynamic Folder and Dynamic Credential scripts are executed <strong>as the Royal Server user who requested them</strong> - never as the Royal Server service account and never as the <a class="xref" href="../getting-started/setting-the-worker-account.html">Worker Account</a>. The Royal TS/X client therefore has to send the Royal Server credentials of the requesting user with the request.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This applies to Royal Server 26.0.12 and newer. In previous versions, Dynamic Folder and Dynamic Credential scripts were executed with the Windows service account of the Royal Server service (by default <code>LOCAL SYSTEM</code>).</p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If these credentials are missing, the script is not executed and the request fails with:
+<code>Script execution requires the Royal Server credentials of the requesting user.</code></p>
+</div>
+<p>Two <a class="xref" href="../advanced/trace-flags.html">Trace Flags</a> control how that user is logged on. Both are resolved on the server, so a client cannot influence them:</p>
+<table>
+<thead>
+<tr>
+<th>Trace Flag</th>
+<th>Default</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TRACEFLAG_LOAD_USER_PROFILE_FOR_SCRIPTS</code></td>
+<td><code>false</code></td>
+<td>Load the user's real Windows profile instead of a transient scratch profile</td>
+</tr>
+<tr>
+<td><code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code></td>
+<td><code>false</code></td>
+<td>Use a batch logon (full token) instead of an interactive logon</td>
+</tr>
+</tbody>
+</table>
+<h3 id="required-windows-user-rights">Required Windows User Rights</h3>
+<p>The account a script runs as needs a logon right on the Royal Server machine:</p>
+<table>
+<thead>
+<tr>
+<th>Logon type</th>
+<th>Used when</th>
+<th>Required user right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interactive</td>
+<td><code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code> is off</td>
+<td><strong>Allow log on locally</strong></td>
+</tr>
+<tr>
+<td>Batch</td>
+<td><code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code> is on</td>
+<td><strong>Log on as a batch job</strong></td>
+</tr>
+</tbody>
+</table>
+<p>There is no fallback between the two. If the account is missing the right for the configured logon type, the script fails with a logon error instead of silently running with different privileges.</p>
+<h3 id="user-profile">User Profile</h3>
+<p>By default, scripts run <strong>without the user's Windows profile</strong>. Royal Server creates a throwaway working directory for each run below <code>%ProgramData%\RoyalServer\Temp</code> and points <code>USERPROFILE</code>, <code>APPDATA</code>, <code>LOCALAPPDATA</code> and <code>TEMP</code> at it. The directory is removed when the script finishes; directories orphaned by a hard kill of the service are purged the next time the service starts.</p>
+<p>This avoids creating a persistent user profile on the Royal Server machine for every user who runs a script, but it also means that everything stored in the real profile is unavailable to the script:</p>
+<ul>
+<li>user-scoped DPAPI (for example <code>ConvertTo-SecureString</code> without an explicit key, or <code>ProtectedData</code>)</li>
+<li>the user's certificate store</li>
+<li>token caches of cloud CLIs (Azure, AWS, ...)</li>
+<li>anything the script expects in the real <code>HKEY_CURRENT_USER</code> hive or in <code>%APPDATA%</code></li>
+</ul>
+<p>Enable the Trace Flag <code>TRACEFLAG_LOAD_USER_PROFILE_FOR_SCRIPTS</code> for scripts that need any of these. Royal Server then loads the user's real Windows profile, which also creates a persistent profile folder on the Royal Server machine the first time that user runs a script.</p>
+<h3 id="elevation">Elevation</h3>
+<p>With the default interactive logon, a script started by an <strong>administrator</strong> runs with the UAC-filtered, non-elevated token - the same token that administrator would get in an interactive session before elevating. Scripts that genuinely require administrative rights need the Trace Flag <code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code>, which uses a batch logon and therefore the full, unfiltered token.</p>
+<p>Standard user accounts are not affected: they have no elevated token to filter and behave identically either way.</p>
+<p>Before Royal Server 26.0.12, scripts ran under the Windows service account of the Royal Server service (by default <code>LOCAL SYSTEM</code>) and therefore always had full administrative rights on the Royal Server machine. Scripts that relied on those rights will fail after an upgrade: enabling <code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code> restores elevation only for accounts that are administrators themselves, it does not restore <code>LOCAL SYSTEM</code> privileges.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Only enable <code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code> if your scripts really need administrative rights. Scripts of administrative accounts then run elevated, which increases the impact should such an account be compromised.</p>
+</div>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause and solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Script execution requires the Royal Server credentials of the requesting user.</code></td>
+<td>No Royal Server credentials were sent. Configure the credentials for the Royal Server object used by the Dynamic Folder.</td>
+</tr>
+<tr>
+<td>The script fails immediately with a logon error</td>
+<td>The account is missing <strong>Allow log on locally</strong> (or <strong>Log on as a batch job</strong>, see above) on the Royal Server machine.</td>
+</tr>
+<tr>
+<td>The script cannot decrypt secrets or find files it stored earlier</td>
+<td>The script depends on the user profile. Enable <code>TRACEFLAG_LOAD_USER_PROFILE_FOR_SCRIPTS</code>.</td>
+</tr>
+<tr>
+<td>The script fails with &quot;access denied&quot; although the user is an administrator</td>
+<td>The script runs with the UAC-filtered token. Enable <code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code>.</td>
+</tr>
+</tbody>
+</table>
 
 </article>
           </div>
