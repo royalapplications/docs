@@ -484,6 +484,12 @@ If checked, Royal TS will not automatically close any tabs when the connection w
 
 If checked, Royal TS will not allow you to drag a tab out of the tab bar to create an external window.
 
+#### Remove tabs while connections are external or fullscreen
+
+If checked, Royal TS removes a connection tab while its session is external or fullscreen without disconnecting it. Re-embedding recreates and selects the tab, restoring its previous tab group and position when possible. The option is off by default and applies immediately to sessions that are already external or fullscreen.
+
+The **Windows** dropdown in the **Tabs** group on the **View** ribbon tab lists external and fullscreen connection windows regardless of this option. Tabs dragged into external tab hosting windows are unaffected.
+
 ### Tasks and Credentials
 
 #### Tasks

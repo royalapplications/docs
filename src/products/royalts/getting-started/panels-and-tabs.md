@@ -52,7 +52,7 @@ All dock-able panels can be hidden automatically (Auto Hide). Panels set to auto
 
 ## Tabs
 
-By default, the [Dashboard panel](xref:royalts_ui_panels#-dashboard) is tabbed to the tab bar. Each connected session is represented by a tab in the tab bar. Connection tabs cannot be docked like dock panels. You can drag connection tabs to rearrange them in the tab bar and can also be dragged out to create floating windows from connection tabs.
+By default, the [Dashboard panel](xref:royalts_ui_panels#-dashboard) is tabbed to the tab bar, and each connected session has a tab. Connection tabs cannot be docked like dock panels. You can drag connection tabs to rearrange them in the tab bar and can also be dragged out to create floating windows from connection tabs.
 
 > [!Note]
 > In order to drag tabs of a connection based on external applications (such as PuTTY or VNC), you need to hold the **SHIFT** key. 
@@ -92,3 +92,9 @@ Click and drag the tab out of the tab bar to create an external tab hosting wind
 On the **Actions** tab, in the Common Actions group, click the **Change** button and select **External** to move the connection to an external window. You can also right-click on the connection tab and click **External**:
 
 ![](~/images/RoyalTS/GettingStarted/PanelsAndTabs_06.png)
+
+To focus an external or fullscreen connection window, open the **Windows** dropdown in the **Tabs** group on the **View** ribbon tab and select the connection. The list shows each connection's icon and is available whether or not its tab is visible.
+
+To hide the tab while a connection is external or fullscreen, enable **Remove tabs while connections are external or fullscreen** in **View > Options > Behavior > Tabs and Connections**. The session remains connected. When you embed it again, its tab returns to its previous group and position when possible, or to the main window if that group has closed. Changing the option updates existing external and fullscreen sessions immediately.
+
+This setting does not affect tabs moved into an external tab hosting window. To return a connection to a tab, select **Change > Embedded** on the **Actions** ribbon tab. Royal TS external windows also offer **Embed Connection** in their system menu.
