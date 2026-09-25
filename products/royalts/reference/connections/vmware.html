@@ -69,17 +69,19 @@
             <article class="content wrap" id="_content" data-uid="royalts_reference_connections_vmware">
 <h1 id="-vmware"><img src="/r2023/images/RoyalTS/Plugins/Connections/VMware/SVG_PluginIcon_32.svg#img_header" alt=""> VMware</h1>
 
-<p>The <strong>VMware</strong> connection can be used to display VMware guest instances from one or more computers and provide basic management tasks as well as the ability to connect to the guest instance console.</p>
+<p>The <strong>VMware</strong> connection displays virtual machines and ESXi hosts from one or more VMware endpoints. You can manage virtual machines, connect to their consoles, and control the SSH service on hosts.</p>
 <h2 id="dashboard">Dashboard</h2>
-<p>The <strong>VMware Dashboard</strong> is shown in the <strong>Dashboard</strong> panel when you select a VMware connection in the <strong>Navigation</strong> panel.</p>
-<p><img src="/r2023/images/RoyalTS/Plugins/Connections/VMware/vmware_dashboard.png" alt="VMware_Dashboard"></p>
+<p>The <strong>VMware Dashboard</strong> is shown in the <strong>Dashboard</strong> panel when you select a VMware connection in the <strong>Navigation</strong> panel. Starting with Royal TS for Windows v26 beta, both the dashboard and the open connection show virtual machines above hosts in a resizable split view. The Hosts pane sizes to its contents, up to one third of the available height.</p>
 <h2 id="dashboard-features">Dashboard Features</h2>
 <ul>
 <li>List of all hosted VMware guests (or instances) and their state.</li>
 <li>Grid search and customization, including sort, filter and group.</li>
 <li>Power On, Power Off, Suspend and Reset VMware guests directly from the Dashboard.</li>
 <li>Connect (Ad Hoc) allows you to connect directly to the selected VMware guest using VNC or the console.</li>
+<li>List ESXi hosts and see whether their SSH service is available and running.</li>
+<li>Use <strong>Start SSH</strong>, <strong>Stop SSH</strong>, or <strong>Connect via SSH</strong> for a selected host. The actions are enabled according to the host's SSH state. Stopping SSH requires confirmation because active sessions may be disconnected.</li>
 </ul>
+<p>The host SSH actions require a VMware account with permission to manage host services. Royal TS does not automatically start SSH when connecting or stop it when the terminal closes. Stop the service explicitly when you have finished using it.</p>
 <h2 id="royal-server-support">Royal Server Support</h2>
 <p>The dashboard data can also be gathered using a Royal Server. For more information about Royal Server, click <a class="xref" href="../../introduction/introducing-royal-server.html">here</a></p>
 <h2 id="dashboard-settings">Dashboard Settings</h2>
@@ -371,8 +373,7 @@ The Secure Gateway will be used if the target machine cannot be reached directly
 <h2 id="-advanced"><img src="/r2023/images/RoyalTS/Plugins/Connections/VMware/SVG_PageDisplayOptions_32.svg#img_header" alt=""> Advanced</h2>
 <p>The <strong>Advanced</strong> page allows you to configure VMware connection settings such as port configuration or instance filtering.</p>
 <h3 id="ssh-port">SSH Port</h3>
-<p>The SSH port is used for ad hoc Terminal connections to the VMware host.<br>
-The default port is 22.</p>
+<p>The SSH port is used for ad hoc Terminal connections to a VMware host, including <strong>Connect via SSH</strong> in the Hosts pane. The default port is 22.</p>
 <h3 id="automatically-connect-to-virtual-machine-console">Automatically connect to Virtual Machine Console</h3>
 <p>If checked, a VMRC connection to the specified Virtual Machine ID is established immediately.</p>
 <h3 id="virtual-machine-id">Virtual Machine ID</h3>
