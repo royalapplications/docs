@@ -311,6 +311,10 @@ When checked, the main filter buttons (Favorites, Active and Inactive) are shown
 
 When checked, Royal TS will perform fuzzy searches in the Navigation tree. Enabling this option may impact search performance.
 
+#### Sort documents alphabetically
+
+When checked, open documents are displayed alphabetically by name in the Navigation tree. Only the top-level document nodes are sorted; objects within documents keep their existing order. The Application document remains last. **Move Up** and **Move Down** are unavailable for documents while this setting is enabled. Turn it off to restore the manual document order. This setting is off by default.
+
 #### Show Tooltips
 
 If checked, Royal TS will display a tooltip with additional information when hovering over a Navigation tree item.

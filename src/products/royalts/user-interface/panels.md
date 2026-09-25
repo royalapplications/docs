@@ -19,6 +19,7 @@ The **Navigation** panel displays folders and objects from the application docum
 - Collapse all and expand all from the selected folder level when holding the **SHIFT** key while collapsing or expanding a folder.
 - Connection state indicator.
 - Drag & Drop reordering.
+- Open documents can be sorted alphabetically by name using **Sort documents alphabetically** in [Options > User Interface > Navigation](xref:royalts_reference_options#-user-interface).
 
 > [!Tip]
 > Hold the **CTRL** key while during drag & drop to duplicate the object.

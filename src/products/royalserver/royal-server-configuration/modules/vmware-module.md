@@ -11,6 +11,8 @@ The VMware Module is offering basic virtual machine instance management for VMs 
 ## Features
 
 - Get a list of virtual machine instances
+- Get a list of ESXi hosts and their SSH service state
+- Start or stop the SSH service on a selected ESXi host
 - Power On or Power Off a VM
 - Shutdown or Reboot a guest
 - Suspend or Reset a VM
@@ -21,4 +23,4 @@ The VMware Module is offering basic virtual machine instance management for VMs 
 
 ## Usage
 
-Add a [VMware](xref:royalts_reference_connections_vmware) connection in RoyalTS and assign a Royal Server object to it.
+Add a [VMware](xref:royalts_reference_connections_vmware) connection in Royal TS and assign a Royal Server object to it. The account used for the VMware connection needs permission to manage host services to start or stop SSH.
