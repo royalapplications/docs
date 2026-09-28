@@ -3,4 +3,4 @@
 :; exit $?
 
 @ECHO OFF
-"C:\Program Files\PowerShell\7\pwsh.exe" -ExecutionPolicy ByPass -NoProfile .\docfx.ps1 %*
+pwsh -ExecutionPolicy ByPass -NoProfile .\docfx.ps1 %*
