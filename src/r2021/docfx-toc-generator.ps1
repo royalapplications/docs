@@ -25,7 +25,8 @@ function Get-RootDocFolder($Path)
 
 function Get-YamlFrontMatter([string]$mdContent, [string]$mdpath)
 {
-    $lines = $mdContent -Split [System.Environment]::NewLine
+    # both line endings: splitting on [Environment]::NewLine (CRLF) misses the front matter of LF files and drops the page
+    $lines = $mdContent -Split "\r?\n"
     if (($lines | where {$_ -eq "---"}).Length -eq 2)
     {
         $firstIndex = $lines.IndexOf("---") + 1
@@ -62,7 +63,7 @@ function New-TocYaml($folder, $tocFolder)
         $tocItem = Get-MarkdownSingleTocItem $_ $tocFolder      
         $dirOfIndex = [System.IO.Path]::GetDirectoryName($_)
         $toc = New-TocYaml $dirOfIndex $tocFolder
-        $items = $toc | Sort-Object -Property order -Descending
+        $items = $toc | Sort-Object -Property { $_.order } -Descending -Stable
         $items = @($items)
             
         if($null -ne $items -and $null -ne $tocItem -and $items.Length -gt 0)
@@ -74,7 +75,7 @@ function New-TocYaml($folder, $tocFolder)
         
     }
 
-    $result = ($topLevelTocItems + $indexTocItems) | Sort-Object -Property order -Descending
+    $result = ($topLevelTocItems + $indexTocItems) | Sort-Object -Property { $_.order } -Descending -Stable
     $result = @($result)
     return ([Collections.Generic.List[Object]]$result)
 }
@@ -111,10 +112,14 @@ function Get-MarkdownSingleTocItem([string]$markdownPath, $tocFolder)
         $relPath = $yaml.href
     }
 
-    $model =  @{ "name" = $yaml.name; "order" = $order };
+    # [ordered]: a plain hashtable enumerates its keys in a per-process random order (randomized string hashing),
+    # so every run would rewrite every toc.yml with its keys shuffled
+    # Sort these items with -Property { $_.order }: -Property order does not see the keys of an [ordered] dictionary.
+    $model = [ordered]@{ "name" = $yaml.name }
     if($yaml.nocontent -ne $true)
-    { $model.Add("href", $relPath) 
+    { $model.Add("href", $relPath)
     }
+    $model.Add("order", $order)
     return $model
 }
 
