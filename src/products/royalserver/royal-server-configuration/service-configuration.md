@@ -30,6 +30,10 @@ The Worker Account should be `Local Administrator` and in domain-joined scenario
 > [!NOTE]
 > The Windows service account can be changed, but it is required that the chosen account has administrative rights. If you plan to work with domain accounts, an account needs to be specified that has proper rights **to enumerate users on the domain**.
 
+To change the Windows service account, open the Services console, open the properties of **Royal Server** and set the account on the **Log On** tab; this also grants the account the **Log on as a service** right. Restart Royal Server afterwards.
+
+To run Dynamic Folder and Dynamic Credential scripts, an account other than `LOCAL SYSTEM` additionally needs the user rights **Replace a process level token** and **Adjust memory quotas for a process**. Grant them with the script `grant_service_account_rights.ps1` from the `Scripts` folder of the installation directory, see [Grant Service Account Rights](xref:royalserver_advanced_management_scripts_grant_rights) and [Dynamic Folder](xref:royalserver_management_dynamic-folder#service-account). Royal Server 26.0.13 and newer log a warning at startup if one of them is missing.
+
 **Primary Server Binding**
 
 The Primary Server Binding is containing the main configuration for Royal Server and consists of

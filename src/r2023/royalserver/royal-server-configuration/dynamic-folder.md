@@ -66,9 +66,33 @@ The account a script runs as needs a logon right on the Royal Server machine:
 
 There is no fallback between the two. If the account is missing the right for the configured logon type, the script fails with a logon error instead of silently running with different privileges.
 
+### Service Account
+
+By default, the Royal Server service runs as `LOCAL SYSTEM`. If you configure a different Windows account for the service (Services console > Royal Server > Log On), that account needs two additional user rights on the Royal Server machine to start scripts as the requesting user:
+
+| User right                             | Privilege name                                                    |
+| -------------------------------------- | ----------------------------------------------------------------- |
+| **Replace a process level token**      | `SeAssignPrimaryTokenPrivilege`                                   |
+| **Adjust memory quotas for a process** | `SeIncreaseQuotaPrivilege` (administrators hold it by default)    |
+
+`LOCAL SYSTEM` holds both rights. The Services console grants **Log on as a service** when you configure the account, but not these two.
+
+Grant them with the script `grant_service_account_rights.ps1` from the `Scripts` folder of the Royal Server installation directory (see [Grant Service Account Rights](xref:royalserver_advanced_management_scripts_grant_rights)) or in the Local Security Policy (`secpol.msc` > Local Policies > User Rights Assignment). Restart the Royal Server service afterwards: the rights only apply to a new logon of the account.
+
+> [!NOTE]
+> If a domain Group Policy defines one of these user rights, it overwrites the local assignment on the next policy refresh. In that case, add the service account to that Group Policy.
+
+If a right is missing, Royal Server 5.04.50928 and newer log a warning at startup that names the service account and the missing rights, and reject every script with:
+`Royal Server is not configured to run scripts: the service account is missing required user rights. Details are in the Royal Server log.`
+Older versions fail with `CreateProcessAsUser failed.` (Windows error 1314) instead.
+
 ### User Profile
 
-By default, scripts run **without the user's Windows profile**. Royal Server creates a throwaway working directory for each run below `%ProgramData%\RoyalServer\Temp` and points `USERPROFILE`, `APPDATA`, `LOCALAPPDATA` and `TEMP` at it. The directory is removed when the script finishes; directories orphaned by a hard kill of the service are purged the next time the service starts.
+By default, scripts run **without the user's Windows profile**. For each run, Royal Server creates a throwaway working directory below `%ProgramData%\RoyalServer\Temp\<SID of the service account>` and points `USERPROFILE`, `APPDATA`, `LOCALAPPDATA` and `TEMP` at it. The directory is removed when the script finishes.
+
+The folder `%ProgramData%\RoyalServer\Temp` is created by the Royal Server setup, which also repairs its permissions and removes leftovers on every install, upgrade and repair. Since Royal Server 5.04.50928, each Windows service account gets its own subfolder, so changing the service account does not affect scripts. Older versions put the working directories of all service accounts directly into `Temp`. The setup excludes the folder from Windows backups and Volume Shadow Copy snapshots, because it can hold secrets of Dynamic Credential scripts while they run (see [Backup](../advanced/backup.md)).
+
+Working directories of interrupted runs (for example when the service was stopped while a script was running) and the subfolders of previous service accounts are not deleted while the service runs. Royal Server reports them in its log at startup. To remove them, stop the service and run `RoyalServer.exe --cleanup-script-temp` from an elevated command prompt (see [Command-Line Options](xref:royalserver_advanced_command_line)).
 
 This avoids creating a persistent user profile on the Royal Server machine for every user who runs a script, but it also means that everything stored in the real profile is unavailable to the script:
 
@@ -98,3 +122,7 @@ Before Royal Server 5.04.50925, scripts ran under the Windows service account of
 | The script fails immediately with a logon error                         | The account is missing **Allow log on locally** (or **Log on as a batch job**, see above) on the Royal Server machine.    |
 | The script cannot decrypt secrets or find files it stored earlier       | The script depends on the user profile. Enable `TRACEFLAG_LOAD_USER_PROFILE_FOR_SCRIPTS`.                                 |
 | The script fails with "access denied" although the user is an administrator | The script runs with the UAC-filtered token. Enable `TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS`.                          |
+| `Royal Server is not configured to run scripts: the service account is missing required user rights.` | The service account lacks **Replace a process level token** or **Adjust memory quotas for a process**. See [Service Account](#service-account). |
+| `Cannot prepare the script temp folder ...`                             | `%ProgramData%\RoyalServer\Temp` is missing or has wrong permissions. Repair the Royal Server installation, or run `RoyalServer.exe --prepare-script-temp` from an elevated command prompt. |
+| `Cannot open script directory 'Temp'` after changing the service account | Royal Server versions before 5.04.50928 used a single temp folder for all service accounts. Update Royal Server.           |
+| `CreateProcessAsUser failed.` (Windows error 1314)                      | Royal Server versions before 5.04.50928: the service account lacks **Replace a process level token** or **Adjust memory quotas for a process**. See [Service Account](#service-account). |
