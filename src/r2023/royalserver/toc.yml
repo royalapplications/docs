@@ -180,15 +180,15 @@
   - order: 5065
     href: advanced\management-scripts\index.md
     items:
-    - order: 5130
-      href: advanced\management-scripts\grant-service-account-rights.md
-      name: Grant Service Account Rights
     - order: 5120
       href: advanced\management-scripts\prepare-managed-server.md
       name: Prepare a Managed Server
     - order: 5110
       href: advanced\management-scripts\uninstall.md
       name: Cleanup an Installation
+    - order: 5100
+      href: advanced\management-scripts\grant-service-account-rights.md
+      name: Grant Service Account Rights
     name: Management Scripts
   - order: 5060
     href: advanced\performance-counters.md

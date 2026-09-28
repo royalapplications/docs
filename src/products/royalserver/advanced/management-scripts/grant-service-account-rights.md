@@ -1,7 +1,7 @@
 ---
 uid: royalserver_advanced_management_scripts_grant_rights
 name: Grant Service Account Rights
-order: 5130
+order: 5100
 ---
 
 # Grant Service Account Rights
