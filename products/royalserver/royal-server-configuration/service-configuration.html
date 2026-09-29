@@ -86,6 +86,8 @@
 <h5>Note</h5>
 <p>The Windows service account can be changed, but it is required that the chosen account has administrative rights. If you plan to work with domain accounts, an account needs to be specified that has proper rights <strong>to enumerate users on the domain</strong>.</p>
 </div>
+<p>To change the Windows service account, open the Services console, open the properties of <strong>Royal Server</strong> and set the account on the <strong>Log On</strong> tab; this also grants the account the <strong>Log on as a service</strong> right. Restart Royal Server afterwards.</p>
+<p>To run Dynamic Folder and Dynamic Credential scripts, an account other than <code>LOCAL SYSTEM</code> additionally needs the user rights <strong>Replace a process level token</strong> and <strong>Adjust memory quotas for a process</strong>. Grant them with the script <code>grant_service_account_rights.ps1</code> from the <code>Scripts</code> folder of the installation directory, see <a class="xref" href="../advanced/management-scripts/grant-service-account-rights.html">Grant Service Account Rights</a> and <a class="xref" href="dynamic-folder.html#service-account">Dynamic Folder</a>. Royal Server 26.0.13 and newer log a warning at startup if one of them is missing.</p>
 <p><strong>Primary Server Binding</strong></p>
 <p>The Primary Server Binding is containing the main configuration for Royal Server and consists of</p>
 <ul>

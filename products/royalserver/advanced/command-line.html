@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Advanced Topics </title>
+      <title>Command-Line Options </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Advanced Topics ">
+      <meta name="title" content="Command-Line Options ">
     
     
       <link rel="shortcut icon" href="../../favicon.ico">
@@ -66,19 +66,46 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="advanced-topics">Advanced Topics</h1>
+            <article class="content wrap" id="_content" data-uid="royalserver_advanced_command_line">
+<h1 id="command-line-options">Command-Line Options</h1>
 
-<ul>
-<li><a href="application-settings.html">Application Settings</a></li>
-<li><a href="backup.html">Backup</a></li>
-<li><a href="command-line.html">Command-Line Options</a></li>
-<li><a href="management-scripts/index.html">Management Scripts</a></li>
-<li><a href="performance-counters.html">Performance Counter</a></li>
-<li><a href="server-limits.html">Server-Limits</a></li>
-<li><a href="trace-flags.html">Trace Flags</a></li>
-<li><a href="restoring-previous-version-document.html">Restoring Document Versions</a></li>
-</ul>
+<p><code>RoyalServer.exe</code> in the Royal Server installation directory supports the following options. Run them from an elevated command prompt.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/i</code>, <code>-i</code>, <code>--install</code></td>
+<td>Registers Royal Server as a Windows service. The setup does this automatically.</td>
+</tr>
+<tr>
+<td><code>/u</code>, <code>-u</code>, <code>--uninstall</code></td>
+<td>Removes the Windows service registration. The setup does this automatically.</td>
+</tr>
+<tr>
+<td><code>--prepare-script-temp</code></td>
+<td>Creates the folder <code>%ProgramData%\RoyalServer\Temp</code>, or repairs its owner and permissions, so that the service account can run Dynamic Folder and Dynamic Credential scripts. Only the folder itself is changed, never its contents, so this is safe to run at any time. The setup runs it on every install, upgrade and repair.</td>
+</tr>
+<tr>
+<td><code>--cleanup-script-temp</code></td>
+<td>Removes leftovers from <code>%ProgramData%\RoyalServer\Temp</code>: working directories of interrupted script runs and the subfolders of previous service accounts. While the service is running, the subfolder it uses is skipped - stop the service to remove it as well. Links are removed, never followed. The setup runs it on every install, upgrade and repair.</td>
+</tr>
+<tr>
+<td><code>/h</code>, <code>-h</code>, <code>--help</code></td>
+<td>Shows the available options.</td>
+</tr>
+</tbody>
+</table>
+<p>Without an option, <code>RoyalServer.exe</code> starts the Royal Server host. This is how the Windows service runs it.</p>
+<p><code>--prepare-script-temp</code> and <code>--cleanup-script-temp</code> are available in Royal Server 26.0.13 and newer.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Royal Server logs a warning at startup when the script temp folder is missing or cannot be accessed, or when it contains folders of previous service accounts. The warning includes the command to run.</p>
+</div>
 
 </article>
           </div>
@@ -97,7 +124,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/products/royalserver/advanced/index.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/products/royalserver/advanced/command-line.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

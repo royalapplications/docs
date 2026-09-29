@@ -151,8 +151,39 @@ The following script interpreters are supported:</p>
 </tbody>
 </table>
 <p>There is no fallback between the two. If the account is missing the right for the configured logon type, the script fails with a logon error instead of silently running with different privileges.</p>
+<h3 id="service-account">Service Account</h3>
+<p>By default, the Royal Server service runs as <code>LOCAL SYSTEM</code>. If you configure a different Windows account for the service (Services console &gt; Royal Server &gt; Log On), that account needs two additional user rights on the Royal Server machine to start scripts as the requesting user:</p>
+<table>
+<thead>
+<tr>
+<th>User right</th>
+<th>Privilege name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Replace a process level token</strong></td>
+<td><code>SeAssignPrimaryTokenPrivilege</code></td>
+</tr>
+<tr>
+<td><strong>Adjust memory quotas for a process</strong></td>
+<td><code>SeIncreaseQuotaPrivilege</code> (administrators hold it by default)</td>
+</tr>
+</tbody>
+</table>
+<p><code>LOCAL SYSTEM</code> holds both rights. The Services console grants <strong>Log on as a service</strong> when you configure the account, but not these two.</p>
+<p>Grant them with the script <code>grant_service_account_rights.ps1</code> from the <code>Scripts</code> folder of the Royal Server installation directory (see <a class="xref" href="../advanced/management-scripts/grant-service-account-rights.html">Grant Service Account Rights</a>) or in the Local Security Policy (<code>secpol.msc</code> &gt; Local Policies &gt; User Rights Assignment). Restart the Royal Server service afterwards: the rights only apply to a new logon of the account.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a domain Group Policy defines one of these user rights, it overwrites the local assignment on the next policy refresh. In that case, add the service account to that Group Policy.</p>
+</div>
+<p>If a right is missing, Royal Server 26.0.13 and newer log a warning at startup that names the service account and the missing rights, and reject every script with:
+<code>Royal Server is not configured to run scripts: the service account is missing required user rights. Details are in the Royal Server log.</code>
+Older versions fail with <code>CreateProcessAsUser failed.</code> (Windows error 1314) instead.</p>
 <h3 id="user-profile">User Profile</h3>
-<p>By default, scripts run <strong>without the user's Windows profile</strong>. Royal Server creates a throwaway working directory for each run below <code>%ProgramData%\RoyalServer\Temp</code> and points <code>USERPROFILE</code>, <code>APPDATA</code>, <code>LOCALAPPDATA</code> and <code>TEMP</code> at it. The directory is removed when the script finishes; directories orphaned by a hard kill of the service are purged the next time the service starts.</p>
+<p>By default, scripts run <strong>without the user's Windows profile</strong>. For each run, Royal Server creates a throwaway working directory below <code>%ProgramData%\RoyalServer\Temp\&lt;SID of the service account&gt;</code> and points <code>USERPROFILE</code>, <code>APPDATA</code>, <code>LOCALAPPDATA</code> and <code>TEMP</code> at it. The directory is removed when the script finishes.</p>
+<p>The folder <code>%ProgramData%\RoyalServer\Temp</code> is created by the Royal Server setup, which also repairs its permissions and removes leftovers on every install, upgrade and repair. Since Royal Server 26.0.13, each Windows service account gets its own subfolder, so changing the service account does not affect scripts. Older versions put the working directories of all service accounts directly into <code>Temp</code>. The setup excludes the folder from Windows backups and Volume Shadow Copy snapshots, because it can hold secrets of Dynamic Credential scripts while they run (see <a href="../advanced/backup.html">Backup</a>).</p>
+<p>Working directories of interrupted runs (for example when the service was stopped while a script was running) and the subfolders of previous service accounts are not deleted while the service runs. Royal Server reports them in its log at startup. To remove them, stop the service and run <code>RoyalServer.exe --cleanup-script-temp</code> from an elevated command prompt (see <a class="xref" href="../advanced/command-line.html">Command-Line Options</a>).</p>
 <p>This avoids creating a persistent user profile on the Royal Server machine for every user who runs a script, but it also means that everything stored in the real profile is unavailable to the script:</p>
 <ul>
 <li>user-scoped DPAPI (for example <code>ConvertTo-SecureString</code> without an explicit key, or <code>ProtectedData</code>)</li>
@@ -193,6 +224,22 @@ The following script interpreters are supported:</p>
 <tr>
 <td>The script fails with &quot;access denied&quot; although the user is an administrator</td>
 <td>The script runs with the UAC-filtered token. Enable <code>TRACEFLAG_USE_BATCH_LOGON_FOR_SCRIPTS</code>.</td>
+</tr>
+<tr>
+<td><code>Royal Server is not configured to run scripts: the service account is missing required user rights.</code></td>
+<td>The service account lacks <strong>Replace a process level token</strong> or <strong>Adjust memory quotas for a process</strong>. See <a href="#service-account">Service Account</a>.</td>
+</tr>
+<tr>
+<td><code>Cannot prepare the script temp folder ...</code></td>
+<td><code>%ProgramData%\RoyalServer\Temp</code> is missing or has wrong permissions. Repair the Royal Server installation, or run <code>RoyalServer.exe --prepare-script-temp</code> from an elevated command prompt.</td>
+</tr>
+<tr>
+<td><code>Cannot open script directory 'Temp'</code> after changing the service account</td>
+<td>Royal Server versions before 26.0.13 used a single temp folder for all service accounts. Update Royal Server.</td>
+</tr>
+<tr>
+<td><code>CreateProcessAsUser failed.</code> (Windows error 1314)</td>
+<td>Royal Server versions before 26.0.13: the service account lacks <strong>Replace a process level token</strong> or <strong>Adjust memory quotas for a process</strong>. See <a href="#service-account">Service Account</a>.</td>
 </tr>
 </tbody>
 </table>

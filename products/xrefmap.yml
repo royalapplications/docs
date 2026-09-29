@@ -106,12 +106,18 @@ references:
 - uid: advanced-restoring-a-previous-version-of-a-document
   name: Restoring a previous version of a Royal Document
   href: royalserver/advanced/restoring-previous-version-document.html
+- uid: royalserver_advanced_command_line
+  name: Command-Line Options
+  href: royalserver/advanced/command-line.html
 - uid: royalserver_advanced_kestrel
   name: Server Limits
   href: royalserver/advanced/server-limits.html
 - uid: royalserver_advanced_management_scripts_cleanup
   name: Cleanup an Installation
   href: royalserver/advanced/management-scripts/uninstall.html
+- uid: royalserver_advanced_management_scripts_grant_rights
+  name: Grant Service Account Rights
+  href: royalserver/advanced/management-scripts/grant-service-account-rights.html
 - uid: royalserver_advanced_management_scripts_prepare
   name: Prepare a Managed Server
   href: royalserver/advanced/management-scripts/prepare-managed-server.html

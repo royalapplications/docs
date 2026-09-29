@@ -81,6 +81,7 @@
 <li>it creates a settings file at <code>%APPDATA%\RoyalServer\appsettings.json</code></li>
 <li>it creates a configuration database at <code>%APPDATA%\RoyalServer\royalserverv4.db</code></li>
 <li>it creates a logging directory for logs</li>
+<li>it creates the folder <code>%ProgramData%\RoyalServer\Temp</code> for temporary files of Dynamic Folder and Dynamic Credential scripts; since Royal Server 26.0.13 it also excludes the folder from backups in the registry (<code>FilesNotToBackup</code>, <code>FilesNotToSnapshot</code>), and the setup removes these registry entries on uninstall. To remove leftovers in the folder, run <code>RoyalServer.exe --cleanup-script-temp</code> from an elevated command prompt before uninstalling (see <a class="xref" href="../command-line.html">Command-Line Options</a>)</li>
 <li>it creates Performance Counters in the category <code>Royal Server</code></li>
 <li>it creates license files</li>
 </ul>
