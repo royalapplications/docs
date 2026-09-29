@@ -5,17 +5,17 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Cleanup an Installation </title>
+      <title>Command-Line Options </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Cleanup an Installation ">
+      <meta name="title" content="Command-Line Options ">
     
     
-      <link rel="shortcut icon" href="../../../favicon.ico">
-      <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../../../styles/docfx.css">
-      <link rel="stylesheet" href="../../../styles/main.css">
-      <meta property="docfx:navrel" content="../../../toc.html">
-      <meta property="docfx:tocrel" content="../../toc.html">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="https://www.royalapps.com/?return_to_last_selected_page">
-                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -66,35 +66,45 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="royalserver_advanced_management_scripts_cleanup">
-<h1 id="cleanup-an-installation">Cleanup an Installation</h1>
+            <article class="content wrap" id="_content" data-uid="royalserver_advanced_command_line">
+<h1 id="command-line-options">Command-Line Options</h1>
 
-<p>Royal Server is installed via an MSI package. Uninstalling Royal Server is just a matter of seconds.</p>
-<p>Royal Server modifies your machine in the following ways:</p>
-<ul>
-<li>it creates the following local Windows User Groups: <code>Royal Server Users</code>, <code>Royal Secure Gateway Users</code>, <code>Royal Server Administrators</code></li>
-<li>it creates a Windows EventLog <code>Royal Server Log</code></li>
-<li>it creates two Windows Firewall Rules: <code>Royal Server Modules</code> and <code>Royal Server Secure Gateway (SSH tunnel)</code></li>
-<li>it stores configuration information in the Windows Registry</li>
-<li>it creates uninstall information stored by the MSI package</li>
-<li>it creates two default certificates and registers them with the Royal Server application: <code>Royal Server</code> and <code>Royal Server-Secure Gateway</code></li>
-<li>it creates a settings file at <code>%APPDATA%\RoyalServer\appsettings.json</code></li>
-<li>it creates a configuration database at <code>%APPDATA%\RoyalServer\royalserverv4.db</code></li>
-<li>it creates a logging directory for logs</li>
-<li>it creates the folder <code>%ProgramData%\RoyalServer\Temp</code> for temporary files of Dynamic Folder and Dynamic Credential scripts; since Royal Server 5.04.50928 it also excludes the folder from backups in the registry (<code>FilesNotToBackup</code>, <code>FilesNotToSnapshot</code>), and the setup removes these registry entries on uninstall. To remove leftovers in the folder, run <code>RoyalServer.exe --cleanup-script-temp</code> from an elevated command prompt before uninstalling (see <a class="xref" href="../command-line.html">Command-Line Options</a>)</li>
-<li>it creates Performance Counters in the category <code>Royal Server</code></li>
-<li>it creates license files</li>
-</ul>
-<p>You can either remove these artifacts manually or use our script for this. You can find it in <code>&lt;royal-server-installation-directory&gt;\scripts\cleanup_installation.ps1</code>. For each step, the script is asking for permission to do the necessary changes.</p>
-<p>For each step in the script it</p>
-<ol>
-<li>checks if there is something to be cleaned up</li>
-<li>asks permission to delete the artefact</li>
-<li>if confirmed, it deletes the artefact</li>
-</ol>
+<p><code>RoyalServer.exe</code> in the Royal Server installation directory supports the following options. Run them from an elevated command prompt.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/i</code>, <code>-i</code>, <code>--install</code></td>
+<td>Registers Royal Server as a Windows service. The setup does this automatically.</td>
+</tr>
+<tr>
+<td><code>/u</code>, <code>-u</code>, <code>--uninstall</code></td>
+<td>Removes the Windows service registration. The setup does this automatically.</td>
+</tr>
+<tr>
+<td><code>--prepare-script-temp</code></td>
+<td>Creates the folder <code>%ProgramData%\RoyalServer\Temp</code>, or repairs its owner and permissions, so that the service account can run Dynamic Folder and Dynamic Credential scripts. Only the folder itself is changed, never its contents, so this is safe to run at any time. The setup runs it on every install, upgrade and repair.</td>
+</tr>
+<tr>
+<td><code>--cleanup-script-temp</code></td>
+<td>Removes leftovers from <code>%ProgramData%\RoyalServer\Temp</code>: working directories of interrupted script runs and the subfolders of previous service accounts. While the service is running, the subfolder it uses is skipped - stop the service to remove it as well. Links are removed, never followed. The setup runs it on every install, upgrade and repair.</td>
+</tr>
+<tr>
+<td><code>/h</code>, <code>-h</code>, <code>--help</code></td>
+<td>Shows the available options.</td>
+</tr>
+</tbody>
+</table>
+<p>Without an option, <code>RoyalServer.exe</code> starts the Royal Server host. This is how the Windows service runs it.</p>
+<p><code>--prepare-script-temp</code> and <code>--cleanup-script-temp</code> are available in Royal Server 5.04.50928 and newer.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Any log files generated by Royal Server are not deleted by the script.</p>
+<p>Royal Server logs a warning at startup when the script temp folder is missing or cannot be accessed, or when it contains folders of previous service accounts. The warning includes the command to run.</p>
 </div>
 
 </article>
@@ -114,7 +124,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/advanced/management-scripts/uninstall.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/royalapplications/docs/blob/main/src/r2023/royalserver/advanced/command-line.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
@@ -143,9 +153,9 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../../../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/ra.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/ra.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

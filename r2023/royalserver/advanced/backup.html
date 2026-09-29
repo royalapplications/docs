@@ -116,6 +116,8 @@ The following information is stored in this database:</p>
 </ul>
 <h3 id="4-license-information">4. License Information</h3>
 <p>License Information is stored encrypted the following folder <code>%ProgramData%\RoyalServer\Licenses\</code>.</p>
+<h3 id="5-script-temp-folder-no-backup-needed">5. Script Temp Folder (no backup needed)</h3>
+<p><code>%ProgramData%\RoyalServer\Temp</code> only holds throwaway working directories of Dynamic Folder and Dynamic Credential scripts and does not need to be backed up. Because it can hold secrets of Dynamic Credential scripts while they run, the setup of Royal Server 5.04.50928 and newer excludes it from backups: it adds the value <code>Royal Server Script Temp</code> to the registry keys <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BackupRestore\FilesNotToBackup</code> and <code>...\FilesNotToSnapshot</code>. Windows Server Backup and backup products based on Volume Shadow Copy honor these entries. Exclude the folder manually in backup products that do not.</p>
 <h1 id="royal-server-v3">Royal Server V3</h1>
 <p>After installation, a fully configured and running Royal Server stores its configuration in the following places:</p>
 <h3 id="1-configuration-settings-v3">1. Configuration Settings V3</h3>
