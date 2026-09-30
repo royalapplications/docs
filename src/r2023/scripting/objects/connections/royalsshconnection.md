@@ -1,4 +1,4 @@
----
+﻿---
 uid: scripting_object_royalsshconnection
 name: RoyalSSHConnection
 order: 8900
@@ -599,6 +599,12 @@ Specifies the terminal font size on Windows.
 ### AltGrActsAsComposeKey
 Type: `bool`, Default Value: `false`  
 If set to true, Alt Gr acts as compose key.  
+### ArrowKeyModePutty
+Type: `int`, Default Value: `0`  
+The modified arrow key mode in PuTTY:  
+ 0 = Ctrl toggles app mode  
+ 1 = xterm-style bitmap  
+Bitmap mode sends distinct sequences in normal cursor mode. For Vim, set `IgnoreRemoteCursorKeyMode` to `true`; selecting bitmap mode does not change this property or `CursorKeyMode`. Some applications require application cursor mode.  
 ### AutoCopySelectionToClipboard
 Type: `bool`, Default Value: `true`  
 If set to true, the selected text is automatically copied to the system clipboard.  
@@ -662,6 +668,7 @@ The function key mode in PuTTY:
  3 = VT400   
  4 = VT100Plus   
  5 = SCO  
+ 6 = Xterm216Plus  
 ### HistoryMaxLength
 Type: `int`, Default Value: `1000`  
 Specifies the max history length (srollback lines).  
@@ -675,7 +682,7 @@ The home and end key behavior:
  1 = Rxvt  
 ### IgnoreRemoteCursorKeyMode
 Type: `bool`, Default Value: `false`  
-If set to true, remote cursor key mode change is ignored.  
+If set to true, PuTTY uses normal cursor mode and ignores remote application cursor mode requests. Independent of `ArrowKeyModePutty` and `CursorKeyMode`.  
 ### InitialPasteCharDelay
 Type: `bool`, Default Value: `false`  
 If set to true, the initial state of character paste delay is enabled.  

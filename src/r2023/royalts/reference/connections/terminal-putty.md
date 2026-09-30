@@ -1,4 +1,4 @@
----
+﻿---
 uid: royalts_reference_connections_terminal-putty
 name: Terminal (PuTTY)
 order: 9950
@@ -37,7 +37,7 @@ To configure the plugin settings, open the Plugins Management and click on **Set
 
 #### Executable
 
-Specify your own PuTTY executable. If no executable is specified or if the configured executable cannot be found, the PuTTY.exe included in Royal TS will be used.
+Royal TS includes PuTTY 0.85 for x64 and ARM64, including upstream security fixes. Specify your own PuTTY executable to use a different version. If no executable is specified or the configured executable cannot be found, Royal TS uses the included version.
 
 #### Registry Base Path
 
@@ -561,7 +561,7 @@ Default is xterm. Allows you to set a custom terminal name.
 
 #### Function Key Mode
 
-Specify how to encode function keys such as F1-F20, INS, Del, Home, etc.
+Specify how to encode function keys such as F1-F20, INS, Del, Home, etc. The available modes include **Xterm 216+**. Function key mode is independent of the arrow key settings.
 
 #### Backspace Sequence
 
@@ -571,13 +571,25 @@ Specify the backspace key sequence 0x08 (^H) or 0x7F (^?).
 
 Specify the behavior of the Home and End keys.
 
+#### Shift/Ctrl/Alt with Arrow Keys
+
+Choose how PuTTY encodes arrow keys pressed with Shift, Ctrl, or Alt:
+
+- **Ctrl toggles app mode**: the default, preserving PuTTY's legacy arrow key behavior.
+- **xterm-style bitmap**: sends distinct sequences for modified arrow keys in normal cursor mode. For example, Alt+Up sends `ESC [1;3A` and Alt+Down sends `ESC [1;3B`.
+
+Selecting bitmap mode does not change **Cursor Key Mode** or enable **Ignore Remote Cursor Key Mode**.
+
+> [!Note]
+> PuTTY 0.85 does not preserve bitmap modifiers in application cursor mode. For Vim, vimdiff, or DirDiff, select **xterm-style bitmap**, enable **Ignore Remote Cursor Key Mode**, and reconnect. This keeps modified arrow keys recognizable even when Vim requests application cursor mode. Some other terminal applications require application cursor mode; leave the checkbox unchecked for connections where those applications need it.
+
 #### Cursor Key Mode
 
-Specify the initial cursor key mode Normal or Application.
+Specify the initial cursor key mode **Normal** or **Application**. The default is **Normal**. When **Ignore Remote Cursor Key Mode** is enabled, PuTTY uses normal cursor mode regardless of this initial setting.
 
 #### Ignore Remote Cursor Key Mode
 
-If checked, PuTTY will ignore cursor key mode changes requested by the remote server.
+If checked, PuTTY uses normal cursor mode and ignores application cursor mode requests from the remote server. This option is unchecked by default and remains independent of the selected arrow key mode.
 
 #### Numeric Keypad
 
