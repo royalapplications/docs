@@ -663,6 +663,12 @@ Specifies the terminal font size on Windows.</p>
 <h3 id="altgractsascomposekey">AltGrActsAsComposeKey</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, Alt Gr acts as compose key.</p>
+<h3 id="arrowkeymodeputty">ArrowKeyModePutty</h3>
+<p>Type: <code>int</code>, Default Value: <code>0</code><br>
+The modified arrow key mode in PuTTY:<br>
+0 = Ctrl toggles app mode<br>
+1 = xterm-style bitmap<br>
+Bitmap mode sends distinct sequences in normal cursor mode. For Vim, set <code>IgnoreRemoteCursorKeyMode</code> to <code>true</code>; selecting bitmap mode does not change this property or <code>CursorKeyMode</code>. Some applications require application cursor mode.</p>
 <h3 id="autocopyselectiontoclipboard">AutoCopySelectionToClipboard</h3>
 <p>Type: <code>bool</code>, Default Value: <code>true</code><br>
 If set to true, the selected text is automatically copied to the system clipboard.</p>
@@ -725,7 +731,8 @@ The function key mode in PuTTY:<br>
 2 = XtermR6<br>
 3 = VT400<br>
 4 = VT100Plus<br>
-5 = SCO</p>
+5 = SCO<br>
+6 = Xterm216Plus</p>
 <h3 id="historymaxlength">HistoryMaxLength</h3>
 <p>Type: <code>int</code>, Default Value: <code>1000</code><br>
 Specifies the max history length (srollback lines).</p>
@@ -739,7 +746,7 @@ The home and end key behavior:<br>
 1 = Rxvt</p>
 <h3 id="ignoreremotecursorkeymode">IgnoreRemoteCursorKeyMode</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
-If set to true, remote cursor key mode change is ignored.</p>
+If set to true, PuTTY uses normal cursor mode and ignores remote application cursor mode requests. Independent of <code>ArrowKeyModePutty</code> and <code>CursorKeyMode</code>.</p>
 <h3 id="initialpastechardelay">InitialPasteCharDelay</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If set to true, the initial state of character paste delay is enabled.</p>

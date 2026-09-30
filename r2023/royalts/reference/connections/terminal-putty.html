@@ -92,7 +92,7 @@ To configure individual dashboard settings for a connection, use the <a href="#d
 <h2 id="plugin-settings">Plugin Settings</h2>
 <p>To configure the plugin settings, open the Plugins Management and click on <strong>Settings</strong> for the Terminal plugin based on PuTTY:</p>
 <h4 id="executable">Executable</h4>
-<p>Specify your own PuTTY executable. If no executable is specified or if the configured executable cannot be found, the PuTTY.exe included in Royal TS will be used.</p>
+<p>Royal TS includes PuTTY 0.85 for x64 and ARM64, including upstream security fixes. Specify your own PuTTY executable to use a different version. If no executable is specified or the configured executable cannot be found, Royal TS uses the included version.</p>
 <h4 id="registry-base-path">Registry Base Path</h4>
 <p>Enter the registry base path without the hive.</p>
 <p>For KiTTY use: <code>Software\9bis.com\KiTTY</code><br>
@@ -623,15 +623,26 @@ If you select ‘1 only’ or ‘2 only’ here, PuTTY will only connect if the 
 <h4 id="terminal-name">Terminal Name</h4>
 <p>Default is xterm. Allows you to set a custom terminal name.</p>
 <h4 id="function-key-mode">Function Key Mode</h4>
-<p>Specify how to encode function keys such as F1-F20, INS, Del, Home, etc.</p>
+<p>Specify how to encode function keys such as F1-F20, INS, Del, Home, etc. The available modes include <strong>Xterm 216+</strong>. Function key mode is independent of the arrow key settings.</p>
 <h4 id="backspace-sequence">Backspace Sequence</h4>
 <p>Specify the backspace key sequence 0x08 (^H) or 0x7F (^?).</p>
 <h4 id="home-and-end-key">Home and End Key</h4>
 <p>Specify the behavior of the Home and End keys.</p>
+<h4 id="shiftctrlalt-with-arrow-keys">Shift/Ctrl/Alt with Arrow Keys</h4>
+<p>Choose how PuTTY encodes arrow keys pressed with Shift, Ctrl, or Alt:</p>
+<ul>
+<li><strong>Ctrl toggles app mode</strong>: the default, preserving PuTTY's legacy arrow key behavior.</li>
+<li><strong>xterm-style bitmap</strong>: sends distinct sequences for modified arrow keys in normal cursor mode. For example, Alt+Up sends <code>ESC [1;3A</code> and Alt+Down sends <code>ESC [1;3B</code>.</li>
+</ul>
+<p>Selecting bitmap mode does not change <strong>Cursor Key Mode</strong> or enable <strong>Ignore Remote Cursor Key Mode</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>PuTTY 0.85 does not preserve bitmap modifiers in application cursor mode. For Vim, vimdiff, or DirDiff, select <strong>xterm-style bitmap</strong>, enable <strong>Ignore Remote Cursor Key Mode</strong>, and reconnect. This keeps modified arrow keys recognizable even when Vim requests application cursor mode. Some other terminal applications require application cursor mode; leave the checkbox unchecked for connections where those applications need it.</p>
+</div>
 <h4 id="cursor-key-mode">Cursor Key Mode</h4>
-<p>Specify the initial cursor key mode Normal or Application.</p>
+<p>Specify the initial cursor key mode <strong>Normal</strong> or <strong>Application</strong>. The default is <strong>Normal</strong>. When <strong>Ignore Remote Cursor Key Mode</strong> is enabled, PuTTY uses normal cursor mode regardless of this initial setting.</p>
 <h4 id="ignore-remote-cursor-key-mode">Ignore Remote Cursor Key Mode</h4>
-<p>If checked, PuTTY will ignore cursor key mode changes requested by the remote server.</p>
+<p>If checked, PuTTY uses normal cursor mode and ignores application cursor mode requests from the remote server. This option is unchecked by default and remains independent of the selected arrow key mode.</p>
 <h4 id="numeric-keypad">Numeric Keypad</h4>
 <p>Specify the numeric keyboard mode.</p>
 <h4 id="disable-application-keypad-mode">Disable Application Keypad Mode</h4>
