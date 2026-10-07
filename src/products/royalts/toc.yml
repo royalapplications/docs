@@ -150,7 +150,7 @@
       href: reference\connections\filetransfer.md
       order: 9940
     - name: Web Page (Edge)
-      href: reference\connections\web-page-ie.md
+      href: reference\connections\web-page-edge.md
       order: 9930
     - name: Web Page (Chromium)
       href: reference\connections\web-page-chrome.md

@@ -80,6 +80,10 @@ Type: `int`, Default Value: `0`
 ### CustomUserAgentString
 Type: `string`, Default Value: `Empty String`  
 The custom User Agent String for the browser.  
+### DownloadDirectoryWin
+Type: `string`, Default Value: `Empty String`
+The initial folder for browser downloads on Windows. An empty value uses the Windows Downloads folder.
+
 ### IgnoreCertificateErrors
 Type: `bool`, Default Value: `false`  
 If set to true, certificate errors are ignored.  
@@ -104,6 +108,10 @@ If set to true, the web browser toolbar is shown.
 ### Timeout
 Type: `int`, Default Value: `60`  
 The number of seconds after which a timeout occurs.  
+### UpdateDefaultDownloadLocation
+Type: `bool`, Default Value: `false`
+Update this connection's default download folder after a Save dialog is confirmed, when editing is permitted.
+
 ### UseBasicAuth
 Type: `bool`, Default Value: `false`  
 If set to true, basic authentication is used to authenticate using the configured credential.  

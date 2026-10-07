@@ -65,7 +65,7 @@ If checked, Royal TS loads the configured web connection in the Dashboard. This 
 
 ## ![](/products/images/RoyalTS/Plugins/Connections/WebPageEdge/SVG_PageAdvanced_32.svg#img_header) Advanced
 
-The **Advanced** page allows you to configure browser behavior, automatic refresh, browser dimensions, zoom, and certificate handling.
+The **Advanced** page allows you to configure browser behavior, automatic refresh, browser dimensions, zoom, download folders, and certificate handling.
 
 ### General
 
@@ -92,6 +92,32 @@ If enabled, you can specify a custom width and height for the web browser. Each 
 #### Zoom Factor
 
 Sets the initial zoom factor for the web page from 25% to 500%.
+
+### Downloads
+
+#### Default Download Folder
+
+Enter the initial folder for downloads or select it using the folder picker. [Replacement tokens](xref:royalts_advanced_tokens) are supported and are resolved when connecting, using the connection's effective credentials. Leave this setting empty to use the Windows Downloads folder.
+
+Every download still prompts for a filename. The Save dialog starts in the first existing directory in this order:
+
+1. The last folder selected in a confirmed Save dialog for the open connection.
+2. The configured **Default Download Folder**, after replacement tokens have been resolved.
+3. The Windows Downloads folder.
+
+Missing or invalid directories are skipped. If none exists, the Save dialog uses its own default location.
+
+The last selected folder is shared by browser subtabs and popups belonging to the same connection and is remembered until the connection closes. Other connections have separate folder memory, even when they share a Session ID. After reconnecting, the configured default folder is used again.
+
+Canceling the Save dialog changes neither the remembered folder nor the configured default. The suggested filename and overwrite confirmation are preserved.
+
+#### Update Default Download Location
+
+If enabled, confirming a Save dialog updates this connection's **Default Download Folder** to the selected directory. This option is disabled by default.
+
+Only this connection is updated; inherited defaults and connection templates remain unchanged. The update requires permission to edit the connection and its document. If read-only or lockdown restrictions prevent it, the download continues and the selected folder is still remembered until the connection closes.
+
+The update is a normal document change and does not force a save. Save the document normally to retain the default folder and this option across document reopenings.
 
 ### Certificate
 
