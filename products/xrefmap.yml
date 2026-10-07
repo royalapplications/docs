@@ -393,7 +393,7 @@ references:
   href: royalts/reference/connections/web-page-chrome.html
 - uid: royalts_reference_connections_web-page-ie
   name: " Web Page (Edge)"
-  href: royalts/reference/connections/web-page-ie.html
+  href: royalts/reference/connections/web-page-edge.html
 - uid: royalts_reference_connections_windows-events
   name: " Windows Events View"
   href: royalts/reference/connections/windows-events.html

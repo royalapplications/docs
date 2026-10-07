@@ -4638,10 +4638,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "royalts/reference/connections/web-page-ie.md",
+      "source_relative_path": "royalts/reference/connections/web-page-edge.md",
       "output": {
         ".html": {
-          "relative_path": "royalts/reference/connections/web-page-ie.html"
+          "relative_path": "royalts/reference/connections/web-page-edge.html"
         }
       },
       "version": ""
