@@ -546,7 +546,13 @@ If enabled, plugins may show a Windows notification.
 ## Password Generator
 ### PasswordGeneratorAvoidAmbiguousCharacters
 Type: `bool`, Default Value: `true`  
-Password Generator Avoid Ambiguous Characters  
+Filters ambiguous letters, digits and built-in symbols during password generation. A nonempty PasswordGeneratorCustomSymbols value overrides this filter for symbols. Explicit exclusions still apply to every category.  
+### PasswordGeneratorCustomSymbols
+Type: `string`, Default Value: `Empty String`  
+The complete custom symbol pool for password generation in Royal TS for Windows when PasswordGeneratorIncludeSymbols is enabled. Accepts only printable ASCII punctuation; duplicates are ignored in first-occurrence order. An empty string uses the built-in symbols. Custom symbols override symbol ambiguity filtering, but PasswordGeneratorExcludedCharacters takes final precedence. The saved value is retained when symbols are disabled.  
+### PasswordGeneratorExcludedCharacters
+Type: `string`, Default Value: `Empty String`  
+Characters removed from every enabled password-generation category in Royal TS for Windows, including custom symbols, after ambiguity filtering. Accepts printable ASCII letters, digits and punctuation; matching is case-sensitive and duplicates are ignored in first-occurrence order. An empty string excludes nothing. Characters absent from the enabled pools have no effect. If the combined pool becomes empty, generation displays an error and preserves the current password.  
 ### PasswordGeneratorIncludeDigits
 Type: `bool`, Default Value: `true`  
 Password Generator Include Digits  

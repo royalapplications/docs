@@ -25,9 +25,18 @@ Whenever you enter a password in Royal TS, you get immediately a sense how secur
 
 ![](/r2023/images/RoyalTS/GettingStarted/Security_01.png)
 
-Password Generator
-In addition to indicate the strength of the password, Royal TS also features a password generator:
+## Password Generator
+
+Royal TS includes a password generator in the menu of password fields:
 
 ![](/r2023/images/RoyalTS/GettingStarted/Security_02.png)
+
+Use the popup to set a length of 4–50 characters and choose whether to include uppercase letters, digits and symbols, or avoid ambiguous characters. Changing a generator setting generates a new password. These settings are remembered globally. Opening the popup preserves the current password.
+
+To customize the symbols or exclude specific characters, open **Application Options → User Interface → Password Generator**, below **Tabs**. **Allowed symbols** defines the symbol pool; leave it empty to use the built-in symbols, or click **Load default symbols** to insert the full built-in list for editing. **Excluded characters** removes characters from all enabled categories, including custom symbols, and matches case exactly.
+
+Enabled categories are permitted in a password; the generator does not require every category to appear. If your preferences leave no characters available, Royal TS displays an error and keeps the current password.
+
+For the character rules and save behavior, see [Password Generator options](xref:royalts_reference_options#password-generator).
 
 See also: [Document Security](xref:royalts_reference_organization_document#-security)

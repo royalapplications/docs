@@ -373,6 +373,33 @@ If checked, the tab caption will be colorized with the configured color of the c
 
 If checked, Royal TS will display thumbnails for each tab in the taskbar.
 
+### Password Generator
+
+The **Password Generator** section is at the bottom of **Application Options → User Interface**, directly below **Tabs**. These character preferences apply globally to password generation in Royal TS for Windows.
+
+Set the password length (4–50 characters), **Include uppercase letters**, **Include digits**, **Include symbols** and **Avoid ambiguous characters** in the password generator popup. The popup remembers these settings. Enabled character categories are permitted in generated passwords; each category is not guaranteed to appear in every password.
+
+#### Allowed symbols
+
+Enter the complete set of symbols the generator may use when **Include symbols** is checked, for example `!#$%&+_-=`. Only printable ASCII punctuation is accepted; letters, digits, whitespace and non-ASCII characters are not allowed.
+
+Leave this field empty to use the built-in symbols. A custom list overrides **Avoid ambiguous characters** for symbols; that option continues to filter letters and digits. Turning off **Include symbols** keeps the saved list but excludes symbols from generated passwords.
+
+#### Load default symbols
+
+Click the reset-icon button on the right of **Allowed symbols** to replace the entire field with the built-in symbol list. You can then edit the list or remove individual symbols. The button loads the full list regardless of the popup's **Avoid ambiguous characters** setting.
+
+#### Excluded characters
+
+Enter characters that must never appear in generated passwords. Printable ASCII letters, digits and punctuation are accepted; whitespace and non-ASCII characters are not allowed. Matching is case-sensitive: excluding `a` does not exclude `A`. Leave this field empty to exclude nothing.
+
+Exclusions apply to every enabled category, including custom symbols, after ambiguity filtering. Characters absent from the enabled pools have no effect. An individual category may become empty; if no characters remain at all, Royal TS displays an error and keeps the current password.
+
+Both fields remain editable regardless of the popup's selected categories. Click **OK** to save the preferences, removing duplicate characters while preserving their first occurrence. **Cancel** discards edits, including changes made with **Load default symbols**. Saved preferences persist across restarts, and the popup refreshes its settings whenever it opens.
+
+> [!NOTE]
+> You can save valid character preferences even if the popup's current category settings leave no characters available. Enable another category or change the exclusions before generating a password.
+
 ## ![](/r2023/images/RoyalTS/Application/SVG_SkinsColorScheme_32.svg#img_header) Appearance
 
 The **Appearance** page allows you to adjust the color scheme.
