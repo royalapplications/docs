@@ -79,9 +79,13 @@
 <p>Royal TS also features password strength indicators wherever passwords are used. This way Royal TS can constantly bring the complexity and strength of the used passwords to your attention. Based on the commonly used zxcvbn algorithm, Royal TS is able to give sound advice through pattern matching and conservative entropy calculations. More information about zxcvbn can be found here: <a href="https://github.com/dropbox/zxcvbn">https://github.com/dropbox/zxcvbn</a></p>
 <p>Whenever you enter a password in Royal TS, you get immediately a sense how secure your password is:</p>
 <p><img src="/r2023/images/RoyalTS/GettingStarted/Security_01.png" alt=""></p>
-<p>Password Generator
-In addition to indicate the strength of the password, Royal TS also features a password generator:</p>
+<h2 id="password-generator">Password Generator</h2>
+<p>Royal TS includes a password generator in the menu of password fields:</p>
 <p><img src="/r2023/images/RoyalTS/GettingStarted/Security_02.png" alt=""></p>
+<p>Use the popup to set a length of 4–50 characters and choose whether to include uppercase letters, digits and symbols, or avoid ambiguous characters. Changing a generator setting generates a new password. These settings are remembered globally. Opening the popup preserves the current password.</p>
+<p>To customize the symbols or exclude specific characters, open <strong>Application Options → User Interface → Password Generator</strong>, below <strong>Tabs</strong>. <strong>Allowed symbols</strong> defines the symbol pool; leave it empty to use the built-in symbols, or click <strong>Load default symbols</strong> to insert the full built-in list for editing. <strong>Excluded characters</strong> removes characters from all enabled categories, including custom symbols, and matches case exactly.</p>
+<p>Enabled categories are permitted in a password; the generator does not require every category to appear. If your preferences leave no characters available, Royal TS displays an error and keeps the current password.</p>
+<p>For the character rules and save behavior, see <a class="xref" href="../reference/options.html#password-generator">Password Generator options</a>.</p>
 <p>See also: <a class="xref" href="../reference/organization/document.html#-security">Document Security</a></p>
 
 </article>
