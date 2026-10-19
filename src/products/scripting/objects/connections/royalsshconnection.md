@@ -973,6 +973,9 @@ Allows changing font size with Ctrl + mouse wheel.
 ### Ligatures
 Type: `bool`, Default Value: `false`  
 Uses OpenType ligatures when text shaping is enabled.  
+### ShowProgramStatus
+Type: `bool`, Default Value: `true`  
+Shows application status and progress reported by the terminal.  
 ### SixelGraphics
 Type: `bool`, Default Value: `true`  
 Renders sixel image graphics sent by terminal applications.  
@@ -1311,6 +1314,9 @@ Type: `int`, Default Value: `0`
 0 = Embedded (Tabbed)   
  1 = External Window   
  2 = Full Screen (where supported).  
+### ShowExternalToolbar
+Type: `bool`, Default Value: `true`  
+Show the connection toolbar in external windows.  
 ### ExternalScreenMode
 Type: `int`, Default Value: `0`  
 0 = Remember Screen   

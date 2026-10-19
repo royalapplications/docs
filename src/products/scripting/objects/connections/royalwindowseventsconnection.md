@@ -245,6 +245,9 @@ Type: `int`, Default Value: `0`
 0 = Embedded (Tabbed)   
  1 = External Window   
  2 = Full Screen (where supported).  
+### ShowExternalToolbar
+Type: `bool`, Default Value: `true`  
+Show the connection toolbar in external windows.  
 ### ExternalScreenMode
 Type: `int`, Default Value: `0`  
 0 = Remember Screen   
