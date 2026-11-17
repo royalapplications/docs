@@ -34,3 +34,28 @@ Each license includes at least a 12 month software maintenance (including free u
 
 > [!NOTE]
 > Installed licenses can be found at `%ProgramData%\RoyalServer\Licenses\`.
+
+## One Installed License
+
+Royal Server runs with exactly one installed license. Installing a license key replaces the installed license. When you update from an earlier version that had several licenses installed, Royal Server keeps the valid license with the latest end date.
+
+Royal Server never deletes a replaced license. It moves the license file to `%ProgramData%\RoyalServer\Licenses\Superseded\`, with the extension `.superseded`, so the license no longer loads. The same happens when the online license check installs a renewed license key, and when a Royal Server V5 license key is upgraded to a new license key.
+
+A license that the Royal Apps license server reports as blocked is moved to `%ProgramData%\RoyalServer\Licenses\Blocked\`.
+
+## Going Back to an Earlier Version
+
+If you go back to an earlier version of Royal Server, the license this version installed may not be valid there:
+
+- Royal Server V5 versions that support the new license keys accept the installed license.
+- Earlier Royal Server V5 versions only accept Royal Server V5 license keys. Your V5 license key is in the `Superseded` folder.
+
+To use a license from the `Superseded` folder again:
+
+1. Open `%ProgramData%\RoyalServer\Licenses\Superseded\`.
+2. Copy the license file to `%ProgramData%\RoyalServer\Licenses\`.
+3. Change the extension of the copy from `.superseded` to `.lic`. The rest of the file name does not matter.
+4. Restart the Royal Server service if the Configuration Tool does not show the license.
+
+> [!NOTE]
+> Royal Server V5 allows several installed licenses, so the license files of both versions can stay in the `Licenses` folder. When you update to this version again, Royal Server keeps only one license and moves the other license files to the `Superseded` folder.

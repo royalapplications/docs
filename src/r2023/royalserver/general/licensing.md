@@ -34,3 +34,18 @@ Each license includes at least a 12 month software maintenance (including free u
 
 > [!NOTE]
 > Installed licenses can be found at `%ProgramData%\RoyalServer\Licenses\`.
+
+## New License Keys
+
+Royal Server V5 accepts the new Royal Server license keys in addition to Royal Server V5 license keys. Both can be installed side by side, but only one new license key: installing another new license key replaces the installed one. Royal Server V5 license keys are not affected.
+
+Royal Server never deletes a replaced license. It moves the license file to `%ProgramData%\RoyalServer\Licenses\Superseded\`, with the extension `.superseded`, so the license no longer loads. This also applies to a license key that replaces one with the same registration name, and to a renewed license key installed by the online license check. A license that the Royal Apps license server reports as blocked is moved to `%ProgramData%\RoyalServer\Licenses\Blocked\`.
+
+## Using a Replaced License Again
+
+For example, if you go back to an earlier Royal Server V5 version that does not support the new license keys, or after going back from a newer major version of Royal Server, which keeps only one license:
+
+1. Open `%ProgramData%\RoyalServer\Licenses\Superseded\`.
+2. Copy the license file to `%ProgramData%\RoyalServer\Licenses\`.
+3. Change the extension of the copy from `.superseded` to `.lic`. The rest of the file name does not matter.
+4. Restart the Royal Server service if the Configuration Tool does not show the license.
