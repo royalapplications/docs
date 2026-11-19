@@ -354,8 +354,20 @@ Type: `int`, Default Value: `0`
  1 = Small Cache Mode   
  2 = Thin Client Cache Mode  
 ### EnableGraphicsPipeline
-Type: `bool`, Default Value: `false`  
-If set to true, the RDP Graphics Pipeline is enabled.  
+Type: `bool`, Default Value: `true`
+
+Controls whether FreeRDP uses the RDP Graphics Pipeline.
+
+To set this property in a Dynamic Folder script, add it to the RDP connection object's `Properties` dictionary. RoyalJSON expects a string value.
+
+```json
+"Properties": {
+  "EnableGraphicsPipeline": "True"
+}
+```
+
+Use `"False"` to disable the Graphics Pipeline for a connection.
+
 ### EnableHardwareMode
 Type: `bool`, Default Value: `false`  
 If checked, hardware acceleration will be used where supported.  
