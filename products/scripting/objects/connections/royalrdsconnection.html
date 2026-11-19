@@ -418,8 +418,14 @@ If set to true, bandwidth changes are automatically detected.</p>
 1 = Small Cache Mode<br>
 2 = Thin Client Cache Mode</p>
 <h3 id="enablegraphicspipeline">EnableGraphicsPipeline</h3>
-<p>Type: <code>bool</code>, Default Value: <code>false</code><br>
-If set to true, the RDP Graphics Pipeline is enabled.</p>
+<p>Type: <code>bool</code>, Default Value: <code>true</code></p>
+<p>Controls whether FreeRDP uses the RDP Graphics Pipeline.</p>
+<p>To set this property in a Dynamic Folder script, add it to the RDP connection object's <code>Properties</code> dictionary. RoyalJSON expects a string value.</p>
+<pre><code class="lang-json">&quot;Properties&quot;: {
+  &quot;EnableGraphicsPipeline&quot;: &quot;True&quot;
+}
+</code></pre>
+<p>Use <code>&quot;False&quot;</code> to disable the Graphics Pipeline for a connection.</p>
 <h3 id="enablehardwaremode">EnableHardwareMode</h3>
 <p>Type: <code>bool</code>, Default Value: <code>false</code><br>
 If checked, hardware acceleration will be used where supported.</p>
